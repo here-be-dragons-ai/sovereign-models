@@ -12,10 +12,12 @@
    "tier": "A",
    "id": "alia-40b",
    "name": "ALIA 40B Instruct 2606",
+   "family": "ALIA",
    "provider": "Barcelona Supercomputing Center (BSC)",
    "provider_country": "ES",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -35,46 +37,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "tonidurans/ALIA-40b-instruct-2605-mlx-q4",
    "mlx_build_bits": "4",
-   "mlx_build_publisher": "community",
+   "mlx_build_publisher": "individual",
    "flags": "",
    "hbd_involvement": "",
    "notes": "160k context.",
    "hf_repo": "BSC-LT/ALIA-40b-instruct-2606",
    "hf_created": "2026-06-30",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123722/https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
      "note": "model card: MareNostrum 5 (EuroHPC)"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123722/https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123722/https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123722/https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -83,8 +104,9 @@
      "id": "alia-40b",
      "repo": "tonidurans/ALIA-40b-instruct-2605-mlx-q4",
      "bits": "4",
-     "publisher_kind": "community",
-     "note": "built from the earlier 2605 release"
+     "note": "built from the earlier 2605 release",
+     "publisher": "individual",
+     "verified_org": false
     }
    ]
   },
@@ -92,10 +114,12 @@
    "tier": "A",
    "id": "apertus-1.5-70b",
    "name": "Apertus 1.5 70B",
+   "family": "Apertus 1.5",
    "provider": "Swiss AI Initiative (ETH Zurich, EPFL)",
    "provider_country": "CH",
    "region": "europe",
    "control": "independent",
+   "majority_owner": "",
    "origin": "continued-own",
    "base_model": "Apertus 1",
    "license_class": "osi-aup",
@@ -121,54 +145,119 @@
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution.",
    "hf_repo": "swiss-ai/Apertus-v1.5-70B",
    "hf_created": "2026-07-24",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "Switzerland is not in the EU.",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
-     "status": "primary",
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
-     "note": ""
+     "archive_url": "https://web.archive.org/web/20261008131422/https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf",
+     "note": "EU AI Act public summary of training content (public copy in swiss-ai/apertus-legal)"
     },
     {
-     "field": "origin",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "continued pre-training of Apertus 1"
-    },
-    {
-     "field": "license_class",
-     "url": "https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "Apache-2.0 plus AUP v1.5"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "model card: only fully open training data"
-    },
-    {
+     "scope": "family",
      "field": "compute",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
-     "status": "secondary",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
      "note": "CSCS Alps per press; not stated on the card"
     },
     {
-     "field": "ai_act_summary",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/main/Apertus_1_5_EU_Public_Summary.pdf",
-     "status": "primary",
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "note": "CSCS Alps per press; not stated on the card"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "note": "model card: only fully open training data"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "note": "model card: only fully open training data"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123632/https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf",
+     "note": "Apache-2.0 plus AUP v1.5"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "note": "continued pre-training of Apertus 1"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "note": "continued pre-training of Apertus 1"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
      "note": ""
     },
     {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -178,10 +267,12 @@
    "tier": "A",
    "id": "apertus-1.5-8b",
    "name": "Apertus 1.5 8B",
+   "family": "Apertus 1.5",
    "provider": "Swiss AI Initiative (ETH Zurich, EPFL)",
    "provider_country": "CH",
    "region": "europe",
    "control": "independent",
+   "majority_owner": "",
    "origin": "continued-own",
    "base_model": "Apertus 1",
    "license_class": "osi-aup",
@@ -207,54 +298,119 @@
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution.",
    "hf_repo": "swiss-ai/Apertus-v1.5-8B",
    "hf_created": "2026-07-24",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "Switzerland is not in the EU.",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
-     "status": "primary",
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
-     "note": ""
+     "archive_url": "https://web.archive.org/web/20261008131422/https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf",
+     "note": "EU AI Act public summary of training content (public copy in swiss-ai/apertus-legal)"
     },
     {
-     "field": "origin",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "continued pre-training of Apertus 1"
-    },
-    {
-     "field": "license_class",
-     "url": "https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "Apache-2.0 plus AUP v1.5"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "model card: only fully open training data"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
      "note": "CSCS Alps per press; not stated on the card"
     },
     {
-     "field": "ai_act_summary",
-     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/main/Apertus_1_5_EU_Public_Summary.pdf",
-     "status": "primary",
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "note": "CSCS Alps per press; not stated on the card"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "note": "model card: only fully open training data"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "note": "model card: only fully open training data"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123632/https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf",
+     "note": "Apache-2.0 plus AUP v1.5"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "note": "continued pre-training of Apertus 1"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "note": "continued pre-training of Apertus 1"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B",
      "note": ""
     },
     {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -264,10 +420,12 @@
    "tier": "A",
    "id": "eurollm-22b",
    "name": "EuroLLM 22B Instruct 2512",
+   "family": "EuroLLM Instruct 2512",
    "provider": "EuroLLM consortium (Unbabel, IST Lisbon, U. Edinburgh, ...)",
    "provider_country": "PT",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -287,46 +445,105 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit",
    "mlx_build_bits": "8",
-   "mlx_build_publisher": "mlx-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
    "hf_repo": "utter-project/EuroLLM-22B-Instruct-2512",
    "hf_created": "2025-12-05",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "status": "primary",
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
-     "note": ""
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": "not stated on this card"
     },
     {
-     "field": "origin",
-     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "data",
      "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
      "note": "data mix described, corpus not published as one dataset"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": "data mix described, corpus not published as one dataset"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "model",
      "field": "compute",
      "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
      "note": "model card: MareNostrum 5, EuroHPC grant"
     },
     {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -335,15 +552,17 @@
      "id": "eurollm-22b",
      "repo": "mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit",
      "bits": "8",
-     "publisher_kind": "mlx-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     },
     {
      "id": "eurollm-22b",
      "repo": "mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit",
      "bits": "4",
-     "publisher_kind": "mlx-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -351,10 +570,12 @@
    "tier": "A",
    "id": "lucie-7b",
    "name": "Lucie 7B Instruct 1.1",
+   "family": "Lucie 1.1 Instruct",
    "provider": "OpenLLM-France / LINAGORA",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -374,46 +595,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "mlx-community/Lucie-7B-Instruct-4bit",
    "mlx_build_bits": "4",
-   "mlx_build_publisher": "mlx-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
    "hf_repo": "OpenLLM-France/Lucie-7B-Instruct-v1.1",
    "hf_created": "2025-02-13",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/datasets/OpenLLM-France/Lucie-Training-Dataset",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "training data published"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124452/https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
      "note": "model card: GENCI / IDRIS Jean Zay"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Lucie-Training-Dataset",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124908/https://huggingface.co/datasets/OpenLLM-France/Lucie-Training-Dataset",
+     "note": "training data published"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124452/https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124452/https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "LINAGORA listed (2026-10-07)"
     }
    ],
@@ -422,8 +662,9 @@
      "id": "lucie-7b",
      "repo": "mlx-community/Lucie-7B-Instruct-4bit",
      "bits": "4",
-     "publisher_kind": "mlx-community",
-     "note": "earlier Lucie-7B-Instruct release"
+     "note": "earlier Lucie-7B-Instruct release",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -431,10 +672,12 @@
    "tier": "A",
    "id": "luciole-23b",
    "name": "Luciole 23B Instruct 1.1",
+   "family": "Luciole 1.1 Instruct",
    "provider": "OpenLLM-France / LINAGORA",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -454,46 +697,95 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "bumblebuttpow/Luciole-23B-Instruct-1.1-4bit-mlx",
    "mlx_build_bits": "4",
-   "mlx_build_publisher": "community",
+   "mlx_build_publisher": "individual",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Instruct post-training used 16k sequences; base 131k.",
    "hf_repo": "OpenLLM-France/Luciole-23B-Instruct-1.1",
    "hf_created": "2026-07-07",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "training data published"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
      "note": "model card: GENCI / IDRIS Jean Zay"
     },
     {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": "model card: GENCI / IDRIS Jean Zay"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125007/https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "note": "training data published"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "LINAGORA listed (2026-10-07)"
     }
    ],
@@ -502,8 +794,9 @@
      "id": "luciole-23b",
      "repo": "bumblebuttpow/Luciole-23B-Instruct-1.1-4bit-mlx",
      "bits": "4",
-     "publisher_kind": "community",
-     "note": ""
+     "note": "",
+     "publisher": "individual",
+     "verified_org": false
     }
    ]
   },
@@ -511,10 +804,12 @@
    "tier": "A",
    "id": "luciole-8b",
    "name": "Luciole 8B Instruct 1.1",
+   "family": "Luciole 1.1 Instruct",
    "provider": "OpenLLM-France / LINAGORA",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -540,40 +835,89 @@
    "notes": "Hybrid Mamba/attention (nemotron_h).",
    "hf_repo": "OpenLLM-France/Luciole-8B-Instruct-1.1",
    "hf_created": "2026-07-07",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "training data published"
-    },
-    {
+     "scope": "family",
      "field": "compute",
-     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
-     "status": "primary",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
      "note": "model card: GENCI / IDRIS Jean Zay"
     },
     {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": "model card: GENCI / IDRIS Jean Zay"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125007/https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "note": "training data published"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "LINAGORA listed (2026-10-07)"
     }
    ],
@@ -583,10 +927,12 @@
    "tier": "A",
    "id": "pleias-rag-1b",
    "name": "Pleias RAG 1B",
+   "family": "Pleias RAG",
    "provider": "Pleias",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "continued-own",
    "base_model": "Pleias 1.0",
    "license_class": "osi",
@@ -606,46 +952,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "mlx-community/Pleias-RAG-1B-6-bit",
    "mlx_build_bits": "6",
-   "mlx_build_publisher": "mlx-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Specialised for retrieval-augmented generation with citations. 4k context.",
    "hf_repo": "PleIAs/Pleias-RAG-1B",
    "hf_created": "2025-04-07",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/PleIAs/Pleias-RAG-1B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://arxiv.org/abs/2504.18225",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "model report"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/datasets/PleIAs/common_corpus",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "synthetic data built from Common Corpus"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/PleIAs/Pleias-RAG-1B",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124733/https://huggingface.co/PleIAs/Pleias-RAG-1B",
      "note": "not stated on the card"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/datasets/PleIAs/common_corpus",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125138/https://huggingface.co/datasets/PleIAs/common_corpus",
+     "note": "synthetic data built from Common Corpus"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/abs/2504.18225",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123517/https://arxiv.org/abs/2504.18225",
+     "note": "model report"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/PleIAs/Pleias-RAG-1B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124733/https://huggingface.co/PleIAs/Pleias-RAG-1B",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Pleias listed (2026-10-07)"
     }
    ],
@@ -654,8 +1019,9 @@
      "id": "pleias-rag-1b",
      "repo": "mlx-community/Pleias-RAG-1B-6-bit",
      "bits": "6",
-     "publisher_kind": "mlx-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -663,10 +1029,12 @@
    "tier": "A",
    "id": "salamandra-7b",
    "name": "Salamandra 7B Instruct",
+   "family": "Salamandra",
    "provider": "Barcelona Supercomputing Center (BSC)",
    "provider_country": "ES",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -686,46 +1054,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "mlx-community/salamandra-7b-instruct-mlx-bf16",
    "mlx_build_bits": "16",
-   "mlx_build_publisher": "mlx-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
    "hf_repo": "BSC-LT/salamandra-7b-instruct",
    "hf_created": "2024-09-30",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123759/https://huggingface.co/BSC-LT/salamandra-7b-instruct",
      "note": "model card: MareNostrum 5 (EuroHPC)"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123759/https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123759/https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123759/https://huggingface.co/BSC-LT/salamandra-7b-instruct",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -734,8 +1121,9 @@
      "id": "salamandra-7b",
      "repo": "mlx-community/salamandra-7b-instruct-mlx-bf16",
      "bits": "16",
-     "publisher_kind": "mlx-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -743,10 +1131,12 @@
    "tier": "A",
    "id": "tildeopen-30b",
    "name": "TildeOpen 30B 64k",
+   "family": "TildeOpen",
    "provider": "Tilde",
    "provider_country": "LV",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -772,40 +1162,59 @@
    "notes": "Base model only (no official instruct version). Focus on Nordic and Eastern European languages.",
    "hf_repo": "TildeAI/TildeOpen-30b-64k",
    "hf_created": "2026-02-04",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/TildeAI/TildeOpen-30b-64k",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/TildeAI/TildeOpen-30b-64k",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/TildeAI/TildeOpen-30b-64k",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/TildeAI/TildeOpen-30b-64k",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k",
      "note": "model card: funded by EuroHPC JU Large AI Grand Challenge"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/TildeAI/TildeOpen-30b-64k",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/TildeAI/TildeOpen-30b-64k",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/TildeAI/TildeOpen-30b-64k",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -815,10 +1224,12 @@
    "tier": "B",
    "id": "bielik-11b-v3",
    "name": "Bielik 11B v3.0 Instruct",
+   "family": "Bielik v3",
    "provider": "SpeakLeash, ACK Cyfronet AGH",
    "provider_country": "PL",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "continued-european",
    "base_model": "Mistral 7B v0.2 (depth up-scaled)",
    "license_class": "osi",
@@ -844,40 +1255,59 @@
    "notes": "Repository is gated (terms of use).",
    "hf_repo": "speakleash/Bielik-11B-v3.0-Instruct",
    "hf_created": "2025-11-07",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://arxiv.org/abs/2601.11579",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "technical report"
-    },
-    {
-     "field": "data",
-     "url": "https://arxiv.org/abs/2601.11579",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://arxiv.org/abs/2601.11579",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260518162008/https://arxiv.org/abs/2601.11579",
      "note": "Helios (PL) per research summary; not checked"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2601.11579",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260518162008/https://arxiv.org/abs/2601.11579",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/abs/2601.11579",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260518162008/https://arxiv.org/abs/2601.11579",
+     "note": "technical report"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130326/https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -886,15 +1316,17 @@
      "id": "bielik-11b-v3",
      "repo": "speakleash/Bielik-11B-v3.0-Instruct-MLX-8bit",
      "bits": "8",
-     "publisher_kind": "official",
-     "note": ""
+     "note": "",
+     "publisher": "official",
+     "verified_org": false
     },
     {
      "id": "bielik-11b-v3",
      "repo": "speakleash/Bielik-11B-v3.0-Instruct-MLX-4bit",
      "bits": "4",
-     "publisher_kind": "official",
-     "note": ""
+     "note": "",
+     "publisher": "official",
+     "verified_org": false
     }
    ]
   },
@@ -902,10 +1334,12 @@
    "tier": "B",
    "id": "devstral-small-2",
    "name": "Devstral Small 2 24B",
+   "family": "Devstral Small 2",
    "provider": "Mistral AI",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -925,46 +1359,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "mlx-community/Devstral-Small-2-24B-Instruct-2512-8bit",
    "mlx_build_bits": "8",
-   "mlx_build_publisher": "mlx-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Coding/agent model.",
    "hf_repo": "mistralai/Devstral-Small-2-24B-Instruct-2512",
    "hf_created": "2025-11-28",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "Mistral's own model line"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "training data not described"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
      "note": "not stated"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+     "note": "training data not described"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+     "note": "Mistral's own model line"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Mistral AI listed (2026-10-07)"
     }
    ],
@@ -973,15 +1426,17 @@
      "id": "devstral-small-2",
      "repo": "mlx-community/Devstral-Small-2-24B-Instruct-2512-8bit",
      "bits": "8",
-     "publisher_kind": "mlx-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     },
     {
      "id": "devstral-small-2",
      "repo": "mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit",
      "bits": "4",
-     "publisher_kind": "mlx-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -989,10 +1444,12 @@
    "tier": "B",
    "id": "eurollm-9b",
    "name": "EuroLLM 9B Instruct 2512",
+   "family": "EuroLLM Instruct 2512",
    "provider": "EuroLLM consortium (Unbabel, IST Lisbon, U. Edinburgh, ...)",
    "provider_country": "PT",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1018,40 +1475,89 @@
    "notes": "Compute not stated on this card (the 22B card names MareNostrum 5).",
    "hf_repo": "utter-project/EuroLLM-9B-Instruct-2512",
    "hf_created": "2026-01-26",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "data mix described, corpus not published as one dataset"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
      "note": "not stated on this card"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": "data mix described, corpus not published as one dataset"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": "data mix described, corpus not published as one dataset"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -1061,10 +1567,12 @@
    "tier": "B",
    "id": "helium-1-2b",
    "name": "Helium 1 2B",
+   "family": "Helium 1",
    "provider": "Kyutai",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1090,40 +1598,59 @@
    "notes": "CC-BY-SA-4.0. 4k context.",
    "hf_repo": "kyutai/helium-1-2b",
    "hf_created": "2025-04-30",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/kyutai/helium-1-2b",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/kyutai/helium-1-2b",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/kyutai/helium-1-2b",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "model card: Common Crawl, processed with dactory"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/kyutai/helium-1-2b",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123950/https://huggingface.co/kyutai/helium-1-2b",
      "note": "64 H100; location not stated"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/kyutai/helium-1-2b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123950/https://huggingface.co/kyutai/helium-1-2b",
+     "note": "model card: Common Crawl, processed with dactory"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/kyutai/helium-1-2b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123950/https://huggingface.co/kyutai/helium-1-2b",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/kyutai/helium-1-2b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123950/https://huggingface.co/kyutai/helium-1-2b",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -1133,10 +1660,12 @@
    "tier": "B",
    "id": "kolibri-1",
    "name": "Kolibri 1",
+   "family": "Kolibri 1",
    "provider": "Aleph Alpha",
    "provider_country": "DE",
    "region": "eu",
    "control": "merger-pending-non-eu",
+   "majority_owner": "Cohere (CA), merger pending",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1157,52 +1686,74 @@
    "mlx_build": "here-be-dragons-ai/Kolibri-1-MLX-3bit",
    "mlx_build_bits": "3.61",
    "mlx_build_publisher": "hbd",
-   "flags": "merger pending non eu; our own work involved",
+   "flags": "merger pending non-EU; our own work involved",
    "hbd_involvement": "HBD publishes the MLX 3-bit build here-be-dragons-ai/Kolibri-1-MLX-3bit",
    "notes": "German/English MoE, 78B total, 3.5B active. Synthetic data generated with permissively licensed models (Gemma-4-26B-A4B for English rephrasing, per the card). Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval.",
    "hf_repo": "Aleph-Alpha/Kolibri-1",
    "hf_created": "2026-10-02",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "Definitive merger agreement with Cohere signed 2026-09-16, pending approval.",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "control",
-     "url": "https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/",
-     "status": "press",
-     "retrieved": "2026-10-08",
-     "note": "definitive merger agreement 2026-09-16"
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "card documents the data mix and synthetic data"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
      "note": "768 B200; location not stated"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "note": "card documents the data mix and synthetic data"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "note": ""
+    },
+    {
+     "scope": "provider",
+     "field": "control",
+     "url": "https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/",
+     "issuer": "press",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131234/https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/",
+     "note": "definitive merger agreement 2026-09-16"
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Aleph Alpha listed (2026-10-07)"
     }
    ],
@@ -1211,8 +1762,9 @@
      "id": "kolibri-1",
      "repo": "here-be-dragons-ai/Kolibri-1-MLX-3bit",
      "bits": "3.61",
-     "publisher_kind": "hbd",
-     "note": "mixed 3/6 bit; our own build"
+     "note": "mixed 3/6 bit; our own build",
+     "publisher": "hbd",
+     "verified_org": false
     }
    ]
   },
@@ -1220,10 +1772,12 @@
    "tier": "B",
    "id": "magistral-small-2509",
    "name": "Magistral Small 2509",
+   "family": "Magistral Small",
    "provider": "Mistral AI",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1243,46 +1797,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "lmstudio-community/Magistral-Small-2509-MLX-8bit",
    "mlx_build_bits": "8",
-   "mlx_build_publisher": "lmstudio-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Reasoning model.",
    "hf_repo": "mistralai/Magistral-Small-2509",
    "hf_created": "2025-09-12",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "Mistral's own model line"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "training data not described"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509",
      "note": "not stated"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509",
+     "note": "training data not described"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509",
+     "note": "Mistral's own model line"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Mistral AI listed (2026-10-07)"
     }
    ],
@@ -1291,8 +1864,9 @@
      "id": "magistral-small-2509",
      "repo": "lmstudio-community/Magistral-Small-2509-MLX-8bit",
      "bits": "8",
-     "publisher_kind": "lmstudio-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -1300,10 +1874,12 @@
    "tier": "B",
    "id": "minerva-7b",
    "name": "Minerva 7B Instruct",
+   "family": "Minerva",
    "provider": "Sapienza NLP",
    "provider_country": "IT",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1329,33 +1905,49 @@
    "notes": "4k context.",
    "hf_repo": "sapienzanlp/Minerva-7B-instruct-v1.0",
    "hf_created": "2024-12-02",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130151/https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
      "note": "Leonardo (CINECA) per research summary"
     },
     {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130151/https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130151/https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -1365,10 +1957,12 @@
    "tier": "B",
    "id": "ministral-3-14b",
    "name": "Ministral 3 14B Instruct",
+   "family": "Ministral 3",
    "provider": "Mistral AI",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1388,46 +1982,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "mlx-community/Ministral-3-14B-Instruct-2512-8bit",
    "mlx_build_bits": "8",
-   "mlx_build_publisher": "mlx-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
    "hf_repo": "mistralai/Ministral-3-14B-Instruct-2512",
    "hf_created": "2025-10-31",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "Mistral's own model line"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "training data not described"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
      "note": "not stated"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "note": "training data not described"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "note": "Mistral's own model line"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Mistral AI listed (2026-10-07)"
     }
    ],
@@ -1436,8 +2049,9 @@
      "id": "ministral-3-14b",
      "repo": "mlx-community/Ministral-3-14B-Instruct-2512-8bit",
      "bits": "8",
-     "publisher_kind": "mlx-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -1445,10 +2059,12 @@
    "tier": "B",
    "id": "mistral-small-3.2",
    "name": "Mistral Small 3.2 24B",
+   "family": "Mistral Small 3",
    "provider": "Mistral AI",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1468,46 +2084,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "mlx-community/Mistral-Small-3.2-24B-Instruct-2506-8bit",
    "mlx_build_bits": "8",
-   "mlx_build_publisher": "mlx-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
    "hf_repo": "mistralai/Mistral-Small-3.2-24B-Instruct-2506",
    "hf_created": "2025-06-19",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "Mistral's own model line"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "training data not described"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125904/https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
      "note": "not stated"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125904/https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+     "note": "training data not described"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125904/https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+     "note": "Mistral's own model line"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125904/https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Mistral AI listed (2026-10-07)"
     }
    ],
@@ -1516,8 +2151,9 @@
      "id": "mistral-small-3.2",
      "repo": "mlx-community/Mistral-Small-3.2-24B-Instruct-2506-8bit",
      "bits": "8",
-     "publisher_kind": "mlx-community",
-     "note": ""
+     "note": "",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -1525,10 +2161,12 @@
    "tier": "B",
    "id": "mistral-small-4",
    "name": "Mistral Small 4 119B",
+   "family": "Mistral Small 4",
    "provider": "Mistral AI",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1548,46 +2186,65 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "mlx-community/Mistral-Small-4-119B-2603-4bit",
    "mlx_build_bits": "4",
-   "mlx_build_publisher": "mlx-community",
+   "mlx_build_publisher": "curated",
    "flags": "",
    "hbd_involvement": "",
    "notes": "MoE, about 6.5B active; needs about 2-bit to fit 48 GB.",
    "hf_repo": "mistralai/Mistral-Small-4-119B-2603",
    "hf_created": "2026-01-23",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "Mistral's own model line"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "training data not described"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130019/https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
      "note": "not stated"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130019/https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+     "note": "training data not described"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130019/https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+     "note": "Mistral's own model line"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130019/https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Mistral AI listed (2026-10-07)"
     }
    ],
@@ -1596,8 +2253,9 @@
      "id": "mistral-small-4",
      "repo": "mlx-community/Mistral-Small-4-119B-2603-4bit",
      "bits": "4",
-     "publisher_kind": "mlx-community",
-     "note": "63 GB; does not fit 48 GB"
+     "note": "63 GB; does not fit 48 GB",
+     "publisher": "curated",
+     "verified_org": false
     }
    ]
   },
@@ -1605,10 +2263,12 @@
    "tier": "B",
    "id": "sui-1-24b",
    "name": "sui-1 24B",
+   "family": "sui-1",
    "provider": "ellamind",
    "provider_country": "DE",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "finetune-european",
    "base_model": "Mistral Small 3.2 24B",
    "license_class": "osi",
@@ -1634,33 +2294,49 @@
    "notes": "Grounded summarisation.",
    "hf_repo": "ellamind/sui-1-24b",
    "hf_created": "2026-01-14",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/ellamind/sui-1-24b",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/ellamind/sui-1-24b",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/ellamind/sui-1-24b",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125405/https://huggingface.co/ellamind/sui-1-24b",
      "note": "not stated"
     },
     {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/ellamind/sui-1-24b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125405/https://huggingface.co/ellamind/sui-1-24b",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/ellamind/sui-1-24b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125405/https://huggingface.co/ellamind/sui-1-24b",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -1670,10 +2346,12 @@
    "tier": "B",
    "id": "viking-33b",
    "name": "Viking 33B",
-   "provider": "Silo AI (AMD), TurkuNLP, HPLT",
+   "family": "Viking",
+   "provider": "Silo AI (AMD)",
    "provider_country": "FI",
    "region": "eu",
    "control": "acquired-non-eu",
+   "majority_owner": "AMD (US)",
    "origin": "scratch",
    "base_model": "",
    "license_class": "osi",
@@ -1694,52 +2372,74 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
-   "flags": "acquired non eu",
+   "flags": "acquired non-EU",
    "hbd_involvement": "",
    "notes": "4k context. Released before Silo AI was acquired by AMD (US) in August 2024.",
    "hf_repo": "LumiOpen/Viking-33B",
    "hf_created": "2024-02-20",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "Acquired by AMD in August 2024.",
+   "family_notes": "Built by Silo AI with TurkuNLP (University of Turku) and HPLT; released before the AMD acquisition.",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/LumiOpen/Viking-33B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "control",
-     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "AMD 10-Q: acquisition of Silo AI completed 2024-08-09"
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/LumiOpen/Viking-33B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/LumiOpen/Viking-33B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/LumiOpen/Viking-33B",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124006/https://huggingface.co/LumiOpen/Viking-33B",
      "note": "model card: LUMI, 1024 AMD MI250X"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/LumiOpen/Viking-33B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124006/https://huggingface.co/LumiOpen/Viking-33B",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/LumiOpen/Viking-33B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124006/https://huggingface.co/LumiOpen/Viking-33B",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/LumiOpen/Viking-33B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124006/https://huggingface.co/LumiOpen/Viking-33B",
+     "note": ""
+    },
+    {
+     "scope": "provider",
+     "field": "control",
+     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20250405074548/https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm",
+     "note": "AMD 10-Q: acquisition of Silo AI completed 2024-08-09"
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -1749,10 +2449,12 @@
    "tier": "C",
    "id": "borealis2-26b",
    "name": "borealis2 26B-A4B (preview)",
+   "family": "borealis2",
    "provider": "National Library of Norway",
    "provider_country": "NO",
    "region": "europe",
    "control": "independent",
+   "majority_owner": "",
    "origin": "finetune-foreign",
    "base_model": "Gemma 4 26B-A4B (Google, US)",
    "license_class": "custom",
@@ -1778,33 +2480,49 @@
    "notes": "Norway is not in the EU. nb-license-1.0.",
    "hf_repo": "NbAiLab/borealis2-26b-a4b-preview",
    "hf_created": "2026-08-21",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "Norway is not in the EU.",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "license_class",
      "url": "https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
      "note": "nb-license-1.0"
     },
     {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -1814,10 +2532,12 @@
    "tier": "C",
    "id": "holo4-35b-a3b",
    "name": "Holo4 35B-A3B",
+   "family": "Holo4",
    "provider": "H Company",
    "provider_country": "FR",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "finetune-foreign",
    "base_model": "Qwen3.6-35B-A3B (Alibaba, CN)",
    "license_class": "osi",
@@ -1843,26 +2563,39 @@
    "notes": "Computer-use agent model.",
    "hf_repo": "Hcompany/Holo4-35B-A3B",
    "hf_created": "2026-09-24",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/Hcompany/Holo4-35B-A3B",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
+     "scope": "family",
      "field": "origin",
      "url": "https://huggingface.co/Hcompany/Holo4-35B-A3B",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123827/https://huggingface.co/Hcompany/Holo4-35B-A3B",
      "note": ""
     },
     {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/Hcompany/Holo4-35B-A3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123827/https://huggingface.co/Hcompany/Holo4-35B-A3B",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -1872,10 +2605,12 @@
    "tier": "C",
    "id": "poro-2-8b",
    "name": "Poro 2 8B Instruct",
-   "provider": "AMD Silo AI, TurkuNLP",
+   "family": "Poro 2",
+   "provider": "Silo AI (AMD)",
    "provider_country": "FI",
    "region": "eu",
    "control": "acquired-non-eu",
+   "majority_owner": "AMD (US)",
    "origin": "continued-foreign",
    "base_model": "Llama 3.1 8B (Meta, US)",
    "license_class": "custom",
@@ -1896,52 +2631,74 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
-   "flags": "acquired non eu; custom licence; non-European base model",
+   "flags": "acquired non-EU; custom licence; non-European base model",
    "hbd_involvement": "",
    "notes": "Llama 3.3 licence inherited.",
    "hf_repo": "LumiOpen/Llama-Poro-2-8B-Instruct",
    "hf_created": "2025-05-27",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "Acquired by AMD in August 2024.",
+   "family_notes": "Built by AMD Silo AI with TurkuNLP.",
+   "repo_verified_org": false,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "control",
-     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "license_class",
-     "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "llama3.3"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
      "note": "LUMI per research summary"
     },
     {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
+     "note": "llama3.3"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
+     "note": ""
+    },
+    {
+     "scope": "provider",
+     "field": "control",
+     "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20250405074548/https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm",
+     "note": "AMD 10-Q: acquisition of Silo AI completed 2024-08-09"
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -1951,10 +2708,12 @@
    "tier": "C",
    "id": "xlstm-7b",
    "name": "xLSTM 7B",
+   "family": "xLSTM",
    "provider": "NXAI",
    "provider_country": "AT",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
    "license_class": "custom",
@@ -1980,47 +2739,69 @@
    "notes": "Recurrent (mLSTM) architecture, no attention, constant-size state. Base model only, mostly English (DCLM). NXAI Community License (based on Llama 3; attribution and notice required).",
    "hf_repo": "NX-AI/xLSTM-7b",
    "hf_created": "2024-12-11",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/NX-AI/xLSTM-7b",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/NX-AI/xLSTM-7b",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "license_class",
-     "url": "https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "NXAI Community License"
-    },
-    {
-     "field": "data",
-     "url": "https://huggingface.co/NX-AI/xLSTM-7b",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": "model card: DCLM and selected data, about 2.3T tokens"
-    },
-    {
+     "scope": "family",
      "field": "compute",
      "url": "https://huggingface.co/NX-AI/xLSTM-7b",
-     "status": "secondary",
+     "issuer": "provider",
+     "checked": "no",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124104/https://huggingface.co/NX-AI/xLSTM-7b",
      "note": "not stated"
     },
     {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/NX-AI/xLSTM-7b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124104/https://huggingface.co/NX-AI/xLSTM-7b",
+     "note": "model card: DCLM and selected data, about 2.3T tokens"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124237/https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE",
+     "note": "NXAI Community License"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/NX-AI/xLSTM-7b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124104/https://huggingface.co/NX-AI/xLSTM-7b",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/NX-AI/xLSTM-7b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124104/https://huggingface.co/NX-AI/xLSTM-7b",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
     }
    ],
@@ -2030,10 +2811,12 @@
    "tier": "pending",
    "id": "domyn-small",
    "name": "Domyn Small v1.0",
+   "family": "Domyn Small",
    "provider": "Domyn (formerly iGenius)",
    "provider_country": "IT",
    "region": "eu",
    "control": "independent",
+   "majority_owner": "",
    "origin": "continued-own",
    "base_model": "Italia 10B",
    "license_class": "unclear",
@@ -2053,39 +2836,55 @@
    "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
    "mlx_build": "leonsarmiento/Domyn-Small-v1.0-8bit-mlx",
    "mlx_build_bits": "8",
-   "mlx_build_publisher": "community",
+   "mlx_build_publisher": "individual",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Hub metadata: license 'other' with license_name 'mit'. Tier pending until the licence text is checked.",
    "hf_repo": "domyn/Domyn-Small-v1.0",
    "hf_created": "2026-05-09",
+   "last_reviewed": "2026-10-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
    "sources": [
     {
-     "field": "provider",
-     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "status": "primary",
-     "retrieved": "2026-10-08",
-     "note": ""
-    },
-    {
-     "field": "origin",
-     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "status": "secondary",
-     "retrieved": "2026-10-08",
-     "note": "continued pre-training of Italia 10B per research summary"
-    },
-    {
+     "scope": "family",
      "field": "license_class",
      "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "status": "primary",
+     "issuer": "provider",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
      "note": "license: other, license_name: mit"
     },
     {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "issuer": "provider",
+     "checked": "no",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "note": "continued pre-training of Italia 10B per research summary"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "note": ""
+    },
+    {
+     "scope": "provider",
      "field": "cop_signatory",
      "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "status": "primary",
+     "issuer": "official",
+     "checked": "yes",
      "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Domyn listed (2026-10-07)"
     }
    ],
@@ -2094,8 +2893,9 @@
      "id": "domyn-small",
      "repo": "leonsarmiento/Domyn-Small-v1.0-8bit-mlx",
      "bits": "8",
-     "publisher_kind": "community",
-     "note": ""
+     "note": "",
+     "publisher": "individual",
+     "verified_org": false
     }
    ]
   }

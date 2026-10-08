@@ -38,6 +38,12 @@
   a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
   .src { font-size:12px; color:var(--muted); }
   footer { margin-top:30px; color:var(--muted); font-size:13px; }
+  .iss { display:inline-block; font-size:11px; padding:0 6px; border-radius:9px; border:1px solid var(--line); margin-right:4px; }
+  .iss.provider { background:#e6fcf5; border-color:#96f2d7; } .iss.official { background:#e7f5ff; border-color:#a5d8ff; }
+  .iss.academic { background:#f3f0ff; border-color:#d0bfff; } .iss.press { background:#fff9db; border-color:#ffe066; }
+  .iss.community, .iss.individual { background:#fff0f6; border-color:#fcc2d7; } .iss.hbd { background:#f1f3f5; }
+  .iss.curated, .iss.organisation { background:#f8f9fa; }
+  .legend span { margin-right:10px; }
 </style>
 </head>
 <body>
@@ -105,33 +111,50 @@ function render() {
       : `<td class="${num ? "num" : ""}${k === "flags" ? " flags" : ""}">${esc(m[k])}</td>`).join("") + "</tr>").join("");
 }
 
+const ISSUER = {provider:"provider", official:"official", academic:"academic", press:"press",
+  community:"community", hbd:"own measurement"};
+const PUBLISHER = {official:"provider (official)", hbd:"here be dragons", curated:"curated community org",
+  organisation:"other organisation", individual:"individual", unknown:"unknown"};
+function badge(kind, label) { return `<span class="iss ${esc(kind)}">${esc(label)}</span>`; }
 function sources(m, field) {
   const s = m.sources.filter(x => x.field === field);
-  if (!s.length && field === "license_class") return link(`https://huggingface.co/api/models/${m.hf_repo}`, "Hub metadata");
-  return s.map(x => `${link(x.url, x.status)}${x.note ? " — " + esc(x.note) : ""}`).join("; ") || "—";
+  if (!s.length && field === "license_class")
+    return badge("provider", "provider") + link(`https://huggingface.co/api/models/${m.hf_repo}`, "Hub metadata");
+  return s.map(x => badge(x.issuer, ISSUER[x.issuer] || x.issuer) +
+    link(x.url, x.scope === "model" ? "model source" : x.scope + " source") +
+    (x.archive_url ? " · " + link(x.archive_url, "archived") : "") +
+    (x.checked === "yes" ? "" : " · <i>not checked, does not count</i>") +
+    (x.note ? " — " + esc(x.note) : "")).join("<br>") || "—";
 }
 
 function detail(id) {
   const m = DATA.models.find(x => x.id === id); selected = id; render();
+  if (location.hash.slice(1) !== id) history.replaceState(null, "", "#" + id);
   const rows = [
-    ["Provider", m.provider, "provider"], ["Country / region", `${m.provider_country} / ${m.region}`],
-    ["Control", m.control, "control"], ["Origin", m.origin + (m.base_model ? ` (${m.base_model})` : ""), "origin"],
+    ["Provider", m.provider + (m.provider_notes ? ` — ${m.provider_notes}` : ""), "provider_id"],
+    ["Country / region", `${m.provider_country} / ${m.region}`],
+    ["Control", m.control + (m.majority_owner ? ` (${m.majority_owner})` : ""), "control"],
+    ["Family", m.family + (m.family_notes ? ` — ${m.family_notes}` : "")], ["Origin", m.origin + (m.base_model ? ` (${m.base_model})` : ""), "origin"],
     ["Licence", `${m.license_class} (${m.license})`, "license_class"], ["Training data", m.data, "data"],
     ["Training compute", m.compute, "compute"], ["AI Act training summary", m.ai_act_summary, "ai_act_summary"],
     ["GPAI Code of Practice", m.cop_signatory, "cop_signatory"],
   ];
-  const builds = m.mlx_builds.map(b => `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit, ${esc(b.publisher_kind)})`).join(", ");
+  const builds = m.mlx_builds.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) +
+    `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit)`).join("<br>");
   $("detail").innerHTML = `
     <h2>${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></h2>
     <div class="src">${esc(DATA.tiers[m.tier])}</div>
-    <p>${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)} · ${esc(m.params_b)}B parameters ·
+    <p>${badge("provider", "provider repo" + (m.repo_verified_org ? " ✓ verified" : ""))}${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)} · ${esc(m.params_b)}B parameters ·
       context ${esc(m.context || "?")} · <code>${esc(m.model_type)}</code> · ${esc(m.modalities)}</p>
+    <div class="src legend">Source issuers: ${Object.entries(ISSUER).map(([k, v]) => badge(k, v)).join("")}
+      — only provider, official, academic and press sources that we checked count for the tier.
+      Last reviewed ${esc(m.last_reviewed)}.</div>
     <table>${rows.map(([l, v, f]) => `<tr><td>${esc(l)}</td><td>${esc(v)}<div class="src">${f ? sources(m, f) : ""}</div></td></tr>`).join("")}</table>
     <h3>On a Mac</h3>
     <ul>
       <li>mlx-vlm: <b>${esc(m.mlx_vlm)}</b>${m.mlx_vlm_detail ? " — " + esc(m.mlx_vlm_detail) : ""} <span class="src">(checked ${esc(m.mlx_vlm_checked || "—")})</span></li>
       <li>Weights: ${esc(m.size_4bit_gb)} GB at 4 bit, ${esc(m.size_8bit_gb)} GB at 8 bit</li>
-      ${builds ? `<li>MLX builds: ${builds}</li>` : ""}
+      ${builds ? `<li>MLX builds:<br>${builds}</li>` : ""}
     </ul>
     ${m.flags ? `<p><b>Flags:</b> ${esc(m.flags)}</p>` : ""}
     ${m.hbd_involvement ? `<p><b>Our involvement:</b> ${esc(m.hbd_involvement)}</p>` : ""}
@@ -150,6 +173,10 @@ fetch("scorecard.json").then(r => r.json()).then(d => {
   $("rows").onclick = e => { const tr = e.target.closest("tr"); if (tr) detail(tr.dataset.id); };
   document.querySelectorAll(".filters input, .filters select").forEach(el => el.addEventListener("change", render));
   render();
+  // Deep links: index.html#model-id opens the detail view.
+  const open = () => { const id = decodeURIComponent(location.hash.slice(1)); if (d.models.some(m => m.id === id)) detail(id); };
+  window.addEventListener("hashchange", open);
+  open();
 });
 </script>
 </body>

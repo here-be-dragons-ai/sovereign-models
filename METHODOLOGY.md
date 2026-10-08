@@ -40,16 +40,32 @@ mostly signed by large providers.
 ## Sources
 
 Every criterion except `region` and `license_class` needs a source in `data/sources.csv`
-unless its value is `unknown`. Each source has a status:
+unless its value is `unknown`. Facts are stored at the level where they are true (provider,
+family or model, see `data/schema.md`), so one source can back a fact for every model of a family.
 
-- `primary`: the provider or an official document (model card, licence file, technical
-  report, regulator list, stock-exchange filing).
-- `press`: reputable reporting.
-- `secondary`: a research summary not yet checked against a primary source.
+Each source records **who published it** (`issuer`) and **whether we checked it** (`checked`):
 
-**Only `primary` and `press` count for the tier.** A value backed only by a `secondary`
-source is treated as `unknown`. Licence, parameter count, architecture and context come from
-the Hugging Face Hub API (`scripts/fetch_hf_facts.py`).
+| Issuer | Counts for the tier |
+|---|---|
+| `provider`: the model maker itself (model card in its own Hub organisation, its website, report or licence) | yes |
+| `official`: public authority or official document (Commission lists, stock-exchange filings) | yes |
+| `academic`: scholarly publication by third parties | yes |
+| `press`: editorial media | yes |
+| `community`: individuals or third parties without editorial control | **no** |
+| `hbd`: our own measurement | for the Mac columns only |
+
+A source counts only if its issuer counts **and** `checked = yes`. Anything else is shown but
+treated as `unknown` for the tier.
+
+The issuer is not taken on trust: each provider lists its official Hub organisations, GitHub
+organisations and web domains in `data/providers.csv`, and `scripts/validate.py` derives the
+issuer from the URL where it can and fails on a mismatch. For the Hub, `scripts/classify_namespaces.py`
+records whether a namespace is an organisation or a personal account and whether the Hub has
+verified it. A Hub page outside the provider's own organisation is `community`.
+
+Every source gets a Wayback Machine snapshot (`archive_url`), because model cards change. Licence,
+parameter count, architecture and context come from the Hugging Face Hub API
+(`scripts/fetch_hf_facts.py`).
 
 ## Tiers
 
@@ -76,8 +92,10 @@ involved.
   test the output. The checked revision is recorded.
 - `size_4bit_gb`, `size_8bit_gb`: parameters × 4.5 or 8.5 bits per weight (MLX affine
   quantization, group size 64). The KV cache comes on top.
-- `mlx_build`: the most trusted existing MLX build, in the order official, ours, mlx-community,
-  lmstudio-community, other community.
+- `mlx_build`: the most trusted existing MLX build. The publisher is derived from the Hub
+  namespace: `official` (the provider's own organisation), `hbd` (ours), `curated`
+  (mlx-community, lmstudio-community), `organisation` (any other organisation), `individual`
+  (a personal account), in that order.
 
 ## Limits
 

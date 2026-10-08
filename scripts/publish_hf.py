@@ -46,8 +46,10 @@ mlx-vlm on Apple Silicon. Tiers are computed by rules; every fact has a source.
 
 - `scorecard.csv`: one row per model, including the computed tier and flags
 - `scorecard.json`: the same plus all sources and MLX builds per model
-- `data/`: the curated inputs (`scorecard.csv`, `sources.csv`, `mlx_builds.csv`) and the generated
-  `hf_facts.csv` and `mlx_support.csv`
+- `data/`: the curated inputs (`providers.csv`, `families.csv`, `scorecard.csv`, `sources.csv`,
+  `mlx_builds.csv`) and the generated `hf_facts.csv`, `hf_namespaces.csv` and `mlx_support.csv`.
+  Every source records its issuer (provider, official, academic, press, community) and a Wayback
+  snapshot; only checked provider, official, academic and press sources count for the tier
 - `METHODOLOGY.md`: criteria, tier rules and limits
 
 Source of truth: the GitHub repository `here-be-dragons-ai/sovereign-models`. Corrections with a

@@ -10,11 +10,14 @@ for the MVP scope.
 ## How it works
 
 ```
-data/scorecard.csv     curated facts, one row per model          (edit by hand, review in PRs)
-data/sources.csv       one source per fact, with status          (edit by hand)
-data/mlx_builds.csv    known MLX builds per model                (edit by hand)
-data/hf_facts.csv      licence, size, architecture from the Hub  (scripts/fetch_hf_facts.py)
-data/mlx_support.csv   does mlx-vlm load it?                     (scripts/check_mlx_support.py)
+data/providers.csv     organisations: seat, control, owners, official namespaces   (by hand)
+data/families.csv      model families: origin, licence, data, compute              (by hand)
+data/scorecard.csv     models: repo, family, overrides                             (by hand)
+data/sources.csv       one source per fact, with issuer, checked, archive          (by hand + scripts/archive_sources.py)
+data/mlx_builds.csv    known MLX builds per model                                  (by hand)
+data/hf_facts.csv      licence, size, architecture from the Hub                    (scripts/fetch_hf_facts.py)
+data/hf_namespaces.csv Hub namespaces: organisation or user, verified             (scripts/classify_namespaces.py)
+data/mlx_support.csv   does mlx-vlm load it?                                       (scripts/check_mlx_support.py)
         │
         ▼  scripts/build.py   (validates, computes tiers and sizes)
 dist/scorecard.csv, dist/scorecard.json
@@ -33,6 +36,8 @@ Tiers are computed, never set by hand. The rules and their limits are in
 
 ```bash
 python3 scripts/fetch_hf_facts.py                    # refresh Hub facts
+python3 scripts/classify_namespaces.py               # organisation or user, per Hub namespace
+python3 scripts/archive_sources.py                   # Wayback snapshots for new sources
 PYTHONPATH=~/src/mlx-vlm-main \
   ~/src/mlx/.venv/bin/python scripts/check_mlx_support.py   # needs mlx and mlx-vlm
 python3 scripts/validate.py                          # checks and prints the tiers
@@ -44,11 +49,17 @@ python3 scripts/publish_hf.py                        # needs huggingface_hub and
 
 ## Adding or correcting a model
 
-1. Add or edit the row in `data/scorecard.csv` (allowed values: `data/schema.md`).
-2. Add a source for every field you set in `data/sources.csv`. Mark it `primary` (provider or
-   official document), `press` or `secondary`. Only `primary` and `press` count for the tier.
-3. Run `python3 scripts/fetch_hf_facts.py <org/repo>` and `python3 scripts/validate.py`.
-4. Open a pull request.
+1. Add the provider to `data/providers.csv` if it is new, with its official Hub organisations,
+   GitHub organisations and domains.
+2. Add the family to `data/families.csv` and the model to `data/scorecard.csv`
+   (allowed values: `data/schema.md`).
+3. Add a source for every fact in `data/sources.csv`, at the scope where it is stated, with its
+   `issuer` (`provider`, `official`, `academic`, `press`, `community`) and `checked`. Only
+   checked provider, official, academic and press sources count for the tier; `validate.py`
+   checks the issuer against the URL.
+4. Run `fetch_hf_facts.py <org/repo>`, `classify_namespaces.py`, `archive_sources.py` and
+   `validate.py`.
+5. Open a pull request.
 
 ## Licence
 

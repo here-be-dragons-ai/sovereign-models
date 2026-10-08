@@ -15,5 +15,7 @@ jobs:
           python-version: "3.12"
       - name: Check data and compute tiers
         run: python3 scripts/validate.py
+      - name: Tests
+        run: python3 -m unittest discover tests
       - name: Build
         run: python3 scripts/build.py

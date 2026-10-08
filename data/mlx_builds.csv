@@ -1,18 +1,18 @@
-id,repo,bits,publisher_kind,note
-alia-40b,tonidurans/ALIA-40b-instruct-2605-mlx-q4,4,community,built from the earlier 2605 release
-bielik-11b-v3,speakleash/Bielik-11B-v3.0-Instruct-MLX-8bit,8,official,
-bielik-11b-v3,speakleash/Bielik-11B-v3.0-Instruct-MLX-4bit,4,official,
-devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-8bit,8,mlx-community,
-devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit,4,mlx-community,
-domyn-small,leonsarmiento/Domyn-Small-v1.0-8bit-mlx,8,community,
-eurollm-22b,mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit,8,mlx-community,
-eurollm-22b,mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit,4,mlx-community,
-kolibri-1,here-be-dragons-ai/Kolibri-1-MLX-3bit,3.61,hbd,mixed 3/6 bit; our own build
-lucie-7b,mlx-community/Lucie-7B-Instruct-4bit,4,mlx-community,earlier Lucie-7B-Instruct release
-luciole-23b,bumblebuttpow/Luciole-23B-Instruct-1.1-4bit-mlx,4,community,
-magistral-small-2509,lmstudio-community/Magistral-Small-2509-MLX-8bit,8,lmstudio-community,
-ministral-3-14b,mlx-community/Ministral-3-14B-Instruct-2512-8bit,8,mlx-community,
-mistral-small-3.2,mlx-community/Mistral-Small-3.2-24B-Instruct-2506-8bit,8,mlx-community,
-mistral-small-4,mlx-community/Mistral-Small-4-119B-2603-4bit,4,mlx-community,63 GB; does not fit 48 GB
-pleias-rag-1b,mlx-community/Pleias-RAG-1B-6-bit,6,mlx-community,
-salamandra-7b,mlx-community/salamandra-7b-instruct-mlx-bf16,16,mlx-community,
+id,repo,bits,note
+alia-40b,tonidurans/ALIA-40b-instruct-2605-mlx-q4,4,built from the earlier 2605 release
+bielik-11b-v3,speakleash/Bielik-11B-v3.0-Instruct-MLX-8bit,8,
+bielik-11b-v3,speakleash/Bielik-11B-v3.0-Instruct-MLX-4bit,4,
+devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-8bit,8,
+devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit,4,
+domyn-small,leonsarmiento/Domyn-Small-v1.0-8bit-mlx,8,
+eurollm-22b,mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit,8,
+eurollm-22b,mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit,4,
+kolibri-1,here-be-dragons-ai/Kolibri-1-MLX-3bit,3.61,mixed 3/6 bit; our own build
+lucie-7b,mlx-community/Lucie-7B-Instruct-4bit,4,earlier Lucie-7B-Instruct release
+luciole-23b,bumblebuttpow/Luciole-23B-Instruct-1.1-4bit-mlx,4,
+magistral-small-2509,lmstudio-community/Magistral-Small-2509-MLX-8bit,8,
+ministral-3-14b,mlx-community/Ministral-3-14B-Instruct-2512-8bit,8,
+mistral-small-3.2,mlx-community/Mistral-Small-3.2-24B-Instruct-2506-8bit,8,
+mistral-small-4,mlx-community/Mistral-Small-4-119B-2603-4bit,4,63 GB; does not fit 48 GB
+pleias-rag-1b,mlx-community/Pleias-RAG-1B-6-bit,6,
+salamandra-7b,mlx-community/salamandra-7b-instruct-mlx-bf16,16,

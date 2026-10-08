@@ -1,138 +1,124 @@
-id,field,url,status,retrieved,note
-luciole-23b,provider,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,primary,2026-10-08,
-luciole-23b,origin,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,primary,2026-10-08,
-luciole-23b,data,https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset,primary,2026-10-08,training data published
-luciole-23b,compute,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,primary,2026-10-08,model card: GENCI / IDRIS Jean Zay
-luciole-23b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,LINAGORA listed (2026-10-07)
-luciole-8b,provider,https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,primary,2026-10-08,
-luciole-8b,origin,https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,primary,2026-10-08,
-luciole-8b,data,https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset,primary,2026-10-08,training data published
-luciole-8b,compute,https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,primary,2026-10-08,model card: GENCI / IDRIS Jean Zay
-luciole-8b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,LINAGORA listed (2026-10-07)
-lucie-7b,provider,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,primary,2026-10-08,
-lucie-7b,origin,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,primary,2026-10-08,
-lucie-7b,data,https://huggingface.co/datasets/OpenLLM-France/Lucie-Training-Dataset,primary,2026-10-08,training data published
-lucie-7b,compute,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,primary,2026-10-08,model card: GENCI / IDRIS Jean Zay
-lucie-7b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,LINAGORA listed (2026-10-07)
-eurollm-22b,provider,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,primary,2026-10-08,
-eurollm-22b,origin,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,primary,2026-10-08,
-eurollm-22b,data,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,primary,2026-10-08,"data mix described, corpus not published as one dataset"
-eurollm-22b,compute,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,primary,2026-10-08,"model card: MareNostrum 5, EuroHPC grant"
-eurollm-22b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-eurollm-9b,provider,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,primary,2026-10-08,
-eurollm-9b,origin,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,primary,2026-10-08,
-eurollm-9b,data,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,primary,2026-10-08,"data mix described, corpus not published as one dataset"
-eurollm-9b,compute,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,secondary,2026-10-08,not stated on this card
-eurollm-9b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-alia-40b,provider,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,primary,2026-10-08,
-alia-40b,origin,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,primary,2026-10-08,
-alia-40b,data,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,primary,2026-10-08,
-alia-40b,compute,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,primary,2026-10-08,model card: MareNostrum 5 (EuroHPC)
-alia-40b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-salamandra-7b,provider,https://huggingface.co/BSC-LT/salamandra-7b-instruct,primary,2026-10-08,
-salamandra-7b,origin,https://huggingface.co/BSC-LT/salamandra-7b-instruct,primary,2026-10-08,
-salamandra-7b,data,https://huggingface.co/BSC-LT/salamandra-7b-instruct,primary,2026-10-08,
-salamandra-7b,compute,https://huggingface.co/BSC-LT/salamandra-7b-instruct,primary,2026-10-08,model card: MareNostrum 5 (EuroHPC)
-salamandra-7b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-tildeopen-30b,provider,https://huggingface.co/TildeAI/TildeOpen-30b-64k,primary,2026-10-08,
-tildeopen-30b,origin,https://huggingface.co/TildeAI/TildeOpen-30b-64k,primary,2026-10-08,
-tildeopen-30b,data,https://huggingface.co/TildeAI/TildeOpen-30b-64k,primary,2026-10-08,
-tildeopen-30b,compute,https://huggingface.co/TildeAI/TildeOpen-30b-64k,primary,2026-10-08,model card: funded by EuroHPC JU Large AI Grand Challenge
-tildeopen-30b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-apertus-1.5-8b,provider,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,primary,2026-10-08,
-apertus-1.5-8b,origin,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,primary,2026-10-08,continued pre-training of Apertus 1
-apertus-1.5-8b,license_class,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,primary,2026-10-08,Apache-2.0 plus AUP v1.5
-apertus-1.5-8b,data,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,primary,2026-10-08,model card: only fully open training data
-apertus-1.5-8b,compute,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,secondary,2026-10-08,CSCS Alps per press; not stated on the card
-apertus-1.5-8b,ai_act_summary,https://huggingface.co/swiss-ai/Apertus-v1.5-8B/blob/main/Apertus_1_5_EU_Public_Summary.pdf,primary,2026-10-08,
-apertus-1.5-8b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-apertus-1.5-70b,provider,https://huggingface.co/swiss-ai/Apertus-v1.5-70B,primary,2026-10-08,
-apertus-1.5-70b,origin,https://huggingface.co/swiss-ai/Apertus-v1.5-70B,primary,2026-10-08,continued pre-training of Apertus 1
-apertus-1.5-70b,license_class,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,primary,2026-10-08,Apache-2.0 plus AUP v1.5
-apertus-1.5-70b,data,https://huggingface.co/swiss-ai/Apertus-v1.5-70B,primary,2026-10-08,model card: only fully open training data
-apertus-1.5-70b,compute,https://huggingface.co/swiss-ai/Apertus-v1.5-70B,secondary,2026-10-08,CSCS Alps per press; not stated on the card
-apertus-1.5-70b,ai_act_summary,https://huggingface.co/swiss-ai/Apertus-v1.5-70B/blob/main/Apertus_1_5_EU_Public_Summary.pdf,primary,2026-10-08,
-apertus-1.5-70b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-viking-33b,provider,https://huggingface.co/LumiOpen/Viking-33B,primary,2026-10-08,
-viking-33b,control,https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm,primary,2026-10-08,AMD 10-Q: acquisition of Silo AI completed 2024-08-09
-viking-33b,origin,https://huggingface.co/LumiOpen/Viking-33B,primary,2026-10-08,
-viking-33b,data,https://huggingface.co/LumiOpen/Viking-33B,primary,2026-10-08,
-viking-33b,compute,https://huggingface.co/LumiOpen/Viking-33B,primary,2026-10-08,"model card: LUMI, 1024 AMD MI250X"
-viking-33b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-helium-1-2b,provider,https://huggingface.co/kyutai/helium-1-2b,primary,2026-10-08,
-helium-1-2b,origin,https://huggingface.co/kyutai/helium-1-2b,primary,2026-10-08,
-helium-1-2b,data,https://huggingface.co/kyutai/helium-1-2b,primary,2026-10-08,"model card: Common Crawl, processed with dactory"
-helium-1-2b,compute,https://huggingface.co/kyutai/helium-1-2b,primary,2026-10-08,64 H100; location not stated
-helium-1-2b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-pleias-rag-1b,provider,https://huggingface.co/PleIAs/Pleias-RAG-1B,primary,2026-10-08,
-pleias-rag-1b,origin,https://arxiv.org/abs/2504.18225,primary,2026-10-08,model report
-pleias-rag-1b,data,https://huggingface.co/datasets/PleIAs/common_corpus,primary,2026-10-08,synthetic data built from Common Corpus
-pleias-rag-1b,compute,https://huggingface.co/PleIAs/Pleias-RAG-1B,secondary,2026-10-08,not stated on the card
-pleias-rag-1b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,Pleias listed (2026-10-07)
-kolibri-1,provider,https://huggingface.co/Aleph-Alpha/Kolibri-1,primary,2026-10-08,
-kolibri-1,control,https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/,press,2026-10-08,definitive merger agreement 2026-09-16
-kolibri-1,origin,https://huggingface.co/Aleph-Alpha/Kolibri-1,primary,2026-10-08,
-kolibri-1,data,https://huggingface.co/Aleph-Alpha/Kolibri-1,primary,2026-10-08,card documents the data mix and synthetic data
-kolibri-1,compute,https://huggingface.co/Aleph-Alpha/Kolibri-1,primary,2026-10-08,768 B200; location not stated
-kolibri-1,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,Aleph Alpha listed (2026-10-07)
-devstral-small-2,provider,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,primary,2026-10-08,
-devstral-small-2,origin,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,primary,2026-10-08,Mistral's own model line
-devstral-small-2,data,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,primary,2026-10-08,training data not described
-devstral-small-2,compute,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,secondary,2026-10-08,not stated
-devstral-small-2,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,Mistral AI listed (2026-10-07)
-magistral-small-2509,provider,https://huggingface.co/mistralai/Magistral-Small-2509,primary,2026-10-08,
-magistral-small-2509,origin,https://huggingface.co/mistralai/Magistral-Small-2509,primary,2026-10-08,Mistral's own model line
-magistral-small-2509,data,https://huggingface.co/mistralai/Magistral-Small-2509,primary,2026-10-08,training data not described
-magistral-small-2509,compute,https://huggingface.co/mistralai/Magistral-Small-2509,secondary,2026-10-08,not stated
-magistral-small-2509,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,Mistral AI listed (2026-10-07)
-mistral-small-3.2,provider,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,primary,2026-10-08,
-mistral-small-3.2,origin,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,primary,2026-10-08,Mistral's own model line
-mistral-small-3.2,data,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,primary,2026-10-08,training data not described
-mistral-small-3.2,compute,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,secondary,2026-10-08,not stated
-mistral-small-3.2,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,Mistral AI listed (2026-10-07)
-ministral-3-14b,provider,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,primary,2026-10-08,
-ministral-3-14b,origin,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,primary,2026-10-08,Mistral's own model line
-ministral-3-14b,data,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,primary,2026-10-08,training data not described
-ministral-3-14b,compute,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,secondary,2026-10-08,not stated
-ministral-3-14b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,Mistral AI listed (2026-10-07)
-mistral-small-4,provider,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,primary,2026-10-08,
-mistral-small-4,origin,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,primary,2026-10-08,Mistral's own model line
-mistral-small-4,data,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,primary,2026-10-08,training data not described
-mistral-small-4,compute,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,secondary,2026-10-08,not stated
-mistral-small-4,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,Mistral AI listed (2026-10-07)
-bielik-11b-v3,provider,https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct,primary,2026-10-08,
-bielik-11b-v3,origin,https://arxiv.org/abs/2601.11579,primary,2026-10-08,technical report
-bielik-11b-v3,data,https://arxiv.org/abs/2601.11579,primary,2026-10-08,
-bielik-11b-v3,compute,https://arxiv.org/abs/2601.11579,secondary,2026-10-08,Helios (PL) per research summary; not checked
-bielik-11b-v3,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-sui-1-24b,provider,https://huggingface.co/ellamind/sui-1-24b,primary,2026-10-08,
-sui-1-24b,origin,https://huggingface.co/ellamind/sui-1-24b,primary,2026-10-08,
-sui-1-24b,compute,https://huggingface.co/ellamind/sui-1-24b,secondary,2026-10-08,not stated
-sui-1-24b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-domyn-small,provider,https://huggingface.co/domyn/Domyn-Small-v1.0,primary,2026-10-08,
-domyn-small,origin,https://huggingface.co/domyn/Domyn-Small-v1.0,secondary,2026-10-08,continued pre-training of Italia 10B per research summary
-domyn-small,license_class,https://huggingface.co/domyn/Domyn-Small-v1.0,primary,2026-10-08,"license: other, license_name: mit"
-domyn-small,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,Domyn listed (2026-10-07)
-minerva-7b,provider,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,primary,2026-10-08,
-minerva-7b,origin,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,primary,2026-10-08,
-minerva-7b,compute,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,secondary,2026-10-08,Leonardo (CINECA) per research summary
-minerva-7b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-xlstm-7b,provider,https://huggingface.co/NX-AI/xLSTM-7b,primary,2026-10-08,
-xlstm-7b,origin,https://huggingface.co/NX-AI/xLSTM-7b,primary,2026-10-08,
-xlstm-7b,license_class,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,primary,2026-10-08,NXAI Community License
-xlstm-7b,data,https://huggingface.co/NX-AI/xLSTM-7b,primary,2026-10-08,"model card: DCLM and selected data, about 2.3T tokens"
-xlstm-7b,compute,https://huggingface.co/NX-AI/xLSTM-7b,secondary,2026-10-08,not stated
-xlstm-7b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-holo4-35b-a3b,provider,https://huggingface.co/Hcompany/Holo4-35B-A3B,primary,2026-10-08,
-holo4-35b-a3b,origin,https://huggingface.co/Hcompany/Holo4-35B-A3B,primary,2026-10-08,
-holo4-35b-a3b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-poro-2-8b,provider,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,primary,2026-10-08,
-poro-2-8b,control,https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm,primary,2026-10-08,
-poro-2-8b,origin,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,primary,2026-10-08,
-poro-2-8b,license_class,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,primary,2026-10-08,llama3.3
-poro-2-8b,compute,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,secondary,2026-10-08,LUMI per research summary
-poro-2-8b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
-borealis2-26b,provider,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,primary,2026-10-08,
-borealis2-26b,origin,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,primary,2026-10-08,
-borealis2-26b,license_class,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,primary,2026-10-08,nb-license-1.0
-borealis2-26b,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,primary,2026-10-08,not listed (2026-10-07)
+scope,subject,field,url,issuer,checked,retrieved,archive_url,note
+family,alia,compute,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,provider,yes,2026-10-08,https://web.archive.org/web/20261008123722/https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,model card: MareNostrum 5 (EuroHPC)
+family,alia,data,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,provider,yes,2026-10-08,https://web.archive.org/web/20261008123722/https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,
+family,alia,origin,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,provider,yes,2026-10-08,https://web.archive.org/web/20261008123722/https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,
+family,alia,provider_id,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,provider,yes,2026-10-08,https://web.archive.org/web/20261008123722/https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606,
+family,apertus-1.5,ai_act_summary,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,provider,yes,2026-10-08,https://web.archive.org/web/20261008131422/https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,EU AI Act public summary of training content (public copy in swiss-ai/apertus-legal)
+family,apertus-1.5,compute,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,provider,no,2026-10-08,https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B,CSCS Alps per press; not stated on the card
+family,apertus-1.5,compute,https://huggingface.co/swiss-ai/Apertus-v1.5-70B,provider,no,2026-10-08,https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B,CSCS Alps per press; not stated on the card
+family,apertus-1.5,data,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,provider,yes,2026-10-08,https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B,model card: only fully open training data
+family,apertus-1.5,data,https://huggingface.co/swiss-ai/Apertus-v1.5-70B,provider,yes,2026-10-08,https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B,model card: only fully open training data
+family,apertus-1.5,license_class,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,provider,yes,2026-10-08,https://web.archive.org/web/20261008123632/https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,Apache-2.0 plus AUP v1.5
+family,apertus-1.5,origin,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,provider,yes,2026-10-08,https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B,continued pre-training of Apertus 1
+family,apertus-1.5,origin,https://huggingface.co/swiss-ai/Apertus-v1.5-70B,provider,yes,2026-10-08,https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B,continued pre-training of Apertus 1
+family,apertus-1.5,provider_id,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,provider,yes,2026-10-08,https://web.archive.org/web/20261008130812/https://huggingface.co/swiss-ai/Apertus-v1.5-8B,
+family,apertus-1.5,provider_id,https://huggingface.co/swiss-ai/Apertus-v1.5-70B,provider,yes,2026-10-08,https://web.archive.org/web/20261001162931/https://huggingface.co/swiss-ai/Apertus-v1.5-70B,
+family,bielik-v3,compute,https://arxiv.org/abs/2601.11579,provider,no,2026-10-08,https://web.archive.org/web/20260518162008/https://arxiv.org/abs/2601.11579,Helios (PL) per research summary; not checked
+family,bielik-v3,data,https://arxiv.org/abs/2601.11579,provider,yes,2026-10-08,https://web.archive.org/web/20260518162008/https://arxiv.org/abs/2601.11579,
+family,bielik-v3,origin,https://arxiv.org/abs/2601.11579,provider,yes,2026-10-08,https://web.archive.org/web/20260518162008/https://arxiv.org/abs/2601.11579,technical report
+family,bielik-v3,provider_id,https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct,provider,yes,2026-10-08,https://web.archive.org/web/20261008130326/https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct,
+family,borealis2,license_class,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,provider,yes,2026-10-08,https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,nb-license-1.0
+family,borealis2,origin,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,provider,yes,2026-10-08,https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,
+family,borealis2,provider_id,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,provider,yes,2026-10-08,https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,
+family,devstral-small-2,compute,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,provider,no,2026-10-08,https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,not stated
+family,devstral-small-2,data,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,training data not described
+family,devstral-small-2,origin,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,Mistral's own model line
+family,devstral-small-2,provider_id,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,
+family,domyn-small,license_class,https://huggingface.co/domyn/Domyn-Small-v1.0,provider,yes,2026-10-08,https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0,"license: other, license_name: mit"
+family,domyn-small,origin,https://huggingface.co/domyn/Domyn-Small-v1.0,provider,no,2026-10-08,https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0,continued pre-training of Italia 10B per research summary
+family,domyn-small,provider_id,https://huggingface.co/domyn/Domyn-Small-v1.0,provider,yes,2026-10-08,https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0,
+family,eurollm-2512,compute,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,provider,no,2026-10-08,https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,not stated on this card
+family,eurollm-2512,data,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,"data mix described, corpus not published as one dataset"
+family,eurollm-2512,data,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,"data mix described, corpus not published as one dataset"
+family,eurollm-2512,origin,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,
+family,eurollm-2512,origin,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,
+family,eurollm-2512,provider_id,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,
+family,eurollm-2512,provider_id,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,
+family,helium-1,compute,https://huggingface.co/kyutai/helium-1-2b,provider,yes,2026-10-08,https://web.archive.org/web/20261008123950/https://huggingface.co/kyutai/helium-1-2b,64 H100; location not stated
+family,helium-1,data,https://huggingface.co/kyutai/helium-1-2b,provider,yes,2026-10-08,https://web.archive.org/web/20261008123950/https://huggingface.co/kyutai/helium-1-2b,"model card: Common Crawl, processed with dactory"
+family,helium-1,origin,https://huggingface.co/kyutai/helium-1-2b,provider,yes,2026-10-08,https://web.archive.org/web/20261008123950/https://huggingface.co/kyutai/helium-1-2b,
+family,helium-1,provider_id,https://huggingface.co/kyutai/helium-1-2b,provider,yes,2026-10-08,https://web.archive.org/web/20261008123950/https://huggingface.co/kyutai/helium-1-2b,
+family,holo4,origin,https://huggingface.co/Hcompany/Holo4-35B-A3B,provider,yes,2026-10-08,https://web.archive.org/web/20261008123827/https://huggingface.co/Hcompany/Holo4-35B-A3B,
+family,holo4,provider_id,https://huggingface.co/Hcompany/Holo4-35B-A3B,provider,yes,2026-10-08,https://web.archive.org/web/20261008123827/https://huggingface.co/Hcompany/Holo4-35B-A3B,
+family,kolibri-1,compute,https://huggingface.co/Aleph-Alpha/Kolibri-1,provider,yes,2026-10-08,https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1,768 B200; location not stated
+family,kolibri-1,data,https://huggingface.co/Aleph-Alpha/Kolibri-1,provider,yes,2026-10-08,https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1,card documents the data mix and synthetic data
+family,kolibri-1,origin,https://huggingface.co/Aleph-Alpha/Kolibri-1,provider,yes,2026-10-08,https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1,
+family,kolibri-1,provider_id,https://huggingface.co/Aleph-Alpha/Kolibri-1,provider,yes,2026-10-08,https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1,
+family,lucie-1.1,compute,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124452/https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,model card: GENCI / IDRIS Jean Zay
+family,lucie-1.1,data,https://huggingface.co/datasets/OpenLLM-France/Lucie-Training-Dataset,provider,yes,2026-10-08,https://web.archive.org/web/20261008124908/https://huggingface.co/datasets/OpenLLM-France/Lucie-Training-Dataset,training data published
+family,lucie-1.1,origin,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124452/https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,
+family,lucie-1.1,provider_id,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124452/https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,
+family,luciole-1.1,compute,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,model card: GENCI / IDRIS Jean Zay
+family,luciole-1.1,compute,https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,model card: GENCI / IDRIS Jean Zay
+family,luciole-1.1,data,https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset,provider,yes,2026-10-08,https://web.archive.org/web/20261008125007/https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset,training data published
+family,luciole-1.1,origin,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,
+family,luciole-1.1,origin,https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,
+family,luciole-1.1,provider_id,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,
+family,luciole-1.1,provider_id,https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,provider,yes,2026-10-08,https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,
+family,magistral-small,compute,https://huggingface.co/mistralai/Magistral-Small-2509,provider,no,2026-10-08,https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509,not stated
+family,magistral-small,data,https://huggingface.co/mistralai/Magistral-Small-2509,provider,yes,2026-10-08,https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509,training data not described
+family,magistral-small,origin,https://huggingface.co/mistralai/Magistral-Small-2509,provider,yes,2026-10-08,https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509,Mistral's own model line
+family,magistral-small,provider_id,https://huggingface.co/mistralai/Magistral-Small-2509,provider,yes,2026-10-08,https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509,
+family,minerva,compute,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,provider,no,2026-10-08,https://web.archive.org/web/20261008130151/https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,Leonardo (CINECA) per research summary
+family,minerva,origin,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,provider,yes,2026-10-08,https://web.archive.org/web/20261008130151/https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,
+family,minerva,provider_id,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,provider,yes,2026-10-08,https://web.archive.org/web/20261008130151/https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,
+family,ministral-3,compute,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,provider,no,2026-10-08,https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,not stated
+family,ministral-3,data,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,training data not described
+family,ministral-3,origin,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,Mistral's own model line
+family,ministral-3,provider_id,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,
+family,mistral-small-3,compute,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,provider,no,2026-10-08,https://web.archive.org/web/20261008125904/https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,not stated
+family,mistral-small-3,data,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,provider,yes,2026-10-08,https://web.archive.org/web/20261008125904/https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,training data not described
+family,mistral-small-3,origin,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,provider,yes,2026-10-08,https://web.archive.org/web/20261008125904/https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,Mistral's own model line
+family,mistral-small-3,provider_id,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,provider,yes,2026-10-08,https://web.archive.org/web/20261008125904/https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506,
+family,mistral-small-4,compute,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,provider,no,2026-10-08,https://web.archive.org/web/20261008130019/https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,not stated
+family,mistral-small-4,data,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,provider,yes,2026-10-08,https://web.archive.org/web/20261008130019/https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,training data not described
+family,mistral-small-4,origin,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,provider,yes,2026-10-08,https://web.archive.org/web/20261008130019/https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,Mistral's own model line
+family,mistral-small-4,provider_id,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,provider,yes,2026-10-08,https://web.archive.org/web/20261008130019/https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,
+family,pleias-rag,compute,https://huggingface.co/PleIAs/Pleias-RAG-1B,provider,no,2026-10-08,https://web.archive.org/web/20261008124733/https://huggingface.co/PleIAs/Pleias-RAG-1B,not stated on the card
+family,pleias-rag,data,https://huggingface.co/datasets/PleIAs/common_corpus,provider,yes,2026-10-08,https://web.archive.org/web/20261008125138/https://huggingface.co/datasets/PleIAs/common_corpus,synthetic data built from Common Corpus
+family,pleias-rag,origin,https://arxiv.org/abs/2504.18225,provider,yes,2026-10-08,https://web.archive.org/web/20261008123517/https://arxiv.org/abs/2504.18225,model report
+family,pleias-rag,provider_id,https://huggingface.co/PleIAs/Pleias-RAG-1B,provider,yes,2026-10-08,https://web.archive.org/web/20261008124733/https://huggingface.co/PleIAs/Pleias-RAG-1B,
+family,poro-2,compute,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,provider,no,2026-10-08,https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,LUMI per research summary
+family,poro-2,license_class,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,provider,yes,2026-10-08,https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,llama3.3
+family,poro-2,origin,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,provider,yes,2026-10-08,https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,
+family,poro-2,provider_id,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,provider,yes,2026-10-08,https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct,
+family,salamandra,compute,https://huggingface.co/BSC-LT/salamandra-7b-instruct,provider,yes,2026-10-08,https://web.archive.org/web/20261008123759/https://huggingface.co/BSC-LT/salamandra-7b-instruct,model card: MareNostrum 5 (EuroHPC)
+family,salamandra,data,https://huggingface.co/BSC-LT/salamandra-7b-instruct,provider,yes,2026-10-08,https://web.archive.org/web/20261008123759/https://huggingface.co/BSC-LT/salamandra-7b-instruct,
+family,salamandra,origin,https://huggingface.co/BSC-LT/salamandra-7b-instruct,provider,yes,2026-10-08,https://web.archive.org/web/20261008123759/https://huggingface.co/BSC-LT/salamandra-7b-instruct,
+family,salamandra,provider_id,https://huggingface.co/BSC-LT/salamandra-7b-instruct,provider,yes,2026-10-08,https://web.archive.org/web/20261008123759/https://huggingface.co/BSC-LT/salamandra-7b-instruct,
+family,sui-1,compute,https://huggingface.co/ellamind/sui-1-24b,provider,no,2026-10-08,https://web.archive.org/web/20261008125405/https://huggingface.co/ellamind/sui-1-24b,not stated
+family,sui-1,origin,https://huggingface.co/ellamind/sui-1-24b,provider,yes,2026-10-08,https://web.archive.org/web/20261008125405/https://huggingface.co/ellamind/sui-1-24b,
+family,sui-1,provider_id,https://huggingface.co/ellamind/sui-1-24b,provider,yes,2026-10-08,https://web.archive.org/web/20261008125405/https://huggingface.co/ellamind/sui-1-24b,
+family,tildeopen,compute,https://huggingface.co/TildeAI/TildeOpen-30b-64k,provider,yes,2026-10-08,https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k,model card: funded by EuroHPC JU Large AI Grand Challenge
+family,tildeopen,data,https://huggingface.co/TildeAI/TildeOpen-30b-64k,provider,yes,2026-10-08,https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k,
+family,tildeopen,origin,https://huggingface.co/TildeAI/TildeOpen-30b-64k,provider,yes,2026-10-08,https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k,
+family,tildeopen,provider_id,https://huggingface.co/TildeAI/TildeOpen-30b-64k,provider,yes,2026-10-08,https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k,
+family,viking,compute,https://huggingface.co/LumiOpen/Viking-33B,provider,yes,2026-10-08,https://web.archive.org/web/20261008124006/https://huggingface.co/LumiOpen/Viking-33B,"model card: LUMI, 1024 AMD MI250X"
+family,viking,data,https://huggingface.co/LumiOpen/Viking-33B,provider,yes,2026-10-08,https://web.archive.org/web/20261008124006/https://huggingface.co/LumiOpen/Viking-33B,
+family,viking,origin,https://huggingface.co/LumiOpen/Viking-33B,provider,yes,2026-10-08,https://web.archive.org/web/20261008124006/https://huggingface.co/LumiOpen/Viking-33B,
+family,viking,provider_id,https://huggingface.co/LumiOpen/Viking-33B,provider,yes,2026-10-08,https://web.archive.org/web/20261008124006/https://huggingface.co/LumiOpen/Viking-33B,
+family,xlstm,compute,https://huggingface.co/NX-AI/xLSTM-7b,provider,no,2026-10-08,https://web.archive.org/web/20261008124104/https://huggingface.co/NX-AI/xLSTM-7b,not stated
+family,xlstm,data,https://huggingface.co/NX-AI/xLSTM-7b,provider,yes,2026-10-08,https://web.archive.org/web/20261008124104/https://huggingface.co/NX-AI/xLSTM-7b,"model card: DCLM and selected data, about 2.3T tokens"
+family,xlstm,license_class,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,provider,yes,2026-10-08,https://web.archive.org/web/20261008124237/https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,NXAI Community License
+family,xlstm,origin,https://huggingface.co/NX-AI/xLSTM-7b,provider,yes,2026-10-08,https://web.archive.org/web/20261008124104/https://huggingface.co/NX-AI/xLSTM-7b,
+family,xlstm,provider_id,https://huggingface.co/NX-AI/xLSTM-7b,provider,yes,2026-10-08,https://web.archive.org/web/20261008124104/https://huggingface.co/NX-AI/xLSTM-7b,
+model,eurollm-22b,compute,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,provider,yes,2026-10-08,https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,"model card: MareNostrum 5, EuroHPC grant"
+provider,aleph-alpha,control,https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/,press,yes,2026-10-08,https://web.archive.org/web/20261008131234/https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/,definitive merger agreement 2026-09-16
+provider,aleph-alpha,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,Aleph Alpha listed (2026-10-07)
+provider,bsc,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,domyn,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,Domyn listed (2026-10-07)
+provider,ellamind,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,eurollm,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,h-company,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,kyutai,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,mistral-ai,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,Mistral AI listed (2026-10-07)
+provider,nb,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,nxai,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,openllm-france,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,LINAGORA listed (2026-10-07)
+provider,pleias,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,Pleias listed (2026-10-07)
+provider,sapienza-nlp,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,silo-ai,control,https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm,official,yes,2026-10-08,https://web.archive.org/web/20250405074548/https://www.sec.gov/Archives/edgar/data/2488/000000248824000163/amd-20240928.htm,AMD 10-Q: acquisition of Silo AI completed 2024-08-09
+provider,silo-ai,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,speakleash,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,swiss-ai,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
+provider,tilde,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-08,https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,not listed (2026-10-07)
