@@ -1,0 +1,28 @@
+id,llama_cpp,architecture,detail,checked,llama_cpp_rev
+luciole-23b,supported,NemotronForCausalLM,,2026-10-08,v0.6.0
+luciole-8b,supported,NemotronHForCausalLM,,2026-10-08,v0.6.0
+lucie-7b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+eurollm-22b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+eurollm-9b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+alia-40b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+salamandra-7b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+tildeopen-30b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+apertus-1.5-8b,unsupported,Apertus1p5ForConditionalGeneration,architecture not registered in the converter,2026-10-08,v0.6.0
+apertus-1.5-70b,unsupported,Apertus1p5ForConditionalGeneration,architecture not registered in the converter,2026-10-08,v0.6.0
+viking-33b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+helium-1-2b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+pleias-rag-1b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+kolibri-1,unsupported,Kolibri1ForCausalLM,architecture not registered in the converter,2026-10-08,v0.6.0
+devstral-small-2,supported,Mistral3ForConditionalGeneration,,2026-10-08,v0.6.0
+magistral-small-2509,supported,Mistral3ForConditionalGeneration,,2026-10-08,v0.6.0
+mistral-small-3.2,supported,Mistral3ForConditionalGeneration,,2026-10-08,v0.6.0
+ministral-3-14b,supported,Mistral3ForConditionalGeneration,,2026-10-08,v0.6.0
+mistral-small-4,supported,Mistral3ForConditionalGeneration,,2026-10-08,v0.6.0
+bielik-11b-v3,not checked,,config.json not readable (gated?),2026-10-08,v0.6.0
+sui-1-24b,supported,Mistral3ForConditionalGeneration,,2026-10-08,v0.6.0
+domyn-small,supported,NemotronForCausalLM,,2026-10-08,v0.6.0
+minerva-7b,supported,MistralForCausalLM,,2026-10-08,v0.6.0
+xlstm-7b,unsupported,xLSTMForCausalLM,architecture not registered in the converter,2026-10-08,v0.6.0
+holo4-35b-a3b,supported,Qwen3_5MoeForConditionalGeneration,,2026-10-08,v0.6.0
+poro-2-8b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
+borealis2-26b,supported,Gemma4ForConditionalGeneration,,2026-10-08,v0.6.0

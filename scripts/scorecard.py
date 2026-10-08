@@ -49,7 +49,7 @@ SOURCED = {
 OFFICIAL_HOSTS = {"digital-strategy.ec.europa.eu", "eur-lex.europa.eu", "www.sec.gov"}
 PRESS_HOSTS = {"siliconangle.com", "www.heise.de", "www.reuters.com", "techcrunch.com"}
 # Organisations on the Hub that curate community conversions.
-CURATED_ORGS = {"mlx-community", "lmstudio-community"}
+CURATED_ORGS = {"mlx-community", "lmstudio-community", "ggml-org", "unsloth"}
 HBD_ORG = "here-be-dragons-ai"
 
 TIERS = {
@@ -83,6 +83,7 @@ class Data:
         self.sources = read("sources.csv")
         self.namespaces = {n["namespace"]: n for n in read("hf_namespaces.csv")}
         self.builds = read("mlx_builds.csv")
+        self.gguf_builds = read("gguf_builds.csv")
 
     # -- resolution ------------------------------------------------------------
     def resolve(self, model):

@@ -59,10 +59,16 @@
     <div class="chips"><label style="color:var(--muted);display:block">Tier</label><span id="tierchips"></span></div>
     <div><label for="country">Country</label><select id="country"><option value="">all</option></select></div>
     <div><label for="licence">Licence class</label><select id="licence"><option value="">all</option></select></div>
-    <div><label for="ram">Fits a Mac with … (4 bit)</label>
+    <div><label for="ctx">Context</label>
+      <select id="ctx"><option value="0">weights only</option><option value="8192">8k</option>
+        <option value="32768" selected>32k</option><option value="131072">128k</option></select></div>
+    <div><label for="kvbits">Cache precision</label>
+      <select id="kvbits"><option value="16">16 bit</option><option value="8">8 bit</option></select></div>
+    <div><label for="ram">Fits a Mac with … (4-bit weights)</label>
       <select id="ram"><option value="">any size</option><option>16</option><option>24</option><option>32</option>
         <option>48</option><option>64</option><option>96</option><option>128</option></select></div>
-    <div class="chips"><label><input type="checkbox" id="mlx"> loads in mlx-vlm</label></div>
+    <div class="chips"><label><input type="checkbox" id="mlx"> loads in mlx-vlm</label>
+      <label><input type="checkbox" id="llama"> runs in llama.cpp</label></div>
   </div>
 
   <div class="count" id="count"></div>
@@ -72,20 +78,38 @@
   </table>
   <section id="detail"><i>Select a row to see the details and sources.</i></section>
 
-  <footer>Data: CC BY 4.0, here be dragons. Fit check leaves a quarter of the RAM for the system and
-    the KV cache. Methodology and corrections: <code>here-be-dragons-ai/sovereign-models</code>.</footer>
+  <footer>Data: CC BY 4.0, here be dragons. Fit check: 4-bit weights plus the cache at the chosen
+    context (as MLX allocates it) plus 1 GB, against 75% of the RAM. Methodology and corrections: <code>here-be-dragons-ai/sovereign-models</code>.</footer>
 </main>
 <script>
 const COLS = [
   ["tier","Tier"],["name","Model"],["provider_country","Country"],["provider","Provider"],["origin","Origin"],
   ["license_class","Licence"],["data","Data"],["compute","Compute"],["params_b","Params (B)",1],
-  ["size_4bit_gb","4-bit GB",1],["mlx_vlm","mlx-vlm"],["flags","Flags"],
+  ["size_4bit_gb","4-bit GB",1],["mem","Total GB",1],["mlx_vlm","mlx-vlm"],["llama_cpp","llama.cpp"],["flags","Flags"],
 ];
 const TIER_ORDER = ["A","B","C","pending","excluded","out of scope"];
 let DATA, sortKey = "tier", sortDir = 1, selected = null;
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const link = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+
+const KV_SCALE = {16: 1, 8: 8.5 / 16};
+// Weights at 4 bit plus the cache at the chosen context, as MLX allocates it.
+function memory(m) {
+  const ctx = parseInt($("ctx").value), bits = parseInt($("kvbits").value);
+  const weights = parseFloat(m.size_4bit_gb);
+  const L = m.cache_layout;
+  if (!weights) return null;
+  if (!ctx) return weights;
+  if (!L) return null;
+  if (m.max_context && ctx > m.max_context * 1.05) return NaN;
+  const kv = L.growing * ctx + L.windowed.reduce((s, [b, w]) => s + b * Math.min(ctx, w), 0);
+  return weights + (kv * KV_SCALE[bits] + L.constant) / 1e9;  // GB, like the weights
+}
+function memText(m) {
+  const v = memory(m);
+  return v === null ? "?" : Number.isNaN(v) ? "beyond max" : v.toFixed(1);
+}
 
 function filtered() {
   const tiers = [...document.querySelectorAll("#tierchips input:checked")].map(i => i.value);
@@ -95,19 +119,22 @@ function filtered() {
     (!country || m.provider_country === country) &&
     (!licence || m.license_class === licence) &&
     (!$("mlx").checked || m.mlx_vlm === "loads") &&
-    (!ram || (m.size_4bit_gb && parseFloat(m.size_4bit_gb) <= ram * 0.75)));
+    (!$("llama").checked || m.llama_cpp === "supported") &&
+    (!ram || (() => { const v = memory(m); return v !== null && !Number.isNaN(v) && v + 1 <= ram * 0.75; })()));
 }
 
 function render() {
   const rows = filtered().sort((a, b) => {
     let x = a[sortKey], y = b[sortKey];
     if (sortKey === "tier") { x = TIER_ORDER.indexOf(x); y = TIER_ORDER.indexOf(y); }
+    else if (sortKey === "mem") { x = memory(a) || 1e9; y = memory(b) || 1e9; }
     else if (COLS.find(c => c[0] === sortKey)?.[2]) { x = parseFloat(x) || 0; y = parseFloat(y) || 0; }
     return (x > y ? 1 : x < y ? -1 : a.name.localeCompare(b.name)) * sortDir;
   });
   $("count").textContent = `${rows.length} of ${DATA.models.length} models`;
   $("rows").innerHTML = rows.map(m => `<tr data-id="${esc(m.id)}" class="${m.id === selected ? "selected" : ""}">` +
     COLS.map(([k,, num]) => k === "tier" ? `<td><span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></td>`
+      : k === "mem" ? `<td class="num">${esc(memText(m))}</td>`
       : `<td class="${num ? "num" : ""}${k === "flags" ? " flags" : ""}">${esc(m[k])}</td>`).join("") + "</tr>").join("");
 }
 
@@ -154,6 +181,11 @@ function detail(id) {
     <ul>
       <li>mlx-vlm: <b>${esc(m.mlx_vlm)}</b>${m.mlx_vlm_detail ? " — " + esc(m.mlx_vlm_detail) : ""} <span class="src">(checked ${esc(m.mlx_vlm_checked || "—")})</span></li>
       <li>Weights: ${esc(m.size_4bit_gb)} GB at 4 bit, ${esc(m.size_8bit_gb)} GB at 8 bit</li>
+      <li>Cache (16 bit, as MLX allocates it): ${esc(m.cache_kind || "unknown")}; ${esc(m.cache_kib_per_token)} KiB per token —
+        ${esc(m.cache_gib_8k)} GiB at 8k, ${esc(m.cache_gib_32k)} GiB at 32k, ${esc(m.cache_gib_128k)} GiB at 128k
+        (max context ${esc(m.max_context || "?")})</li>
+      <li>llama.cpp: <b>${esc(m.llama_cpp)}</b>${m.llama_cpp_detail ? " — " + esc(m.llama_cpp_detail) : ""} <span class="src">(checked ${esc(m.llama_cpp_checked || "—")})</span></li>
+      ${m.gguf_list.length ? `<li>GGUF builds (${esc(m.gguf_builds)}, top ${m.gguf_list.length}):<br>${m.gguf_list.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) + link("https://huggingface.co/" + b.repo, b.repo) + ` <span class="src">${esc(b.downloads)} downloads</span>`).join("<br>")}</li>` : ""}
       ${builds ? `<li>MLX builds:<br>${builds}</li>` : ""}
     </ul>
     ${m.flags ? `<p><b>Flags:</b> ${esc(m.flags)}</p>` : ""}

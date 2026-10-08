@@ -55,6 +55,8 @@ def namespaces(d):
         found.add(m["hf_repo"].split("/")[0])
     for b in d.builds:
         found.add(b["repo"].split("/")[0])
+    for b in d.gguf_builds:
+        found.add(b["repo"].split("/")[0])
     for p in d.providers.values():
         found.update(split(p.get("hf_orgs")))
     for s in d.sources:

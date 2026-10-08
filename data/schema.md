@@ -100,14 +100,21 @@ for the tier.
 | `note` | |
 
 The publisher of a build is derived, not stored: `official` (the provider's own organisation),
-`hbd` (here be dragons), `curated` (mlx-community, lmstudio-community), `organisation` (any other
+`hbd` (here be dragons), `curated` (mlx-community, lmstudio-community, ggml-org, unsloth), `organisation` (any other
 organisation), `individual` (a personal account), in that order of trust.
 
 ## Generated files
 
 - `hf_facts.csv` (`scripts/fetch_hf_facts.py`): licence, gating, parameters, architecture, context,
-  creation date, model-card lines about compute and data.
+  creation date, model-card lines about compute and data, and `arch_json` (the `config.json`
+  fields the memory estimate needs: layers, KV heads, head dims, layer types, sliding window,
+  MLA, Mamba and xLSTM dimensions).
 - `hf_namespaces.csv` (`scripts/classify_namespaces.py`): whether each cited Hub namespace is an
   organisation or a user, and whether the Hub has verified it.
 - `mlx_support.csv` (`scripts/check_mlx_support.py`): whether mlx-vlm loads the checkpoint,
   checked from `config.json` and safetensors headers, with the mlx-vlm revision.
+- `llama_cpp_support.csv` (`scripts/check_llama_cpp_support.py`): whether the latest llama.cpp
+  release registers the model's architecture in its GGUF converter, with the release tag.
+- `gguf_builds.csv` (`scripts/find_gguf_builds.py`): GGUF quantizations that declare the original
+  as their base, contain a `.gguf` file, keep the model name and are not marked as modified
+  (abliterated, merged, fine-tuned). The publisher is derived like for MLX builds.

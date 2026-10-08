@@ -24,9 +24,34 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "hf_facts.csv"
 FIELDS = [
     "hf_repo", "fetched", "license", "license_name", "gated", "created",
-    "params_b", "model_type", "context", "pipeline_tag",
+    "params_b", "model_type", "context", "pipeline_tag", "architecture", "arch_json",
     "compute_evidence", "data_evidence",
 ]
+# config.json keys the memory estimate needs (top level or text_config).
+ARCH_KEYS = (
+    "model_type", "num_hidden_layers", "num_attention_heads", "num_key_value_heads",
+    "head_dim", "hidden_size", "sliding_window", "kv_lora_rank", "qk_rope_head_dim",
+    "qk_nope_head_dim", "v_head_dim", "num_global_key_value_heads", "global_head_dim",
+    "attention_k_eq_v", "linear_num_value_heads", "linear_key_head_dim",
+    "linear_value_head_dim", "mamba_num_heads", "mamba_head_dim", "ssm_state_size",
+    "num_blocks", "num_heads", "embedding_dim", "qk_dim_factor", "v_dim_factor",
+    "max_position_embeddings",
+)
+
+
+def arch_summary(cfg):
+    """The architecture facts the memory estimate needs, as a compact dict."""
+    text = cfg.get("text_config") or cfg
+    out = {k: text[k] for k in ARCH_KEYS if text.get(k) is not None}
+    if "model_type" in cfg:
+        out["outer_model_type"] = cfg["model_type"]
+    layer_types = text.get("layer_types")
+    if layer_types:
+        out["layer_types"] = {t: layer_types.count(t) for t in sorted(set(layer_types))}
+    pattern = text.get("hybrid_override_pattern")
+    if pattern:
+        out["hybrid_pattern"] = {"attention": pattern.count("*"), "mamba": pattern.count("M"), "mlp": pattern.count("-")}
+    return out
 COMPUTE = re.compile(
     r"(EuroHPC|MareNostrum|LUMI|Leonardo|Jean Zay|GENCI|Alps|CSCS|JUWELS|JUPITER|"
     r"Helios|Karolina|Deucalion|Berzelius|H100|B200|MI250X|GH200|AI Factor)",
@@ -86,6 +111,8 @@ def facts(repo):
         row["model_type"] = cfg.get("model_type", "")
         ctx = text.get("max_position_embeddings") or cfg.get("max_position_embeddings")
         row["context"] = str(ctx or "")
+        row["architecture"] = (cfg.get("architectures") or [""])[0]
+        row["arch_json"] = json.dumps(arch_summary(cfg), sort_keys=True)
     except urllib.error.HTTPError as e:
         row["model_type"] = f"(config: HTTP {e.code})"
     try:

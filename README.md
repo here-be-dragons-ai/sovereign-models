@@ -18,6 +18,8 @@ data/mlx_builds.csv    known MLX builds per model                               
 data/hf_facts.csv      licence, size, architecture from the Hub                    (scripts/fetch_hf_facts.py)
 data/hf_namespaces.csv Hub namespaces: organisation or user, verified             (scripts/classify_namespaces.py)
 data/mlx_support.csv   does mlx-vlm load it?                                       (scripts/check_mlx_support.py)
+data/llama_cpp_support.csv  does llama.cpp support the architecture?               (scripts/check_llama_cpp_support.py)
+data/gguf_builds.csv   GGUF quantizations on the Hub                               (scripts/find_gguf_builds.py)
         │
         ▼  scripts/build.py   (validates, computes tiers and sizes)
 dist/scorecard.csv, dist/scorecard.json
@@ -40,6 +42,9 @@ python3 scripts/classify_namespaces.py               # organisation or user, per
 python3 scripts/archive_sources.py                   # Wayback snapshots for new sources
 PYTHONPATH=~/src/mlx-vlm-main \
   ~/src/mlx/.venv/bin/python scripts/check_mlx_support.py   # needs mlx and mlx-vlm
+python3 scripts/check_llama_cpp_support.py           # latest llama.cpp release
+python3 scripts/find_gguf_builds.py                  # GGUF builds via the Hub base-model link
+python3 scripts/classify_namespaces.py               # again, for new GGUF publishers
 python3 scripts/validate.py                          # checks and prints the tiers
 python3 scripts/build.py                             # writes dist/
 python3 scripts/publish_hf.py                        # needs huggingface_hub and a token

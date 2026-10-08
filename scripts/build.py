@@ -1,28 +1,37 @@
 """Merge the data files into dist/scorecard.csv and dist/scorecard.json.
 
 Resolves every model through its family and provider and adds the computed
-columns: tier, flags, sizes at 4 and 8 bit, mlx-vlm load status and the most
-trusted MLX build. The JSON also carries the sources of every model (from all
-three scopes) and its MLX builds with their publisher, for the Space.
+columns: tier, flags, sizes at 4 and 8 bit, cache sizes at 8k/32k/128k context,
+mlx-vlm and llama.cpp support, and the most trusted MLX and GGUF builds. The
+JSON also carries the sources of every model (from all three scopes), its builds
+with their publisher and the cache layout, so the Space can compute memory for
+any context length.
 """
 
 import json
 import sys
 import csv
 
+from memory import cache_bytes, cache_layout
 from scorecard import PUBLISHER_ORDER, ROOT, TIERS, Data, read
 
 DIST = ROOT / "dist"
 # Effective bits per weight of MLX affine quantization with group size 64
 # (weights plus a bf16 scale and bias per group).
 BPW = {4: 4.5, 8: 8.5}
+GIB = 2**30
+CONTEXTS = {"8k": 8192, "32k": 32768, "128k": 131072}
+GGUF_IN_JSON = 8  # builds per model kept for the detail view
 COLUMNS = [
     "tier", "id", "name", "family", "provider", "provider_country", "region",
     "control", "majority_owner", "origin", "base_model", "license_class",
     "license", "data", "compute", "ai_act_summary", "cop_signatory",
     "modalities", "params_b", "context", "model_type", "size_4bit_gb",
     "size_8bit_gb", "mlx_vlm", "mlx_vlm_detail", "mlx_vlm_checked",
-    "mlx_build", "mlx_build_bits", "mlx_build_publisher", "flags",
+    "mlx_build", "mlx_build_bits", "mlx_build_publisher", "llama_cpp",
+    "llama_cpp_detail", "llama_cpp_checked", "gguf_build", "gguf_build_publisher",
+    "gguf_builds", "cache_kind", "cache_kib_per_token", "cache_gib_8k",
+    "cache_gib_32k", "cache_gib_128k", "flags",
     "hbd_involvement", "notes", "hf_repo", "hf_created", "last_reviewed",
 ]
 SOURCE_KEYS = ("scope", "field", "url", "issuer", "checked", "retrieved", "archive_url", "note")
@@ -36,6 +45,7 @@ def main():
         sys.exit(1)
     facts = {r["hf_repo"]: r for r in read("hf_facts.csv")}
     support = {r["id"]: r for r in read("mlx_support.csv")}
+    llama = {r["id"]: r for r in read("llama_cpp_support.csv")}
 
     rows, details = [], []
     for m in d.resolved():
@@ -49,6 +59,27 @@ def main():
                 builds.append({**b, "publisher": d.publisher(b),
                                "verified_org": d.namespaces.get(ns, {}).get("verified") == "true"})
         builds.sort(key=lambda b: (PUBLISHER_ORDER.index(b["publisher"]), -float(b["bits"])))
+        ggufs = []
+        for b in d.gguf_builds:
+            if b["id"] == m["id"]:
+                ns = b["repo"].split("/")[0]
+                ggufs.append({**b, "publisher": d.publisher(b),
+                              "verified_org": d.namespaces.get(ns, {}).get("verified") == "true"})
+        ggufs.sort(key=lambda b: (PUBLISHER_ORDER.index(b["publisher"]), -int(b["downloads"] or 0)))
+        lc = llama.get(m["id"], {})
+        lc_status, lc_detail = lc.get("llama_cpp", "not checked"), lc.get("detail", "")
+        if lc_status == "unsupported" and ggufs:
+            lc_status = "fork only"
+            lc_detail = f"{len(ggufs)} GGUF builds exist, but upstream llama.cpp does not support the architecture; they need a patched llama.cpp"
+        layout = cache_layout(f.get("arch_json", "")) if f.get("arch_json") else None
+        max_ctx = int(f["context"]) if f.get("context", "").isdigit() else None
+
+        def cache_gib(ctx):
+            if not layout:
+                return ""
+            if max_ctx and ctx > max_ctx * 1.05:  # 32k still counts for a 32,000-token model
+                return "n/a"
+            return f"{cache_bytes(layout, ctx) / GIB:.1f}"
         sources = d.all_sources(m)
         row = dict(m)
         row.update(
@@ -66,6 +97,17 @@ def main():
             mlx_build=builds[0]["repo"] if builds else "",
             mlx_build_bits=builds[0]["bits"] if builds else "",
             mlx_build_publisher=builds[0]["publisher"] if builds else "",
+            llama_cpp=lc_status,
+            llama_cpp_detail=lc_detail,
+            llama_cpp_checked=f"{lc.get('checked', '')} {lc.get('llama_cpp_rev', '')}".strip(),
+            gguf_build=ggufs[0]["repo"] if ggufs else "",
+            gguf_build_publisher=ggufs[0]["publisher"] if ggufs else "",
+            gguf_builds=len(ggufs),
+            cache_kind=layout["kind"] if layout else "",
+            cache_kib_per_token=f"{layout['growing'] / 1024:.1f}" if layout else "",
+            cache_gib_8k=cache_gib(CONTEXTS["8k"]),
+            cache_gib_32k=cache_gib(CONTEXTS["32k"]),
+            cache_gib_128k=cache_gib(CONTEXTS["128k"]),
             flags="; ".join(d.flags(m)),
             last_reviewed=max((x["retrieved"] for x in sources), default=""),
         )
@@ -77,6 +119,9 @@ def main():
             "repo_verified_org": d.namespaces.get(m["hf_repo"].split("/")[0], {}).get("verified") == "true",
             "sources": [{k: x[k] for k in SOURCE_KEYS} for x in sources],
             "mlx_builds": builds,
+            "gguf_list": ggufs[:GGUF_IN_JSON],
+            "cache_layout": layout,
+            "max_context": max_ctx,
         })
 
     order = list(TIERS)

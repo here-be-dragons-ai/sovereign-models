@@ -90,12 +90,23 @@ involved.
   `config.json` and safetensors headers without downloading weights
   (`scripts/check_mlx_support.py`). "loads" means the weights map onto the model; it does not
   test the output. The checked revision is recorded.
+- `llama_cpp`: whether the latest llama.cpp release registers the architecture in its GGUF
+  converter (`scripts/check_llama_cpp_support.py`). `fork only` means GGUF builds exist but
+  upstream llama.cpp does not support the architecture, so they need a patched llama.cpp.
 - `size_4bit_gb`, `size_8bit_gb`: parameters × 4.5 or 8.5 bits per weight (MLX affine
-  quantization, group size 64). The KV cache comes on top.
-- `mlx_build`: the most trusted existing MLX build. The publisher is derived from the Hub
-  namespace: `official` (the provider's own organisation), `hbd` (ours), `curated`
-  (mlx-community, lmstudio-community), `organisation` (any other organisation), `individual`
-  (a personal account), in that order.
+  quantization, group size 64).
+- **Cache** (`scripts/memory.py`): bytes per token and totals at 8k, 32k and 128k, as MLX
+  allocates them. The layout depends on the architecture: standard attention grows in every
+  layer; sliding-window layers stop at their window; hybrid models (linear attention, Mamba)
+  grow only in their attention layers; recurrent models (xLSTM) keep a constant state. MLA
+  models are cached **decompressed** in MLX, so MLA saves no memory there (llama.cpp caches the
+  compressed latent; its numbers would be lower). "n/a" marks contexts beyond the model's maximum.
+  The Space adds the cache at the chosen context and cache precision to the 4-bit weights, plus
+  1 GB, and compares the total with 75 % of the RAM.
+- `mlx_build`, `gguf_build`: the most trusted existing build. The publisher is derived from the
+  Hub namespace: `official` (the provider's own organisation), `hbd` (ours), `curated`
+  (mlx-community, lmstudio-community, ggml-org, unsloth), `organisation` (any other
+  organisation), `individual` (a personal account), in that order; ties by downloads.
 
 ## Limits
 

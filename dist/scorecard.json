@@ -38,6 +38,17 @@
    "mlx_build": "tonidurans/ALIA-40b-instruct-2605-mlx-q4",
    "mlx_build_bits": "4",
    "mlx_build_publisher": "individual",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "BSC-LT/ALIA-40b-instruct-2606-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 3,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "192.0",
+   "cache_gib_8k": "1.5",
+   "cache_gib_32k": "6.0",
+   "cache_gib_128k": "24.0",
    "flags": "",
    "hbd_involvement": "",
    "notes": "160k context.",
@@ -108,7 +119,43 @@
      "publisher": "individual",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "alia-40b",
+     "repo": "BSC-LT/ALIA-40b-instruct-2606-GGUF",
+     "downloads": "90",
+     "likes": "0",
+     "created": "2026-06-30",
+     "publisher": "official",
+     "verified_org": false
+    },
+    {
+     "id": "alia-40b",
+     "repo": "mradermacher/ALIA-40b-instruct-2606-i1-GGUF",
+     "downloads": "1231",
+     "likes": "1",
+     "created": "2026-07-03",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "alia-40b",
+     "repo": "mradermacher/ALIA-40b-instruct-2606-GGUF",
+     "downloads": "476",
+     "likes": "0",
+     "created": "2026-07-03",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 196608,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 163840
   },
   {
    "tier": "A",
@@ -140,6 +187,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "fork only",
+   "llama_cpp_detail": "1 GGUF builds exist, but upstream llama.cpp does not support the architecture; they need a patched llama.cpp",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "katya228/Apertus-v1.5-70B-text-GGUF",
+   "gguf_build_publisher": "individual",
+   "gguf_builds": 1,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "320.0",
+   "cache_gib_8k": "2.5",
+   "cache_gib_32k": "10.0",
+   "cache_gib_128k": "40.0",
    "flags": "outside the EU; use policy on redistribution",
    "hbd_involvement": "",
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution.",
@@ -261,7 +319,25 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "apertus-1.5-70b",
+     "repo": "katya228/Apertus-v1.5-70B-text-GGUF",
+     "downloads": "710",
+     "likes": "1",
+     "created": "2026-08-03",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 327680,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 262144
   },
   {
    "tier": "A",
@@ -293,6 +369,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "unsupported",
+   "llama_cpp_detail": "architecture not registered in the converter",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "128.0",
+   "cache_gib_8k": "1.0",
+   "cache_gib_32k": "4.0",
+   "cache_gib_128k": "16.0",
    "flags": "outside the EU; use policy on redistribution; our own work involved",
    "hbd_involvement": "HBD ported image and audio input to MLX and keeps a private MLX build (8B)",
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution.",
@@ -414,7 +501,15 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 131072,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 262144
   },
   {
    "tier": "A",
@@ -446,6 +541,17 @@
    "mlx_build": "mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit",
    "mlx_build_bits": "8",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "DevQuasar/utter-project.EuroLLM-22B-Instruct-2512-GGUF",
+   "gguf_build_publisher": "organisation",
+   "gguf_builds": 6,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "216.0",
+   "cache_gib_8k": "1.7",
+   "cache_gib_32k": "6.8",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
@@ -564,7 +670,70 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "eurollm-22b",
+     "repo": "DevQuasar/utter-project.EuroLLM-22B-Instruct-2512-GGUF",
+     "downloads": "101",
+     "likes": "0",
+     "created": "2025-12-31",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "eurollm-22b",
+     "repo": "bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF",
+     "downloads": "3094",
+     "likes": "8",
+     "created": "2025-12-16",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "eurollm-22b",
+     "repo": "mradermacher/EuroLLM-22B-Instruct-2512-GGUF",
+     "downloads": "1642",
+     "likes": "2",
+     "created": "2025-12-15",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "eurollm-22b",
+     "repo": "mradermacher/EuroLLM-22B-Instruct-2512-i1-GGUF",
+     "downloads": "953",
+     "likes": "0",
+     "created": "2025-12-15",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "eurollm-22b",
+     "repo": "sixelasacul/EuroLLM-22B-it-GGUF",
+     "downloads": "110",
+     "likes": "1",
+     "created": "2026-09-29",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "eurollm-22b",
+     "repo": "peekman/EuroLLM-22B-Instruct-2512-Q5_K_M-GGUF",
+     "downloads": "14",
+     "likes": "0",
+     "created": "2025-12-27",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 221184,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 32768
   },
   {
    "tier": "A",
@@ -596,6 +765,17 @@
    "mlx_build": "mlx-community/Lucie-7B-Instruct-4bit",
    "mlx_build_bits": "4",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "OpenLLM-France/Lucie-7B-Instruct-v1.1-gguf",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 5,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "128.0",
+   "cache_gib_8k": "1.0",
+   "cache_gib_32k": "4.0",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
@@ -666,7 +846,61 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "lucie-7b",
+     "repo": "OpenLLM-France/Lucie-7B-Instruct-v1.1-gguf",
+     "downloads": "136",
+     "likes": "6",
+     "created": "2025-02-14",
+     "publisher": "official",
+     "verified_org": false
+    },
+    {
+     "id": "lucie-7b",
+     "repo": "tensorblock/Lucie-7B-Instruct-v1.1-GGUF",
+     "downloads": "273",
+     "likes": "0",
+     "created": "2025-03-23",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "lucie-7b",
+     "repo": "DevQuasar-9/OpenLLM-France.Lucie-7B-Instruct-v1.1-GGUF",
+     "downloads": "258",
+     "likes": "0",
+     "created": "2025-02-23",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "lucie-7b",
+     "repo": "mradermacher/Lucie-7B-Instruct-v1.1-GGUF",
+     "downloads": "398",
+     "likes": "3",
+     "created": "2025-02-17",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "lucie-7b",
+     "repo": "keisuke-miyako/Lucie-7B-Instruct-v1.1-gguf-q4_k_m",
+     "downloads": "23",
+     "likes": "0",
+     "created": "2026-02-01",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 131072,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 32000
   },
   {
    "tier": "A",
@@ -698,6 +932,17 @@
    "mlx_build": "bumblebuttpow/Luciole-23B-Instruct-1.1-4bit-mlx",
    "mlx_build_bits": "4",
    "mlx_build_publisher": "individual",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "OpenLLM-France/Luciole-23B-Instruct-1.1-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 1,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "20.0",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Instruct post-training used 16k sequences; base 131k.",
@@ -798,7 +1043,25 @@
      "publisher": "individual",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "luciole-23b",
+     "repo": "OpenLLM-France/Luciole-23B-Instruct-1.1-GGUF",
+     "downloads": "206",
+     "likes": "4",
+     "created": "2026-07-08",
+     "publisher": "official",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 131072
   },
   {
    "tier": "A",
@@ -830,6 +1093,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "OpenLLM-France/Luciole-8B-Instruct-1.1-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 1,
+   "cache_kind": "hybrid: 4 attention + 24 Mamba layers",
+   "cache_kib_per_token": "16.0",
+   "cache_gib_8k": "0.2",
+   "cache_gib_32k": "0.6",
+   "cache_gib_128k": "2.1",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Hybrid Mamba/attention (nemotron_h).",
@@ -921,7 +1195,25 @@
      "note": "LINAGORA listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "luciole-8b",
+     "repo": "OpenLLM-France/Luciole-8B-Instruct-1.1-GGUF",
+     "downloads": "174",
+     "likes": "4",
+     "created": "2026-07-08",
+     "publisher": "official",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 16384,
+    "windowed": [],
+    "constant": 100663296,
+    "kind": "hybrid: 4 attention + 24 Mamba layers"
+   },
+   "max_context": 131072
   },
   {
    "tier": "A",
@@ -953,6 +1245,17 @@
    "mlx_build": "mlx-community/Pleias-RAG-1B-6-bit",
    "mlx_build_bits": "6",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "brendanddev/Pleias-RAG-1B-Q4_K_M-GGUF",
+   "gguf_build_publisher": "individual",
+   "gguf_builds": 1,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "44.0",
+   "cache_gib_8k": "n/a",
+   "cache_gib_32k": "n/a",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Specialised for retrieval-augmented generation with citations. 4k context.",
@@ -1023,7 +1326,25 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "pleias-rag-1b",
+     "repo": "brendanddev/Pleias-RAG-1B-Q4_K_M-GGUF",
+     "downloads": "31",
+     "likes": "0",
+     "created": "2026-04-02",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 45056,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 4096
   },
   {
    "tier": "A",
@@ -1055,6 +1376,17 @@
    "mlx_build": "mlx-community/salamandra-7b-instruct-mlx-bf16",
    "mlx_build_bits": "16",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "tensorblock/salamandra-7b-instruct-GGUF",
+   "gguf_build_publisher": "organisation",
+   "gguf_builds": 14,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "128.0",
+   "cache_gib_8k": "1.0",
+   "cache_gib_32k": "n/a",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
@@ -1125,7 +1457,88 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "salamandra-7b",
+     "repo": "tensorblock/salamandra-7b-instruct-GGUF",
+     "downloads": "180",
+     "likes": "1",
+     "created": "2025-02-15",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "salamandra-7b",
+     "repo": "RichardErkhov/BSC-LT_-_salamandra-7b-instruct-gguf",
+     "downloads": "2900",
+     "likes": "0",
+     "created": "2024-10-11",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "salamandra-7b",
+     "repo": "hdnh2006/BSC-LT-salamandra-7b-instruct-gguf",
+     "downloads": "646",
+     "likes": "2",
+     "created": "2025-01-23",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "salamandra-7b",
+     "repo": "cstr/salamandra-7b-instruct-GGUF",
+     "downloads": "593",
+     "likes": "2",
+     "created": "2024-10-03",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "salamandra-7b",
+     "repo": "Fr4nkSt3in/salamandra-7b-instruct-2606-BF16-GGUF",
+     "downloads": "178",
+     "likes": "0",
+     "created": "2026-10-01",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "salamandra-7b",
+     "repo": "stepii/salamandra-7b-instruct-GGUF",
+     "downloads": "79",
+     "likes": "0",
+     "created": "2025-07-22",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "salamandra-7b",
+     "repo": "fernandoruiz/salamandra-7b-instruct-Q4_0-GGUF",
+     "downloads": "45",
+     "likes": "2",
+     "created": "2025-01-25",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "salamandra-7b",
+     "repo": "Abogatic/BSC-LT-salamandra-7b-instruct-GGUF",
+     "downloads": "39",
+     "likes": "0",
+     "created": "2025-01-21",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 131072,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 8192
   },
   {
    "tier": "A",
@@ -1157,6 +1570,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "240.0",
+   "cache_gib_8k": "1.9",
+   "cache_gib_32k": "7.5",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Base model only (no official instruct version). Focus on Nordic and Eastern European languages.",
@@ -1218,7 +1642,15 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 245760,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 65536
   },
   {
    "tier": "B",
@@ -1250,6 +1682,17 @@
    "mlx_build": "speakleash/Bielik-11B-v3.0-Instruct-MLX-8bit",
    "mlx_build_bits": "8",
    "mlx_build_publisher": "official",
+   "llama_cpp": "not checked",
+   "llama_cpp_detail": "config.json not readable (gated?)",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "speakleash/Bielik-11B-v3.0-Instruct-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 5,
+   "cache_kind": "",
+   "cache_kib_per_token": "",
+   "cache_gib_8k": "",
+   "cache_gib_32k": "",
+   "cache_gib_128k": "",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Repository is gated (terms of use).",
@@ -1328,7 +1771,56 @@
      "publisher": "official",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "bielik-11b-v3",
+     "repo": "speakleash/Bielik-11B-v3.0-Instruct-GGUF",
+     "downloads": "7925",
+     "likes": "31",
+     "created": "2025-12-30",
+     "publisher": "official",
+     "verified_org": false
+    },
+    {
+     "id": "bielik-11b-v3",
+     "repo": "DevQuasar/speakleash.Bielik-11B-v3.0-Instruct-GGUF",
+     "downloads": "276",
+     "likes": "0",
+     "created": "2026-01-03",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "bielik-11b-v3",
+     "repo": "safestack/Bielik-11B-v3.0-Instruct-GGUF",
+     "downloads": "129",
+     "likes": "1",
+     "created": "2026-01-21",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "bielik-11b-v3",
+     "repo": "bartowski/speakleash_Bielik-11B-v3.0-Instruct-GGUF",
+     "downloads": "1040",
+     "likes": "5",
+     "created": "2026-01-05",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "bielik-11b-v3",
+     "repo": "altomek/Bielik-11B-v3.0-Instruct-XXL-GGUF",
+     "downloads": "77",
+     "likes": "1",
+     "created": "2026-01-02",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": null,
+   "max_context": null
   },
   {
    "tier": "B",
@@ -1360,6 +1852,17 @@
    "mlx_build": "mlx-community/Devstral-Small-2-24B-Instruct-2512-8bit",
    "mlx_build_bits": "8",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF",
+   "gguf_build_publisher": "curated",
+   "gguf_builds": 15,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "20.0",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Coding/agent model.",
@@ -1438,7 +1941,88 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "devstral-small-2",
+     "repo": "unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF",
+     "downloads": "50489",
+     "likes": "185",
+     "created": "2025-12-10",
+     "publisher": "curated",
+     "verified_org": true
+    },
+    {
+     "id": "devstral-small-2",
+     "repo": "lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF",
+     "downloads": "43985",
+     "likes": "7",
+     "created": "2025-12-08",
+     "publisher": "curated",
+     "verified_org": false
+    },
+    {
+     "id": "devstral-small-2",
+     "repo": "ggml-org/Devstral-Small-2-24B-Instruct-2512-GGUF",
+     "downloads": "1814",
+     "likes": "7",
+     "created": "2025-12-18",
+     "publisher": "curated",
+     "verified_org": false
+    },
+    {
+     "id": "devstral-small-2",
+     "repo": "backpack-run/Devstral-Small-2-24B-Instruct-2512-GGUF",
+     "downloads": "3605",
+     "likes": "4",
+     "created": "2026-08-30",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "devstral-small-2",
+     "repo": "byteshape/Devstral-Small-2-24B-Instruct-2512-GGUF",
+     "downloads": "1924",
+     "likes": "35",
+     "created": "2026-02-17",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "devstral-small-2",
+     "repo": "DevQuasar/mistralai.Devstral-Small-2-24B-Instruct-2512-GGUF",
+     "downloads": "187",
+     "likes": "0",
+     "created": "2025-12-11",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "devstral-small-2",
+     "repo": "bartowski/mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF",
+     "downloads": "19602",
+     "likes": "55",
+     "created": "2025-12-09",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "devstral-small-2",
+     "repo": "FreedomAISVR/Devstral-Small-2-MXFP4-GGUF",
+     "downloads": "688",
+     "likes": "0",
+     "created": "2026-06-16",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 393216
   },
   {
    "tier": "B",
@@ -1470,6 +2054,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "mradermacher/EuroLLM-9B-Instruct-2512-GGUF",
+   "gguf_build_publisher": "individual",
+   "gguf_builds": 4,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "168.0",
+   "cache_gib_8k": "1.3",
+   "cache_gib_32k": "5.2",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Compute not stated on this card (the 22B card names MareNostrum 5).",
@@ -1561,7 +2156,52 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "eurollm-9b",
+     "repo": "mradermacher/EuroLLM-9B-Instruct-2512-GGUF",
+     "downloads": "1243",
+     "likes": "1",
+     "created": "2026-02-06",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "eurollm-9b",
+     "repo": "mradermacher/EuroLLM-9B-Instruct-2512-i1-GGUF",
+     "downloads": "693",
+     "likes": "2",
+     "created": "2026-02-06",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "eurollm-9b",
+     "repo": "stefancosma/EuroLLM-9B-Instruct-2512-Q4_K_M-GGUF",
+     "downloads": "47",
+     "likes": "0",
+     "created": "2026-10-06",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "eurollm-9b",
+     "repo": "keisuke-miyako/EuroLLM-9B-Instruct-2512-gguf-q4_k_m",
+     "downloads": "39",
+     "likes": "0",
+     "created": "2026-04-08",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 172032,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 32768
   },
   {
    "tier": "B",
@@ -1593,6 +2233,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "Hob-forge/helium-1-2b-GGUF",
+   "gguf_build_publisher": "organisation",
+   "gguf_builds": 4,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "112.0",
+   "cache_gib_8k": "n/a",
+   "cache_gib_32k": "n/a",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "CC-BY-SA-4.0. 4k context.",
@@ -1654,7 +2305,52 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "helium-1-2b",
+     "repo": "Hob-forge/helium-1-2b-GGUF",
+     "downloads": "470",
+     "likes": "0",
+     "created": "2026-04-29",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "helium-1-2b",
+     "repo": "DevQuasar/kyutai.helium-1-2b-GGUF",
+     "downloads": "159",
+     "likes": "4",
+     "created": "2025-05-04",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "helium-1-2b",
+     "repo": "tensorblock/kyutai_helium-1-2b-GGUF",
+     "downloads": "64",
+     "likes": "2",
+     "created": "2025-07-16",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "helium-1-2b",
+     "repo": "NikolayKozloff/helium-1-2b-Q8_0-GGUF",
+     "downloads": "33",
+     "likes": "3",
+     "created": "2025-04-30",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 114688,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 4096
   },
   {
    "tier": "B",
@@ -1686,6 +2382,17 @@
    "mlx_build": "here-be-dragons-ai/Kolibri-1-MLX-3bit",
    "mlx_build_bits": "3.61",
    "mlx_build_publisher": "hbd",
+   "llama_cpp": "fork only",
+   "llama_cpp_detail": "6 GGUF builds exist, but upstream llama.cpp does not support the architecture; they need a patched llama.cpp",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "Hob-forge/Kolibri-1-GGUF",
+   "gguf_build_publisher": "organisation",
+   "gguf_builds": 6,
+   "cache_kind": "10 full + 40 sliding-window (513) layers",
+   "cache_kib_per_token": "20.0",
+   "cache_gib_8k": "0.2",
+   "cache_gib_32k": "0.7",
+   "cache_gib_128k": "2.5",
    "flags": "merger pending non-EU; our own work involved",
    "hbd_involvement": "HBD publishes the MLX 3-bit build here-be-dragons-ai/Kolibri-1-MLX-3bit",
    "notes": "German/English MoE, 78B total, 3.5B active. Synthetic data generated with permissively licensed models (Gemma-4-26B-A4B for English rephrasing, per the card). Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval.",
@@ -1766,7 +2473,75 @@
      "publisher": "hbd",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "kolibri-1",
+     "repo": "Hob-forge/Kolibri-1-GGUF",
+     "downloads": "26327",
+     "likes": "19",
+     "created": "2026-10-03",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "kolibri-1",
+     "repo": "webmp3/Sakura-MicroQuality-Kolibri-1-GGUF",
+     "downloads": "1127",
+     "likes": "2",
+     "created": "2026-10-05",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "kolibri-1",
+     "repo": "webmp3/Sakura-MicroQuality-Kolibri-1-365E-GGUF",
+     "downloads": "773",
+     "likes": "2",
+     "created": "2026-10-05",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "kolibri-1",
+     "repo": "Prompt48/Kolibri-1-GGUF",
+     "downloads": "771",
+     "likes": "3",
+     "created": "2026-10-04",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "kolibri-1",
+     "repo": "aparusel/ds4-kolibri-1-gguf",
+     "downloads": "688",
+     "likes": "1",
+     "created": "2026-10-05",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "kolibri-1",
+     "repo": "Myric/Kolibri-1-APEX-GGUF",
+     "downloads": "0",
+     "likes": "0",
+     "created": "2026-10-07",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 20480,
+    "windowed": [
+     [
+      81920,
+      513
+     ]
+    ],
+    "constant": 0,
+    "kind": "10 full + 40 sliding-window (513) layers"
+   },
+   "max_context": 262144
   },
   {
    "tier": "B",
@@ -1798,6 +2573,17 @@
    "mlx_build": "lmstudio-community/Magistral-Small-2509-MLX-8bit",
    "mlx_build_bits": "8",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "mistralai/Magistral-Small-2509-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 9,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "20.0",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Reasoning model.",
@@ -1868,7 +2654,88 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "magistral-small-2509",
+     "repo": "mistralai/Magistral-Small-2509-GGUF",
+     "downloads": "5360",
+     "likes": "76",
+     "created": "2025-09-12",
+     "publisher": "official",
+     "verified_org": true
+    },
+    {
+     "id": "magistral-small-2509",
+     "repo": "unsloth/Magistral-Small-2509-GGUF",
+     "downloads": "7086",
+     "likes": "106",
+     "created": "2025-09-17",
+     "publisher": "curated",
+     "verified_org": true
+    },
+    {
+     "id": "magistral-small-2509",
+     "repo": "lmstudio-community/Magistral-Small-2509-GGUF",
+     "downloads": "3750",
+     "likes": "4",
+     "created": "2025-09-18",
+     "publisher": "curated",
+     "verified_org": false
+    },
+    {
+     "id": "magistral-small-2509",
+     "repo": "DevQuasar/mistralai.Magistral-Small-2509-GGUF",
+     "downloads": "698",
+     "likes": "0",
+     "created": "2025-09-18",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "magistral-small-2509",
+     "repo": "bartowski/mistralai_Magistral-Small-2509-GGUF",
+     "downloads": "3125",
+     "likes": "10",
+     "created": "2025-09-17",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "magistral-small-2509",
+     "repo": "FreedomAISVR/Magistral-Small-2509-NVFP4-GGUF",
+     "downloads": "54",
+     "likes": "1",
+     "created": "2026-06-17",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "magistral-small-2509",
+     "repo": "FreedomAISVR/Magistral-Small-2509-MXFP4-GGUF",
+     "downloads": "38",
+     "likes": "0",
+     "created": "2026-06-17",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "magistral-small-2509",
+     "repo": "nimishchaudhari/Magistral-Small-2509-IQ4_KS-GGUF",
+     "downloads": "28",
+     "likes": "0",
+     "created": "2025-09-23",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 131072
   },
   {
    "tier": "B",
@@ -1900,6 +2767,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "sapienzanlp/Minerva-7B-instruct-v1.0-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 3,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "128.0",
+   "cache_gib_8k": "n/a",
+   "cache_gib_32k": "n/a",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "4k context.",
@@ -1951,7 +2829,43 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "minerva-7b",
+     "repo": "sapienzanlp/Minerva-7B-instruct-v1.0-GGUF",
+     "downloads": "454",
+     "likes": "6",
+     "created": "2024-12-07",
+     "publisher": "official",
+     "verified_org": false
+    },
+    {
+     "id": "minerva-7b",
+     "repo": "DevQuasar-5/sapienzanlp.Minerva-7B-instruct-v1.0-GGUF",
+     "downloads": "215",
+     "likes": "0",
+     "created": "2024-12-10",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "minerva-7b",
+     "repo": "adoslabs/liara-minerva-7b",
+     "downloads": "12",
+     "likes": "0",
+     "created": "2026-07-17",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 131072,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 4096
   },
   {
    "tier": "B",
@@ -1983,6 +2897,17 @@
    "mlx_build": "mlx-community/Ministral-3-14B-Instruct-2512-8bit",
    "mlx_build_bits": "8",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "mistralai/Ministral-3-14B-Instruct-2512-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 16,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "20.0",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
@@ -2053,7 +2978,88 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "ministral-3-14b",
+     "repo": "mistralai/Ministral-3-14B-Instruct-2512-GGUF",
+     "downloads": "44018",
+     "likes": "77",
+     "created": "2025-10-31",
+     "publisher": "official",
+     "verified_org": true
+    },
+    {
+     "id": "ministral-3-14b",
+     "repo": "unsloth/Ministral-3-14B-Instruct-2512-GGUF",
+     "downloads": "13616",
+     "likes": "90",
+     "created": "2025-12-02",
+     "publisher": "curated",
+     "verified_org": true
+    },
+    {
+     "id": "ministral-3-14b",
+     "repo": "DevQuasar/mistralai.Ministral-3-14B-Instruct-2512-GGUF",
+     "downloads": "262",
+     "likes": "0",
+     "created": "2025-12-04",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "ministral-3-14b",
+     "repo": "llmware/ministral-3-14b-gguf",
+     "downloads": "43",
+     "likes": "0",
+     "created": "2026-02-23",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "ministral-3-14b",
+     "repo": "prithivMLmods/Ministral-3-Instruct-2512-AIO-GGUF",
+     "downloads": "3740",
+     "likes": "2",
+     "created": "2025-12-02",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "ministral-3-14b",
+     "repo": "eaddario/Ministral-3-14B-Instruct-2512-GGUF",
+     "downloads": "1223",
+     "likes": "0",
+     "created": "2026-01-21",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "ministral-3-14b",
+     "repo": "jkim96/Ministral-3-14B-Instruct-2512-DASHQ-Q2-GGUF",
+     "downloads": "489",
+     "likes": "0",
+     "created": "2026-10-07",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "ministral-3-14b",
+     "repo": "iasarkar/Ministral-3-14B-Instruct-2512-GGUF",
+     "downloads": "427",
+     "likes": "0",
+     "created": "2026-06-26",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 262144
   },
   {
    "tier": "B",
@@ -2085,6 +3091,17 @@
    "mlx_build": "mlx-community/Mistral-Small-3.2-24B-Instruct-2506-8bit",
    "mlx_build_bits": "8",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "unsloth/Mistral-Small-3.2-24B-Instruct-2506-GGUF",
+   "gguf_build_publisher": "curated",
+   "gguf_builds": 20,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "20.0",
    "flags": "",
    "hbd_involvement": "",
    "notes": "",
@@ -2155,7 +3172,88 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "mistral-small-3.2",
+     "repo": "unsloth/Mistral-Small-3.2-24B-Instruct-2506-GGUF",
+     "downloads": "55437",
+     "likes": "195",
+     "created": "2025-06-20",
+     "publisher": "curated",
+     "verified_org": true
+    },
+    {
+     "id": "mistral-small-3.2",
+     "repo": "lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF",
+     "downloads": "6692",
+     "likes": "8",
+     "created": "2025-06-20",
+     "publisher": "curated",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-3.2",
+     "repo": "smarttasks/Mistral-Small-3.2-24B-Instruct-GGUF",
+     "downloads": "236",
+     "likes": "0",
+     "created": "2026-07-17",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-3.2",
+     "repo": "DevQuasar/mistralai.Mistral-Small-3.2-24B-Instruct-2506-GGUF",
+     "downloads": "220",
+     "likes": "0",
+     "created": "2025-06-22",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "mistral-small-3.2",
+     "repo": "gratex/mistral-small-3.2-24B-Instruct-2506-GGUF",
+     "downloads": "165",
+     "likes": "0",
+     "created": "2026-05-10",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-3.2",
+     "repo": "AbteeXAILab/lumynax-infused-mistral-small-text-gguf",
+     "downloads": "135",
+     "likes": "0",
+     "created": "2026-04-19",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-3.2",
+     "repo": "llmware/mistral-3.2-24b-gguf",
+     "downloads": "103",
+     "likes": "1",
+     "created": "2025-07-05",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-3.2",
+     "repo": "TribeBlend/tribeblend-etl-mistral-small-24b-instruct",
+     "downloads": "24",
+     "likes": "0",
+     "created": "2026-06-22",
+     "publisher": "organisation",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 131072
   },
   {
    "tier": "B",
@@ -2187,6 +3285,17 @@
    "mlx_build": "mlx-community/Mistral-Small-4-119B-2603-4bit",
    "mlx_build_bits": "4",
    "mlx_build_publisher": "curated",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "unsloth/Mistral-Small-4-119B-2603-GGUF",
+   "gguf_build_publisher": "curated",
+   "gguf_builds": 21,
+   "cache_kind": "MLA, cached decompressed in MLX",
+   "cache_kib_per_token": "576.0",
+   "cache_gib_8k": "4.5",
+   "cache_gib_32k": "18.0",
+   "cache_gib_128k": "72.0",
    "flags": "",
    "hbd_involvement": "",
    "notes": "MoE, about 6.5B active; needs about 2-bit to fit 48 GB.",
@@ -2257,7 +3366,88 @@
      "publisher": "curated",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [
+    {
+     "id": "mistral-small-4",
+     "repo": "unsloth/Mistral-Small-4-119B-2603-GGUF",
+     "downloads": "14491",
+     "likes": "87",
+     "created": "2026-03-17",
+     "publisher": "curated",
+     "verified_org": true
+    },
+    {
+     "id": "mistral-small-4",
+     "repo": "lmstudio-community/Mistral-Small-4-119B-2603-GGUF",
+     "downloads": "1121",
+     "likes": "8",
+     "created": "2026-03-13",
+     "publisher": "curated",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-4",
+     "repo": "DevQuasar/mistralai.Mistral-Small-4-119B-2603-GGUF",
+     "downloads": "792",
+     "likes": "0",
+     "created": "2026-03-18",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "mistral-small-4",
+     "repo": "batiai/Mistral-Small-4-119B-GGUF",
+     "downloads": "171",
+     "likes": "0",
+     "created": "2026-06-18",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-4",
+     "repo": "bartowski/mistralai_Mistral-Small-4-119B-2603-GGUF",
+     "downloads": "5615",
+     "likes": "18",
+     "created": "2026-03-16",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-4",
+     "repo": "kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF",
+     "downloads": "5095",
+     "likes": "0",
+     "created": "2026-08-16",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-4",
+     "repo": "mudler/Mistral-Small-4-119B-2603-APEX-GGUF",
+     "downloads": "4755",
+     "likes": "2",
+     "created": "2026-04-05",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "mistral-small-4",
+     "repo": "mradermacher/Mistral-Small-4-119B-2603-i1-GGUF",
+     "downloads": "2003",
+     "likes": "3",
+     "created": "2026-03-22",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 589824,
+    "windowed": [],
+    "constant": 0,
+    "kind": "MLA, cached decompressed in MLX"
+   },
+   "max_context": 1048576
   },
   {
    "tier": "B",
@@ -2289,6 +3479,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "20.0",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Grounded summarisation.",
@@ -2340,7 +3541,15 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 131072
   },
   {
    "tier": "B",
@@ -2372,6 +3581,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "tensorblock/Viking-33B-GGUF",
+   "gguf_build_publisher": "organisation",
+   "gguf_builds": 4,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "224.0",
+   "cache_gib_8k": "n/a",
+   "cache_gib_32k": "n/a",
+   "cache_gib_128k": "n/a",
    "flags": "acquired non-EU",
    "hbd_involvement": "",
    "notes": "4k context. Released before Silo AI was acquired by AMD (US) in August 2024.",
@@ -2443,7 +3663,52 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "viking-33b",
+     "repo": "tensorblock/Viking-33B-GGUF",
+     "downloads": "187",
+     "likes": "0",
+     "created": "2024-12-11",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "viking-33b",
+     "repo": "mradermacher/Viking-33B-i1-GGUF",
+     "downloads": "5902",
+     "likes": "0",
+     "created": "2024-07-03",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "viking-33b",
+     "repo": "mradermacher/Viking-33B-GGUF",
+     "downloads": "804",
+     "likes": "0",
+     "created": "2024-07-03",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "viking-33b",
+     "repo": "NikolayKozloff/Viking-33B-Q2_K-GGUF",
+     "downloads": "19",
+     "likes": "1",
+     "created": "2024-07-02",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 229376,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 4096
   },
   {
    "tier": "C",
@@ -2475,6 +3740,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "NbAiLab/borealis2-26b-a4b-preview-gguf",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 2,
+   "cache_kind": "5 full + 25 sliding-window (1024) layers",
+   "cache_kib_per_token": "20.0",
+   "cache_gib_8k": "0.4",
+   "cache_gib_32k": "0.8",
+   "cache_gib_128k": "2.7",
    "flags": "outside the EU; custom licence; non-European base model",
    "hbd_involvement": "",
    "notes": "Norway is not in the EU. nb-license-1.0.",
@@ -2526,7 +3802,39 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "borealis2-26b",
+     "repo": "NbAiLab/borealis2-26b-a4b-preview-gguf",
+     "downloads": "2074",
+     "likes": "0",
+     "created": "2026-07-30",
+     "publisher": "official",
+     "verified_org": true
+    },
+    {
+     "id": "borealis2-26b",
+     "repo": "BobTheShoplifter/borealis2-26b-a4b-preview-GGUF",
+     "downloads": "200",
+     "likes": "0",
+     "created": "2026-08-21",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 20480,
+    "windowed": [
+     [
+      204800,
+      1024
+     ]
+    ],
+    "constant": 0,
+    "kind": "5 full + 25 sliding-window (1024) layers"
+   },
+   "max_context": 262144
   },
   {
    "tier": "C",
@@ -2558,6 +3866,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "Hcompany/Holo4-35B-A3B-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 6,
+   "cache_kind": "hybrid: 10 full + 30 linear-attention layers",
+   "cache_kib_per_token": "20.0",
+   "cache_gib_8k": "0.2",
+   "cache_gib_32k": "0.7",
+   "cache_gib_128k": "2.6",
    "flags": "non-European base model",
    "hbd_involvement": "",
    "notes": "Computer-use agent model.",
@@ -2599,7 +3918,70 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "holo4-35b-a3b",
+     "repo": "Hcompany/Holo4-35B-A3B-GGUF",
+     "downloads": "5153",
+     "likes": "15",
+     "created": "2026-09-25",
+     "publisher": "official",
+     "verified_org": true
+    },
+    {
+     "id": "holo4-35b-a3b",
+     "repo": "DevQuasar/Hcompany.Holo4-35B-A3B-GGUF",
+     "downloads": "307",
+     "likes": "0",
+     "created": "2026-09-28",
+     "publisher": "organisation",
+     "verified_org": true
+    },
+    {
+     "id": "holo4-35b-a3b",
+     "repo": "bartowski/Hcompany_Holo4-35B-A3B-GGUF",
+     "downloads": "3839",
+     "likes": "1",
+     "created": "2026-09-29",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "holo4-35b-a3b",
+     "repo": "mradermacher/Holo4-35B-A3B-i1-GGUF",
+     "downloads": "2787",
+     "likes": "0",
+     "created": "2026-10-01",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "holo4-35b-a3b",
+     "repo": "mradermacher/Holo4-35B-A3B-GGUF",
+     "downloads": "1235",
+     "likes": "0",
+     "created": "2026-09-29",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "holo4-35b-a3b",
+     "repo": "abenzerps/Holo4-35B-A3B-GGUF",
+     "downloads": "396",
+     "likes": "0",
+     "created": "2026-09-28",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 20480,
+    "windowed": [],
+    "constant": 62914560,
+    "kind": "hybrid: 10 full + 30 linear-attention layers"
+   },
+   "max_context": 262144
   },
   {
    "tier": "C",
@@ -2631,6 +4013,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "tensorblock/LumiOpen_Llama-Poro-2-8B-Instruct-GGUF",
+   "gguf_build_publisher": "organisation",
+   "gguf_builds": 6,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "128.0",
+   "cache_gib_8k": "1.0",
+   "cache_gib_32k": "n/a",
+   "cache_gib_128k": "n/a",
    "flags": "acquired non-EU; custom licence; non-European base model",
    "hbd_involvement": "",
    "notes": "Llama 3.3 licence inherited.",
@@ -2702,7 +4095,70 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "poro-2-8b",
+     "repo": "tensorblock/LumiOpen_Llama-Poro-2-8B-Instruct-GGUF",
+     "downloads": "208",
+     "likes": "0",
+     "created": "2025-08-08",
+     "publisher": "organisation",
+     "verified_org": false
+    },
+    {
+     "id": "poro-2-8b",
+     "repo": "mradermacher/Llama-Poro-2-8B-Instruct-i1-GGUF",
+     "downloads": "1371",
+     "likes": "1",
+     "created": "2025-06-19",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "poro-2-8b",
+     "repo": "mradermacher/Llama-Poro-2-8B-Instruct-GGUF",
+     "downloads": "1025",
+     "likes": "4",
+     "created": "2025-06-19",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "poro-2-8b",
+     "repo": "wyrmiyu/Llama-Poro-2-8B-Instruct-Q6_K-GGUF",
+     "downloads": "50",
+     "likes": "0",
+     "created": "2026-01-31",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "poro-2-8b",
+     "repo": "mpasila/Llama-Poro-2-8B-Instruct-Q5_K_S-GGUF",
+     "downloads": "44",
+     "likes": "0",
+     "created": "2025-06-19",
+     "publisher": "individual",
+     "verified_org": false
+    },
+    {
+     "id": "poro-2-8b",
+     "repo": "wyrmiyu/Llama-Poro-2-8B-Instruct-Q8_0-GGUF",
+     "downloads": "22",
+     "likes": "0",
+     "created": "2026-01-31",
+     "publisher": "individual",
+     "verified_org": false
+    }
+   ],
+   "cache_layout": {
+    "growing": 131072,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 8192
   },
   {
    "tier": "C",
@@ -2734,6 +4190,17 @@
    "mlx_build": "",
    "mlx_build_bits": "",
    "mlx_build_publisher": "",
+   "llama_cpp": "unsupported",
+   "llama_cpp_detail": "architecture not registered in the converter",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "cache_kind": "recurrent (xLSTM), constant state",
+   "cache_kib_per_token": "0.0",
+   "cache_gib_8k": "0.1",
+   "cache_gib_32k": "0.1",
+   "cache_gib_128k": "0.1",
    "flags": "custom licence",
    "hbd_involvement": "",
    "notes": "Recurrent (mLSTM) architecture, no attention, constant-size state. Base model only, mostly English (DCLM). NXAI Community License (based on Llama 3; attribution and notice required).",
@@ -2805,7 +4272,15 @@
      "note": "not listed (2026-10-07)"
     }
    ],
-   "mlx_builds": []
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 0,
+    "windowed": [],
+    "constant": 134479872,
+    "kind": "recurrent (xLSTM), constant state"
+   },
+   "max_context": null
   },
   {
    "tier": "pending",
@@ -2837,6 +4312,17 @@
    "mlx_build": "leonsarmiento/Domyn-Small-v1.0-8bit-mlx",
    "mlx_build_bits": "8",
    "mlx_build_publisher": "individual",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "n/a",
    "flags": "",
    "hbd_involvement": "",
    "notes": "Hub metadata: license 'other' with license_name 'mit'. Tier pending until the licence text is checked.",
@@ -2897,7 +4383,15 @@
      "publisher": "individual",
      "verified_org": false
     }
-   ]
+   ],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "max_context": 32768
   }
  ]
 }
