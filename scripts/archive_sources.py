@@ -50,6 +50,11 @@ def main():
         rows = list(csv.DictReader(f))
     fields = list(rows[0].keys())
     done = {r["url"]: r["archive_url"] for r in rows if r["archive_url"]}
+    # New rows citing an already archived URL reuse its snapshot.
+    for r in rows:
+        if not r["archive_url"] and r["url"] in done:
+            r["archive_url"] = done[r["url"]]
+    write(rows, fields)
     todo = sorted({r["url"] for r in rows if not r["archive_url"] and r["url"] not in done})
     print(f"{len(todo)} URLs to archive")
     for i, url in enumerate(todo, 1):

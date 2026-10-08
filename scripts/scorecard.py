@@ -36,6 +36,20 @@ FAMILY_ALLOWED = {
     "compute": {"eu", "europe", "non-europe", "unknown"},
     "ai_act_summary": {"yes", "no", "unknown"},
 }
+# Informative family criteria (#5): shown and sourced, not part of the tier.
+INFO_ALLOWED = {
+    "teacher_status": {"listed", "none", "unknown"},
+    "recipe": {"weights", "code", "code+data", "full", "unknown"},
+    "terms_can_change": {"no", "yes", "unknown"},
+    "languages_basis": {"supported", "trained", "metadata", "unknown"},
+    "training_hardware": {"nvidia", "amd", "google-tpu", "other", "unknown"},
+}
+TEACHER_ALLOWED = {
+    "stage": {"pretraining", "midtraining", "posttraining", "judge"},
+    "model_origin": {"own", "european", "foreign", "unknown"},
+}
+EU_LANGUAGES = {"bg", "hr", "cs", "da", "nl", "en", "et", "fi", "fr", "de", "el", "hu",
+                "ga", "it", "lv", "lt", "mt", "pl", "pt", "ro", "sk", "sl", "es", "sv"}
 FAMILY_FIELDS = list(FAMILY_ALLOWED) + ["base_model"]
 ISSUERS = {"provider", "official", "academic", "press", "community", "hbd"}
 COUNTING_ISSUERS = {"provider", "official", "academic", "press"}
@@ -84,6 +98,7 @@ class Data:
         self.namespaces = {n["namespace"]: n for n in read("hf_namespaces.csv")}
         self.builds = read("mlx_builds.csv")
         self.gguf_builds = read("gguf_builds.csv")
+        self.teachers = read("teachers.csv")
 
     # -- resolution ------------------------------------------------------------
     def resolve(self, model):
@@ -101,7 +116,30 @@ class Data:
         for field in ("region", "control", "cop_signatory", "majority_owner"):
             out[field] = provider.get(field, "")
         out["provider_notes"] = provider.get("notes", "")
+        for field in INFO_ALLOWED:
+            out[field] = family.get(field, "") or "unknown"
+        out["languages"] = family.get("languages", "")
+        out["eu_languages"] = self.eu_languages(family)
+        out["teachers"] = [t for t in self.teachers if t["family_id"] == model["family_id"]]
+        out["teacher_origin"] = self.teacher_origin(family, out["teachers"])
         return out
+
+    @staticmethod
+    def eu_languages(family):
+        codes = set(split(family.get("languages")))
+        return len(codes & EU_LANGUAGES) if codes else ""
+
+    @staticmethod
+    def teacher_origin(family, teachers):
+        """Most foreign origin over data-generating stages; judges do not count."""
+        status = family.get("teacher_status") or "unknown"
+        if status != "listed":
+            return status
+        origins = {t["model_origin"] for t in teachers if t["stage"] != "judge"}
+        for origin in ("foreign", "unknown", "european", "own"):
+            if origin in origins:
+                return origin
+        return "judges only"
 
     def resolved(self):
         return [self.resolve(m) for m in self.models]
@@ -236,7 +274,33 @@ class Data:
                 errors.append(f"provider {p['id']}: country must be ISO alpha-2")
             if p.get("control") != "independent" and not p.get("majority_owner"):
                 errors.append(f"provider {p['id']}: control={p['control']} needs majority_owner")
+        teacher_families = {t["family_id"] for t in self.teachers}
+        for t in self.teachers:
+            if t["family_id"] not in self.families:
+                errors.append(f"teacher {t['model']}: unknown family_id {t['family_id']!r}")
+            for col, values in TEACHER_ALLOWED.items():
+                if t.get(col) not in values:
+                    errors.append(f"teacher {t['family_id']}/{t['model']}: {col}={t.get(col)!r} not in {sorted(values)}")
+            if not any(s["scope"] == "family" and s["subject"] == t["family_id"] and s["field"] == f"teacher:{t['model']}"
+                       for s in self.sources):
+                errors.append(f"teacher {t['family_id']}/{t['model']}: no source (field 'teacher:{t['model']}')")
         for f in self.families.values():
+            check_values("family", f, {k: v for k, v in INFO_ALLOWED.items() if f.get(k)})
+            status = f.get("teacher_status") or "unknown"
+            if (status == "listed") != (f["id"] in teacher_families):
+                errors.append(f"family {f['id']}: teacher_status={status!r} does not match teachers.csv")
+            codes = split(f.get("languages"))
+            if any(not re.fullmatch(r"[a-z]{2,3}", c) for c in codes):
+                errors.append(f"family {f['id']}: languages must be ISO 639 codes separated by ';'")
+            needs = {"recipe": f.get("recipe"), "training_hardware": f.get("training_hardware"),
+                     "languages": f.get("languages"), "teacher_status": "none" if status == "none" else ""}
+            # Plain open licences without a use policy cannot change by construction.
+            if f.get("terms_can_change") and not (f["terms_can_change"] == "no" and f["license_class"] == "osi"):
+                needs["terms_can_change"] = f["terms_can_change"]
+            for field, value in needs.items():
+                if value and value != "unknown" and not any(
+                        s["scope"] == "family" and s["subject"] == f["id"] and s["field"] == field for s in self.sources):
+                    errors.append(f"family {f['id']}: {field}={value!r} has no source")
             if f.get("provider_id") not in self.providers:
                 errors.append(f"family {f['id']}: unknown provider_id {f.get('provider_id')!r}")
             for col in FAMILY_ALLOWED:

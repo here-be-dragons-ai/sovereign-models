@@ -27,6 +27,20 @@ class TestData(unittest.TestCase):
     def test_current_data_is_valid(self):
         self.assertEqual(self.d.validate(), [])
 
+    def test_teacher_origin_ignores_judges_and_ranks_unknown_above_european(self):
+        origin = Data.teacher_origin
+        listed = {"teacher_status": "listed"}
+        t = lambda stage, o: {"stage": stage, "model_origin": o}
+        self.assertEqual(origin(listed, [t("judge", "foreign"), t("posttraining", "own")]), "own")
+        self.assertEqual(origin(listed, [t("posttraining", "unknown"), t("pretraining", "european")]), "unknown")
+        self.assertEqual(origin(listed, [t("judge", "foreign")]), "judges only")
+        self.assertEqual(origin({"teacher_status": "unknown"}, []), "unknown")
+
+    def test_teacher_needs_a_source(self):
+        self.d.teachers.append({"family_id": "alia", "stage": "posttraining", "model": "X-1",
+                                "model_origin": "foreign", "purpose": ""})
+        self.assertTrue(any("teacher:X-1" in e for e in self.d.validate()))
+
     def test_community_url_cannot_be_a_provider_source(self):
         self.d.sources.append(source(url="https://huggingface.co/tonidurans/ALIA-40b-instruct-2605-mlx-q4"))
         self.assertTrue(any("URL says 'community'" in e for e in self.d.validate()))

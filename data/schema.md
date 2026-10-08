@@ -47,6 +47,37 @@ by the provider itself.
 | `ai_act_summary` | `yes`, `no`, `unknown` | Public summary of training content under the EU AI Act |
 | `notes` | text | |
 
+### Informative family columns (#5)
+
+Shown and sourced, not part of the tier.
+
+| Column | Allowed values | Meaning |
+|---|---|---|
+| `teacher_status` | `listed`, `none`, `unknown` | `listed` = teachers in `teachers.csv`; `none` = the provider states no synthetic data or distillation; `unknown` = not stated |
+| `recipe` | `weights`, `code`, `code+data`, `full`, `unknown` | Reproducibility: weights only; plus training code; plus training data; plus recipes, configs and intermediate checkpoints |
+| `terms_can_change` | `no`, `yes`, `unknown` | Whether the licence or a binding use policy can change after release ("as updated from time to time"). `no` without a source only for plain `osi` licences |
+| `languages` | ISO 639 codes, `;`-separated | Languages the provider names; the count of the 24 official EU languages is derived |
+| `languages_basis` | `supported`, `trained`, `metadata`, `unknown` | Provider claims support; only in the training mix; Hub metadata only |
+| `training_hardware` | `nvidia`, `amd`, `google-tpu`, `other`, `unknown` | Accelerators used for pre-training (not inference recommendations) |
+
+## `teachers.csv`
+
+One row per family, stage and teacher model: models whose outputs became training data
+(synthetic data, rephrasing, translation, distillation) or that served as judges.
+
+| Column | Allowed values | Meaning |
+|---|---|---|
+| `family_id` | id in `families.csv` | |
+| `stage` | `pretraining`, `midtraining`, `posttraining`, `judge` | `judge` = evaluation, filtering or reward only |
+| `model` | text | Teacher model |
+| `model_origin` | `own`, `european`, `foreign`, `unknown` | The provider's own model, another European provider's, non-European, or not named by the source |
+| `purpose` | text | What it was used for |
+
+Every row needs a source at family scope with field `teacher:<model>`. A model that is only
+mentioned (comparison tables, borrowed chat template, the fine-tuned base model) is not a teacher.
+The derived `teacher_origin` of a family is the most foreign origin over the data-generating
+stages; judges are shown but do not count.
+
 ## `scorecard.csv` (models)
 
 | Column | Meaning |

@@ -1,0 +1,62 @@
+family_id,stage,model,model_origin,purpose
+luciole-1.1,pretraining,Qwen3-8B,foreign,rephrasing FineWeb 2 documents and Q/A pairs for Wikipedia
+luciole-1.1,pretraining,Qwen3-32B,foreign,translating Nemotron thinking traces into French (default model of the script)
+luciole-1.1,pretraining,QwQ-32B (via OpenThoughts3),foreign,third-party reasoning traces
+luciole-1.1,pretraining,Mixtral-8x7B (via OpenMathInstruct-1),european,third-party synthetic math solutions
+luciole-1.1,posttraining,Qwen3-32B and Qwen3-0.6B,foreign,"DPO pairs (32B chosen, 0.6B rejected)"
+luciole-1.1,posttraining,Qwen3-14B,foreign,safety alignment data
+luciole-1.1,posttraining,Ministral-3-14B-Instruct,european,safety alignment data
+luciole-1.1,posttraining,Luciole-8B-Instruct (interim checkpoint),own,safety alignment data
+luciole-1.1,posttraining,Qwen and DeepSeek models (via third-party SFT sets),foreign,generators of most third-party SFT data
+lucie-1.1,posttraining,ChatGPT,foreign,synthetic instructions in the SFT mix
+lucie-1.1,posttraining,gpt-3.5-turbo,foreign,translating Alpaca-cleaned into French
+eurollm-2512,midtraining,Qwen2.5-Math-7B,foreign,rewriting math questions and answers (annealing phase)
+eurollm-2512,midtraining,Gemma2-9B,foreign,multiple-choice questions from math data; SlimOrca answers
+eurollm-2512,midtraining,"Gemma2-27B, Llama3.1-70B, Qwen2.5-32B",foreign,candidate answers for SlimOrca augmentation
+eurollm-2512,midtraining,Tower,own,"translating Cosmopedia into eight languages (Unbabel/IST, consortium members)"
+eurollm-2512,posttraining,"DeepSeek-V3, Qwen, Tulu 3, Llama 3",foreign,regenerated answers for public SFT prompts
+eurollm-2512,judge,Qwen2.5-32B,foreign,LLM-as-judge filter for synthetic math
+eurollm-2512,judge,Skywork-Gemma2-27B,foreign,reward model selecting the best SFT response
+alia,posttraining,DeepSeek-V3-0324,foreign,synthetic SFT conversations; translating OpenR1-Math
+alia,posttraining,Qwen3 models,foreign,safety attack prompts
+alia,posttraining,ALIA-40b-instruct-2605 and internal ALIA checkpoints,own,candidate responses for DPO pairs
+alia,posttraining,Mixtral 8x7B (via RAG_Multilingual),european,synthetic QA data in SFT
+alia,judge,DeepSeek-V3-0324 (judge),foreign,rating responses for DPO pairs
+salamandra,posttraining,Mixtral 8x7B (via RAG_Multilingual),european,synthetic RAG QA instructions in the SFT mix
+salamandra,posttraining,GPT (via OpenOrca),foreign,third-party synthetic SFT data
+apertus-1.5,pretraining,Qwen3.6-27B and Qwen3.5-397B-A17B,foreign,synthetic instruction and QA text paired with real images
+apertus-1.5,pretraining,Qwen vision-language model,foreign,captions for the NASA image subset
+apertus-1.5,pretraining,"Qwen3.5-9B, Qwen2.5-VL-72B, Gemma 4, MedGemma 1.5, Kimi-VL",foreign,"recaptioning, caption cleaning, OCR, translation, quality assessment"
+apertus-1.5,pretraining,EuroLLM-22B-Instruct-2512,european,data enrichment (same list)
+apertus-1.5,posttraining,"Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, GPT-OSS-120B-Safeguard",foreign,synthetic post-training data
+apertus-1.5,judge,Qwen3-235B-A22B-Instruct-2507,foreign,scoring responses for the 70B DPO pairs
+helium-1,pretraining,Gemma 2 9B,foreign,distillation teacher for the whole pretraining
+pleias-rag,midtraining,Gemma 3 12B,foreign,synthetic queries and reasoning traces for 3M RAG examples
+pleias-rag,midtraining,Gemma 3 27B,foreign,"initial 4,000-example seed set"
+kolibri-1,pretraining,Gemma-4-26B-A4B,foreign,rephrasing English Common Crawl
+kolibri-1,pretraining,Mistral-NeMo-12B,european,rephrasing German web data
+kolibri-1,posttraining,"GLM-5.2, GLM-5.3, Qwen3.8-27B",foreign,SFT data generation and regeneration of open datasets
+kolibri-1,posttraining,Kolibri 8B proxy model,own,abstention SFT completions
+kolibri-1,judge,Qwen3-32B,foreign,annotations for pretraining quality classifiers
+kolibri-1,judge,Qwen3.5-122B-A10B,foreign,RL reward judge and user simulator
+kolibri-1,judge,gpt-oss-120b,foreign,filtering SFT conversations that carry CCP narratives
+magistral-small,posttraining,Magistral Medium,own,SFT reasoning traces
+magistral-small,judge,Mistral Large 2,own,difficulty filtering of RL math problems
+ministral-3,pretraining,Mistral Small 3.1,own,logit distillation (cascade distillation)
+ministral-3,posttraining,Mistral Medium 3,own,SFT logit distillation
+ministral-3,judge,Internal pairwise reward model,own,ranking responses for online DPO
+bielik-v3,posttraining,DeepSeek-V3-0324,foreign,preferred/rejected pairs for DPO-P
+bielik-v3,posttraining,Bielik 11B v2.6,own,preferred/rejected pairs for DPO-P
+sui-1,posttraining,Unnamed frontier closed-source model,unknown,~22K citation-grounded summary SFT examples
+domyn-small,posttraining,Qwen3-32B and Qwen3-0.6B (via Dolci),foreign,DPO pairs (AllenAI Dolci-Instruct-DPO)
+domyn-small,posttraining,Unnamed teacher models,unknown,synthetic data for SFT and RL pipelines
+domyn-small,judge,GPT-4.1 (via Dolci),foreign,selecting best and worst responses for DPO pairs
+minerva,posttraining,TowerInstruct-Mistral-7B-v0.2,european,translating Magpie and conversation SFT data into Italian
+minerva,posttraining,Llama 3.1 (via Magpie),foreign,"third-party synthetic SFT conversations, translated"
+minerva,posttraining,GPT-4 and GPT-4o (via third-party sets),foreign,alpaca-gpt4-it and GPT-4o-ITA-INSTRUCT in the SFT mix (inferred from dataset names)
+minerva,posttraining,Claude (via capybara-claude-15k-ita),foreign,third-party SFT data (inferred from dataset name)
+minerva,judge,Skywork-Reward-Llama-3.1-8B-v0.2,foreign,reward model for online DPO
+poro-2,posttraining,Llama-3.3-70B-Instruct,foreign,SFT responses for English and Finnish Tulu 3 prompts and Magpie conversations
+poro-2,posttraining,Poro-34B,own,translating the Tulu 3 SFT prompts into Finnish
+poro-2,judge,Llama-3.3-70B-Instruct (judge),foreign,picking the best Finnish response
+poro-2,judge,ArmoRM-Llama3-8B-v0.1,foreign,reward model picking the best English response

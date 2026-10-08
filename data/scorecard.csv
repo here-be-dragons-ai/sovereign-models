@@ -12,7 +12,7 @@ apertus-1.5-70b,Apertus 1.5 70B,swiss-ai/Apertus-v1.5-70B,apertus-1.5,"text, ima
 viking-33b,Viking 33B,LumiOpen/Viking-33B,viking,text,,,,,,,,4k context. Released before Silo AI was acquired by AMD (US) in August 2024.
 helium-1-2b,Helium 1 2B,kyutai/helium-1-2b,helium-1,text,,,,,,,,CC-BY-SA-4.0. 4k context.
 pleias-rag-1b,Pleias RAG 1B,PleIAs/Pleias-RAG-1B,pleias-rag,text,,,,,,,,Specialised for retrieval-augmented generation with citations. 4k context.
-kolibri-1,Kolibri 1,Aleph-Alpha/Kolibri-1,kolibri-1,text,,,,,,,HBD publishes the MLX 3-bit build here-be-dragons-ai/Kolibri-1-MLX-3bit,"German/English MoE, 78B total, 3.5B active. Synthetic data generated with permissively licensed models (Gemma-4-26B-A4B for English rephrasing, per the card). Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval."
+kolibri-1,Kolibri 1,Aleph-Alpha/Kolibri-1,kolibri-1,text,,,,,,,HBD publishes the MLX 3-bit build here-be-dragons-ai/Kolibri-1-MLX-3bit,"German/English MoE, 78B total, 3.5B active. Pretraining rephrasing with Gemma-4-26B-A4B and Mistral-NeMo-12B (card); post-training SFT data mainly from GLM-5.2, GLM-5.3 and Qwen3.8-27B (technical report). Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval."
 devstral-small-2,Devstral Small 2 24B,mistralai/Devstral-Small-2-24B-Instruct-2512,devstral-small-2,"text, image",,,,,,,,Coding/agent model.
 magistral-small-2509,Magistral Small 2509,mistralai/Magistral-Small-2509,magistral-small,"text, image",,,,,,,,Reasoning model.
 mistral-small-3.2,Mistral Small 3.2 24B,mistralai/Mistral-Small-3.2-24B-Instruct-2506,mistral-small-3,"text, image",,,,,,,,

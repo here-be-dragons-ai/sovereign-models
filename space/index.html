@@ -67,6 +67,12 @@
     <div><label for="ram">Fits a Mac with … (4-bit weights)</label>
       <select id="ram"><option value="">any size</option><option>16</option><option>24</option><option>32</option>
         <option>48</option><option>64</option><option>96</option><option>128</option></select></div>
+    <div><label for="teacher">Teacher models</label>
+      <select id="teacher"><option value="">any</option><option value="no-foreign">no foreign teacher</option>
+        <option value="foreign">foreign teacher</option><option value="unknown">unknown or unnamed</option></select></div>
+    <div><label for="recipe">Reproducibility</label>
+      <select id="recipe"><option value="">any</option><option value="code">training code or more</option>
+        <option value="full">full recipe</option></select></div>
     <div class="chips"><label><input type="checkbox" id="mlx"> loads in mlx-vlm</label>
       <label><input type="checkbox" id="llama"> runs in llama.cpp</label></div>
   </div>
@@ -111,6 +117,17 @@ function memText(m) {
   return v === null ? "?" : Number.isNaN(v) ? "beyond max" : v.toFixed(1);
 }
 
+function teacherOk(m) {
+  const v = $("teacher").value;
+  if (!v) return true;
+  if (v === "no-foreign") return ["none", "own", "european", "judges only"].includes(m.teacher_origin);
+  return m.teacher_origin === v;
+}
+function recipeOk(m) {
+  const v = $("recipe").value, order = ["weights", "code", "code+data", "full"];
+  return !v || order.indexOf(m.recipe) >= order.indexOf(v);
+}
+
 function filtered() {
   const tiers = [...document.querySelectorAll("#tierchips input:checked")].map(i => i.value);
   const country = $("country").value, licence = $("licence").value, ram = parseFloat($("ram").value);
@@ -120,6 +137,7 @@ function filtered() {
     (!licence || m.license_class === licence) &&
     (!$("mlx").checked || m.mlx_vlm === "loads") &&
     (!$("llama").checked || m.llama_cpp === "supported") &&
+    teacherOk(m) && recipeOk(m) &&
     (!ram || (() => { const v = memory(m); return v !== null && !Number.isNaN(v) && v + 1 <= ram * 0.75; })()));
 }
 
@@ -177,6 +195,15 @@ function detail(id) {
       — only provider, official, academic and press sources that we checked count for the tier.
       Last reviewed ${esc(m.last_reviewed)}.</div>
     <table>${rows.map(([l, v, f]) => `<tr><td>${esc(l)}</td><td>${esc(v)}<div class="src">${f ? sources(m, f) : ""}</div></td></tr>`).join("")}</table>
+    <h3>Lineage and openness <span class="src">(informative, not part of the tier)</span></h3>
+    <table>
+      <tr><td>Teacher models</td><td>${esc(m.teacher_origin)}${m.teachers.length ? "<br>" + m.teachers.map(t =>
+        `${esc(t.model)} — ${esc(t.stage)}, ${esc(t.model_origin)}${t.purpose ? ": " + esc(t.purpose) : ""}<div class="src">${sources(m, "teacher:" + t.model)}</div>`).join("") : `<div class="src">${sources(m, "teacher_status")}</div>`}</td></tr>
+      <tr><td>Reproducibility</td><td>${esc(m.recipe)}<div class="src">${sources(m, "recipe")}</div></td></tr>
+      <tr><td>Terms can change later</td><td>${esc(m.terms_can_change)}<div class="src">${sources(m, "terms_can_change")}</div></td></tr>
+      <tr><td>Languages</td><td>${m.languages ? esc(m.eu_languages) + " of 24 EU languages (" + esc(m.languages_basis) + "): " + esc(m.languages.replaceAll(";", ", ")) : "unknown"}<div class="src">${sources(m, "languages")}</div></td></tr>
+      <tr><td>Training hardware</td><td>${esc(m.training_hardware)}<div class="src">${sources(m, "training_hardware")}</div></td></tr>
+    </table>
     <h3>On a Mac</h3>
     <ul>
       <li>mlx-vlm: <b>${esc(m.mlx_vlm)}</b>${m.mlx_vlm_detail ? " — " + esc(m.mlx_vlm_detail) : ""} <span class="src">(checked ${esc(m.mlx_vlm_checked || "—")})</span></li>

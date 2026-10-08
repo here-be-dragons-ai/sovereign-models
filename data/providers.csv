@@ -1,18 +1,18 @@
 id,name,country,region,control,majority_owner,cop_signatory,hf_orgs,github_orgs,domains,notes
 openllm-france,OpenLLM-France / LINAGORA,FR,eu,independent,,yes,OpenLLM-France,OpenLLM-France,openllm-france.fr;linagora.com,
 eurollm,"EuroLLM consortium (Unbabel, IST Lisbon, U. Edinburgh, ...)",PT,eu,independent,,no,utter-project,,,
-bsc,Barcelona Supercomputing Center (BSC),ES,eu,independent,,no,BSC-LT,,bsc.es,
-tilde,Tilde,LV,eu,independent,,no,TildeAI,,,
+bsc,Barcelona Supercomputing Center (BSC),ES,eu,independent,,no,BSC-LT,langtech-bsc,bsc.es,
+tilde,Tilde,LV,eu,independent,,no,TildeAI,tilde-nlp,,
 swiss-ai,"Swiss AI Initiative (ETH Zurich, EPFL)",CH,europe,independent,,no,swiss-ai,swiss-ai,swiss-ai.org;apertus-ai.org,Switzerland is not in the EU.
-silo-ai,Silo AI (AMD),FI,eu,acquired-non-eu,AMD (US),no,LumiOpen,,,Acquired by AMD in August 2024.
+silo-ai,Silo AI (AMD),FI,eu,acquired-non-eu,AMD (US),no,LumiOpen,LumiOpen,,Acquired by AMD in August 2024.
 kyutai,Kyutai,FR,eu,independent,,no,kyutai,,kyutai.org,
 pleias,Pleias,FR,eu,independent,,yes,PleIAs,,,
 aleph-alpha,Aleph Alpha,DE,eu,merger-pending-non-eu,"Cohere (CA), merger pending",yes,Aleph-Alpha,,aleph-alpha.com,"Definitive merger agreement with Cohere signed 2026-09-16, pending approval."
 mistral-ai,Mistral AI,FR,eu,independent,,yes,mistralai,,mistral.ai,
 speakleash,"SpeakLeash, ACK Cyfronet AGH",PL,eu,independent,,no,speakleash,,,
 ellamind,ellamind,DE,eu,independent,,no,ellamind,,,
-domyn,Domyn (formerly iGenius),IT,eu,independent,,yes,domyn,,,
+domyn,Domyn (formerly iGenius),IT,eu,independent,,yes,domyn,,domyn.com,
 sapienza-nlp,Sapienza NLP,IT,eu,independent,,no,sapienzanlp,,,
 nxai,NXAI,AT,eu,independent,,no,NX-AI,NX-AI,,
-h-company,H Company,FR,eu,independent,,no,Hcompany,,,
+h-company,H Company,FR,eu,independent,,no,Hcompany,,hcompany.ai,
 nb,National Library of Norway,NO,europe,independent,,no,NbAiLab,,,Norway is not in the EU.

@@ -31,7 +31,9 @@ COLUMNS = [
     "mlx_build", "mlx_build_bits", "mlx_build_publisher", "llama_cpp",
     "llama_cpp_detail", "llama_cpp_checked", "gguf_build", "gguf_build_publisher",
     "gguf_builds", "cache_kind", "cache_kib_per_token", "cache_gib_8k",
-    "cache_gib_32k", "cache_gib_128k", "flags",
+    "cache_gib_32k", "cache_gib_128k", "teacher_origin", "teachers_list",
+    "recipe", "terms_can_change", "languages", "eu_languages", "languages_basis",
+    "training_hardware", "flags",
     "hbd_involvement", "notes", "hf_repo", "hf_created", "last_reviewed",
 ]
 SOURCE_KEYS = ("scope", "field", "url", "issuer", "checked", "retrieved", "archive_url", "note")
@@ -108,6 +110,7 @@ def main():
             cache_gib_8k=cache_gib(CONTEXTS["8k"]),
             cache_gib_32k=cache_gib(CONTEXTS["32k"]),
             cache_gib_128k=cache_gib(CONTEXTS["128k"]),
+            teachers_list="; ".join(f"{t['model']} ({t['stage']}, {t['model_origin']})" for t in m["teachers"]),
             flags="; ".join(d.flags(m)),
             last_reviewed=max((x["retrieved"] for x in sources), default=""),
         )
@@ -121,6 +124,7 @@ def main():
             "mlx_builds": builds,
             "gguf_list": ggufs[:GGUF_IN_JSON],
             "cache_layout": layout,
+            "teachers": m["teachers"],
             "max_context": max_ctx,
         })
 
