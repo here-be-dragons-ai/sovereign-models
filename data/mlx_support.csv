@@ -1,0 +1,28 @@
+id,mlx_vlm,model_type,detail,checked,mlx_vlm_rev
+alia-40b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+apertus-1.5-70b,unsupported,apertus1p5,model type not in mlx-vlm,2026-10-08,0.7.7@fdd94f39
+apertus-1.5-8b,unsupported,apertus1p5,model type not in mlx-vlm,2026-10-08,0.7.7@fdd94f39
+bielik-11b-v3,not checked,,config.json: HTTP 403 (gated?),2026-10-08,0.7.7@fdd94f39
+borealis2-26b,loads,gemma4,,2026-10-08,0.7.7@fdd94f39
+devstral-small-2,loads,mistral3,"FP8 release, scales not checked",2026-10-08,0.7.7@fdd94f39
+domyn-small,loads,nemotron,,2026-10-08,0.7.7@fdd94f39
+eurollm-22b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+eurollm-9b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+helium-1-2b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+holo4-35b-a3b,loads,qwen3_5_moe,,2026-10-08,0.7.7@fdd94f39
+kolibri-1,loads,kolibri1,"FP8 release, scales not checked",2026-10-08,0.7.7@fdd94f39
+lucie-7b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+luciole-23b,loads,nemotron,,2026-10-08,0.7.7@fdd94f39
+luciole-8b,loads,nemotron_h,,2026-10-08,0.7.7@fdd94f39
+magistral-small-2509,loads,mistral3,,2026-10-08,0.7.7@fdd94f39
+minerva-7b,loads,mistral,,2026-10-08,0.7.7@fdd94f39
+ministral-3-14b,loads,mistral3,"FP8 release, scales not checked",2026-10-08,0.7.7@fdd94f39
+mistral-small-3.2,loads,mistral3,,2026-10-08,0.7.7@fdd94f39
+mistral-small-4,loads,mistral3,"FP8 release, scales not checked",2026-10-08,0.7.7@fdd94f39
+pleias-rag-1b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+poro-2-8b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+salamandra-7b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+sui-1-24b,loads,mistral3,,2026-10-08,0.7.7@fdd94f39
+tildeopen-30b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+viking-33b,loads,llama,,2026-10-08,0.7.7@fdd94f39
+xlstm-7b,unsupported,xlstm,model type not in mlx-vlm,2026-10-08,0.7.7@fdd94f39
