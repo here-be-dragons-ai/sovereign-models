@@ -21,7 +21,7 @@ dist/scorecard.csv, dist/scorecard.json
         │
         ▼  scripts/publish_hf.py
 HF dataset here-be-dragons-ai/sovereign-models-scorecard   (private)
-HF Space   here-be-dragons-ai/sovereign-models             (private)
+HF Space   here-be-dragons-ai/sovereign-models             (private, static)
 HF collections "Sovereign models · Tier A / Tier B"         (private)
 ```
 

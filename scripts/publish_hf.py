@@ -122,12 +122,13 @@ def main():
     print(f"dataset  https://huggingface.co/datasets/{dataset_id}")
 
     space_id = f"{args.org}/{SPACE}"
-    api.create_repo(space_id, repo_type="space", space_sdk="gradio", private=True, exist_ok=True)
+    # Static Spaces are free for organisations; Gradio Spaces need a paid plan.
+    api.create_repo(space_id, repo_type="space", space_sdk="static", private=True, exist_ok=True)
     api.update_repo_settings(space_id, repo_type="space", private=True)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         for f in (ROOT / "space").iterdir():
-            if f.suffix in (".py", ".md", ".txt"):
+            if f.suffix in (".html", ".md"):
                 shutil.copy(f, tmp / f.name)
         shutil.copy(ROOT / "dist" / "scorecard.json", tmp / "scorecard.json")
         api.upload_folder(repo_id=space_id, repo_type="space", folder_path=tmp,

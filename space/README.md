@@ -3,9 +3,8 @@ title: Sovereign open-weight models
 emoji: 🐉
 colorFrom: indigo
 colorTo: green
-sdk: gradio
-sdk_version: 6.29.1
-app_file: app.py
+sdk: static
+app_file: index.html
 pinned: false
 license: cc-by-4.0
 short_description: Open-weight LLMs rated on European sovereignty

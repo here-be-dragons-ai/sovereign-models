@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sovereign open-weight models</title>
+<style>
+  :root { --fg:#1d2330; --muted:#5b6475; --line:#e3e6ec; --bg:#fff; --soft:#f6f7f9; --accent:#3b5bdb;
+          --A:#2f9e44; --B:#1971c2; --C:#e8590c; --other:#868e96; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--fg); background:var(--bg); }
+  main { max-width:1200px; margin:0 auto; padding:24px 20px 60px; }
+  h1 { margin:0 0 6px; font-size:26px; }
+  p.lead { margin:0 0 16px; color:var(--muted); max-width:860px; }
+  details.tiers { margin:0 0 18px; color:var(--muted); }
+  details.tiers li { margin:2px 0; }
+  .filters { display:flex; flex-wrap:wrap; gap:14px 22px; align-items:flex-end; padding:14px 16px;
+             background:var(--soft); border:1px solid var(--line); border-radius:10px; margin-bottom:14px; }
+  .filters label { font-size:13px; color:var(--muted); display:block; margin-bottom:4px; }
+  .filters select { min-width:150px; padding:5px 6px; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  .chips label { display:inline-flex; gap:4px; margin-right:10px; color:var(--fg); font-size:14px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { font-size:12px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); cursor:pointer; user-select:none; }
+  tbody tr { cursor:pointer; }
+  tbody tr:hover { background:var(--soft); }
+  tr.selected { background:#eef2ff !important; }
+  td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  .tier { display:inline-block; min-width:26px; text-align:center; font-weight:600; color:#fff;
+          border-radius:5px; padding:0 6px; background:var(--other); }
+  .tier.A { background:var(--A); } .tier.B { background:var(--B); } .tier.C { background:var(--C); }
+  .flags { color:var(--muted); font-size:13px; }
+  .count { color:var(--muted); font-size:13px; margin:6px 0; }
+  #detail { margin-top:22px; padding:18px 20px; border:1px solid var(--line); border-radius:10px; }
+  #detail h2 { margin:0 0 4px; font-size:21px; }
+  #detail table { font-size:14px; margin:10px 0; }
+  #detail td:first-child { width:220px; color:var(--muted); }
+  a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+  .src { font-size:12px; color:var(--muted); }
+  footer { margin-top:30px; color:var(--muted); font-size:13px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sovereign open-weight models</h1>
+  <p class="lead">Open-weight language models rated on <b>sovereignty from a European point of view</b> —
+    who controls them, where the weights come from, what the licence allows, how transparent data
+    and compute are — and whether they run on Apple Silicon with MLX. The tier says nothing about
+    model quality. Click a row for the sources.</p>
+  <details class="tiers"><summary>How the tiers work</summary><ul id="tierlist"></ul></details>
+
+  <div class="filters">
+    <div class="chips"><label style="color:var(--muted);display:block">Tier</label><span id="tierchips"></span></div>
+    <div><label for="country">Country</label><select id="country"><option value="">all</option></select></div>
+    <div><label for="licence">Licence class</label><select id="licence"><option value="">all</option></select></div>
+    <div><label for="ram">Fits a Mac with … (4 bit)</label>
+      <select id="ram"><option value="">any size</option><option>16</option><option>24</option><option>32</option>
+        <option>48</option><option>64</option><option>96</option><option>128</option></select></div>
+    <div class="chips"><label><input type="checkbox" id="mlx"> loads in mlx-vlm</label></div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <table>
+    <thead><tr id="head"></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <section id="detail"><i>Select a row to see the details and sources.</i></section>
+
+  <footer>Data: CC BY 4.0, here be dragons. Fit check leaves a quarter of the RAM for the system and
+    the KV cache. Methodology and corrections: <code>here-be-dragons-ai/sovereign-models</code>.</footer>
+</main>
+<script>
+const COLS = [
+  ["tier","Tier"],["name","Model"],["provider_country","Country"],["provider","Provider"],["origin","Origin"],
+  ["license_class","Licence"],["data","Data"],["compute","Compute"],["params_b","Params (B)",1],
+  ["size_4bit_gb","4-bit GB",1],["mlx_vlm","mlx-vlm"],["flags","Flags"],
+];
+const TIER_ORDER = ["A","B","C","pending","excluded","out of scope"];
+let DATA, sortKey = "tier", sortDir = 1, selected = null;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const link = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+
+function filtered() {
+  const tiers = [...document.querySelectorAll("#tierchips input:checked")].map(i => i.value);
+  const country = $("country").value, licence = $("licence").value, ram = parseFloat($("ram").value);
+  return DATA.models.filter(m =>
+    tiers.includes(m.tier) &&
+    (!country || m.provider_country === country) &&
+    (!licence || m.license_class === licence) &&
+    (!$("mlx").checked || m.mlx_vlm === "loads") &&
+    (!ram || (m.size_4bit_gb && parseFloat(m.size_4bit_gb) <= ram * 0.75)));
+}
+
+function render() {
+  const rows = filtered().sort((a, b) => {
+    let x = a[sortKey], y = b[sortKey];
+    if (sortKey === "tier") { x = TIER_ORDER.indexOf(x); y = TIER_ORDER.indexOf(y); }
+    else if (COLS.find(c => c[0] === sortKey)?.[2]) { x = parseFloat(x) || 0; y = parseFloat(y) || 0; }
+    return (x > y ? 1 : x < y ? -1 : a.name.localeCompare(b.name)) * sortDir;
+  });
+  $("count").textContent = `${rows.length} of ${DATA.models.length} models`;
+  $("rows").innerHTML = rows.map(m => `<tr data-id="${esc(m.id)}" class="${m.id === selected ? "selected" : ""}">` +
+    COLS.map(([k,, num]) => k === "tier" ? `<td><span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></td>`
+      : `<td class="${num ? "num" : ""}${k === "flags" ? " flags" : ""}">${esc(m[k])}</td>`).join("") + "</tr>").join("");
+}
+
+function sources(m, field) {
+  const s = m.sources.filter(x => x.field === field);
+  if (!s.length && field === "license_class") return link(`https://huggingface.co/api/models/${m.hf_repo}`, "Hub metadata");
+  return s.map(x => `${link(x.url, x.status)}${x.note ? " — " + esc(x.note) : ""}`).join("; ") || "—";
+}
+
+function detail(id) {
+  const m = DATA.models.find(x => x.id === id); selected = id; render();
+  const rows = [
+    ["Provider", m.provider, "provider"], ["Country / region", `${m.provider_country} / ${m.region}`],
+    ["Control", m.control, "control"], ["Origin", m.origin + (m.base_model ? ` (${m.base_model})` : ""), "origin"],
+    ["Licence", `${m.license_class} (${m.license})`, "license_class"], ["Training data", m.data, "data"],
+    ["Training compute", m.compute, "compute"], ["AI Act training summary", m.ai_act_summary, "ai_act_summary"],
+    ["GPAI Code of Practice", m.cop_signatory, "cop_signatory"],
+  ];
+  const builds = m.mlx_builds.map(b => `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit, ${esc(b.publisher_kind)})`).join(", ");
+  $("detail").innerHTML = `
+    <h2>${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></h2>
+    <div class="src">${esc(DATA.tiers[m.tier])}</div>
+    <p>${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)} · ${esc(m.params_b)}B parameters ·
+      context ${esc(m.context || "?")} · <code>${esc(m.model_type)}</code> · ${esc(m.modalities)}</p>
+    <table>${rows.map(([l, v, f]) => `<tr><td>${esc(l)}</td><td>${esc(v)}<div class="src">${f ? sources(m, f) : ""}</div></td></tr>`).join("")}</table>
+    <h3>On a Mac</h3>
+    <ul>
+      <li>mlx-vlm: <b>${esc(m.mlx_vlm)}</b>${m.mlx_vlm_detail ? " — " + esc(m.mlx_vlm_detail) : ""} <span class="src">(checked ${esc(m.mlx_vlm_checked || "—")})</span></li>
+      <li>Weights: ${esc(m.size_4bit_gb)} GB at 4 bit, ${esc(m.size_8bit_gb)} GB at 8 bit</li>
+      ${builds ? `<li>MLX builds: ${builds}</li>` : ""}
+    </ul>
+    ${m.flags ? `<p><b>Flags:</b> ${esc(m.flags)}</p>` : ""}
+    ${m.hbd_involvement ? `<p><b>Our involvement:</b> ${esc(m.hbd_involvement)}</p>` : ""}
+    ${m.notes ? `<p><b>Notes:</b> ${esc(m.notes)}</p>` : ""}`;
+}
+
+fetch("scorecard.json").then(r => r.json()).then(d => {
+  DATA = d;
+  $("tierlist").innerHTML = Object.entries(d.tiers).map(([t, s]) => `<li><b>${esc(t)}</b>: ${esc(s)}</li>`).join("");
+  $("tierchips").innerHTML = TIER_ORDER.filter(t => d.models.some(m => m.tier === t))
+    .map(t => `<label><input type="checkbox" value="${esc(t)}" ${["A","B"].includes(t) ? "checked" : ""}> ${esc(t)}</label>`).join("");
+  for (const [id, key] of [["country","provider_country"],["licence","license_class"]])
+    [...new Set(d.models.map(m => m[key]))].sort().forEach(v => $(id).insertAdjacentHTML("beforeend", `<option>${esc(v)}</option>`));
+  $("head").innerHTML = COLS.map(([k, l]) => `<th data-k="${k}">${esc(l)}</th>`).join("");
+  $("head").onclick = e => { const k = e.target.dataset.k; if (!k) return; sortDir = sortKey === k ? -sortDir : 1; sortKey = k; render(); };
+  $("rows").onclick = e => { const tr = e.target.closest("tr"); if (tr) detail(tr.dataset.id); };
+  document.querySelectorAll(".filters input, .filters select").forEach(el => el.addEventListener("change", render));
+  render();
+});
+</script>
+</body>
+</html>
