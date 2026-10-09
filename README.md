@@ -4,8 +4,8 @@ A scorecard of open-weight language models rated on **sovereignty from a Europea
 view** — who controls them, where the weights come from, what the licence allows, how
 transparent data and compute are — and whether they run on Apple Silicon with MLX.
 
-Status: the scorecard is public on Hugging Face (dataset, Space and tier collections); this
-repository is private. See [#1](../../issues/1) for the overall plan.
+Status: public, here and on Hugging Face (dataset, Space and tier collections). See
+[#1](../../issues/1) for the overall plan.
 
 ## How it works
 

@@ -694,7 +694,7 @@
    "languages_basis": "trained",
    "training_hardware": "nvidia",
    "flags": "outside the EU; use policy on redistribution; our own work involved",
-   "hbd_involvement": "HBD ported image and audio input to MLX and keeps a private MLX build (8B)",
+   "hbd_involvement": "HBD ported image and audio input to MLX and publishes the 8-bit MLX build (here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit)",
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-8B",
    "hf_created": "2026-07-24",
