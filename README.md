@@ -4,8 +4,8 @@ A scorecard of open-weight language models rated on **sovereignty from a Europea
 view** — who controls them, where the weights come from, what the licence allows, how
 transparent data and compute are — and whether they run on Apple Silicon with MLX.
 
-Status: **MVP, private.** See [#1](../../issues/1) for the overall plan and [#2](../../issues/2)
-for the MVP scope.
+Status: the scorecard is public on Hugging Face (dataset, Space and tier collections); this
+repository is private. See [#1](../../issues/1) for the overall plan.
 
 ## How it works
 
@@ -13,6 +13,7 @@ for the MVP scope.
 data/providers.csv     organisations: seat, control, owners, official namespaces   (by hand)
 data/families.csv      model families: origin, licence, data, compute              (by hand)
 data/scorecard.csv     models: repo, family, overrides                             (by hand)
+data/teachers.csv      teacher models per family and training stage                (by hand)
 data/sources.csv       one source per fact, with issuer, checked, archive          (by hand + scripts/archive_sources.py)
 data/mlx_builds.csv    known MLX builds per model                                  (by hand)
 data/hf_facts.csv      licence, size, architecture from the Hub                    (scripts/fetch_hf_facts.py)
@@ -20,6 +21,9 @@ data/hf_namespaces.csv Hub namespaces: organisation or user, verified           
 data/mlx_support.csv   does mlx-vlm load it?                                       (scripts/check_mlx_support.py)
 data/llama_cpp_support.csv  does llama.cpp support the architecture?               (scripts/check_llama_cpp_support.py)
 data/gguf_builds.csv   GGUF quantizations on the Hub                               (scripts/find_gguf_builds.py)
+data/template_checks.csv  chat template of every build against the original      (scripts/check_chat_templates.py)
+data/template_diffs/   one unified diff per build whose template differs
+data/schema.md         columns and allowed values of every file
         │
         ▼  scripts/build.py   (validates, computes tiers and sizes)
 dist/scorecard.csv, dist/scorecard.json

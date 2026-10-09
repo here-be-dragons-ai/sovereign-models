@@ -136,6 +136,12 @@ organisation), `individual` (a personal account), in that order of trust.
 
 ## Generated files
 
+- `template_checks.csv` (`scripts/check_chat_templates.py`): one row per template. `kind` is
+  `original`, `mlx` or `gguf`; `file` the file it was read from; `status` is `reference` (the
+  original), `identical`, `equivalent`, `differs`, `suspicious` or `not checked`; `reason` the
+  diff path (`data/template_diffs/<repo>.diff`) or why it was not checked; `findings` the risky
+  constructs found in this template; `sha256` a short hash of its templates.
+
 - `hf_facts.csv` (`scripts/fetch_hf_facts.py`): licence, gating, parameters, architecture, context,
   creation date, model-card lines about compute and data, and `arch_json` (the `config.json`
   fields the memory estimate needs: layers, KV heads, head dims, layer types, sliding window,

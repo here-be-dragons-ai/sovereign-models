@@ -7,22 +7,22 @@ eurollm-9b,EuroLLM 9B Instruct 2512,utter-project/EuroLLM-9B-Instruct-2512,eurol
 alia-40b,ALIA 40B Instruct 2606,BSC-LT/ALIA-40b-instruct-2606,alia,text,,,,,,,,160k context.
 salamandra-7b,Salamandra 7B Instruct,BSC-LT/salamandra-7b-instruct,salamandra,text,,,,,,,,
 tildeopen-30b,TildeOpen 30B 64k,TildeAI/TildeOpen-30b-64k,tildeopen,text,,,,,,,,Base model only (no official instruct version). Focus on Nordic and Eastern European languages.
-apertus-1.5-8b,Apertus 1.5 8B,swiss-ai/Apertus-v1.5-8B,apertus-1.5,"text, image, audio",,,,,,,HBD ported image and audio input to MLX and keeps a private MLX build (8B),Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution.
-apertus-1.5-70b,Apertus 1.5 70B,swiss-ai/Apertus-v1.5-70B,apertus-1.5,"text, image, audio",,,,,,,,Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution.
+apertus-1.5-8b,Apertus 1.5 8B,swiss-ai/Apertus-v1.5-8B,apertus-1.5,"text, image, audio",,,,,,,HBD ported image and audio input to MLX and keeps a private MLX build (8B),"Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval)."
+apertus-1.5-70b,Apertus 1.5 70B,swiss-ai/Apertus-v1.5-70B,apertus-1.5,"text, image, audio",,,,,,,,"Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval)."
 viking-33b,Viking 33B,LumiOpen/Viking-33B,viking,text,,,,,,,,4k context. Released before Silo AI was acquired by AMD (US) in August 2024.
 helium-1-2b,Helium 1 2B,kyutai/helium-1-2b,helium-1,text,,,,,,,,CC-BY-SA-4.0. 4k context.
 pleias-rag-1b,Pleias RAG 1B,PleIAs/Pleias-RAG-1B,pleias-rag,text,,,,,,,,Specialised for retrieval-augmented generation with citations. 4k context.
 kolibri-1,Kolibri 1,Aleph-Alpha/Kolibri-1,kolibri-1,text,,,,,,,HBD publishes the MLX 3-bit build here-be-dragons-ai/Kolibri-1-MLX-3bit,"German/English MoE, 78B total, 3.5B active. Pretraining rephrasing with Gemma-4-26B-A4B and Mistral-NeMo-12B (card); post-training SFT data mainly from GLM-5.2, GLM-5.3 and Qwen3.8-27B (technical report). Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval."
-devstral-small-2,Devstral Small 2 24B,mistralai/Devstral-Small-2-24B-Instruct-2512,devstral-small-2,"text, image",,,,,,,,Coding/agent model.
+devstral-small-2,Devstral Small 2 24B,mistralai/Devstral-Small-2-24B-Instruct-2512,devstral-small-2,"text, image",,,,,,,,"Coding/agent model. The card states a 256k context; config.json allows 393,216 tokens (the context column shows the config value)."
 magistral-small-2509,Magistral Small 2509,mistralai/Magistral-Small-2509,magistral-small,"text, image",,,,,,,,Reasoning model.
 mistral-small-3.2,Mistral Small 3.2 24B,mistralai/Mistral-Small-3.2-24B-Instruct-2506,mistral-small-3,"text, image",,,,,,,,
 ministral-3-14b,Ministral 3 14B Instruct,mistralai/Ministral-3-14B-Instruct-2512,ministral-3,"text, image",,,,,,,,
-mistral-small-4,Mistral Small 4 119B,mistralai/Mistral-Small-4-119B-2603,mistral-small-4,"text, image",,,,,,,,"MoE, about 6.5B active; needs about 2-bit to fit 48 GB."
+mistral-small-4,Mistral Small 4 119B,mistralai/Mistral-Small-4-119B-2603,mistral-small-4,"text, image",,,,,,,,"MoE, about 6.5B active; needs about 2-bit to fit 48 GB. The card states a 256k context; config.json allows 1,048,576 tokens (the context column shows the config value)."
 bielik-11b-v3,Bielik 11B v3.0 Instruct,speakleash/Bielik-11B-v3.0-Instruct,bielik-v3,text,,,,,,,,Repository is gated (terms of use).
 sui-1-24b,sui-1 24B,ellamind/sui-1-24b,sui-1,text,,,,,,,,Grounded summarisation.
-domyn-small,Domyn Small v1.0,domyn/Domyn-Small-v1.0,domyn-small,text,,,,,,,,Hub metadata: license 'other' with license_name 'mit'. Tier pending until the licence text is checked.
+domyn-small,Domyn Small v1.0,domyn/Domyn-Small-v1.0,domyn-small,text,,,,,,,,MIT licence (slightly reworded MIT text on domyn.com; the paper and the card say MIT).
 minerva-7b,Minerva 7B Instruct,sapienzanlp/Minerva-7B-instruct-v1.0,minerva,text,,,,,,,,4k context.
-xlstm-7b,xLSTM 7B,NX-AI/xLSTM-7b,xlstm,text,,,,,,,,"Recurrent (mLSTM) architecture, no attention, constant-size state. Base model only, mostly English (DCLM). NXAI Community License (based on Llama 3; attribution and notice required)."
+xlstm-7b,xLSTM 7B,NX-AI/xLSTM-7b,xlstm,text,,,,,,,,"Recurrent (mLSTM) architecture, no attention, constant-size state. Base model only, mostly English (DCLM). NXAI Community License (based on Llama 3): attribution and notice required, and under §2 a licensee with more than €100M consolidated annual revenue that builds it into a commercial product or service needs a separate commercial licence, which NXAI grants at its sole discretion."
 holo4-35b-a3b,Holo4 35B-A3B,Hcompany/Holo4-35B-A3B,holo4,"text, image",,,,,,,,Computer-use agent model.
 poro-2-8b,Poro 2 8B Instruct,LumiOpen/Llama-Poro-2-8B-Instruct,poro-2,text,,,,,,,,Llama 3.3 licence inherited.
 borealis2-26b,borealis2 26B-A4B (preview),NbAiLab/borealis2-26b-a4b-preview,borealis2,"text, image",,,,,,,,Norway is not in the EU. nb-license-1.0.

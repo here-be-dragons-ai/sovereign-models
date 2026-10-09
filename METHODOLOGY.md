@@ -65,7 +65,10 @@ verified it. A Hub page outside the provider's own organisation is `community`.
 
 Every source gets a Wayback Machine snapshot (`archive_url`), because model cards change. Licence,
 parameter count, architecture and context come from the Hugging Face Hub API
-(`scripts/fetch_hf_facts.py`).
+(`scripts/fetch_hf_facts.py`). The context column is what `config.json` allows
+(`max_position_embeddings`), which can exceed what the provider states and supports: Mistral
+Small 4 allows 1,048,576 tokens against a stated 256k, Devstral Small 2 393,216 against 256k.
+Where they differ, the model notes give the stated value.
 
 ## Tiers
 
@@ -127,6 +130,19 @@ rather than separate it. Both stay visible so readers can weigh them.
   Hub namespace: `official` (the provider's own organisation), `hbd` (ours), `curated`
   (mlx-community, lmstudio-community, ggml-org, unsloth), `organisation` (any other
   organisation), `individual` (a personal account), in that order; ties by downloads.
+- `template_check` (`scripts/check_chat_templates.py`): the chat template of every MLX and GGUF
+  build against the original's. Poisoned chat templates are a documented attack class
+  (arXiv 2602.04653): logic in the template that no weight scanner sees. GGUF templates are read
+  from the file header with range requests. `identical` means the same source after whitespace
+  normalisation; `equivalent` means the source differs (quoting, escapes, layout) but renders
+  the same text for a fixed set of test conversations (system prompt, several turns, tool
+  definitions, calls and results; date fixed); `differs` means the rendered text differs, with
+  a diff in the dataset. Most differences are version drift: the provider changed its template
+  after the build was made. `suspicious` means the build adds a risky construct the original
+  does not have (date or time, randomness, conditions comparing message content with a
+  literal, URLs, encoded blobs, very long string literals); it calls for a look, not a verdict.
+  `not checked` gives the reason, often that the original publishes no chat template (Mistral
+  uses mistral-common). The model column shows the worst status of its builds.
 
 ## Limits
 

@@ -1,0 +1,29 @@
+--- original/default
++++ build/default
+@@ -1,21 +1,17 @@
+ {{- bos_token }}
+-{%- set system_message = '' %}
+ {%- if messages[0]['role'] == 'system' %}
+     {%- set system_message = messages[0]['content'] %}
+     {%- set messages = messages[1:] %}
++    {{- '<|im_start|>system\n' + system_message + '<|im_end|>' + '\n'}}
+ {%- endif %}
+ {%- for message in messages %}
+-    {%- if (message['role'] != 'user') and (message['role'] != 'assistant') %}
+-        {{- raise_exception('Only user and assistant roles are supported after the initial optional system message.') }}
++    {%- if (message['role'] != 'user') and (message['role'] != 'assistant')%}
++        {{ raise_exception('Only user and assistant roles are suported after the initial optional system message.') }}
+     {%- endif %}
+     {%- if (message['role'] == 'user') != (loop.index0 % 2 == 0) %}
+-        {{- raise_exception('After the optional system message, conversation roles must alternate user/assistant/user/assistant/...') }}
++        {{ raise_exception('After the optional system message, conversation roles must alternate user/assistant/user/assistant/...') }}
+     {%- endif %}
+-    {%- set content = message['content'] %}
+-    {%- if loop.index0 == 0 and system_message %}
+-        {%- set content = system_message + '\n\n' + message['content'] %}
+-    {%- endif %}
+-    {{- '<|im_start|>' + message['role'] + '\n' + content + '<|im_end|>' + '\n' }}
++    {{- '<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>' + '\n'}}
+ {%- endfor %}
+ {%- if add_generation_prompt %}
+     {{- '<|im_start|>assistant\n' }}

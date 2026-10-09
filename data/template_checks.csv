@@ -1,0 +1,198 @@
+id,repo,kind,file,status,reason,findings,sha256,checked
+luciole-23b,OpenLLM-France/Luciole-23B-Instruct-1.1,original,chat_template.jinja,reference,,content condition,9ea9887eb4ab72b3,2026-10-09
+luciole-23b,bumblebuttpow/Luciole-23B-Instruct-1.1-4bit-mlx,mlx,chat_template.jinja,identical,,content condition,9ea9887eb4ab72b3,2026-10-09
+luciole-23b,OpenLLM-France/Luciole-23B-Instruct-1.1-GGUF,gguf,Luciole-23B-Instruct-1.1-Q4_K_M.gguf,identical,,content condition,9ea9887eb4ab72b3,2026-10-09
+luciole-8b,OpenLLM-France/Luciole-8B-Instruct-1.1,original,chat_template.jinja,reference,,content condition,9ea9887eb4ab72b3,2026-10-09
+luciole-8b,OpenLLM-France/Luciole-8B-Instruct-1.1-GGUF,gguf,Luciole-8B-Instruct-1.1-Q4_K_M.gguf,identical,,content condition,9ea9887eb4ab72b3,2026-10-09
+lucie-7b,OpenLLM-France/Lucie-7B-Instruct-v1.1,original,tokenizer_config.json,reference,,,22f812b8dce1664c,2026-10-09
+lucie-7b,mlx-community/Lucie-7B-Instruct-4bit,mlx,tokenizer_config.json,identical,,,22f812b8dce1664c,2026-10-09
+lucie-7b,mradermacher/Lucie-7B-Instruct-v1.1-GGUF,gguf,Lucie-7B-Instruct-v1.1.Q2_K.gguf,identical,,,22f812b8dce1664c,2026-10-09
+lucie-7b,tensorblock/Lucie-7B-Instruct-v1.1-GGUF,gguf,Lucie-7B-Instruct-v1.1-Q2_K.gguf,identical,,,22f812b8dce1664c,2026-10-09
+lucie-7b,DevQuasar-9/OpenLLM-France.Lucie-7B-Instruct-v1.1-GGUF,gguf,OpenLLM-France.Lucie-7B-Instruct-v1.1.Q2_K.gguf,identical,,,22f812b8dce1664c,2026-10-09
+lucie-7b,OpenLLM-France/Lucie-7B-Instruct-v1.1-gguf,gguf,Lucie-7B-Instruct-v1.1-q4_k_m.gguf,identical,,,22f812b8dce1664c,2026-10-09
+lucie-7b,keisuke-miyako/Lucie-7B-Instruct-v1.1-gguf-q4_k_m,gguf,Lucie-7B-Instruct-v1.1-Q4_k_m.gguf,identical,,,22f812b8dce1664c,2026-10-09
+eurollm-22b,utter-project/EuroLLM-22B-Instruct-2512,original,tokenizer_config.json,reference,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-22b,mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit,mlx,chat_template.jinja,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-22b,mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit,mlx,chat_template.jinja,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-22b,bartowski/utter-project_EuroLLM-22B-Instruct-2512-GGUF,gguf,utter-project_EuroLLM-22B-Instruct-2512-IQ2_XS.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-22b,mradermacher/EuroLLM-22B-Instruct-2512-GGUF,gguf,EuroLLM-22B-Instruct-2512.Q2_K.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-22b,mradermacher/EuroLLM-22B-Instruct-2512-i1-GGUF,gguf,EuroLLM-22B-Instruct-2512.i1-IQ1_S.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-22b,sixelasacul/EuroLLM-22B-it-GGUF,gguf,eurollm-22b-it-Q2_K.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-22b,DevQuasar/utter-project.EuroLLM-22B-Instruct-2512-GGUF,gguf,utter-project.EuroLLM-22B-Instruct-2512.Q2_K.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-22b,peekman/EuroLLM-22B-Instruct-2512-Q5_K_M-GGUF,gguf,eurollm-22b-instruct-2512-q5_k_m.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-9b,utter-project/EuroLLM-9B-Instruct-2512,original,chat_template.jinja,reference,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-9b,mradermacher/EuroLLM-9B-Instruct-2512-GGUF,gguf,EuroLLM-9B-Instruct-2512.Q2_K.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-9b,mradermacher/EuroLLM-9B-Instruct-2512-i1-GGUF,gguf,EuroLLM-9B-Instruct-2512.i1-IQ1_S.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+eurollm-9b,stefancosma/EuroLLM-9B-Instruct-2512-Q4_K_M-GGUF,gguf,eurollm-9b-instruct-2512-q4_k_m.gguf,not checked,no chat template in the build,,,2026-10-09
+eurollm-9b,keisuke-miyako/EuroLLM-9B-Instruct-2512-gguf-q4_k_m,gguf,EuroLLM-9B-Instruct-2512-Q4_k_m.gguf,identical,,content condition,bec7b0d3706bc383,2026-10-09
+alia-40b,BSC-LT/ALIA-40b-instruct-2606,original,chat_template.jinja,reference,,content condition,6b960bf989ea4c88,2026-10-09
+alia-40b,tonidurans/ALIA-40b-instruct-2605-mlx-q4,mlx,chat_template.jinja,differs,diff: data/template_diffs/tonidurans__ALIA-40b-instruct-2605-mlx-q4.diff,content condition,4dc4f644f5283366,2026-10-09
+alia-40b,mradermacher/ALIA-40b-instruct-2606-i1-GGUF,gguf,ALIA-40b-instruct-2606.i1-IQ1_S.gguf,identical,,content condition,6b960bf989ea4c88,2026-10-09
+alia-40b,mradermacher/ALIA-40b-instruct-2606-GGUF,gguf,ALIA-40b-instruct-2606.Q2_K.gguf,identical,,content condition,6b960bf989ea4c88,2026-10-09
+alia-40b,BSC-LT/ALIA-40b-instruct-2606-GGUF,gguf,ALIA-40b-instruct-2606-Q8_0.gguf,identical,,content condition,6b960bf989ea4c88,2026-10-09
+salamandra-7b,BSC-LT/salamandra-7b-instruct,original,tokenizer_config.json,reference,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,mlx-community/salamandra-7b-instruct-mlx-bf16,mlx,tokenizer_config.json,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,RichardErkhov/BSC-LT_-_salamandra-7b-instruct-gguf,gguf,salamandra-7b-instruct.Q2_K.gguf,differs,diff: data/template_diffs/RichardErkhov__BSC-LT_-_salamandra-7b-instruct-gguf.diff,,9f1c2427654388b0,2026-10-09
+salamandra-7b,hdnh2006/BSC-LT-salamandra-7b-instruct-gguf,gguf,salamandra-7b-instruct-Q2_K.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,cstr/salamandra-7b-instruct-GGUF,gguf,salamandra-7b-instruct.Q4_K_M-f32.gguf,differs,diff: data/template_diffs/cstr__salamandra-7b-instruct-GGUF.diff,,9f1c2427654388b0,2026-10-09
+salamandra-7b,tensorblock/salamandra-7b-instruct-GGUF,gguf,salamandra-7b-instruct-Q2_K.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,Fr4nkSt3in/salamandra-7b-instruct-2606-BF16-GGUF,gguf,salamandra-7b-instruct-2606-BF16.gguf,differs,diff: data/template_diffs/Fr4nkSt3in__salamandra-7b-instruct-2606-BF16-GGUF.diff,content condition,6b960bf989ea4c88,2026-10-09
+salamandra-7b,stepii/salamandra-7b-instruct-GGUF,gguf,salamandra-7b-instruct.Q4_K_M.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,fernandoruiz/salamandra-7b-instruct-Q4_0-GGUF,gguf,salamandra-7b-instruct-q4_0.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,Abogatic/BSC-LT-salamandra-7b-instruct-GGUF,gguf,salamandra7b_instruct-Q4_0.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,ericrisco/salamandra-7b-r1,gguf,unsloth.F16.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,rdrgzlng/salamandra-7b-instruct-GGUF,gguf,salamandra-7b-instruct-Q4_K_M.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,capa8/salamandra-7b-instruct-Q8_0-GGUF,gguf,salamandra-7b-instruct-q8_0.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,StickyWorm/salamandra-7b-instruct-Q2_K-GGUF,gguf,salamandra-7b-instruct-q2_k.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,alamios/salamandra-7b-instruct-GGUF-f16,gguf,salamandra-7b-instruct.f16.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
+salamandra-7b,elsatch/salamandra-7b-instruct-Q8_0-GGUF,gguf,salamandra-7b-instruct-q8_0.gguf,differs,diff: data/template_diffs/elsatch__salamandra-7b-instruct-Q8_0-GGUF.diff,,9f1c2427654388b0,2026-10-09
+tildeopen-30b,TildeAI/TildeOpen-30b-64k,original,,not checked,no chat template in the repo,,,2026-10-09
+apertus-1.5-8b,swiss-ai/Apertus-v1.5-8B,original,chat_template.jinja,reference,,content condition;long string literal,1b73046a029b3104,2026-10-09
+apertus-1.5-70b,swiss-ai/Apertus-v1.5-70B,original,chat_template.jinja,reference,,content condition;long string literal,1b73046a029b3104,2026-10-09
+apertus-1.5-70b,katya228/Apertus-v1.5-70B-text-GGUF,gguf,apertus-70b-Q4_K_M.gguf,identical,,content condition;long string literal,1b73046a029b3104,2026-10-09
+viking-33b,LumiOpen/Viking-33B,original,,not checked,no chat template in the repo,,,2026-10-09
+viking-33b,mradermacher/Viking-33B-i1-GGUF,gguf,Viking-33B.i1-IQ1_S.gguf,not checked,no chat template in the build,,,2026-10-09
+viking-33b,mradermacher/Viking-33B-GGUF,gguf,Viking-33B.Q2_K.gguf,not checked,no chat template in the build,,,2026-10-09
+viking-33b,tensorblock/Viking-33B-GGUF,gguf,Viking-33B-Q2_K.gguf,not checked,no chat template in the build,,,2026-10-09
+viking-33b,NikolayKozloff/Viking-33B-Q2_K-GGUF,gguf,viking-33b-q2_k.gguf,not checked,no chat template in the build,,,2026-10-09
+helium-1-2b,kyutai/helium-1-2b,original,,not checked,no chat template in the repo,,,2026-10-09
+helium-1-2b,Hob-forge/helium-1-2b-GGUF,gguf,helium-1-2b.Q2_K.gguf,not checked,no chat template in the build,,,2026-10-09
+helium-1-2b,DevQuasar/kyutai.helium-1-2b-GGUF,gguf,kyutai.helium-1-2b.Q2_K.gguf,not checked,no chat template in the build,,,2026-10-09
+helium-1-2b,tensorblock/kyutai_helium-1-2b-GGUF,gguf,helium-1-2b-Q2_K.gguf,not checked,no chat template in the build,,,2026-10-09
+helium-1-2b,NikolayKozloff/helium-1-2b-Q8_0-GGUF,gguf,helium-1-2b-q8_0.gguf,not checked,no chat template in the build,,,2026-10-09
+pleias-rag-1b,PleIAs/Pleias-RAG-1B,original,,not checked,no chat template in the repo,,,2026-10-09
+pleias-rag-1b,mlx-community/Pleias-RAG-1B-6-bit,mlx,,not checked,no chat template in the build,,,2026-10-09
+pleias-rag-1b,brendanddev/Pleias-RAG-1B-Q4_K_M-GGUF,gguf,Pleias-RAG-1B-Q4_K_M.gguf,not checked,no chat template in the build,,,2026-10-09
+kolibri-1,Aleph-Alpha/Kolibri-1,original,tokenizer_config.json,reference,,content condition;long string literal,d068b053361e2a8c,2026-10-09
+kolibri-1,here-be-dragons-ai/Kolibri-1-MLX-3bit,mlx,chat_template.jinja,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-09
+kolibri-1,Hob-forge/Kolibri-1-GGUF,gguf,Kolibri-1-Q2_K.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-09
+kolibri-1,webmp3/Sakura-MicroQuality-Kolibri-1-GGUF,gguf,Sakura-Kolibri-1-IQ2_XS-20.94GiB.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-09
+kolibri-1,webmp3/Sakura-MicroQuality-Kolibri-1-365E-GGUF,gguf,Sakura-Kolibri-1-365E-IQ2_XS-19.99GiB.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-09
+kolibri-1,Prompt48/Kolibri-1-GGUF,gguf,Q8_0/Kolibri-1-Q8_0-00001-of-00002.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-09
+kolibri-1,aparusel/ds4-kolibri-1-gguf,gguf,Kolibri-1-Q2.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-09
+kolibri-1,Myric/Kolibri-1-APEX-GGUF,gguf,Kolibri-1-APEX-2.4bpw.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-09
+devstral-small-2,mistralai/Devstral-Small-2-24B-Instruct-2512,original,chat_template.jinja,reference,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-09
+devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-8bit,mlx,chat_template.jinja,differs,diff: data/template_diffs/mlx-community__Devstral-Small-2-24B-Instruct-2512-8bit.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit,mlx,chat_template.jinja,differs,diff: data/template_diffs/mlx-community__Devstral-Small-2-24B-Instruct-2512-4bit.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-UD-IQ1_S.gguf,suspicious,new in the build: date or time; diff: data/template_diffs/unsloth__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition;date or time;long string literal,49327005df68627a,2026-10-09
+devstral-small-2,lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q3_K_L.gguf,differs,diff: data/template_diffs/lmstudio-community__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,bartowski/mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,mistralai_Devstral-Small-2-24B-Instruct-2512-IQ2_XXS.gguf,differs,diff: data/template_diffs/bartowski__mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,backpack-run/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q4_K_M.gguf,identical,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-09
+devstral-small-2,byteshape/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-IQ2_S-2.34bpw.gguf,differs,diff: data/template_diffs/byteshape__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,ggml-org/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q8_0.gguf,differs,diff: data/template_diffs/ggml-org__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,FreedomAISVR/Devstral-Small-2-MXFP4-GGUF,gguf,devstral-small-2-mxfp4.gguf,differs,diff: data/template_diffs/FreedomAISVR__Devstral-Small-2-MXFP4-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,jkim96/Devstral-Small-2-24B-Instruct-2512-DASHQ-Q2-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-DASHQ-IQ2_XXS.gguf,identical,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-09
+devstral-small-2,viniciusianni/Devstral-Small-2-24B-Instruct-2512-Q4_K_M-GGUF,gguf,devstral-small-2-24b-instruct-2512-q4_k_m.gguf,not checked,no chat template in the build,,,2026-10-09
+devstral-small-2,freddm/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,devstral-small-2-24b-instruct-2512-iq3_m.gguf,differs,diff: data/template_diffs/freddm__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,DevQuasar/mistralai.Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,mistralai.Devstral-Small-2-24B-Instruct-2512.Q2_K.gguf,differs,diff: data/template_diffs/DevQuasar__mistralai.Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,FreedomAISVR/Devstral-Small-2-NVFP4-GGUF,gguf,devstral-small-2-nvfp4.gguf,differs,diff: data/template_diffs/FreedomAISVR__Devstral-Small-2-NVFP4-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,ubergarm/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-IQ4_KSS.gguf,differs,diff: data/template_diffs/ubergarm__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,keypa/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512.gguf,differs,diff: data/template_diffs/keypa__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-09
+devstral-small-2,tiktemu/ByteShape___Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-09
+magistral-small-2509,mistralai/Magistral-Small-2509,original,,not checked,no chat template in the repo,,,2026-10-09
+magistral-small-2509,lmstudio-community/Magistral-Small-2509-MLX-8bit,mlx,chat_template.jinja,not checked,original has no template to compare,content condition,609288d59be4137d,2026-10-09
+magistral-small-2509,unsloth/Magistral-Small-2509-GGUF,gguf,Magistral-Small-2509-UD-IQ2_XXS.gguf,not checked,original has no template to compare,content condition;long string literal,c6b48db70447fd21,2026-10-09
+magistral-small-2509,mistralai/Magistral-Small-2509-GGUF,gguf,Magistral-Small-2509-Q4_K_M.gguf,not checked,no chat template in the build,,,2026-10-09
+magistral-small-2509,lmstudio-community/Magistral-Small-2509-GGUF,gguf,Magistral-Small-2509-Q4_K_M.gguf,not checked,original has no template to compare,content condition,31c6623abfc1de5d,2026-10-09
+magistral-small-2509,bartowski/mistralai_Magistral-Small-2509-GGUF,gguf,mistralai_Magistral-Small-2509-IQ2_XXS.gguf,not checked,original has no template to compare,content condition,5c958cceaf3cdff1,2026-10-09
+magistral-small-2509,DevQuasar/mistralai.Magistral-Small-2509-GGUF,gguf,mistralai.Magistral-Small-2509.IQ1_M.gguf,not checked,no chat template in the build,,,2026-10-09
+magistral-small-2509,FreedomAISVR/Magistral-Small-2509-NVFP4-GGUF,gguf,magistral-small-2509-nvfp4.gguf,not checked,original has no template to compare,content condition;long string literal,375cab8ae9a004bb,2026-10-09
+magistral-small-2509,FreedomAISVR/Magistral-Small-2509-MXFP4-GGUF,gguf,magistral-small-2509-mxfp4.gguf,not checked,original has no template to compare,content condition;long string literal,375cab8ae9a004bb,2026-10-09
+magistral-small-2509,nimishchaudhari/Magistral-Small-2509-IQ4_KS-GGUF,gguf,Magistral-Small-2509-IQ4_KS.gguf,not checked,no chat template in the build,,,2026-10-09
+magistral-small-2509,jkim96/Magistral-Small-2509-DASHQ-Q2-GGUF,gguf,Magistral-Small-2509-DASHQ-IQ2_XXS.gguf,not checked,original has no template to compare,content condition;long string literal,375cab8ae9a004bb,2026-10-09
+mistral-small-3.2,mistralai/Mistral-Small-3.2-24B-Instruct-2506,original,,not checked,no chat template in the repo,,,2026-10-09
+mistral-small-3.2,mlx-community/Mistral-Small-3.2-24B-Instruct-2506-8bit,mlx,,not checked,no chat template in the build,,,2026-10-09
+mistral-small-3.2,unsloth/Mistral-Small-3.2-24B-Instruct-2506-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-2506-UD-IQ1_S.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,660f47f46ff8c53f,2026-10-09
+mistral-small-3.2,bartowski/mistralai_Mistral-Small-3.2-24B-Instruct-2506-GGUF,gguf,mistralai_Mistral-Small-3.2-24B-Instruct-2506-IQ2_XXS.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,ce7cdb5c59b79a6e,2026-10-09
+mistral-small-3.2,lmstudio-community/Mistral-Small-3.2-24B-Instruct-2506-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf,not checked,original has no template to compare,content condition;date or time,9d0692eaff894080,2026-10-09
+mistral-small-3.2,Sci-fi-vy/Mistral-Small-3.2-24B-Instruct-2506-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-2506-UD-IQ1_S.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,60d1deb4b685399d,2026-10-09
+mistral-small-3.2,gabriellarson/Mistral-Small-3.2-24B-Instruct-2506-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-2506-IQ1_S.gguf,not checked,original has no template to compare,content condition;date or time,203bccfdba460fb1,2026-10-09
+mistral-small-3.2,eaddario/Mistral-Small-3.2-24B-Instruct-2506-pruned-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-2506-pruned-Q3_K_S.gguf,not checked,no chat template in the build,,,2026-10-09
+mistral-small-3.2,eaddario/Mistral-Small-3.2-24B-Instruct-2506-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-2506-Q3_K_S.gguf,not checked,no chat template in the build,,,2026-10-09
+mistral-small-3.2,jkim96/Mistral-Small-3.2-24B-Instruct-2506-DASHQ-Q2-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-2506-DASHQ-IQ2_XXS.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,aafb4c302f91f118,2026-10-09
+mistral-small-3.2,ngxson/Home-Cook-Mistral-Small-Omni-24B-2507-GGUF,gguf,Home-Cook-Mistral-Small-Omni-2507-Q4_K_M.gguf,not checked,original has no template to compare,content condition;long string literal,375cab8ae9a004bb,2026-10-09
+mistral-small-3.2,smarttasks/Mistral-Small-3.2-24B-Instruct-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-Q3_K_M.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,aafb4c302f91f118,2026-10-09
+mistral-small-3.2,DevQuasar/mistralai.Mistral-Small-3.2-24B-Instruct-2506-GGUF,gguf,mistralai.Mistral-Small-3.2-24B-Instruct-2506.Q2_K.gguf,not checked,no chat template in the build,,,2026-10-09
+mistral-small-3.2,SufficientPrune3897/Mistral-Small-3.2-24B-Character-Creator-V2-GGUF,gguf,Mistral-Small-3.2-24B-Character-Creator-V2-IQ3_M.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,60d1deb4b685399d,2026-10-09
+mistral-small-3.2,gratex/mistral-small-3.2-24B-Instruct-2506-GGUF,gguf,mistral-small-3.2-24b-instruct-Q4_S_AMD.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,1b9249165618be9c,2026-10-09
+mistral-small-3.2,AbteeXAILab/lumynax-infused-mistral-small-text-gguf,gguf,lumynax-infused-mistral-small-text-gguf-q4_k_m.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,aafb4c302f91f118,2026-10-09
+mistral-small-3.2,llmware/mistral-3.2-24b-gguf,gguf,Mistral-Small-3.2-24B-Instruct-2506-Q4_K_M.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,60d1deb4b685399d,2026-10-09
+mistral-small-3.2,fenyo/MonEspaceSante-FAQ-Mistral-Small-24B-GGUF,gguf,faqmes-clean-q4.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,660f47f46ff8c53f,2026-10-09
+mistral-small-3.2,steampunque/Mistral-Small-3.2-24B-Instruct-2506-MP-GGUF,gguf,Mistral-Small-3.2-24B-Instruct-2506.Q4_K_H.gguf,not checked,original has no template to compare,content condition;date or time,203bccfdba460fb1,2026-10-09
+mistral-small-3.2,Beinsezii/Mistral-Small-3.2-24B-Instruct-2506-Q6F-Q8A-GGUF,gguf,mistral-small-3.2-24b-instruct-2506-q6f-q8a.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,b1b4997cc56633b5,2026-10-09
+mistral-small-3.2,TribeBlend/tribeblend-etl-mistral-small-24b-instruct,gguf,tribeblend-etl-mistral-small-24b-instruct-q4_k_m.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,aafb4c302f91f118,2026-10-09
+mistral-small-3.2,AmpereComputing/mistral-small-3.2-2506-24b-instruct-gguf,gguf,Mistral-Small-3.2-24B-Instruct-2506-Q8R16.gguf,not checked,original has no template to compare,content condition;date or time;long string literal,60d1deb4b685399d,2026-10-09
+ministral-3-14b,mistralai/Ministral-3-14B-Instruct-2512,original,chat_template.jinja,reference,,content condition;date or time;long string literal,d324a0d736d24fa5,2026-10-09
+ministral-3-14b,mlx-community/Ministral-3-14B-Instruct-2512-8bit,mlx,chat_template.jinja,differs,diff: data/template_diffs/mlx-community__Ministral-3-14B-Instruct-2512-8bit.diff,content condition;date or time;long string literal,47e70ecc4795de7a,2026-10-09
+ministral-3-14b,mistralai/Ministral-3-14B-Instruct-2512-GGUF,gguf,Ministral-3-14B-Instruct-2512-Q4_K_M.gguf,differs,diff: data/template_diffs/mistralai__Ministral-3-14B-Instruct-2512-GGUF.diff,content condition;date or time;long string literal,469baa008b062ca9,2026-10-09
+ministral-3-14b,unsloth/Ministral-3-14B-Instruct-2512-GGUF,gguf,Ministral-3-14B-Instruct-2512-UD-IQ1_S.gguf,differs,diff: data/template_diffs/unsloth__Ministral-3-14B-Instruct-2512-GGUF.diff,content condition;date or time;long string literal,0ef53fbfa70ae5d0,2026-10-09
+ministral-3-14b,prithivMLmods/Ministral-3-Instruct-2512-AIO-GGUF,gguf,Ministral-3-3B-Instruct-2512-BF16.i1-IQ1_S.gguf,differs,diff: data/template_diffs/prithivMLmods__Ministral-3-Instruct-2512-AIO-GGUF.diff,content condition;date or time;long string literal,fb3c3712840f7a95,2026-10-09
+ministral-3-14b,eaddario/Ministral-3-14B-Instruct-2512-GGUF,gguf,Ministral-3-14B-Instruct-2512-IQ1_L.gguf,differs,diff: data/template_diffs/eaddario__Ministral-3-14B-Instruct-2512-GGUF.diff,content condition;date or time;long string literal,47e70ecc4795de7a,2026-10-09
+ministral-3-14b,jkim96/Ministral-3-14B-Instruct-2512-DASHQ-Q2-GGUF,gguf,Ministral-3-14B-Instruct-2512-DASHQ-IQ2_XXS.gguf,identical,,content condition;date or time;long string literal,d324a0d736d24fa5,2026-10-09
+ministral-3-14b,iasarkar/Ministral-3-14B-Instruct-2512-GGUF,gguf,Ministral-3-14B-Instruct-2512-UD-IQ1_S.gguf,differs,diff: data/template_diffs/iasarkar__Ministral-3-14B-Instruct-2512-GGUF.diff,content condition;date or time;long string literal,0ef53fbfa70ae5d0,2026-10-09
+ministral-3-14b,s3dev-ai/Ministral-3-14B-Instruct-2512-gguf,gguf,Ministral-3-14B-Instruct-2512-Q2_K.gguf,differs,diff: data/template_diffs/s3dev-ai__Ministral-3-14B-Instruct-2512-gguf.diff,content condition;date or time;long string literal,47e70ecc4795de7a,2026-10-09
+ministral-3-14b,DevQuasar/mistralai.Ministral-3-14B-Instruct-2512-GGUF,gguf,mistralai.Ministral-3-14B-Instruct-2512.Q2_K.gguf,differs,diff: data/template_diffs/DevQuasar__mistralai.Ministral-3-14B-Instruct-2512-GGUF.diff,content condition;long string literal,375cab8ae9a004bb,2026-10-09
+ministral-3-14b,robolamp/Ministral-3-14B-Instruct-2512-GGUF,gguf,Ministral-3-14B-Instruct-2512-Q2_K.gguf,differs,diff: data/template_diffs/robolamp__Ministral-3-14B-Instruct-2512-GGUF.diff,content condition;date or time;long string literal,469baa008b062ca9,2026-10-09
+ministral-3-14b,FreedomAISVR/Ministral-3-14B-Instruct-2512-NVFP4-GGUF,gguf,ministral-3-14b-instruct-2512-nvfp4.gguf,differs,diff: data/template_diffs/FreedomAISVR__Ministral-3-14B-Instruct-2512-NVFP4-GGUF.diff,content condition;date or time;long string literal,47e70ecc4795de7a,2026-10-09
+ministral-3-14b,spotapovadm/Ministral-3-14B-Instruct-2512-GGUF,gguf,Ministral-3-14B-Instruct-2512-Q4_K_M.gguf,differs,diff: data/template_diffs/spotapovadm__Ministral-3-14B-Instruct-2512-GGUF.diff,content condition;date or time;long string literal,469baa008b062ca9,2026-10-09
+ministral-3-14b,FreedomAISVR/Ministral-3-14B-Instruct-2512-MXFP4-GGUF,gguf,ministral-3-14b-instruct-2512-mxfp4.gguf,differs,diff: data/template_diffs/FreedomAISVR__Ministral-3-14B-Instruct-2512-MXFP4-GGUF.diff,content condition;date or time;long string literal,47e70ecc4795de7a,2026-10-09
+ministral-3-14b,steampunque/Ministral-3-14B-Instruct-2512-MP-GGUF,gguf,Ministral-3-14B-Instruct-2512.Q4_K_H.gguf,differs,diff: data/template_diffs/steampunque__Ministral-3-14B-Instruct-2512-MP-GGUF.diff,content condition;date or time;long string literal,469baa008b062ca9,2026-10-09
+ministral-3-14b,llmware/ministral-3-14b-gguf,gguf,Ministral-3-14B-Instruct-2512-Q4_K_M.gguf,differs,diff: data/template_diffs/llmware__ministral-3-14b-gguf.diff,content condition;date or time;long string literal,0ef53fbfa70ae5d0,2026-10-09
+ministral-3-14b,rumtex/Ministral-3-14B-Instruct-2512-Q3_K_M-GGUF,gguf,Ministral-3-14B-Instruct-2512-Q3_K_M.gguf,differs,diff: data/template_diffs/rumtex__Ministral-3-14B-Instruct-2512-Q3_K_M-GGUF.diff,content condition;date or time;long string literal,47e70ecc4795de7a,2026-10-09
+ministral-3-14b,marianaCondeco/Ministral-3-14B-Instruct-2512-Q4_K_M-GGUF,gguf,ministral-3-14b-instruct-2512-q4_k_m.gguf,not checked,no chat template in the build,,,2026-10-09
+mistral-small-4,mistralai/Mistral-Small-4-119B-2603,original,chat_template.jinja,reference,,content condition;date or time;long string literal,64210d59dec9e27f,2026-10-09
+mistral-small-4,mlx-community/Mistral-Small-4-119B-2603-4bit,mlx,chat_template.jinja,differs,diff: data/template_diffs/mlx-community__Mistral-Small-4-119B-2603-4bit.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,unsloth/Mistral-Small-4-119B-2603-GGUF,gguf,MXFP4_MOE/Mistral-Small-4-119B-2603-MXFP4_MOE-00001-of-00003.gguf,differs,diff: data/template_diffs/unsloth__Mistral-Small-4-119B-2603-GGUF.diff,content condition;date or time;long string literal,4d745ba28b21d1d1,2026-10-09
+mistral-small-4,bartowski/mistralai_Mistral-Small-4-119B-2603-GGUF,gguf,mistralai_Mistral-Small-4-119B-2603-IQ1_S.gguf,differs,diff: data/template_diffs/bartowski__mistralai_Mistral-Small-4-119B-2603-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,kingjones777/Mistral-Small-4-119B-ROCmFP4-GGUF,gguf,Mistral-Small-4-119B-2603-Q4_0_ROCMFP4_COHERENT-00001-of-00002.gguf,differs,diff: data/template_diffs/kingjones777__Mistral-Small-4-119B-ROCmFP4-GGUF.diff,content condition;date or time;long string literal,4d745ba28b21d1d1,2026-10-09
+mistral-small-4,mudler/Mistral-Small-4-119B-2603-APEX-GGUF,gguf,Mistral-Small-4-119B-APEX-I-Mini.gguf,differs,diff: data/template_diffs/mudler__Mistral-Small-4-119B-2603-APEX-GGUF.diff,content condition,a36053c223fbd979,2026-10-09
+mistral-small-4,mradermacher/Mistral-Small-4-119B-2603-i1-GGUF,gguf,Mistral-Small-4-119B-2603.i1-IQ1_S.gguf,differs,diff: data/template_diffs/mradermacher__Mistral-Small-4-119B-2603-i1-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,mradermacher/Mistral-Small-4-119B-2603-GGUF,gguf,Mistral-Small-4-119B-2603.Q2_K.gguf,differs,diff: data/template_diffs/mradermacher__Mistral-Small-4-119B-2603-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,lmstudio-community/Mistral-Small-4-119B-2603-GGUF,gguf,Mistral-Small-4-119B-2603-Q4_K_M-00001-of-00002.gguf,differs,diff: data/template_diffs/lmstudio-community__Mistral-Small-4-119B-2603-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,AaryanK/Mistral-Small-4-119B-2603-GGUF,gguf,Mistral-Small-4-119B-2603.q2_k.gguf,differs,diff: data/template_diffs/AaryanK__Mistral-Small-4-119B-2603-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,DevQuasar/mistralai.Mistral-Small-4-119B-2603-GGUF,gguf,mistralai.Mistral-Small-4-119B-2603.Q8_0-00001-of-00009.gguf,differs,diff: data/template_diffs/DevQuasar__mistralai.Mistral-Small-4-119B-2603-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,stefan-terdell-cleura/Mistral-Small-4-119B-2603-GGUF,gguf,MXFP4_MOE/Mistral-Small-4-119B-2603-MXFP4_MOE-00001-of-00003.gguf,differs,diff: data/template_diffs/stefan-terdell-cleura__Mistral-Small-4-119B-2603-GGUF.diff,content condition,a36053c223fbd979,2026-10-09
+mistral-small-4,jenerallee78/Mistral-Small-4-119B-2603-obliterated-Q4_K_M-GGUF,gguf,Mistral-Small-4-119B-2603-Obliterated-Q4_K_M.gguf,differs,diff: data/template_diffs/jenerallee78__Mistral-Small-4-119B-2603-obliterated-Q4_K_M-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,EnlistedGhost/Mistral-Small-4-119B-2603-GGUF,gguf,Mistral-Small-4-119B-2603-Q3_K_XL.gguf,differs,diff: data/template_diffs/EnlistedGhost__Mistral-Small-4-119B-2603-GGUF.diff,,8cffb09f7c5bc0b8,2026-10-09
+mistral-small-4,AesSedai/Mistral-Small-4-119B-2603-GGUF,gguf,IQ3_S/Mistral-Small-4-119B-2603-IQ3_S-00001-of-00002.gguf,differs,diff: data/template_diffs/AesSedai__Mistral-Small-4-119B-2603-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,noctrex/Mistral-Small-4-119B-2603-MXFP4_MOE-GGUF,gguf,Mistral-Small-4-119B-2603-MXFP4_MOE_BF16-00001-of-00004.gguf,differs,diff: data/template_diffs/noctrex__Mistral-Small-4-119B-2603-MXFP4_MOE-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,Jamphus/Mistral-Small-4-119B-2603-obliterated-Q4_K_M-GGUF,gguf,Mistral-Small-4-119B-2603-Obliterated-Q4_K_M.gguf,differs,diff: data/template_diffs/Jamphus__Mistral-Small-4-119B-2603-obliterated-Q4_K_M-GGUF.diff,content condition,8cfeefeb9eac9140,2026-10-09
+mistral-small-4,batiai/Mistral-Small-4-119B-GGUF,gguf,Mistral-Small-4-119B-Q3_K_M-00001-of-00002.gguf,not checked,no chat template in the build,,,2026-10-09
+mistral-small-4,AlexanderKyng/Mistral-Small-119B-2603-ik-GGUF,gguf,Mistral-Small-4-119B-2603-IQ4_K_R4.gguf,differs,diff: data/template_diffs/AlexanderKyng__Mistral-Small-119B-2603-ik-GGUF.diff,content condition,a36053c223fbd979,2026-10-09
+mistral-small-4,DanyDA/unsloth_Mistral-Small-4-119B-2603-UD-Q4_K_M-GGUF-SPLIT,gguf,unsloth_Mistral-Small-4-119B-2603-UD-Q4_K_M.gguf-00001-of-00019.gguf,differs,diff: data/template_diffs/DanyDA__unsloth_Mistral-Small-4-119B-2603-UD-Q4_K_M-GGUF-SPLIT.diff,content condition,a36053c223fbd979,2026-10-09
+mistral-small-4,Beinsezii/Mistral-Small-4-119B-2603-GGUF-HALO,gguf,mistral-small-4-119b-q80-q6k_ffn.gguf,differs,diff: data/template_diffs/Beinsezii__Mistral-Small-4-119B-2603-GGUF-HALO.diff,content condition,a36053c223fbd979,2026-10-09
+mistral-small-4,kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-GGUF,gguf,Mistral-Small-4-119B-2603-Q8_0_ROCMFPX.gguf,differs,diff: data/template_diffs/kingjones777__Mistral-Small-4-119B-ROCmFPX-Q8_0-GGUF.diff,content condition;date or time;long string literal,4d745ba28b21d1d1,2026-10-09
+mistral-small-4,kingjones777/Mistral-Small-4-119B-ROCmFPX-Q8_0-AGENT-GGUF,gguf,Mistral-Small-4-119B-2603-Q8_0_ROCMFPX_AGENT.gguf,differs,diff: data/template_diffs/kingjones777__Mistral-Small-4-119B-ROCmFPX-Q8_0-AGENT-GGUF.diff,content condition;date or time;long string literal,4d745ba28b21d1d1,2026-10-09
+bielik-11b-v3,speakleash/Bielik-11B-v3.0-Instruct,original,tokenizer_config.json,reference,,,9d7be0c00070760f,2026-10-09
+bielik-11b-v3,speakleash/Bielik-11B-v3.0-Instruct-MLX-8bit,mlx,chat_template.jinja,identical,,,9d7be0c00070760f,2026-10-09
+bielik-11b-v3,speakleash/Bielik-11B-v3.0-Instruct-MLX-4bit,mlx,chat_template.jinja,identical,,,9d7be0c00070760f,2026-10-09
+bielik-11b-v3,speakleash/Bielik-11B-v3.0-Instruct-GGUF,gguf,Bielik-11B-v3.0-Instruct.Q4_K_M.gguf,identical,,,9d7be0c00070760f,2026-10-09
+bielik-11b-v3,bartowski/speakleash_Bielik-11B-v3.0-Instruct-GGUF,gguf,speakleash_Bielik-11B-v3.0-Instruct-IQ2_S.gguf,identical,,,9d7be0c00070760f,2026-10-09
+bielik-11b-v3,DevQuasar/speakleash.Bielik-11B-v3.0-Instruct-GGUF,gguf,speakleash.Bielik-11B-v3.0-Instruct.Q2_K.gguf,identical,,,9d7be0c00070760f,2026-10-09
+bielik-11b-v3,safestack/Bielik-11B-v3.0-Instruct-GGUF,gguf,Bielik-11B-v3.0-Instruct.Q4_K_M.gguf,identical,,,9d7be0c00070760f,2026-10-09
+bielik-11b-v3,altomek/Bielik-11B-v3.0-Instruct-XXL-GGUF,gguf,Bielik-11B-v3.0-Instruct-Q4_K_XXL.gguf,identical,,,9d7be0c00070760f,2026-10-09
+sui-1-24b,ellamind/sui-1-24b,original,,not checked,no chat template in the repo,,,2026-10-09
+domyn-small,domyn/Domyn-Small-v1.0,original,chat_template.jinja,reference,,content condition,22805fd528cfc92c,2026-10-09
+domyn-small,leonsarmiento/Domyn-Small-v1.0-8bit-mlx,mlx,chat_template.jinja,identical,,content condition,22805fd528cfc92c,2026-10-09
+minerva-7b,sapienzanlp/Minerva-7B-instruct-v1.0,original,tokenizer_config.json,reference,,,4d8f33d1753195c3,2026-10-09
+minerva-7b,sapienzanlp/Minerva-7B-instruct-v1.0-GGUF,gguf,minerva-7b-instruct-v1.0-q4_0.gguf,identical,,,4d8f33d1753195c3,2026-10-09
+minerva-7b,DevQuasar-5/sapienzanlp.Minerva-7B-instruct-v1.0-GGUF,gguf,sapienzanlp.Minerva-7B-instruct-v1.0.Q2_K.gguf,identical,,,4d8f33d1753195c3,2026-10-09
+minerva-7b,adoslabs/liara-minerva-7b,gguf,liara-minerva-7b-v1-q8_0.gguf,identical,,,4d8f33d1753195c3,2026-10-09
+xlstm-7b,NX-AI/xLSTM-7b,original,,not checked,no chat template in the repo,,,2026-10-09
+holo4-35b-a3b,Hcompany/Holo4-35B-A3B,original,chat_template.jinja,reference,,content condition;long string literal,ebef8c626218ba8e,2026-10-09
+holo4-35b-a3b,Hcompany/Holo4-35B-A3B-GGUF,gguf,q4_k_m.gguf,identical,,content condition;long string literal,ebef8c626218ba8e,2026-10-09
+holo4-35b-a3b,bartowski/Hcompany_Holo4-35B-A3B-GGUF,gguf,Hcompany_Holo4-35B-A3B-IQ2_XXS.gguf,identical,,content condition;long string literal,ebef8c626218ba8e,2026-10-09
+holo4-35b-a3b,mradermacher/Holo4-35B-A3B-i1-GGUF,gguf,Holo4-35B-A3B.i1-IQ1_S.gguf,identical,,content condition;long string literal,ebef8c626218ba8e,2026-10-09
+holo4-35b-a3b,mradermacher/Holo4-35B-A3B-GGUF,gguf,Holo4-35B-A3B.Q2_K.gguf,identical,,content condition;long string literal,ebef8c626218ba8e,2026-10-09
+holo4-35b-a3b,abenzerps/Holo4-35B-A3B-GGUF,gguf,Holo4-35B-A3B-Q4_0.gguf,identical,,content condition;long string literal,ebef8c626218ba8e,2026-10-09
+holo4-35b-a3b,DevQuasar/Hcompany.Holo4-35B-A3B-GGUF,gguf,Q2_K/Hcompany.Holo4-35B-A3B.f16.gguf.Q2_K.gguf,identical,,content condition;long string literal,ebef8c626218ba8e,2026-10-09
+poro-2-8b,LumiOpen/Llama-Poro-2-8B-Instruct,original,tokenizer_config.json,reference,,content condition,eb49456377a46621,2026-10-09
+poro-2-8b,mradermacher/Llama-Poro-2-8B-Instruct-i1-GGUF,gguf,Llama-Poro-2-8B-Instruct.i1-IQ1_S.gguf,identical,,content condition,eb49456377a46621,2026-10-09
+poro-2-8b,mradermacher/Llama-Poro-2-8B-Instruct-GGUF,gguf,Llama-Poro-2-8B-Instruct.Q2_K.gguf,identical,,content condition,eb49456377a46621,2026-10-09
+poro-2-8b,tensorblock/LumiOpen_Llama-Poro-2-8B-Instruct-GGUF,gguf,Llama-Poro-2-8B-Instruct-Q2_K.gguf,identical,,content condition,eb49456377a46621,2026-10-09
+poro-2-8b,wyrmiyu/Llama-Poro-2-8B-Instruct-Q6_K-GGUF,gguf,llama-poro-2-8b-instruct-q6_k.gguf,identical,,content condition,eb49456377a46621,2026-10-09
+poro-2-8b,mpasila/Llama-Poro-2-8B-Instruct-Q5_K_S-GGUF,gguf,llama-poro-2-8b-instruct-q5_k_s.gguf,identical,,content condition,eb49456377a46621,2026-10-09
+poro-2-8b,wyrmiyu/Llama-Poro-2-8B-Instruct-Q8_0-GGUF,gguf,llama-poro-2-8b-instruct-q8_0.gguf,identical,,content condition,eb49456377a46621,2026-10-09
+borealis2-26b,NbAiLab/borealis2-26b-a4b-preview,original,chat_template.jinja,reference,,content condition;long string literal,d7d4d0047903c0c9,2026-10-09
+borealis2-26b,NbAiLab/borealis2-26b-a4b-preview-gguf,gguf,borealis2-26b-a4b-preview-Q3_K_M.gguf,equivalent,diff: data/template_diffs/NbAiLab__borealis2-26b-a4b-preview-gguf.diff,content condition;long string literal,ded195c682b884d1,2026-10-09
+borealis2-26b,BobTheShoplifter/borealis2-26b-a4b-preview-GGUF,gguf,borealis2-26b-a4b-preview-Q4_K_M.gguf,identical,,content condition;long string literal,d7d4d0047903c0c9,2026-10-09

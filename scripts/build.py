@@ -22,6 +22,8 @@ BPW = {4: 4.5, 8: 8.5}
 GIB = 2**30
 CONTEXTS = {"8k": 8192, "32k": 32768, "128k": 131072}
 GGUF_IN_JSON = 8  # builds per model kept for the detail view
+# Worst first: the model-level template_check is the worst status of its builds.
+TEMPLATE_ORDER = ["suspicious", "differs", "not checked", "equivalent", "identical"]
 COLUMNS = [
     "tier", "id", "name", "family", "provider", "provider_country", "region",
     "control", "majority_owner", "origin", "base_model", "license_class",
@@ -30,7 +32,7 @@ COLUMNS = [
     "size_8bit_gb", "mlx_vlm", "mlx_vlm_detail", "mlx_vlm_checked",
     "mlx_build", "mlx_build_bits", "mlx_build_publisher", "llama_cpp",
     "llama_cpp_detail", "llama_cpp_checked", "gguf_build", "gguf_build_publisher",
-    "gguf_builds", "cache_kind", "cache_kib_per_token", "cache_gib_8k",
+    "gguf_builds", "template_check", "template_check_detail", "cache_kind", "cache_kib_per_token", "cache_gib_8k",
     "cache_gib_32k", "cache_gib_128k", "teacher_origin", "teachers_list",
     "recipe", "terms_can_change", "languages", "eu_languages", "languages_basis",
     "training_hardware", "flags",
@@ -48,6 +50,12 @@ def main():
     facts = {r["hf_repo"]: r for r in read("hf_facts.csv")}
     support = {r["id"]: r for r in read("mlx_support.csv")}
     llama = {r["id"]: r for r in read("llama_cpp_support.csv")}
+    templates = {r["repo"]: r for r in d.template_checks}
+
+    def with_template(b):
+        t = templates.get(b["repo"], {})
+        return {**b, "template_check": t.get("status", "not checked"),
+                "template_reason": t.get("reason", "")}
 
     rows, details = [], []
     for m in d.resolved():
@@ -58,15 +66,15 @@ def main():
         for b in d.builds:
             if b["id"] == m["id"]:
                 ns = b["repo"].split("/")[0]
-                builds.append({**b, "publisher": d.publisher(b),
-                               "verified_org": d.namespaces.get(ns, {}).get("verified") == "true"})
+                builds.append(with_template({**b, "publisher": d.publisher(b),
+                               "verified_org": d.namespaces.get(ns, {}).get("verified") == "true"}))
         builds.sort(key=lambda b: (PUBLISHER_ORDER.index(b["publisher"]), -float(b["bits"])))
         ggufs = []
         for b in d.gguf_builds:
             if b["id"] == m["id"]:
                 ns = b["repo"].split("/")[0]
-                ggufs.append({**b, "publisher": d.publisher(b),
-                              "verified_org": d.namespaces.get(ns, {}).get("verified") == "true"})
+                ggufs.append(with_template({**b, "publisher": d.publisher(b),
+                              "verified_org": d.namespaces.get(ns, {}).get("verified") == "true"}))
         ggufs.sort(key=lambda b: (PUBLISHER_ORDER.index(b["publisher"]), -int(b["downloads"] or 0)))
         lc = llama.get(m["id"], {})
         lc_status, lc_detail = lc.get("llama_cpp", "not checked"), lc.get("detail", "")
@@ -82,6 +90,8 @@ def main():
             if max_ctx and ctx > max_ctx * 1.05:  # 32k still counts for a 32,000-token model
                 return "n/a"
             return f"{cache_bytes(layout, ctx) / GIB:.1f}"
+        statuses = [b["template_check"] for b in builds + ggufs]
+        counts = {k: statuses.count(k) for k in TEMPLATE_ORDER if statuses.count(k)}
         sources = d.all_sources(m)
         row = dict(m)
         row.update(
@@ -105,6 +115,8 @@ def main():
             gguf_build=ggufs[0]["repo"] if ggufs else "",
             gguf_build_publisher=ggufs[0]["publisher"] if ggufs else "",
             gguf_builds=len(ggufs),
+            template_check=next((k for k in TEMPLATE_ORDER if k in counts), ""),
+            template_check_detail=", ".join(f"{v} {k}" for k, v in counts.items()),
             cache_kind=layout["kind"] if layout else "",
             cache_kib_per_token=f"{layout['growing'] / 1024:.1f}" if layout else "",
             cache_gib_8k=cache_gib(CONTEXTS["8k"]),

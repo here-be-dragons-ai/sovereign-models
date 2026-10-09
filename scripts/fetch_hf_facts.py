@@ -114,7 +114,11 @@ def facts(repo):
         row["architecture"] = (cfg.get("architectures") or [""])[0]
         row["arch_json"] = json.dumps(arch_summary(cfg), sort_keys=True)
     except urllib.error.HTTPError as e:
-        row["model_type"] = f"(config: HTTP {e.code})"
+        # Gated repos: the API still reports model_type and architectures
+        # without accepting the gate; context and cache layout need config.json.
+        api_cfg = info.get("config") or {}
+        row["model_type"] = api_cfg.get("model_type") or f"(config: HTTP {e.code})"
+        row["architecture"] = (api_cfg.get("architectures") or [""])[0]
     try:
         readme = get(f"https://huggingface.co/{repo}/raw/main/README.md")
         row["compute_evidence"] = evidence(readme, COMPUTE)

@@ -3,7 +3,7 @@ openllm-france,OpenLLM-France / LINAGORA,FR,eu,independent,,yes,OpenLLM-France,O
 eurollm,"EuroLLM consortium (Unbabel, IST Lisbon, U. Edinburgh, ...)",PT,eu,independent,,no,utter-project,,,
 bsc,Barcelona Supercomputing Center (BSC),ES,eu,independent,,no,BSC-LT,langtech-bsc,bsc.es,
 tilde,Tilde,LV,eu,independent,,no,TildeAI,tilde-nlp,,
-swiss-ai,"Swiss AI Initiative (ETH Zurich, EPFL)",CH,europe,independent,,no,swiss-ai,swiss-ai,swiss-ai.org;apertus-ai.org,Switzerland is not in the EU.
+swiss-ai,"Swiss AI Initiative (ETH Zurich, EPFL)",CH,europe,independent,,no,swiss-ai,swiss-ai,swiss-ai.org;apertus-ai.org;cscs.ch,Switzerland is not in the EU.
 silo-ai,Silo AI (AMD),FI,eu,acquired-non-eu,AMD (US),no,LumiOpen,LumiOpen,,Acquired by AMD in August 2024.
 kyutai,Kyutai,FR,eu,independent,,no,kyutai,,kyutai.org,
 pleias,Pleias,FR,eu,independent,,yes,PleIAs,,,

@@ -5,19 +5,19 @@ eurollm-2512,EuroLLM Instruct 2512,eurollm,scratch,,osi,documented,unknown,unkno
 alia,ALIA,bsc,scratch,,osi,documented,eu,unknown,,listed,code,no,bg;ca;cs;cy;da;de;el;en;es;et;eu;fi;fr;ga;gl;hr;hu;it;lt;lv;mt;nl;nn;no;oc;pl;pt;ro;ru;sh;sk;sl;sr;sv;uk,trained,nvidia
 salamandra,Salamandra,bsc,scratch,,osi,documented,eu,unknown,,listed,code,no,bg;ca;cs;cy;da;de;el;en;es;et;eu;fi;fr;ga;gl;hr;hu;it;lt;lv;mt;nl;nn;no;oc;pl;pt;ro;ru;sh;sk;sl;sr;sv;uk,trained,nvidia
 tildeopen,TildeOpen,tilde,scratch,,osi,documented,eu,unknown,,unknown,code,no,sq;bs;bg;hr;cs;da;nl;en;et;fi;fr;de;hu;is;ga;it;lv;lt;mk;mt;no;pl;pt;ro;ru;sr;sk;sl;es;sv;tr;uk,supported,amd
-apertus-1.5,Apertus 1.5,swiss-ai,continued-own,Apertus 1,osi-aup,open,unknown,yes,,listed,code+data,yes,en;de;es;fr;it;pt;pl;nl;cs;ro;hu;sv;el;da;fi;sk;bg;hr;lt;sl;et;lv,trained,nvidia
+apertus-1.5,Apertus 1.5,swiss-ai,continued-own,Apertus 1,osi-aup,open,europe,yes,,listed,code+data,yes,en;de;es;fr;it;pt;pl;nl;cs;ro;hu;sv;el;da;fi;sk;bg;hr;lt;sl;et;lv,trained,nvidia
 viking,Viking,silo-ai,scratch,,osi,documented,eu,unknown,Built by Silo AI with TurkuNLP (University of Turku) and HPLT; released before the AMD acquisition.,unknown,code,no,fi;en;sv;da;no;nn;is,supported,amd
 helium-1,Helium 1,kyutai,scratch,,osi-aup,documented,unknown,unknown,,listed,weights,yes,bg;cs;da;de;el;en;es;et;fi;fr;ga;hr;hu;it;lt;lv;mt;nl;pl;pt;ro;sk;sl;sv,supported,nvidia
 pleias-rag,Pleias RAG,pleias,continued-own,Pleias 1.0,osi,open,unknown,unknown,,listed,code,no,en;fr;de;it;es;pl;la;pt,supported,nvidia
 kolibri-1,Kolibri 1,aleph-alpha,scratch,,osi,documented,unknown,unknown,,listed,weights,no,de;en,supported,nvidia
-devstral-small-2,Devstral Small 2,mistral-ai,scratch,,osi,undisclosed,unknown,unknown,,unknown,weights,no,,unknown,unknown
-magistral-small,Magistral Small,mistral-ai,scratch,,osi,undisclosed,unknown,unknown,,listed,weights,no,en;fr;de;el;hi;id;it;ja;ko;ms;ne;pl;pt;ro;ru;sr;es;tr;uk;vi;ar;bn;zh;fa,supported,unknown
+devstral-small-2,Devstral Small 2,mistral-ai,continued-own,Mistral Small 3.1 24B Base,osi,undisclosed,unknown,unknown,,unknown,weights,no,,unknown,unknown
+magistral-small,Magistral Small,mistral-ai,continued-own,Mistral Small 3.2 24B Instruct,osi,undisclosed,unknown,unknown,,listed,weights,no,en;fr;de;el;hi;id;it;ja;ko;ms;ne;pl;pt;ro;ru;sr;es;tr;uk;vi;ar;bn;zh;fa,supported,unknown
 mistral-small-3,Mistral Small 3,mistral-ai,scratch,,osi,undisclosed,unknown,unknown,,unknown,weights,no,en;fr;de;el;hi;id;it;ja;ko;ms;ne;pl;pt;ro;ru;sr;es;sv;tr;uk;vi;ar;bn;zh;fa,supported,unknown
 ministral-3,Ministral 3,mistral-ai,scratch,,osi,undisclosed,unknown,unknown,,listed,weights,no,en;fr;es;de;it;pt;nl;zh;ja;ko;ar,supported,nvidia
 mistral-small-4,Mistral Small 4,mistral-ai,scratch,,osi,undisclosed,unknown,unknown,,unknown,weights,no,en;fr;es;de;it;pt;nl;zh;ja;ko;ar,supported,unknown
 bielik-v3,Bielik v3,speakleash,continued-european,Mistral 7B v0.2 (depth up-scaled),osi,documented,unknown,unknown,,listed,weights,no,pl;en;nl;pt;sv;de;es;it;tr;fr;cs;ro;bs;fi;hu;el;uk;sl;da;ru;hr;bg;sk;lt;no;et;lv;sq;sr;be;is;sh,supported,unknown
 sui-1,sui-1,ellamind,finetune-european,Mistral Small 3.2 24B,osi,unknown,unknown,unknown,,listed,weights,no,en;de;es;fr;it;pt;nl;pl;ru;sv;uk;ro;cs;el;hu;zh;ja;ko;vi;id;th;hi;ar;tr;fa,supported,nvidia
-domyn-small,Domyn Small,domyn,continued-own,Italia 10B,unclear,unknown,unknown,unknown,,listed,weights,no,en;it;es;fr;de,supported,nvidia
+domyn-small,Domyn Small,domyn,continued-own,Italia 10B,osi,unknown,unknown,unknown,,listed,weights,no,en;it;es;fr;de,supported,nvidia
 minerva,Minerva,sapienza-nlp,scratch,,osi,unknown,unknown,unknown,,listed,full,no,it;en,supported,nvidia
 xlstm,xLSTM,nxai,scratch,,custom,documented,unknown,unknown,,unknown,code+data,no,,unknown,nvidia
 holo4,Holo4,h-company,finetune-foreign,"Qwen3.6-35B-A3B (Alibaba, CN)",osi,unknown,unknown,unknown,,unknown,weights,no,,unknown,unknown

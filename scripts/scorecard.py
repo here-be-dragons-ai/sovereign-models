@@ -44,6 +44,8 @@ INFO_ALLOWED = {
     "languages_basis": {"supported", "trained", "metadata", "unknown"},
     "training_hardware": {"nvidia", "amd", "google-tpu", "other", "unknown"},
 }
+# Chat-template check per build (#7, 3a); "reference" is the original's row.
+TEMPLATE_STATUS = {"reference", "identical", "equivalent", "differs", "suspicious", "not checked"}
 TEACHER_ALLOWED = {
     "stage": {"pretraining", "midtraining", "posttraining", "judge"},
     "model_origin": {"own", "european", "foreign", "unknown"},
@@ -99,6 +101,7 @@ class Data:
         self.builds = read("mlx_builds.csv")
         self.gguf_builds = read("gguf_builds.csv")
         self.teachers = read("teachers.csv")
+        self.template_checks = read("template_checks.csv")
 
     # -- resolution ------------------------------------------------------------
     def resolve(self, model):
@@ -350,4 +353,7 @@ class Data:
         for b in self.builds:
             if b["id"] not in ids:
                 errors.append(f"mlx_builds.csv: unknown model id {b['id']!r}")
+        for t in self.template_checks:
+            if t["status"] not in TEMPLATE_STATUS:
+                errors.append(f"template_checks.csv {t['repo']}: status={t['status']!r} not in {sorted(TEMPLATE_STATUS)}")
         return errors

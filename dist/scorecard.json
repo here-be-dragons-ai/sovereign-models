@@ -44,6 +44,8 @@
    "gguf_build": "BSC-LT/ALIA-40b-instruct-2606-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 3,
+   "template_check": "differs",
+   "template_check_detail": "1 differs, 3 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "192.0",
    "cache_gib_8k": "1.5",
@@ -205,7 +207,9 @@
      "bits": "4",
      "note": "built from the earlier 2605 release",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/tonidurans__ALIA-40b-instruct-2605-mlx-q4.diff"
     }
    ],
    "gguf_list": [
@@ -216,7 +220,9 @@
      "likes": "0",
      "created": "2026-06-30",
      "publisher": "official",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "alia-40b",
@@ -225,7 +231,9 @@
      "likes": "1",
      "created": "2026-07-03",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "alia-40b",
@@ -234,7 +242,9 @@
      "likes": "0",
      "created": "2026-07-03",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -297,7 +307,7 @@
    "license_class": "osi-aup",
    "license": "apache-2.0",
    "data": "open",
-   "compute": "unknown",
+   "compute": "europe",
    "ai_act_summary": "yes",
    "cop_signatory": "no",
    "modalities": "text, image, audio",
@@ -318,6 +328,8 @@
    "gguf_build": "katya228/Apertus-v1.5-70B-text-GGUF",
    "gguf_build_publisher": "individual",
    "gguf_builds": 1,
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "320.0",
    "cache_gib_8k": "2.5",
@@ -333,10 +345,10 @@
    "training_hardware": "nvidia",
    "flags": "outside the EU; use policy on redistribution",
    "hbd_involvement": "",
-   "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution.",
+   "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-70B",
    "hf_created": "2026-07-24",
-   "last_reviewed": "2026-10-08",
+   "last_reviewed": "2026-10-09",
    "provider_notes": "Switzerland is not in the EU.",
    "family_notes": "",
    "repo_verified_org": false,
@@ -399,7 +411,7 @@
      "checked": "yes",
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20261008123632/https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf",
-     "note": "Apache-2.0 plus AUP v1.5"
+     "note": "Apache-2.0 plus AUP v1.5; AUP v1.5: users indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims; express assent and back-to-back on redistribution"
     },
     {
      "scope": "family",
@@ -549,7 +561,17 @@
      "checked": "yes",
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20260929045620/https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
-     "note": "Apertus 1: 4096 GH200 on CSCS Alps; 1.5 is continued pretraining on Alps"
+     "note": "Apertus 1 card: 4096 GH200; 1.5 continues it on Alps (CSCS, see compute), whose GPU partition is GH200"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://www.cscs.ch/science/computer-science-hpc/2026/apertus-15-building-the-next-generation-of-open-ai-infrastructure",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-09",
+     "archive_url": "https://web.archive.org/web/20261009152349/https://www.cscs.ch/science/computer-science-hpc/2026/apertus-15-building-the-next-generation-of-open-ai-infrastructure",
+     "note": "CSCS on the 1.5 release (2026-07-24): 'Trained on the Alps supercomputer at CSCS in Lugano'; Alps is in Switzerland"
     }
    ],
    "mlx_builds": [],
@@ -561,7 +583,9 @@
      "likes": "1",
      "created": "2026-08-03",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -631,7 +655,7 @@
    "license_class": "osi-aup",
    "license": "apache-2.0",
    "data": "open",
-   "compute": "unknown",
+   "compute": "europe",
    "ai_act_summary": "yes",
    "cop_signatory": "no",
    "modalities": "text, image, audio",
@@ -652,6 +676,8 @@
    "gguf_build": "",
    "gguf_build_publisher": "",
    "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "128.0",
    "cache_gib_8k": "1.0",
@@ -667,10 +693,10 @@
    "training_hardware": "nvidia",
    "flags": "outside the EU; use policy on redistribution; our own work involved",
    "hbd_involvement": "HBD ported image and audio input to MLX and keeps a private MLX build (8B)",
-   "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution.",
+   "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-8B",
    "hf_created": "2026-07-24",
-   "last_reviewed": "2026-10-08",
+   "last_reviewed": "2026-10-09",
    "provider_notes": "Switzerland is not in the EU.",
    "family_notes": "",
    "repo_verified_org": false,
@@ -733,7 +759,7 @@
      "checked": "yes",
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20261008123632/https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf",
-     "note": "Apache-2.0 plus AUP v1.5"
+     "note": "Apache-2.0 plus AUP v1.5; AUP v1.5: users indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims; express assent and back-to-back on redistribution"
     },
     {
      "scope": "family",
@@ -883,7 +909,17 @@
      "checked": "yes",
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20260929045620/https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
-     "note": "Apertus 1: 4096 GH200 on CSCS Alps; 1.5 is continued pretraining on Alps"
+     "note": "Apertus 1 card: 4096 GH200; 1.5 continues it on Alps (CSCS, see compute), whose GPU partition is GH200"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://www.cscs.ch/science/computer-science-hpc/2026/apertus-15-building-the-next-generation-of-open-ai-infrastructure",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-09",
+     "archive_url": "https://web.archive.org/web/20261009152349/https://www.cscs.ch/science/computer-science-hpc/2026/apertus-15-building-the-next-generation-of-open-ai-infrastructure",
+     "note": "CSCS on the 1.5 release (2026-07-24): 'Trained on the Alps supercomputer at CSCS in Lugano'; Alps is in Switzerland"
     }
    ],
    "mlx_builds": [],
@@ -976,6 +1012,8 @@
    "gguf_build": "DevQuasar/utter-project.EuroLLM-22B-Instruct-2512-GGUF",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 6,
+   "template_check": "identical",
+   "template_check_detail": "8 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "216.0",
    "cache_gib_8k": "1.7",
@@ -1197,7 +1235,9 @@
      "bits": "8",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "eurollm-22b",
@@ -1205,7 +1245,9 @@
      "bits": "4",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "gguf_list": [
@@ -1216,7 +1258,9 @@
      "likes": "0",
      "created": "2025-12-31",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "eurollm-22b",
@@ -1225,7 +1269,9 @@
      "likes": "8",
      "created": "2025-12-16",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "eurollm-22b",
@@ -1234,7 +1280,9 @@
      "likes": "2",
      "created": "2025-12-15",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "eurollm-22b",
@@ -1243,7 +1291,9 @@
      "likes": "0",
      "created": "2025-12-15",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "eurollm-22b",
@@ -1252,7 +1302,9 @@
      "likes": "1",
      "created": "2026-09-29",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "eurollm-22b",
@@ -1261,7 +1313,9 @@
      "likes": "0",
      "created": "2025-12-27",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -1359,6 +1413,8 @@
    "gguf_build": "OpenLLM-France/Lucie-7B-Instruct-v1.1-gguf",
    "gguf_build_publisher": "official",
    "gguf_builds": 5,
+   "template_check": "identical",
+   "template_check_detail": "6 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "128.0",
    "cache_gib_8k": "1.0",
@@ -1490,7 +1546,9 @@
      "bits": "4",
      "note": "earlier Lucie-7B-Instruct release",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "gguf_list": [
@@ -1501,7 +1559,9 @@
      "likes": "6",
      "created": "2025-02-14",
      "publisher": "official",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "lucie-7b",
@@ -1510,7 +1570,9 @@
      "likes": "0",
      "created": "2025-03-23",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "lucie-7b",
@@ -1519,7 +1581,9 @@
      "likes": "0",
      "created": "2025-02-23",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "lucie-7b",
@@ -1528,7 +1592,9 @@
      "likes": "3",
      "created": "2025-02-17",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "lucie-7b",
@@ -1537,7 +1603,9 @@
      "likes": "0",
      "created": "2026-02-01",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -1600,6 +1668,8 @@
    "gguf_build": "OpenLLM-France/Luciole-23B-Instruct-1.1-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 1,
+   "template_check": "identical",
+   "template_check_detail": "2 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
    "cache_gib_8k": "1.2",
@@ -1831,7 +1901,9 @@
      "bits": "4",
      "note": "",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "gguf_list": [
@@ -1842,7 +1914,9 @@
      "likes": "4",
      "created": "2026-07-08",
      "publisher": "official",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -1954,6 +2028,8 @@
    "gguf_build": "OpenLLM-France/Luciole-8B-Instruct-1.1-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 1,
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "cache_kind": "hybrid: 4 attention + 24 Mamba layers",
    "cache_kib_per_token": "16.0",
    "cache_gib_8k": "0.2",
@@ -2187,7 +2263,9 @@
      "likes": "4",
      "created": "2026-07-08",
      "publisher": "official",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -2299,6 +2377,8 @@
    "gguf_build": "brendanddev/Pleias-RAG-1B-Q4_K_M-GGUF",
    "gguf_build_publisher": "individual",
    "gguf_builds": 1,
+   "template_check": "not checked",
+   "template_check_detail": "2 not checked",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "44.0",
    "cache_gib_8k": "n/a",
@@ -2430,7 +2510,9 @@
      "bits": "6",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     }
    ],
    "gguf_list": [
@@ -2441,7 +2523,9 @@
      "likes": "0",
      "created": "2026-04-02",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     }
    ],
    "cache_layout": {
@@ -2504,6 +2588,8 @@
    "gguf_build": "tensorblock/salamandra-7b-instruct-GGUF",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 14,
+   "template_check": "differs",
+   "template_check_detail": "4 differs, 11 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "128.0",
    "cache_gib_8k": "1.0",
@@ -2635,7 +2721,9 @@
      "bits": "16",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "gguf_list": [
@@ -2646,7 +2734,9 @@
      "likes": "1",
      "created": "2025-02-15",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "salamandra-7b",
@@ -2655,7 +2745,9 @@
      "likes": "0",
      "created": "2024-10-11",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/RichardErkhov__BSC-LT_-_salamandra-7b-instruct-gguf.diff"
     },
     {
      "id": "salamandra-7b",
@@ -2664,7 +2756,9 @@
      "likes": "2",
      "created": "2025-01-23",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "salamandra-7b",
@@ -2673,7 +2767,9 @@
      "likes": "2",
      "created": "2024-10-03",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/cstr__salamandra-7b-instruct-GGUF.diff"
     },
     {
      "id": "salamandra-7b",
@@ -2682,7 +2778,9 @@
      "likes": "0",
      "created": "2026-10-01",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/Fr4nkSt3in__salamandra-7b-instruct-2606-BF16-GGUF.diff"
     },
     {
      "id": "salamandra-7b",
@@ -2691,7 +2789,9 @@
      "likes": "0",
      "created": "2025-07-22",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "salamandra-7b",
@@ -2700,7 +2800,9 @@
      "likes": "2",
      "created": "2025-01-25",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "salamandra-7b",
@@ -2709,7 +2811,9 @@
      "likes": "0",
      "created": "2025-01-21",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -2772,6 +2876,8 @@
    "gguf_build": "",
    "gguf_build_publisher": "",
    "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "240.0",
    "cache_gib_8k": "1.9",
@@ -2907,8 +3013,8 @@
    "cop_signatory": "no",
    "modalities": "text",
    "params_b": "11.2",
-   "context": "",
-   "model_type": "(config: HTTP 403)",
+   "context": "32768",
+   "model_type": "llama",
    "size_4bit_gb": "6.3",
    "size_8bit_gb": "11.9",
    "mlx_vlm": "not checked",
@@ -2923,11 +3029,13 @@
    "gguf_build": "speakleash/Bielik-11B-v3.0-Instruct-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 5,
-   "cache_kind": "",
-   "cache_kib_per_token": "",
-   "cache_gib_8k": "",
-   "cache_gib_32k": "",
-   "cache_gib_128k": "",
+   "template_check": "identical",
+   "template_check_detail": "7 identical",
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "200.0",
+   "cache_gib_8k": "1.6",
+   "cache_gib_32k": "6.2",
+   "cache_gib_128k": "n/a",
    "teacher_origin": "foreign",
    "teachers_list": "DeepSeek-V3-0324 (posttraining, foreign); Bielik 11B v2.6 (posttraining, own)",
    "recipe": "weights",
@@ -3044,7 +3152,9 @@
      "bits": "8",
      "note": "",
      "publisher": "official",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "bielik-11b-v3",
@@ -3052,7 +3162,9 @@
      "bits": "4",
      "note": "",
      "publisher": "official",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "gguf_list": [
@@ -3063,7 +3175,9 @@
      "likes": "31",
      "created": "2025-12-30",
      "publisher": "official",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "bielik-11b-v3",
@@ -3072,7 +3186,9 @@
      "likes": "0",
      "created": "2026-01-03",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "bielik-11b-v3",
@@ -3081,7 +3197,9 @@
      "likes": "1",
      "created": "2026-01-21",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "bielik-11b-v3",
@@ -3090,7 +3208,9 @@
      "likes": "5",
      "created": "2026-01-05",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "bielik-11b-v3",
@@ -3099,10 +3219,17 @@
      "likes": "1",
      "created": "2026-01-02",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
-   "cache_layout": null,
+   "cache_layout": {
+    "growing": 204800,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
    "teachers": [
     {
      "family_id": "bielik-v3",
@@ -3119,7 +3246,7 @@
      "purpose": "preferred/rejected pairs for DPO-P"
     }
    ],
-   "max_context": null
+   "max_context": 32768
   },
   {
    "tier": "B",
@@ -3131,8 +3258,8 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "Mistral Small 3.1 24B Base",
    "license_class": "osi",
    "license": "apache-2.0",
    "data": "undisclosed",
@@ -3157,6 +3284,8 @@
    "gguf_build": "unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 15,
+   "template_check": "suspicious",
+   "template_check_detail": "1 suspicious, 12 differs, 2 not checked, 2 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
    "cache_gib_8k": "1.2",
@@ -3172,10 +3301,10 @@
    "training_hardware": "unknown",
    "flags": "",
    "hbd_involvement": "",
-   "notes": "Coding/agent model.",
+   "notes": "Coding/agent model. The card states a 256k context; config.json allows 393,216 tokens (the context column shows the config value).",
    "hf_repo": "mistralai/Devstral-Small-2-24B-Instruct-2512",
    "hf_created": "2025-11-28",
-   "last_reviewed": "2026-10-08",
+   "last_reviewed": "2026-10-09",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": true,
@@ -3206,9 +3335,9 @@
      "url": "https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
      "issuer": "provider",
      "checked": "yes",
-     "retrieved": "2026-10-08",
+     "retrieved": "2026-10-09",
      "archive_url": "https://web.archive.org/web/20261008125537/https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512",
-     "note": "Mistral's own model line"
+     "note": "Hub base_model: mistralai/Mistral-Small-3.1-24B-Base-2503 (Mistral's own line)"
     },
     {
      "scope": "family",
@@ -3248,7 +3377,9 @@
      "bits": "8",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mlx-community__Devstral-Small-2-24B-Instruct-2512-8bit.diff"
     },
     {
      "id": "devstral-small-2",
@@ -3256,7 +3387,9 @@
      "bits": "4",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mlx-community__Devstral-Small-2-24B-Instruct-2512-4bit.diff"
     }
    ],
    "gguf_list": [
@@ -3267,7 +3400,9 @@
      "likes": "185",
      "created": "2025-12-10",
      "publisher": "curated",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "suspicious",
+     "template_reason": "new in the build: date or time; diff: data/template_diffs/unsloth__Devstral-Small-2-24B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "devstral-small-2",
@@ -3276,7 +3411,9 @@
      "likes": "7",
      "created": "2025-12-08",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/lmstudio-community__Devstral-Small-2-24B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "devstral-small-2",
@@ -3285,7 +3422,9 @@
      "likes": "7",
      "created": "2025-12-18",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/ggml-org__Devstral-Small-2-24B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "devstral-small-2",
@@ -3294,7 +3433,9 @@
      "likes": "4",
      "created": "2026-08-30",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "devstral-small-2",
@@ -3303,7 +3444,9 @@
      "likes": "35",
      "created": "2026-02-17",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/byteshape__Devstral-Small-2-24B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "devstral-small-2",
@@ -3312,7 +3455,9 @@
      "likes": "0",
      "created": "2025-12-11",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__mistralai.Devstral-Small-2-24B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "devstral-small-2",
@@ -3321,7 +3466,9 @@
      "likes": "55",
      "created": "2025-12-09",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/bartowski__mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "devstral-small-2",
@@ -3330,7 +3477,9 @@
      "likes": "0",
      "created": "2026-06-16",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/FreedomAISVR__Devstral-Small-2-MXFP4-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -3341,6 +3490,232 @@
    },
    "teachers": [],
    "max_context": 393216
+  },
+  {
+   "tier": "B",
+   "id": "domyn-small",
+   "name": "Domyn Small v1.0",
+   "family": "Domyn Small",
+   "provider": "Domyn (formerly iGenius)",
+   "provider_country": "IT",
+   "region": "eu",
+   "control": "independent",
+   "majority_owner": "",
+   "origin": "continued-own",
+   "base_model": "Italia 10B",
+   "license_class": "osi",
+   "license": "mit",
+   "data": "unknown",
+   "compute": "unknown",
+   "ai_act_summary": "unknown",
+   "cop_signatory": "yes",
+   "modalities": "text",
+   "params_b": "9.8",
+   "context": "32768",
+   "model_type": "nemotron",
+   "size_4bit_gb": "5.5",
+   "size_8bit_gb": "10.4",
+   "mlx_vlm": "loads",
+   "mlx_vlm_detail": "",
+   "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
+   "mlx_build": "leonsarmiento/Domyn-Small-v1.0-8bit-mlx",
+   "mlx_build_bits": "8",
+   "mlx_build_publisher": "individual",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-08 v0.6.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "n/a",
+   "teacher_origin": "foreign",
+   "teachers_list": "Qwen3-32B and Qwen3-0.6B (via Dolci) (posttraining, foreign); Unnamed teacher models (posttraining, unknown); GPT-4.1 (via Dolci) (judge, foreign)",
+   "recipe": "weights",
+   "terms_can_change": "no",
+   "languages": "en;it;es;fr;de",
+   "eu_languages": 5,
+   "languages_basis": "supported",
+   "training_hardware": "nvidia",
+   "flags": "",
+   "hbd_involvement": "",
+   "notes": "MIT licence (slightly reworded MIT text on domyn.com; the paper and the card say MIT).",
+   "hf_repo": "domyn/Domyn-Small-v1.0",
+   "hf_created": "2026-05-09",
+   "last_reviewed": "2026-10-09",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
+   "sources": [
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "note": "license: other, license_name: mit"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-09",
+     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "note": "card: 'Base model: Initialised from Italia 10B and continually pre-trained on 503B tokens'"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "note": ""
+    },
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "Domyn listed (2026-10-07)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-32B and Qwen3-0.6B (via Dolci)",
+     "url": "https://arxiv.org/abs/2607.20448",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
+     "note": "chosen completions decoded from Qwen 3 32B and rejected completions from Qwen 3 0.6B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Unnamed teacher models",
+     "url": "https://arxiv.org/abs/2607.20448",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
+     "note": "serving teacher models for synthetic data generation during the SFT and RL data pipelines"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:GPT-4.1 (via Dolci)",
+     "url": "https://arxiv.org/abs/2607.20448",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
+     "note": "GPT-4.1-judged pairs"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://arxiv.org/abs/2607.20448",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
+     "note": "weights and a paper-level post-training recipe; no training code; pretraining data only as macro categories"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
+     "note": "50+ languages, optimised for en, it, es, fr, de"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://arxiv.org/abs/2607.20448",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
+     "note": "256 A100-64GB on CINECA Leonardo (CPT); base pretraining on NVIDIA DGX Cloud and Leonardo"
+    },
+    {
+     "scope": "family",
+     "field": "terms_can_change",
+     "url": "https://www.domyn.com/legal/software-licenses/domyn-small",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008163326/https://www.domyn.com/legal/software-licenses/domyn-small",
+     "note": "MIT-derived licence agreement, no update clause, no use policy"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://www.domyn.com/legal/software-licenses/domyn-small",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-09",
+     "archive_url": "https://web.archive.org/web/20261008163326/https://www.domyn.com/legal/software-licenses/domyn-small",
+     "note": "MIT text with minor rewording (use, copy, modify, merge, publish, distribute, sublicense, sell; notice required); no use restrictions"
+    }
+   ],
+   "mlx_builds": [
+    {
+     "id": "domyn-small",
+     "repo": "leonsarmiento/Domyn-Small-v1.0-8bit-mlx",
+     "bits": "8",
+     "note": "",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    }
+   ],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "teachers": [
+    {
+     "family_id": "domyn-small",
+     "stage": "posttraining",
+     "model": "Qwen3-32B and Qwen3-0.6B (via Dolci)",
+     "model_origin": "foreign",
+     "purpose": "DPO pairs (AllenAI Dolci-Instruct-DPO)"
+    },
+    {
+     "family_id": "domyn-small",
+     "stage": "posttraining",
+     "model": "Unnamed teacher models",
+     "model_origin": "unknown",
+     "purpose": "synthetic data for SFT and RL pipelines"
+    },
+    {
+     "family_id": "domyn-small",
+     "stage": "judge",
+     "model": "GPT-4.1 (via Dolci)",
+     "model_origin": "foreign",
+     "purpose": "selecting best and worst responses for DPO pairs"
+    }
+   ],
+   "max_context": 32768
   },
   {
    "tier": "B",
@@ -3378,6 +3753,8 @@
    "gguf_build": "mradermacher/EuroLLM-9B-Instruct-2512-GGUF",
    "gguf_build_publisher": "individual",
    "gguf_builds": 4,
+   "template_check": "not checked",
+   "template_check_detail": "1 not checked, 3 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "168.0",
    "cache_gib_8k": "1.3",
@@ -3591,7 +3968,9 @@
      "likes": "1",
      "created": "2026-02-06",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "eurollm-9b",
@@ -3600,7 +3979,9 @@
      "likes": "2",
      "created": "2026-02-06",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "eurollm-9b",
@@ -3609,7 +3990,9 @@
      "likes": "0",
      "created": "2026-10-06",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "eurollm-9b",
@@ -3618,7 +4001,9 @@
      "likes": "0",
      "created": "2026-04-08",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -3716,6 +4101,8 @@
    "gguf_build": "Hob-forge/helium-1-2b-GGUF",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 4,
+   "template_check": "not checked",
+   "template_check_detail": "4 not checked",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "112.0",
    "cache_gib_8k": "n/a",
@@ -3859,7 +4246,9 @@
      "likes": "0",
      "created": "2026-04-29",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "helium-1-2b",
@@ -3868,7 +4257,9 @@
      "likes": "4",
      "created": "2025-05-04",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "helium-1-2b",
@@ -3877,7 +4268,9 @@
      "likes": "2",
      "created": "2025-07-16",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "helium-1-2b",
@@ -3886,7 +4279,9 @@
      "likes": "3",
      "created": "2025-04-30",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     }
    ],
    "cache_layout": {
@@ -3942,6 +4337,8 @@
    "gguf_build": "Hob-forge/Kolibri-1-GGUF",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 6,
+   "template_check": "identical",
+   "template_check_detail": "7 identical",
    "cache_kind": "10 full + 40 sliding-window (513) layers",
    "cache_kib_per_token": "20.0",
    "cache_gib_8k": "0.2",
@@ -4133,7 +4530,9 @@
      "bits": "3.61",
      "note": "mixed 3/6 bit; our own build",
      "publisher": "hbd",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "gguf_list": [
@@ -4144,7 +4543,9 @@
      "likes": "19",
      "created": "2026-10-03",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "kolibri-1",
@@ -4153,7 +4554,9 @@
      "likes": "2",
      "created": "2026-10-05",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "kolibri-1",
@@ -4162,7 +4565,9 @@
      "likes": "2",
      "created": "2026-10-05",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "kolibri-1",
@@ -4171,7 +4576,9 @@
      "likes": "3",
      "created": "2026-10-04",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "kolibri-1",
@@ -4180,7 +4587,9 @@
      "likes": "1",
      "created": "2026-10-05",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "kolibri-1",
@@ -4189,7 +4598,9 @@
      "likes": "0",
      "created": "2026-10-07",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -4266,8 +4677,8 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "Mistral Small 3.2 24B Instruct",
    "license_class": "osi",
    "license": "apache-2.0",
    "data": "undisclosed",
@@ -4292,6 +4703,8 @@
    "gguf_build": "mistralai/Magistral-Small-2509-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 9,
+   "template_check": "not checked",
+   "template_check_detail": "10 not checked",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
    "cache_gib_8k": "1.2",
@@ -4310,7 +4723,7 @@
    "notes": "Reasoning model.",
    "hf_repo": "mistralai/Magistral-Small-2509",
    "hf_created": "2025-09-12",
-   "last_reviewed": "2026-10-08",
+   "last_reviewed": "2026-10-09",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": true,
@@ -4341,9 +4754,9 @@
      "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
      "issuer": "provider",
      "checked": "yes",
-     "retrieved": "2026-10-08",
+     "retrieved": "2026-10-09",
      "archive_url": "https://web.archive.org/web/20261008125732/https://huggingface.co/mistralai/Magistral-Small-2509",
-     "note": "Mistral's own model line"
+     "note": "Hub base_model: mistralai/Mistral-Small-3.2-24B-Instruct-2506 (Mistral's own line)"
     },
     {
      "scope": "family",
@@ -4413,7 +4826,9 @@
      "bits": "8",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     }
    ],
    "gguf_list": [
@@ -4424,7 +4839,9 @@
      "likes": "76",
      "created": "2025-09-12",
      "publisher": "official",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "magistral-small-2509",
@@ -4433,7 +4850,9 @@
      "likes": "106",
      "created": "2025-09-17",
      "publisher": "curated",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "magistral-small-2509",
@@ -4442,7 +4861,9 @@
      "likes": "4",
      "created": "2025-09-18",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "magistral-small-2509",
@@ -4451,7 +4872,9 @@
      "likes": "0",
      "created": "2025-09-18",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "magistral-small-2509",
@@ -4460,7 +4883,9 @@
      "likes": "10",
      "created": "2025-09-17",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "magistral-small-2509",
@@ -4469,7 +4894,9 @@
      "likes": "1",
      "created": "2026-06-17",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "magistral-small-2509",
@@ -4478,7 +4905,9 @@
      "likes": "0",
      "created": "2026-06-17",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "magistral-small-2509",
@@ -4487,7 +4916,9 @@
      "likes": "0",
      "created": "2025-09-23",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     }
    ],
    "cache_layout": {
@@ -4550,6 +4981,8 @@
    "gguf_build": "sapienzanlp/Minerva-7B-instruct-v1.0-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 3,
+   "template_check": "identical",
+   "template_check_detail": "3 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "128.0",
    "cache_gib_8k": "n/a",
@@ -4703,7 +5136,9 @@
      "likes": "6",
      "created": "2024-12-07",
      "publisher": "official",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "minerva-7b",
@@ -4712,7 +5147,9 @@
      "likes": "0",
      "created": "2024-12-10",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "minerva-7b",
@@ -4721,7 +5158,9 @@
      "likes": "0",
      "created": "2026-07-17",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -4805,6 +5244,8 @@
    "gguf_build": "mistralai/Ministral-3-14B-Instruct-2512-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 16,
+   "template_check": "differs",
+   "template_check_detail": "15 differs, 1 not checked, 1 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
    "cache_gib_8k": "1.2",
@@ -4946,7 +5387,9 @@
      "bits": "8",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mlx-community__Ministral-3-14B-Instruct-2512-8bit.diff"
     }
    ],
    "gguf_list": [
@@ -4957,7 +5400,9 @@
      "likes": "77",
      "created": "2025-10-31",
      "publisher": "official",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mistralai__Ministral-3-14B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "ministral-3-14b",
@@ -4966,7 +5411,9 @@
      "likes": "90",
      "created": "2025-12-02",
      "publisher": "curated",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/unsloth__Ministral-3-14B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "ministral-3-14b",
@@ -4975,7 +5422,9 @@
      "likes": "0",
      "created": "2025-12-04",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__mistralai.Ministral-3-14B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "ministral-3-14b",
@@ -4984,7 +5433,9 @@
      "likes": "0",
      "created": "2026-02-23",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/llmware__ministral-3-14b-gguf.diff"
     },
     {
      "id": "ministral-3-14b",
@@ -4993,7 +5444,9 @@
      "likes": "2",
      "created": "2025-12-02",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/prithivMLmods__Ministral-3-Instruct-2512-AIO-GGUF.diff"
     },
     {
      "id": "ministral-3-14b",
@@ -5002,7 +5455,9 @@
      "likes": "0",
      "created": "2026-01-21",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/eaddario__Ministral-3-14B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "ministral-3-14b",
@@ -5011,7 +5466,9 @@
      "likes": "0",
      "created": "2026-10-07",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "ministral-3-14b",
@@ -5020,7 +5477,9 @@
      "likes": "0",
      "created": "2026-06-26",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/iasarkar__Ministral-3-14B-Instruct-2512-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -5090,6 +5549,8 @@
    "gguf_build": "unsloth/Mistral-Small-3.2-24B-Instruct-2506-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 20,
+   "template_check": "not checked",
+   "template_check_detail": "21 not checked",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
    "cache_gib_8k": "1.2",
@@ -5191,7 +5652,9 @@
      "bits": "8",
      "note": "",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     }
    ],
    "gguf_list": [
@@ -5202,7 +5665,9 @@
      "likes": "195",
      "created": "2025-06-20",
      "publisher": "curated",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "mistral-small-3.2",
@@ -5211,7 +5676,9 @@
      "likes": "8",
      "created": "2025-06-20",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "mistral-small-3.2",
@@ -5220,7 +5687,9 @@
      "likes": "0",
      "created": "2026-07-17",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "mistral-small-3.2",
@@ -5229,7 +5698,9 @@
      "likes": "0",
      "created": "2025-06-22",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "mistral-small-3.2",
@@ -5238,7 +5709,9 @@
      "likes": "0",
      "created": "2026-05-10",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "mistral-small-3.2",
@@ -5247,7 +5720,9 @@
      "likes": "0",
      "created": "2026-04-19",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "mistral-small-3.2",
@@ -5256,7 +5731,9 @@
      "likes": "1",
      "created": "2025-07-05",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "mistral-small-3.2",
@@ -5265,7 +5742,9 @@
      "likes": "0",
      "created": "2026-06-22",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
     }
    ],
    "cache_layout": {
@@ -5313,6 +5792,8 @@
    "gguf_build": "unsloth/Mistral-Small-4-119B-2603-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 21,
+   "template_check": "differs",
+   "template_check_detail": "21 differs, 1 not checked",
    "cache_kind": "MLA, cached decompressed in MLX",
    "cache_kib_per_token": "576.0",
    "cache_gib_8k": "4.5",
@@ -5328,7 +5809,7 @@
    "training_hardware": "unknown",
    "flags": "",
    "hbd_involvement": "",
-   "notes": "MoE, about 6.5B active; needs about 2-bit to fit 48 GB.",
+   "notes": "MoE, about 6.5B active; needs about 2-bit to fit 48 GB. The card states a 256k context; config.json allows 1,048,576 tokens (the context column shows the config value).",
    "hf_repo": "mistralai/Mistral-Small-4-119B-2603",
    "hf_created": "2026-01-23",
    "last_reviewed": "2026-10-08",
@@ -5414,7 +5895,9 @@
      "bits": "4",
      "note": "63 GB; does not fit 48 GB",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mlx-community__Mistral-Small-4-119B-2603-4bit.diff"
     }
    ],
    "gguf_list": [
@@ -5425,7 +5908,9 @@
      "likes": "87",
      "created": "2026-03-17",
      "publisher": "curated",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/unsloth__Mistral-Small-4-119B-2603-GGUF.diff"
     },
     {
      "id": "mistral-small-4",
@@ -5434,7 +5919,9 @@
      "likes": "8",
      "created": "2026-03-13",
      "publisher": "curated",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/lmstudio-community__Mistral-Small-4-119B-2603-GGUF.diff"
     },
     {
      "id": "mistral-small-4",
@@ -5443,7 +5930,9 @@
      "likes": "0",
      "created": "2026-03-18",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__mistralai.Mistral-Small-4-119B-2603-GGUF.diff"
     },
     {
      "id": "mistral-small-4",
@@ -5452,7 +5941,9 @@
      "likes": "0",
      "created": "2026-06-18",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "mistral-small-4",
@@ -5461,7 +5952,9 @@
      "likes": "18",
      "created": "2026-03-16",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/bartowski__mistralai_Mistral-Small-4-119B-2603-GGUF.diff"
     },
     {
      "id": "mistral-small-4",
@@ -5470,7 +5963,9 @@
      "likes": "0",
      "created": "2026-08-16",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/kingjones777__Mistral-Small-4-119B-ROCmFP4-GGUF.diff"
     },
     {
      "id": "mistral-small-4",
@@ -5479,7 +5974,9 @@
      "likes": "2",
      "created": "2026-04-05",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mudler__Mistral-Small-4-119B-2603-APEX-GGUF.diff"
     },
     {
      "id": "mistral-small-4",
@@ -5488,7 +5985,9 @@
      "likes": "3",
      "created": "2026-03-22",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mradermacher__Mistral-Small-4-119B-2603-i1-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -5536,6 +6035,8 @@
    "gguf_build": "",
    "gguf_build_publisher": "",
    "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
    "cache_gib_8k": "1.2",
@@ -5695,6 +6196,8 @@
    "gguf_build": "tensorblock/Viking-33B-GGUF",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 4,
+   "template_check": "not checked",
+   "template_check_detail": "4 not checked",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "224.0",
    "cache_gib_8k": "n/a",
@@ -5818,7 +6321,9 @@
      "likes": "0",
      "created": "2024-12-11",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "viking-33b",
@@ -5827,7 +6332,9 @@
      "likes": "0",
      "created": "2024-07-03",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "viking-33b",
@@ -5836,7 +6343,9 @@
      "likes": "0",
      "created": "2024-07-03",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "viking-33b",
@@ -5845,7 +6354,9 @@
      "likes": "1",
      "created": "2024-07-02",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
     }
    ],
    "cache_layout": {
@@ -5893,6 +6404,8 @@
    "gguf_build": "NbAiLab/borealis2-26b-a4b-preview-gguf",
    "gguf_build_publisher": "official",
    "gguf_builds": 2,
+   "template_check": "equivalent",
+   "template_check_detail": "1 equivalent, 1 identical",
    "cache_kind": "5 full + 25 sliding-window (1024) layers",
    "cache_kib_per_token": "20.0",
    "cache_gib_8k": "0.4",
@@ -6003,7 +6516,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-09",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261009152227/https://ai.nb.no/wp-content/uploads/2026/05/202606_lisens_MBL_NB_oversendt.pdf",
      "note": "NB-License 1.0 template: the base-model paragraph is a placeholder ('derived from [original model name] licensed under [e.g. the Apache License]'); the template itself has no update clause"
     },
     {
@@ -6026,7 +6539,9 @@
      "likes": "0",
      "created": "2026-07-30",
      "publisher": "official",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/NbAiLab__borealis2-26b-a4b-preview-gguf.diff"
     },
     {
      "id": "borealis2-26b",
@@ -6035,7 +6550,9 @@
      "likes": "0",
      "created": "2026-08-21",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -6088,6 +6605,8 @@
    "gguf_build": "Hcompany/Holo4-35B-A3B-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 6,
+   "template_check": "identical",
+   "template_check_detail": "6 identical",
    "cache_kind": "hybrid: 10 full + 30 linear-attention layers",
    "cache_kib_per_token": "20.0",
    "cache_gib_8k": "0.2",
@@ -6161,7 +6680,9 @@
      "likes": "15",
      "created": "2026-09-25",
      "publisher": "official",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "holo4-35b-a3b",
@@ -6170,7 +6691,9 @@
      "likes": "0",
      "created": "2026-09-28",
      "publisher": "organisation",
-     "verified_org": true
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "holo4-35b-a3b",
@@ -6179,7 +6702,9 @@
      "likes": "1",
      "created": "2026-09-29",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "holo4-35b-a3b",
@@ -6188,7 +6713,9 @@
      "likes": "0",
      "created": "2026-10-01",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "holo4-35b-a3b",
@@ -6197,7 +6724,9 @@
      "likes": "0",
      "created": "2026-09-29",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "holo4-35b-a3b",
@@ -6206,7 +6735,9 @@
      "likes": "0",
      "created": "2026-09-28",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -6254,6 +6785,8 @@
    "gguf_build": "tensorblock/LumiOpen_Llama-Poro-2-8B-Instruct-GGUF",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 6,
+   "template_check": "identical",
+   "template_check_detail": "6 identical",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "128.0",
    "cache_gib_8k": "1.0",
@@ -6272,7 +6805,7 @@
    "notes": "Llama 3.3 licence inherited.",
    "hf_repo": "LumiOpen/Llama-Poro-2-8B-Instruct",
    "hf_created": "2025-05-27",
-   "last_reviewed": "2026-10-08",
+   "last_reviewed": "2026-10-09",
    "provider_notes": "Acquired by AMD in August 2024.",
    "family_notes": "Built by AMD Silo AI with TurkuNLP.",
    "repo_verified_org": false,
@@ -6282,10 +6815,10 @@
      "field": "compute",
      "url": "https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
      "issuer": "provider",
-     "checked": "no",
-     "retrieved": "2026-10-08",
+     "checked": "yes",
+     "retrieved": "2026-10-09",
      "archive_url": "https://web.archive.org/web/20261008123940/https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct",
-     "note": "LUMI per research summary"
+     "note": "card: 'Training was conducted on the LUMI supercomputer'"
     },
     {
      "scope": "family",
@@ -6437,7 +6970,9 @@
      "likes": "0",
      "created": "2025-08-08",
      "publisher": "organisation",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "poro-2-8b",
@@ -6446,7 +6981,9 @@
      "likes": "1",
      "created": "2025-06-19",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "poro-2-8b",
@@ -6455,7 +6992,9 @@
      "likes": "4",
      "created": "2025-06-19",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "poro-2-8b",
@@ -6464,7 +7003,9 @@
      "likes": "0",
      "created": "2026-01-31",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "poro-2-8b",
@@ -6473,7 +7014,9 @@
      "likes": "0",
      "created": "2025-06-19",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "poro-2-8b",
@@ -6482,7 +7025,9 @@
      "likes": "0",
      "created": "2026-01-31",
      "publisher": "individual",
-     "verified_org": false
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -6559,6 +7104,8 @@
    "gguf_build": "",
    "gguf_build_publisher": "",
    "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
    "cache_kind": "recurrent (xLSTM), constant state",
    "cache_kib_per_token": "0.0",
    "cache_gib_8k": "0.1",
@@ -6574,7 +7121,7 @@
    "training_hardware": "nvidia",
    "flags": "custom licence",
    "hbd_involvement": "",
-   "notes": "Recurrent (mLSTM) architecture, no attention, constant-size state. Base model only, mostly English (DCLM). NXAI Community License (based on Llama 3; attribution and notice required).",
+   "notes": "Recurrent (mLSTM) architecture, no attention, constant-size state. Base model only, mostly English (DCLM). NXAI Community License (based on Llama 3): attribution and notice required, and under §2 a licensee with more than €100M consolidated annual revenue that builds it into a commercial product or service needs a separate commercial licence, which NXAI grants at its sole discretion.",
    "hf_repo": "NX-AI/xLSTM-7b",
    "hf_created": "2024-12-11",
    "last_reviewed": "2026-10-08",
@@ -6610,7 +7157,7 @@
      "checked": "yes",
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20261008124237/https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE",
-     "note": "NXAI Community License"
+     "note": "NXAI Community License; §2: licensees above €100M consolidated revenue building it into a commercial product or service need a separate commercial licence at NXAI's sole discretion"
     },
     {
      "scope": "family",
@@ -6683,218 +7230,6 @@
    },
    "teachers": [],
    "max_context": null
-  },
-  {
-   "tier": "pending",
-   "id": "domyn-small",
-   "name": "Domyn Small v1.0",
-   "family": "Domyn Small",
-   "provider": "Domyn (formerly iGenius)",
-   "provider_country": "IT",
-   "region": "eu",
-   "control": "independent",
-   "majority_owner": "",
-   "origin": "continued-own",
-   "base_model": "Italia 10B",
-   "license_class": "unclear",
-   "license": "mit",
-   "data": "unknown",
-   "compute": "unknown",
-   "ai_act_summary": "unknown",
-   "cop_signatory": "yes",
-   "modalities": "text",
-   "params_b": "9.8",
-   "context": "32768",
-   "model_type": "nemotron",
-   "size_4bit_gb": "5.5",
-   "size_8bit_gb": "10.4",
-   "mlx_vlm": "loads",
-   "mlx_vlm_detail": "",
-   "mlx_vlm_checked": "2026-10-08 0.7.7@fdd94f39",
-   "mlx_build": "leonsarmiento/Domyn-Small-v1.0-8bit-mlx",
-   "mlx_build_bits": "8",
-   "mlx_build_publisher": "individual",
-   "llama_cpp": "supported",
-   "llama_cpp_detail": "",
-   "llama_cpp_checked": "2026-10-08 v0.6.0",
-   "gguf_build": "",
-   "gguf_build_publisher": "",
-   "gguf_builds": 0,
-   "cache_kind": "standard attention",
-   "cache_kib_per_token": "160.0",
-   "cache_gib_8k": "1.2",
-   "cache_gib_32k": "5.0",
-   "cache_gib_128k": "n/a",
-   "teacher_origin": "foreign",
-   "teachers_list": "Qwen3-32B and Qwen3-0.6B (via Dolci) (posttraining, foreign); Unnamed teacher models (posttraining, unknown); GPT-4.1 (via Dolci) (judge, foreign)",
-   "recipe": "weights",
-   "terms_can_change": "no",
-   "languages": "en;it;es;fr;de",
-   "eu_languages": 5,
-   "languages_basis": "supported",
-   "training_hardware": "nvidia",
-   "flags": "",
-   "hbd_involvement": "",
-   "notes": "Hub metadata: license 'other' with license_name 'mit'. Tier pending until the licence text is checked.",
-   "hf_repo": "domyn/Domyn-Small-v1.0",
-   "hf_created": "2026-05-09",
-   "last_reviewed": "2026-10-08",
-   "provider_notes": "",
-   "family_notes": "",
-   "repo_verified_org": true,
-   "sources": [
-    {
-     "scope": "family",
-     "field": "license_class",
-     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "note": "license: other, license_name: mit"
-    },
-    {
-     "scope": "family",
-     "field": "origin",
-     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "issuer": "provider",
-     "checked": "no",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "note": "continued pre-training of Italia 10B per research summary"
-    },
-    {
-     "scope": "family",
-     "field": "provider_id",
-     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "note": ""
-    },
-    {
-     "scope": "provider",
-     "field": "cop_signatory",
-     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "issuer": "official",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "note": "Domyn listed (2026-10-07)"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:Qwen3-32B and Qwen3-0.6B (via Dolci)",
-     "url": "https://arxiv.org/abs/2607.20448",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
-     "note": "chosen completions decoded from Qwen 3 32B and rejected completions from Qwen 3 0.6B"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:Unnamed teacher models",
-     "url": "https://arxiv.org/abs/2607.20448",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
-     "note": "serving teacher models for synthetic data generation during the SFT and RL data pipelines"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:GPT-4.1 (via Dolci)",
-     "url": "https://arxiv.org/abs/2607.20448",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
-     "note": "GPT-4.1-judged pairs"
-    },
-    {
-     "scope": "family",
-     "field": "recipe",
-     "url": "https://arxiv.org/abs/2607.20448",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
-     "note": "weights and a paper-level post-training recipe; no training code; pretraining data only as macro categories"
-    },
-    {
-     "scope": "family",
-     "field": "languages",
-     "url": "https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008125233/https://huggingface.co/domyn/Domyn-Small-v1.0",
-     "note": "50+ languages, optimised for en, it, es, fr, de"
-    },
-    {
-     "scope": "family",
-     "field": "training_hardware",
-     "url": "https://arxiv.org/abs/2607.20448",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008160653/https://arxiv.org/abs/2607.20448",
-     "note": "256 A100-64GB on CINECA Leonardo (CPT); base pretraining on NVIDIA DGX Cloud and Leonardo"
-    },
-    {
-     "scope": "family",
-     "field": "terms_can_change",
-     "url": "https://www.domyn.com/legal/software-licenses/domyn-small",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008163326/https://www.domyn.com/legal/software-licenses/domyn-small",
-     "note": "MIT-derived licence agreement, no update clause, no use policy"
-    }
-   ],
-   "mlx_builds": [
-    {
-     "id": "domyn-small",
-     "repo": "leonsarmiento/Domyn-Small-v1.0-8bit-mlx",
-     "bits": "8",
-     "note": "",
-     "publisher": "individual",
-     "verified_org": false
-    }
-   ],
-   "gguf_list": [],
-   "cache_layout": {
-    "growing": 163840,
-    "windowed": [],
-    "constant": 0,
-    "kind": "standard attention"
-   },
-   "teachers": [
-    {
-     "family_id": "domyn-small",
-     "stage": "posttraining",
-     "model": "Qwen3-32B and Qwen3-0.6B (via Dolci)",
-     "model_origin": "foreign",
-     "purpose": "DPO pairs (AllenAI Dolci-Instruct-DPO)"
-    },
-    {
-     "family_id": "domyn-small",
-     "stage": "posttraining",
-     "model": "Unnamed teacher models",
-     "model_origin": "unknown",
-     "purpose": "synthetic data for SFT and RL pipelines"
-    },
-    {
-     "family_id": "domyn-small",
-     "stage": "judge",
-     "model": "GPT-4.1 (via Dolci)",
-     "model_origin": "foreign",
-     "purpose": "selecting best and worst responses for DPO pairs"
-    }
-   ],
-   "max_context": 32768
   }
  ]
 }

@@ -161,6 +161,16 @@ const ISSUER = {provider:"provider", official:"official", academic:"academic", p
 const PUBLISHER = {official:"provider (official)", hbd:"here be dragons", curated:"curated community org",
   organisation:"other organisation", individual:"individual", unknown:"unknown"};
 function badge(kind, label) { return `<span class="iss ${esc(kind)}">${esc(label)}</span>`; }
+// Chat-template check of a build against the original (#7, 3a); diffs live in the dataset.
+const DIFF_BASE = "https://huggingface.co/datasets/here-be-dragons-ai/sovereign-models-scorecard/blob/main/";
+function tpl(b) {
+  if (!b.template_check) return "";
+  const diff = (b.template_reason.match(/data\/template_diffs\/\S+\.diff/) || [])[0];
+  const ok = b.template_check === "identical" || b.template_check === "equivalent";
+  const text = ok ? "template ✓ " + b.template_check : "template: " + b.template_check;
+  const why = ok ? "" : (diff ? " " + link(DIFF_BASE + diff, "diff") : (b.template_reason ? " — " + esc(b.template_reason) : ""));
+  return ` <span class="src">${esc(text)}</span>${why}`;
+}
 function sources(m, field) {
   const s = m.sources.filter(x => x.field === field);
   if (!s.length && field === "license_class")
@@ -185,7 +195,7 @@ function detail(id) {
     ["GPAI Code of Practice", m.cop_signatory, "cop_signatory"],
   ];
   const builds = m.mlx_builds.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) +
-    `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit)`).join("<br>");
+    `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit)` + tpl(b)).join("<br>");
   $("detail").innerHTML = `
     <h2>${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></h2>
     <div class="src">${esc(DATA.tiers[m.tier])}</div>
@@ -212,7 +222,8 @@ function detail(id) {
         ${esc(m.cache_gib_8k)} GiB at 8k, ${esc(m.cache_gib_32k)} GiB at 32k, ${esc(m.cache_gib_128k)} GiB at 128k
         (max context ${esc(m.max_context || "?")})</li>
       <li>llama.cpp: <b>${esc(m.llama_cpp)}</b>${m.llama_cpp_detail ? " — " + esc(m.llama_cpp_detail) : ""} <span class="src">(checked ${esc(m.llama_cpp_checked || "—")})</span></li>
-      ${m.gguf_list.length ? `<li>GGUF builds (${esc(m.gguf_builds)}, top ${m.gguf_list.length}):<br>${m.gguf_list.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) + link("https://huggingface.co/" + b.repo, b.repo) + ` <span class="src">${esc(b.downloads)} downloads</span>`).join("<br>")}</li>` : ""}
+      ${m.gguf_list.length ? `<li>GGUF builds (${esc(m.gguf_builds)}, top ${m.gguf_list.length}):<br>${m.gguf_list.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) + link("https://huggingface.co/" + b.repo, b.repo) + ` <span class="src">${esc(b.downloads)} downloads</span>` + tpl(b)).join("<br>")}</li>` : ""}
+      ${m.template_check ? `<li>Chat templates of the builds against the original: <b>${esc(m.template_check)}</b> <span class="src">(${esc(m.template_check_detail)})</span></li>` : ""}
       ${builds ? `<li>MLX builds:<br>${builds}</li>` : ""}
     </ul>
     ${m.flags ? `<p><b>Flags:</b> ${esc(m.flags)}</p>` : ""}
