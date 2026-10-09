@@ -1,6 +1,6 @@
 """Publish the built scorecard to Hugging Face: dataset, Space and collections.
 
-The dataset, the Space and the tier collections are public (since 2026-10-09).
+The dataset, the Space and the tier collections (A, B, C) are public (since 2026-10-09).
 Running it again updates the files and syncs the collections (adds, removes
 and re-orders items, rewrites notes).
 
@@ -24,6 +24,8 @@ COLLECTIONS = {
           "European open-weight LLMs: own weights, open licence, open data or EU compute."),
     "B": ("Sovereign models · Tier B",
           "European open-weight LLMs with open licences; data, compute or control less transparent."),
+    "C": ("Sovereign models · Tier C",
+          "European open-weight LLMs on a non-European base model or under a custom licence."),
 }
 
 DATASET_CARD = """---
@@ -138,11 +140,17 @@ def main():
                           commit_message="Update scorecard")
     print(f"space    https://huggingface.co/spaces/{space_id}")
 
+    slugs = []
     for tier, (title, description) in COLLECTIONS.items():
         items = [(dataset_id, "dataset", "Scorecard, sources and methodology for every model in this collection.")]
         items += [(m["hf_repo"], "model", note(m)) for m in models if m["tier"] == tier]
         slug = sync_collection(api, args.org, title, description, items)
+        slugs.append(slug)
         print(f"collection https://huggingface.co/collections/{slug}  ({len(items) - 1} models)")
+    # Order on the organisation page: A, B, C. Set after all exist, since a
+    # newly created collection is inserted at the top.
+    for position, slug in enumerate(slugs):
+        api.update_collection_metadata(slug, position=position)
 
 
 if __name__ == "__main__":
