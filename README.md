@@ -25,9 +25,9 @@ data/gguf_builds.csv   GGUF quantizations on the Hub                            
 dist/scorecard.csv, dist/scorecard.json
         │
         ▼  scripts/publish_hf.py
-HF dataset here-be-dragons-ai/sovereign-models-scorecard   (private)
-HF Space   here-be-dragons-ai/sovereign-models             (private, static)
-HF collections "Sovereign models · Tier A / Tier B"         (private)
+HF dataset here-be-dragons-ai/sovereign-models-scorecard   (public)
+HF Space   here-be-dragons-ai/sovereign-models             (public, static)
+HF collections "Sovereign models · Tier A / B / C"          (public, in that order)
 ```
 
 Tiers are computed, never set by hand. The rules and their limits are in
