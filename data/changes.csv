@@ -1,0 +1,18 @@
+date,model,field,old,new,reason
+2026-10-08,kolibri-1,flags,merger pending non eu; our own work involved,merger pending non-EU; our own work involved,Restructure data into providers and families; record source issuers (6323e66)
+2026-10-08,poro-2-8b,provider,"AMD Silo AI, TurkuNLP",Silo AI (AMD),Restructure data into providers and families; record source issuers (6323e66)
+2026-10-08,poro-2-8b,flags,acquired non eu; custom licence; non-European base model,acquired non-EU; custom licence; non-European base model,Restructure data into providers and families; record source issuers (6323e66)
+2026-10-08,viking-33b,provider,"Silo AI (AMD), TurkuNLP, HPLT",Silo AI (AMD),Restructure data into providers and families; record source issuers (6323e66)
+2026-10-08,viking-33b,flags,acquired non eu,acquired non-EU,Restructure data into providers and families; record source issuers (6323e66)
+2026-10-09,helium-1-2b,license_class,osi,osi-aup,"Settle the #5 review: lineage stays informative, Helium is osi-aup (8fa3a59)"
+2026-10-09,helium-1-2b,flags,,use policy on redistribution,"Settle the #5 review: lineage stays informative, Helium is osi-aup (8fa3a59)"
+2026-10-09,borealis2-26b,terms_can_change,yes,no,borealis2: treat the Gemma 3 licence paragraph as a Borealis 1 leftover (59de7d5)
+2026-10-09,apertus-1.5-70b,compute,unknown,europe,Check chat templates of all builds; apply the dataset review (65612f9)
+2026-10-09,apertus-1.5-8b,compute,unknown,europe,Check chat templates of all builds; apply the dataset review (65612f9)
+2026-10-09,bielik-11b-v3,context,,32768,Check chat templates of all builds; apply the dataset review (65612f9)
+2026-10-09,devstral-small-2,origin,scratch,continued-own,Check chat templates of all builds; apply the dataset review (65612f9)
+2026-10-09,devstral-small-2,base_model,,Mistral Small 3.1 24B Base,Check chat templates of all builds; apply the dataset review (65612f9)
+2026-10-09,domyn-small,tier,pending,B,"licence text checked: MIT with minor rewording, so license_class osi instead of unclear (review feedback; 65612f9)"
+2026-10-09,domyn-small,license_class,unclear,osi,Check chat templates of all builds; apply the dataset review (65612f9)
+2026-10-09,magistral-small-2509,origin,scratch,continued-own,Check chat templates of all builds; apply the dataset review (65612f9)
+2026-10-09,magistral-small-2509,base_model,,Mistral Small 3.2 24B Instruct,Check chat templates of all builds; apply the dataset review (65612f9)

@@ -290,7 +290,8 @@
      "purpose": "rating responses for DPO pairs"
     }
    ],
-   "max_context": 163840
+   "max_context": 163840,
+   "last_changed": ""
   },
   {
    "tier": "A",
@@ -638,7 +639,8 @@
      "purpose": "scoring responses for the 70B DPO pairs"
     }
    ],
-   "max_context": 262144
+   "max_context": 262144,
+   "last_changed": "2026-10-09"
   },
   {
    "tier": "A",
@@ -974,7 +976,8 @@
      "purpose": "scoring responses for the 70B DPO pairs"
     }
    ],
-   "max_context": 262144
+   "max_context": 262144,
+   "last_changed": "2026-10-09"
   },
   {
    "tier": "A",
@@ -1375,7 +1378,8 @@
      "purpose": "reward model selecting the best SFT response"
     }
    ],
-   "max_context": 32768
+   "max_context": 32768,
+   "last_changed": ""
   },
   {
    "tier": "A",
@@ -1630,7 +1634,8 @@
      "purpose": "translating Alpaca-cleaned into French"
     }
    ],
-   "max_context": 32000
+   "max_context": 32000,
+   "last_changed": ""
   },
   {
    "tier": "A",
@@ -1990,7 +1995,8 @@
      "purpose": "generators of most third-party SFT data"
     }
    ],
-   "max_context": 131072
+   "max_context": 131072,
+   "last_changed": ""
   },
   {
    "tier": "A",
@@ -2339,7 +2345,8 @@
      "purpose": "generators of most third-party SFT data"
     }
    ],
-   "max_context": 131072
+   "max_context": 131072,
+   "last_changed": ""
   },
   {
    "tier": "A",
@@ -2550,7 +2557,8 @@
      "purpose": "initial 4,000-example seed set"
     }
    ],
-   "max_context": 4096
+   "max_context": 4096,
+   "last_changed": ""
   },
   {
    "tier": "A",
@@ -2838,7 +2846,8 @@
      "purpose": "third-party synthetic SFT data"
     }
    ],
-   "max_context": 8192
+   "max_context": 8192,
+   "last_changed": ""
   },
   {
    "tier": "A",
@@ -2991,7 +3000,8 @@
     "kind": "standard attention"
    },
    "teachers": [],
-   "max_context": 65536
+   "max_context": 65536,
+   "last_changed": ""
   },
   {
    "tier": "B",
@@ -3246,7 +3256,8 @@
      "purpose": "preferred/rejected pairs for DPO-P"
     }
    ],
-   "max_context": 32768
+   "max_context": 32768,
+   "last_changed": "2026-10-09"
   },
   {
    "tier": "B",
@@ -3489,7 +3500,8 @@
     "kind": "standard attention"
    },
    "teachers": [],
-   "max_context": 393216
+   "max_context": 393216,
+   "last_changed": "2026-10-09"
   },
   {
    "tier": "B",
@@ -3715,7 +3727,8 @@
      "purpose": "selecting best and worst responses for DPO pairs"
     }
    ],
-   "max_context": 32768
+   "max_context": 32768,
+   "last_changed": "2026-10-09"
   },
   {
    "tier": "B",
@@ -4063,7 +4076,8 @@
      "purpose": "reward model selecting the best SFT response"
     }
    ],
-   "max_context": 32768
+   "max_context": 32768,
+   "last_changed": ""
   },
   {
    "tier": "B",
@@ -4299,7 +4313,8 @@
      "purpose": "distillation teacher for the whole pretraining"
     }
    ],
-   "max_context": 4096
+   "max_context": 4096,
+   "last_changed": "2026-10-09"
   },
   {
    "tier": "B",
@@ -4665,7 +4680,8 @@
      "purpose": "filtering SFT conversations that carry CCP narratives"
     }
    ],
-   "max_context": 262144
+   "max_context": 262144,
+   "last_changed": "2026-10-08"
   },
   {
    "tier": "B",
@@ -4943,7 +4959,8 @@
      "purpose": "difficulty filtering of RL math problems"
     }
    ],
-   "max_context": 131072
+   "max_context": 131072,
+   "last_changed": "2026-10-09"
   },
   {
    "tier": "B",
@@ -5206,7 +5223,8 @@
      "purpose": "reward model for online DPO"
     }
    ],
-   "max_context": 4096
+   "max_context": 4096,
+   "last_changed": ""
   },
   {
    "tier": "B",
@@ -5511,7 +5529,8 @@
      "purpose": "ranking responses for online DPO"
     }
    ],
-   "max_context": 262144
+   "max_context": 262144,
+   "last_changed": ""
   },
   {
    "tier": "B",
@@ -5754,7 +5773,8 @@
     "kind": "standard attention"
    },
    "teachers": [],
-   "max_context": 131072
+   "max_context": 131072,
+   "last_changed": ""
   },
   {
    "tier": "B",
@@ -5997,7 +6017,8 @@
     "kind": "MLA, cached decompressed in MLX"
    },
    "teachers": [],
-   "max_context": 1048576
+   "max_context": 1048576,
+   "last_changed": ""
   },
   {
    "tier": "B",
@@ -6158,7 +6179,8 @@
      "purpose": "~22K citation-grounded summary SFT examples"
     }
    ],
-   "max_context": 131072
+   "max_context": 131072,
+   "last_changed": ""
   },
   {
    "tier": "B",
@@ -6366,7 +6388,8 @@
     "kind": "standard attention"
    },
    "teachers": [],
-   "max_context": 4096
+   "max_context": 4096,
+   "last_changed": "2026-10-08"
   },
   {
    "tier": "C",
@@ -6567,7 +6590,8 @@
     "kind": "5 full + 25 sliding-window (1024) layers"
    },
    "teachers": [],
-   "max_context": 262144
+   "max_context": 262144,
+   "last_changed": "2026-10-09"
   },
   {
    "tier": "C",
@@ -6747,7 +6771,8 @@
     "kind": "hybrid: 10 full + 30 linear-attention layers"
    },
    "teachers": [],
-   "max_context": 262144
+   "max_context": 262144,
+   "last_changed": ""
   },
   {
    "tier": "C",
@@ -7066,7 +7091,8 @@
      "purpose": "reward model picking the best English response"
     }
    ],
-   "max_context": 8192
+   "max_context": 8192,
+   "last_changed": "2026-10-08"
   },
   {
    "tier": "C",
@@ -7229,7 +7255,146 @@
     "kind": "recurrent (xLSTM), constant state"
    },
    "teachers": [],
-   "max_context": null
+   "max_context": null,
+   "last_changed": ""
+  }
+ ],
+ "changes": [
+  {
+   "date": "2026-10-09",
+   "model": "magistral-small-2509",
+   "field": "base_model",
+   "old": "",
+   "new": "Mistral Small 3.2 24B Instruct",
+   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "magistral-small-2509",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "domyn-small",
+   "field": "license_class",
+   "old": "unclear",
+   "new": "osi",
+   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "domyn-small",
+   "field": "tier",
+   "old": "pending",
+   "new": "B",
+   "reason": "licence text checked: MIT with minor rewording, so license_class osi instead of unclear (review feedback; 65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "devstral-small-2",
+   "field": "base_model",
+   "old": "",
+   "new": "Mistral Small 3.1 24B Base",
+   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "devstral-small-2",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "bielik-11b-v3",
+   "field": "context",
+   "old": "",
+   "new": "32768",
+   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "apertus-1.5-8b",
+   "field": "compute",
+   "old": "unknown",
+   "new": "europe",
+   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "apertus-1.5-70b",
+   "field": "compute",
+   "old": "unknown",
+   "new": "europe",
+   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "borealis2-26b",
+   "field": "terms_can_change",
+   "old": "yes",
+   "new": "no",
+   "reason": "borealis2: treat the Gemma 3 licence paragraph as a Borealis 1 leftover (59de7d5)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "helium-1-2b",
+   "field": "flags",
+   "old": "",
+   "new": "use policy on redistribution",
+   "reason": "Settle the #5 review: lineage stays informative, Helium is osi-aup (8fa3a59)"
+  },
+  {
+   "date": "2026-10-09",
+   "model": "helium-1-2b",
+   "field": "license_class",
+   "old": "osi",
+   "new": "osi-aup",
+   "reason": "Settle the #5 review: lineage stays informative, Helium is osi-aup (8fa3a59)"
+  },
+  {
+   "date": "2026-10-08",
+   "model": "viking-33b",
+   "field": "flags",
+   "old": "acquired non eu",
+   "new": "acquired non-EU",
+   "reason": "Restructure data into providers and families; record source issuers (6323e66)"
+  },
+  {
+   "date": "2026-10-08",
+   "model": "viking-33b",
+   "field": "provider",
+   "old": "Silo AI (AMD), TurkuNLP, HPLT",
+   "new": "Silo AI (AMD)",
+   "reason": "Restructure data into providers and families; record source issuers (6323e66)"
+  },
+  {
+   "date": "2026-10-08",
+   "model": "poro-2-8b",
+   "field": "flags",
+   "old": "acquired non eu; custom licence; non-European base model",
+   "new": "acquired non-EU; custom licence; non-European base model",
+   "reason": "Restructure data into providers and families; record source issuers (6323e66)"
+  },
+  {
+   "date": "2026-10-08",
+   "model": "poro-2-8b",
+   "field": "provider",
+   "old": "AMD Silo AI, TurkuNLP",
+   "new": "Silo AI (AMD)",
+   "reason": "Restructure data into providers and families; record source issuers (6323e66)"
+  },
+  {
+   "date": "2026-10-08",
+   "model": "kolibri-1",
+   "field": "flags",
+   "old": "merger pending non eu; our own work involved",
+   "new": "merger pending non-EU; our own work involved",
+   "reason": "Restructure data into providers and families; record source issuers (6323e66)"
   }
  ]
 }

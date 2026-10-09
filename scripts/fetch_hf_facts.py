@@ -23,7 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "hf_facts.csv"
 FIELDS = [
-    "hf_repo", "fetched", "license", "license_name", "gated", "created",
+    "hf_repo", "fetched", "license", "license_name", "gated", "created", "revision",
     "params_b", "model_type", "context", "pipeline_tag", "architecture", "arch_json",
     "compute_evidence", "data_evidence",
 ]
@@ -101,6 +101,8 @@ def facts(repo):
         license_name=card.get("license_name", ""),
         gated=str(info.get("gated", False)).lower(),
         created=(info.get("createdAt") or "")[:10],
+        # The repo's current commit: any change to card, config or weights moves it.
+        revision=(info.get("sha") or "")[:12],
         pipeline_tag=info.get("pipeline_tag") or "",
     )
     total = (info.get("safetensors") or {}).get("total")

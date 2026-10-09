@@ -5,7 +5,7 @@ Running it again updates the files and syncs the collections (adds, removes
 and re-orders items, rewrites notes).
 
     python scripts/build.py
-    python scripts/publish_hf.py [--org here-be-dragons-ai]
+    python scripts/publish_hf.py [--org here-be-dragons-ai] [--tag 2026-10]
 """
 
 import argparse
@@ -107,6 +107,8 @@ def sync_collection(api, org, title, description, items):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--org", default="here-be-dragons-ai")
+    ap.add_argument("--tag", help="release tag for the dataset, e.g. 2026-10 (#6); "
+                    "tag the git repo with the same name")
     args = ap.parse_args()
     api = HfApi()
     data = json.loads((ROOT / "dist" / "scorecard.json").read_text(encoding="utf-8"))
@@ -125,6 +127,10 @@ def main():
         api.upload_folder(repo_id=dataset_id, repo_type="dataset", folder_path=tmp,
                           commit_message="Update scorecard")
     print(f"dataset  https://huggingface.co/datasets/{dataset_id}")
+    if args.tag:
+        api.create_tag(dataset_id, repo_type="dataset", tag=args.tag, exist_ok=True,
+                       tag_message=f"Scorecard release {args.tag}")
+        print(f"tag      {args.tag} on the dataset")
 
     space_id = f"{args.org}/{SPACE}"
     # Static Spaces are free for organisations; Gradio Spaces need a paid plan.

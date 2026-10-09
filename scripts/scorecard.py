@@ -353,6 +353,9 @@ class Data:
         for b in self.builds:
             if b["id"] not in ids:
                 errors.append(f"mlx_builds.csv: unknown model id {b['id']!r}")
+        for c in read("changes.csv"):
+            if c["field"] == "tier" and not c["reason"].strip():
+                errors.append(f"changes.csv {c['date']} {c['model']}: tier change {c['old']} -> {c['new']} needs a reason")
         for t in self.template_checks:
             if t["status"] not in TEMPLATE_STATUS:
                 errors.append(f"template_checks.csv {t['repo']}: status={t['status']!r} not in {sorted(TEMPLATE_STATUS)}")

@@ -144,6 +144,20 @@ rather than separate it. Both stay visible so readers can weigh them.
   `not checked` gives the reason, often that the original publishes no chat template (Mistral
   uses mistral-common). The model column shows the worst status of its builds.
 
+## Changes and re-checks
+
+Every build compares its result with the previous one and appends each changed value to
+`data/changes.csv` with the date; a tier change needs a written reason or validation fails. The
+Space marks models changed in the last 30 days and lists the recent changes. Releases of the
+dataset carry a date tag (e.g. `2026-10`).
+
+Every Monday a GitHub Action re-reads the Hub facts (licence, gating, size, context, and the
+repo's current commit, which moves with any change to card, config or weights), the chat
+templates of all builds, the hashes of all licence and use-policy documents, and the repos of
+every tracked provider, and checks the latest mlx-vlm release on Apple Silicon. It never changes
+the data: any difference becomes an issue labelled `review`, together with the providers whose
+ownership is in motion.
+
 ## Limits
 
 - The tiers describe artefacts and their makers, not model quality or safety.

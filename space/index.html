@@ -83,6 +83,7 @@
     <tbody id="rows"></tbody>
   </table>
   <section id="detail"><i>Select a row to see the details and sources.</i></section>
+  <section id="changes"></section>
 
   <footer>Data: CC BY 4.0, here be dragons. Fit check: 4-bit weights plus the cache at the chosen
     context (as MLX allocates it) plus 1 GB, against 75% of the RAM. Methodology and corrections: <code>here-be-dragons-ai/sovereign-models</code>.</footer>
@@ -153,9 +154,18 @@ function render() {
   $("rows").innerHTML = rows.map(m => `<tr data-id="${esc(m.id)}" class="${m.id === selected ? "selected" : ""}">` +
     COLS.map(([k,, num]) => k === "tier" ? `<td><span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></td>`
       : k === "mem" ? `<td class="num">${esc(memText(m))}</td>`
+      : k === "name" ? `<td>${esc(m.name)}${recent(m) ? ` <span class="src" title="last change ${esc(m.last_changed)}">changed</span>` : ""}</td>`
       : `<td class="${num ? "num" : ""}${k === "flags" ? " flags" : ""}">${esc(m[k])}</td>`).join("") + "</tr>").join("");
 }
 
+// A model counts as recently changed for 30 days after its last logged change (#6).
+function recent(m) {
+  return m.last_changed && (Date.now() - Date.parse(m.last_changed)) / 864e5 <= 30;
+}
+function changeLine(c) {
+  const what = c.field === "model" ? (c.new ? "added" : "removed") : `${esc(c.field)}: ${esc(c.old || "–")} → ${esc(c.new || "–")}`;
+  return `<li>${esc(c.date)} · <b>${esc(c.model)}</b> · ${what}${c.reason ? ` <span class="src">${esc(c.reason)}</span>` : ""}</li>`;
+}
 const ISSUER = {provider:"provider", official:"official", academic:"academic", press:"press",
   community:"community", hbd:"own measurement"};
 const PUBLISHER = {official:"provider (official)", hbd:"here be dragons", curated:"curated community org",
@@ -228,7 +238,8 @@ function detail(id) {
     </ul>
     ${m.flags ? `<p><b>Flags:</b> ${esc(m.flags)}</p>` : ""}
     ${m.hbd_involvement ? `<p><b>Our involvement:</b> ${esc(m.hbd_involvement)}</p>` : ""}
-    ${m.notes ? `<p><b>Notes:</b> ${esc(m.notes)}</p>` : ""}`;
+    ${m.notes ? `<p><b>Notes:</b> ${esc(m.notes)}</p>` : ""}
+    ${DATA.changes.some(c => c.model === m.id) ? `<h3>Changes</h3><ul>${DATA.changes.filter(c => c.model === m.id).map(changeLine).join("")}</ul>` : ""}`;
 }
 
 fetch("scorecard.json").then(r => r.json()).then(d => {
@@ -243,6 +254,8 @@ fetch("scorecard.json").then(r => r.json()).then(d => {
   $("rows").onclick = e => { const tr = e.target.closest("tr"); if (tr) detail(tr.dataset.id); };
   document.querySelectorAll(".filters input, .filters select").forEach(el => el.addEventListener("change", render));
   render();
+  $("changes").innerHTML = d.changes.length ? `<h3>Recent changes</h3><ul>${d.changes.slice(0, 20).map(changeLine).join("")}</ul>
+    <div class="src">The full log is data/changes.csv in the dataset.</div>` : "";
   // Deep links: index.html#model-id opens the detail view.
   const open = () => { const id = decodeURIComponent(location.hash.slice(1)); if (d.models.some(m => m.id === id)) detail(id); };
   window.addEventListener("hashchange", open);

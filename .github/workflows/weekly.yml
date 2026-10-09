@@ -1,0 +1,95 @@
+name: weekly check
+
+# Re-checks the Hub facts, chat templates, licence documents, new provider
+# repos (Ubuntu) and mlx-vlm support (macOS, needs Apple Silicon) every Monday.
+# Data is never changed automatically: any difference becomes an issue labelled
+# "review" with the diff (#6).
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  HF_TOKEN: ${{ secrets.HF_TOKEN }}
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jinja2
+      - name: Hub facts
+        run: python3 scripts/fetch_hf_facts.py
+      - name: Chat templates
+        run: python3 scripts/check_chat_templates.py
+      - name: Licence and policy documents
+        run: python3 scripts/check_terms.py
+      - name: New repos of tracked providers
+        run: python3 scripts/find_new_repos.py > new_repos.md
+      - name: Diff and issue
+        run: |
+          set +e
+          python3 scripts/weekly_diff.py > changes.md
+          changed=$?
+          new=$(grep -c '^- \[' new_repos.md)
+          if [ "$changed" = 0 ] && [ "$new" = 0 ]; then echo "nothing changed"; exit 0; fi
+          {
+            echo "Weekly check of $(date +%F) found differences against \`main\`. Nothing was changed in the data; review and update by hand."
+            echo
+            cat changes.md
+            if [ "$new" != 0 ]; then echo; echo "### New repos of tracked providers"; echo; grep '^- \[' new_repos.md; fi
+            echo
+            echo "### Ownership to watch"
+            echo
+            python3 -c "import csv; [print(f\"- {p['name']}: {p['control']}{' (' + p['majority_owner'] + ')' if p['majority_owner'] else ''}\") for p in csv.DictReader(open('data/providers.csv')) if p['control'] != 'independent']"
+            echo
+            echo "Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } > body.md
+          gh label create review --color FBCA04 --description "Needs a human look" --force
+          gh issue create --title "Weekly check $(date +%F): review" --label review --body-file body.md
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: weekly-data
+          path: |
+            data/hf_facts.csv
+            data/template_checks.csv
+            data/template_diffs/
+            data/terms_hashes.csv
+            data/known_repos.csv
+            changes.md
+            new_repos.md
+
+  mlx:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install mlx-vlm
+      - name: mlx-vlm support (latest release)
+        run: python3 scripts/check_mlx_support.py
+      - name: Diff and issue
+        run: |
+          set +e
+          python3 scripts/weekly_diff.py > changes.md
+          if [ $? = 0 ]; then echo "nothing changed"; exit 0; fi
+          {
+            echo "The latest mlx-vlm release ($(python3 -c 'import importlib.metadata as m; print(m.version("mlx-vlm"))')) loads models differently than recorded on \`main\`. Review and update \`data/mlx_support.csv\` by hand."
+            echo
+            cat changes.md
+            echo
+            echo "Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          } > body.md
+          gh label create review --color FBCA04 --description "Needs a human look" --force
+          gh issue create --title "Weekly mlx-vlm check $(date +%F): review" --label review --body-file body.md

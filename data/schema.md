@@ -136,6 +136,16 @@ organisation), `individual` (a personal account), in that order of trust.
 
 ## Generated files
 
+- `changes.csv` (`scripts/build.py`, history from `scripts/backfill_changes.py`): every change of a
+  published value between two builds: `date`, `model`, `field` (`model` for added or removed
+  models), `old`, `new`, `reason`. A tier change without a reason fails validation.
+- `terms_hashes.csv` (`scripts/check_terms.py`): SHA-256 of every licence and use-policy document
+  the scorecard relies on (files as published, HTML pages by their visible text).
+- `known_repos.csv` (`scripts/find_new_repos.py`): every Hub repo of a tracked provider seen so far,
+  with the date it was first seen.
+- `build_recipes.csv` (by hand) and `build_provenance.csv` (`scripts/build_provenance.py`): command,
+  tools and reproduction status of our own builds, and the SHA-256 of every source and output file.
+
 - `template_checks.csv` (`scripts/check_chat_templates.py`): one row per template. `kind` is
   `original`, `mlx` or `gguf`; `file` the file it was read from; `status` is `reference` (the
   original), `identical`, `equivalent`, `differs`, `suspicious` or `not checked`; `reason` the

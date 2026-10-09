@@ -24,6 +24,10 @@ data/gguf_builds.csv   GGUF quantizations on the Hub                            
 data/template_checks.csv  chat template of every build against the original      (scripts/check_chat_templates.py)
 data/template_diffs/   one unified diff per build whose template differs
 data/schema.md         columns and allowed values of every file
+data/changes.csv       log of every published change, with reasons                 (scripts/build.py)
+data/terms_hashes.csv  hashes of licence and use-policy documents                  (scripts/check_terms.py)
+data/known_repos.csv   repos of tracked providers seen so far                      (scripts/find_new_repos.py)
+data/build_recipes.csv, data/build_provenance.csv  provenance of our own builds    (scripts/build_provenance.py)
         │
         ▼  scripts/build.py   (validates, computes tiers and sizes)
 dist/scorecard.csv, dist/scorecard.json

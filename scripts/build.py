@@ -8,14 +8,23 @@ with their publisher and the cache layout, so the Space can compute memory for
 any context length.
 """
 
+import csv
+import datetime as dt
 import json
 import sys
-import csv
 
 from memory import cache_bytes, cache_layout
 from scorecard import PUBLISHER_ORDER, ROOT, TIERS, Data, read
 
 DIST = ROOT / "dist"
+
+
+def read_dist():
+    path = DIST / "scorecard.csv"
+    if not path.exists():
+        return []
+    with open(path, newline="", encoding="utf-8") as fh:
+        return list(csv.DictReader(fh))
 # Effective bits per weight of MLX affine quantization with group size 64
 # (weights plus a bf16 scale and bias per group).
 BPW = {4: 4.5, 8: 8.5}
@@ -38,7 +47,47 @@ COLUMNS = [
     "training_hardware", "flags",
     "hbd_involvement", "notes", "hf_repo", "hf_created", "last_reviewed",
 ]
+# Fields whose changes are logged in data/changes.csv (#6).
+TRACKED = [
+    "tier", "name", "hf_repo", "provider", "region", "control", "majority_owner", "origin",
+    "base_model", "license_class", "license", "data", "compute", "ai_act_summary",
+    "cop_signatory", "terms_can_change", "recipe", "teacher_origin", "flags", "params_b",
+    "context", "mlx_vlm", "llama_cpp", "template_check",
+]
+CHANGES = ROOT / "data" / "changes.csv"
+CHANGE_FIELDS = ["date", "model", "field", "old", "new", "reason"]
 SOURCE_KEYS = ("scope", "field", "url", "issuer", "checked", "retrieved", "archive_url", "note")
+
+
+def diff_rows(prev, rows, date, reason=""):
+    """Changes between two builds; fields the older build did not have are skipped."""
+    if not prev:
+        return []
+    before = {r["id"]: r for r in prev}
+    after = {r["id"]: r for r in rows}
+    fields = [f for f in TRACKED if f in prev[0]]
+    out = []
+    for mid in sorted(set(before) | set(after)):
+        a, b = before.get(mid), after.get(mid)
+        if a is None or b is None:
+            out.append(dict(date=date, model=mid, field="model",
+                            old="" if a is None else "listed", new="listed" if a is None else "",
+                            reason=reason))
+            continue
+        out += [dict(date=date, model=mid, field=f, old=a.get(f, ""), new=b.get(f, ""), reason=reason)
+                for f in fields if a.get(f, "") != b.get(f, "")]
+    return out
+
+
+def append_changes(changes):
+    if not changes:
+        return
+    new = not CHANGES.exists()
+    with open(CHANGES, "a", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, CHANGE_FIELDS, lineterminator="\n")
+        if new:
+            w.writeheader()
+        w.writerows(changes)
 
 
 def main():
@@ -144,12 +193,24 @@ def main():
     rows.sort(key=lambda r: (order.index(r["tier"]), r["id"]))
     details.sort(key=lambda r: (order.index(r["tier"]), r["id"]))
     DIST.mkdir(exist_ok=True)
+    prev = read_dist()
+    changes = diff_rows(prev, rows, dt.date.today().isoformat())
+    append_changes(changes)
+    for c in changes:
+        print(f"change: {c['model']} {c['field']}: {c['old']!r} -> {c['new']!r}")
+    logged = read("changes.csv")
+    recent = {}
+    for c in logged:
+        recent[c["model"]] = max(recent.get(c["model"], ""), c["date"])
+    for r in details:
+        r["last_changed"] = recent.get(r["id"], "")
     with open(DIST / "scorecard.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()
         w.writerows(rows)
     with open(DIST / "scorecard.json", "w", encoding="utf-8") as fh:
-        json.dump({"tiers": TIERS, "models": details}, fh, indent=1, ensure_ascii=False)
+        json.dump({"tiers": TIERS, "models": details, "changes": logged[-100:][::-1]}, fh,
+                  indent=1, ensure_ascii=False)
     counts = {t: sum(r["tier"] == t for r in rows) for t in order}
     print(f"dist/: {len(rows)} models " + ", ".join(f"{t}={n}" for t, n in counts.items() if n))
 
