@@ -1,8 +1,8 @@
 """Publish the built scorecard to Hugging Face: dataset, Space and collections.
 
-The dataset and the Space are public (since 2026-10-09); the collections stay
-private. Running it again updates the files and syncs the collections (adds,
-removes and re-orders items, rewrites notes).
+The dataset, the Space and the tier collections are public (since 2026-10-09).
+Running it again updates the files and syncs the collections (adds, removes
+and re-orders items, rewrites notes).
 
     python scripts/build.py
     python scripts/publish_hf.py [--org here-be-dragons-ai]
@@ -84,8 +84,8 @@ def sync_collection(api, org, title, description, items):
     if existing:
         col = api.get_collection(existing[0].slug)
     else:
-        col = api.create_collection(title=title, namespace=org, description=description, private=True)
-    api.update_collection_metadata(col.slug, description=description, private=True)
+        col = api.create_collection(title=title, namespace=org, description=description, private=False)
+    api.update_collection_metadata(col.slug, description=description, private=False)
     wanted = {(i, t) for i, t, _ in items}
     for it in col.items:
         if (it.item_id, it.item_type) not in wanted:
