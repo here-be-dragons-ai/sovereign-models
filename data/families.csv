@@ -7,7 +7,7 @@ salamandra,Salamandra,bsc,scratch,,osi,documented,eu,unknown,,listed,code,no,bg;
 tildeopen,TildeOpen,tilde,scratch,,osi,documented,eu,unknown,,unknown,code,no,sq;bs;bg;hr;cs;da;nl;en;et;fi;fr;de;hu;is;ga;it;lv;lt;mk;mt;no;pl;pt;ro;ru;sr;sk;sl;es;sv;tr;uk,supported,amd
 apertus-1.5,Apertus 1.5,swiss-ai,continued-own,Apertus 1,osi-aup,open,unknown,yes,,listed,code+data,yes,en;de;es;fr;it;pt;pl;nl;cs;ro;hu;sv;el;da;fi;sk;bg;hr;lt;sl;et;lv,trained,nvidia
 viking,Viking,silo-ai,scratch,,osi,documented,eu,unknown,Built by Silo AI with TurkuNLP (University of Turku) and HPLT; released before the AMD acquisition.,unknown,code,no,fi;en;sv;da;no;nn;is,supported,amd
-helium-1,Helium 1,kyutai,scratch,,osi,documented,unknown,unknown,,listed,weights,yes,bg;cs;da;de;el;en;es;et;fi;fr;ga;hr;hu;it;lt;lv;mt;nl;pl;pt;ro;sk;sl;sv,supported,nvidia
+helium-1,Helium 1,kyutai,scratch,,osi-aup,documented,unknown,unknown,,listed,weights,yes,bg;cs;da;de;el;en;es;et;fi;fr;ga;hr;hu;it;lt;lv;mt;nl;pl;pt;ro;sk;sl;sv,supported,nvidia
 pleias-rag,Pleias RAG,pleias,continued-own,Pleias 1.0,osi,open,unknown,unknown,,listed,code,no,en;fr;de;it;es;pl;la;pt,supported,nvidia
 kolibri-1,Kolibri 1,aleph-alpha,scratch,,osi,documented,unknown,unknown,,listed,weights,no,de;en,supported,nvidia
 devstral-small-2,Devstral Small 2,mistral-ai,scratch,,osi,undisclosed,unknown,unknown,,unknown,weights,no,,unknown,unknown

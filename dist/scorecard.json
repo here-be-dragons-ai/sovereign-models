@@ -3692,7 +3692,7 @@
    "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
-   "license_class": "osi",
+   "license_class": "osi-aup",
    "license": "cc-by-sa-4.0",
    "data": "documented",
    "compute": "unknown",
@@ -3729,7 +3729,7 @@
    "eu_languages": 24,
    "languages_basis": "supported",
    "training_hardware": "nvidia",
-   "flags": "",
+   "flags": "use policy on redistribution",
    "hbd_involvement": "",
    "notes": "CC-BY-SA-4.0. 4k context.",
    "hf_repo": "kyutai/helium-1-2b",
@@ -5911,7 +5911,7 @@
    "notes": "Norway is not in the EU. nb-license-1.0.",
    "hf_repo": "NbAiLab/borealis2-26b-a4b-preview",
    "hf_created": "2026-08-21",
-   "last_reviewed": "2026-10-08",
+   "last_reviewed": "2026-10-09",
    "provider_notes": "Norway is not in the EU.",
    "family_notes": "",
    "repo_verified_org": true,
@@ -5985,6 +5985,36 @@
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
      "note": "Norwegian (Bokmal, Nynorsk) and English"
+    },
+    {
+     "scope": "family",
+     "field": "terms_can_change",
+     "url": "https://huggingface.co/NbAiLab/borealis-27b/blob/main/LICENSE",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-09",
+     "archive_url": "https://web.archive.org/web/20261009130159/https://huggingface.co/NbAiLab/borealis-27b/blob/main/LICENSE",
+     "note": "Borealis 1 (Gemma 3 base) LICENSE is byte-identical to the borealis2 LICENSE (SHA-256 0bfb27a1e8cd…, also in borealis2-31b-preview and -e4b-preview); both say 'fine-tuned derivative of Gemma 3' although borealis2 starts from Gemma 4: very likely a Borealis 1 leftover, open with NB"
+    },
+    {
+     "scope": "family",
+     "field": "terms_can_change",
+     "url": "https://ai.nb.no/wp-content/uploads/2026/05/202606_lisens_MBL_NB_oversendt.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-09",
+     "archive_url": "",
+     "note": "NB-License 1.0 template: the base-model paragraph is a placeholder ('derived from [original model name] licensed under [e.g. the Apache License]'); the template itself has no update clause"
+    },
+    {
+     "scope": "family",
+     "field": "terms_can_change",
+     "url": "https://huggingface.co/google/gemma-4-26B-A4B-it",
+     "issuer": "community",
+     "checked": "yes",
+     "retrieved": "2026-10-09",
+     "archive_url": "https://web.archive.org/web/20261009130257/https://huggingface.co/google/gemma-4-26B-A4B-it",
+     "note": "the base model borealis2 starts from is published under apache-2.0, not the Gemma Terms of Use"
     }
    ],
    "mlx_builds": [],
