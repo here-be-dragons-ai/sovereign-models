@@ -1,7 +1,8 @@
 """Publish the built scorecard to Hugging Face: dataset, Space and collections.
 
-Everything is created PRIVATE. Running it again updates the files and syncs
-the collections (adds, removes and re-orders items, rewrites notes).
+The dataset and the Space are public (since 2026-10-09); the collections stay
+private. Running it again updates the files and syncs the collections (adds,
+removes and re-orders items, rewrites notes).
 
     python scripts/build.py
     python scripts/publish_hf.py [--org here-be-dragons-ai]
@@ -110,8 +111,8 @@ def main():
     models = data["models"]
 
     dataset_id = f"{args.org}/{DATASET}"
-    api.create_repo(dataset_id, repo_type="dataset", private=True, exist_ok=True)
-    api.update_repo_settings(dataset_id, repo_type="dataset", private=True)
+    api.create_repo(dataset_id, repo_type="dataset", private=False, exist_ok=True)
+    api.update_repo_settings(dataset_id, repo_type="dataset", private=False)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         (tmp / "README.md").write_text(DATASET_CARD, encoding="utf-8")
@@ -125,8 +126,8 @@ def main():
 
     space_id = f"{args.org}/{SPACE}"
     # Static Spaces are free for organisations; Gradio Spaces need a paid plan.
-    api.create_repo(space_id, repo_type="space", space_sdk="static", private=True, exist_ok=True)
-    api.update_repo_settings(space_id, repo_type="space", private=True)
+    api.create_repo(space_id, repo_type="space", space_sdk="static", private=False, exist_ok=True)
+    api.update_repo_settings(space_id, repo_type="space", private=False)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         for f in (ROOT / "space").iterdir():
