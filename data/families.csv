@@ -22,4 +22,4 @@ minerva,Minerva,sapienza-nlp,scratch,,osi,unknown,unknown,unknown,,listed,full,n
 xlstm,xLSTM,nxai,scratch,,custom,documented,unknown,unknown,,unknown,code+data,no,,unknown,nvidia
 holo4,Holo4,h-company,finetune-foreign,"Qwen3.6-35B-A3B (Alibaba, CN)",osi,unknown,unknown,unknown,,unknown,weights,no,,unknown,unknown
 poro-2,Poro 2,silo-ai,continued-foreign,"Llama 3.1 8B (Meta, US)",custom,unknown,eu,unknown,Built by AMD Silo AI with TurkuNLP.,listed,code+data,yes,fi;en,supported,amd
-borealis2,borealis2,nb,finetune-foreign,"Gemma 4 26B-A4B (Google, US)",custom,unknown,unknown,unknown,,unknown,weights,yes,no;nb;nn;en,supported,unknown
+borealis2,borealis2,nb,finetune-foreign,"Gemma 4 26B-A4B (Google, US)",custom,unknown,unknown,unknown,,unknown,weights,no,no;nb;nn;en,supported,unknown
