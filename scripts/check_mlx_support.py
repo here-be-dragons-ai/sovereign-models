@@ -6,7 +6,8 @@ model lazily, runs its sanitize step on zero arrays of the checkpoint
 shapes, and compares the result with the model parameters. Results go to
 data/mlx_support.csv together with the mlx-vlm revision that was checked.
 
-Run it with the mlx-vlm checkout you want to check on PYTHONPATH:
+The published column is checked against the latest mlx-vlm release (the weekly
+Action does that); to look at a checkout instead, put it on PYTHONPATH:
     PYTHONPATH=~/src/mlx-vlm-main python scripts/check_mlx_support.py [id ...]
 
 Limits: FP8 releases are checked without their scale tensors, because the

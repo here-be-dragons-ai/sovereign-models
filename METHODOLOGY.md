@@ -109,10 +109,11 @@ rather than separate it. Both stay visible so readers can weigh them.
 
 ## Running on a Mac
 
-- `mlx_vlm`: whether the current mlx-vlm loads the original checkpoint, checked from
+- `mlx_vlm`: whether the latest mlx-vlm **release** (what `pip install mlx-vlm` gives) loads the original checkpoint, checked from
   `config.json` and safetensors headers without downloading weights
   (`scripts/check_mlx_support.py`). "loads" means the weights map onto the model; it does not
-  test the output. The checked revision is recorded.
+  test the output. The checked release is recorded; support that exists only on mlx-vlm's main
+  branch or in a fork is named in the detail.
 - `llama_cpp`: whether the latest llama.cpp release registers the architecture in its GGUF
   converter (`scripts/check_llama_cpp_support.py`). `fork only` means GGUF builds exist but
   upstream llama.cpp does not support the architecture, so they need a patched llama.cpp.

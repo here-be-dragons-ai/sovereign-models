@@ -16,3 +16,5 @@ date,model,field,old,new,reason
 2026-10-09,domyn-small,license_class,unclear,osi,Check chat templates of all builds; apply the dataset review (65612f9)
 2026-10-09,magistral-small-2509,origin,scratch,continued-own,Check chat templates of all builds; apply the dataset review (65612f9)
 2026-10-09,magistral-small-2509,base_model,,Mistral Small 3.2 24B Instruct,Check chat templates of all builds; apply the dataset review (65612f9)
+2026-10-09,bielik-11b-v3,mlx_vlm,not checked,loads,"mlx-vlm column now checks the latest release, 0.7.6 (#27); Bielik readable after accepting its gate"
+2026-10-09,kolibri-1,mlx_vlm,loads,unsupported,"mlx-vlm column now checks the latest release, 0.7.6 (#27); Bielik readable after accepting its gate"
