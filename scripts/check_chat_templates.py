@@ -52,8 +52,9 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "template_checks.csv"
-DIFFS = ROOT / "data" / "template_diffs"
+DATA = Path(os.environ.get("SM_DATA", ROOT / "data"))  # SM_DATA: another data directory, e.g. a local overlay
+OUT = DATA / "template_checks.csv"
+DIFFS = DATA / "template_diffs"
 FIELDS = ["id", "repo", "kind", "file", "status", "reason", "findings", "sha256", "checked"]
 TEMPLATE_FILES = ("chat_template.jinja", "chat_template.json", "tokenizer_config.json",
                   "processor_config.json")
@@ -327,7 +328,7 @@ def check_model(mid, original, builds, today):
             DIFFS.mkdir(parents=True, exist_ok=True)
             path = DIFFS / (repo.replace("/", "__") + ".diff")
             path.write_text(diff)
-            row["reason"] = f"diff: {path.relative_to(ROOT)}"
+            row["reason"] = f"diff: {path.relative_to(DATA.parent)}"
         if new:
             status = "suspicious"
             row["reason"] = "; ".join(filter(None, [f"new in the build: {', '.join(sorted(new))}",
@@ -338,10 +339,12 @@ def check_model(mid, original, builds, today):
 
 def main():
     today = dt.date.today().isoformat()
-    models = list(csv.DictReader(open(ROOT / "data" / "scorecard.csv")))
+    models = list(csv.DictReader(open(DATA / "scorecard.csv")))
     builds = {}
     for kind, name in (("mlx", "mlx_builds.csv"), ("gguf", "gguf_builds.csv")):
-        for b in csv.DictReader(open(ROOT / "data" / name)):
+        if not (DATA / name).exists():
+            continue
+        for b in csv.DictReader(open(DATA / name)):
             builds.setdefault(b["id"], []).append((kind, b["repo"]))
     wanted = set(sys.argv[1:])
     old = []

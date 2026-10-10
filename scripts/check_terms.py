@@ -21,7 +21,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "terms_hashes.csv"
+DATA = Path(os.environ.get("SM_DATA", ROOT / "data"))  # SM_DATA: another data directory, e.g. a local overlay
+OUT = DATA / "terms_hashes.csv"
 FIELDS = ["url", "kind", "sha256", "bytes", "checked", "error"]
 TERMS_FILE = re.compile(r"^(LICEN[CS]E|USE_POLICY|USAGE_POLICY|NOTICE|ACCEPTABLE_USE)", re.I)
 
@@ -61,10 +62,10 @@ def visible_text(body):
 
 def documents():
     urls = set()
-    for s in csv.DictReader(open(ROOT / "data" / "sources.csv")):
+    for s in csv.DictReader(open(DATA / "sources.csv")):
         if s["field"] in ("license_class", "terms_can_change") and raw_url(s["url"]):
             urls.add(s["url"])
-    for m in csv.DictReader(open(ROOT / "data" / "scorecard.csv")):
+    for m in csv.DictReader(open(DATA / "scorecard.csv")):
         try:
             info, _ = _get(f"https://huggingface.co/api/models/{m['hf_repo']}")
         except urllib.error.HTTPError:

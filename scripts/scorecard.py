@@ -14,12 +14,20 @@ third-party accounts) are shown but never count.
 """
 
 import csv
+import os
 import re
 from pathlib import Path
 from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data"
+# SM_DATA points every script at another data directory, e.g. a local overlay
+# of models that are not published (data-global/, gitignored): the fact
+# scripts then read and write the overlay's own files. SM_OVERLAY instead adds
+# an overlay's rows to data/ when reading (build.py --overlay).
+DATA = Path(os.environ.get("SM_DATA", ROOT / "data")).resolve()
+OVERLAY = Path(os.environ["SM_OVERLAY"]).resolve() if os.environ.get("SM_OVERLAY") else None
+# Files whose rows are keyed by id; an overlay may not repeat an id of data/.
+KEYED = {"providers.csv": "id", "families.csv": "id", "scorecard.csv": "id"}
 
 PROVIDER_ALLOWED = {
     "region": {"eu", "europe", "non-europe"},
@@ -79,12 +87,39 @@ TIERS = {
 PUBLISHER_ORDER = ["official", "hbd", "curated", "organisation", "individual", "unknown"]
 
 
-def read(name):
-    path = DATA / name
+def _read(path):
     if not path.exists():
         return []
     with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
+
+
+def read(name):
+    rows = _read(DATA / name)
+    if OVERLAY is None:
+        return rows
+    extra = _read(OVERLAY / name)
+    key = KEYED.get(name)
+    if key:
+        clash = {r[key] for r in rows} & {r[key] for r in extra}
+        if clash:
+            raise SystemExit(f"{OVERLAY / name}: ids also in {DATA / name}: {sorted(clash)}")
+    return rows + extra
+
+
+def publishable(dist_json, public_scorecard):
+    """Refuse anything but data/ itself: no overlay, and only ids that data/ lists.
+
+    A local overlay (data-global/, see build.py --overlay) must never reach the
+    Hub; this catches a dist/ built with it or an environment pointing at it.
+    """
+    for var in ("SM_DATA", "SM_OVERLAY"):
+        if os.environ.get(var):
+            raise SystemExit(f"{var} is set: publish only from data/ (unset it and rebuild)")
+    public = {r["id"] for r in _read(Path(public_scorecard))}
+    extra = sorted({m["id"] for m in dist_json["models"]} - public)
+    if extra:
+        raise SystemExit(f"dist/ holds models that data/ does not list: {extra}; rebuild without --overlay")
 
 
 def split(value):

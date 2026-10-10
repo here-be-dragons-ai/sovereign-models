@@ -20,7 +20,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-KNOWN = ROOT / "data" / "known_repos.csv"
+DATA = Path(os.environ.get("SM_DATA", ROOT / "data"))  # SM_DATA: another data directory, e.g. a local overlay
+KNOWN = DATA / "known_repos.csv"
 FIELDS = ["repo", "provider_id", "created", "first_seen"]
 
 
@@ -49,7 +50,7 @@ def main():
     known = {r["repo"] for r in csv.DictReader(open(KNOWN))} if KNOWN.exists() else set()
     today = dt.date.today().isoformat()
     new = []
-    for p in csv.DictReader(open(ROOT / "data" / "providers.csv")):
+    for p in csv.DictReader(open(DATA / "providers.csv")):
         for org in filter(None, (p["hf_orgs"] or "").split(";")):
             for m in models(org):
                 if m["id"] not in known:

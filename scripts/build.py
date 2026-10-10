@@ -6,17 +6,28 @@ mlx-vlm and llama.cpp support, and the most trusted MLX and GGUF builds. The
 JSON also carries the sources of every model (from all three scopes), its builds
 with their publisher and the cache layout, so the Space can compute memory for
 any context length.
+
+    python3 scripts/build.py                       # data/ -> dist/
+    python3 scripts/build.py --overlay data-global # data/ + a local overlay -> dist-global/
+
+With --overlay the result goes to dist-global/ (gitignored) and changes to the
+overlay's models are logged in the overlay's changes.csv; dist/ and
+data/changes.csv stay untouched, so nothing of the overlay is published.
 """
 
 import csv
 import datetime as dt
 import json
+import os
 import sys
 
-from memory import cache_bytes, cache_layout
-from scorecard import PUBLISHER_ORDER, ROOT, TIERS, Data, read
+if "--overlay" in sys.argv:
+    os.environ["SM_OVERLAY"] = sys.argv[sys.argv.index("--overlay") + 1]
 
-DIST = ROOT / "dist"
+from memory import cache_bytes, cache_layout  # noqa: E402
+from scorecard import DATA, OVERLAY, PUBLISHER_ORDER, ROOT, TIERS, Data, read  # noqa: E402
+
+DIST = ROOT / ("dist-global" if OVERLAY else "dist")
 
 
 def read_dist():
@@ -75,7 +86,7 @@ TRACKED = [
     "cop_signatory", "terms_can_change", "recipe", "teacher_origin", "flags", "params_b",
     "context", "mlx_vlm", "llama_cpp", "template_check", "mlx_build_verified",
 ]
-CHANGES = ROOT / "data" / "changes.csv"
+CHANGES = (OVERLAY or DATA) / "changes.csv"
 CHANGE_FIELDS = ["date", "model", "field", "old", "new", "reason"]
 SOURCE_KEYS = ("scope", "field", "url", "issuer", "checked", "retrieved", "archive_url", "note")
 
@@ -224,6 +235,9 @@ def main():
     DIST.mkdir(exist_ok=True)
     prev = read_dist()
     changes = diff_rows(prev, rows, dt.date.today().isoformat())
+    if OVERLAY:
+        own = {m["id"] for m in csv.DictReader(open(OVERLAY / "scorecard.csv", encoding="utf-8"))}
+        changes = [c for c in changes if c["model"] in own]
     append_changes(changes)
     for c in changes:
         print(f"change: {c['model']} {c['field']}: {c['old']!r} -> {c['new']!r}")
@@ -241,7 +255,7 @@ def main():
         json.dump({"tiers": TIERS, "models": details, "changes": logged[-100:][::-1]}, fh,
                   indent=1, ensure_ascii=False)
     counts = {t: sum(r["tier"] == t for r in rows) for t in order}
-    print(f"dist/: {len(rows)} models " + ", ".join(f"{t}={n}" for t, n in counts.items() if n))
+    print(f"{DIST.name}/: {len(rows)} models " + ", ".join(f"{t}={n}" for t, n in counts.items() if n))
 
 
 if __name__ == "__main__":

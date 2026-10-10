@@ -21,7 +21,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "data" / "hf_facts.csv"
+DATA_DIR = Path(os.environ.get("SM_DATA", ROOT / "data"))  # SM_DATA: another data directory, e.g. a local overlay
+OUT = DATA_DIR / "hf_facts.csv"
 FIELDS = [
     "hf_repo", "fetched", "license", "license_name", "gated", "created", "revision",
     "params_b", "model_type", "context", "pipeline_tag", "architecture", "arch_json",
@@ -133,7 +134,7 @@ def facts(repo):
 def main():
     repos = sys.argv[1:]
     if not repos:
-        with open(ROOT / "data" / "scorecard.csv", newline="") as f:
+        with open(DATA_DIR / "scorecard.csv", newline="") as f:
             repos = [r["hf_repo"] for r in csv.DictReader(f)]
     rows = {}
     if OUT.exists() and sys.argv[1:]:

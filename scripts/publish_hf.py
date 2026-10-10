@@ -15,6 +15,7 @@ import tempfile
 from pathlib import Path
 
 from huggingface_hub import HfApi
+from scorecard import publishable
 
 ROOT = Path(__file__).resolve().parent.parent
 DATASET = "sovereign-models-scorecard"
@@ -112,6 +113,7 @@ def main():
     args = ap.parse_args()
     api = HfApi()
     data = json.loads((ROOT / "dist" / "scorecard.json").read_text(encoding="utf-8"))
+    publishable(data, ROOT / "data" / "scorecard.csv")
     models = data["models"]
 
     dataset_id = f"{args.org}/{DATASET}"

@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .venv/
 space/scorecard.json
+# Local overlay of unpublished models (build.py --overlay) and its build
+data-global/
+dist-global/
