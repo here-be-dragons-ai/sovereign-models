@@ -47,7 +47,6 @@ salamandra-7b,StickyWorm/salamandra-7b-instruct-Q2_K-GGUF,gguf,salamandra-7b-ins
 salamandra-7b,alamios/salamandra-7b-instruct-GGUF-f16,gguf,salamandra-7b-instruct.f16.gguf,identical,,URL;content condition,7910d86b18b98f94,2026-10-09
 salamandra-7b,elsatch/salamandra-7b-instruct-Q8_0-GGUF,gguf,salamandra-7b-instruct-q8_0.gguf,differs,diff: data/template_diffs/elsatch__salamandra-7b-instruct-Q8_0-GGUF.diff,,9f1c2427654388b0,2026-10-09
 tildeopen-30b,TildeAI/TildeOpen-30b-64k,original,,not checked,no chat template in the repo,,,2026-10-09
-apertus-1.5-8b,swiss-ai/Apertus-v1.5-8B,original,chat_template.jinja,reference,,content condition;long string literal,1b73046a029b3104,2026-10-09
 apertus-1.5-70b,swiss-ai/Apertus-v1.5-70B,original,chat_template.jinja,reference,,content condition;long string literal,1b73046a029b3104,2026-10-09
 apertus-1.5-70b,katya228/Apertus-v1.5-70B-text-GGUF,gguf,apertus-70b-Q4_K_M.gguf,identical,,content condition;long string literal,1b73046a029b3104,2026-10-09
 viking-33b,LumiOpen/Viking-33B,original,,not checked,no chat template in the repo,,,2026-10-09
@@ -196,3 +195,5 @@ poro-2-8b,wyrmiyu/Llama-Poro-2-8B-Instruct-Q8_0-GGUF,gguf,llama-poro-2-8b-instru
 borealis2-26b,NbAiLab/borealis2-26b-a4b-preview,original,chat_template.jinja,reference,,content condition;long string literal,d7d4d0047903c0c9,2026-10-09
 borealis2-26b,NbAiLab/borealis2-26b-a4b-preview-gguf,gguf,borealis2-26b-a4b-preview-Q3_K_M.gguf,equivalent,diff: data/template_diffs/NbAiLab__borealis2-26b-a4b-preview-gguf.diff,content condition;long string literal,ded195c682b884d1,2026-10-09
 borealis2-26b,BobTheShoplifter/borealis2-26b-a4b-preview-GGUF,gguf,borealis2-26b-a4b-preview-Q4_K_M.gguf,identical,,content condition;long string literal,d7d4d0047903c0c9,2026-10-09
+apertus-1.5-8b,swiss-ai/Apertus-v1.5-8B,original,chat_template.jinja,reference,,content condition;long string literal,1b73046a029b3104,2026-10-10
+apertus-1.5-8b,here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit,mlx,chat_template.jinja,identical,,content condition;long string literal,1b73046a029b3104,2026-10-10

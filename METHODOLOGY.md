@@ -145,6 +145,17 @@ rather than separate it. Both stay visible so readers can weigh them.
   `not checked` gives the reason, often that the original publishes no chat template (Mistral
   uses mistral-common). The model column shows the worst status of its builds.
 
+## Verified MLX builds
+
+A build is marked **verified** when its chat template is `identical` or `equivalent` to the
+original's, and its measured quality stays close to the original: on every text set of the
+quality measurement (Wikipedia, Calibration v5, chat, tool calling, FLORES in 23 EU languages)
+the mean KL divergence is below 0.05 and either at most 5 times the noise floor (the original
+run against itself) or at most 0.005, and no multiple-choice set loses significantly (paired 95%
+interval below zero). The absolute floor of 0.005 keeps the ratio from failing a build on a set
+where the noise floor is close to zero. Measured so far: our own builds; method and results in
+local-sovereign-mlx (`docs/quality-method.md`). Unmeasured builds show no label.
+
 ## Changes and re-checks
 
 Every build compares its result with the previous one and appends each changed value to

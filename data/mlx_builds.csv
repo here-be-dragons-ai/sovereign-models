@@ -16,3 +16,4 @@ mistral-small-3.2,mlx-community/Mistral-Small-3.2-24B-Instruct-2506-8bit,8,
 mistral-small-4,mlx-community/Mistral-Small-4-119B-2603-4bit,4,63 GB; does not fit 48 GB
 pleias-rag-1b,mlx-community/Pleias-RAG-1B-6-bit,6,
 salamandra-7b,mlx-community/salamandra-7b-instruct-mlx-bf16,16,
+apertus-1.5-8b,here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit,8,"8 bit with float32 image and audio tokenizers (omni); our own build; ungated copy, the Apertus AUP still applies"

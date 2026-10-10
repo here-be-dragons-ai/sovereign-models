@@ -33,6 +33,27 @@ CONTEXTS = {"8k": 8192, "32k": 32768, "128k": 131072}
 GGUF_IN_JSON = 8  # builds per model kept for the detail view
 # Worst first: the model-level template_check is the worst status of its builds.
 TEMPLATE_ORDER = ["suspicious", "differs", "not checked", "equivalent", "identical"]
+# Verified label (#23, decided 2026-10-09/10): template identical or equivalent;
+# on every text set mean KL < 0.05 and (<= 5x the noise floor or <= 0.005);
+# no multiple-choice set with a significant loss.
+VERIFY_RATIO, VERIFY_ABS, VERIFY_CAP = 5, 0.005, 0.05
+
+
+def verify(build, quality):
+    """("yes" / "no" / "not measured", reason) for one MLX build."""
+    if not quality:
+        return "not measured", ""
+    reasons = []
+    if build.get("template_check") not in ("identical", "equivalent"):
+        reasons.append(f"chat template {build.get('template_check')}")
+    kl, noise = json.loads(quality["kl_by_set"]), json.loads(quality["noise_by_set"])
+    for name, v in kl.items():
+        n = noise.get(name)
+        if v >= VERIFY_CAP or not ((n and v <= VERIFY_RATIO * n) or v <= VERIFY_ABS):
+            reasons.append(f"{name}: mean KL {v:.3f}" + (f" ({v / n:.0f}x noise floor)" if n else ""))
+    if quality["mc_significant_losses"]:
+        reasons.append("significant loss on " + quality["mc_significant_losses"].replace(";", ", "))
+    return ("no", "; ".join(reasons)) if reasons else ("yes", "")
 COLUMNS = [
     "tier", "id", "name", "family", "provider", "provider_country", "region",
     "control", "majority_owner", "origin", "base_model", "license_class",
@@ -41,7 +62,7 @@ COLUMNS = [
     "size_8bit_gb", "mlx_vlm", "mlx_vlm_detail", "mlx_vlm_checked",
     "mlx_build", "mlx_build_bits", "mlx_build_publisher", "llama_cpp",
     "llama_cpp_detail", "llama_cpp_checked", "gguf_build", "gguf_build_publisher",
-    "gguf_builds", "template_check", "template_check_detail", "cache_kind", "cache_kib_per_token", "cache_gib_8k",
+    "gguf_builds", "template_check", "template_check_detail", "mlx_build_verified", "cache_kind", "cache_kib_per_token", "cache_gib_8k",
     "cache_gib_32k", "cache_gib_128k", "teacher_origin", "teachers_list",
     "recipe", "terms_can_change", "languages", "eu_languages", "languages_basis",
     "training_hardware", "flags",
@@ -52,7 +73,7 @@ TRACKED = [
     "tier", "name", "hf_repo", "provider", "region", "control", "majority_owner", "origin",
     "base_model", "license_class", "license", "data", "compute", "ai_act_summary",
     "cop_signatory", "terms_can_change", "recipe", "teacher_origin", "flags", "params_b",
-    "context", "mlx_vlm", "llama_cpp", "template_check",
+    "context", "mlx_vlm", "llama_cpp", "template_check", "mlx_build_verified",
 ]
 CHANGES = ROOT / "data" / "changes.csv"
 CHANGE_FIELDS = ["date", "model", "field", "old", "new", "reason"]
@@ -100,6 +121,7 @@ def main():
     support = {r["id"]: r for r in read("mlx_support.csv")}
     llama = {r["id"]: r for r in read("llama_cpp_support.csv")}
     templates = {r["repo"]: r for r in d.template_checks}
+    qualities = {r["repo"]: r for r in read("build_quality.csv")}
 
     def with_template(b):
         t = templates.get(b["repo"], {})
@@ -117,6 +139,10 @@ def main():
                 ns = b["repo"].split("/")[0]
                 builds.append(with_template({**b, "publisher": d.publisher(b),
                                "verified_org": d.namespaces.get(ns, {}).get("verified") == "true"}))
+        for b in builds:
+            q = qualities.get(b["repo"])
+            b["verified"], b["verified_reason"] = verify(b, q)
+            b["quality_report"] = q["report"] if q else ""
         builds.sort(key=lambda b: (PUBLISHER_ORDER.index(b["publisher"]), -float(b["bits"])))
         ggufs = []
         for b in d.gguf_builds:
@@ -165,6 +191,9 @@ def main():
             gguf_build_publisher=ggufs[0]["publisher"] if ggufs else "",
             gguf_builds=len(ggufs),
             template_check=next((k for k in TEMPLATE_ORDER if k in counts), ""),
+            mlx_build_verified=("yes" if any(b["verified"] == "yes" for b in builds) else
+                                "no" if any(b["verified"] == "no" for b in builds) else
+                                "not measured" if builds else ""),
             template_check_detail=", ".join(f"{v} {k}" for k, v in counts.items()),
             cache_kind=layout["kind"] if layout else "",
             cache_kib_per_token=f"{layout['growing'] / 1024:.1f}" if layout else "",

@@ -136,6 +136,9 @@ organisation), `individual` (a personal account), in that order of trust.
 
 ## Generated files
 
+- `build_quality.csv` (from local-sovereign-mlx `quality-summary.py`): per measured MLX build the
+  mean KL divergence and the noise floor per text set, multiple-choice sets with a significant loss,
+  and the report link; `build.py` derives the verified label from it.
 - `changes.csv` (`scripts/build.py`, history from `scripts/backfill_changes.py`): every change of a
   published value between two builds: `date`, `model`, `field` (`model` for added or removed
   models), `old`, `new`, `reason`. A tier change without a reason fails validation.

@@ -171,6 +171,12 @@ const ISSUER = {provider:"provider", official:"official", academic:"academic", p
 const PUBLISHER = {official:"provider (official)", hbd:"here be dragons", curated:"curated community org",
   organisation:"other organisation", individual:"individual", unknown:"unknown"};
 function badge(kind, label) { return `<span class="iss ${esc(kind)}">${esc(label)}</span>`; }
+// Verified label (#23): template and measured quality against the original.
+function verified(b) {
+  if (!b.verified || b.verified === "not measured") return "";
+  const rep = b.quality_report ? " " + link(b.quality_report, "report") : "";
+  return b.verified === "yes" ? ` <b>✓ verified</b>${rep}` : ` <span class="src">not verified: ${esc(b.verified_reason)}</span>${rep}`;
+}
 // Chat-template check of a build against the original (#7, 3a); diffs live in the dataset.
 const DIFF_BASE = "https://huggingface.co/datasets/here-be-dragons-ai/sovereign-models-scorecard/blob/main/";
 function tpl(b) {
@@ -205,7 +211,7 @@ function detail(id) {
     ["GPAI Code of Practice", m.cop_signatory, "cop_signatory"],
   ];
   const builds = m.mlx_builds.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) +
-    `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit)` + tpl(b)).join("<br>");
+    `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit)` + tpl(b) + verified(b)).join("<br>");
   $("detail").innerHTML = `
     <h2>${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></h2>
     <div class="src">${esc(DATA.tiers[m.tier])}</div>
