@@ -37,6 +37,35 @@ The AI Act summary and the Code of Practice are shown but do **not** affect the 
 first is a legal duty with an open-source exemption, the second a voluntary commitment
 mostly signed by large providers.
 
+### Rating rules for values that need judgement
+
+So that equal evidence gets equal values, across European and comparison models alike
+(`scripts/rubric_report.py` lists every model's value with its source notes, per field):
+
+- **Training data**
+  - `open`: the training data, or nearly all of it, can be downloaded; parts left out for
+    licensing reasons are named.
+  - `documented`: the provider names the main datasets or sources, or gives the composition
+    with shares or token counts per source or domain, so that the mix could roughly be
+    rebuilt. An EU AI Act training summary in the Commission's template counts when it names
+    the main datasets.
+  - `undisclosed`: only categories ("web, code, mathematics, licensed and synthetic data"),
+    without names or shares; or nothing at all, once we have looked.
+  - `unknown`: not yet looked into.
+- **Origin**
+  - `scratch`: pre-training starts from randomly initialised weights. Distillation from
+    another model still counts as scratch; the teacher is listed under teacher models.
+  - `continued-own`: starts from the provider's own earlier weights in any form: continued
+    pre-training, post-training of an earlier base, upcycling, pruning, or partial weight
+    transfer.
+  - `continued-*` / `finetune-*` with another provider's weights in the same sense;
+    `finetune` when only post-training was done.
+  - A source that only says "pre-training and post-training" does not settle the question;
+    it stays unchecked and does not count.
+- **Teacher models**: only models the provider names as producing training data or judging
+  it; a model mentioned for comparison, as a borrowed chat template, or as the base being
+  fine-tuned is not a teacher.
+
 ## Sources
 
 Every criterion except `region` and `license_class` needs a source in `data/sources.csv`

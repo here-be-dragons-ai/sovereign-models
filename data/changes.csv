@@ -62,3 +62,40 @@ date,model,field,old,new,reason
 2026-10-10,sarvam-30b,model,,listed,
 2026-10-10,solar-open2-250b,model,,listed,
 2026-10-10,tiny-aya-global,model,,listed,
+2026-10-10,bielik-11b-v3,compute,unknown,eu,pre-training location sourced
+2026-10-10,bielik-11b-v3,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,borealis2-26b,data,unknown,documented,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,command-a-plus,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,deepseek-v4-pro-0813,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,deepseek-v4.1-flash,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,devstral-small-2,ai_act_summary,unknown,no,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,domyn-small,data,unknown,documented,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,domyn-small,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,eurollm-22b,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,eurollm-9b,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,exaone-4.5-33b,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,glm-5.3,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,holo4-35b-a3b,data,unknown,documented,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,jamba2-3b,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,jamba2-mini,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,kimi-k3,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,kolibri-1,compute,unknown,eu,pre-training location sourced
+2026-10-10,kolibri-1,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,luciole-23b,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,luciole-8b,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,magistral-small-2509,ai_act_summary,unknown,no,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,minerva-7b,tier,B,A,"compute now sourced as EU (Leonardo, CINECA): open licence, own weights, independent and European compute -> A"
+2026-10-10,minerva-7b,data,unknown,documented,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,minerva-7b,compute,unknown,eu,pre-training location sourced
+2026-10-10,minimax-m3,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,ministral-3-14b,origin,scratch,continued-own,rating rubric for origin: weights from an own earlier model count as continued-own
+2026-10-10,ministral-3-14b,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,mistral-small-3.2,origin,scratch,continued-own,rating rubric for origin: weights from an own earlier model count as continued-own
+2026-10-10,mistral-small-3.2,ai_act_summary,unknown,no,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,mistral-small-4,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
+2026-10-10,pleias-rag-1b,compute,unknown,eu,pre-training location sourced
+2026-10-10,poro-2-8b,data,unknown,documented,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,solar-open2-250b,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,sui-1-24b,data,unknown,documented,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,tiny-aya-global,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
+2026-10-10,tiny-aya-global,ai_act_summary,unknown,no,"AI Act training summary looked up (provider site, AIAL tracker)"
