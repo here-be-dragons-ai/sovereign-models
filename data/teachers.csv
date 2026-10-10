@@ -60,3 +60,76 @@ poro-2,posttraining,Llama-3.3-70B-Instruct,foreign,SFT responses for English and
 poro-2,posttraining,Poro-34B,own,translating the Tulu 3 SFT prompts into Finnish
 poro-2,judge,Llama-3.3-70B-Instruct (judge),foreign,picking the best Finnish response
 poro-2,judge,ArmoRM-Llama3-8B-v0.1,foreign,reward model picking the best English response
+llama-4,pretraining,Llama 4 Behemoth,own,codistillation teacher for Llama 4 Maverick (soft/hard target distillation loss)
+phi-4-reasoning-vision,posttraining,GPT-4o,foreign,synthetic captions and descriptions of web images
+phi-4-reasoning-vision,posttraining,o4-mini,foreign,synthetic captions and descriptions of web images
+nemotron-3,pretraining,"Qwen models (Qwen3-235B-A22B incl. Thinking-2507, Qwen3-30B-A3B, Qwen2.5-72B/32B, QwQ-32B)",foreign,"synthetic pre-training data: formal logic, economics, MCQ, rephrased/translated Common Crawl and Wikipedia, textbook math"
+nemotron-3,pretraining,DeepSeek-V3 and DeepSeek-R1,foreign,"synthetic tasks, STEM, AGIEval and AoPS data"
+nemotron-3,pretraining,gpt-oss-120b and gpt-oss-20b,foreign,Nemotron-Pretraining-Code-Concepts and algorithmic data
+nemotron-3,pretraining,phi-4,foreign,Nemotron-MIND / CC-Math rephrasing and synthetic Common Crawl code
+nemotron-3,pretraining,Mixtral-8x22B-v0.1,european,"synthetic moral stories, social and health sciences from OpenStax"
+nemotron-3,pretraining,Mistral-NeMo-12B-Instruct,european,synthetic Common Crawl (joint Mistral AI/NVIDIA model)
+nemotron-3,pretraining,Nemotron-4-340B-Instruct,own,synthetic math data from Wikimedia
+nemotron-3,posttraining,gpt-oss-120b,foreign,"reasoning traces, solutions, tool calling, chat, safety SFT data"
+nemotron-3,posttraining,"Qwen3 models (Qwen3-235B-A22B-Instruct/Thinking-2507, Qwen3-Coder-480B-A35B, Qwen3-32B, Qwen3-Next-80B)",foreign,"STEM, tool calling, structured outputs, SWE trajectories, long context"
+nemotron-3,posttraining,DeepSeek-R1-0528 and DeepSeek-V3.2,foreign,"code, math, safety, agentic and SWE data"
+nemotron-3,posttraining,"Kimi-K2-Thinking / Kimi-K2.5, MiniMax-M2, GLM-4.7-Flash",foreign,"SWE, search and terminal agent data"
+nemotron-3,posttraining,"Mixtral-8x22B-Instruct, Mixtral-8x7B, Mistral-Small-3.1/3.2, Mistral-7B-Instruct-v0.3",european,"chat, safety and preference data"
+nemotron-3,posttraining,"gemma-2-2b-it, gemma-3-27b-it, gemma-3-4b-it",foreign,preference responses and safety data
+nemotron-3,posttraining,NVIDIA-Nemotron-Nano-9B-v2,own,safety and instruction-following RL data
+nemotron-3,posttraining,Gemini 3 and GPT-5,foreign,prompt generation only for search RL data
+nemotron-3.5,pretraining,"Qwen models (Qwen3-235B-A22B incl. Thinking-2507, Qwen3-30B-A3B-Instruct-2507, Qwen2.5-72B)",foreign,"synthetic pre-training data: fact-seeking, legal, formal logic, economics, MCQ, translation"
+nemotron-3.5,pretraining,DeepSeek-V3 and DeepSeek-R1,foreign,"synthetic tasks, STEM and AoPS data"
+nemotron-3.5,pretraining,gpt-oss-120b and gpt-oss-20b,foreign,code concepts and algorithmic data
+nemotron-3.5,pretraining,phi-4,foreign,rephrased Common Crawl math and code
+nemotron-3.5,pretraining,Mixtral-8x22B-v0.1,european,"moral stories, social and health sciences"
+nemotron-3.5,pretraining,Nemotron-4-340B-Instruct,own,synthetic math from Wikimedia
+nemotron-3.5,posttraining,gpt-oss-120b and Kimi-K2,foreign,"science reasoning, MCQ, search and tool data"
+nemotron-3.5,posttraining,"DeepSeek-V4-Pro, DeepSeek-V3.2, DeepSeek-R1-0528",foreign,"competitive math/coding/science, agentic tool use, SWE"
+nemotron-3.5,posttraining,"Qwen3 models (Qwen3-235B-A22B-Instruct/Thinking-2507, Qwen3-Coder-480B-A35B, Qwen3-Next-80B)",foreign,"structured outputs, tool calling, long context, SWE"
+nemotron-3.5,posttraining,"GLM-5, GLM-4.7, GLM-4.6, Ring-1T, MiniMax-M2",foreign,"chat (reasoning on/off), CUDA agent traces, terminal and search data"
+nemotron-3.5,posttraining,GPT-5.5,foreign,"synthetic math RL data (Skywork, DAPO, Turing Math)"
+nemotron-3.5,posttraining,"Mistral-Small-3.1/3.2, Mixtral-8x22B-Instruct, Mistral-7B-Instruct-v0.3, Ministral-3-14B-Reasoning-2512",european,preference and chat responses
+nemotron-3.5,posttraining,Nemotron 3 Super v3 and Nemotron 5.5,own,"abstention, chemistry, prompt-injection and math proof data"
+nemotron-3.5,judge,Claude 4 Sonnet,foreign,filtering of synthetic Verilog/SystemVerilog code
+nemotron-3.5,judge,Qwen3-Nemotron-235B-A22B-GenRM,own,best-of-4 selection of GLM-5 chat data
+olmo-3,midtraining,GPT-4.1 and o4-mini,foreign,thinking traces for capability-targeted midtraining tasks; GPT-4.1 rewrite of OpenMathReasoning
+olmo-3,midtraining,Qwen3,foreign,rewrite of MegaMath web data (MegaMatt)
+olmo-3,posttraining,QwQ-32B,foreign,"Dolci Think SFT reasoning traces (math, code, precise IF)"
+olmo-3,posttraining,DeepSeek R1,foreign,reasoning traces for safety and other SFT subsets
+olmo-3,posttraining,GPT-4.1,foreign,"test-case generation, Tulu 3 rewrites, updated instruct SFT completions"
+olmo-3,posttraining,"GPT-4o, GPT-4.1 and GPT-5",foreign,simulated tool-use trajectories for instruct SFT
+olmo-3,posttraining,Qwen3-32B and Qwen3-0.6B,foreign,chosen/rejected responses for delta-learning DPO pairs
+olmo-3,judge,Qwen3-32B,foreign,LM-judge reward in OlmoRL
+olmo-3,judge,GPT-4.1,foreign,"judging contrastive pairs in Dolci Instruct DPO (completions from a pool incl. gpt-oss, Gemma 3, Qwen3, QwQ, Phi-4-mini, Yi, Mistral Small 24B)"
+olmo-3,judge,Gemma 3 12B,foreign,PII classification of olmOCR science PDFs
+deepseek-v4,posttraining,DeepSeek-V4 domain expert models,own,more than ten domain experts (SFT + GRPO) consolidated via on-policy distillation
+deepseek-v4,posttraining,earlier and internal DeepSeek models,own,"synthetic data for instruction following, reasoning, coding, safety (AI Act summary; stage not specified)"
+deepseek-v4.1,judge,SmolVLM,foreign,quality scoring of interleaved image-text pre-training data (Hugging Face model)
+kimi-k3,posttraining,prior Kimi domain-specialized models,own,synthesising SFT agentic trajectories
+kimi-k3,posttraining,Kimi K3 domain and effort experts,own,multi-teacher on-policy distillation into the final model
+kimi-k3,judge,internal agentic generative reward model,own,reward for non-verifiable tasks and agentic RL judging
+minimax-m3,posttraining,MiniMax-M2.7,own,"synthetic data (instruction following, reasoning, code, multimodal, safety); stage not specified in AI Act summary"
+llm-jp-4.1,posttraining,gpt-oss-120b,foreign,generating reasoning traces and final responses for SFT; translating Nemotron agentic mix to Japanese
+llm-jp-4.1,judge,gpt-oss-120b (judge),foreign,choosing preferred/rejected responses for DPO
+llm-jp-4.1,posttraining,Qwen3-235B-A22B-Thinking-2507 (via Nemotron-Agentic),foreign,"third-party agentic/tool-calling conversations (with Qwen3-32B, Qwen3-235B-A22B-Instruct-2507)"
+llm-jp-4.1,posttraining,DeepSeek-V3.2 / DeepSeek-R1-0528 (via Nemotron-SFT-Agentic-v2),foreign,third-party agentic trajectories
+qwen3-swallow-0.2,pretraining,gpt-oss-120b,foreign,synthetic QA-format text from Swallow Corpus v3.2 for CPT
+qwen3-swallow-0.2,posttraining,gpt-oss-120b,foreign,"reasoning traces and responses for SFT (LMSYS-Chat synth, Swallow-Nemotron)"
+qwen3-swallow-0.2,pretraining,Qwen3-235B-A22B-Instruct-2507,foreign,rewriting code (SwallowCode v2) and math (SwallowMath v2)
+qwen3-swallow-0.2,pretraining,Qwen3-32B,foreign,extracting math text for SwallowMath v2
+qwen3-swallow-0.2,pretraining,Mixtral-8x7B-Instruct (via Cosmopedia),european,third-party synthetic textbooks in the CPT mix
+gpt-oss-swallow-0.1,pretraining,gpt-oss-120b,foreign,synthetic QA-format text from Swallow Corpus v3.2 for CPT
+gpt-oss-swallow-0.1,posttraining,gpt-oss-120b,foreign,"reasoning traces and responses for SFT (LMSYS-Chat synth, Swallow-Nemotron)"
+gpt-oss-swallow-0.1,pretraining,Qwen3-235B-A22B-Instruct-2507,foreign,rewriting code (SwallowCode v2) and math (SwallowMath v2)
+gpt-oss-swallow-0.1,pretraining,Qwen3-32B,foreign,extracting math text for SwallowMath v2
+gpt-oss-swallow-0.1,pretraining,Mixtral-8x7B-Instruct (via Cosmopedia),european,third-party synthetic textbooks in the CPT mix
+plamo-3-nict,pretraining,PLaMo 3 NICT 120B,own,distillation teacher for the 31B
+sea-lion-v4.8,posttraining,NVIDIA-Nemotron-3-Ultra-550B-A55B,foreign,teacher for online on-policy distillation
+sea-lion-v4.5,posttraining,Qwen3.5-397B-A17B,foreign,logit distillation teacher on SEA-Instruct-2602
+command-a-plus,posttraining,Command A,own,synthetic text/image data (stage not stated in the AI Act summary)
+command-a-plus,posttraining,other internal Cohere models,own,"synthetic data, augmentation, data evaluation (stage not stated)"
+tiny-aya,posttraining,command-a-translate,own,translating posttraining prompts/completions into target languages
+tiny-aya,posttraining,DeepSeek-V3,foreign,translation and prompt transformation; teacher completions for Fusion-of-N
+tiny-aya,posttraining,Command A,own,prompt transformation; teacher and Fusor aggregating teacher completions (incl. safety data)
+tiny-aya,posttraining,Gemma3-27B-It,foreign,teacher completions for Fusion-of-N synthetic SFT data

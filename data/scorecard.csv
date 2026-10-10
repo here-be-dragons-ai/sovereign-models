@@ -26,3 +26,46 @@ xlstm-7b,xLSTM 7B,NX-AI/xLSTM-7b,xlstm,text,,,,,,,,"Recurrent (mLSTM) architectu
 holo4-35b-a3b,Holo4 35B-A3B,Hcompany/Holo4-35B-A3B,holo4,"text, image",,,,,,,,Computer-use agent model.
 poro-2-8b,Poro 2 8B Instruct,LumiOpen/Llama-Poro-2-8B-Instruct,poro-2,text,,,,,,,,Llama 3.3 licence inherited.
 borealis2-26b,borealis2 26B-A4B (preview),NbAiLab/borealis2-26b-a4b-preview,borealis2,"text, image",,,,,,,,Norway is not in the EU. nb-license-1.0.
+llama-4-maverick,Llama 4 Maverick 17B-128E Instruct,meta-llama/Llama-4-Maverick-17B-128E-Instruct,llama-4,"text,image",,,,,,,,Gated (manual approval). MoE 400B total / 17B active. Codistilled from Llama 4 Behemoth. Multimodal: AUP excludes EU-domiciled licensees.
+llama-4-scout,Llama 4 Scout 17B-16E Instruct,meta-llama/Llama-4-Scout-17B-16E-Instruct,llama-4,"text,image",,,,,,,,"Gated (manual approval). MoE 109B total / 17B active, ~40T tokens. Multimodal: AUP excludes EU-domiciled licensees."
+gemma-4-31b,Gemma 4 31B IT,google/gemma-4-31B-it,gemma-4,"text,image",,,,,,,,"Dense 31B, 256K context. Audio only on E2B/E4B/12B."
+gemma-4-26b-a4b,Gemma 4 26B A4B IT,google/gemma-4-26B-A4B-it,gemma-4,"text,image",,,,,,,,"MoE 26B total / ~4B active, 256K context."
+gpt-oss-120b,gpt-oss-120b,openai/gpt-oss-120b,gpt-oss,text,,,,,,,,"MoE 117B / 5.1B active, MXFP4 MoE weights; harmony chat format required."
+gpt-oss-20b,gpt-oss-20b,openai/gpt-oss-20b,gpt-oss,text,,,,,,,,"MoE 21B / 3.6B active, MXFP4 MoE weights."
+phi-4-reasoning-vision-15b,Phi-4-Reasoning-Vision-15B,microsoft/Phi-4-reasoning-vision-15B,phi-4-reasoning-vision,"text,image",,,,,,,,Released 2026-03-04; 16K context. Newest Phi on the Hub as of 2026-10.
+nemotron-3-super-120b,NVIDIA Nemotron 3 Super 120B-A12B,nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,nemotron-3,text,,,,,,,,"Hybrid Mamba/attention LatentMoE, 12B active, 1M context. Larger Nemotron 3 Ultra 550B-A55B also exists."
+nemotron-3.5-lightning-30b,NVIDIA Nemotron 3.5 Lightning 30B-A3B,nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,nemotron-3.5,text,,,,,,,,"Released 2026-08; 3B active, 1M context; BF16 reference weights (NVFP4 variant for deployment)."
+granite-4.2-30b,Granite 4.2 30B,ibm-granite/granite-4.2-30b,granite-4.2,text,,,,,,,,"Released 2026-08-25; dense 30B reasoning/thinking model, 128K context. IBM also publishes its own MLX builds."
+granite-4.2-8b,Granite 4.2 8B,ibm-granite/granite-4.2-8b,granite-4.2,text,,,,,,,,
+olmo-3.1-32b-instruct,Olmo 3.1 32B Instruct,allenai/Olmo-3.1-32B-Instruct,olmo-3,text,,,,,,,,Released 2025-12; newest Olmo instruct LLM on the Hub (Olmo-Hybrid 7B is a research variant).
+olmo-3-7b-instruct,Olmo 3 7B Instruct,allenai/Olmo-3-7B-Instruct,olmo-3,text,,,,,,,,
+qwen3.8-27b,Qwen3.8-27B,Qwen/Qwen3.8-27B,qwen3.8,"text,image",,,,,,,,"Dense 27.8B hybrid (Gated DeltaNet + gated attention), vision encoder, video input; 262k native context."
+qwen3.8-flash-next,Qwen3.8-Flash-Next,Qwen/Qwen3.8-Flash-Next,qwen3.8-flash-next,"text,image",,,,,,,,"125B-A6B MoE plus 51B n-gram embedding and 4B MTP (about 180B stored); Qwen Sparse Attention, gated residual; video input."
+deepseek-v4-pro-0813,DeepSeek-V4-Pro-0813,deepseek-ai/DeepSeek-V4-Pro-0813,deepseek-v4,text,,,,,,,,"1.6T-A49B MoE; official release superseding the V4-Pro preview, with DSpark speculative-decoding module. No Jinja chat template (Python encoder)."
+deepseek-v4.1-flash,DeepSeek-V4.1-Flash,deepseek-ai/DeepSeek-V4.1-Flash,deepseek-v4.1,"text,image",,,,,,,,"552B backbone (8B active in prefill, 16B in decode) plus 196B Engram memory; causal encoder-decoder; 1M context."
+kimi-k3,Kimi K3,moonshotai/Kimi-K3,kimi-k3,"text,image",,,,,,,,"2.8T MoE (16 of 896 experts, 104B active), Kimi Delta Attention; MXFP4 weights via quantisation-aware training; video input."
+glm-5.3,GLM-5.3,zai-org/GLM-5.3,glm-5.3,text,,,,,,,,753B-A40B MoE; weights held back two weeks for safety evaluation (press). BF16 variant in zai-org/GLM-5.3-BF16.
+glm-5.3-flash,GLM-5.3-Flash,zai-org/GLM-5.3-Flash,glm-5.3-flash,"text,image",,,,,,,,"320B-A18B, first natively multimodal GLM-5 model."
+minimax-m3,MiniMax-M3,MiniMaxAI/MiniMax-M3,minimax-m3,"text,image",,,,,,,,"About 428B-A23B MoE with MiniMax Sparse Attention, 1M context, video input."
+hy4-preview,Tencent Hy4 preview,tencent/Hy4-preview,hy4,text,,,,,,,,770B-A49B MoE plus 10B MTP layer; labelled preview with known over-reasoning issues.
+k-exaone-2.0-750b,K-EXAONE 2.0 750B-A37B,LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,k-exaone-2.0,text,,,,,,,,"MoE 750B total / 37B active; reasoning mode. FP8, NVFP4 and DSpark variants also published."
+exaone-4.5-33b,EXAONE 4.5 33B,LGAI-EXAONE/EXAONE-4.5-33B,exaone-4.5,"text,image",,,,,,,,31.7B language model + 1.2B vision encoder; 256K context. Non-commercial licence.
+solar-open2-250b,Solar Open 2 250B-A15B,upstage/Solar-Open2-250B,solar-open-2,text,,,,,,,,"Hybrid softmax/linear-attention MoE, 1M context. Needs Upstage's transformers branch."
+hyperclovax-seed-think-32b,HyperCLOVA X SEED 32B Think,naver-hyperclovax/HyperCLOVAX-SEED-Think-32B,hyperclova-x-seed-think,"text,image",,,,,,,,Image and video input; vision tower is Qwen2.5-VL (config vision_config qwen2_5_vl_vision). Newest open NAVER model (Dec 2025).
+llm-jp-4.1-33b-thinking,llm-jp-4.1 33B thinking,llm-jp/llm-jp-4.1-33b-thinking,llm-jp-4.1,text,,,,,,,,Dense 33B; Harmony-style chat template.
+llm-jp-4.1-32b-a3b-thinking,llm-jp-4.1 32B-A3B thinking,llm-jp/llm-jp-4.1-32b-a3b-thinking,llm-jp-4.1,text,,,,,,,,MoE 32B total / 3.8B active.
+qwen3-swallow-32b-rl,Qwen3-Swallow 32B RL v0.2,tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,qwen3-swallow-0.2,text,,,,,,,,
+gpt-oss-swallow-120b-rl,GPT-OSS-Swallow 120B RL v0.1,tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,gpt-oss-swallow-0.1,text,,,,,,,,
+plamo-3-nict-2604-31b-base,PLaMo 3 NICT 2604 31B Base,pfnet/plamo-3-nict-2604-31b-base,plamo-3-nict,text,,,,,,,,"Base model, gated; not instruction-tuned."
+sarvam-105b,Sarvam-105B,sarvamai/sarvam-105b,sarvam-2026,text,,,,,,,,"MoE 105B / 10.3B active, MLA attention; trust_remote_code."
+sarvam-30b,Sarvam-30B,sarvamai/sarvam-30b,sarvam-2026,text,,,,,,,,"MoE, 2.4B non-embedding active parameters."
+nemotron-sea-lion-v4.8-120b,Nemotron-SEA-LION v4.8 120B-A12B,aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,sea-lion-v4.8,text,,,,,,,,"Mamba2-Transformer hybrid MoE, 262K context."
+qwen-sea-lion-v4.5-27b-it,Qwen-SEA-LION v4.5 27B IT,aisingapore/Qwen-SEA-LION-v4.5-27B-IT,sea-lion-v4.5,"text,image",,,,,,,,
+falcon-h1-34b,Falcon-H1 34B Instruct,tiiuae/Falcon-H1-34B-Instruct,falcon-h1,text,,,,,,,,Largest Falcon-H1 model (May 2025); no larger TII LLM released since.
+falcon-h1r-7b,Falcon-H1R 7B,tiiuae/Falcon-H1R-7B,falcon-h1r,text,,,,,,,,"TII's newest general LLM release (Jan 2026); reasoning model, 256K context."
+k2-horizon-375b,K2-Horizon 375B-A23B,IFM/K2-Horizon-375B-A23B,k2-horizon,text,,,,,,,,"Flagship MoE, 375B total / 23B active, 512K context; released 2026-09-01. Requires trust_remote_code."
+k2-horizon-32b,K2-Horizon 32B,IFM/K2-Horizon-32B,k2-horizon,text,,,,,,,,"Dense 32B member of the family, 512K context."
+jamba2-mini,Jamba2 Mini,ai21labs/AI21-Jamba2-Mini,jamba2,text,,,,,,,,"MoE 52B total / 12B active, 256K context; released 2026-01-08."
+jamba2-3b,Jamba2 3B,ai21labs/AI21-Jamba2-3B,jamba2,text,,,,,,,,"Dense 3B, 256K context; released 2026-01-08."
+command-a-plus,Command A+ (05-2026),CohereLabs/command-a-plus-05-2026-bf16,command-a-plus,"text,image",,,,,,,,Released 2026-05-20; also FP8 and W4A4 repos (W4A4 recommended by Cohere).
+tiny-aya-global,Tiny Aya Global,CohereLabs/tiny-aya-global,tiny-aya,text,,,,,,,,Gated (auto-approve). Model card's Terms of Use paragraph still mentions a '111 billion parameter model' (copy-paste).

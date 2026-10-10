@@ -76,7 +76,7 @@ Computed by `scripts/scorecard.py`, in this order:
 
 | Tier | Rule |
 |---|---|
-| out of scope | provider outside Europe |
+| comparison | provider outside Europe (see below) |
 | excluded | non-commercial licence |
 | pending | licence unclear |
 | **A** | open licence (`osi` or `osi-aup`), own weights (`scratch` or `continued-own`), `independent`, and either open training data or European compute |
@@ -86,6 +86,27 @@ Computed by `scripts/scorecard.py`, in this order:
 Flags are shown next to the tier and never change it: outside the EU, acquired / merger
 pending, use policy on redistribution, custom licence, non-European base model, our own work
 involved.
+
+## Comparison models from outside Europe
+
+To place the European models, the scorecard also lists current open-weight models from
+providers outside Europe: the United States, China, Korea, Japan, India, Singapore, the United
+Arab Emirates, Israel and Canada. They carry the same facts with the same sources and checks
+(licence, origin, data, compute, control, teacher models, reproducibility, Code of Practice, AI
+Act summary, Hub facts, MLX and llama.cpp support), but **no tier**: the tier criteria ask what a
+model means for European sovereignty, and for a provider outside Europe the answer is already
+given by its seat. Their tier is `comparison`.
+
+- Selection: one or two current flagship open-weight releases per provider, instruction-tuned
+  where available, from the provider's own Hub organisation, as of October 2026. The selection
+  is not exhaustive; requests for additions are welcome as issues.
+- The overview hides them by default; the switch "compare with models from outside Europe"
+  shows them (`?world=1` links to that view). They are never added to the tier collections.
+- The weekly check covers their Hub facts, chat templates and licence documents, but looks for
+  new repos only at European providers.
+- `region = non-europe`; `control = independent` means the provider is the company or institution
+  itself. Parent companies, state funding and notable shareholders are in the provider notes,
+  with sources.
 
 ## Informative criteria
 

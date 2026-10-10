@@ -26,3 +26,46 @@ sui-1-24b,loads,mistral3,,2026-10-09,0.7.6 (release)
 tildeopen-30b,loads,llama,,2026-10-09,0.7.6 (release)
 viking-33b,loads,llama,,2026-10-09,0.7.6 (release)
 xlstm-7b,unsupported,xlstm,model type not in mlx-vlm,2026-10-09,0.7.6 (release)
+command-a-plus,not checked,,check failed: URLError: <urlopen error [Errno 54] Connection reset by peer>,2026-10-10,0.7.4
+deepseek-v4-pro-0813,not checked,deepseek_v4,quantized tensors (scales) the check does not handle,2026-10-10,0.7.4
+deepseek-v4.1-flash,loads,deepseek_v41,"FP8 release, scales not checked",2026-10-10,0.7.4
+exaone-4.5-33b,unsupported,exaone4_5,model type not in mlx-vlm,2026-10-10,0.7.4
+falcon-h1-34b,loads,falcon_h1,,2026-10-10,0.7.4
+falcon-h1r-7b,loads,falcon_h1,,2026-10-10,0.7.4
+gemma-4-26b-a4b,loads,gemma4,,2026-10-10,0.7.4
+gemma-4-31b,loads,gemma4,,2026-10-10,0.7.4
+glm-5.3,loads,glm_moe_dsa,"FP8 release, scales not checked",2026-10-10,0.7.4
+glm-5.3-flash,loads,glm5_next,"FP8 release, scales not checked",2026-10-10,0.7.4
+gpt-oss-120b,not checked,gpt_oss,mxfp4 release: the load check covers bf16 and FP8 weights only,2026-10-10,0.7.4
+gpt-oss-20b,not checked,gpt_oss,mxfp4 release: the load check covers bf16 and FP8 weights only,2026-10-10,0.7.4
+gpt-oss-swallow-120b-rl,fails,gpt_oss,"108 missing, e.g. language_model.model.layers.0.mlp.experts.gate_proj.weight; 108 unexpected, e.g. language_model.model.layers.0.mlp.experts.gate_proj",2026-10-10,0.7.4
+granite-4.2-30b,loads,granite,,2026-10-10,0.7.4
+granite-4.2-8b,loads,granite,,2026-10-10,0.7.4
+hy4-preview,not checked,hy_v4,FP8 scale layout not handled by the check: KeyError: 'model.layers.0.self_attn.kv_b_proj.weight_scale',2026-10-10,0.7.4
+hyperclovax-seed-think-32b,unsupported,hyperclovax_vision_v2,model type not in mlx-vlm,2026-10-10,0.7.4
+jamba2-3b,loads,jamba,,2026-10-10,0.7.4
+jamba2-mini,loads,jamba,,2026-10-10,0.7.4
+k-exaone-2.0-750b,fails,exaone_moe,model init: TypeError: ModelConfig.__init__() missing 2 required positional arguments: 'sliding_window' and 'is_moe_layer',2026-10-10,0.7.4
+k2-horizon-32b,loads,k2_horizon,,2026-10-10,0.7.4
+k2-horizon-375b,fails,k2_horizon,"174 missing, e.g. language_model.model.layers.3.mlp.gate_proj.weight; 33698 unexpected, e.g. language_model.model.layers.3.mlp.experts.0.down_proj.weight",2026-10-10,0.7.4
+kimi-k3,not checked,,check failed: RuntimeError: [metal::malloc] Resource limit (499000) exceeded.,2026-10-10,0.7.4
+llama-4-maverick,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4
+llama-4-scout,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4
+llm-jp-4.1-32b-a3b-thinking,loads,qwen3_moe,,2026-10-10,0.7.4
+llm-jp-4.1-33b-thinking,loads,llama,,2026-10-10,0.7.4
+minimax-m3,loads,minimax_m3_vl,,2026-10-10,0.7.4
+nemotron-3-super-120b,loads,nemotron_h,,2026-10-10,0.7.4
+nemotron-3.5-lightning-30b,loads,nemotron_h,,2026-10-10,0.7.4
+nemotron-sea-lion-v4.8-120b,loads,nemotron_h,,2026-10-10,0.7.4
+olmo-3-7b-instruct,loads,olmo3,,2026-10-10,0.7.4
+olmo-3.1-32b-instruct,loads,olmo3,,2026-10-10,0.7.4
+phi-4-reasoning-vision-15b,loads,phi4-siglip,,2026-10-10,0.7.4
+plamo-3-nict-2604-31b-base,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4
+qwen-sea-lion-v4.5-27b-it,loads,qwen3_5,,2026-10-10,0.7.4
+qwen3-swallow-32b-rl,loads,qwen3,,2026-10-10,0.7.4
+qwen3.8-27b,loads,qwen3_5,,2026-10-10,0.7.4
+qwen3.8-flash-next,loads,qwen4_exp,,2026-10-10,0.7.4
+sarvam-105b,unsupported,sarvam_mla,model type not in mlx-vlm,2026-10-10,0.7.4
+sarvam-30b,unsupported,sarvam_moe,model type not in mlx-vlm,2026-10-10,0.7.4
+solar-open2-250b,unsupported,solar_open2,model type not in mlx-vlm,2026-10-10,0.7.4
+tiny-aya-global,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4

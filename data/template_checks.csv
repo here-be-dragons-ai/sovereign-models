@@ -197,3 +197,46 @@ borealis2-26b,NbAiLab/borealis2-26b-a4b-preview-gguf,gguf,borealis2-26b-a4b-prev
 borealis2-26b,BobTheShoplifter/borealis2-26b-a4b-preview-GGUF,gguf,borealis2-26b-a4b-preview-Q4_K_M.gguf,identical,,content condition;long string literal,d7d4d0047903c0c9,2026-10-09
 apertus-1.5-8b,swiss-ai/Apertus-v1.5-8B,original,chat_template.jinja,reference,,content condition;long string literal,1b73046a029b3104,2026-10-10
 apertus-1.5-8b,here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit,mlx,chat_template.jinja,identical,,content condition;long string literal,1b73046a029b3104,2026-10-10
+llama-4-maverick,meta-llama/Llama-4-Maverick-17B-128E-Instruct,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-10
+llama-4-scout,meta-llama/Llama-4-Scout-17B-16E-Instruct,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-10
+gemma-4-31b,google/gemma-4-31B-it,original,chat_template.jinja,reference,,content condition;long string literal,d7d4d0047903c0c9,2026-10-10
+gemma-4-26b-a4b,google/gemma-4-26B-A4B-it,original,chat_template.jinja,reference,,content condition;long string literal,d7d4d0047903c0c9,2026-10-10
+gpt-oss-120b,openai/gpt-oss-120b,original,chat_template.jinja,reference,,content condition;date or time;long string literal,523da7645491e46c,2026-10-10
+gpt-oss-20b,openai/gpt-oss-20b,original,chat_template.jinja,reference,,content condition;date or time;long string literal,523da7645491e46c,2026-10-10
+phi-4-reasoning-vision-15b,microsoft/Phi-4-reasoning-vision-15B,original,chat_template.jinja,reference,,content condition,3a920757d5197c45,2026-10-10
+nemotron-3-super-120b,nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,original,chat_template.jinja,reference,,content condition;long string literal,9ea8c2600507a009,2026-10-10
+nemotron-3.5-lightning-30b,nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,original,chat_template.jinja,reference,,content condition;long string literal,6aac77f4219ef780,2026-10-10
+granite-4.2-30b,ibm-granite/granite-4.2-30b,original,chat_template.jinja,reference,,content condition;long string literal,20a0a77f33d595a7,2026-10-10
+granite-4.2-8b,ibm-granite/granite-4.2-8b,original,chat_template.jinja,reference,,content condition;long string literal,20a0a77f33d595a7,2026-10-10
+olmo-3.1-32b-instruct,allenai/Olmo-3.1-32B-Instruct,original,chat_template.jinja,reference,,URL;content condition,abcf5fec60d40b41,2026-10-10
+olmo-3-7b-instruct,allenai/Olmo-3-7B-Instruct,original,chat_template.jinja,reference,,content condition,f566596a6f115d9b,2026-10-10
+qwen3.8-27b,Qwen/Qwen3.8-27B,original,chat_template.jinja,reference,,content condition;long string literal,da00e52a9e791655,2026-10-10
+qwen3.8-flash-next,Qwen/Qwen3.8-Flash-Next,original,chat_template.jinja,reference,,content condition;long string literal,da00e52a9e791655,2026-10-10
+deepseek-v4-pro-0813,deepseek-ai/DeepSeek-V4-Pro-0813,original,,not checked,no chat template in the repo,,,2026-10-10
+deepseek-v4.1-flash,deepseek-ai/DeepSeek-V4.1-Flash,original,chat_template.jinja,reference,,long string literal,954e483f0c7040fd,2026-10-10
+kimi-k3,moonshotai/Kimi-K3,original,,not checked,no chat template in the repo,,,2026-10-10
+glm-5.3,zai-org/GLM-5.3,original,chat_template.jinja,reference,,content condition;long string literal,93421a9524f51694,2026-10-10
+glm-5.3-flash,zai-org/GLM-5.3-Flash,original,chat_template.jinja,reference,,content condition;long string literal,915563ab628db85f,2026-10-10
+minimax-m3,MiniMaxAI/MiniMax-M3,original,chat_template.jinja,reference,,content condition;long string literal,d92fc1a7e559aa7f,2026-10-10
+hy4-preview,tencent/Hy4-preview,original,chat_template.jinja,reference,,content condition;long string literal,6315b2be35806565,2026-10-10
+k-exaone-2.0-750b,LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,original,chat_template.jinja,reference,,content condition;long string literal,57716f0bbb5e31f1,2026-10-10
+exaone-4.5-33b,LGAI-EXAONE/EXAONE-4.5-33B,original,chat_template.jinja,reference,,content condition,e888cc198ecc7fe4,2026-10-10
+solar-open2-250b,upstage/Solar-Open2-250B,original,chat_template.jinja,reference,,content condition;date or time;long string literal,44b9d967aac1ca8e,2026-10-10
+hyperclovax-seed-think-32b,naver-hyperclovax/HyperCLOVAX-SEED-Think-32B,original,chat_template.jinja,reference,,content condition,ebf09fe72399f5ad,2026-10-10
+llm-jp-4.1-33b-thinking,llm-jp/llm-jp-4.1-33b-thinking,original,chat_template.jinja,reference,,content condition;date or time;long string literal,52001cd0a7aff33a,2026-10-10
+llm-jp-4.1-32b-a3b-thinking,llm-jp/llm-jp-4.1-32b-a3b-thinking,original,chat_template.jinja,reference,,content condition;date or time;long string literal,52001cd0a7aff33a,2026-10-10
+qwen3-swallow-32b-rl,tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,original,chat_template.jinja,reference,,content condition,59b84d5e29a90eb8,2026-10-10
+gpt-oss-swallow-120b-rl,tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,original,chat_template.jinja,reference,,content condition;date or time;long string literal,82220ed8c127f55b,2026-10-10
+plamo-3-nict-2604-31b-base,pfnet/plamo-3-nict-2604-31b-base,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-10
+sarvam-105b,sarvamai/sarvam-105b,original,chat_template.jinja,reference,,content condition,763fbfde7f499eea,2026-10-10
+sarvam-30b,sarvamai/sarvam-30b,original,chat_template.jinja,reference,,content condition,763fbfde7f499eea,2026-10-10
+nemotron-sea-lion-v4.8-120b,aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,original,chat_template.jinja,reference,,content condition;long string literal,9ea8c2600507a009,2026-10-10
+qwen-sea-lion-v4.5-27b-it,aisingapore/Qwen-SEA-LION-v4.5-27B-IT,original,chat_template.jinja,reference,,content condition;long string literal,ebef8c626218ba8e,2026-10-10
+falcon-h1-34b,tiiuae/Falcon-H1-34B-Instruct,original,chat_template.jinja,reference,,content condition,8b71ed175db31374,2026-10-10
+falcon-h1r-7b,tiiuae/Falcon-H1R-7B,original,chat_template.jinja,reference,,content condition;long string literal,ec207ad4de4dd26e,2026-10-10
+k2-horizon-375b,IFM/K2-Horizon-375B-A23B,original,chat_template.jinja,reference,,content condition;long string literal,09c88618b9362d55,2026-10-10
+k2-horizon-32b,IFM/K2-Horizon-32B,original,chat_template.jinja,reference,,content condition;long string literal,09c88618b9362d55,2026-10-10
+jamba2-mini,ai21labs/AI21-Jamba2-Mini,original,chat_template.jinja,reference,,content condition,0cac9a559c15afe6,2026-10-10
+jamba2-3b,ai21labs/AI21-Jamba2-3B,original,chat_template.jinja,reference,,content condition,0cac9a559c15afe6,2026-10-10
+command-a-plus,CohereLabs/command-a-plus-05-2026-bf16,original,chat_template.jinja,reference,,content condition;long string literal,21cc659ed5a72bf8,2026-10-10
+tiny-aya-global,CohereLabs/tiny-aya-global,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-10

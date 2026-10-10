@@ -258,3 +258,480 @@ family,borealis2,terms_can_change,https://ai.nb.no/wp-content/uploads/2026/05/20
 family,borealis2,terms_can_change,https://huggingface.co/google/gemma-4-26B-A4B-it,community,yes,2026-10-09,https://web.archive.org/web/20261009130257/https://huggingface.co/google/gemma-4-26B-A4B-it,"the base model borealis2 starts from is published under apache-2.0, not the Gemma Terms of Use"
 family,domyn-small,license_class,https://www.domyn.com/legal/software-licenses/domyn-small,provider,yes,2026-10-09,https://web.archive.org/web/20261008163326/https://www.domyn.com/legal/software-licenses/domyn-small,"MIT text with minor rewording (use, copy, modify, merge, publish, distribute, sublicense, sell; notice required); no use restrictions"
 family,apertus-1.5,compute,https://www.cscs.ch/science/computer-science-hpc/2026/apertus-15-building-the-next-generation-of-open-ai-infrastructure,provider,yes,2026-10-09,https://web.archive.org/web/20261009152349/https://www.cscs.ch/science/computer-science-hpc/2026/apertus-15-building-the-next-generation-of-open-ai-infrastructure,CSCS on the 1.5 release (2026-07-24): 'Trained on the Alps supercomputer at CSCS in Lugano'; Alps is in Switzerland
+provider,meta,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Meta not listed (2026-10-10)
+provider,google,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Google listed (2026-10-10)
+provider,openai,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,OpenAI listed (2026-10-10)
+provider,microsoft,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Microsoft listed (2026-10-10)
+provider,nvidia,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,NVIDIA not listed (2026-10-10)
+provider,ibm,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,IBM listed (2026-10-10)
+provider,ai2,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Allen Institute for AI not listed (2026-10-10)
+provider,google,control,https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/googexhibit2101q42025.htm,official,yes,2026-10-10,,Alphabet 10-K FY2025 Exhibit 21.01 lists Google LLC (Delaware) as subsidiary
+family,llama-4,provider_id,https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md,provider,yes,2026-10-10,,Llama 4 model card in meta-llama/llama-models
+family,llama-4,origin,https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md,provider,yes,2026-10-10,,"Scout pretrained on ~40T tokens, Maverick on ~22T tokens of multimodal data"
+family,llama-4,license_class,https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE,provider,yes,2026-10-10,,"Llama 4 Community License; 700M MAU clause; AUP ""hereby incorporated by reference"""
+family,llama-4,license_class,https://www.llama.com/llama4/use-policy/,provider,yes,2026-10-10,,multimodal Llama 4 rights not granted to individuals/companies domiciled in the European Union
+family,llama-4,data,https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md,provider,yes,2026-10-10,,"mix of publicly available, licensed data and information from Meta products incl. Instagram/Facebook posts"
+family,llama-4,compute,https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md,provider,yes,2026-10-10,,"""Meta's custom built GPU clusters""; location not stated"
+family,llama-4,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,no Llama 4 summary listed (released Apr 2025; pre-existing models due Aug 2027)
+family,llama-4,training_hardware,https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md,provider,yes,2026-10-10,,7.38M GPU hours on H100-80GB
+family,llama-4,languages,https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md,provider,yes,2026-10-10,,"Supported languages: Arabic, English, French, German, Hindi, Indonesian, Italian, Portuguese, Spanish, Tagalog, Thai, Vietnamese"
+family,llama-4,recipe,https://github.com/meta-llama/llama-models/blob/main/models/llama4/MODEL_CARD.md,provider,yes,2026-10-10,,weights and inference code only; no training code or data released
+family,llama-4,terms_can_change,https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE,provider,yes,2026-10-10,,AUP incorporated by reference via URL; no explicit update clause found
+family,llama-4,teacher:Llama 4 Behemoth,https://ai.meta.com/blog/llama-4-multimodal-intelligence/,provider,yes,2026-10-10,,We codistilled the Llama 4 Maverick model from Llama 4 Behemoth as a teacher model
+model,llama-4-maverick,hf_repo,https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct,provider,yes,2026-10-10,,gated: manual approval
+family,gemma-4,provider_id,https://huggingface.co/google/gemma-4-31B-it,provider,yes,2026-10-10,,Gemma is a family of open models built by Google DeepMind
+family,gemma-4,origin,https://huggingface.co/google/gemma-4-31B-it,provider,yes,2026-10-10,,open-weights models in both pre-trained and instruction-tuned variants
+family,gemma-4,license_class,https://ai.google.dev/gemma/docs/gemma_4_license,provider,yes,2026-10-10,,Gemma 4 license page reproduces Apache License 2.0 verbatim
+family,gemma-4,terms_can_change,https://ai.google.dev/gemma/docs/gemma_4_license,provider,yes,2026-10-10,,plain Apache 2.0; Prohibited Use Policy only linked in site navigation
+family,gemma-4,data,https://huggingface.co/google/gemma-4-31B-it,provider,yes,2026-10-10,,"web documents, code, mathematics, images, audio, cutoff January 2025; no sources or token counts"
+family,gemma-4,compute,https://arxiv.org/abs/2607.02770,provider,yes,2026-10-10,,TPUv4 and TPUv6e; location not stated
+family,gemma-4,training_hardware,https://arxiv.org/abs/2607.02770,provider,yes,2026-10-10,,We train our models with TPUv4 and TPUv6e as outlined in Table 2
+family,gemma-4,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,"Gemma 4 (Google) listed with evaluated public summary, graded C/C"
+family,gemma-4,languages,https://huggingface.co/google/gemma-4-31B-it,provider,yes,2026-10-10,,"Out-of-the-box support for 35+ languages, pre-trained on 140+ languages; no list"
+family,gemma-4,recipe,https://huggingface.co/google/gemma-4-31B-it,provider,yes,2026-10-10,,weights only; no training code or data
+family,gemma-4,teacher_status,https://arxiv.org/abs/2607.02770,provider,yes,2026-10-10,,not stated
+family,gpt-oss,provider_id,https://huggingface.co/openai/gpt-oss-120b,provider,yes,2026-10-10,,OpenAI's open-weight models
+family,gpt-oss,origin,https://arxiv.org/abs/2508.10925,provider,yes,2026-10-10,,We train the models on a text-only dataset with trillions of tokens
+family,gpt-oss,license_class,https://huggingface.co/openai/gpt-oss-120b,provider,yes,2026-10-10,,Permissive Apache 2.0 license
+family,gpt-oss,license_class,https://huggingface.co/openai/gpt-oss-120b/blob/main/USAGE_POLICY,provider,yes,2026-10-10,,"By using OpenAI gpt-oss-120b, you agree to comply with all applicable law"
+family,gpt-oss,terms_can_change,https://huggingface.co/openai/gpt-oss-120b,provider,yes,2026-10-10,,Apache 2.0; usage policy only requires compliance with law
+family,gpt-oss,data,https://arxiv.org/abs/2508.10925,provider,yes,2026-10-10,,"text-only dataset ... focus on STEM, coding, and general knowledge; no sources listed"
+family,gpt-oss,compute,https://arxiv.org/abs/2508.10925,provider,yes,2026-10-10,,location not stated
+family,gpt-oss,training_hardware,https://arxiv.org/abs/2508.10925,provider,yes,2026-10-10,,trained on NVIDIA H100 GPUs; 2.1 million H100-hours for gpt-oss-120b
+family,gpt-oss,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,GPT-OSS listed among models with missing mandatory public summary
+family,gpt-oss,languages,https://arxiv.org/abs/2508.10925,provider,yes,2026-10-10,,not stated (MMMLU eval in 14 languages only)
+family,gpt-oss,recipe,https://github.com/openai/gpt-oss,provider,yes,2026-10-10,,reference inference implementations only
+family,gpt-oss,teacher_status,https://arxiv.org/abs/2508.10925,provider,yes,2026-10-10,,not stated; post-trained with CoT RL techniques similar to o3
+family,phi-4-reasoning-vision,provider_id,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,provider,yes,2026-10-10,,Microsoft model card; developer Microsoft
+family,phi-4-reasoning-vision,origin,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,provider,yes,2026-10-10,,built on the Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder
+family,phi-4-reasoning-vision,license_class,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,provider,yes,2026-10-10,,License: MIT
+family,phi-4-reasoning-vision,data,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md,provider,yes,2026-10-10,,"AI Act summary: public datasets, licensed data, no crawling, no user data, synthetic data"
+family,phi-4-reasoning-vision,compute,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,provider,yes,2026-10-10,,Training GPUs: 240 B200s; location not stated
+family,phi-4-reasoning-vision,ai_act_summary,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md,provider,yes,2026-10-10,,"Public summary in Commission template; Microsoft Ireland Operations Limited; v1.0, 31 Aug 2026"
+family,phi-4-reasoning-vision,training_hardware,https://huggingface.co/microsoft/phi-4,provider,yes,2026-10-10,,"Phi-4 base: GPUs 1920 H100-80G, 21 days, 9.8T tokens"
+family,phi-4-reasoning-vision,languages,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,provider,yes,2026-10-10,,trained primarily on English text ... not intended to support multilingual use
+family,phi-4-reasoning-vision,recipe,https://github.com/microsoft/phi-4-reasoning-vision-15B,provider,yes,2026-10-10,,"repo holds inference code (transformers, vLLM) only"
+family,phi-4-reasoning-vision,teacher:GPT-4o,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md,provider,yes,2026-10-10,,2.5.3 models used to generate synthetic data: Open AI GPT-4o and o4-mini
+family,phi-4-reasoning-vision,teacher:o4-mini,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md,provider,yes,2026-10-10,,2.5.3 models used to generate synthetic data: Open AI GPT-4o and o4-mini
+family,nemotron-3,provider_id,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,NVIDIA model card
+family,nemotron-3,origin,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,Base model was pre-trained for over 25T tokens using crawled and synthetic ... data
+family,nemotron-3,license_class,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,provider,yes,2026-10-10,,"NVIDIA Nemotron Open Model License: perpetual, irrevocable; licensee indemnifies NVIDIA; Delaware law"
+family,nemotron-3,terms_can_change,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,provider,yes,2026-10-10,,"grant ""perpetual ... irrevocable""; no update clause (v. December 15, 2025)"
+family,nemotron-3,data,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,we release our final pre-training and post-training data; code/math/multilingual gated; private third-party sets listed
+family,nemotron-3,compute,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,location not stated
+family,nemotron-3,ai_act_summary,https://developer.download.nvidia.com/assets/nemo/docs/public-summary-of-training-content-for-nvidia-nemotron.pdf,provider,yes,2026-10-10,,"Public Summary of Training Content for NVIDIA Nemotron 3 and 3.5 Family, lists Nemotron-3-Super-120B-A12B"
+family,nemotron-3,training_hardware,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf,provider,yes,2026-10-10,,64-way context parallelism ... to train on GB200 GPUs (long-context phase)
+family,nemotron-3,languages,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"Supported Languages: English, French, German, Italian, Japanese, Spanish, Chinese"
+family,nemotron-3,recipe,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,end-to-end training recipe in NVIDIA Nemotron Developer Repository; Megatron-LM; datasets released
+family,nemotron-3,"teacher:Qwen models (Qwen3-235B-A22B incl. Thinking-2507, Qwen3-30B-A3B, Qwen2.5-72B/32B, QwQ-32B)",https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic pre-training data: formal logic, economics, MCQ, rephrased/translated Common Cra"
+family,nemotron-3,teacher:DeepSeek-V3 and DeepSeek-R1,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic tasks, STEM, AGIEval and AoPS data"
+family,nemotron-3,teacher:gpt-oss-120b and gpt-oss-20b,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": Nemotron-Pretraining-Code-Concepts and algorithmic data"
+family,nemotron-3,teacher:phi-4,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": Nemotron-MIND / CC-Math rephrasing and synthetic Common Crawl code"
+family,nemotron-3,teacher:Mixtral-8x22B-v0.1,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic moral stories, social and health sciences from OpenStax"
+family,nemotron-3,teacher:Mistral-NeMo-12B-Instruct,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic Common Crawl (joint Mistral AI/NVIDIA model)"
+family,nemotron-3,teacher:Nemotron-4-340B-Instruct,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic math data from Wikimedia"
+family,nemotron-3,teacher:gpt-oss-120b,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": reasoning traces, solutions, tool calling, chat, safety SFT data"
+family,nemotron-3,"teacher:Qwen3 models (Qwen3-235B-A22B-Instruct/Thinking-2507, Qwen3-Coder-480B-A35B, Qwen3-32B, Qwen3-Next-80B)",https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": STEM, tool calling, structured outputs, SWE trajectories, long context"
+family,nemotron-3,teacher:DeepSeek-R1-0528 and DeepSeek-V3.2,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": code, math, safety, agentic and SWE data"
+family,nemotron-3,"teacher:Kimi-K2-Thinking / Kimi-K2.5, MiniMax-M2, GLM-4.7-Flash",https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": SWE, search and terminal agent data"
+family,nemotron-3,"teacher:Mixtral-8x22B-Instruct, Mixtral-8x7B, Mistral-Small-3.1/3.2, Mistral-7B-Instruct-v0.3",https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": chat, safety and preference data"
+family,nemotron-3,"teacher:gemma-2-2b-it, gemma-3-27b-it, gemma-3-4b-it",https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": preference responses and safety data"
+family,nemotron-3,teacher:NVIDIA-Nemotron-Nano-9B-v2,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": safety and instruction-following RL data"
+family,nemotron-3,teacher:Gemini 3 and GPT-5,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": prompt generation only for search RL data"
+family,nemotron-3.5,provider_id,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,large language model (LLM) trained by NVIDIA
+family,nemotron-3.5,origin,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,no,2026-10-10,,"pre-trained with over 20T tokens ... NVFP4 recipe [review: Card only says ""pre-trained with over 20T tokens"" under a ""Nemotron 3 Foundation"" corpus; no from-scratch claim. NVIDIA AI Act summary (same family PDF) says ""N]"
+family,nemotron-3.5,license_class,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,Governing Download Terms: OpenMDW-1.1 model license
+family,nemotron-3.5,license_class,https://openmdw.ai/license/1-1/,community,yes,2026-10-10,,OpenMDW-1.1: permission to deal in the Model Materials without restriction; no output restrictions
+family,nemotron-3.5,terms_can_change,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"OpenMDW-1.1, permissive; no use policy"
+family,nemotron-3.5,data,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,we release our final pre-training and post-training data; vendor/purchased datasets undisclosed
+family,nemotron-3.5,compute,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,location not stated
+family,nemotron-3.5,ai_act_summary,https://developer.download.nvidia.com/assets/nemo/docs/public-summary-of-training-content-for-nvidia-nemotron.pdf,provider,yes,2026-10-10,,Nemotron 3 and 3.5 Family summary lists NVIDIA-Nemotron-3.5-Lightning-30B-A3B
+family,nemotron-3.5,training_hardware,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,not stated (only supported inference hardware listed)
+family,nemotron-3.5,languages,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"Supported Languages: English, Spanish, French, German, Italian, Japanese"
+family,nemotron-3.5,recipe,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,Megatron-LM pre-training; datasets released; eval reproducibility in NeMo Gym
+family,nemotron-3.5,"teacher:Qwen models (Qwen3-235B-A22B incl. Thinking-2507, Qwen3-30B-A3B-Instruct-2507, Qwen2.5-72B)",https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic pre-training data: fact-seeking, legal, formal logic, economics, MCQ, translatio"
+family,nemotron-3.5,teacher:DeepSeek-V3 and DeepSeek-R1,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic tasks, STEM and AoPS data"
+family,nemotron-3.5,teacher:gpt-oss-120b and gpt-oss-20b,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": code concepts and algorithmic data"
+family,nemotron-3.5,teacher:phi-4,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": rephrased Common Crawl math and code"
+family,nemotron-3.5,teacher:Mixtral-8x22B-v0.1,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": moral stories, social and health sciences"
+family,nemotron-3.5,teacher:Nemotron-4-340B-Instruct,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic math from Wikimedia"
+family,nemotron-3.5,teacher:gpt-oss-120b and Kimi-K2,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": science reasoning, MCQ, search and tool data"
+family,nemotron-3.5,"teacher:DeepSeek-V4-Pro, DeepSeek-V3.2, DeepSeek-R1-0528",https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": competitive math/coding/science, agentic tool use, SWE"
+family,nemotron-3.5,"teacher:Qwen3 models (Qwen3-235B-A22B-Instruct/Thinking-2507, Qwen3-Coder-480B-A35B, Qwen3-Next-80B)",https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": structured outputs, tool calling, long context, SWE"
+family,nemotron-3.5,"teacher:GLM-5, GLM-4.7, GLM-4.6, Ring-1T, MiniMax-M2",https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": chat (reasoning on/off), CUDA agent traces, terminal and search data"
+family,nemotron-3.5,teacher:GPT-5.5,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": synthetic math RL data (Skywork, DAPO, Turing Math)"
+family,nemotron-3.5,"teacher:Mistral-Small-3.1/3.2, Mixtral-8x22B-Instruct, Mistral-7B-Instruct-v0.3, Ministral-3-14B-Reasoning-2512",https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": preference and chat responses"
+family,nemotron-3.5,teacher:Nemotron 3 Super v3 and Nemotron 5.5,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": abstention, chemistry, prompt-injection and math proof data"
+family,nemotron-3.5,teacher:Claude 4 Sonnet,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": filtering of synthetic Verilog/SystemVerilog code"
+family,nemotron-3.5,teacher:Qwen3-Nemotron-235B-A22B-GenRM,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,provider,yes,2026-10-10,,"card dataset table ""Model(s) used for generation"": best-of-4 selection of GLM-5 chat data"
+family,granite-4.2,provider_id,https://huggingface.co/ibm-granite/granite-4.2-30b,provider,yes,2026-10-10,,open-source large language models developed by IBM
+family,granite-4.2,origin,https://huggingface.co/ibm-granite/granite-4.2-30b,provider,yes,2026-10-10,,post-trained from Granite-4.1-30B-Base
+family,granite-4.2,origin,https://huggingface.co/blog/ibm-granite/granite-4-1,community,yes,2026-10-10,,Granite 4.1 is trained from scratch on approximately 15 trillion tokens [IBM article under the ibm-granite org; the validator files HF blog posts as community]
+family,granite-4.2,license_class,https://huggingface.co/ibm-granite/granite-4.2-30b,provider,yes,2026-10-10,,License: Apache 2.0
+family,granite-4.2,data,https://github.com/ibm-granite/granite-4.2-language-models/blob/main/disclosures/granite_4.2_30b_disclosure.json,provider,yes,2026-10-10,,machine-readable list of pre- and post-training datasets with sizes and provenance
+family,granite-4.2,compute,https://huggingface.co/ibm-granite/granite-4.2-30b,provider,yes,2026-10-10,,NVIDIA GB200 NVL72 cluster hosted in CoreWeave; location not stated
+family,granite-4.2,training_hardware,https://huggingface.co/blog/ibm-granite/granite-4-1,community,yes,2026-10-10,,We trained the Granite 4.1 Language Models on an NVIDIA GB200 NVL72 cluster hosted on CoreWeave [IBM article under the ibm-granite org; the validator files HF blog posts as community]
+family,granite-4.2,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,Granite 4.2 (IBM) listed among models with missing mandatory public summary
+family,granite-4.2,languages,https://huggingface.co/ibm-granite/granite-4.2-30b,provider,yes,2026-10-10,,"Tested Languages: English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, Chinese"
+family,granite-4.2,recipe,https://huggingface.co/ibm-granite/granite-4.2-30b,provider,yes,2026-10-10,,weights; dataset disclosures but no training code
+family,granite-4.2,teacher_status,https://huggingface.co/ibm-granite/granite-4.2-30b,provider,yes,2026-10-10,,"not stated (internal synthetic data, generative reward model unnamed)"
+family,olmo-3,provider_id,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct,provider,yes,2026-10-10,,Ai2 model card in allenai org
+family,olmo-3,origin,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct,provider,yes,2026-10-10,,pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets
+family,olmo-3,license_class,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct,provider,yes,2026-10-10,,licensed under Apache 2.0 ... intended for research and educational use per Responsible Use Guidelines
+family,olmo-3,data,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct,provider,yes,2026-10-10,,"releasing all code, checkpoints, logs and associated training details; Dolma 3 / Dolci on HF"
+family,olmo-3,compute,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,1024 H100 GPUs; location not stated
+family,olmo-3,training_hardware,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,cluster with 1024 H100 GPUs dedicated to Olmo 3
+family,olmo-3,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,no Olmo summary listed (neither evaluated nor missing)
+family,olmo-3,languages,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct,provider,yes,2026-10-10,,Language(s) (NLP): English
+family,olmo-3,recipe,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct,provider,yes,2026-10-10,,"code, data, intermediate checkpoints released (OLMo-core, Open Instruct)"
+family,olmo-3,teacher:GPT-4.1 and o4-mini,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,Olmo 3 report: thinking traces for capability-targeted midtraining tasks; GPT-4.1 rewrite of OpenMathReasoning
+family,olmo-3,teacher:Qwen3,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,Olmo 3 report: rewrite of MegaMath web data (MegaMatt)
+family,olmo-3,teacher:QwQ-32B,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,"Olmo 3 report: Dolci Think SFT reasoning traces (math, code, precise IF)"
+family,olmo-3,teacher:DeepSeek R1,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,Olmo 3 report: reasoning traces for safety and other SFT subsets
+family,olmo-3,teacher:GPT-4.1,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,"Olmo 3 report: test-case generation, Tulu 3 rewrites, updated instruct SFT completions"
+family,olmo-3,"teacher:GPT-4o, GPT-4.1 and GPT-5",https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,Olmo 3 report: simulated tool-use trajectories for instruct SFT
+family,olmo-3,teacher:Qwen3-32B and Qwen3-0.6B,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,Olmo 3 report: chosen/rejected responses for delta-learning DPO pairs
+family,olmo-3,teacher:Qwen3-32B,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,Olmo 3 report: LM-judge reward in OlmoRL
+family,olmo-3,teacher:GPT-4.1,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,Olmo 3 report: GPT-4.1 judges the contrastive DPO pairs
+family,olmo-3,teacher:Gemma 3 12B,https://arxiv.org/abs/2512.13961,provider,yes,2026-10-10,,Olmo 3 report: PII classification of olmOCR science PDFs
+provider,alibaba-qwen,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Alibaba not listed (page last updated 2026-10-07)
+provider,deepseek,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,DeepSeek not listed (page last updated 2026-10-07)
+provider,moonshot,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Moonshot AI not listed (page last updated 2026-10-07)
+provider,zhipu,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Zhipu/Z.ai not listed (page last updated 2026-10-07)
+provider,minimax,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,MiniMax not listed (page last updated 2026-10-07)
+provider,tencent,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Tencent not listed (page last updated 2026-10-07)
+provider,alibaba-qwen,notes,https://github.com/QwenLM,provider,yes,2026-10-10,,"GitHub org QwenLM: ""Alibaba Cloud's general-purpose AI models"""
+provider,deepseek,notes,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,provider,yes,2026-10-10,,"Provider: Hangzhou DeepSeek Artificial Intelligence Co., Ltd.; EU authorised representative Prighter Group"
+provider,deepseek,notes,https://www.bloomberg.com/billionaires/profiles/wenfeng-liang/,press,yes,2026-10-10,,Liang Wenfeng founded High-Flyer and DeepSeek; holds majority of DeepSeek (Qichacha data cited)
+provider,moonshot,notes,https://www.bloomberg.com/news/articles/2026-02-17/china-ai-startup-moonshot-seeks-10-billion-value-in-new-funding,press,yes,2026-10-10,,funding round already backed by Alibaba Group Holding Ltd. and Tencent Holdings Ltd.
+provider,moonshot,notes,https://www.techtimes.com/articles/322091/20260729/moonshot-ai-closes-35b-round-its-open-weights-come-china-data-risk.htm,press,yes,2026-10-10,,USD 3.5B round at USD 35B valuation; National AI Industry Investment Fund reported among lead backers
+provider,zhipu,notes,https://www.bloomberg.com/news/articles/2026-01-07/china-s-openai-rival-zhipu-debuts-in-hk-after-558-million-ipo,press,yes,2026-10-10,,Zhipu debuts in Hong Kong after USD 558 million IPO
+provider,zhipu,notes,https://www.eweek.com/news/zhipu-hong-kong-ipo/,press,yes,2026-10-10,,added to US Commerce Department Entity List in January 2025
+provider,minimax,notes,https://www.cnbc.com/2026/01/09/minimax-hong-kong-ipo-ai-tigers-zhipu.html,press,yes,2026-10-10,,MiniMax doubles in Hong Kong debut (9 Jan 2026)
+provider,minimax,notes,https://www.yicaiglobal.com/news/chinese-ai-startup-minimaxs-stock-pops-in-hong-kong-trading-debut,press,yes,2026-10-10,,"Founder Yan Junjie ~26% voting rights; Alibaba 15%, miHoYo 7.1%, IDG 3.1%, Tencent 2.8%"
+provider,minimax,notes,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,provider,yes,2026-10-10,,Provider name: Nanonoble Pte. Ltd.; authorised representative: Prighter GmbH
+provider,tencent,notes,https://www.prosus.com/~/media/Files/P/prosus-corp-v2/results-reports-and-events-archive/latest-results/hy2026/hy2026-summary-consolidated-financial-statements.pdf,official,yes,2026-10-10,,Prosus retained a 22.8% interest in Tencent (30 Sep 2025)
+family,qwen3.8,provider_id,https://huggingface.co/Qwen/Qwen3.8-27B,provider,yes,2026-10-10,,"official Qwen org; ""Qwen3.8, the most capable generation in the Qwen open-model family"""
+family,qwen3.8,license_class,https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE,provider,yes,2026-10-10,,Apache License Version 2.0
+family,qwen3.8,terms_can_change,https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE,provider,yes,2026-10-10,,"plain Apache-2.0, no update clause"
+family,qwen3.8,origin,https://huggingface.co/Qwen/Qwen3.8-27B,provider,no,2026-10-10,,"""Training Stage: Pre-training & Post-training""; ""Built on the architectural foundation of Qwen3.5"" [review: card says ""Training Stage: Pre-training & Post-training"" and ""Built on the architectural foundation of Qwen3.5""; does not say from scratch vs. initialised from ]"
+family,qwen3.8,data,https://huggingface.co/Qwen/Qwen3.8-27B,provider,yes,2026-10-10,,not stated
+family,qwen3.8,compute,https://huggingface.co/Qwen/Qwen3.8-27B,provider,yes,2026-10-10,,not stated
+family,qwen3.8,training_hardware,https://huggingface.co/Qwen/Qwen3.8-27B,provider,yes,2026-10-10,,not stated
+family,qwen3.8,languages,https://huggingface.co/Qwen/Qwen3.8-27B,provider,yes,2026-10-10,,not stated
+family,qwen3.8,recipe,https://huggingface.co/Qwen/Qwen3.8-27B,provider,yes,2026-10-10,,"""model weights and configuration files for the post-trained model""; no training code or data"
+family,qwen3.8,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,no Alibaba/Qwen summary in AI Accountability Lab tracker (checked 2026-10-10)
+family,qwen3.8-flash-next,provider_id,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,provider,yes,2026-10-10,,official Qwen org
+family,qwen3.8-flash-next,license_class,https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE,provider,yes,2026-10-10,,"Qwen Community License 1.0: MaaS or AI Work Assistant business ""shall obtain a separate license from Qwen"""
+family,qwen3.8-flash-next,terms_can_change,https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE,provider,yes,2026-10-10,,licence text has no clause allowing later changes
+family,qwen3.8-flash-next,origin,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,provider,yes,2026-10-10,,"new architecture; ""the full-scale training of Qwen3.8-Flash-Next proceeded smoothly without a single loss spike"""
+family,qwen3.8-flash-next,origin,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,provider,yes,2026-10-10,,"""Training Stage: Pre-training & Post-training"""
+family,qwen3.8-flash-next,data,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,provider,yes,2026-10-10,,"not stated (report covers architecture and ablations; ""roughly a third as many tokens"" as predecessor)"
+family,qwen3.8-flash-next,compute,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,provider,yes,2026-10-10,,not stated
+family,qwen3.8-flash-next,training_hardware,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,provider,yes,2026-10-10,,"not stated (only kernel benchmarks ""on NVIDIA GPUs"")"
+family,qwen3.8-flash-next,recipe,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,provider,yes,2026-10-10,,weights and configuration of the post-trained model only
+family,qwen3.8-flash-next,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,no Alibaba/Qwen summary in AI Accountability Lab tracker (checked 2026-10-10)
+family,deepseek-v4,provider_id,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,provider,yes,2026-10-10,,"official deepseek-ai org; ""official release of DeepSeek-V4-Pro"""
+family,deepseek-v4,license_class,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/main/LICENSE,provider,yes,2026-10-10,,"MIT License, Copyright (c) 2023 DeepSeek"
+family,deepseek-v4,terms_can_change,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/main/LICENSE,provider,yes,2026-10-10,,plain MIT
+family,deepseek-v4,origin,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,provider,yes,2026-10-10,,"""Model dependencies: None"""
+family,deepseek-v4,origin,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,provider,yes,2026-10-10,,"""We pre-train both models on more than 32T diverse and high-quality tokens"""
+family,deepseek-v4,data,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,provider,yes,2026-10-10,,Common Crawl and Stack Exchange; licensed datasets; own synthetic data; no user data
+family,deepseek-v4,compute,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,provider,yes,2026-10-10,,not stated
+family,deepseek-v4,training_hardware,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro,provider,yes,2026-10-10,,not stated (tech report arXiv 2606.19348 validates inference on NVIDIA GPUs and Huawei Ascend NPUs only)
+family,deepseek-v4,ai_act_summary,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,provider,yes,2026-10-10,,"Public Summary of Training Content for DeepSeek-V4 (Pro and Flash), last update 4/08/2026"
+family,deepseek-v4,languages,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,provider,yes,2026-10-10,,"""Multilingual, with strong coverage in Chinese and English"""
+family,deepseek-v4,recipe,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,provider,yes,2026-10-10,,weights plus inference/encoding code; no training code or data
+family,deepseek-v4,teacher:DeepSeek-V4 domain expert models,https://arxiv.org/abs/2606.19348,provider,yes,2026-10-10,,"""more than ten teacher models covering various domains are employed to distill a single student model"" (own experts; provider report on arXiv)"
+family,deepseek-v4,teacher:earlier and internal DeepSeek models,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,provider,yes,2026-10-10,,"""DeepSeek generated synthetic data using its own AI models, including ... publicly available earlier DeepSeek models"""
+family,deepseek-v4.1,provider_id,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,provider,yes,2026-10-10,,official deepseek-ai org
+family,deepseek-v4.1,license_class,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/LICENSE,provider,yes,2026-10-10,,MIT License
+family,deepseek-v4.1,terms_can_change,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/LICENSE,provider,yes,2026-10-10,,plain MIT
+family,deepseek-v4.1,origin,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,provider,yes,2026-10-10,,"""trained from scratch on a multimodal corpus comprising 45T tokens"""
+family,deepseek-v4.1,data,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf,provider,yes,2026-10-10,,"text and multimodal pipelines, re-bootstrapped from Common Crawl, 7:1 text-only to multimodal tokens"
+family,deepseek-v4.1,compute,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf,provider,yes,2026-10-10,,not stated
+family,deepseek-v4.1,training_hardware,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf,provider,yes,2026-10-10,,not stated
+family,deepseek-v4.1,recipe,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,provider,yes,2026-10-10,,weights plus encoding code and tech report; no training code or data
+family,deepseek-v4.1,ai_act_summary,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,provider,yes,2026-10-10,,summary found names DeepSeek-V4 (Pro and Flash) only; no V4.1 summary found
+family,deepseek-v4.1,teacher:SmolVLM,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf,provider,yes,2026-10-10,,"""we employ SmolVLM ... to conduct strict quality scoring on the image-text content"""
+family,deepseek-v4.1,notes,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf,provider,yes,2026-10-10,,"final OPD ""trained on datasets from all domains using over 40 teacher models"" (not named)"
+family,kimi-k3,provider_id,https://huggingface.co/moonshotai/Kimi-K3,provider,yes,2026-10-10,,"official moonshotai org; ""our most capable model to date"""
+family,kimi-k3,license_class,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,provider,yes,2026-10-10,,"Kimi K3 License: MaaS above USD 20M revenue ""must enter into a separate agreement with Moonshot AI"""
+family,kimi-k3,terms_can_change,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,provider,yes,2026-10-10,,licence text has no clause allowing later changes
+family,kimi-k3,origin,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,provider,yes,2026-10-10,,"""language and vision are jointly optimized from the start of training""; vision encoder trained ""entirely from scratch"""
+family,kimi-k3,data,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,provider,yes,2026-10-10,,"""curated corpus spanning four primary text domains—Web Text, Code, Mathematics, and Knowledge"" plus vision corpus"
+family,kimi-k3,compute,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,provider,yes,2026-10-10,,not stated
+family,kimi-k3,training_hardware,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,provider,yes,2026-10-10,,not stated (only kernel benchmarks on NVIDIA Hopper and an alternative-vendor GPGPU)
+family,kimi-k3,recipe,https://huggingface.co/moonshotai/Kimi-K3,provider,yes,2026-10-10,,weights and inference/processing code; no training code or data
+family,kimi-k3,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,no Moonshot summary in AI Accountability Lab tracker (checked 2026-10-10)
+family,kimi-k3,teacher:prior Kimi domain-specialized models,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,provider,yes,2026-10-10,,"""we synthesize data trajectories using domain-specialized models from the prior Kimi series"""
+family,kimi-k3,teacher:Kimi K3 domain and effort experts,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,provider,yes,2026-10-10,,"MOPD: ""optimization is guided by the corresponding teacher model"" per domain and effort"
+family,kimi-k3,teacher:internal agentic generative reward model,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,provider,yes,2026-10-10,,"""model judging by an internal reward model""; Agentic GRM for non-verifiable tasks"
+family,glm-5.3,provider_id,https://huggingface.co/zai-org/GLM-5.3,provider,yes,2026-10-10,,official zai-org org
+family,glm-5.3,license_class,https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE,provider,yes,2026-10-10,,"GLM-5.3 License: MaaS above USD 10B revenue ""must pass Z.AI's security review"""
+family,glm-5.3,license_class,https://thenewstack.io/zai-glm-weights-license/,press,yes,2026-10-10,,GLM-5.3 moves off the MIT licence used for GLM-5.2
+family,glm-5.3,terms_can_change,https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE,provider,yes,2026-10-10,,"no update clause; scope of security review ""shall be reasonably determined by Z.AI"""
+family,glm-5.3,origin,https://huggingface.co/zai-org/GLM-5.3,provider,yes,2026-10-10,,"""GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training"""
+family,glm-5.3,base_model,https://huggingface.co/zai-org/GLM-5.3,provider,yes,2026-10-10,,same base model as GLM-5.2
+family,glm-5.3,data,https://huggingface.co/zai-org/GLM-5.3,provider,yes,2026-10-10,,not stated
+family,glm-5.3,compute,https://huggingface.co/zai-org/GLM-5.3,provider,yes,2026-10-10,,not stated
+family,glm-5.3,training_hardware,https://huggingface.co/zai-org/GLM-5.3,provider,yes,2026-10-10,,not stated (Ascend NPU listed for inference deployment only)
+family,glm-5.3,languages,https://huggingface.co/zai-org/GLM-5.3,provider,yes,2026-10-10,,"Hub metadata language: en, zh"
+family,glm-5.3,recipe,https://huggingface.co/zai-org/GLM-5.3,provider,yes,2026-10-10,,weights only; deployment links
+family,glm-5.3,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,no Z.ai summary in AI Accountability Lab tracker (checked 2026-10-10)
+family,glm-5.3-flash,provider_id,https://huggingface.co/zai-org/GLM-5.3-Flash,provider,yes,2026-10-10,,official zai-org org
+family,glm-5.3-flash,license_class,https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/LICENSE,provider,yes,2026-10-10,,"MIT License, Copyright (c) 2026 Z.AI Co., Ltd"
+family,glm-5.3-flash,terms_can_change,https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/LICENSE,provider,yes,2026-10-10,,plain MIT
+family,glm-5.3-flash,origin,https://huggingface.co/zai-org/GLM-5.3-Flash,provider,yes,2026-10-10,,"""GLM-5.3-Flash starts from a newly trained base model"""
+family,glm-5.3-flash,data,https://huggingface.co/zai-org/GLM-5.3-Flash,provider,yes,2026-10-10,,"only ""our latest 30T-token multimodal pre-training corpus""; mix not described"
+family,glm-5.3-flash,compute,https://huggingface.co/zai-org/GLM-5.3-Flash,provider,yes,2026-10-10,,not stated
+family,glm-5.3-flash,training_hardware,https://huggingface.co/zai-org/GLM-5.3-Flash,provider,yes,2026-10-10,,not stated
+family,glm-5.3-flash,languages,https://huggingface.co/zai-org/GLM-5.3-Flash,provider,yes,2026-10-10,,"Hub metadata language: en, zh"
+family,glm-5.3-flash,recipe,https://huggingface.co/zai-org/GLM-5.3-Flash,provider,yes,2026-10-10,,weights only
+family,glm-5.3-flash,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,no Z.ai summary in AI Accountability Lab tracker (checked 2026-10-10)
+family,minimax-m3,provider_id,https://huggingface.co/MiniMaxAI/MiniMax-M3,provider,yes,2026-10-10,,official MiniMaxAI org
+family,minimax-m3,license_class,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,provider,yes,2026-10-10,,MiniMax Community License: non-commercial grant; commercial use needs attribution and notice/authorisation; no military use
+family,minimax-m3,terms_can_change,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,provider,yes,2026-10-10,,licence text has no clause allowing later changes
+family,minimax-m3,origin,https://huggingface.co/MiniMaxAI/MiniMax-M3,provider,yes,2026-10-10,,"""M3 undergoes mixed-modality training from the very first step"""
+family,minimax-m3,origin,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,provider,yes,2026-10-10,,"""Model dependencies: None."""
+family,minimax-m3,data,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,provider,yes,2026-10-10,,"AI Act summary v1.0 (22/07/2026): Common Crawl, other public, licensed and private datasets, own synthetic data"
+family,minimax-m3,compute,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,provider,yes,2026-10-10,,not stated
+family,minimax-m3,training_hardware,https://huggingface.co/MiniMaxAI/MiniMax-M3,provider,yes,2026-10-10,,not stated
+family,minimax-m3,ai_act_summary,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,provider,yes,2026-10-10,,"""M3-the Public Summary of Training Content"", version 1.0"
+family,minimax-m3,languages,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,provider,yes,2026-10-10,,"""Multilingual, with English coverage and other languages from around the world"""
+family,minimax-m3,recipe,https://huggingface.co/MiniMaxAI/MiniMax-M3,provider,yes,2026-10-10,,weights only; inference via third-party engines
+family,minimax-m3,teacher:MiniMax-M2.7,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,provider,yes,2026-10-10,,"""MiniMax generated synthetic data using its own general-purpose AI models, including MiniMax-M2.7"""
+family,hy4,provider_id,https://huggingface.co/tencent/Hy4-preview,provider,yes,2026-10-10,,"official tencent org; ""developed by the Tencent Hy Team"""
+family,hy4,license_class,https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE,provider,yes,2026-10-10,,"""Tencent Hy4 preview is licensed under the Apache-2.0"""
+family,hy4,terms_can_change,https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE,provider,yes,2026-10-10,,plain Apache-2.0
+family,hy4,origin,https://huggingface.co/tencent/Hy4-preview,provider,yes,2026-10-10,,"""new-generation ... flagship model""; scaled ""model size, context length, and training data""; stronger pre-training"
+family,hy4,data,https://huggingface.co/tencent/Hy4-preview,provider,yes,2026-10-10,,not stated (only post-training data built with in-house experts)
+family,hy4,compute,https://huggingface.co/tencent/Hy4-preview,provider,yes,2026-10-10,,not stated
+family,hy4,training_hardware,https://huggingface.co/tencent/Hy4-preview,provider,yes,2026-10-10,,not stated
+family,hy4,recipe,https://huggingface.co/tencent/Hy4-preview,provider,yes,2026-10-10,,weights plus fine-tuning example scripts; no pre-training code or data
+family,hy4,ai_act_summary,https://aial.ie/research/gpai-training-transparency/,academic,yes,2026-10-10,,tracker lists Tencent Hy3 summary only; none for Hy4 preview (checked 2026-10-10)
+provider,lg-ai,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,LG / LG AI Research not listed (last update 2026-10-07)
+provider,upstage,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Upstage not listed (last update 2026-10-07)
+provider,naver,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,NAVER not listed (last update 2026-10-07)
+provider,llm-jp,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,NII / LLM-jp not listed (last update 2026-10-07)
+provider,swallow,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Institute of Science Tokyo not listed (last update 2026-10-07)
+provider,pfn,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Preferred Networks not listed (last update 2026-10-07)
+provider,sarvam,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Sarvam AI not listed (last update 2026-10-07)
+provider,ai-singapore,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,AI Singapore not listed (last update 2026-10-07)
+provider,lg-ai,control,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,provider,yes,2026-10-10,,"Licensor: LG Management Development Institute Co., Ltd."
+provider,lg-ai,control,https://arxiv.org/abs/2608.04505,provider,no,2026-10-10,,"Korean government strategic program provides GPUs for large-scale foundation models [review: Only says the Korean government programme provided GPUs. That is funding, not ownership. Fits notes, not control.]"
+provider,upstage,control,https://arxiv.org/abs/2607.20062,provider,no,2026-10-10,,"Sovereign AI Foundation Model Project (GPU Track), MSIT, supported by NIPA [review: Acknowledgements name the MSIT/NIPA GPU track and Lablup. Funding, not ownership. Fits notes, not control.]"
+provider,naver,control,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE,provider,yes,2026-10-10,,NAVER Corp. (IP holder) and its affiliate NAVER Cloud Corp. (exclusive operator of HyperCLOVA X)
+provider,naver,notes,https://www.koreatimes.co.kr/business/tech-science/20260107/national-ai-model-project-faces-controversies-over-plagiarism-claims,press,no,2026-10-10,,"Plagiarism claims around Naver's model in the national AI project (Qwen vision encoder) [review: Article (7 Jan 2026) covers the Qwen vision-encoder plagiarism claims, published before the 15 Jan evaluation. It does not support the stored 'eliminated from t]"
+provider,llm-jp,control,https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking,provider,yes,2026-10-10,,developed by the R&D Center for Large Language Models at the National Institute of Informatics
+provider,swallow,control,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,no,2026-10-10,,"Acknowledgements: NEDO JPNP25006, MEXT project, ABCI 3.0 (AIST), TSUBAME4.0 (Institute of Science Tokyo) [review: Acknowledgements list funding and compute only (NEDO, MEXT, ABCI 3.0, TSUBAME4.0). Nothing on ownership; fits notes.]"
+provider,pfn,control,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,"developed by Preferred Networks, Inc. in collaboration with NICT"
+provider,sarvam,control,https://www.sarvam.ai/blogs/sarvam-30b-105b,provider,no,2026-10-10,,"Training was conducted entirely in India on compute provided under the IndiaAI mission [review: Blog covers compute under the IndiaAI mission, not ownership. Fits notes, not control.]"
+provider,ai-singapore,control,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,provider,yes,2026-10-10,,"Developed by: AI Products Pillar, AI Singapore; Funded by: National Research Foundation Singapore"
+family,k-exaone-2.0,provider_id,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,provider,yes,2026-10-10,,"K-EXAONE 2.0, a frontier-scale multilingual language model developed by LG AI Research"
+family,k-exaone-2.0,origin,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,provider,yes,2026-10-10,,"scaled to more than three times the size of its predecessor through upcycling, followed by continual pretraining"
+family,k-exaone-2.0,base_model,https://arxiv.org/abs/2608.04505,provider,yes,2026-10-10,,upcycled from K-EXAONE by expanding the model along depth (48->78 layers) and width (128->256 experts)
+family,k-exaone-2.0,license_class,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,provider,yes,2026-10-10,,licensed under Apache License 2.0
+family,k-exaone-2.0,terms_can_change,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/main/LICENSE,provider,yes,2026-10-10,,plain Apache-2.0 licence file
+family,k-exaone-2.0,data,https://arxiv.org/abs/2608.04505,provider,yes,2026-10-10,,largely follows the pre-training data recipe of K-EXAONE; no detailed composition published
+family,k-exaone-2.0,compute,https://arxiv.org/abs/2608.04505,provider,yes,2026-10-10,,not stated (only: GPUs provided under a Korean government strategic program)
+family,k-exaone-2.0,training_hardware,https://arxiv.org/abs/2608.04505,provider,yes,2026-10-10,,not stated
+family,k-exaone-2.0,recipe,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,provider,yes,2026-10-10,,weights only; no training code or data released
+family,k-exaone-2.0,languages,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,provider,yes,2026-10-10,,"Korean, English, Spanish, German, Japanese, Vietnamese, French, Italian, Polish, and Portuguese"
+family,k-exaone-2.0,teacher_status,https://arxiv.org/abs/2608.04505,provider,yes,2026-10-10,,"expert models and an LLM used for synthesis and LLM-as-a-judge, none named"
+family,exaone-4.5,provider_id,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B,provider,yes,2026-10-10,,the first open-weight vision language model developed by LG AI Research
+family,exaone-4.5,origin,https://arxiv.org/abs/2604.08644,provider,yes,2026-10-10,,integrating a 1.2B parameter vision encoder into the robust EXAONE 4.0 32B base model
+family,exaone-4.5,license_class,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,provider,yes,2026-10-10,,3.1 Commercial Use: Licensee is expressly prohibited from using the Model ... for any commercial purposes
+family,exaone-4.5,terms_can_change,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,provider,yes,2026-10-10,,"9.1 Licensor reserves the right to modify or amend this Agreement at any time, in its sole discretion"
+family,exaone-4.5,data,https://arxiv.org/abs/2604.08644,provider,yes,2026-10-10,,"interleaved open-source and in-house resources; categories (captions, OCR/docs, STEM, Korean sources) described"
+family,exaone-4.5,compute,https://arxiv.org/abs/2604.08644,provider,yes,2026-10-10,,"not stated (FLOPs given, no location)"
+family,exaone-4.5,training_hardware,https://arxiv.org/abs/2604.08644,provider,yes,2026-10-10,,not stated
+family,exaone-4.5,recipe,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B,provider,yes,2026-10-10,,weights only
+family,exaone-4.5,languages,https://arxiv.org/abs/2604.08644,provider,yes,2026-10-10,,"supports six languages: Korean, English, Spanish, German, Japanese, and Vietnamese"
+family,exaone-4.5,teacher_status,https://arxiv.org/abs/2604.08644,provider,yes,2026-10-10,,"synthetic generator used, not named"
+family,solar-open-2,provider_id,https://huggingface.co/upstage/Solar-Open2-250B,provider,yes,2026-10-10,,Solar Open 2 is Upstage's 250B-A15B open-weight large language model
+family,solar-open-2,origin,https://huggingface.co/upstage/Solar-Open2-250B,provider,yes,2026-10-10,,"inherits the core of Solar Open 1's weights as its skeleton (selective weight transfer, 2.3% of weights)"
+family,solar-open-2,license_class,https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE,provider,yes,2026-10-10,,adopts Apache 2.0 but derivative model name must begin with 'Solar' and display 'Built with Solar'
+family,solar-open-2,terms_can_change,https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE,provider,yes,2026-10-10,,no amendment clause; Apache-2.0-style perpetual licence
+family,solar-open-2,data,https://arxiv.org/abs/2607.20062,provider,yes,2026-10-10,,4:6 real-to-synthetic ratio; math and code >=15% each; English >80%; 20T pool filtered to 10T
+family,solar-open-2,compute,https://arxiv.org/abs/2607.20062,provider,yes,2026-10-10,,not stated (Lablup operated GPU clusters; MSIT/NIPA GPU track)
+family,solar-open-2,training_hardware,https://huggingface.co/upstage/Solar-Open2-250B,provider,yes,2026-10-10,,Training Hardware: NVIDIA B200 GPUs; 2M GPU hours
+family,solar-open-2,recipe,https://huggingface.co/upstage/Solar-Open2-250B,provider,yes,2026-10-10,,weights only
+family,solar-open-2,languages,https://huggingface.co/upstage/Solar-Open2-250B,provider,yes,2026-10-10,,"Supported Languages: English, Korean, Japanese"
+family,solar-open-2,teacher_status,https://arxiv.org/abs/2607.20062,provider,yes,2026-10-10,,"synthetic data used, generator models not named"
+family,hyperclova-x-seed-think,provider_id,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B,provider,yes,2026-10-10,,HyperCLOVA X SEED 32B Think ... NAVER
+family,hyperclova-x-seed-think,origin,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,provider,no,2026-10-10,,"Stage 1 builds broad coverage from a multilingual corpus, primarily Korean and English ... 6 trillion tokens [review: The report describes Stage 1 (6T tokens, Korean/English) but never says the backbone was randomly initialised or trained from scratch. The LR warm-up 1.5e-5→3.1]"
+family,hyperclova-x-seed-think,base_model,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,provider,yes,2026-10-10,,THINK adopts the Vision Transformer (ViT) architecture from Qwen2.5-VL
+family,hyperclova-x-seed-think,base_model,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/config.json,provider,yes,2026-10-10,,vision_config architectures: Qwen2_5_VisionTransformerPretrainedModel
+family,hyperclova-x-seed-think,base_model,https://en.sedaily.com/finance/2026/04/17/naver-replaces-chinese-component-with-in-house-vision,press,yes,2026-10-10,,Naver replaces Chinese (Qwen) component with in-house vision encoder
+family,hyperclova-x-seed-think,license_class,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE,provider,yes,2026-10-10,,custom licence; additional commercial terms above 10 million MAU; Acceptable Use Policy (Addendum A)
+family,hyperclova-x-seed-think,terms_can_change,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE,provider,yes,2026-10-10,,"12. NAVER reserves the right to modify or amend this Agreement at any time, in its sole discretion"
+family,hyperclova-x-seed-think,data,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,provider,yes,2026-10-10,,Table 3: pre-training data distribution across stages (general/code/math/instruction)
+family,hyperclova-x-seed-think,compute,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,provider,yes,2026-10-10,,not stated
+family,hyperclova-x-seed-think,training_hardware,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,provider,yes,2026-10-10,,not stated
+family,hyperclova-x-seed-think,recipe,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B,provider,yes,2026-10-10,,weights only
+family,hyperclova-x-seed-think,languages,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,provider,yes,2026-10-10,,training curriculum that incorporates both English and Korean data
+family,hyperclova-x-seed-think,teacher_status,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,provider,yes,2026-10-10,,"LLMs used to rewrite documents and PII spans, not named"
+family,llm-jp-4.1,provider_id,https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking,provider,yes,2026-10-10,,developed by the R&D Center for LLMs at the National Institute of Informatics
+family,llm-jp-4.1,origin,https://www.nii.ac.jp/news/release/2026/0403.html,provider,yes,2026-10-10,,"NII release: LLM-jp-4 pre-trained on ~10.5T tokens of its own corpus, then 1.2T mid-training"
+family,llm-jp-4.1,license_class,https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking,provider,yes,2026-10-10,,license: apache-2.0
+family,llm-jp-4.1,terms_can_change,https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking,provider,yes,2026-10-10,,plain Apache-2.0
+family,llm-jp-4.1,data,https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking,provider,yes,2026-10-10,,The corpora used for pre-training and mid-training are publicly available (some portions excluded for licensing)
+family,llm-jp-4.1,compute,https://www.nii.ac.jp/news/release/2026/0403.html,provider,yes,2026-10-10,,学習には産業技術総合研究所が提供するABCI 3.0を利用 (trained on AIST's ABCI 3.0)
+family,llm-jp-4.1,training_hardware,https://abci.ai/en/about_abci/computing_resource.html,official,yes,2026-10-10,,"ABCI 3.0: 766 compute nodes with 6,128 NVIDIA H200 GPUs"
+family,llm-jp-4.1,recipe,https://github.com/llm-jp/scripts/tree/main/pretrain/scripts,provider,yes,2026-10-10,,"v4 pre-training and mid-training scripts published (v4-8b-phase1, v4-32b-phase1, v4-midtraining)"
+family,llm-jp-4.1,languages,https://www.nii.ac.jp/news/release/2026/0403.html,provider,yes,2026-10-10,,"corpus: Japanese ~0.7T, English ~17.8T, other (Chinese, Korean) ~0.85T, code ~0.2T tokens"
+family,llm-jp-4.1,teacher:gpt-oss-120b,https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data,provider,yes,2026-10-10,,reasoning processes and final responses ... generated or augmented using gpt-oss-120b
+family,llm-jp-4.1,teacher:gpt-oss-120b (judge),https://huggingface.co/datasets/llm-jp/llm-jp-4.1-33b-thinking-dpo-data,provider,yes,2026-10-10,,"responses are evaluated by gpt-oss-120b, which determines chosen and rejected"
+family,llm-jp-4.1,teacher:Qwen3-235B-A22B-Thinking-2507 (via Nemotron-Agentic),https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data,provider,yes,2026-10-10,,"interactive_agent subset generated using Qwen3-235B-A22B-Thinking-2507, Qwen3-32B, gpt-oss-120b ..."
+family,llm-jp-4.1,teacher:DeepSeek-V3.2 / DeepSeek-R1-0528 (via Nemotron-SFT-Agentic-v2),https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data,provider,yes,2026-10-10,,"Nemotron-SFT-Agentic-v2: Qwen3-235B..., deepseek-r1-0528, DeepSeek-V3.2, gpt-oss-120b"
+family,qwen3-swallow-0.2,provider_id,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,Authors: Swallow LLM; contact swallow[at]nlp.c.titech.ac.jp
+family,qwen3-swallow-0.2,origin,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,"developed through Continual Pre-Training (CPT), SFT and RLVR based on the Qwen3"
+family,qwen3-swallow-0.2,license_class,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,License: Apache license 2.0
+family,qwen3-swallow-0.2,terms_can_change,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,plain Apache-2.0
+family,qwen3-swallow-0.2,data,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,"CPT datasets listed (Swallow Corpus v3.2, Wikipedia, Nemotron-CC, SwallowMath/Code v2 ...), 209.7B tokens"
+family,qwen3-swallow-0.2,compute,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,We used ABCI 3.0 provided by AIST ... carried out using the TSUBAME4.0 supercomputer at Institute of Science Tokyo
+family,qwen3-swallow-0.2,training_hardware,https://abci.ai/en/about_abci/computing_resource.html,official,yes,2026-10-10,,"ABCI 3.0: 6,128 NVIDIA H200 GPUs (TSUBAME4.0 not checked)"
+family,qwen3-swallow-0.2,recipe,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,not stated (frameworks and datasets named; Swallow Corpus not public; tech paper announced)
+family,qwen3-swallow-0.2,languages,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,"Language(s): Japanese, English"
+family,qwen3-swallow-0.2,teacher:gpt-oss-120b,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,Swallow Corpus v3.2 QA (synthetic QA-format text using gpt-oss-120b); SFT traces generated using gpt-oss-120b
+family,qwen3-swallow-0.2,teacher:Qwen3-235B-A22B-Instruct-2507,https://huggingface.co/datasets/tokyotech-llm/swallow-code-v2,provider,yes,2026-10-10,,LLM Rewriting Phase - Use Qwen3-235B-A22B-Instruct to rewrite and enhance code
+family,qwen3-swallow-0.2,teacher:Qwen3-235B-A22B-Instruct-2507,https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2,provider,yes,2026-10-10,,SwallowMath-v2 rewritten using Qwen3-235B-A22B-2507-Instruct
+family,qwen3-swallow-0.2,teacher:Qwen3-32B,https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2,provider,yes,2026-10-10,,Stage 2 - Math Extraction ... using LLM (= Qwen3-32B)
+family,qwen3-swallow-0.2,teacher:Mixtral-8x7B-Instruct (via Cosmopedia),https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,provider,yes,2026-10-10,,Cosmopedia listed in the CPT English corpus
+family,qwen3-swallow-0.2,teacher:Mixtral-8x7B-Instruct (via Cosmopedia),https://huggingface.co/datasets/HuggingFaceTB/cosmopedia,community,yes,2026-10-10,,synthetic textbooks generated by Mixtral-8x7B-Instruct-v0.1
+family,gpt-oss-swallow-0.1,provider_id,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,Authors: Swallow LLM; contact swallow[at]nlp.c.titech.ac.jp
+family,gpt-oss-swallow-0.1,origin,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,"developed through Continual Pre-Training (CPT), SFT and RLVR based on the GPT-OSS"
+family,gpt-oss-swallow-0.1,license_class,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,License: Apache license 2.0
+family,gpt-oss-swallow-0.1,terms_can_change,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,plain Apache-2.0
+family,gpt-oss-swallow-0.1,data,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,"CPT datasets listed (Swallow Corpus v3.2, Wikipedia, Nemotron-CC, SwallowMath/Code v2 ...), 419.4B tokens"
+family,gpt-oss-swallow-0.1,compute,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,We used ABCI 3.0 provided by AIST ... carried out using the TSUBAME4.0 supercomputer at Institute of Science Tokyo
+family,gpt-oss-swallow-0.1,training_hardware,https://abci.ai/en/about_abci/computing_resource.html,official,yes,2026-10-10,,"ABCI 3.0: 6,128 NVIDIA H200 GPUs (TSUBAME4.0 not checked)"
+family,gpt-oss-swallow-0.1,recipe,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,not stated (frameworks and datasets named; Swallow Corpus not public; tech paper announced)
+family,gpt-oss-swallow-0.1,languages,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,"Language(s): Japanese, English"
+family,gpt-oss-swallow-0.1,teacher:gpt-oss-120b,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,Swallow Corpus v3.2 QA (synthetic QA-format text using gpt-oss-120b); SFT traces generated using gpt-oss-120b
+family,gpt-oss-swallow-0.1,teacher:Qwen3-235B-A22B-Instruct-2507,https://huggingface.co/datasets/tokyotech-llm/swallow-code-v2,provider,yes,2026-10-10,,LLM Rewriting Phase - Use Qwen3-235B-A22B-Instruct to rewrite and enhance code
+family,gpt-oss-swallow-0.1,teacher:Qwen3-235B-A22B-Instruct-2507,https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2,provider,yes,2026-10-10,,SwallowMath-v2 rewritten using Qwen3-235B-A22B-2507-Instruct
+family,gpt-oss-swallow-0.1,teacher:Qwen3-32B,https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2,provider,yes,2026-10-10,,Stage 2 - Math Extraction ... using LLM (= Qwen3-32B)
+family,gpt-oss-swallow-0.1,teacher:Mixtral-8x7B-Instruct (via Cosmopedia),https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1,provider,yes,2026-10-10,,Cosmopedia listed in the CPT English corpus
+family,gpt-oss-swallow-0.1,teacher:Mixtral-8x7B-Instruct (via Cosmopedia),https://huggingface.co/datasets/HuggingFaceTB/cosmopedia,community,yes,2026-10-10,,synthetic textbooks generated by Mixtral-8x7B-Instruct-v0.1
+family,plamo-3-nict,provider_id,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,"developed by Preferred Networks, Inc. in collaboration with NICT"
+family,plamo-3-nict,origin,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,a 31B model distilled from a 120B model; 120B trained on 2.625T + 0.375T tokens
+family,plamo-3-nict,license_class,https://plamo.preferredai.jp/info/plamo-community-license-en,provider,yes,2026-10-10,,commercial use only after registration and if annual revenue does not exceed 1 billion yen
+family,plamo-3-nict,terms_can_change,https://plamo.preferredai.jp/info/plamo-community-license-en,provider,yes,2026-10-10,,Article 12: PFN may modify this AGREEMENT
+family,plamo-3-nict,data,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,"phase 1: English 45%, Japanese 30%, Code 15%, Other 10%; FineWeb-2, SmolLM corpus, Stack v2, Nemotron named"
+family,plamo-3-nict,compute,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,not stated
+family,plamo-3-nict,training_hardware,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,not stated
+family,plamo-3-nict,recipe,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,weights only (gated)
+family,plamo-3-nict,languages,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,"language: en, ja; English 45% / Japanese 30% of phase-1 data"
+family,plamo-3-nict,teacher:PLaMo 3 NICT 120B,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,provider,yes,2026-10-10,,distilled from a 120B model
+family,sarvam-2026,provider_id,https://huggingface.co/sarvamai/sarvam-105b,provider,yes,2026-10-10,,Sarvam-105B ... open-sourced under the Apache License; see our blog
+family,sarvam-2026,origin,https://www.sarvam.ai/blogs/sarvam-30b-105b,provider,yes,2026-10-10,,"trained from scratch on large-scale, high-quality datasets curated in-house"
+family,sarvam-2026,license_class,https://huggingface.co/sarvamai/sarvam-105b,provider,yes,2026-10-10,,license: apache-2.0
+family,sarvam-2026,terms_can_change,https://huggingface.co/sarvamai/sarvam-105b,provider,yes,2026-10-10,,plain Apache-2.0
+family,sarvam-2026,data,https://www.sarvam.ai/blogs/sarvam-30b-105b,provider,yes,2026-10-10,,"categories only (code, web, knowledge, math, multilingual, synthetic); no mix published"
+family,sarvam-2026,compute,https://www.sarvam.ai/blogs/sarvam-30b-105b,provider,yes,2026-10-10,,Training was conducted entirely in India on compute provided under the IndiaAI mission
+family,sarvam-2026,training_hardware,https://www.sarvam.ai/blogs/sarvam-30b-105b,provider,yes,2026-10-10,,"Nvidia contributed libraries used across pre-training, alignment, and serving; GPU type not stated"
+family,sarvam-2026,recipe,https://www.sarvam.ai/blogs/sarvam-30b-105b,provider,yes,2026-10-10,,weights only; no data or training code released
+family,sarvam-2026,languages,https://huggingface.co/sarvamai/sarvam-105b,provider,yes,2026-10-10,,state-of-the-art performance across 22 Indian languages; Hub language list
+family,sarvam-2026,teacher_status,https://www.sarvam.ai/blogs/sarvam-30b-105b,provider,yes,2026-10-10,,"synthetic data pipelines described, generator models not named (Gemini/Claude only for evaluation)"
+family,sea-lion-v4.8,provider_id,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,provider,yes,2026-10-10,,"Developed by: AI Products Pillar, AI Singapore"
+family,sea-lion-v4.8,origin,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,provider,yes,2026-10-10,,built upon nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 ... underwent continued pre-training
+family,sea-lion-v4.8,license_class,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,provider,yes,2026-10-10,,License: MIT
+family,sea-lion-v4.8,license_class,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16,community,no,2026-10-10,,"upstream base under nvidia-nemotron-open-model-license [review: Upstream base is under the NVIDIA Nemotron Open Model License (custom). The source supports a caveat, not 'osi'. Issuer: NVIDIA is the upstream maker, not a com]"
+family,sea-lion-v4.8,terms_can_change,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,provider,yes,2026-10-10,,MIT
+family,sea-lion-v4.8,data,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,provider,yes,2026-10-10,,"CPT dataset of 33.5B tokens adapted from listed datasets (NuminaMath, SEA-Instruct-2602, Nemotron SFT ...)"
+family,sea-lion-v4.8,compute,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,provider,yes,2026-10-10,,Hardware type: H200; Cloud provider: SMC H200; Compute region: Singapore
+family,sea-lion-v4.8,training_hardware,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,provider,yes,2026-10-10,,Hardware type: H200
+family,sea-lion-v4.8,recipe,https://arxiv.org/abs/2609.18310,provider,yes,2026-10-10,,release of training code and data not stated
+family,sea-lion-v4.8,languages,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,provider,yes,2026-10-10,,"Language(s): Burmese, English, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese"
+family,sea-lion-v4.8,teacher:NVIDIA-Nemotron-3-Ultra-550B-A55B,https://arxiv.org/abs/2609.18310,provider,yes,2026-10-10,,RedHatAI/NVIDIA-Nemotron-3-Ultra-550B-A55B-FP8-dynamic served as the teacher (OPD)
+family,sea-lion-v4.5,provider_id,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,"Developed by: AI Products Pillar, AI Singapore"
+family,sea-lion-v4.5,origin,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,Finetuned from model: Qwen/Qwen3.6-27B; Training Stage: Post-Training (Logit Distillation & Model Merging)
+family,sea-lion-v4.5,license_class,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,License: MIT
+family,sea-lion-v4.5,terms_can_change,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,MIT
+family,sea-lion-v4.5,data,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,Training Data: aisingapore/SEA-Instruct-2602
+family,sea-lion-v4.5,compute,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,not stated
+family,sea-lion-v4.5,training_hardware,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,not stated (only inference figures)
+family,sea-lion-v4.5,recipe,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,weights only
+family,sea-lion-v4.5,languages,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,"English and Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese"
+family,sea-lion-v4.5,teacher:Qwen3.5-397B-A17B,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,provider,yes,2026-10-10,,underwent distillation from Qwen3.5-397B-A17B on an updated SEA-Instruct-2602
+provider,tii,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,TII not listed among signatories (checked 2026-10-10)
+provider,tii,control,https://www.tii.ae/about-us,provider,yes,2026-10-10,,We are part of Abu Dhabi Government's Advanced Technology Research Council
+provider,mbzuai,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,MBZUAI/IFM/G42/Inception not listed (checked 2026-10-10)
+provider,mbzuai,control,https://www.prnewswire.com/news-releases/abu-dhabi-announces-the-establishment-of-the-worlds-first-graduate-level-ai-university-300939660.html,provider,yes,2026-10-10,,"Abu Dhabi announces establishment of graduate-level AI university (MBZUAI), Oct 2019"
+provider,mbzuai,control,https://channelpostmea.com/2026/09/04/mbzuais-institute-of-foundation-models-launches-k2-horizon/,press,yes,2026-10-10,,MBZUAI's Institute of Foundation Models launches K2 Horizon; IFM founded May 2025 by MBZUAI president Eric Xing
+provider,ai21,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,AI21 Labs not listed (checked 2026-10-10)
+provider,ai21,control,https://www.calcalistech.com/ctechnews/article/by34n00tjfl,press,yes,2026-10-10,,"Nebius deal became a commercial partnership, not a sale; AI21 ""would halt development of its Jamba family"" (2026-05-19)"
+provider,ai21,control,https://www.calcalistech.com/ctechnews/article/r1kdh64nzg,press,no,2026-10-10,,"acquisition talks with Nebius ""months after earlier negotiations with Nvidia failed to result in a deal"" (2026-04-09) [review: Article (09.04.26) only reports Nebius acquisition talks under way after the Nvidia talks failed. It does not establish the outcome, so it is context for indepe]"
+provider,cohere,cop_signatory,https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai,official,yes,2026-10-10,,Cohere listed as signatory (checked 2026-10-10)
+provider,cohere,control,https://cohere.com/blog/cohere-and-aleph-alpha-sign-agreement,provider,yes,2026-10-10,,"""signing of a definitive business combination agreement with Aleph Alpha""; subject to regulatory approvals, close expected later 2026"
+provider,cohere,control,https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/,press,yes,2026-10-10,,"""Canadian AI startup Cohere is taking over Germany-based Aleph Alpha""; Schwarz Group EUR 500M, lead of Series E"
+family,falcon-h1,provider_id,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,provider,yes,2026-10-10,,Developed by: https://www.tii.ae
+family,falcon-h1,license_class,https://falconllm.tii.ae/falcon-terms-and-conditions.html,provider,yes,2026-10-10,,"""based on the Apache License Version 2.0 ... with a series of modifications""; must comply with Acceptable Use Policy"
+family,falcon-h1,terms_can_change,https://falconllm.tii.ae/falcon-terms-and-conditions.html,provider,yes,2026-10-10,,"""The Acceptable Use Policy may be updated from time to time"""
+family,falcon-h1,origin,https://arxiv.org/abs/2507.22448,provider,yes,2026-10-10,,"Falcon-H1 series pretrained by TII (0.5B-34B), own hybrid architecture"
+family,falcon-h1,data,https://arxiv.org/abs/2507.22448,provider,yes,2026-10-10,,"raw corpus from web data, curated corpora, code, math, in-house synthetic data; FineWeb filtered to ~11T tokens"
+family,falcon-h1,compute,https://arxiv.org/abs/2507.22448,provider,yes,2026-10-10,,"not stated (location of the 4,096-H100 cluster not given)"
+family,falcon-h1,training_hardware,https://arxiv.org/abs/2507.22448,provider,yes,2026-10-10,,"""trained on a large-scale infrastructure comprising 4,096 NVIDIA H100 GPUs"""
+family,falcon-h1,languages,https://arxiv.org/abs/2507.22448,provider,yes,2026-10-10,,"""Supports 18 languages out of the box, including Arabic (ar), Czech (cs), German (de), English (en)..."""
+family,falcon-h1,recipe,https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct,provider,yes,2026-10-10,,weights only; no training code or data released
+family,falcon-h1,teacher_status,https://arxiv.org/abs/2507.22448,provider,yes,2026-10-10,,"synthetic rewrites with ""a diverse set of internal and external open models"" (unnamed)"
+family,falcon-h1r,provider_id,https://huggingface.co/tiiuae/Falcon-H1R-7B,provider,yes,2026-10-10,,Developed by: Technology Innovation Institute
+family,falcon-h1r,origin,https://huggingface.co/tiiuae/Falcon-H1R-7B,provider,yes,2026-10-10,,"""Built on top of Falcon-H1-7B-Base ... cold-start supervised fine-tuning ... RL with GRPO"""
+family,falcon-h1r,license_class,https://falconllm.tii.ae/falcon-terms-and-conditions.html,provider,yes,2026-10-10,,"Falcon-LLM License (Apache-2.0-based with modifications and AUP), linked from model card"
+family,falcon-h1r,terms_can_change,https://falconllm.tii.ae/falcon-terms-and-conditions.html,provider,yes,2026-10-10,,"""The Acceptable Use Policy may be updated from time to time"""
+family,falcon-h1r,data,https://arxiv.org/abs/2601.02346,provider,yes,2026-10-10,,"SFT on curated math, code, STEM, IF, tool, chat datasets with long CoT; RL data math and code"
+family,falcon-h1r,compute,https://arxiv.org/abs/2601.02346,provider,yes,2026-10-10,,not stated
+family,falcon-h1r,training_hardware,https://arxiv.org/abs/2507.22448,provider,yes,2026-10-10,,base Falcon-H1-7B pretrained on NVIDIA H100; H1R SFT/RL also on H100 (H1R report)
+family,falcon-h1r,languages,https://huggingface.co/tiiuae/Falcon-H1R-7B,provider,yes,2026-10-10,,"Language(s): English, Multilingual; metadata en"
+family,falcon-h1r,recipe,https://huggingface.co/tiiuae/Falcon-H1R-7B,provider,yes,2026-10-10,,weights only
+family,falcon-h1r,teacher_status,https://arxiv.org/abs/2601.02346,provider,yes,2026-10-10,,"""mixing reasoning traces generated from different teacher models"" - teachers not named"
+family,k2-horizon,provider_id,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,model in IFM (Institute of Foundation Models) Hub org; citation author IFM Team
+family,k2-horizon,license_class,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,license: apache-2.0
+family,k2-horizon,terms_can_change,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,"plain Apache-2.0, no use policy referenced"
+family,k2-horizon,origin,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,"Pretraining Phase 1 7.08T + Phase 2 8.05T tokens, then midtraining, RL, SFT"
+family,k2-horizon,data,https://huggingface.co/datasets/IFM/TxT360-v2,provider,yes,2026-10-10,,"pre-training sources for the K2 Horizon training data release, CC BY 4.0"
+family,k2-horizon,data,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,"""We have released the checkpoints, along with the data and the training code."""
+family,k2-horizon,recipe,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,"training code (xLLM), W&B logs, data and intermediate checkpoints listed as Available"
+family,k2-horizon,compute,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,not stated
+family,k2-horizon,training_hardware,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,"not stated (only H200 serving recipes; xLLM repo has H200 throughput benchmarks, not a training record)"
+family,k2-horizon,languages,https://huggingface.co/IFM/K2-Horizon-375B-A23B,provider,yes,2026-10-10,,language metadata: en; no language list in card
+family,k2-horizon,teacher_status,https://huggingface.co/datasets/IFM/Math-Reasoning,provider,yes,2026-10-10,,"subset ""math-thinking-qwen""; generating model not named explicitly"
+family,jamba2,provider_id,https://huggingface.co/ai21labs/AI21-Jamba2-Mini,provider,yes,2026-10-10,,model in ai21labs org; links AI21 release blog
+family,jamba2,license_class,https://huggingface.co/ai21labs/AI21-Jamba2-Mini,provider,yes,2026-10-10,,"""Released under Apache 2.0 License"""
+family,jamba2,terms_can_change,https://www.ai21.com/blog/introducing-jamba2/,provider,yes,2026-10-10,,"Apache 2.0, no further use policy stated"
+family,jamba2,origin,https://huggingface.co/ai21labs/AI21-Jamba2-Mini,provider,yes,2026-10-10,,"""post-training pipeline starting from Jamba 1.5 pre-training""; mid-training on 500B tokens"
+family,jamba2,data,https://huggingface.co/ai21labs/AI21-Jamba2-Mini,provider,yes,2026-10-10,,"mid-training on 500B curated tokens: math, code, high-quality web, long documents"
+family,jamba2,data,https://arxiv.org/abs/2408.12570,provider,yes,2026-10-10,,"pre-training: in-house dataset of public web documents, code, books, scientific articles (to Mar 2024)"
+family,jamba2,compute,https://www.ai21.com/blog/introducing-jamba2/,provider,yes,2026-10-10,,not stated
+family,jamba2,training_hardware,https://arxiv.org/abs/2408.12570,provider,yes,2026-10-10,,"""Jamba-1.5-Large was trained on NVIDIA H100 GPUs"" (base of Jamba2)"
+family,jamba2,languages,https://arxiv.org/abs/2408.12570,provider,yes,2026-10-10,,"pre-training emphasis: English, Spanish, French, Portuguese, Italian, Dutch, German, Arabic, Hebrew"
+family,jamba2,recipe,https://huggingface.co/ai21labs/AI21-Jamba2-Mini,provider,yes,2026-10-10,,weights only
+family,jamba2,teacher_status,https://www.ai21.com/blog/introducing-jamba2/,provider,yes,2026-10-10,,not stated
+family,command-a-plus,provider_id,https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16,provider,yes,2026-10-10,,Developed by: Cohere and Cohere Labs
+family,command-a-plus,license_class,https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16,provider,yes,2026-10-10,,License: Apache 2.0
+family,command-a-plus,terms_can_change,https://docs.cohere.com/docs/command-a-plus,provider,yes,2026-10-10,,Open Source Deployment: Apache 2.0 on Hugging Face; Usage Policy applies to Cohere deployments
+family,command-a-plus,origin,https://docs.cohere.com/docs/command-a-plus,provider,no,2026-10-10,,Command A+ is Cohere's first Mixture of Experts model [review: 'Cohere's first Mixture of Experts model' does not by itself establish from-scratch training (upcycling not excluded). Rely on row 455.]
+family,command-a-plus,origin,https://docs.cohere.com/_fern-files/cohere.docs.buildwithfern.com/465ad10da2a73b55ca4291e34e665bf843f8f918fd8a0c4e8f0092a8d60f93ef/assets/documents/eu-ai-public-summary_command-a-plus-family_20260910.pdf,provider,yes,2026-10-10,,pre-training text: more than 10 trillion tokens; collection up to June 2026
+family,command-a-plus,data,https://docs.cohere.com/_fern-files/cohere.docs.buildwithfern.com/465ad10da2a73b55ca4291e34e665bf843f8f918fd8a0c4e8f0092a8d60f93ef/assets/documents/eu-ai-public-summary_command-a-plus-family_20260910.pdf,provider,yes,2026-10-10,,"Common Crawl, other public, licensed and third-party private datasets, user data, synthetic data"
+family,command-a-plus,ai_act_summary,https://docs.cohere.com/_fern-files/cohere.docs.buildwithfern.com/465ad10da2a73b55ca4291e34e665bf843f8f918fd8a0c4e8f0092a8d60f93ef/assets/documents/eu-ai-public-summary_command-a-plus-family_20260910.pdf,provider,yes,2026-10-10,,"Public Summary of Training Content for Command A+ and family, v1.1, 10 Sep 2026"
+family,command-a-plus,compute,https://docs.cohere.com/_fern-files/cohere.docs.buildwithfern.com/465ad10da2a73b55ca4291e34e665bf843f8f918fd8a0c4e8f0092a8d60f93ef/assets/documents/eu-ai-public-summary_command-a-plus-family_20260910.pdf,provider,yes,2026-10-10,,not stated
+family,command-a-plus,training_hardware,https://cohere.com/blog/command-a-plus,provider,yes,2026-10-10,,"""To train the Command A+ model efficiently at scale, we leveraged NVIDIA's CUDA-X ecosystem"""
+family,command-a-plus,languages,https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16,provider,yes,2026-10-10,,"""trained on 48 languages: English, Arabic, Bulgarian, ..."""
+family,command-a-plus,recipe,https://huggingface.co/CohereLabs/command-a-plus-05-2026-bf16,provider,yes,2026-10-10,,weights only
+family,command-a-plus,teacher:Command A,https://docs.cohere.com/_fern-files/cohere.docs.buildwithfern.com/465ad10da2a73b55ca4291e34e665bf843f8f918fd8a0c4e8f0092a8d60f93ef/assets/documents/eu-ai-public-summary_command-a-plus-family_20260910.pdf,provider,yes,2026-10-10,,"""Cohere generated synthetic data using its own models, including Command A, and other internal models"""
+family,command-a-plus,teacher:other internal Cohere models,https://docs.cohere.com/_fern-files/cohere.docs.buildwithfern.com/465ad10da2a73b55ca4291e34e665bf843f8f918fd8a0c4e8f0092a8d60f93ef/assets/documents/eu-ai-public-summary_command-a-plus-family_20260910.pdf,provider,yes,2026-10-10,,"""...including Command A, and other internal models"""
+family,tiny-aya,provider_id,https://huggingface.co/CohereLabs/tiny-aya-global,provider,yes,2026-10-10,,Developed by: Cohere and Cohere Labs
+family,tiny-aya,license_class,https://huggingface.co/CohereLabs/tiny-aya-global,provider,yes,2026-10-10,,"""License: CC-BY-NC, requires also adhering to Cohere Lab's Acceptable Use Policy"""
+family,tiny-aya,terms_can_change,https://docs.cohere.com/docs/c4ai-acceptable-use-policy,provider,yes,2026-10-10,,AUP is an unversioned web page; no explicit update clause found
+family,tiny-aya,origin,https://arxiv.org/abs/2603.11510,provider,yes,2026-10-10,,"""We pretrain Tiny Aya model for 6T tokens"""
+family,tiny-aya,data,https://arxiv.org/abs/2603.11510,provider,yes,2026-10-10,,"""large corpus of public and proprietary sources covering 70 languages""; filtering steps described"
+family,tiny-aya,compute,https://arxiv.org/abs/2603.11510,provider,yes,2026-10-10,,not stated
+family,tiny-aya,training_hardware,https://arxiv.org/abs/2603.11510,provider,yes,2026-10-10,,"""We pretrain Tiny Aya using Fax ... on 256 Nvidia H100 GPUs"""
+family,tiny-aya,languages,https://huggingface.co/CohereLabs/tiny-aya-global,provider,yes,2026-10-10,,"""trained on 70+ languages, with a focus on: English, Dutch, French, ..."""
+family,tiny-aya,recipe,https://huggingface.co/CohereLabs/tiny-aya-global,provider,yes,2026-10-10,,weights only
+family,tiny-aya,teacher:Command A,https://arxiv.org/abs/2603.11510,provider,yes,2026-10-10,,"transformation model and Fusor; teacher pool ""Gemma3-27B-It, Command A, and DeepSeek-V3"""
+family,tiny-aya,teacher:DeepSeek-V3,https://arxiv.org/abs/2603.11510,provider,yes,2026-10-10,,translation/transformation model and teacher in Fusion-of-N pool
+family,tiny-aya,teacher:Gemma3-27B-It,https://arxiv.org/abs/2603.11510,provider,yes,2026-10-10,,"""We choose Gemma3-27B-It, Command A, and DeepSeek-V3 as our teachers"""
+family,tiny-aya,teacher:command-a-translate,https://arxiv.org/abs/2603.11510,provider,yes,2026-10-10,,"""For translation, we rely on ... command-a-translate and deepseek-v3"""

@@ -73,6 +73,7 @@
     <div><label for="recipe">Reproducibility</label>
       <select id="recipe"><option value="">any</option><option value="code">training code or more</option>
         <option value="full">full recipe</option></select></div>
+    <div class="chips"><label title="Open-weight models of providers outside Europe, with the same facts and sources but without a tier"><input type="checkbox" id="world"> compare with models from outside Europe</label></div>
     <div class="chips"><label><input type="checkbox" id="mlx"> loads in mlx-vlm</label>
       <label><input type="checkbox" id="llama"> runs in llama.cpp</label></div>
   </div>
@@ -94,7 +95,7 @@ const COLS = [
   ["license_class","Licence"],["data","Data"],["compute","Compute"],["params_b","Params (B)",1],
   ["size_4bit_gb","4-bit GB",1],["mem","Total GB",1],["mlx_vlm","mlx-vlm"],["llama_cpp","llama.cpp"],["flags","Flags"],
 ];
-const TIER_ORDER = ["A","B","C","pending","excluded","out of scope"];
+const TIER_ORDER = ["A","B","C","pending","excluded","comparison"];
 let DATA, sortKey = "tier", sortDir = 1, selected = null;
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -133,7 +134,7 @@ function filtered() {
   const tiers = [...document.querySelectorAll("#tierchips input:checked")].map(i => i.value);
   const country = $("country").value, licence = $("licence").value, ram = parseFloat($("ram").value);
   return DATA.models.filter(m =>
-    tiers.includes(m.tier) &&
+    (m.tier === "comparison" ? $("world").checked : tiers.includes(m.tier)) &&
     (!country || m.provider_country === country) &&
     (!licence || m.license_class === licence) &&
     (!$("mlx").checked || m.mlx_vlm === "loads") &&
@@ -251,13 +252,22 @@ function detail(id) {
 fetch("scorecard.json").then(r => r.json()).then(d => {
   DATA = d;
   $("tierlist").innerHTML = Object.entries(d.tiers).map(([t, s]) => `<li><b>${esc(t)}</b>: ${esc(s)}</li>`).join("");
-  $("tierchips").innerHTML = TIER_ORDER.filter(t => d.models.some(m => m.tier === t))
+  $("tierchips").innerHTML = TIER_ORDER.filter(t => t !== "comparison" && d.models.some(m => m.tier === t))
     .map(t => `<label><input type="checkbox" value="${esc(t)}" ${["A","B"].includes(t) ? "checked" : ""}> ${esc(t)}</label>`).join("");
   for (const [id, key] of [["country","provider_country"],["licence","license_class"]])
     [...new Set(d.models.map(m => m[key]))].sort().forEach(v => $(id).insertAdjacentHTML("beforeend", `<option>${esc(v)}</option>`));
   $("head").innerHTML = COLS.map(([k, l]) => `<th data-k="${k}">${esc(l)}</th>`).join("");
   $("head").onclick = e => { const k = e.target.dataset.k; if (!k) return; sortDir = sortKey === k ? -sortDir : 1; sortKey = k; render(); };
   $("rows").onclick = e => { const tr = e.target.closest("tr"); if (tr) detail(tr.dataset.id); };
+  // The comparison with models from outside Europe is off by default; ?world=1 links to it.
+  const params = new URLSearchParams(location.search);
+  $("world").checked = params.get("world") === "1";
+  $("world").closest(".chips").hidden = !d.models.some(m => m.tier === "comparison");
+  $("world").addEventListener("change", () => {
+    const p = new URLSearchParams(location.search);
+    $("world").checked ? p.set("world", "1") : p.delete("world");
+    history.replaceState(null, "", (p.toString() ? "?" + p : location.pathname) + location.hash);
+  });
   document.querySelectorAll(".filters input, .filters select").forEach(el => el.addEventListener("change", render));
   render();
   $("changes").innerHTML = d.changes.length ? `<h3>Recent changes</h3><ul>${d.changes.slice(0, 20).map(changeLine).join("")}</ul>

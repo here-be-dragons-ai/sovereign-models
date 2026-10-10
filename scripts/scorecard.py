@@ -82,7 +82,7 @@ TIERS = {
     "C": "European provider, but a non-European base model or a custom licence",
     "pending": "Licence unclear; tier withheld until checked",
     "excluded": "Non-commercial licence",
-    "out of scope": "Provider outside Europe",
+    "comparison": "Provider outside Europe: shown for comparison with the same facts, without a tier",
 }
 PUBLISHER_ORDER = ["official", "hbd", "curated", "organisation", "individual", "unknown"]
 
@@ -207,7 +207,7 @@ class Data:
     # -- tiers -----------------------------------------------------------------
     def tier(self, m):
         if m["region"] == "non-europe":
-            return "out of scope"
+            return "comparison"
         if m["license_class"] == "nc":
             return "excluded"
         if m["license_class"] == "unclear":

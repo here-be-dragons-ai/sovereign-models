@@ -51,6 +51,10 @@ def main():
     today = dt.date.today().isoformat()
     new = []
     for p in csv.DictReader(open(DATA / "providers.csv")):
+        # Comparison providers outside Europe: their listed models are tracked
+        # (Hub facts, templates, licences), their new repos are not.
+        if p["region"] == "non-europe":
+            continue
         for org in filter(None, (p["hf_orgs"] or "").split(";")):
             for m in models(org):
                 if m["id"] not in known:

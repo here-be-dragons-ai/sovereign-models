@@ -31,6 +31,13 @@ import mlx_vlm
 from mlx.utils import tree_flatten
 from mlx_vlm.utils import get_model_and_args, sanitize_weights, update_module_configs
 
+# Only shapes are compared, nothing is computed: keep every array on the CPU, so
+# the check neither competes with a GPU job nor runs into Metal's buffer limit
+# on models with hundreds of thousands of tensors.
+mx.set_default_device(mx.cpu)
+# Tensor names of packed or scaled weights in quantized releases.
+QUANT_SUFFIXES = (".scales", ".weight_scale", ".weight_scale_inv", "_scale_inv", "_blocks")
+
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from scorecard import DATA, read  # noqa: E402
 
@@ -100,7 +107,12 @@ def check(repo):
         model = module.Model(model_config)
     except Exception as e:
         return "fails", model_type, f"model init: {type(e).__name__}: {e}"[:200]
-    fp8 = (config.get("quantization_config") or {}).get("quant_method") == "fp8"
+    quant = (config.get("quantization_config") or {}).get("quant_method", "")
+    fp8 = quant == "fp8"
+    if quant and not fp8:
+        # The check compares bf16 parameter names and shapes; packed weights of
+        # other formats (e.g. MXFP4) would show up as false mismatches.
+        return "not checked", model_type, f"{quant} release: the load check covers bf16 and FP8 weights only"
     weights = {
         k: mx.zeros(v["shape"], DTYPES.get(v["dtype"], mx.float32))
         for k, v in headers(repo).items()
@@ -112,11 +124,16 @@ def check(repo):
             if hasattr(module, cls) and hasattr(model_config, attr):
                 weights = sanitize_weights(getattr(module, cls), weights, getattr(model_config, attr))
     except Exception as e:
+        if fp8 or "scale" in str(e):
+            return "not checked", model_type, f"FP8 scale layout not handled by the check: {type(e).__name__}: {e}"[:200]
         return "fails", model_type, f"sanitize: {type(e).__name__}: {e}"[:200]
     params = dict(tree_flatten(model.parameters()))
     missing = [k for k in params if k not in weights]
     extra = [k for k in weights if k not in params]
     wrong = [k for k in params if k in weights and tuple(weights[k].shape) != tuple(params[k].shape)]
+    packed = [k for k in extra if k.endswith(QUANT_SUFFIXES)]
+    if packed:
+        return "not checked", model_type, f"quantized tensors ({packed[0].rsplit('.', 1)[-1]}) the check does not handle"
     if not (missing or extra or wrong):
         return "loads", model_type, "FP8 release, scales not checked" if fp8 else ""
     parts = []
@@ -150,7 +167,10 @@ def main():
     for m in models:
         if wanted and m["id"] not in wanted:
             continue
-        status, model_type, detail = check(m["hf_repo"])
+        try:
+            status, model_type, detail = check(m["hf_repo"])
+        except Exception as e:  # one model must not stop the weekly run
+            status, model_type, detail = "not checked", "", f"check failed: {type(e).__name__}: {e}"[:200]
         rows[m["id"]] = dict(id=m["id"], mlx_vlm=status, model_type=model_type, detail=detail, checked=today, mlx_vlm_rev=rev)
         print(f"{status:12s} {m['id']:22s} {model_type:14s} {detail}")
     with open(OUT, "w", newline="", encoding="utf-8") as f:

@@ -26,3 +26,46 @@ xlstm-7b,unsupported,xLSTMForCausalLM,architecture not registered in the convert
 holo4-35b-a3b,supported,Qwen3_5MoeForConditionalGeneration,,2026-10-08,v0.6.0
 poro-2-8b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
 borealis2-26b,supported,Gemma4ForConditionalGeneration,,2026-10-08,v0.6.0
+llama-4-maverick,supported,Llama4ForConditionalGeneration,,2026-10-10,v0.6.0
+llama-4-scout,supported,Llama4ForConditionalGeneration,,2026-10-10,v0.6.0
+gemma-4-31b,supported,Gemma4ForConditionalGeneration,,2026-10-10,v0.6.0
+gemma-4-26b-a4b,supported,Gemma4ForConditionalGeneration,,2026-10-10,v0.6.0
+gpt-oss-120b,supported,GptOssForCausalLM,,2026-10-10,v0.6.0
+gpt-oss-20b,supported,GptOssForCausalLM,,2026-10-10,v0.6.0
+phi-4-reasoning-vision-15b,supported,Phi4ForCausalLMV,,2026-10-10,v0.6.0
+nemotron-3-super-120b,supported,NemotronHForCausalLM,,2026-10-10,v0.6.0
+nemotron-3.5-lightning-30b,supported,NemotronHForCausalLM,,2026-10-10,v0.6.0
+granite-4.2-30b,supported,GraniteForCausalLM,,2026-10-10,v0.6.0
+granite-4.2-8b,supported,GraniteForCausalLM,,2026-10-10,v0.6.0
+olmo-3.1-32b-instruct,supported,Olmo3ForCausalLM,,2026-10-10,v0.6.0
+olmo-3-7b-instruct,supported,Olmo3ForCausalLM,,2026-10-10,v0.6.0
+qwen3.8-27b,supported,Qwen3_5ForConditionalGeneration,,2026-10-10,v0.6.0
+qwen3.8-flash-next,supported,Qwen4ExpForConditionalGeneration,,2026-10-10,v0.6.0
+deepseek-v4-pro-0813,supported,DeepseekV4ForCausalLM,,2026-10-10,v0.6.0
+deepseek-v4.1-flash,unsupported,DeepseekV41ForCausalLM,architecture not registered in the converter,2026-10-10,v0.6.0
+kimi-k3,supported,KimiK3ForConditionalGeneration,,2026-10-10,v0.6.0
+glm-5.3,supported,GlmMoeDsaForCausalLM,,2026-10-10,v0.6.0
+glm-5.3-flash,supported,Glm5NextForConditionalGeneration,,2026-10-10,v0.6.0
+minimax-m3,supported,MiniMaxM3SparseForConditionalGeneration,,2026-10-10,v0.6.0
+hy4-preview,supported,HYV4ForCausalLM,,2026-10-10,v0.6.0
+k-exaone-2.0-750b,supported,ExaoneMoeForCausalLM,,2026-10-10,v0.6.0
+exaone-4.5-33b,supported,Exaone4_5_ForConditionalGeneration,,2026-10-10,v0.6.0
+solar-open2-250b,unsupported,SolarOpen2ForCausalLM,architecture not registered in the converter,2026-10-10,v0.6.0
+hyperclovax-seed-think-32b,unsupported,HyperCLOVAXVisionV2ForConditionalGeneration,architecture not registered in the converter,2026-10-10,v0.6.0
+llm-jp-4.1-33b-thinking,supported,LlamaForCausalLM,,2026-10-10,v0.6.0
+llm-jp-4.1-32b-a3b-thinking,supported,Qwen3MoeForCausalLM,,2026-10-10,v0.6.0
+qwen3-swallow-32b-rl,supported,Qwen3ForCausalLM,,2026-10-10,v0.6.0
+gpt-oss-swallow-120b-rl,supported,GptOssForCausalLM,,2026-10-10,v0.6.0
+plamo-3-nict-2604-31b-base,supported,Plamo3ForCausalLM,,2026-10-10,v0.6.0
+sarvam-105b,unsupported,SarvamMLAForCausalLM,architecture not registered in the converter,2026-10-10,v0.6.0
+sarvam-30b,supported,SarvamMoEForCausalLM,,2026-10-10,v0.6.0
+nemotron-sea-lion-v4.8-120b,supported,NemotronHForCausalLM,,2026-10-10,v0.6.0
+qwen-sea-lion-v4.5-27b-it,supported,Qwen3_5ForConditionalGeneration,,2026-10-10,v0.6.0
+falcon-h1-34b,supported,FalconH1ForCausalLM,,2026-10-10,v0.6.0
+falcon-h1r-7b,supported,FalconH1ForCausalLM,,2026-10-10,v0.6.0
+k2-horizon-375b,unsupported,K2HorizonForCausalLM,architecture not registered in the converter,2026-10-10,v0.6.0
+k2-horizon-32b,unsupported,K2HorizonForCausalLM,architecture not registered in the converter,2026-10-10,v0.6.0
+jamba2-mini,supported,JambaForCausalLM,,2026-10-10,v0.6.0
+jamba2-3b,supported,JambaForCausalLM,,2026-10-10,v0.6.0
+command-a-plus,unsupported,Cohere2VisionForConditionalGeneration,architecture not registered in the converter,2026-10-10,v0.6.0
+tiny-aya-global,supported,Cohere2ForCausalLM,,2026-10-10,v0.6.0

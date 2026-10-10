@@ -48,6 +48,10 @@ Open-weight language models rated on sovereignty from a European point of view: 
 control, origin of the weights, licence, training data and compute, plus whether they load in
 mlx-vlm on Apple Silicon. Tiers are computed by rules; every fact has a source.
 
+For comparison it also lists current open-weight models from providers outside Europe (United
+States, China, Korea, Japan, India, Singapore, United Arab Emirates, Israel, Canada) with the same
+facts and sources, in the tier `comparison` and without a sovereignty rating.
+
 - `scorecard.csv`: one row per model, including the computed tier and flags
 - `scorecard.json`: the same plus all sources and MLX builds per model
 - `data/`: the curated inputs (`providers.csv`, `families.csv`, `scorecard.csv`, `sources.csv`,
