@@ -69,3 +69,16 @@ sarvam-105b,unsupported,sarvam_mla,model type not in mlx-vlm,2026-10-10,0.7.4
 sarvam-30b,unsupported,sarvam_moe,model type not in mlx-vlm,2026-10-10,0.7.4
 solar-open2-250b,unsupported,solar_open2,model type not in mlx-vlm,2026-10-10,0.7.4
 tiny-aya-global,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4
+amalia-9b-0626,loads,llama,,2026-10-10,0.7.4
+bggpt-gemma-3-27b-it,loads,gemma3,,2026-10-10,0.7.4
+dfm-mimir-1.5,loads,hrm_text,,2026-10-10,0.7.4
+gams3-12b-instruct,loads,gemma3_text,,2026-10-10,0.7.4
+gervasio-70b-ptpt,loads,llama,,2026-10-10,0.7.4
+latxa-3.1-70b-v2,loads,llama,,2026-10-10,0.7.4
+llama-3.1-estllm-70b-instruct-0826,loads,llama,,2026-10-10,0.7.4
+llama-krikri-8b-instruct-v1.5,loads,llama,,2026-10-10,0.7.4
+llama-pllum-70b-chat-2512,loads,llama,,2026-10-10,0.7.4
+norolmo-13b,loads,olmo2,,2026-10-10,0.7.4
+oellm-9b-256k-sft,fails,qwen3,model init: TypeError: ModelConfig.__init__() missing 1 required positional argument: 'rope_theta',2026-10-10,0.7.4
+pllum-12b-chat-2512,loads,mistral,,2026-10-10,0.7.4
+teuken-7b-instruct-0.6,loads,llama,,2026-10-10,0.7.4

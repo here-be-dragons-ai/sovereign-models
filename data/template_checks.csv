@@ -240,3 +240,16 @@ jamba2-mini,ai21labs/AI21-Jamba2-Mini,original,chat_template.jinja,reference,,co
 jamba2-3b,ai21labs/AI21-Jamba2-3B,original,chat_template.jinja,reference,,content condition,0cac9a559c15afe6,2026-10-10
 command-a-plus,CohereLabs/command-a-plus-05-2026-bf16,original,chat_template.jinja,reference,,content condition;long string literal,21cc659ed5a72bf8,2026-10-10
 tiny-aya-global,CohereLabs/tiny-aya-global,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-10
+oellm-9b-256k-sft,openeurollm/oellm-9b-256k-sft,original,chat_template.jinja,reference,,content condition,51313d12ae59fffb,2026-10-10
+pllum-12b-chat-2512,CYFRAGOVPL/PLLuM-12B-chat-2512,original,chat_template.jinja,reference,,content condition,2ab4fbea465e9e76,2026-10-10
+llama-pllum-70b-chat-2512,CYFRAGOVPL/Llama-PLLuM-70B-chat-2512,original,chat_template.jinja,reference,,content condition,2ab4fbea465e9e76,2026-10-10
+teuken-7b-instruct-0.6,openGPT-X/Teuken-7B-instruct-v0.6,original,,not checked,no chat template in the repo,,,2026-10-10
+dfm-mimir-1.5,danish-foundation-models/DFM-Mimir-v1.5,original,chat_template.jinja,reference,,content condition;long string literal,8577546dd82c737f,2026-10-10
+bggpt-gemma-3-27b-it,INSAIT-Institute/BgGPT-Gemma-3-27B-IT,original,chat_template.jinja,reference,,content condition,5a5817f52f26e5b9,2026-10-10
+gams3-12b-instruct,cjvt/GaMS3-12B-Instruct,original,chat_template.jinja,reference,,content condition,5a5817f52f26e5b9,2026-10-10
+llama-krikri-8b-instruct-v1.5,ilsp/Llama-Krikri-8B-Instruct-v1.5,original,chat_template.jinja,reference,,content condition,eb49456377a46621,2026-10-10
+llama-3.1-estllm-70b-instruct-0826,tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826,original,chat_template.jinja,reference,,content condition,eb49456377a46621,2026-10-10
+amalia-9b-0626,amalia-llm/AMALIA-9B-0626-DPO,original,chat_template.jinja,reference,,content condition,7a1628443dc1b30f,2026-10-10
+gervasio-70b-ptpt,PORTULAN/gervasio-70b-portuguese-ptpt-decoder,original,tokenizer_config.json,reference,,content condition,eb49456377a46621,2026-10-10
+latxa-3.1-70b-v2,HiTZ/Latxa-Llama-3.1-70B-Instruct-v2,original,chat_template.jinja,reference,,content condition,eb49456377a46621,2026-10-10
+norolmo-13b,HPLT/NorOLMo-13B,original,,not checked,no chat template in the repo,,,2026-10-10

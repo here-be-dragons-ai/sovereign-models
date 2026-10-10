@@ -69,3 +69,16 @@ jamba2-mini,supported,JambaForCausalLM,,2026-10-10,v0.6.0
 jamba2-3b,supported,JambaForCausalLM,,2026-10-10,v0.6.0
 command-a-plus,unsupported,Cohere2VisionForConditionalGeneration,architecture not registered in the converter,2026-10-10,v0.6.0
 tiny-aya-global,supported,Cohere2ForCausalLM,,2026-10-10,v0.6.0
+oellm-9b-256k-sft,supported,Qwen3ForCausalLM,,2026-10-10,v0.6.0
+pllum-12b-chat-2512,supported,MistralForCausalLM,,2026-10-10,v0.6.0
+llama-pllum-70b-chat-2512,supported,LlamaForCausalLM,,2026-10-10,v0.6.0
+teuken-7b-instruct-0.6,supported,LlamaForCausalLM,,2026-10-10,v0.6.0
+dfm-mimir-1.5,supported,HrmTextForCausalLM,,2026-10-10,v0.6.0
+bggpt-gemma-3-27b-it,supported,Gemma3ForConditionalGeneration,,2026-10-10,v0.6.0
+gams3-12b-instruct,supported,Gemma3ForCausalLM,,2026-10-10,v0.6.0
+llama-krikri-8b-instruct-v1.5,supported,LlamaForCausalLM,,2026-10-10,v0.6.0
+llama-3.1-estllm-70b-instruct-0826,supported,LlamaForCausalLM,,2026-10-10,v0.6.0
+amalia-9b-0626,supported,LlamaForCausalLM,,2026-10-10,v0.6.0
+gervasio-70b-ptpt,supported,LlamaForCausalLM,,2026-10-10,v0.6.0
+latxa-3.1-70b-v2,supported,LlamaForCausalLM,,2026-10-10,v0.6.0
+norolmo-13b,supported,Olmo2ForCausalLM,,2026-10-10,v0.6.0

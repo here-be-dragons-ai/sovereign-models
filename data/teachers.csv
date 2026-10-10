@@ -133,3 +133,44 @@ tiny-aya,posttraining,command-a-translate,own,translating posttraining prompts/c
 tiny-aya,posttraining,DeepSeek-V3,foreign,translation and prompt transformation; teacher completions for Fusion-of-N
 tiny-aya,posttraining,Command A,own,prompt transformation; teacher and Fusor aggregating teacher completions (incl. safety data)
 tiny-aya,posttraining,Gemma3-27B-It,foreign,teacher completions for Fusion-of-N synthetic SFT data
+pllum-12b-2512,posttraining,DeepSeek-V3,foreign,synthetic context-aware SFT instructions
+pllum-12b-2512,posttraining,Mixtral-8x22B-Instruct-v0.1,european,synthetic context-aware SFT instructions
+pllum-12b-2512,posttraining,Qwen3-32B,foreign,synthetic SFT/preference data
+pllum-12b-2512,posttraining,gpt-oss-20b,foreign,synthetic SFT/preference data
+pllum-12b-2512,posttraining,gpt-oss-120b,foreign,synthetic SFT/preference data
+pllum-12b-2512,posttraining,PLLuM-8x7B-chat,own,"draft instructions/preferences, then human-corrected"
+pllum-12b-2512,posttraining,PLLuM-12B-chat,own,"draft instructions/preferences, then human-corrected"
+pllum-12b-2512,posttraining,Bielik-11B-v2.2-Instruct,european,synthetic SFT/preference data
+pllum-12b-2512,posttraining,zephyr-orpo-141b-A35b-v0.1,foreign,"synthetic SFT/preference data (Hugging Face H4, US-incorporated; Mixtral-8x22B fine-tune)"
+pllum-12b-2512,posttraining,Mistral-7B-Instruct-v0.3,european,synthetic SFT/preference data
+llama-pllum-2512,posttraining,DeepSeek-V3,foreign,synthetic context-aware SFT instructions
+llama-pllum-2512,posttraining,Mixtral-8x22B-Instruct-v0.1,european,synthetic context-aware SFT instructions
+llama-pllum-2512,posttraining,Qwen3-32B,foreign,synthetic SFT/preference data
+llama-pllum-2512,posttraining,gpt-oss-20b,foreign,synthetic SFT/preference data
+llama-pllum-2512,posttraining,gpt-oss-120b,foreign,synthetic SFT/preference data
+llama-pllum-2512,posttraining,PLLuM-8x7B-chat,own,"draft instructions/preferences, then human-corrected"
+llama-pllum-2512,posttraining,PLLuM-12B-chat,own,"draft instructions/preferences, then human-corrected"
+llama-pllum-2512,posttraining,Bielik-11B-v2.2-Instruct,european,synthetic SFT/preference data
+llama-pllum-2512,posttraining,zephyr-orpo-141b-A35b-v0.1,foreign,"synthetic SFT/preference data (Hugging Face H4, US-incorporated; Mixtral-8x22B fine-tune)"
+llama-pllum-2512,posttraining,Mistral-7B-Instruct-v0.3,european,synthetic SFT/preference data
+teuken-0.6,posttraining,Mixtral-8x22B-Instruct,european,"Evol-Instruct, everyday conversations and SFT translations into German, French, Italian"
+teuken-0.6,judge,Llama-3.1-70B-Instruct,foreign,automated judge of translation quality
+dfm-mimir-1.5,pretraining,Gemma4 31B,foreign,"synthetic + audited instruction data (span-filling/denoising transforms, dfm8-synthetic, Sapient-synth transplants) in the from-scratch run"
+gams3,pretraining,GaMS-9B-Translator,own,"translating English Wikipedia, Nemotron math and pretraining-SFT data into Slovene"
+gams3,pretraining,Gemma 3 27B,foreign,rewriting 1M classla web documents
+gams3,pretraining,Llama 4 Maverick,foreign,"OCR of national-library documents, theses and math journals"
+gams3,pretraining,Qwen3-30B-A3B,foreign,generator of the Nemotron-CC-v2 high-quality synthetic subset selected for CPT
+gams3,posttraining,GPT-4o,foreign,generating Slovene ClosedQA/OpenQA/Writing SFT examples
+gams3,posttraining,Gemini-2.0-Flash,foreign,generating Slovene ClosedQA/OpenQA/Writing SFT examples
+gams3,posttraining,Gemini-2.5-Flash,foreign,translating Nemotron Post-Training v2 math/STEM into Slovene
+gams3,posttraining,GaMS-27B-Instruct,own,translating ~80% of Nemotron chat examples
+krikri,posttraining,Gemma 2 27B IT,foreign,MAGPIE distillation and regenerating responses for Greek SFT/DPO data
+krikri,judge,Skywork-Reward-Gemma-2-27B-v0.2,foreign,scoring and filtering SFT/DPO data
+amalia-0626,posttraining,Gemma 3-27B,foreign,translation into pt-PT and answer generation for synthetic SFT data
+amalia-0626,posttraining,own pt-PT MT model,own,machine translation of SFT data into pt-PT
+amalia-0626,posttraining,DeepSeek-V3.2-Exp,foreign,English safety SFT dataset
+amalia-0626,posttraining,Qwen3-32B,foreign,chosen responses for math DPO pairs
+amalia-0626,posttraining,Qwen3-0.6B,foreign,rejected responses for DPO pairs
+amalia-0626,judge,ArmoRM,foreign,reward scoring of 32 sampled SFT responses to pick DPO chosen/rejected
+amalia-0626,judge,Qwen3Guard,foreign,classifying EuroBlocks prompts to select safety samples
+amalia-0626,judge,Deita Quality Scorer,foreign,filtering synthetic SFT entries below score 5
