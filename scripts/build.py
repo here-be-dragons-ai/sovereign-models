@@ -242,11 +242,14 @@ def main():
     for c in changes:
         print(f"change: {c['model']} {c['field']}: {c['old']!r} -> {c['new']!r}")
     logged = read("changes.csv")
-    recent = {}
+    recent, listed = {}, {}
     for c in logged:
         recent[c["model"]] = max(recent.get(c["model"], ""), c["date"])
+        if c["field"] == "model" and c["new"] == "listed":
+            listed.setdefault(c["model"], c["date"])
     for r in details:
         r["last_changed"] = recent.get(r["id"], "")
+        r["first_listed"] = listed.get(r["id"], "")
     with open(DIST / "scorecard.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=COLUMNS)
         w.writeheader()

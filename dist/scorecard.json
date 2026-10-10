@@ -295,7 +295,8 @@
     }
    ],
    "max_context": 163840,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -645,7 +646,8 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-09"
+   "last_changed": "2026-10-09",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -997,7 +999,8 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -1406,7 +1409,8 @@
     }
    ],
    "max_context": 32768,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -1666,7 +1670,8 @@
     }
    ],
    "max_context": 32000,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -2031,7 +2036,8 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -2382,7 +2388,8 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -2598,7 +2605,8 @@
     }
    ],
    "max_context": 4096,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -2891,7 +2899,8 @@
     }
    ],
    "max_context": 8192,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "A",
@@ -3046,7 +3055,8 @@
    },
    "teachers": [],
    "max_context": 65536,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -3309,7 +3319,8 @@
     }
    ],
    "max_context": 32768,
-   "last_changed": "2026-10-09"
+   "last_changed": "2026-10-09",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -3560,7 +3571,8 @@
    },
    "teachers": [],
    "max_context": 393216,
-   "last_changed": "2026-10-09"
+   "last_changed": "2026-10-09",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -3791,7 +3803,8 @@
     }
    ],
    "max_context": 32768,
-   "last_changed": "2026-10-09"
+   "last_changed": "2026-10-09",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -4141,7 +4154,8 @@
     }
    ],
    "max_context": 32768,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -4379,7 +4393,8 @@
     }
    ],
    "max_context": 4096,
-   "last_changed": "2026-10-09"
+   "last_changed": "2026-10-09",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -4750,7 +4765,8 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-09"
+   "last_changed": "2026-10-09",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -5033,7 +5049,8 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-09"
+   "last_changed": "2026-10-09",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -5298,7 +5315,8 @@
     }
    ],
    "max_context": 4096,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -5608,7 +5626,8 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -5856,7 +5875,8 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -6104,7 +6124,8 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -6267,7 +6288,8 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "B",
@@ -6477,7 +6499,8 @@
    },
    "teachers": [],
    "max_context": 4096,
-   "last_changed": "2026-10-08"
+   "last_changed": "2026-10-08",
+   "first_listed": ""
   },
   {
    "tier": "C",
@@ -6680,7 +6703,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-09"
+   "last_changed": "2026-10-09",
+   "first_listed": ""
   },
   {
    "tier": "C",
@@ -6862,7 +6886,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "C",
@@ -7183,7 +7208,8 @@
     }
    ],
    "max_context": 8192,
-   "last_changed": "2026-10-08"
+   "last_changed": "2026-10-08",
+   "first_listed": ""
   },
   {
    "tier": "C",
@@ -7348,7 +7374,8 @@
    },
    "teachers": [],
    "max_context": null,
-   "last_changed": ""
+   "last_changed": "",
+   "first_listed": ""
   },
   {
    "tier": "comparison",
@@ -7659,7 +7686,8 @@
     }
    ],
    "max_context": 200000,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -7981,7 +8009,8 @@
     }
    ],
    "max_context": 1048576,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -8298,7 +8327,8 @@
     }
    ],
    "max_context": 1048576,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -8564,7 +8594,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -8826,7 +8857,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -9088,7 +9120,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -9387,7 +9420,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -9686,7 +9720,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -9989,7 +10024,8 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -10283,7 +10319,8 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -10582,7 +10619,8 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -10881,7 +10919,8 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -11223,7 +11262,8 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -11507,7 +11547,8 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -11791,7 +11832,8 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -12021,7 +12063,8 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -12268,7 +12311,8 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -12550,7 +12594,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -12821,7 +12866,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -13048,7 +13094,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -13286,7 +13333,8 @@
    },
    "teachers": [],
    "max_context": 524288,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -13535,7 +13583,8 @@
    },
    "teachers": [],
    "max_context": 524288,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -13871,7 +13920,8 @@
     }
    ],
    "max_context": 1048576,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -14178,7 +14228,8 @@
     }
    ],
    "max_context": null,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -14475,7 +14526,8 @@
     }
    ],
    "max_context": null,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -14729,7 +14781,8 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -14995,7 +15048,8 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -15327,7 +15381,8 @@
     }
    ],
    "max_context": 1048576,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -15857,7 +15912,8 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -16397,7 +16453,8 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -16622,7 +16679,8 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -17062,7 +17120,8 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -17502,7 +17561,8 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -17801,7 +17861,8 @@
     }
    ],
    "max_context": 32768,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -18011,7 +18072,8 @@
     }
    ],
    "max_context": null,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -18226,7 +18288,8 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -18519,7 +18582,8 @@
     }
    ],
    "max_context": 40960,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -18803,7 +18867,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -19087,7 +19152,8 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -19282,7 +19348,8 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -19555,7 +19622,8 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -19806,7 +19874,8 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   },
   {
    "tier": "comparison",
@@ -20121,7 +20190,8 @@
     }
    ],
    "max_context": null,
-   "last_changed": "2026-10-10"
+   "last_changed": "2026-10-10",
+   "first_listed": "2026-10-10"
   }
  ],
  "changes": [

@@ -145,7 +145,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         for f in (ROOT / "space").iterdir():
-            if f.suffix in (".html", ".md"):
+            if f.suffix in (".html", ".md", ".png"):
                 shutil.copy(f, tmp / f.name)
         shutil.copy(ROOT / "dist" / "scorecard.json", tmp / "scorecard.json")
         api.upload_folder(repo_id=space_id, repo_type="space", folder_path=tmp,

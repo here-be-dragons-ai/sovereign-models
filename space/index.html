@@ -4,37 +4,90 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sovereign open-weight models</title>
+<meta name="description" content="Open-weight language models rated on sovereignty from a European point of view: control, origin of the weights, licence, data and compute, with sources, plus whether they run on Apple Silicon with MLX.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sovereign open-weight models">
+<meta property="og:description" content="European open-weight LLMs rated on sovereignty, every fact sourced; comparison models from outside Europe on request; runs-on-a-Mac check.">
+<meta property="og:url" content="https://huggingface.co/spaces/here-be-dragons-ai/sovereign-models">
+<meta property="og:image" content="https://huggingface.co/spaces/here-be-dragons-ai/sovereign-models/resolve/main/og.png">
+<meta name="twitter:card" content="summary_large_image">
 <style>
   :root { --fg:#1d2330; --muted:#5b6475; --line:#e3e6ec; --bg:#fff; --soft:#f6f7f9; --accent:#3b5bdb;
-          --A:#2f9e44; --B:#1971c2; --C:#e8590c; --other:#868e96; }
+          --A:#2f9e44; --B:#1971c2; --C:#e8590c; --other:#868e96; --eu:#3b5bdb; --world:#adb5bd; }
   * { box-sizing: border-box; }
   body { margin:0; font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--fg); background:var(--bg); }
-  main { max-width:1200px; margin:0 auto; padding:24px 20px 60px; }
+  main { max-width:1240px; margin:0 auto; padding:24px 20px 60px; }
+  header { display:flex; justify-content:space-between; align-items:baseline; gap:12px; flex-wrap:wrap; }
   h1 { margin:0 0 6px; font-size:26px; }
-  p.lead { margin:0 0 16px; color:var(--muted); max-width:860px; }
+  .lang button { border:1px solid var(--line); background:#fff; padding:2px 8px; border-radius:6px; cursor:pointer; font:inherit; font-size:13px; }
+  .lang button[aria-pressed="true"] { background:var(--fg); color:#fff; border-color:var(--fg); }
+  p.lead { margin:0 0 16px; color:var(--muted); max-width:880px; }
   details.tiers { margin:0 0 18px; color:var(--muted); }
   details.tiers li { margin:2px 0; }
+  /* Overview */
+  #overview { display:grid; grid-template-columns:minmax(200px,260px) 1fr; gap:18px 28px; margin:0 0 18px;
+              padding:14px 16px; border:1px solid var(--line); border-radius:10px; }
+  #overview h3 { margin:0 0 8px; font-size:14px; color:var(--muted); font-weight:600; }
+  .tiercount { display:flex; align-items:center; gap:8px; margin:3px 0; font-size:14px; }
+  .tiercount .bar { height:10px; border-radius:3px; }
+  .metric { display:grid; grid-template-columns:minmax(110px,210px) minmax(0,1fr); gap:4px 10px; align-items:center; font-size:13px; margin:2px 0; }
+  .metric .row { display:flex; align-items:center; gap:6px; }
+  .metric .track { flex:0 1 260px; min-width:0; }
+  .metric .bars { display:flex; flex-direction:column; gap:2px; }
+  .metric .b { height:9px; border-radius:2px; min-width:1px; }
+  .metric .v { font-variant-numeric:tabular-nums; color:var(--muted); font-size:12px; }
+  .legend2 { font-size:12px; color:var(--muted); margin-top:6px; }
+  .legend2 i { display:inline-block; width:10px; height:10px; border-radius:2px; margin:0 4px 0 10px; vertical-align:-1px; }
+  @media (max-width:700px) { #overview { grid-template-columns:1fr; } h1 { font-size:21px; } main { padding:16px 12px 40px; }
+    .filters select, .filters input[type=search] { min-width:0; width:100%; } .filters > div { flex:1 1 140px; } }
+  /* Filters */
   .filters { display:flex; flex-wrap:wrap; gap:14px 22px; align-items:flex-end; padding:14px 16px;
-             background:var(--soft); border:1px solid var(--line); border-radius:10px; margin-bottom:14px; }
+             background:var(--soft); border:1px solid var(--line); border-radius:10px; margin-bottom:10px; }
   .filters label { font-size:13px; color:var(--muted); display:block; margin-bottom:4px; }
-  .filters select { min-width:150px; padding:5px 6px; border:1px solid var(--line); border-radius:6px; background:#fff; }
+  .filters select, .filters input[type=search] { min-width:150px; padding:5px 6px; border:1px solid var(--line); border-radius:6px; background:#fff; font:inherit; font-size:14px; }
+  .filters input[type=search] { min-width:220px; }
   .chips label { display:inline-flex; gap:4px; margin-right:10px; color:var(--fg); font-size:14px; }
+  .toolbar { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; margin:6px 0; }
+  .toolbar button { border:1px solid var(--line); background:#fff; padding:4px 10px; border-radius:6px; cursor:pointer; font:inherit; font-size:13px; }
+  .toolbar button:disabled { opacity:.5; cursor:default; }
+  .count { color:var(--muted); font-size:13px; }
+  /* Table */
+  .tablewrap { overflow-x:auto; -webkit-overflow-scrolling:touch; border:1px solid var(--line); border-radius:10px; }
   table { width:100%; border-collapse:collapse; font-size:14px; }
-  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
-  th { font-size:12px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); cursor:pointer; user-select:none; }
+  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; white-space:nowrap; }
+  td.wrap { white-space:normal; min-width:160px; }
+  th { font-size:12px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); cursor:pointer; user-select:none; background:var(--soft); position:sticky; top:0; }
+  th:focus-visible, tbody tr:focus-visible { outline:2px solid var(--accent); outline-offset:-2px; }
+  th .arrow { font-size:10px; margin-left:3px; }
   tbody tr { cursor:pointer; }
   tbody tr:hover { background:var(--soft); }
   tr.selected { background:#eef2ff !important; }
   td.num { text-align:right; font-variant-numeric:tabular-nums; }
+  td.pick { width:28px; cursor:default; }
+  [title] { text-decoration-line:none; }
+  td[title] { cursor:help; }
   .tier { display:inline-block; min-width:26px; text-align:center; font-weight:600; color:#fff;
           border-radius:5px; padding:0 6px; background:var(--other); }
   .tier.A { background:var(--A); } .tier.B { background:var(--B); } .tier.C { background:var(--C); }
   .flags { color:var(--muted); font-size:13px; }
-  .count { color:var(--muted); font-size:13px; margin:6px 0; }
-  #detail { margin-top:22px; padding:18px 20px; border:1px solid var(--line); border-radius:10px; }
-  #detail h2 { margin:0 0 4px; font-size:21px; }
-  #detail table { font-size:14px; margin:10px 0; }
-  #detail td:first-child { width:220px; color:var(--muted); }
+  .tag { font-size:11px; padding:0 5px; border-radius:8px; margin-left:4px; border:1px solid var(--line); color:var(--muted); }
+  .tag.new { background:#ebfbee; border-color:#b2f2bb; color:#2b8a3e; }
+  .ok { color:#2b8a3e; font-weight:600; }
+  /* Side panel */
+  #backdrop { position:fixed; inset:0; background:rgba(20,24,33,.25); display:none; z-index:9; }
+  #panel { position:fixed; top:0; right:0; height:100%; width:min(720px,100%); background:#fff; z-index:10;
+           box-shadow:-8px 0 24px rgba(0,0,0,.12); overflow-y:auto; padding:18px 22px 40px; transform:translateX(105%);
+           transition:transform .18s ease-out; }
+  body.panel-open #panel { transform:none; }
+  body.panel-open #backdrop { display:block; }
+  #panel .close { position:sticky; top:0; float:right; border:1px solid var(--line); background:#fff; border-radius:6px; padding:2px 9px; cursor:pointer; font-size:18px; line-height:1.2; }
+  #panel h2 { margin:0 0 4px; font-size:21px; }
+  #panel table td { white-space:normal; }
+  #panel table td:first-child { width:200px; color:var(--muted); }
+  /* Compare */
+  #compare { margin-top:22px; }
+  #compare table td, #compare table th { white-space:normal; min-width:150px; }
+  #compare table td:first-child { color:var(--muted); min-width:170px; }
   a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
   .src { font-size:12px; color:var(--muted); }
   footer { margin-top:30px; color:var(--muted); font-size:13px; }
@@ -44,62 +97,208 @@
   .iss.community, .iss.individual { background:#fff0f6; border-color:#fcc2d7; } .iss.hbd { background:#f1f3f5; }
   .iss.curated, .iss.organisation { background:#f8f9fa; }
   .legend span { margin-right:10px; }
+  #changes details { margin:2px 0 2px 18px; }
 </style>
 </head>
 <body>
 <main>
-  <h1>Sovereign open-weight models</h1>
-  <p class="lead">Open-weight language models rated on <b>sovereignty from a European point of view</b> —
-    who controls them, where the weights come from, what the licence allows, how transparent data
-    and compute are — and whether they run on Apple Silicon with MLX. The tier says nothing about
-    model quality. Click a row for the sources.</p>
-  <details class="tiers"><summary>How the tiers work</summary><ul id="tierlist"></ul></details>
+  <header>
+    <h1 data-t="title">Sovereign open-weight models</h1>
+    <div class="lang" role="group" aria-label="Language"><button data-lang="en">EN</button> <button data-lang="de">DE</button></div>
+  </header>
+  <p class="lead" data-t="lead"></p>
+  <section id="overview" aria-label="Overview"></section>
+  <details class="tiers"><summary data-t="howTiers"></summary><ul id="tierlist"></ul></details>
 
   <div class="filters">
-    <div class="chips"><label style="color:var(--muted);display:block">Tier</label><span id="tierchips"></span></div>
-    <div><label for="country">Country</label><select id="country"><option value="">all</option></select></div>
-    <div><label for="licence">Licence class</label><select id="licence"><option value="">all</option></select></div>
-    <div><label for="ctx">Context</label>
-      <select id="ctx"><option value="0">weights only</option><option value="8192">8k</option>
+    <div><label for="q" data-t="search"></label><input type="search" id="q" autocomplete="off"></div>
+    <div class="chips"><label style="color:var(--muted);display:block" data-t="tier"></label><span id="tierchips"></span></div>
+    <div><label for="country" data-t="country"></label><select id="country"><option value="" data-t="all"></option></select></div>
+    <div><label for="licence" data-t="licence"></label><select id="licence"><option value="" data-t="all"></option></select></div>
+    <div><label for="ctx" data-t="context"></label>
+      <select id="ctx"><option value="0" data-t="weightsOnly"></option><option value="8192">8k</option>
         <option value="32768" selected>32k</option><option value="131072">128k</option></select></div>
-    <div><label for="kvbits">Cache precision</label>
+    <div><label for="kvbits" data-t="cachePrec"></label>
       <select id="kvbits"><option value="16">16 bit</option><option value="8">8 bit</option></select></div>
-    <div><label for="ram">Fits a Mac with … (4-bit weights)</label>
-      <select id="ram"><option value="">any size</option><option>16</option><option>24</option><option>32</option>
+    <div><label for="ram" data-t="fits"></label>
+      <select id="ram"><option value="" data-t="anySize"></option><option>16</option><option>24</option><option>32</option>
         <option>48</option><option>64</option><option>96</option><option>128</option></select></div>
-    <div><label for="teacher">Teacher models</label>
-      <select id="teacher"><option value="">any</option><option value="no-foreign">no foreign teacher</option>
-        <option value="foreign">foreign teacher</option><option value="unknown">unknown or unnamed</option></select></div>
-    <div><label for="recipe">Reproducibility</label>
-      <select id="recipe"><option value="">any</option><option value="code">training code or more</option>
-        <option value="full">full recipe</option></select></div>
-    <div class="chips"><label title="Open-weight models of providers outside Europe, with the same facts and sources but without a tier"><input type="checkbox" id="world"> compare with models from outside Europe</label></div>
-    <div class="chips"><label><input type="checkbox" id="mlx"> loads in mlx-vlm</label>
-      <label><input type="checkbox" id="llama"> runs in llama.cpp</label></div>
+    <div><label for="teacher" data-t="teachers"></label>
+      <select id="teacher"><option value="" data-t="any"></option><option value="no-foreign" data-t="noForeign"></option>
+        <option value="foreign" data-t="foreignT"></option><option value="unknown" data-t="unknownT"></option></select></div>
+    <div><label for="recipe" data-t="repro"></label>
+      <select id="recipe"><option value="" data-t="any"></option><option value="code" data-t="codeMore"></option>
+        <option value="full" data-t="fullRecipe"></option></select></div>
+    <div class="chips" id="worldbox"><label data-t-title="worldTitle"><input type="checkbox" id="world"> <span data-t="world"></span></label></div>
+    <div class="chips"><label><input type="checkbox" id="mlx"> <span data-t="loadsMlx"></span></label>
+      <label><input type="checkbox" id="llama"> <span data-t="runsLlama"></span></label>
+      <label><input type="checkbox" id="verified"> <span data-t="verifiedOnly"></span></label></div>
   </div>
 
-  <div class="count" id="count"></div>
-  <table>
-    <thead><tr id="head"></tr></thead>
-    <tbody id="rows"></tbody>
-  </table>
-  <section id="detail"><i>Select a row to see the details and sources.</i></section>
+  <div class="toolbar">
+    <div class="count" id="count" aria-live="polite"></div>
+    <div><button id="cmpbtn" disabled></button> <button id="csv" data-t="csv"></button> <button id="copy" data-t="copyLink"></button></div>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <thead><tr id="head"></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <section id="compare"></section>
   <section id="changes"></section>
 
-  <footer>Data: CC BY 4.0, here be dragons. Fit check: 4-bit weights plus the cache at the chosen
-    context (as MLX allocates it) plus 1 GB, against 75% of the RAM. Methodology and corrections: <code>here-be-dragons-ai/sovereign-models</code>.</footer>
+  <footer>
+    <span data-t="footerData"></span>
+    <a href="https://huggingface.co/datasets/here-be-dragons-ai/sovereign-models-scorecard" target="_blank" rel="noopener" data-t="dataset"></a> ·
+    <a href="https://github.com/here-be-dragons-ai/sovereign-models" target="_blank" rel="noopener">GitHub</a> ·
+    <a href="https://github.com/here-be-dragons-ai/sovereign-models/blob/main/METHODOLOGY.md" target="_blank" rel="noopener" data-t="methodology"></a> ·
+    <a href="https://github.com/here-be-dragons-ai/sovereign-models/issues" target="_blank" rel="noopener" data-t="corrections"></a>
+    <br><span data-t="fitNote"></span>
+  </footer>
 </main>
+<div id="backdrop"></div>
+<aside id="panel" role="dialog" aria-modal="true" aria-labelledby="ptitle"><button class="close" id="pclose" aria-label="Close">×</button><div id="pbody"></div></aside>
 <script>
+// ── Texts ──────────────────────────────────────────────────────────────────
+const STR = {
+  en: {
+    title: "Sovereign open-weight models",
+    lead: "Open-weight language models rated on <b>sovereignty from a European point of view</b> — who controls them, where the weights come from, what the licence allows, how transparent data and compute are — and whether they run on Apple Silicon with MLX. The tier says nothing about model quality. Click a row for the sources.",
+    howTiers: "How the tiers work", search: "Search", searchPh: "model, provider, family …", tier: "Tier", country: "Country",
+    licence: "Licence class", context: "Context", weightsOnly: "weights only", cachePrec: "Cache precision",
+    fits: "Fits a Mac with … (4-bit weights)", anySize: "any size", teachers: "Teacher models", any: "any", all: "all",
+    noForeign: "no foreign teacher", foreignT: "foreign teacher", unknownT: "unknown or unnamed",
+    repro: "Reproducibility", codeMore: "training code or more", fullRecipe: "full recipe",
+    world: "compare with models from outside Europe",
+    worldTitle: "Open-weight models of providers outside Europe, with the same facts and sources but without a tier",
+    loadsMlx: "loads in mlx-vlm", runsLlama: "runs in llama.cpp", verifiedOnly: "verified MLX build",
+    csv: "Download CSV", copyLink: "Copy link", copied: "Link copied", compareN: n => `Compare (${n})`,
+    count: (n, total) => `${n} of ${total} models`,
+    footerData: "Data: CC BY 4.0, here be dragons ·", dataset: "Dataset", methodology: "Methodology", corrections: "Corrections",
+    fitNote: "Fit check: 4-bit weights plus the cache at the chosen context (as MLX allocates it) plus 1 GB, against 75% of the RAM.",
+    cols: { tier: "Tier", name: "Model", provider_country: "Country", provider: "Provider", origin: "Origin", license_class: "Licence",
+      data: "Data", compute: "Compute", params_b: "Params (B)", size_4bit_gb: "4-bit GB", mem: "Total GB",
+      mlx_vlm: "mlx-vlm", llama_cpp: "llama.cpp", mlxbuild: "MLX build", flags: "Flags" },
+    isNew: "new", changed: "changed", verifiedTag: "✓ verified", beyond: "beyond max",
+    overviewTiers: "European models by tier", overviewShares: "Share of models with …", europe: "Europe", outside: "outside Europe",
+    shares: { open: "an open licence", dataOpen: "open training data", recipe: "training code or more published", cop: "a provider that signed the EU Code of Practice", aiact: "an AI Act training summary", mlx: "a load check passed in mlx-vlm" },
+    recent: "Recent changes", fullLog: "The full log is data/changes.csv in the dataset.", added: n => `${n} models added`,
+    addedOne: "added", removed: "removed",
+    cmpTitle: "Comparison", cmpClear: "clear", cmpHint: "Tick up to four models in the first column to compare them side by side.",
+    pickTitle: "Select for comparison",
+    issuersLegend: "Source issuers:", countRule: "only provider, official, academic and press sources that we checked count for the tier.",
+    lastReviewed: "Last reviewed", providerRepo: "provider repo", params: "parameters", ctxWord: "context",
+    lineage: "Lineage and openness", informative: "(informative, not part of the tier)", onMac: "On a Mac",
+    notChecked: "not checked, does not count", archived: "archived", modelSource: "model source", sourceOf: s => `${s} source`,
+    hubMeta: "Hub metadata",
+    rows: { Provider: "Provider", "Country / region": "Country / region", Control: "Control", Family: "Family", Origin: "Origin",
+      Licence: "Licence", "Training data": "Training data", "Training compute": "Training compute",
+      "AI Act training summary": "AI Act training summary", "GPAI Code of Practice": "GPAI Code of Practice",
+      "Teacher models": "Teacher models", Reproducibility: "Reproducibility", "Terms can change later": "Terms can change later",
+      Languages: "Languages", "Training hardware": "Training hardware", "Verified MLX build": "Verified MLX build",
+      Parameters: "Parameters (B)", "Context": "Context", "4-bit weights": "4-bit weights (GB)", "mlx-vlm": "mlx-vlm", "llama.cpp": "llama.cpp", Tier: "Tier" },
+    ofEu: n => `${n} of 24 EU languages`, unknownW: "unknown",
+    weightsLine: (a, b) => `Weights: ${a} GB at 4 bit, ${b} GB at 8 bit`,
+    flagsW: "Flags", involvement: "Our involvement", notesW: "Notes", changesW: "Changes",
+    mlxBuilds: "MLX builds", ggufBuilds: (n, k) => `GGUF builds (${n}, top ${k})`, downloads: "downloads",
+    tplLine: "Chat templates of the builds against the original", checkedOn: d => `(checked ${d})`,
+    close: "Close",
+  },
+  de: {
+    title: "Souveräne Open-Weight-Modelle",
+    lead: "Open-Weight-Sprachmodelle, bewertet nach <b>Souveränität aus europäischer Sicht</b> — wer sie kontrolliert, woher die Gewichte stammen, was die Lizenz erlaubt, wie transparent Trainingsdaten und Rechenleistung sind — und ob sie auf Apple Silicon mit MLX laufen. Das Tier sagt nichts über die Qualität eines Modells. Eine Zeile anklicken zeigt die Quellen. Die Einträge selbst (Quellen, Notizen) sind englisch.",
+    howTiers: "So funktionieren die Tiers", search: "Suche", searchPh: "Modell, Anbieter, Familie …", tier: "Tier", country: "Land",
+    licence: "Lizenzklasse", context: "Kontext", weightsOnly: "nur Gewichte", cachePrec: "Cache-Genauigkeit",
+    fits: "Passt auf einen Mac mit … (4-Bit-Gewichte)", anySize: "beliebig", teachers: "Teacher-Modelle", any: "beliebig", all: "alle",
+    noForeign: "kein fremder Teacher", foreignT: "fremder Teacher", unknownT: "unbekannt oder ungenannt",
+    repro: "Reproduzierbarkeit", codeMore: "Trainingscode oder mehr", fullRecipe: "vollständiges Rezept",
+    world: "mit Modellen von außerhalb Europas vergleichen",
+    worldTitle: "Open-Weight-Modelle von Anbietern außerhalb Europas, mit denselben Fakten und Quellen, aber ohne Tier",
+    loadsMlx: "lädt in mlx-vlm", runsLlama: "läuft in llama.cpp", verifiedOnly: "verifizierter MLX-Build",
+    csv: "CSV herunterladen", copyLink: "Link kopieren", copied: "Link kopiert", compareN: n => `Vergleichen (${n})`,
+    count: (n, total) => `${n} von ${total} Modellen`,
+    footerData: "Daten: CC BY 4.0, here be dragons ·", dataset: "Datensatz", methodology: "Methodik", corrections: "Korrekturen",
+    fitNote: "Passt-Prüfung: 4-Bit-Gewichte plus Cache beim gewählten Kontext (wie MLX ihn anlegt) plus 1 GB, gegen 75 % des Arbeitsspeichers.",
+    cols: { tier: "Tier", name: "Modell", provider_country: "Land", provider: "Anbieter", origin: "Herkunft", license_class: "Lizenz",
+      data: "Daten", compute: "Rechenzentrum", params_b: "Param. (Mrd.)", size_4bit_gb: "4-Bit GB", mem: "Gesamt GB",
+      mlx_vlm: "mlx-vlm", llama_cpp: "llama.cpp", mlxbuild: "MLX-Build", flags: "Hinweise" },
+    isNew: "neu", changed: "geändert", verifiedTag: "✓ verifiziert", beyond: "über Maximum",
+    overviewTiers: "Europäische Modelle nach Tier", overviewShares: "Anteil der Modelle mit …", europe: "Europa", outside: "außerhalb Europas",
+    shares: { open: "offener Lizenz", dataOpen: "offenen Trainingsdaten", recipe: "veröffentlichtem Trainingscode oder mehr", cop: "einem Anbieter, der den EU-Verhaltenskodex unterzeichnet hat", aiact: "einer Zusammenfassung der Trainingsdaten nach AI Act", mlx: "bestandener Ladeprüfung in mlx-vlm" },
+    recent: "Letzte Änderungen", fullLog: "Das vollständige Protokoll steht in data/changes.csv im Datensatz.", added: n => `${n} Modelle aufgenommen`,
+    addedOne: "aufgenommen", removed: "entfernt",
+    cmpTitle: "Vergleich", cmpClear: "leeren", cmpHint: "Bis zu vier Modelle in der ersten Spalte ankreuzen, um sie nebeneinander zu vergleichen.",
+    pickTitle: "Zum Vergleich auswählen",
+    issuersLegend: "Herausgeber der Quellen:", countRule: "nur geprüfte Quellen von Anbietern, Behörden, Wissenschaft und Presse zählen für das Tier.",
+    lastReviewed: "Zuletzt geprüft", providerRepo: "Repo des Anbieters", params: "Parameter", ctxWord: "Kontext",
+    lineage: "Herkunft und Offenheit", informative: "(informativ, nicht Teil des Tiers)", onMac: "Auf dem Mac",
+    notChecked: "nicht geprüft, zählt nicht", archived: "archiviert", modelSource: "Quelle (Modell)", sourceOf: s => `Quelle (${({provider:"Anbieter",family:"Familie"})[s] || s})`,
+    hubMeta: "Hub-Metadaten",
+    rows: { Provider: "Anbieter", "Country / region": "Land / Region", Control: "Kontrolle", Family: "Familie", Origin: "Herkunft der Gewichte",
+      Licence: "Lizenz", "Training data": "Trainingsdaten", "Training compute": "Rechenzentrum fürs Training",
+      "AI Act training summary": "Trainingsdaten-Zusammenfassung (AI Act)", "GPAI Code of Practice": "EU-Verhaltenskodex (GPAI)",
+      "Teacher models": "Teacher-Modelle", Reproducibility: "Reproduzierbarkeit", "Terms can change later": "Bedingungen später änderbar",
+      Languages: "Sprachen", "Training hardware": "Trainings-Hardware", "Verified MLX build": "Verifizierter MLX-Build",
+      Parameters: "Parameter (Mrd.)", "Context": "Kontext", "4-bit weights": "4-Bit-Gewichte (GB)", "mlx-vlm": "mlx-vlm", "llama.cpp": "llama.cpp", Tier: "Tier" },
+    ofEu: n => `${n} von 24 EU-Sprachen`, unknownW: "unbekannt",
+    weightsLine: (a, b) => `Gewichte: ${a} GB bei 4 Bit, ${b} GB bei 8 Bit`,
+    flagsW: "Hinweise", involvement: "Unsere Beteiligung", notesW: "Notizen", changesW: "Änderungen",
+    mlxBuilds: "MLX-Builds", ggufBuilds: (n, k) => `GGUF-Builds (${n}, Top ${k})`, downloads: "Downloads",
+    tplLine: "Chat-Templates der Builds gegenüber dem Original", checkedOn: d => `(geprüft ${d})`,
+    close: "Schließen",
+  },
+};
+const TIER_DE = {
+  A: "Europäischer Anbieter, unabhängig, eigene Gewichte, offene Lizenz, offene Daten oder europäisches Rechenzentrum",
+  B: "Europäischer Anbieter und offene Lizenz, aber Daten oder Rechenzentrum nicht offengelegt, oder Kontrolle außerhalb Europas",
+  C: "Europäischer Anbieter, aber nicht-europäisches Basismodell oder eigene Lizenz",
+  pending: "Lizenz unklar; Tier zurückgehalten, bis geprüft",
+  excluded: "Nicht-kommerzielle Lizenz",
+  comparison: "Anbieter außerhalb Europas: zum Vergleich mit denselben Fakten gezeigt, ohne Tier",
+};
+// Explanations of coded values, shown as tooltips.
+const HELP = {
+  en: {
+    origin: { scratch: "pre-trained from scratch by the provider", "continued-own": "trained further from the provider's own earlier model",
+      "continued-european": "trained further from a European base model", "finetune-european": "fine-tuned from a European base model",
+      "continued-foreign": "trained further from a non-European base model", "finetune-foreign": "fine-tuned from a non-European base model" },
+    license_class: { osi: "open licence (Apache-2.0, MIT, CC-BY and similar)", "osi-aup": "open licence plus a binding use policy",
+      custom: "the provider's own licence with extra conditions", nc: "non-commercial only", unclear: "licence unclear" },
+    data: { open: "training data published", documented: "training data mix described", undisclosed: "training data not described", unknown: "not known" },
+    compute: { eu: "pre-trained in the EU", europe: "pre-trained in Europe outside the EU", "non-europe": "pre-trained outside Europe", unknown: "not known" },
+    mlx_vlm: { loads: "loads in the current mlx-vlm release", fails: "mlx-vlm knows the model type, but the weights do not load", unsupported: "model type not in mlx-vlm", "not checked": "not checked (gated or quantized release)" },
+    llama_cpp: { supported: "architecture registered in llama.cpp's converter", unsupported: "architecture not in llama.cpp's converter" },
+  },
+  de: {
+    origin: { scratch: "vom Anbieter von Grund auf vortrainiert", "continued-own": "auf einem eigenen früheren Modell weitertrainiert",
+      "continued-european": "auf einem europäischen Basismodell weitertrainiert", "finetune-european": "Feinabstimmung eines europäischen Basismodells",
+      "continued-foreign": "auf einem nicht-europäischen Basismodell weitertrainiert", "finetune-foreign": "Feinabstimmung eines nicht-europäischen Basismodells" },
+    license_class: { osi: "offene Lizenz (Apache-2.0, MIT, CC-BY u. ä.)", "osi-aup": "offene Lizenz plus verbindliche Nutzungsrichtlinie",
+      custom: "eigene Lizenz des Anbieters mit Zusatzbedingungen", nc: "nur nicht-kommerziell", unclear: "Lizenz unklar" },
+    data: { open: "Trainingsdaten veröffentlicht", documented: "Datenmix beschrieben", undisclosed: "Trainingsdaten nicht beschrieben", unknown: "unbekannt" },
+    compute: { eu: "in der EU vortrainiert", europe: "in Europa außerhalb der EU vortrainiert", "non-europe": "außerhalb Europas vortrainiert", unknown: "unbekannt" },
+    mlx_vlm: { loads: "lädt im aktuellen mlx-vlm-Release", fails: "Modelltyp bekannt, aber die Gewichte laden nicht", unsupported: "Modelltyp nicht in mlx-vlm", "not checked": "nicht geprüft (gated oder quantisiert ausgeliefert)" },
+    llama_cpp: { supported: "Architektur im Konverter von llama.cpp registriert", unsupported: "Architektur nicht im Konverter von llama.cpp" },
+  },
+};
+
+// ── State ──────────────────────────────────────────────────────────────────
 const COLS = [
-  ["tier","Tier"],["name","Model"],["provider_country","Country"],["provider","Provider"],["origin","Origin"],
-  ["license_class","Licence"],["data","Data"],["compute","Compute"],["params_b","Params (B)",1],
-  ["size_4bit_gb","4-bit GB",1],["mem","Total GB",1],["mlx_vlm","mlx-vlm"],["llama_cpp","llama.cpp"],["flags","Flags"],
+  ["pick",""],["tier"],["name"],["provider_country"],["provider"],["origin"],["license_class"],["data"],["compute"],
+  ["params_b",1],["size_4bit_gb",1],["mem",1],["mlx_vlm"],["llama_cpp"],["mlxbuild"],["flags"],
 ];
 const TIER_ORDER = ["A","B","C","pending","excluded","comparison"];
-let DATA, sortKey = "tier", sortDir = 1, selected = null;
+const EUROPE_TIERS = ["A","B","C","pending","excluded"];
+let DATA, sortKey = "tier", sortDir = 1, selected = null, lang = "en", picked = [];
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const link = (url, text) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+const t = (k, ...a) => { const v = STR[lang][k] ?? STR.en[k]; return typeof v === "function" ? v(...a) : v; };
+const help = (field, value) => (HELP[lang][field] || {})[value] || "";
+let regionNames = new Intl.DisplayNames(["en"], { type: "region" });
+const countryName = (c) => { try { return regionNames.of(c) || c; } catch { return c; } };
+const tierText = (tier) => lang === "de" ? (TIER_DE[tier] || DATA.tiers[tier]) : DATA.tiers[tier];
 
 const KV_SCALE = {16: 1, 8: 8.5 / 16};
 // Weights at 4 bit plus the cache at the chosen context, as MLX allocates it.
@@ -116,7 +315,12 @@ function memory(m) {
 }
 function memText(m) {
   const v = memory(m);
-  return v === null ? "?" : Number.isNaN(v) ? "beyond max" : v.toFixed(1);
+  return v === null ? "?" : Number.isNaN(v) ? t("beyond") : v.toFixed(1);
+}
+const isVerified = (m) => m.mlx_builds.some(b => b.verified === "yes");
+function mlxBuildText(m) {
+  if (isVerified(m)) return t("verifiedTag");
+  return m.mlx_build ? `${m.mlx_build_bits} bit` : "–";
 }
 
 function teacherOk(m) {
@@ -129,6 +333,12 @@ function recipeOk(m) {
   const v = $("recipe").value, order = ["weights", "code", "code+data", "full"];
   return !v || order.indexOf(m.recipe) >= order.indexOf(v);
 }
+function searchOk(m) {
+  const q = $("q").value.trim().toLowerCase();
+  if (!q) return true;
+  return [m.name, m.provider, m.family, m.hf_repo, m.id, countryName(m.provider_country)]
+    .some(v => String(v || "").toLowerCase().includes(q));
+}
 
 function filtered() {
   const tiers = [...document.querySelectorAll("#tierchips input:checked")].map(i => i.value);
@@ -139,44 +349,110 @@ function filtered() {
     (!licence || m.license_class === licence) &&
     (!$("mlx").checked || m.mlx_vlm === "loads") &&
     (!$("llama").checked || m.llama_cpp === "supported") &&
-    teacherOk(m) && recipeOk(m) &&
+    (!$("verified").checked || isVerified(m)) &&
+    teacherOk(m) && recipeOk(m) && searchOk(m) &&
     (!ram || (() => { const v = memory(m); return v !== null && !Number.isNaN(v) && v + 1 <= ram * 0.75; })()));
 }
 
+function sortValue(m, k) {
+  if (k === "tier") return TIER_ORDER.indexOf(m.tier);
+  if (k === "mem") return memory(m) || 1e9;
+  if (k === "mlxbuild") return isVerified(m) ? 0 : m.mlx_build ? 1 : 2;
+  if (k === "provider_country") return countryName(m.provider_country);
+  if (COLS.find(c => c[0] === k)?.[1] === 1) return parseFloat(m[k]) || 0;
+  return m[k] ?? "";
+}
+
+// ── Table ──────────────────────────────────────────────────────────────────
+function renderHead() {
+  $("head").innerHTML = COLS.map(([k]) => {
+    if (k === "pick") return `<th scope="col" aria-label="${esc(t("pickTitle"))}"></th>`;
+    const on = k === sortKey;
+    const aria = on ? (sortDir > 0 ? "ascending" : "descending") : "none";
+    return `<th scope="col" data-k="${k}" tabindex="0" aria-sort="${aria}">${esc(t("cols")[k])}${on ? `<span class="arrow">${sortDir > 0 ? "▲" : "▼"}</span>` : ""}</th>`;
+  }).join("");
+}
+function cell(m, k, num) {
+  if (k === "pick") return `<td class="pick"><input type="checkbox" data-pick="${esc(m.id)}" ${picked.includes(m.id) ? "checked" : ""} aria-label="${esc(t("pickTitle"))}: ${esc(m.name)}" ${!picked.includes(m.id) && picked.length >= 4 ? "disabled" : ""}></td>`;
+  if (k === "tier") return `<td title="${esc(tierText(m.tier))}"><span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></td>`;
+  if (k === "mem") return `<td class="num">${esc(memText(m))}</td>`;
+  if (k === "provider_country") return `<td title="${esc(m.provider_country)}">${esc(countryName(m.provider_country))}</td>`;
+  if (k === "mlxbuild") return `<td${isVerified(m) ? ' class="ok"' : ""}>${esc(mlxBuildText(m))}</td>`;
+  if (k === "name") {
+    const isNew = m.first_listed && (Date.now() - Date.parse(m.first_listed)) / 864e5 <= 30 && m.last_changed === m.first_listed;
+    const tag = isNew ? `<span class="tag new">${esc(t("isNew"))}</span>`
+      : recent(m) ? `<span class="tag" title="${esc(m.last_changed)}">${esc(t("changed"))}</span>` : "";
+    return `<td>${esc(m.name)}${tag}</td>`;
+  }
+  const h = help(k, m[k]);
+  return `<td class="${num ? "num" : ""}${k === "flags" ? " flags wrap" : ""}"${h ? ` title="${esc(h)}"` : ""}>${esc(m[k])}</td>`;
+}
 function render() {
   const rows = filtered().sort((a, b) => {
-    let x = a[sortKey], y = b[sortKey];
-    if (sortKey === "tier") { x = TIER_ORDER.indexOf(x); y = TIER_ORDER.indexOf(y); }
-    else if (sortKey === "mem") { x = memory(a) || 1e9; y = memory(b) || 1e9; }
-    else if (COLS.find(c => c[0] === sortKey)?.[2]) { x = parseFloat(x) || 0; y = parseFloat(y) || 0; }
+    const x = sortValue(a, sortKey), y = sortValue(b, sortKey);
     return (x > y ? 1 : x < y ? -1 : a.name.localeCompare(b.name)) * sortDir;
   });
-  $("count").textContent = `${rows.length} of ${DATA.models.length} models`;
-  $("rows").innerHTML = rows.map(m => `<tr data-id="${esc(m.id)}" class="${m.id === selected ? "selected" : ""}">` +
-    COLS.map(([k,, num]) => k === "tier" ? `<td><span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></td>`
-      : k === "mem" ? `<td class="num">${esc(memText(m))}</td>`
-      : k === "name" ? `<td>${esc(m.name)}${recent(m) ? ` <span class="src" title="last change ${esc(m.last_changed)}">changed</span>` : ""}</td>`
-      : `<td class="${num ? "num" : ""}${k === "flags" ? " flags" : ""}">${esc(m[k])}</td>`).join("") + "</tr>").join("");
+  CURRENT = rows;
+  const total = DATA.models.filter(m => m.tier !== "comparison" || $("world").checked).length;
+  $("count").textContent = t("count", rows.length, total);
+  renderHead();
+  $("rows").innerHTML = rows.map(m => `<tr data-id="${esc(m.id)}" tabindex="0" class="${m.id === selected ? "selected" : ""}">` +
+    COLS.map(([k, num]) => cell(m, k, num)).join("") + "</tr>").join("");
+  $("cmpbtn").textContent = t("compareN", picked.length);
+  $("cmpbtn").disabled = picked.length < 2;
+  renderOverview();
+  renderCompare();
+  saveState();
 }
+let CURRENT = [];
 
 // A model counts as recently changed for 30 days after its last logged change (#6).
 function recent(m) {
   return m.last_changed && (Date.now() - Date.parse(m.last_changed)) / 864e5 <= 30;
 }
-function changeLine(c) {
-  const what = c.field === "model" ? (c.new ? "added" : "removed") : `${esc(c.field)}: ${esc(c.old || "–")} → ${esc(c.new || "–")}`;
-  return `<li>${esc(c.date)} · <b>${esc(c.model)}</b> · ${what}${c.reason ? ` <span class="src">${esc(c.reason)}</span>` : ""}</li>`;
+
+// ── Overview ───────────────────────────────────────────────────────────────
+function share(models, pred) { return models.length ? models.filter(pred).length / models.length : 0; }
+function renderOverview() {
+  const eu = DATA.models.filter(m => EUROPE_TIERS.includes(m.tier));
+  const world = DATA.models.filter(m => m.tier === "comparison");
+  const showWorld = $("world").checked && world.length;
+  const max = Math.max(...EUROPE_TIERS.map(tr => eu.filter(m => m.tier === tr).length), 1);
+  const tiers = EUROPE_TIERS.filter(tr => eu.some(m => m.tier === tr)).map(tr => {
+    const n = eu.filter(m => m.tier === tr).length;
+    return `<div class="tiercount" title="${esc(tierText(tr))}"><span class="tier ${esc(tr)}">${esc(tr)}</span>
+      <span class="bar" style="width:${Math.round(110 * n / max)}px;background:var(--${["A","B","C"].includes(tr) ? tr : "other"})"></span><span>${n}</span></div>`;
+  }).join("");
+  const metrics = [
+    ["open", m => ["osi", "osi-aup"].includes(m.license_class)],
+    ["dataOpen", m => m.data === "open"],
+    ["recipe", m => ["code", "code+data", "full"].includes(m.recipe)],
+    ["cop", m => m.cop_signatory === "yes"],
+    ["aiact", m => m.ai_act_summary === "yes"],
+    ["mlx", m => m.mlx_vlm === "loads"],
+  ];
+  const bar = (v, color, label) => `<div class="row"><span class="track"><span class="b" style="display:block;width:${Math.max(0.5, v * 100).toFixed(1)}%;background:${color}" title="${esc(label)}"></span></span><span class="v">${Math.round(v * 100)} %</span></div>`;
+  const rows = metrics.map(([k, pred]) => `<div class="metric"><span>${esc(t("shares")[k])}</span><span class="bars">
+      ${bar(share(eu, pred), "var(--eu)", t("europe"))}${showWorld ? bar(share(world, pred), "var(--world)", t("outside")) : ""}</span></div>`).join("");
+  $("overview").innerHTML = `<div><h3>${esc(t("overviewTiers"))}</h3>${tiers}</div>
+    <div><h3>${esc(t("overviewShares"))}</h3>${rows}
+      <div class="legend2"><i style="background:var(--eu)"></i>${esc(t("europe"))} (${eu.length})${showWorld ? `<i style="background:var(--world)"></i>${esc(t("outside"))} (${world.length})` : ""}</div></div>`;
 }
+
+// ── Details panel ──────────────────────────────────────────────────────────
 const ISSUER = {provider:"provider", official:"official", academic:"academic", press:"press",
   community:"community", hbd:"own measurement"};
+const ISSUER_DE = {provider:"Anbieter", official:"Behörde", academic:"Wissenschaft", press:"Presse",
+  community:"Community", hbd:"eigene Messung"};
 const PUBLISHER = {official:"provider (official)", hbd:"here be dragons", curated:"curated community org",
   organisation:"other organisation", individual:"individual", unknown:"unknown"};
+const issuerLabel = (k) => (lang === "de" ? ISSUER_DE : ISSUER)[k] || k;
 function badge(kind, label) { return `<span class="iss ${esc(kind)}">${esc(label)}</span>`; }
 // Verified label (#23): template and measured quality against the original.
 function verified(b) {
   if (!b.verified || b.verified === "not measured") return "";
   const rep = b.quality_report ? " " + link(b.quality_report, "report") : "";
-  return b.verified === "yes" ? ` <b>✓ verified</b>${rep}` : ` <span class="src">not verified: ${esc(b.verified_reason)}</span>${rep}`;
+  return b.verified === "yes" ? ` <b>${esc(t("verifiedTag"))}</b>${rep}` : ` <span class="src">not verified: ${esc(b.verified_reason)}</span>${rep}`;
 }
 // Chat-template check of a build against the original (#7, 3a); diffs live in the dataset.
 const DIFF_BASE = "https://huggingface.co/datasets/here-be-dragons-ai/sovereign-models-scorecard/blob/main/";
@@ -191,88 +467,216 @@ function tpl(b) {
 function sources(m, field) {
   const s = m.sources.filter(x => x.field === field);
   if (!s.length && field === "license_class")
-    return badge("provider", "provider") + link(`https://huggingface.co/api/models/${m.hf_repo}`, "Hub metadata");
-  return s.map(x => badge(x.issuer, ISSUER[x.issuer] || x.issuer) +
-    link(x.url, x.scope === "model" ? "model source" : x.scope + " source") +
-    (x.archive_url ? " · " + link(x.archive_url, "archived") : "") +
-    (x.checked === "yes" ? "" : " · <i>not checked, does not count</i>") +
+    return badge("provider", issuerLabel("provider")) + link(`https://huggingface.co/api/models/${m.hf_repo}`, t("hubMeta"));
+  return s.map(x => badge(x.issuer, issuerLabel(x.issuer)) +
+    link(x.url, x.scope === "model" ? t("modelSource") : t("sourceOf", x.scope)) +
+    (x.archive_url ? " · " + link(x.archive_url, t("archived")) : "") +
+    (x.checked === "yes" ? "" : ` · <i>${esc(t("notChecked"))}</i>`) +
     (x.note ? " — " + esc(x.note) : "")).join("<br>") || "—";
 }
+const valueWithHelp = (field, v) => { const h = help(field, v); return esc(v) + (h ? ` <span class="src">(${esc(h)})</span>` : ""); };
 
 function detail(id) {
-  const m = DATA.models.find(x => x.id === id); selected = id; render();
-  if (location.hash.slice(1) !== id) history.replaceState(null, "", "#" + id);
+  const m = DATA.models.find(x => x.id === id);
+  if (!m) return;
+  selected = id;
+  if (location.hash.slice(1) !== id) history.replaceState(null, "", location.search + "#" + id);
+  const R = t("rows");
   const rows = [
-    ["Provider", m.provider + (m.provider_notes ? ` — ${m.provider_notes}` : ""), "provider_id"],
-    ["Country / region", `${m.provider_country} / ${m.region}`],
-    ["Control", m.control + (m.majority_owner ? ` (${m.majority_owner})` : ""), "control"],
-    ["Family", m.family + (m.family_notes ? ` — ${m.family_notes}` : "")], ["Origin", m.origin + (m.base_model ? ` (${m.base_model})` : ""), "origin"],
-    ["Licence", `${m.license_class} (${m.license})`, "license_class"], ["Training data", m.data, "data"],
-    ["Training compute", m.compute, "compute"], ["AI Act training summary", m.ai_act_summary, "ai_act_summary"],
-    ["GPAI Code of Practice", m.cop_signatory, "cop_signatory"],
+    [R.Provider, esc(m.provider) + (m.provider_notes ? ` — ${esc(m.provider_notes)}` : ""), "provider_id"],
+    [R["Country / region"], `${esc(countryName(m.provider_country))} / ${esc(m.region)}`],
+    [R.Control, esc(m.control) + (m.majority_owner ? ` (${esc(m.majority_owner)})` : ""), "control"],
+    [R.Family, esc(m.family) + (m.family_notes ? ` — ${esc(m.family_notes)}` : "")],
+    [R.Origin, valueWithHelp("origin", m.origin) + (m.base_model ? ` (${esc(m.base_model)})` : ""), "origin"],
+    [R.Licence, `${valueWithHelp("license_class", m.license_class)} — ${esc(m.license)}`, "license_class"],
+    [R["Training data"], valueWithHelp("data", m.data), "data"],
+    [R["Training compute"], valueWithHelp("compute", m.compute), "compute"],
+    [R["AI Act training summary"], esc(m.ai_act_summary), "ai_act_summary"],
+    [R["GPAI Code of Practice"], esc(m.cop_signatory), "cop_signatory"],
   ];
   const builds = m.mlx_builds.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) +
     `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit)` + tpl(b) + verified(b)).join("<br>");
-  $("detail").innerHTML = `
-    <h2>${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></h2>
-    <div class="src">${esc(DATA.tiers[m.tier])}</div>
-    <p>${badge("provider", "provider repo" + (m.repo_verified_org ? " ✓ verified" : ""))}${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)} · ${esc(m.params_b)}B parameters ·
-      context ${esc(m.context || "?")} · <code>${esc(m.model_type)}</code> · ${esc(m.modalities)}</p>
-    <div class="src legend">Source issuers: ${Object.entries(ISSUER).map(([k, v]) => badge(k, v)).join("")}
-      — only provider, official, academic and press sources that we checked count for the tier.
-      Last reviewed ${esc(m.last_reviewed)}.</div>
-    <table>${rows.map(([l, v, f]) => `<tr><td>${esc(l)}</td><td>${esc(v)}<div class="src">${f ? sources(m, f) : ""}</div></td></tr>`).join("")}</table>
-    <h3>Lineage and openness <span class="src">(informative, not part of the tier)</span></h3>
+  $("pbody").innerHTML = `
+    <h2 id="ptitle">${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></h2>
+    <div class="src">${esc(tierText(m.tier))}</div>
+    <p>${badge("provider", t("providerRepo") + (m.repo_verified_org ? " ✓ verified" : ""))}${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)} · ${esc(m.params_b)}B ${esc(t("params"))} ·
+      ${esc(t("ctxWord"))} ${esc(m.context || "?")} · <code>${esc(m.model_type)}</code> · ${esc(m.modalities)}</p>
+    <div class="src legend">${esc(t("issuersLegend"))} ${Object.keys(ISSUER).map(k => badge(k, issuerLabel(k))).join("")}
+      — ${esc(t("countRule"))} ${esc(t("lastReviewed"))} ${esc(m.last_reviewed)}.</div>
+    <table>${rows.map(([l, v, f]) => `<tr><td>${esc(l)}</td><td>${v}<div class="src">${f ? sources(m, f) : ""}</div></td></tr>`).join("")}</table>
+    <h3>${esc(t("lineage"))} <span class="src">${esc(t("informative"))}</span></h3>
     <table>
-      <tr><td>Teacher models</td><td>${esc(m.teacher_origin)}${m.teachers.length ? "<br>" + m.teachers.map(t =>
-        `${esc(t.model)} — ${esc(t.stage)}, ${esc(t.model_origin)}${t.purpose ? ": " + esc(t.purpose) : ""}<div class="src">${sources(m, "teacher:" + t.model)}</div>`).join("") : `<div class="src">${sources(m, "teacher_status")}</div>`}</td></tr>
-      <tr><td>Reproducibility</td><td>${esc(m.recipe)}<div class="src">${sources(m, "recipe")}</div></td></tr>
-      <tr><td>Terms can change later</td><td>${esc(m.terms_can_change)}<div class="src">${sources(m, "terms_can_change")}</div></td></tr>
-      <tr><td>Languages</td><td>${m.languages ? esc(m.eu_languages) + " of 24 EU languages (" + esc(m.languages_basis) + "): " + esc(m.languages.replaceAll(";", ", ")) : "unknown"}<div class="src">${sources(m, "languages")}</div></td></tr>
-      <tr><td>Training hardware</td><td>${esc(m.training_hardware)}<div class="src">${sources(m, "training_hardware")}</div></td></tr>
+      <tr><td>${esc(R["Teacher models"])}</td><td>${esc(m.teacher_origin)}${m.teachers.length ? "<br>" + m.teachers.map(tc =>
+        `${esc(tc.model)} — ${esc(tc.stage)}, ${esc(tc.model_origin)}${tc.purpose ? ": " + esc(tc.purpose) : ""}<div class="src">${sources(m, "teacher:" + tc.model)}</div>`).join("") : `<div class="src">${sources(m, "teacher_status")}</div>`}</td></tr>
+      <tr><td>${esc(R.Reproducibility)}</td><td>${esc(m.recipe)}<div class="src">${sources(m, "recipe")}</div></td></tr>
+      <tr><td>${esc(R["Terms can change later"])}</td><td>${esc(m.terms_can_change)}<div class="src">${sources(m, "terms_can_change")}</div></td></tr>
+      <tr><td>${esc(R.Languages)}</td><td>${m.languages ? esc(t("ofEu", m.eu_languages)) + " (" + esc(m.languages_basis) + "): " + esc(m.languages.replaceAll(";", ", ")) : esc(t("unknownW"))}<div class="src">${sources(m, "languages")}</div></td></tr>
+      <tr><td>${esc(R["Training hardware"])}</td><td>${esc(m.training_hardware)}<div class="src">${sources(m, "training_hardware")}</div></td></tr>
     </table>
-    <h3>On a Mac</h3>
+    <h3>${esc(t("onMac"))}</h3>
     <ul>
-      <li>mlx-vlm: <b>${esc(m.mlx_vlm)}</b>${m.mlx_vlm_detail ? " — " + esc(m.mlx_vlm_detail) : ""} <span class="src">(checked ${esc(m.mlx_vlm_checked || "—")})</span></li>
-      <li>Weights: ${esc(m.size_4bit_gb)} GB at 4 bit, ${esc(m.size_8bit_gb)} GB at 8 bit</li>
-      <li>Cache (16 bit, as MLX allocates it): ${esc(m.cache_kind || "unknown")}; ${esc(m.cache_kib_per_token)} KiB per token —
-        ${esc(m.cache_gib_8k)} GiB at 8k, ${esc(m.cache_gib_32k)} GiB at 32k, ${esc(m.cache_gib_128k)} GiB at 128k
-        (max context ${esc(m.max_context || "?")})</li>
-      <li>llama.cpp: <b>${esc(m.llama_cpp)}</b>${m.llama_cpp_detail ? " — " + esc(m.llama_cpp_detail) : ""} <span class="src">(checked ${esc(m.llama_cpp_checked || "—")})</span></li>
-      ${m.gguf_list.length ? `<li>GGUF builds (${esc(m.gguf_builds)}, top ${m.gguf_list.length}):<br>${m.gguf_list.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) + link("https://huggingface.co/" + b.repo, b.repo) + ` <span class="src">${esc(b.downloads)} downloads</span>` + tpl(b)).join("<br>")}</li>` : ""}
-      ${m.template_check ? `<li>Chat templates of the builds against the original: <b>${esc(m.template_check)}</b> <span class="src">(${esc(m.template_check_detail)})</span></li>` : ""}
-      ${builds ? `<li>MLX builds:<br>${builds}</li>` : ""}
+      <li>mlx-vlm: <b>${esc(m.mlx_vlm)}</b>${m.mlx_vlm_detail ? " — " + esc(m.mlx_vlm_detail) : ""} <span class="src">${esc(t("checkedOn", m.mlx_vlm_checked || "—"))}</span></li>
+      <li>${esc(t("weightsLine", m.size_4bit_gb, m.size_8bit_gb))}</li>
+      <li>Cache (16 bit): ${esc(m.cache_kind || t("unknownW"))}; ${esc(m.cache_kib_per_token)} KiB/token —
+        ${esc(m.cache_gib_8k)} GiB @ 8k, ${esc(m.cache_gib_32k)} GiB @ 32k, ${esc(m.cache_gib_128k)} GiB @ 128k
+        (max ${esc(m.max_context || "?")})</li>
+      <li>llama.cpp: <b>${esc(m.llama_cpp)}</b>${m.llama_cpp_detail ? " — " + esc(m.llama_cpp_detail) : ""} <span class="src">${esc(t("checkedOn", m.llama_cpp_checked || "—"))}</span></li>
+      ${m.gguf_list.length ? `<li>${esc(t("ggufBuilds", m.gguf_builds, m.gguf_list.length))}:<br>${m.gguf_list.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) + link("https://huggingface.co/" + b.repo, b.repo) + ` <span class="src">${esc(b.downloads)} ${esc(t("downloads"))}</span>` + tpl(b)).join("<br>")}</li>` : ""}
+      ${m.template_check ? `<li>${esc(t("tplLine"))}: <b>${esc(m.template_check)}</b> <span class="src">(${esc(m.template_check_detail)})</span></li>` : ""}
+      ${builds ? `<li>${esc(t("mlxBuilds"))}:<br>${builds}</li>` : ""}
     </ul>
-    ${m.flags ? `<p><b>Flags:</b> ${esc(m.flags)}</p>` : ""}
-    ${m.hbd_involvement ? `<p><b>Our involvement:</b> ${esc(m.hbd_involvement)}</p>` : ""}
-    ${m.notes ? `<p><b>Notes:</b> ${esc(m.notes)}</p>` : ""}
-    ${DATA.changes.some(c => c.model === m.id) ? `<h3>Changes</h3><ul>${DATA.changes.filter(c => c.model === m.id).map(changeLine).join("")}</ul>` : ""}`;
+    ${m.flags ? `<p><b>${esc(t("flagsW"))}:</b> ${esc(m.flags)}</p>` : ""}
+    ${m.hbd_involvement ? `<p><b>${esc(t("involvement"))}:</b> ${esc(m.hbd_involvement)}</p>` : ""}
+    ${m.notes ? `<p><b>${esc(t("notesW"))}:</b> ${esc(m.notes)}</p>` : ""}
+    ${DATA.changes.some(c => c.model === m.id) ? `<h3>${esc(t("changesW"))}</h3><ul>${DATA.changes.filter(c => c.model === m.id).map(changeLine).join("")}</ul>` : ""}`;
+  document.body.classList.add("panel-open");
+  $("pclose").setAttribute("aria-label", t("close"));
+  $("panel").scrollTop = 0;
+  $("pclose").focus();
+  render();
+}
+function closePanel() {
+  document.body.classList.remove("panel-open");
+  const back = selected && document.querySelector(`tr[data-id="${CSS.escape(selected)}"]`);
+  selected = null;
+  history.replaceState(null, "", location.pathname + location.search);
+  render();
+  if (back) document.querySelector(`tr[data-id="${CSS.escape(back.dataset.id)}"]`)?.focus();
 }
 
+// ── Compare ────────────────────────────────────────────────────────────────
+function renderCompare() {
+  const ms = picked.map(id => DATA.models.find(m => m.id === id)).filter(Boolean);
+  if (ms.length < 2) { $("compare").innerHTML = picked.length ? `<p class="src">${esc(t("cmpHint"))}</p>` : ""; return; }
+  const R = t("rows");
+  const fields = [
+    [R.Tier, m => `<span class="tier ${esc(m.tier)}">${esc(m.tier)}</span>`],
+    [R.Provider, m => esc(m.provider)], [R["Country / region"], m => esc(countryName(m.provider_country))],
+    [R.Control, m => esc(m.control) + (m.majority_owner ? ` (${esc(m.majority_owner)})` : "")],
+    [R.Origin, m => valueWithHelp("origin", m.origin)], [R.Licence, m => valueWithHelp("license_class", m.license_class) + `<div class="src">${esc(m.license)}</div>`],
+    [R["Training data"], m => valueWithHelp("data", m.data)], [R["Training compute"], m => valueWithHelp("compute", m.compute)],
+    [R["AI Act training summary"], m => esc(m.ai_act_summary)], [R["GPAI Code of Practice"], m => esc(m.cop_signatory)],
+    [R["Teacher models"], m => esc(m.teacher_origin)], [R.Reproducibility, m => esc(m.recipe)],
+    [R["Terms can change later"], m => esc(m.terms_can_change)], [R.Languages, m => m.languages ? esc(t("ofEu", m.eu_languages)) : esc(t("unknownW"))],
+    [R.Parameters, m => esc(m.params_b)], [R.Context, m => esc(m.context)], [R["4-bit weights"], m => esc(m.size_4bit_gb)],
+    [R["mlx-vlm"], m => esc(m.mlx_vlm)], [R["llama.cpp"], m => esc(m.llama_cpp)], [R["Verified MLX build"], m => esc(mlxBuildText(m))],
+  ];
+  $("compare").innerHTML = `<h3>${esc(t("cmpTitle"))} <button id="cmpclear" class="src" style="border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer">${esc(t("cmpClear"))}</button></h3>
+    <div class="tablewrap"><table><thead><tr><th></th>${ms.map(m => `<th><a href="#${esc(m.id)}">${esc(m.name)}</a></th>`).join("")}</tr></thead>
+    <tbody>${fields.map(([l, f]) => `<tr><td>${esc(l)}</td>${ms.map(m => `<td>${f(m)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  $("cmpclear").onclick = () => { picked = []; render(); };
+}
+
+// ── Changes ────────────────────────────────────────────────────────────────
+function changeLine(c) {
+  const what = c.field === "model" ? (c.new ? t("addedOne") : t("removed")) : `${esc(c.field)}: ${esc(c.old || "–")} → ${esc(c.new || "–")}`;
+  return `<li>${esc(c.date)} · <b>${esc(c.model)}</b> · ${what}${c.reason ? ` <span class="src">${esc(c.reason)}</span>` : ""}</li>`;
+}
+function renderChanges() {
+  if (!DATA.changes.length) { $("changes").innerHTML = ""; return; }
+  const byDate = {};
+  for (const c of DATA.changes) (byDate[c.date] ||= []).push(c);
+  const name = id => DATA.models.find(m => m.id === id)?.name || id;
+  const dates = Object.keys(byDate).sort().reverse().slice(0, 6);
+  const items = dates.map(d => {
+    const cs = byDate[d];
+    const added = cs.filter(c => c.field === "model" && c.new);
+    const other = cs.filter(c => !(c.field === "model" && c.new));
+    let out = "";
+    if (added.length > 3)
+      out += `<li>${esc(d)} · <details style="display:inline"><summary>${esc(t("added", added.length))}</summary>${added.map(c => `<a href="#${esc(c.model)}">${esc(name(c.model))}</a>`).join(", ")}</details></li>`;
+    else out += added.map(changeLine).join("");
+    out += other.slice(0, 8).map(changeLine).join("");
+    if (other.length > 8) out += `<li class="src">${esc(d)} · +${other.length - 8} …</li>`;
+    return out;
+  }).join("");
+  $("changes").innerHTML = `<h3>${esc(t("recent"))}</h3><ul>${items}</ul><div class="src">${esc(t("fullLog"))}</div>`;
+}
+
+// ── CSV, links, state ──────────────────────────────────────────────────────
+function downloadCsv() {
+  const keys = ["id","name","tier","provider","provider_country","origin","license_class","data","compute","control",
+    "cop_signatory","ai_act_summary","recipe","params_b","size_4bit_gb","mlx_vlm","llama_cpp","mlx_build_verified","hf_repo"];
+  const q = v => /[",\n]/.test(String(v ?? "")) ? `"${String(v).replaceAll('"', '""')}"` : String(v ?? "");
+  const csv = [keys.join(","), ...CURRENT.map(m => keys.map(k => q(m[k])).join(","))].join("\n") + "\n";
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
+  a.download = "sovereign-models.csv";
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+const SIMPLE = ["q", "country", "licence", "ctx", "kvbits", "ram", "teacher", "recipe"];
+const CHECKS = ["world", "mlx", "llama", "verified"];
+function saveState() {
+  const p = new URLSearchParams();
+  for (const id of SIMPLE) { const el = $(id); if (el.value && el.value !== el.dataset.default) p.set(id, el.value); }
+  for (const id of CHECKS) if ($(id).checked) p.set(id, "1");
+  const tiers = [...document.querySelectorAll("#tierchips input:checked")].map(i => i.value).join(",");
+  if (tiers !== "A,B") p.set("tiers", tiers);
+  if (sortKey !== "tier" || sortDir !== 1) p.set("sort", (sortDir < 0 ? "-" : "") + sortKey);
+  if (picked.length) p.set("cmp", picked.join(","));
+  if (lang !== "en") p.set("lang", lang);
+  const qs = p.toString();
+  history.replaceState(null, "", (qs ? "?" + qs : location.pathname) + location.hash);
+}
+function loadState() {
+  const p = new URLSearchParams(location.search);
+  for (const id of SIMPLE) { $(id).dataset.default = $(id).value; if (p.has(id)) $(id).value = p.get(id); }
+  for (const id of CHECKS) $(id).checked = p.get(id) === "1";
+  if (p.has("tiers")) { const set = p.get("tiers").split(","); document.querySelectorAll("#tierchips input").forEach(i => i.checked = set.includes(i.value)); }
+  if (p.has("sort")) { const s = p.get("sort"); sortDir = s.startsWith("-") ? -1 : 1; sortKey = s.replace(/^-/, ""); }
+  if (p.has("cmp")) picked = p.get("cmp").split(",").filter(id => DATA.models.some(m => m.id === id)).slice(0, 4);
+  if (p.get("lang") === "de") lang = "de";
+}
+
+// ── Language ───────────────────────────────────────────────────────────────
+function applyLang() {
+  document.documentElement.lang = lang;
+  regionNames = new Intl.DisplayNames([lang], { type: "region" });
+  document.querySelectorAll("[data-t]").forEach(el => { const v = t(el.dataset.t); if (el.dataset.t === "lead") el.innerHTML = v; else el.textContent = v; });
+  document.querySelectorAll("[data-t-title]").forEach(el => el.title = t(el.dataset.tTitle));
+  $("q").placeholder = t("searchPh");
+  document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+  $("tierlist").innerHTML = Object.keys(DATA.tiers).map(tr => `<li><b>${esc(tr)}</b>: ${esc(tierText(tr))}</li>`).join("");
+  const keep = $("country").value;
+  $("country").innerHTML = `<option value="">${esc(t("all"))}</option>` + [...new Set(DATA.models.map(m => m.provider_country))]
+    .sort((a, b) => countryName(a).localeCompare(countryName(b), lang)).map(c => `<option value="${esc(c)}">${esc(countryName(c))}</option>`).join("");
+  $("country").value = keep;
+  document.title = t("title");
+  renderChanges();
+  if (selected) detail(selected); else render();
+}
+
+// ── Start ──────────────────────────────────────────────────────────────────
 fetch("scorecard.json").then(r => r.json()).then(d => {
   DATA = d;
-  $("tierlist").innerHTML = Object.entries(d.tiers).map(([t, s]) => `<li><b>${esc(t)}</b>: ${esc(s)}</li>`).join("");
-  $("tierchips").innerHTML = TIER_ORDER.filter(t => t !== "comparison" && d.models.some(m => m.tier === t))
-    .map(t => `<label><input type="checkbox" value="${esc(t)}" ${["A","B"].includes(t) ? "checked" : ""}> ${esc(t)}</label>`).join("");
-  for (const [id, key] of [["country","provider_country"],["licence","license_class"]])
-    [...new Set(d.models.map(m => m[key]))].sort().forEach(v => $(id).insertAdjacentHTML("beforeend", `<option>${esc(v)}</option>`));
-  $("head").innerHTML = COLS.map(([k, l]) => `<th data-k="${k}">${esc(l)}</th>`).join("");
-  $("head").onclick = e => { const k = e.target.dataset.k; if (!k) return; sortDir = sortKey === k ? -sortDir : 1; sortKey = k; render(); };
-  $("rows").onclick = e => { const tr = e.target.closest("tr"); if (tr) detail(tr.dataset.id); };
-  // The comparison with models from outside Europe is off by default; ?world=1 links to it.
-  const params = new URLSearchParams(location.search);
-  $("world").checked = params.get("world") === "1";
-  $("world").closest(".chips").hidden = !d.models.some(m => m.tier === "comparison");
-  $("world").addEventListener("change", () => {
-    const p = new URLSearchParams(location.search);
-    $("world").checked ? p.set("world", "1") : p.delete("world");
-    history.replaceState(null, "", (p.toString() ? "?" + p : location.pathname) + location.hash);
-  });
-  document.querySelectorAll(".filters input, .filters select").forEach(el => el.addEventListener("change", render));
-  render();
-  $("changes").innerHTML = d.changes.length ? `<h3>Recent changes</h3><ul>${d.changes.slice(0, 20).map(changeLine).join("")}</ul>
-    <div class="src">The full log is data/changes.csv in the dataset.</div>` : "";
-  // Deep links: index.html#model-id opens the detail view.
+  $("tierchips").innerHTML = TIER_ORDER.filter(tr => tr !== "comparison" && d.models.some(m => m.tier === tr))
+    .map(tr => `<label><input type="checkbox" value="${esc(tr)}" ${["A","B"].includes(tr) ? "checked" : ""}> ${esc(tr)}</label>`).join("");
+  [...new Set(d.models.map(m => m.license_class))].sort().forEach(v => $("licence").insertAdjacentHTML("beforeend", `<option>${esc(v)}</option>`));
+  $("worldbox").hidden = !d.models.some(m => m.tier === "comparison");
+  loadState();
+  // Sorting by click or keyboard on the column headers.
+  const sortBy = k => { if (!k) return; sortDir = sortKey === k ? -sortDir : 1; sortKey = k; render(); };
+  $("head").onclick = e => sortBy(e.target.closest("th")?.dataset.k);
+  $("head").onkeydown = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); sortBy(e.target.dataset.k); } };
+  // Rows: click or Enter opens the details; the first column picks models for comparison.
+  $("rows").onclick = e => {
+    const box = e.target.closest("input[data-pick]");
+    if (box) { const id = box.dataset.pick; picked = box.checked ? [...picked, id].slice(0, 4) : picked.filter(x => x !== id); render(); return; }
+    if (e.target.closest("td.pick")) return;
+    const tr = e.target.closest("tr"); if (tr) detail(tr.dataset.id);
+  };
+  $("rows").onkeydown = e => { if ((e.key === "Enter" || e.key === " ") && e.target.matches("tr")) { e.preventDefault(); detail(e.target.dataset.id); } };
+  $("pclose").onclick = closePanel;
+  $("backdrop").onclick = closePanel;
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && document.body.classList.contains("panel-open")) closePanel(); });
+  $("cmpbtn").onclick = () => $("compare").scrollIntoView({ behavior: "smooth" });
+  $("csv").onclick = downloadCsv;
+  $("copy").onclick = async () => { try { await navigator.clipboard.writeText(location.href); $("copy").textContent = t("copied"); setTimeout(() => $("copy").textContent = t("copyLink"), 1500); } catch {} };
+  document.querySelectorAll(".lang button").forEach(b => b.onclick = () => { lang = b.dataset.lang; applyLang(); });
+  document.querySelectorAll(".filters input, .filters select").forEach(el => el.addEventListener(el.type === "search" ? "input" : "change", render));
+  applyLang();
+  // Deep links: #model-id opens the details.
   const open = () => { const id = decodeURIComponent(location.hash.slice(1)); if (d.models.some(m => m.id === id)) detail(id); };
   window.addEventListener("hashchange", open);
   open();
