@@ -15,7 +15,7 @@ domyn,Domyn (formerly iGenius),IT,eu,independent,,yes,domyn,,domyn.com,
 sapienza-nlp,Sapienza NLP,IT,eu,independent,,no,sapienzanlp,,,
 nxai,NXAI,AT,eu,independent,,no,NX-AI,NX-AI,,
 h-company,H Company,FR,eu,independent,,no,Hcompany,,hcompany.ai,
-nb,National Library of Norway,NO,europe,independent,,no,NbAiLab,,,Norway is not in the EU.
+nb,National Library of Norway,NO,eu,independent,,no,NbAiLab,,,"Norway is not in the EU but in the EEA, which the scorecard counts as eu."
 meta,"Meta Platforms, Inc.",US,non-europe,independent,,no,meta-llama;facebook,meta-llama;facebookresearch,meta.com;ai.meta.com;llama.com,No open-weight Llama release since Llama 4 (April 2025); current Meta frontier line (Muse) is closed.
 google,Google LLC (Google DeepMind),US,non-europe,independent,,yes,google,google-deepmind;google-gemma,google.com;ai.google.dev;deepmind.google;blog.google,Subsidiary of Alphabet Inc. (US). Gemma is authored by Google DeepMind.
 openai,OpenAI,US,non-europe,independent,,yes,openai,openai,openai.com,
@@ -52,4 +52,4 @@ tartunlp,"University of Tartu (TartuNLP), with TalTech (TalTechNLP)",EE,eu,indep
 amalia,"AMALIA consortium (NOVA University Lisbon, IST, U. Coimbra, U. Porto, U. Minho, FCT)",PT,eu,independent,,no,amalia-llm,AMALIA-LLM,amaliallm.pt,"Consortium of Portuguese public universities and research centres with the Foundation for Science and Technology (FCT), funded by the Government of Portugal. Distinct from the EuroLLM consortium (eurollm), whose EuroLLM-9B it continues; IST is in both."
 portulan,"PORTULAN CLARIN / NLX group, University of Lisbon",PT,eu,independent,,no,PORTULAN,,portulan-clarin.ul.pt;nlx.di.fc.ul.pt,"NLX - Natural Language and Speech Group, Faculty of Sciences, University of Lisbon; PORTULAN CLARIN research infrastructure (FCT-funded)."
 hitz,"HiTZ Center, University of the Basque Country (UPV/EHU)",ES,eu,independent,,no,HiTZ,hitz-zentroa,hitz.eus;ehu.eus,Public university research centre (HiTZ and IXA group).
-hplt,"HPLT project (Language Technology Group, University of Oslo)",NO,europe,independent,,no,HPLT,hplt-project,hplt-project.org,EU Horizon Europe project (grant 101070350) consortium of universities; NorOLMo built by the University of Oslo LTG. Norway is in the EEA (region eu per the brief; note existing nb row uses europe for NO).
+hplt,"HPLT project (Language Technology Group, University of Oslo)",NO,eu,independent,,no,HPLT,hplt-project,hplt-project.org,EU Horizon Europe project (grant 101070350) consortium of universities; NorOLMo built by the University of Oslo LTG. Norway is in the EEA (region eu per the brief; note existing nb row uses europe for NO).

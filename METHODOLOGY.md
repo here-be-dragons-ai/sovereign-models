@@ -24,7 +24,7 @@ spirit, at a much coarser level.
 
 | Criterion | Column | Values |
 |---|---|---|
-| Provider seat | `region` | `eu` (EU/EEA), `europe` (European, outside the EU: CH, NO, UK, ...), `non-europe` |
+| Provider seat | `region` | `eu` (EU/EEA), `europe` (European, outside the EU/EEA: CH, UK, UA, ...), `non-europe` |
 | Control | `control` | `independent`; `acquired-non-eu`; `merger-pending-non-eu` |
 | Origin of the weights | `origin` | `scratch`; `continued-own` (the provider's earlier model); `continued-european` / `finetune-european` (a European base); `continued-foreign` / `finetune-foreign` (a non-European base) |
 | Licence | `license_class` | `osi` (Apache-2.0, MIT, CC-BY, CC-BY-SA and similar); `osi-aup` (such a licence plus a binding use policy, including a third party's policy the card binds the model to, e.g. Helium and the Gemma Terms of Use); `custom`; `nc` (non-commercial); `unclear` |

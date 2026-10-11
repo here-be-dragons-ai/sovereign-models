@@ -112,3 +112,7 @@ date,model,field,old,new,reason
 2026-10-10,oellm-9b-256k-sft,model,,listed,"European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
 2026-10-10,pllum-12b-chat-2512,model,,listed,"European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
 2026-10-10,teuken-7b-instruct-0.6,model,,listed,"European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
+2026-10-11,borealis2-26b,region,europe,eu,"Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
+2026-10-11,borealis2-26b,flags,outside the EU; custom licence; non-European base model,custom licence; non-European base model,"Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
+2026-10-11,norolmo-13b,region,europe,eu,"Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
+2026-10-11,norolmo-13b,flags,outside the EU; non-European base model,non-European base model,"Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"

@@ -20,7 +20,7 @@ Curated by hand and reviewed in pull requests: `providers.csv`, `families.csv`, 
 | `id` | `a-z0-9-` | Stable identifier |
 | `name` | text | Organisation name |
 | `country` | ISO 3166-1 alpha-2 | Seat |
-| `region` | `eu`, `europe`, `non-europe` | `europe` = European but outside the EU/EEA (CH, NO, UK, ...) |
+| `region` | `eu`, `europe`, `non-europe` | `europe` = European but outside the EU/EEA (CH, UK, UA, ...); EEA members such as Norway count as `eu` |
 | `control` | `independent`, `acquired-non-eu`, `merger-pending-non-eu` | Ownership |
 | `majority_owner` | text | Required unless `independent` |
 | `cop_signatory` | `yes`, `no`, `unknown` | Signed the EU GPAI Code of Practice |

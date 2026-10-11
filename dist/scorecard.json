@@ -7877,7 +7877,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044144/https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT",
      "note": "BgGPT 3.0 ... developed by INSAIT"
     },
     {
@@ -7887,7 +7887,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044144/https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT",
      "note": "distributed under the Gemma Terms of Use"
     },
     {
@@ -7947,7 +7947,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044144/https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT",
      "note": "weights only; no training code or data released"
     },
     {
@@ -7957,7 +7957,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044144/https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT",
      "note": "Gemma Terms of Use, which incorporate the Gemma Prohibited Use Policy"
     },
     {
@@ -7987,7 +7987,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044144/https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT",
      "note": "no AI Act training summary in card or repo; not in AIAL tracker"
     },
     {
@@ -8060,7 +8060,7 @@
    "family": "borealis2",
    "provider": "National Library of Norway",
    "provider_country": "NO",
-   "region": "europe",
+   "region": "eu",
    "control": "independent",
    "majority_owner": "",
    "origin": "finetune-foreign",
@@ -8105,13 +8105,13 @@
    "eu_languages": 1,
    "languages_basis": "supported",
    "training_hardware": "unknown",
-   "flags": "outside the EU; custom licence; non-European base model",
+   "flags": "custom licence; non-European base model",
    "hbd_involvement": "",
    "notes": "Norway is not in the EU. nb-license-1.0.",
    "hf_repo": "NbAiLab/borealis2-26b-a4b-preview",
    "hf_created": "2026-08-21",
    "last_reviewed": "2026-10-10",
-   "provider_notes": "Norway is not in the EU.",
+   "provider_notes": "Norway is not in the EU but in the EEA, which the scorecard counts as eu.",
    "family_notes": "",
    "repo_verified_org": true,
    "sources": [
@@ -8264,7 +8264,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-11",
    "first_listed": ""
   },
   {
@@ -10330,7 +10330,7 @@
    "family": "NorOLMo 1.0",
    "provider": "HPLT project (Language Technology Group, University of Oslo)",
    "provider_country": "NO",
-   "region": "europe",
+   "region": "eu",
    "control": "independent",
    "majority_owner": "",
    "origin": "continued-foreign",
@@ -10375,7 +10375,7 @@
    "eu_languages": 0,
    "languages_basis": "supported",
    "training_hardware": "unknown",
-   "flags": "outside the EU; non-European base model",
+   "flags": "non-European base model",
    "hbd_involvement": "",
    "notes": "Base model, not instruction-tuned. Norwegian (Bokmal, Nynorsk) and Northern Sami; context 16,384 after stage 3.",
    "hf_repo": "HPLT/NorOLMo-13B",
@@ -10506,7 +10506,7 @@
    },
    "teachers": [],
    "max_context": 16384,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-11",
    "first_listed": "2026-10-10"
   },
   {
@@ -12560,7 +12560,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044241/https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE",
      "note": "Licensor: LG Management Development Institute Co., Ltd."
     },
     {
@@ -12580,7 +12580,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044213/https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B",
      "note": "the first open-weight vision language model developed by LG AI Research"
     },
     {
@@ -12600,7 +12600,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044241/https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE",
      "note": "3.1 Commercial Use: Licensee is expressly prohibited from using the Model ... for any commercial purposes"
     },
     {
@@ -12610,7 +12610,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044241/https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE",
      "note": "9.1 Licensor reserves the right to modify or amend this Agreement at any time, in its sole discretion"
     },
     {
@@ -12650,7 +12650,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044213/https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B",
      "note": "weights only"
     },
     {
@@ -17109,7 +17109,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044241/https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE",
      "note": "Licensor: LG Management Development Institute Co., Ltd."
     },
     {
@@ -17129,7 +17129,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044315/https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
      "note": "K-EXAONE 2.0, a frontier-scale multilingual language model developed by LG AI Research"
     },
     {
@@ -17139,7 +17139,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044315/https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
      "note": "scaled to more than three times the size of its predecessor through upcycling, followed by continual pretraining"
     },
     {
@@ -17159,7 +17159,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044315/https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
      "note": "licensed under Apache License 2.0"
     },
     {
@@ -17209,7 +17209,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044315/https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
      "note": "weights only; no training code or data released"
     },
     {
@@ -17219,7 +17219,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044315/https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B",
      "note": "Korean, English, Spanish, German, Japanese, Vietnamese, French, Italian, Polish, and Portuguese"
     },
     {
@@ -24367,6 +24367,38 @@
  ],
  "changes": [
   {
+   "date": "2026-10-11",
+   "model": "norolmo-13b",
+   "field": "flags",
+   "old": "outside the EU; non-European base model",
+   "new": "non-European base model",
+   "reason": "Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
+  },
+  {
+   "date": "2026-10-11",
+   "model": "norolmo-13b",
+   "field": "region",
+   "old": "europe",
+   "new": "eu",
+   "reason": "Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
+  },
+  {
+   "date": "2026-10-11",
+   "model": "borealis2-26b",
+   "field": "flags",
+   "old": "outside the EU; custom licence; non-European base model",
+   "new": "custom licence; non-European base model",
+   "reason": "Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
+  },
+  {
+   "date": "2026-10-11",
+   "model": "borealis2-26b",
+   "field": "region",
+   "old": "europe",
+   "new": "eu",
+   "reason": "Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
+  },
+  {
    "date": "2026-10-10",
    "model": "teuken-7b-instruct-0.6",
    "field": "model",
@@ -25133,38 +25165,6 @@
    "old": "not checked",
    "new": "loads",
    "reason": "mlx-vlm column now checks the latest release, 0.7.6 (#27); Bielik readable after accepting its gate"
-  },
-  {
-   "date": "2026-10-09",
-   "model": "magistral-small-2509",
-   "field": "base_model",
-   "old": "",
-   "new": "Mistral Small 3.2 24B Instruct",
-   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
-  },
-  {
-   "date": "2026-10-09",
-   "model": "magistral-small-2509",
-   "field": "origin",
-   "old": "scratch",
-   "new": "continued-own",
-   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
-  },
-  {
-   "date": "2026-10-09",
-   "model": "domyn-small",
-   "field": "license_class",
-   "old": "unclear",
-   "new": "osi",
-   "reason": "Check chat templates of all builds; apply the dataset review (65612f9)"
-  },
-  {
-   "date": "2026-10-09",
-   "model": "domyn-small",
-   "field": "tier",
-   "old": "pending",
-   "new": "B",
-   "reason": "licence text checked: MIT with minor rewording, so license_class osi instead of unclear (review feedback; 65612f9)"
   }
  ]
 }
