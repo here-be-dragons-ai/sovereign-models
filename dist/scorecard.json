@@ -1071,7 +1071,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (list last updated 2026-10-07)"
     },
     {
@@ -3699,7 +3699,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-10)"
     },
     {
@@ -3749,7 +3749,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "we modified the final pretraining phase of EuroLLM-9B"
     },
     {
@@ -3769,7 +3769,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "Arquivo.pt high+medium quality 5.8B tokens; SFT mixture table with per-dataset shares and token counts"
     },
     {
@@ -3789,7 +3789,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "Training took 80 hours on 256 NVIDIA H100 GPUs (pretraining)"
     },
     {
@@ -3829,7 +3829,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "report names models used for synthetic SFT data, DPO pairs and filtering"
     },
     {
@@ -3849,7 +3849,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "pt-PT data produced via machine translation using our pt-PT MT model and Gemma 3-27B ... answer generation with Gemma 3-27B"
     },
     {
@@ -3859,7 +3859,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "machine translation using our pt-PT MT model"
     },
     {
@@ -3869,7 +3869,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "we created an English safety dataset using DeepSeek-V3.2-Exp"
     },
     {
@@ -3879,7 +3879,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "generating chosen responses with Qwen 3-32B (DPO, math)"
     },
     {
@@ -3889,7 +3889,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "rejected responses with Qwen 3-0.6B (DPO)"
     },
     {
@@ -3899,7 +3899,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "sampling 32 candidate responses from our own SFT model ... scoring them with ArmoRM"
     },
     {
@@ -3909,7 +3909,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "classified every prompt of the Euroblocks SFT dataset using Qwen3Guard"
     },
     {
@@ -3919,7 +3919,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191415/https://arxiv.org/abs/2603.26511",
      "note": "utilized the Deita Quality Scorer ... to filter out synthetic entries with quality scores below 5"
     }
    ],
@@ -7040,7 +7040,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (list last updated 2026-10-07)"
     },
     {
@@ -7857,7 +7857,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "INSAIT not listed (page updated 2026-10-07)"
     },
     {
@@ -7967,7 +7967,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008155755/https://ai.google.dev/gemma/prohibited_use_policy",
      "note": "Google reserves the right to update this policy from time to time"
     },
     {
@@ -7997,7 +7997,7 @@
      "issuer": "academic",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260923170646/https://aial.ie/research/gpai-training-transparency/",
      "note": "BgGPT / INSAIT not listed"
     }
    ],
@@ -8336,7 +8336,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "University of Ljubljana / CJVT not listed (page updated 2026-10-07)"
     },
     {
@@ -8436,7 +8436,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008155755/https://ai.google.dev/gemma/prohibited_use_policy",
      "note": "Google reserves the right to update this policy from time to time"
     },
     {
@@ -8556,7 +8556,7 @@
      "issuer": "academic",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260923170646/https://aial.ie/research/gpai-training-transparency/",
      "note": "GaMS / University of Ljubljana not listed"
     },
     {
@@ -8770,7 +8770,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-10)"
     },
     {
@@ -9194,7 +9194,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-10)"
     },
     {
@@ -9284,7 +9284,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010190807/https://aclanthology.org/2025.emnlp-main.1484/",
      "note": "We release code, models, instruction datasets, and human preferences (v1 study; v2 details pending) [review: The EMNLP paper (v1) says 'We release code, models, instruction datasets, and human preferences', but the v2 card defers its training details to a fut]"
     },
     {
@@ -9444,7 +9444,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "University of Tartu not listed (page updated 2026-10-07)"
     },
     {
@@ -9504,7 +9504,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191324/https://arxiv.org/abs/2603.02041",
      "note": "paper documents only the 8B CPT mix (ENC 8.6B, Cosmopedia v2, Python-Edu, FineMath, Instruct-PT; 35.7B)"
     },
     {
@@ -9524,7 +9524,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191324/https://arxiv.org/abs/2603.02041",
      "note": "8B models trained on LUMI (AMD MI250x); 70B not covered"
     },
     {
@@ -9604,7 +9604,7 @@
      "issuer": "academic",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260923170646/https://aial.ie/research/gpai-training-transparency/",
      "note": "EstLLM / University of Tartu not listed"
     }
    ],
@@ -9702,7 +9702,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "Athena RC / ILSP not listed (page updated 2026-10-07)"
     },
     {
@@ -9752,7 +9752,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260908083742/https://arxiv.org/abs/2505.13772",
      "note": "App. A.1 names sources (Wikipedia, ELRC-SHARE, EUR-LEX, MaCoCu, CulturaX, ...) and shares: Greek 56.7B, English 21B, parallel 5.5B, math/code 7.8B"
     },
     {
@@ -9772,7 +9772,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260908083742/https://arxiv.org/abs/2505.13772",
      "note": "two AWS p5e.48xlarge instances (8 x NVIDIA H200), ~50 days; region not stated"
     },
     {
@@ -9792,7 +9792,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260908083742/https://arxiv.org/abs/2505.13772",
      "note": "2 nodes of 8 NVIDIA H200 GPUs"
     },
     {
@@ -9882,7 +9882,7 @@
      "issuer": "academic",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260923170646/https://aial.ie/research/gpai-training-transparency/",
      "note": "Krikri / ILSP not listed"
     }
    ],
@@ -9995,7 +9995,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (list last updated 2026-10-07)"
     },
     {
@@ -10392,7 +10392,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-10)"
     },
     {
@@ -10563,7 +10563,7 @@
    "training_hardware": "nvidia",
    "flags": "",
    "hbd_involvement": "",
-   "notes": "Experimental SFT research checkpoint (not a final assistant, no safety evaluation); SimPO stage not included. 262,144-token context (RoPE theta 64M); base is an intermediate, not cooled-down 1T-token checkpoint of the 10T Prelude run. Published by an OpenEuroLLM member; training code lives in a personal GitHub repo (BirgerMoell).",
+   "notes": "Experimental SFT research checkpoint (not a final assistant, no safety evaluation); SimPO stage not included. 262,144-token context (RoPE theta 64M); base is an intermediate, not cooled-down 1T-token checkpoint of the 10T Prelude run. Published by an OpenEuroLLM member; training code lives in a personal GitHub repo (BirgerMoell). Tier C only because no checked source states that the Prelude base was trained from scratch (strongly implied by its 10T-token run); it moves up once the training report says so.",
    "hf_repo": "openeurollm/oellm-9b-256k-sft",
    "hf_created": "2026-08-12",
    "last_reviewed": "2026-10-10",
@@ -10578,7 +10578,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (list last updated 2026-10-07)"
     },
     {
@@ -11312,7 +11312,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (list last updated 2026-10-07)"
     },
     {
@@ -11352,7 +11352,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261006082124/https://arxiv.org/abs/2410.03730",
      "note": "Teuken-7B-Base (v0.6) trained from scratch for 6 trillion tokens; run extended from 3T/4T with Continue-Decay"
     },
     {
@@ -11372,7 +11372,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260904091146/https://arxiv.org/abs/2410.08800",
      "note": "Data Processing for the OpenGPT-X Model Family: sources and composition of the pre-training corpus"
     },
     {
@@ -11442,7 +11442,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261006082124/https://arxiv.org/abs/2410.03730",
      "note": "sec. 6.2: Mixtral used for Evol-Instruct, everyday conversations and translations; Llama-3.1-70B-Instruct as judge"
     },
     {
@@ -11452,7 +11452,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261006082124/https://arxiv.org/abs/2410.03730",
      "note": "We use Mixtral-8x22B-Instruct to generate high-quality translations; Evol-Instruct using Mixtral"
     },
     {
@@ -11462,7 +11462,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261006082124/https://arxiv.org/abs/2410.03730",
      "note": "Translation quality was assessed using Llama-3.1-70B-Instruct as an automated judge"
     }
    ],
@@ -17357,7 +17357,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "model in IFM (Institute of Foundation Models) Hub org; citation author IFM Team"
     },
     {
@@ -17367,7 +17367,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "license: apache-2.0"
     },
     {
@@ -17377,7 +17377,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "plain Apache-2.0, no use policy referenced"
     },
     {
@@ -17387,7 +17387,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "Pretraining Phase 1 7.08T + Phase 2 8.05T tokens, then midtraining, RL, SFT"
     },
     {
@@ -17407,7 +17407,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "\"We have released the checkpoints, along with the data and the training code.\""
     },
     {
@@ -17417,7 +17417,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "training code (xLLM), W&B logs, data and intermediate checkpoints listed as Available"
     },
     {
@@ -17427,7 +17427,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "not stated"
     },
     {
@@ -17437,7 +17437,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "not stated (only H200 serving recipes; xLLM repo has H200 throughput benchmarks, not a training record)"
     },
     {
@@ -17447,7 +17447,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "language metadata: en; no language list in card"
     },
     {
@@ -17596,7 +17596,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "model in IFM (Institute of Foundation Models) Hub org; citation author IFM Team"
     },
     {
@@ -17606,7 +17606,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "license: apache-2.0"
     },
     {
@@ -17616,7 +17616,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "plain Apache-2.0, no use policy referenced"
     },
     {
@@ -17626,7 +17626,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "Pretraining Phase 1 7.08T + Phase 2 8.05T tokens, then midtraining, RL, SFT"
     },
     {
@@ -17646,7 +17646,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "\"We have released the checkpoints, along with the data and the training code.\""
     },
     {
@@ -17656,7 +17656,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "training code (xLLM), W&B logs, data and intermediate checkpoints listed as Available"
     },
     {
@@ -17666,7 +17666,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "not stated"
     },
     {
@@ -17676,7 +17676,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "not stated (only H200 serving recipes; xLLM repo has H200 throughput benchmarks, not a training record)"
     },
     {
@@ -17686,7 +17686,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044116/https://huggingface.co/IFM/K2-Horizon-375B-A23B",
      "note": "language metadata: en; no language list in card"
     },
     {
