@@ -1081,7 +1081,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045634/https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5",
      "note": "developed by SDU, Aarhus University, University of Copenhagen and Alexandra Institute as part of Danish Foundation Models"
     },
     {
@@ -1091,7 +1091,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045634/https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5",
      "note": "developed by SDU, Aarhus University, University of Copenhagen and Alexandra Institute, part of Danish Foundation Models"
     },
     {
@@ -1101,7 +1101,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045634/https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5",
      "note": "released under the Apache License 2.0"
     },
     {
@@ -1111,7 +1111,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045634/https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5",
      "note": "continuation checkpoint of the Mimir lineage, not a new model trained from scratch; resumes epoch-9 checkpoint"
     },
     {
@@ -1141,7 +1141,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045634/https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5",
      "note": "public DFM11 additions pinned in training_data_manifest.json; full corpus not reconstructible (agreement-backed)"
     },
     {
@@ -1151,7 +1151,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045634/https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5",
      "note": "Trained on SDU UCloud (Denmark)"
     },
     {
@@ -1171,7 +1171,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045634/https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5",
      "note": "primarily intended for Danish and English"
     },
     {
@@ -1191,7 +1191,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045634/https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5",
      "note": "not stated (no AI Act training summary in card or repo)"
     },
     {
@@ -2856,7 +2856,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052630/https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0",
      "note": "The training data is a mixture of the following datasets:"
     },
     {
@@ -2866,7 +2866,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261008155222/https://minerva-ai.org/en",
      "note": "in collaboration with FAIR and powered by CINECA ’s Leonardo supercomputer"
     }
    ],
@@ -3709,7 +3709,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045438/https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
      "note": "consortium of Portuguese universities and research centres ... and the Foundation for Science and Technology (FCT)"
     },
     {
@@ -3719,7 +3719,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045438/https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
      "note": "AMALIA is developed by a consortium of Portuguese universities and research centres"
     },
     {
@@ -3729,7 +3729,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045438/https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
      "note": "license: apache-2.0"
     },
     {
@@ -3739,7 +3739,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045438/https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
      "note": "We extend EuroLLM pretraining to better cover European Portuguese knowledge and extend the maximum sequence length to 32k"
     },
     {
@@ -3759,7 +3759,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045438/https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
      "note": "pre-training: Arquivo.pt, EuroLLM pre-training data, Stack-v2 long-context, needle datasets; SFT and DPO datasets released"
     },
     {
@@ -3779,7 +3779,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045438/https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
      "note": "All training phases were carried out on the MareNostrum5 supercomputer ... and the DEUCALION supercomputer"
     },
     {
@@ -3809,7 +3809,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045438/https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
      "note": "license: apache-2.0"
     },
     {
@@ -3819,7 +3819,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045438/https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO",
      "note": "targets European Portuguese; out of scope: languages other than Portuguese and English"
     },
     {
@@ -4207,7 +4207,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052757/https://huggingface.co/speakleash/Bielik-11B-v3-Base-20250730",
      "note": "The model training was conducted on the Helios Supercomputer at the ACK Cyfronet AGH, utilizing 128 NVidia GH200 cards."
     }
    ],
@@ -4783,7 +4783,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055245/https://www.domyn.com/summary-of-training-data/domyn-small",
      "note": "This page outlines the summary of the training data used for Domyn Small, in accordance with the requirements set out in Article 53 (1)(d)"
     }
    ],
@@ -6311,7 +6311,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054018/https://legal.mistral.ai/documents/Ministral%203%20-%2014B%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf",
      "note": "This Public Summary of Training Content applies to the following versions of Ministral 3 -14B: Base, Instruct and Reasoning."
     }
    ],
@@ -6592,7 +6592,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053950/https://legal.mistral.ai/ai-governance/models/mistral-small-3/",
      "note": "Includes Mistral Small 3.0, 3.1, 3.2 and subsequent versions."
     }
    ],
@@ -6851,7 +6851,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054034/https://legal.mistral.ai/documents/Mistral%20Small%204%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf",
      "note": "This Public Summary of Training Content applies to Mistral Small 4."
     }
    ],
@@ -7867,7 +7867,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053828/https://insait.ai/what-is-insait/",
      "note": "special unit of Sofia University \"St. Kliment Ohridski\", created by Bulgarian Council of Ministers decree 2021 with ETH Zurich and EPFL"
     },
     {
@@ -7897,7 +7897,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054131/https://models.bggpt.ai/blog/bggpt-3-release-en/",
      "note": "we use Gemma 3 as a robust multilingual base for continual pretraining and supervised fine-tuning"
     },
     {
@@ -7907,7 +7907,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054131/https://models.bggpt.ai/blog/bggpt-3-release-en/",
      "note": "Bulgarian CommonCrawl to May 2025, 113M->~23M docs, <40B tokens; SFT from WildChat, Olmo-2, Hermes 3, BgGPT app opt-in queries"
     },
     {
@@ -7917,7 +7917,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054131/https://models.bggpt.ai/blog/bggpt-3-release-en/",
      "note": "thanks Google for GCP credits needed to train; cloud region not stated"
     },
     {
@@ -7927,7 +7927,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054131/https://models.bggpt.ai/blog/bggpt-3-release-en/",
      "note": "not stated (GCP credits only)"
     },
     {
@@ -7937,7 +7937,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054131/https://models.bggpt.ai/blog/bggpt-3-release-en/",
      "note": "synthetic data generation and translation mentioned; generating models not named"
     },
     {
@@ -7977,7 +7977,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054131/https://models.bggpt.ai/blog/bggpt-3-release-en/",
      "note": "improved instruction-following for Bulgarian and English"
     },
     {
@@ -8346,7 +8346,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "developed by researchers at the University of Ljubljana, Faculty for Computer and Information Science"
     },
     {
@@ -8356,7 +8356,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "Developed by: team of researchers at the University of Ljubljana, Faculty for Computer and Information Science"
     },
     {
@@ -8366,7 +8366,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "License: Gemma"
     },
     {
@@ -8376,7 +8376,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "based on Gemma 3 ... continually pretrained on Slovene, English, and some Croatian, Serbian, Bosnian; base google/gemma-3-12b-pt"
     },
     {
@@ -8386,7 +8386,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "per-stage corpus tables with token counts and shares (FineWeb-2, FinePDFs, Nemotron-CC, MetaFida, KAS, NUK, DGT, ...)"
     },
     {
@@ -8396,7 +8396,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "~150k GPU h on EuroHPC LEONARDO; ~40k GPU h on NVIDIA DGX Cloud Lepton; ~1k GPU h faculty B200"
     },
     {
@@ -8406,7 +8406,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "LEONARDO booster (NVIDIA), NVIDIA DGX Cloud Lepton, 8x B200; NeMo 2.0 for CPT"
     },
     {
@@ -8416,7 +8416,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "all training hyperparameters disclosed; no own training code or full data release"
     },
     {
@@ -8426,7 +8426,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "License: Gemma (Gemma Terms of Use incl. Prohibited Use Policy)"
     },
     {
@@ -8446,7 +8446,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "Slovene, English (primary), Croatian, Bosnian and Serbian (secondary)"
     },
     {
@@ -8456,7 +8456,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "card names models used for translation, rewriting, OCR and SFT data generation"
     },
     {
@@ -8466,7 +8466,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "English Wikipedia, Nemotron math/SFT translated into Slovene using GaMS-9B-Translator"
     },
     {
@@ -8476,7 +8476,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "classla: 1 million randomly selected documents were rewritten using 27B Gemma 3"
     },
     {
@@ -8486,7 +8486,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "national library and theses OCR-ed with Llama 4 Maverick"
     },
     {
@@ -8496,7 +8496,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "Nemotron-CC-v2: only the examples generated with Qwen3-30B-A3B were considered"
     },
     {
@@ -8506,7 +8506,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "GaMS-Instruct ClosedQA/OpenQA/Writing generated with GPT-4o and Gemini-2.0-Flash"
     },
     {
@@ -8516,7 +8516,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "GaMS-Instruct ClosedQA/OpenQA/Writing generated with GPT-4o and Gemini-2.0-Flash"
     },
     {
@@ -8526,7 +8526,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "Gemini-2.5-flash translations of Nemotron Post-Training v2 math/STEM"
     },
     {
@@ -8536,7 +8536,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "Nemotron-Chat: around 80 % of examples were translated using GaMS-27B-Instruct"
     },
     {
@@ -8546,7 +8546,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045607/https://huggingface.co/cjvt/GaMS3-12B-Instruct",
      "note": "no AI Act training summary in card or repo; not in AIAL tracker"
     },
     {
@@ -8566,7 +8566,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045539/https://huggingface.co/cjvt/GaMS2-27B-Instruct",
      "note": "GaMS2-27B-Instruct README contains only \"license: gemma\"; config gemma2"
     }
    ],
@@ -8780,7 +8780,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044516/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
      "note": "developed by NLX-Natural Language and Speech Group, at the University of Lisbon"
     },
     {
@@ -8790,7 +8790,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044516/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
      "note": "distributed under an MIT license"
     },
     {
@@ -8800,7 +8800,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051156/https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
      "note": "base under Llama 3.3 Community License; interaction with the MIT release not checked"
     },
     {
@@ -8810,7 +8810,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044516/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
      "note": "developed over the LLaMA-3.3 70B instruct model; further improvement through additional training on instruction data sets"
     },
     {
@@ -8820,7 +8820,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044516/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
      "note": "names extraGLUE-Instruct, NatInst-PTPT, MMLU-PTPT, Wiki-PTPT; translated GLUE/SuperGLUE tasks, MMLU, curated pt Wikipedia"
     },
     {
@@ -8830,7 +8830,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044516/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
      "note": "not stated (Technical report forthcoming)"
     },
     {
@@ -8840,7 +8840,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044516/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
      "note": "not stated"
     },
     {
@@ -8850,7 +8850,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044516/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
      "note": "training details: Technical report forthcoming; only extraGLUE-Instruct found public, no code linked"
     },
     {
@@ -8870,7 +8870,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044516/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder",
      "note": "fully open decoder for the Portuguese language (European Portuguese)"
     }
    ],
@@ -9254,7 +9254,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045703/https://huggingface.co/datasets/HiTZ/latxa-corpus-v2",
      "note": "public corpus: Wikipedia, EusCrawl v2 (free), BOG/BOPV, CulturaX, HPLT, FinePDFs, FineWeb2 subsets etc."
     },
     {
@@ -9454,7 +9454,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "Developed by TartuNLP and TalTechNLP; funded by Estonian Ministry of Education and Research"
     },
     {
@@ -9464,7 +9464,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "Developed by: TartuNLP and TalTechNLP research groups"
     },
     {
@@ -9474,7 +9474,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "License: Llama 3.1 Community License Agreement"
     },
     {
@@ -9484,7 +9484,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052826/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-0826",
      "note": "meta-llama/Llama-3.1-70B continuously pre-trained on approximately 60B tokens"
     },
     {
@@ -9494,7 +9494,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "only \"approximately 60B tokens\"; no sources or shares for the 70B"
     },
     {
@@ -9514,7 +9514,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "not stated"
     },
     {
@@ -9534,7 +9534,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "not stated"
     },
     {
@@ -9544,7 +9544,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "not stated for 70B (paper: Gemma 3 27B synthetic SFT data for the 8B models)"
     },
     {
@@ -9554,7 +9554,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "weights only; no training code or data linked"
     },
     {
@@ -9564,7 +9564,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "Llama 3.1 Community License; repo ships USE_POLICY.md (Meta AUP)"
     },
     {
@@ -9584,7 +9584,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "Language(s) (NLP): Estonian, English"
     },
     {
@@ -9594,7 +9594,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052854/https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826",
      "note": "no AI Act training summary in card or repo; not in AIAL tracker"
     },
     {
@@ -9712,7 +9712,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054818/https://www.athenarc.gr/en/isi/brief-history",
      "note": "Athena RC operates under the supervision of the (Greek) General Secretariat for Research and Technology"
     },
     {
@@ -9722,7 +9722,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "ILSP open Greek LLMs; system prompt: trained by ILSP of Athena RC"
     },
     {
@@ -9732,7 +9732,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "license: llama3.1"
     },
     {
@@ -9742,7 +9742,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050811/https://huggingface.co/ilsp/Llama-Krikri-8B-Base",
      "note": "built on top of Llama-3.1-8B, extending its capabilities for Greek through continual pretraining"
     },
     {
@@ -9762,7 +9762,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "91B tokens: Greek 62.3%, English 23.1%, Parallel 6.0%, Math/Code 8.6%"
     },
     {
@@ -9782,7 +9782,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "Amazon cloud computing services made available via GRNET under the OCRE Cloud framework"
     },
     {
@@ -9802,7 +9802,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "weights; hyperparameters in tech report; no training code or data release"
     },
     {
@@ -9812,7 +9812,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "Llama 3.1 Community License, incorporates Meta Acceptable Use Policy"
     },
     {
@@ -9832,7 +9832,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "Greek and English; document translation Greek <-> EN, FR, DE, IT, PT, ES"
     },
     {
@@ -9842,7 +9842,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "names Gemma 2 27B IT (MAGPIE distillation) and Skywork reward model"
     },
     {
@@ -9852,7 +9852,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "Distilling (with the MAGPIE methodology) models ... such as Gemma 2 27B IT"
     },
     {
@@ -9862,7 +9862,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "Scoring data with the Skywork Reward Gemma 2 27B v0.2 Reward Model"
     },
     {
@@ -9872,7 +9872,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050937/https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5",
      "note": "no AI Act training summary in card or repo; not in AIAL tracker"
     },
     {
@@ -10105,7 +10105,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051033/https://huggingface.co/meta-llama/Llama-3.1-70B/blob/main/LICENSE",
      "note": "Llama 3.1 Community License incorporates the Acceptable Use Policy by reference (updatable)"
     },
     {
@@ -10588,7 +10588,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055532/https://www.mff.cuni.cz/en/public/news/charles-university-as-the-main-coordinator-of-the-openeurollm-project",
      "note": "Charles University main coordinator of the EU-funded OpenEuroLLM consortium"
     },
     {
@@ -10598,7 +10598,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
      "note": "first SFT stage of an OpenEuroLLM post-training experiment on LUMI"
     },
     {
@@ -10608,7 +10608,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
      "note": "Apache 2.0, inherited from the base model"
     },
     {
@@ -10618,7 +10618,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
      "note": "9B dense base currently training on Leonardo toward 10T tokens, WSD from warmup; from scratch implied, not stated verbatim [review: card describes a 10T-token WSD run with warmup and own 256k vocab but never says from scratch/random init; strongly implied only]"
     },
     {
@@ -10628,7 +10628,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052504/https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
      "note": "256K extension of the OpenEuroLLM prelude base (iter_0124800 ~1T tokens), vocab 262144 own tokenizer [review: card says 256K extension of the prelude base (own weights); says nothing about prelude being from scratch; \"own tokenizer\" not stated here (vocab 2621]"
     },
     {
@@ -10638,7 +10638,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
      "note": "derived from openeurollm/oellm-9b-256k-theta64m-prelude; dense Qwen3 9B using the independent OpenEuroLLM 256K tokenizer"
     },
     {
@@ -10658,7 +10658,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
      "note": "SFT mix: 920,552 Tulu-3 + 161,644 EuroBlocks + 250,000 Nemotron-v2 math rows, with token shares"
     },
     {
@@ -10668,7 +10668,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
      "note": "Hardware: 256 nodes / 1024 GPUs, Leonardo (CINECA)"
     },
     {
@@ -10678,7 +10678,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052504/https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
      "note": "continued-pretraining in Megatron-LM on LUMI (16x MI250X) for the 256K stage"
     },
     {
@@ -10688,7 +10688,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
      "note": "1024 GPUs on Leonardo (CINECA) - vendor not named on card; Leonardo Booster is NVIDIA A100 [review: card names only \"1024 GPUs, Leonardo (CINECA)\"; NVIDIA not stated. Value is correct by external knowledge (Leonardo Booster = A100); add a CINECA spec]"
     },
     {
@@ -10698,7 +10698,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
      "note": "training repo oellm-autoexp config; per-iteration intermediate checkpoints as branches; data composition documented"
     },
     {
@@ -10708,7 +10708,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
      "note": "36 initial OpenEuroLLM target languages (41 language/script codes in the data mix)"
     },
     {
@@ -10718,7 +10718,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
      "note": "not stated (no AI Act training summary in card or repo)"
     },
     {
@@ -10728,7 +10728,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
      "note": "EuroBlocks synthetic and Nemotron-v2 synthetic <think> traces used; generating models not named"
     }
    ],
@@ -11322,7 +11322,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "Developed by Fraunhofer, FZ Jülich, TU Dresden, DFKI; funded by BMWK in the OpenGPT-X project"
     },
     {
@@ -11332,7 +11332,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "Developed by Fraunhofer, FZ Jülich, TU Dresden, DFKI; shared by OpenGPT-X"
     },
     {
@@ -11342,7 +11342,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "license: cc-by-nc-4.0; designed for private, non-commercial, research, and educational use"
     },
     {
@@ -11362,7 +11362,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052213/https://huggingface.co/openGPT-X/Teuken-7B-base-v0.6",
      "note": "pre-trained on 6T tokens from publicly available sources; cutoff September 2023 [review: base card names only \"publicly available sources\", 6T, cutoff 2023-09: category level, no datasets/shares; row 50 carries documented]"
     },
     {
@@ -11382,7 +11382,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "We trained our models on JUWELS Booster (Jülich)"
     },
     {
@@ -11392,7 +11392,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "JUWELS Booster nodes with 4 NVIDIA A100 GPUs each"
     },
     {
@@ -11402,7 +11402,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "all 24 official European languages: bg, cs, da, de, el, en, es, et, fi, fr, ga, hr, hu, it, lt, lv, mt, nl, pl, pt, ro, sk, sl, sv"
     },
     {
@@ -11412,7 +11412,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "software: Megatron-LM fork github.com/OpenGPTX/Megatron-LM; no data or intermediate checkpoints"
     },
     {
@@ -11422,7 +11422,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "not stated (no AI Act training summary in card or repo)"
     },
     {
@@ -11432,7 +11432,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052238/https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6",
      "note": "CC-BY-NC-4.0, fixed licence text"
     },
     {
@@ -11617,7 +11617,7 @@
      "issuer": "press",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054526/https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
      "note": "\"Canadian AI startup Cohere is taking over Germany-based Aleph Alpha\"; Schwarz Group EUR 500M, lead of Series E"
     },
     {
@@ -11939,7 +11939,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050341/https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
      "note": "official deepseek-ai org; \"official release of DeepSeek-V4-Pro\""
     },
     {
@@ -11949,7 +11949,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050432/https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/main/LICENSE",
      "note": "MIT License, Copyright (c) 2023 DeepSeek"
     },
     {
@@ -11959,7 +11959,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050432/https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/blob/main/LICENSE",
      "note": "plain MIT"
     },
     {
@@ -11979,7 +11979,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050312/https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
      "note": "\"We pre-train both models on more than 32T diverse and high-quality tokens\""
     },
     {
@@ -12009,7 +12009,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050312/https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
      "note": "not stated (tech report arXiv 2606.19348 validates inference on NVIDIA GPUs and Huawei Ascend NPUs only)"
     },
     {
@@ -12039,7 +12039,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050341/https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
      "note": "weights plus inference/encoding code; no training code or data"
     },
     {
@@ -12262,7 +12262,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050458/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
      "note": "official deepseek-ai org"
     },
     {
@@ -12272,7 +12272,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050646/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/LICENSE",
      "note": "MIT License"
     },
     {
@@ -12282,7 +12282,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050646/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/LICENSE",
      "note": "plain MIT"
     },
     {
@@ -12292,7 +12292,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050458/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
      "note": "\"trained from scratch on a multimodal corpus comprising 45T tokens\""
     },
     {
@@ -12302,7 +12302,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050524/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
      "note": "the resulting corpus uses a 7:1 token ratio of text-only to multimodal data"
     },
     {
@@ -12312,7 +12312,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050524/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
      "note": "not stated"
     },
     {
@@ -12322,7 +12322,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050524/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
      "note": "not stated"
     },
     {
@@ -12332,7 +12332,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050458/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
      "note": "weights plus encoding code and tech report; no training code or data"
     },
     {
@@ -12352,7 +12352,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050524/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
      "note": "\"we employ SmolVLM ... to conduct strict quality scoring on the image-text content\""
     },
     {
@@ -12362,7 +12362,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050524/https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf",
      "note": "final OPD \"trained on datasets from all domains using over 40 teacher models\" (not named)"
     }
    ],
@@ -12837,7 +12837,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053055/https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
      "note": "Developed by: https://www.tii.ae"
     },
     {
@@ -12917,7 +12917,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053055/https://huggingface.co/tiiuae/Falcon-H1-34B-Instruct",
      "note": "weights only; no training code or data released"
     },
     {
@@ -13100,7 +13100,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053150/https://huggingface.co/tiiuae/Falcon-H1R-7B",
      "note": "Developed by: Technology Innovation Institute"
     },
     {
@@ -13110,7 +13110,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053150/https://huggingface.co/tiiuae/Falcon-H1R-7B",
      "note": "\"Built on top of Falcon-H1-7B-Base ... cold-start supervised fine-tuning ... RL with GRPO\""
     },
     {
@@ -13170,7 +13170,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053150/https://huggingface.co/tiiuae/Falcon-H1R-7B",
      "note": "Language(s): English, Multilingual; metadata en"
     },
     {
@@ -13180,7 +13180,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053150/https://huggingface.co/tiiuae/Falcon-H1R-7B",
      "note": "weights only"
     },
     {
@@ -13353,7 +13353,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260930152846/https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/googexhibit2101q42025.htm",
      "note": "Alphabet 10-K FY2025 Exhibit 21.01 lists Google LLC (Delaware) as subsidiary"
     },
     {
@@ -13363,7 +13363,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "Gemma is a family of open models built by Google DeepMind"
     },
     {
@@ -13373,7 +13373,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "open-weights models in both pre-trained and instruction-tuned variants"
     },
     {
@@ -13403,7 +13403,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "web documents, code, mathematics, images, audio, cutoff January 2025; no sources or token counts"
     },
     {
@@ -13443,7 +13443,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "Out-of-the-box support for 35+ languages, pre-trained on 140+ languages; no list"
     },
     {
@@ -13453,7 +13453,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "weights only; no training code or data"
     },
     {
@@ -13653,7 +13653,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260930152846/https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/googexhibit2101q42025.htm",
      "note": "Alphabet 10-K FY2025 Exhibit 21.01 lists Google LLC (Delaware) as subsidiary"
     },
     {
@@ -13663,7 +13663,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "Gemma is a family of open models built by Google DeepMind"
     },
     {
@@ -13673,7 +13673,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "open-weights models in both pre-trained and instruction-tuned variants"
     },
     {
@@ -13703,7 +13703,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "web documents, code, mathematics, images, audio, cutoff January 2025; no sources or token counts"
     },
     {
@@ -13743,7 +13743,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "Out-of-the-box support for 35+ languages, pre-trained on 140+ languages; no list"
     },
     {
@@ -13753,7 +13753,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050710/https://huggingface.co/google/gemma-4-31B-it",
      "note": "weights only; no training code or data"
     },
     {
@@ -13973,7 +13973,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
      "note": "official zai-org org"
     },
     {
@@ -13983,7 +13983,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053759/https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE",
      "note": "GLM-5.3 License: MaaS above USD 10B revenue \"must pass Z.AI's security review\""
     },
     {
@@ -13993,7 +13993,7 @@
      "issuer": "press",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054643/https://thenewstack.io/zai-glm-weights-license/",
      "note": "GLM-5.3 moves off the MIT licence used for GLM-5.2"
     },
     {
@@ -14003,7 +14003,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053759/https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE",
      "note": "no update clause; scope of security review \"shall be reasonably determined by Z.AI\""
     },
     {
@@ -14013,7 +14013,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
      "note": "\"GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training\""
     },
     {
@@ -14023,7 +14023,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
      "note": "same base model as GLM-5.2"
     },
     {
@@ -14033,7 +14033,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
      "note": "not stated"
     },
     {
@@ -14043,7 +14043,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
      "note": "not stated"
     },
     {
@@ -14053,7 +14053,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
      "note": "not stated (Ascend NPU listed for inference deployment only)"
     },
     {
@@ -14063,7 +14063,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
      "note": "Hub metadata language: en, zh"
     },
     {
@@ -14073,7 +14073,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
      "note": "weights only; deployment links"
     },
     {
@@ -14287,7 +14287,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053632/https://huggingface.co/zai-org/GLM-5.3-Flash",
      "note": "official zai-org org"
     },
     {
@@ -14297,7 +14297,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053733/https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/LICENSE",
      "note": "MIT License, Copyright (c) 2026 Z.AI Co., Ltd"
     },
     {
@@ -14307,7 +14307,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053733/https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/LICENSE",
      "note": "plain MIT"
     },
     {
@@ -14317,7 +14317,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053632/https://huggingface.co/zai-org/GLM-5.3-Flash",
      "note": "\"GLM-5.3-Flash starts from a newly trained base model\""
     },
     {
@@ -14327,7 +14327,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053632/https://huggingface.co/zai-org/GLM-5.3-Flash",
      "note": "only \"our latest 30T-token multimodal pre-training corpus\"; mix not described"
     },
     {
@@ -14337,7 +14337,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053632/https://huggingface.co/zai-org/GLM-5.3-Flash",
      "note": "not stated"
     },
     {
@@ -14347,7 +14347,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053632/https://huggingface.co/zai-org/GLM-5.3-Flash",
      "note": "not stated"
     },
     {
@@ -14357,7 +14357,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053632/https://huggingface.co/zai-org/GLM-5.3-Flash",
      "note": "Hub metadata language: en, zh"
     },
     {
@@ -14367,7 +14367,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053632/https://huggingface.co/zai-org/GLM-5.3-Flash",
      "note": "weights only"
     },
     {
@@ -14562,7 +14562,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052306/https://huggingface.co/openai/gpt-oss-120b",
      "note": "OpenAI's open-weight models"
     },
     {
@@ -14582,7 +14582,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052306/https://huggingface.co/openai/gpt-oss-120b",
      "note": "Permissive Apache 2.0 license"
     },
     {
@@ -14592,7 +14592,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052340/https://huggingface.co/openai/gpt-oss-120b/blob/main/USAGE_POLICY",
      "note": "By using OpenAI gpt-oss-120b, you agree to comply with all applicable law"
     },
     {
@@ -14602,7 +14602,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052306/https://huggingface.co/openai/gpt-oss-120b",
      "note": "Apache 2.0; usage policy only requires compliance with law"
     },
     {
@@ -14862,7 +14862,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052306/https://huggingface.co/openai/gpt-oss-120b",
      "note": "OpenAI's open-weight models"
     },
     {
@@ -14882,7 +14882,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052306/https://huggingface.co/openai/gpt-oss-120b",
      "note": "Permissive Apache 2.0 license"
     },
     {
@@ -14892,7 +14892,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052340/https://huggingface.co/openai/gpt-oss-120b/blob/main/USAGE_POLICY",
      "note": "By using OpenAI gpt-oss-120b, you agree to comply with all applicable law"
     },
     {
@@ -14902,7 +14902,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052306/https://huggingface.co/openai/gpt-oss-120b",
      "note": "Apache 2.0; usage policy only requires compliance with law"
     },
     {
@@ -15162,7 +15162,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "Acknowledgements: NEDO JPNP25006, MEXT project, ABCI 3.0 (AIST), TSUBAME4.0 (Institute of Science Tokyo) [review: Acknowledgements list funding and compute only (NEDO, MEXT, ABCI 3.0, TSUBAME4.0). Nothing on ownership; fits notes.]"
     },
     {
@@ -15172,7 +15172,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "Authors: Swallow LLM; contact swallow[at]nlp.c.titech.ac.jp"
     },
     {
@@ -15182,7 +15182,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "developed through Continual Pre-Training (CPT), SFT and RLVR based on the GPT-OSS"
     },
     {
@@ -15192,7 +15192,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "License: Apache license 2.0"
     },
     {
@@ -15202,7 +15202,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "plain Apache-2.0"
     },
     {
@@ -15212,7 +15212,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "CPT datasets listed (Swallow Corpus v3.2, Wikipedia, Nemotron-CC, SwallowMath/Code v2 ...), 419.4B tokens"
     },
     {
@@ -15222,7 +15222,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "We used ABCI 3.0 provided by AIST ... carried out using the TSUBAME4.0 supercomputer at Institute of Science Tokyo"
     },
     {
@@ -15242,7 +15242,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "not stated (frameworks and datasets named; Swallow Corpus not public; tech paper announced)"
     },
     {
@@ -15252,7 +15252,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "Language(s): Japanese, English"
     },
     {
@@ -15262,7 +15262,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "Swallow Corpus v3.2 QA (synthetic QA-format text using gpt-oss-120b); SFT traces generated using gpt-oss-120b"
     },
     {
@@ -15272,7 +15272,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050132/https://huggingface.co/datasets/tokyotech-llm/swallow-code-v2",
      "note": "LLM Rewriting Phase - Use Qwen3-235B-A22B-Instruct to rewrite and enhance code"
     },
     {
@@ -15282,7 +15282,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050239/https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2",
      "note": "SwallowMath-v2 rewritten using Qwen3-235B-A22B-2507-Instruct"
     },
     {
@@ -15292,7 +15292,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050239/https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2",
      "note": "Stage 2 - Math Extraction ... using LLM (= Qwen3-32B)"
     },
     {
@@ -15302,7 +15302,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053302/https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1",
      "note": "Cosmopedia listed in the CPT English corpus"
     },
     {
@@ -15312,7 +15312,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045731/https://huggingface.co/datasets/HuggingFaceTB/cosmopedia",
      "note": "synthetic textbooks generated by Mixtral-8x7B-Instruct-v0.1"
     }
    ],
@@ -15505,7 +15505,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "open-source large language models developed by IBM"
     },
     {
@@ -15515,7 +15515,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "post-trained from Granite-4.1-30B-Base"
     },
     {
@@ -15525,7 +15525,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045510/https://huggingface.co/blog/ibm-granite/granite-4-1",
      "note": "Granite 4.1 is trained from scratch on approximately 15 trillion tokens [IBM article under the ibm-granite org; the validator files HF blog posts as community]"
     },
     {
@@ -15535,7 +15535,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "License: Apache 2.0"
     },
     {
@@ -15555,7 +15555,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "NVIDIA GB200 NVL72 cluster hosted in CoreWeave; location not stated"
     },
     {
@@ -15565,7 +15565,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045510/https://huggingface.co/blog/ibm-granite/granite-4-1",
      "note": "We trained the Granite 4.1 Language Models on an NVIDIA GB200 NVL72 cluster hosted on CoreWeave [IBM article under the ibm-granite org; the validator files HF blog posts as community]"
     },
     {
@@ -15585,7 +15585,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "Tested Languages: English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, Chinese"
     },
     {
@@ -15595,7 +15595,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "weights; dataset disclosures but no training code"
     },
     {
@@ -15605,7 +15605,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "not stated (internal synthetic data, generative reward model unnamed)"
     }
    ],
@@ -15790,7 +15790,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "open-source large language models developed by IBM"
     },
     {
@@ -15800,7 +15800,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "post-trained from Granite-4.1-30B-Base"
     },
     {
@@ -15810,7 +15810,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045510/https://huggingface.co/blog/ibm-granite/granite-4-1",
      "note": "Granite 4.1 is trained from scratch on approximately 15 trillion tokens [IBM article under the ibm-granite org; the validator files HF blog posts as community]"
     },
     {
@@ -15820,7 +15820,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "License: Apache 2.0"
     },
     {
@@ -15840,7 +15840,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "NVIDIA GB200 NVL72 cluster hosted in CoreWeave; location not stated"
     },
     {
@@ -15850,7 +15850,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045510/https://huggingface.co/blog/ibm-granite/granite-4-1",
      "note": "We trained the Granite 4.1 Language Models on an NVIDIA GB200 NVL72 cluster hosted on CoreWeave [IBM article under the ibm-granite org; the validator files HF blog posts as community]"
     },
     {
@@ -15870,7 +15870,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "Tested Languages: English, German, Spanish, French, Japanese, Portuguese, Arabic, Czech, Italian, Korean, Dutch, Chinese"
     },
     {
@@ -15880,7 +15880,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "weights; dataset disclosures but no training code"
     },
     {
@@ -15890,7 +15890,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "not stated (internal synthetic data, generative reward model unnamed)"
     }
    ],
@@ -16075,7 +16075,7 @@
      "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260412200359/https://www.prosus.com/~/media/Files/P/prosus-corp-v2/results-reports-and-events-archive/latest-results/hy2026/hy2026-summary-consolidated-financial-statements.pdf",
      "note": "Prosus retained a 22.8% interest in Tencent (30 Sep 2025)"
     },
     {
@@ -16085,7 +16085,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053000/https://huggingface.co/tencent/Hy4-preview",
      "note": "official tencent org; \"developed by the Tencent Hy Team\""
     },
     {
@@ -16095,7 +16095,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053027/https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE",
      "note": "\"Tencent Hy4 preview is licensed under the Apache-2.0\""
     },
     {
@@ -16105,7 +16105,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053027/https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE",
      "note": "plain Apache-2.0"
     },
     {
@@ -16115,7 +16115,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053000/https://huggingface.co/tencent/Hy4-preview",
      "note": "\"new-generation ... flagship model\"; scaled \"model size, context length, and training data\"; stronger pre-training"
     },
     {
@@ -16125,7 +16125,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053000/https://huggingface.co/tencent/Hy4-preview",
      "note": "not stated (only post-training data built with in-house experts)"
     },
     {
@@ -16135,7 +16135,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053000/https://huggingface.co/tencent/Hy4-preview",
      "note": "not stated"
     },
     {
@@ -16145,7 +16145,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053000/https://huggingface.co/tencent/Hy4-preview",
      "note": "not stated"
     },
     {
@@ -16155,7 +16155,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053000/https://huggingface.co/tencent/Hy4-preview",
      "note": "weights plus fine-tuning example scripts; no pre-training code or data"
     },
     {
@@ -16306,7 +16306,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051818/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE",
      "note": "NAVER Corp. (IP holder) and its affiliate NAVER Cloud Corp. (exclusive operator of HyperCLOVA X)"
     },
     {
@@ -16316,7 +16316,7 @@
      "issuer": "press",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055426/https://www.koreatimes.co.kr/business/tech-science/20260107/national-ai-model-project-faces-controversies-over-plagiarism-claims",
      "note": "Plagiarism claims around Naver's model in the national AI project (Qwen vision encoder) [review: Article (7 Jan 2026) covers the Qwen vision-encoder plagiarism claims, published before the 15 Jan evaluation. It does not support the stored 'eliminated from t]"
     },
     {
@@ -16326,7 +16326,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260928130322/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
      "note": "HyperCLOVA X SEED 32B Think ... NAVER"
     },
     {
@@ -16336,7 +16336,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051803/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf",
      "note": "Stage 1 builds broad coverage from a multilingual corpus, primarily Korean and English ... 6 trillion tokens [review: The report describes Stage 1 (6T tokens, Korean/English) but never says the backbone was randomly initialised or trained from scratch. The LR warm-up 1.5e-5→3.1]"
     },
     {
@@ -16346,7 +16346,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051803/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf",
      "note": "THINK adopts the Vision Transformer (ViT) architecture from Qwen2.5-VL"
     },
     {
@@ -16356,7 +16356,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051842/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/config.json",
      "note": "vision_config architectures: Qwen2_5_VisionTransformerPretrainedModel"
     },
     {
@@ -16376,7 +16376,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051818/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE",
      "note": "custom licence; additional commercial terms above 10 million MAU; Acceptable Use Policy (Addendum A)"
     },
     {
@@ -16386,7 +16386,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051818/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE",
      "note": "12. NAVER reserves the right to modify or amend this Agreement at any time, in its sole discretion"
     },
     {
@@ -16396,7 +16396,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051803/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf",
      "note": "Table 3: pre-training data distribution across stages (general/code/math/instruction)"
     },
     {
@@ -16406,7 +16406,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051803/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf",
      "note": "not stated"
     },
     {
@@ -16416,7 +16416,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051803/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf",
      "note": "not stated"
     },
     {
@@ -16426,7 +16426,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260928130322/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
      "note": "weights only"
     },
     {
@@ -16436,7 +16436,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051803/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf",
      "note": "training curriculum that incorporates both English and Korean data"
     },
     {
@@ -16446,7 +16446,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051803/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf",
      "note": "LLMs used to rewrite documents and PII spans, not named"
     }
    ],
@@ -16554,7 +16554,7 @@
      "issuer": "press",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055053/https://www.calcalistech.com/ctechnews/article/by34n00tjfl",
      "note": "Nebius deal became a commercial partnership, not a sale; AI21 \"would halt development of its Jamba family\" (2026-05-19)"
     },
     {
@@ -16564,7 +16564,7 @@
      "issuer": "press",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055137/https://www.calcalistech.com/ctechnews/article/r1kdh64nzg",
      "note": "acquisition talks with Nebius \"months after earlier negotiations with Nvidia failed to result in a deal\" (2026-04-09) [review: Article (09.04.26) only reports Nebius acquisition talks under way after the Nvidia talks failed. It does not establish the outcome, so it is context for indepe]"
     },
     {
@@ -16574,7 +16574,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "model in ai21labs org; links AI21 release blog"
     },
     {
@@ -16584,7 +16584,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "\"Released under Apache 2.0 License\""
     },
     {
@@ -16594,7 +16594,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054718/https://www.ai21.com/blog/introducing-jamba2/",
      "note": "Apache 2.0, no further use policy stated"
     },
     {
@@ -16604,7 +16604,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "\"post-training pipeline starting from Jamba 1.5 pre-training\"; mid-training on 500B tokens"
     },
     {
@@ -16614,7 +16614,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "mid-training on 500B curated tokens: math, code, high-quality web, long documents"
     },
     {
@@ -16634,7 +16634,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054718/https://www.ai21.com/blog/introducing-jamba2/",
      "note": "not stated"
     },
     {
@@ -16664,7 +16664,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "weights only"
     },
     {
@@ -16674,7 +16674,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054718/https://www.ai21.com/blog/introducing-jamba2/",
      "note": "not stated"
     }
    ],
@@ -16837,7 +16837,7 @@
      "issuer": "press",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055053/https://www.calcalistech.com/ctechnews/article/by34n00tjfl",
      "note": "Nebius deal became a commercial partnership, not a sale; AI21 \"would halt development of its Jamba family\" (2026-05-19)"
     },
     {
@@ -16847,7 +16847,7 @@
      "issuer": "press",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055137/https://www.calcalistech.com/ctechnews/article/r1kdh64nzg",
      "note": "acquisition talks with Nebius \"months after earlier negotiations with Nvidia failed to result in a deal\" (2026-04-09) [review: Article (09.04.26) only reports Nebius acquisition talks under way after the Nvidia talks failed. It does not establish the outcome, so it is context for indepe]"
     },
     {
@@ -16857,7 +16857,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "model in ai21labs org; links AI21 release blog"
     },
     {
@@ -16867,7 +16867,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "\"Released under Apache 2.0 License\""
     },
     {
@@ -16877,7 +16877,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054718/https://www.ai21.com/blog/introducing-jamba2/",
      "note": "Apache 2.0, no further use policy stated"
     },
     {
@@ -16887,7 +16887,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "\"post-training pipeline starting from Jamba 1.5 pre-training\"; mid-training on 500B tokens"
     },
     {
@@ -16897,7 +16897,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "mid-training on 500B curated tokens: math, code, high-quality web, long documents"
     },
     {
@@ -16917,7 +16917,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054718/https://www.ai21.com/blog/introducing-jamba2/",
      "note": "not stated"
     },
     {
@@ -16947,7 +16947,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044942/https://huggingface.co/ai21labs/AI21-Jamba2-Mini",
      "note": "weights only"
     },
     {
@@ -16957,7 +16957,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054718/https://www.ai21.com/blog/introducing-jamba2/",
      "note": "not stated"
     }
    ],
@@ -17169,7 +17169,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044344/https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/main/LICENSE",
      "note": "plain Apache-2.0 licence file"
     },
     {
@@ -17337,7 +17337,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055712/https://www.prnewswire.com/news-releases/abu-dhabi-announces-the-establishment-of-the-worlds-first-graduate-level-ai-university-300939660.html",
      "note": "Abu Dhabi announces establishment of graduate-level AI university (MBZUAI), Oct 2019"
     },
     {
@@ -17397,7 +17397,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045906/https://huggingface.co/datasets/IFM/TxT360-v2",
      "note": "pre-training sources for the K2 Horizon training data release, CC BY 4.0"
     },
     {
@@ -17457,7 +17457,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045800/https://huggingface.co/datasets/IFM/Math-Reasoning",
      "note": "subset \"math-thinking-qwen\"; generating model not named explicitly"
     }
    ],
@@ -17576,7 +17576,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055712/https://www.prnewswire.com/news-releases/abu-dhabi-announces-the-establishment-of-the-worlds-first-graduate-level-ai-university-300939660.html",
      "note": "Abu Dhabi announces establishment of graduate-level AI university (MBZUAI), Oct 2019"
     },
     {
@@ -17636,7 +17636,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045906/https://huggingface.co/datasets/IFM/TxT360-v2",
      "note": "pre-training sources for the K2 Horizon training data release, CC BY 4.0"
     },
     {
@@ -17696,7 +17696,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045800/https://huggingface.co/datasets/IFM/Math-Reasoning",
      "note": "subset \"math-thinking-qwen\"; generating model not named explicitly"
     }
    ],
@@ -17836,7 +17836,7 @@
      "issuer": "press",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055958/https://www.techtimes.com/articles/322091/20260729/moonshot-ai-closes-35b-round-its-open-weights-come-china-data-risk.htm",
      "note": "USD 3.5B round at USD 35B valuation; National AI Industry Investment Fund reported among lead backers"
     },
     {
@@ -17846,7 +17846,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051607/https://huggingface.co/moonshotai/Kimi-K3",
      "note": "official moonshotai org; \"our most capable model to date\""
     },
     {
@@ -17856,7 +17856,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051635/https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE",
      "note": "Kimi K3 License: MaaS above USD 20M revenue \"must enter into a separate agreement with Moonshot AI\""
     },
     {
@@ -17866,7 +17866,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051635/https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE",
      "note": "licence text has no clause allowing later changes"
     },
     {
@@ -17916,7 +17916,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051607/https://huggingface.co/moonshotai/Kimi-K3",
      "note": "weights and inference/processing code; no training code or data"
     },
     {
@@ -18193,7 +18193,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055504/https://dev.meta.ai/llama/llama4/use-policy",
      "note": "multimodal Llama 4 rights not granted to individuals/companies domiciled in the European Union"
     },
     {
@@ -18283,7 +18283,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261006133341/https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
      "note": "gated: manual approval"
     }
    ],
@@ -18501,7 +18501,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055504/https://dev.meta.ai/llama/llama4/use-policy",
      "note": "multimodal Llama 4 rights not granted to individuals/companies domiciled in the European Union"
     },
     {
@@ -18769,7 +18769,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "developed by the R&D Center for Large Language Models at the National Institute of Informatics"
     },
     {
@@ -18779,7 +18779,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "developed by the R&D Center for LLMs at the National Institute of Informatics"
     },
     {
@@ -18789,7 +18789,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055606/https://www.nii.ac.jp/news/release/2026/0403.html",
      "note": "NII release: LLM-jp-4 pre-trained on ~10.5T tokens of its own corpus, then 1.2T mid-training"
     },
     {
@@ -18799,7 +18799,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "license: apache-2.0"
     },
     {
@@ -18809,7 +18809,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "plain Apache-2.0"
     },
     {
@@ -18819,7 +18819,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "The corpora used for pre-training and mid-training are publicly available (some portions excluded for licensing)"
     },
     {
@@ -18829,7 +18829,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055606/https://www.nii.ac.jp/news/release/2026/0403.html",
      "note": "学習には産業技術総合研究所が提供するABCI 3.0を利用 (trained on AIST's ABCI 3.0)"
     },
     {
@@ -18859,7 +18859,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055606/https://www.nii.ac.jp/news/release/2026/0403.html",
      "note": "corpus: Japanese ~0.7T, English ~17.8T, other (Chinese, Korean) ~0.85T, code ~0.2T tokens"
     },
     {
@@ -18869,7 +18869,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050001/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data",
      "note": "reasoning processes and final responses ... generated or augmented using gpt-oss-120b"
     },
     {
@@ -18879,7 +18879,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045932/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-33b-thinking-dpo-data",
      "note": "responses are evaluated by gpt-oss-120b, which determines chosen and rejected"
     },
     {
@@ -18889,7 +18889,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050001/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data",
      "note": "interactive_agent subset generated using Qwen3-235B-A22B-Thinking-2507, Qwen3-32B, gpt-oss-120b ..."
     },
     {
@@ -18899,7 +18899,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050001/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data",
      "note": "Nemotron-SFT-Agentic-v2: Qwen3-235B..., deepseek-r1-0528, DeepSeek-V3.2, gpt-oss-120b"
     }
    ],
@@ -19024,7 +19024,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "developed by the R&D Center for Large Language Models at the National Institute of Informatics"
     },
     {
@@ -19034,7 +19034,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "developed by the R&D Center for LLMs at the National Institute of Informatics"
     },
     {
@@ -19044,7 +19044,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055606/https://www.nii.ac.jp/news/release/2026/0403.html",
      "note": "NII release: LLM-jp-4 pre-trained on ~10.5T tokens of its own corpus, then 1.2T mid-training"
     },
     {
@@ -19054,7 +19054,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "license: apache-2.0"
     },
     {
@@ -19064,7 +19064,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "plain Apache-2.0"
     },
     {
@@ -19074,7 +19074,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051005/https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking",
      "note": "The corpora used for pre-training and mid-training are publicly available (some portions excluded for licensing)"
     },
     {
@@ -19084,7 +19084,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055606/https://www.nii.ac.jp/news/release/2026/0403.html",
      "note": "学習には産業技術総合研究所が提供するABCI 3.0を利用 (trained on AIST's ABCI 3.0)"
     },
     {
@@ -19114,7 +19114,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055606/https://www.nii.ac.jp/news/release/2026/0403.html",
      "note": "corpus: Japanese ~0.7T, English ~17.8T, other (Chinese, Korean) ~0.85T, code ~0.2T tokens"
     },
     {
@@ -19124,7 +19124,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050001/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data",
      "note": "reasoning processes and final responses ... generated or augmented using gpt-oss-120b"
     },
     {
@@ -19134,7 +19134,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045932/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-33b-thinking-dpo-data",
      "note": "responses are evaluated by gpt-oss-120b, which determines chosen and rejected"
     },
     {
@@ -19144,7 +19144,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050001/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data",
      "note": "interactive_agent subset generated using Qwen3-235B-A22B-Thinking-2507, Qwen3-32B, gpt-oss-120b ..."
     },
     {
@@ -19154,7 +19154,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050001/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data",
      "note": "Nemotron-SFT-Agentic-v2: Qwen3-235B..., deepseek-r1-0528, DeepSeek-V3.2, gpt-oss-120b"
     }
    ],
@@ -19291,7 +19291,7 @@
      "issuer": "press",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055211/https://www.cnbc.com/2026/01/09/minimax-hong-kong-ipo-ai-tigers-zhipu.html",
      "note": "MiniMax doubles in Hong Kong debut (9 Jan 2026)"
     },
     {
@@ -19301,7 +19301,7 @@
      "issuer": "press",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011060258/https://www.yicaiglobal.com/news/chinese-ai-startup-minimaxs-stock-pops-in-hong-kong-trading-debut",
      "note": "Founder Yan Junjie ~26% voting rights; Alibaba 15%, miHoYo 7.1%, IDG 3.1%, Tencent 2.8%"
     },
     {
@@ -19321,7 +19321,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044413/https://huggingface.co/MiniMaxAI/MiniMax-M3",
      "note": "official MiniMaxAI org"
     },
     {
@@ -19331,7 +19331,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044440/https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE",
      "note": "MiniMax Community License: non-commercial grant; commercial use needs attribution and notice/authorisation; no military use"
     },
     {
@@ -19341,7 +19341,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044440/https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE",
      "note": "licence text has no clause allowing later changes"
     },
     {
@@ -19351,7 +19351,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044413/https://huggingface.co/MiniMaxAI/MiniMax-M3",
      "note": "\"M3 undergoes mixed-modality training from the very first step\""
     },
     {
@@ -19391,7 +19391,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044413/https://huggingface.co/MiniMaxAI/MiniMax-M3",
      "note": "not stated"
     },
     {
@@ -19421,7 +19421,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044413/https://huggingface.co/MiniMaxAI/MiniMax-M3",
      "note": "weights only; inference via third-party engines"
     },
     {
@@ -19624,7 +19624,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "NVIDIA model card"
     },
     {
@@ -19634,7 +19634,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "Base model was pre-trained for over 25T tokens using crawled and synthetic ... data"
     },
     {
@@ -19644,7 +19644,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055634/https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
      "note": "NVIDIA Nemotron Open Model License: perpetual, irrevocable; licensee indemnifies NVIDIA; Delaware law"
     },
     {
@@ -19654,7 +19654,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055634/https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/",
      "note": "grant \"perpetual ... irrevocable\"; no update clause (v. December 15, 2025)"
     },
     {
@@ -19664,7 +19664,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "we release our final pre-training and post-training data; code/math/multilingual gated; private third-party sets listed"
     },
     {
@@ -19674,7 +19674,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "location not stated"
     },
     {
@@ -19694,7 +19694,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054507/https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf",
      "note": "64-way context parallelism ... to train on GB200 GPUs (long-context phase)"
     },
     {
@@ -19704,7 +19704,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "Supported Languages: English, French, German, Italian, Japanese, Spanish, Chinese"
     },
     {
@@ -19714,7 +19714,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "end-to-end training recipe in NVIDIA Nemotron Developer Repository; Megatron-LM; datasets released"
     },
     {
@@ -19724,7 +19724,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic pre-training data: formal logic, economics, MCQ, rephrased/translated Common Cra"
     },
     {
@@ -19734,7 +19734,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic tasks, STEM, AGIEval and AoPS data"
     },
     {
@@ -19744,7 +19744,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": Nemotron-Pretraining-Code-Concepts and algorithmic data"
     },
     {
@@ -19754,7 +19754,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": Nemotron-MIND / CC-Math rephrasing and synthetic Common Crawl code"
     },
     {
@@ -19764,7 +19764,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic moral stories, social and health sciences from OpenStax"
     },
     {
@@ -19774,7 +19774,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic Common Crawl (joint Mistral AI/NVIDIA model)"
     },
     {
@@ -19784,7 +19784,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic math data from Wikimedia"
     },
     {
@@ -19794,7 +19794,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": reasoning traces, solutions, tool calling, chat, safety SFT data"
     },
     {
@@ -19804,7 +19804,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": STEM, tool calling, structured outputs, SWE trajectories, long context"
     },
     {
@@ -19814,7 +19814,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": code, math, safety, agentic and SWE data"
     },
     {
@@ -19824,7 +19824,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": SWE, search and terminal agent data"
     },
     {
@@ -19834,7 +19834,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": chat, safety and preference data"
     },
     {
@@ -19844,7 +19844,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": preference responses and safety data"
     },
     {
@@ -19854,7 +19854,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": safety and instruction-following RL data"
     },
     {
@@ -19864,7 +19864,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051901/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": prompt generation only for search RL data"
     }
    ],
@@ -20155,7 +20155,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "large language model (LLM) trained by NVIDIA"
     },
     {
@@ -20165,7 +20165,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "pre-trained with over 20T tokens ... NVFP4 recipe [review: Card only says \"pre-trained with over 20T tokens\" under a \"Nemotron 3 Foundation\" corpus; no from-scratch claim. NVIDIA AI Act summary (same family PDF) says \"N]"
     },
     {
@@ -20175,7 +20175,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "Governing Download Terms: OpenMDW-1.1 model license"
     },
     {
@@ -20185,7 +20185,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054331/https://openmdw.ai/license/1-1/",
      "note": "OpenMDW-1.1: permission to deal in the Model Materials without restriction; no output restrictions"
     },
     {
@@ -20195,7 +20195,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "OpenMDW-1.1, permissive; no use policy"
     },
     {
@@ -20205,7 +20205,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "we release our final pre-training and post-training data; vendor/purchased datasets undisclosed"
     },
     {
@@ -20215,7 +20215,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "location not stated"
     },
     {
@@ -20235,7 +20235,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "not stated (only supported inference hardware listed)"
     },
     {
@@ -20245,7 +20245,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "Supported Languages: English, Spanish, French, German, Italian, Japanese"
     },
     {
@@ -20255,7 +20255,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "Megatron-LM pre-training; datasets released; eval reproducibility in NeMo Gym"
     },
     {
@@ -20265,7 +20265,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic pre-training data: fact-seeking, legal, formal logic, economics, MCQ, translatio"
     },
     {
@@ -20275,7 +20275,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic tasks, STEM and AoPS data"
     },
     {
@@ -20285,7 +20285,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": code concepts and algorithmic data"
     },
     {
@@ -20295,7 +20295,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": rephrased Common Crawl math and code"
     },
     {
@@ -20305,7 +20305,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": moral stories, social and health sciences"
     },
     {
@@ -20315,7 +20315,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic math from Wikimedia"
     },
     {
@@ -20325,7 +20325,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": science reasoning, MCQ, search and tool data"
     },
     {
@@ -20335,7 +20335,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": competitive math/coding/science, agentic tool use, SWE"
     },
     {
@@ -20345,7 +20345,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": structured outputs, tool calling, long context, SWE"
     },
     {
@@ -20355,7 +20355,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": chat (reasoning on/off), CUDA agent traces, terminal and search data"
     },
     {
@@ -20365,7 +20365,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": synthetic math RL data (Skywork, DAPO, Turing Math)"
     },
     {
@@ -20375,7 +20375,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": preference and chat responses"
     },
     {
@@ -20385,7 +20385,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": abstention, chemistry, prompt-injection and math proof data"
     },
     {
@@ -20395,7 +20395,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": filtering of synthetic Verilog/SystemVerilog code"
     },
     {
@@ -20405,7 +20405,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052048/https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
      "note": "card dataset table \"Model(s) used for generation\": best-of-4 selection of GLM-5 chat data"
     }
    ],
@@ -20696,7 +20696,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045010/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
      "note": "Developed by: AI Products Pillar, AI Singapore; Funded by: National Research Foundation Singapore"
     },
     {
@@ -20706,7 +20706,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045010/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
      "note": "Developed by: AI Products Pillar, AI Singapore"
     },
     {
@@ -20716,7 +20716,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045125/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base",
      "note": "built upon nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16 ... underwent continued pre-training"
     },
     {
@@ -20726,7 +20726,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045010/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
      "note": "License: MIT"
     },
     {
@@ -20736,7 +20736,7 @@
      "issuer": "community",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052015/https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16",
      "note": "upstream base under nvidia-nemotron-open-model-license [review: Upstream base is under the NVIDIA Nemotron Open Model License (custom). The source supports a caveat, not 'osi'. Issuer: NVIDIA is the upstream maker, not a com]"
     },
     {
@@ -20746,7 +20746,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045010/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
      "note": "MIT"
     },
     {
@@ -20756,7 +20756,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045125/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base",
      "note": "CPT dataset of 33.5B tokens adapted from listed datasets (NuminaMath, SEA-Instruct-2602, Nemotron SFT ...)"
     },
     {
@@ -20766,7 +20766,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045125/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base",
      "note": "Hardware type: H200; Cloud provider: SMC H200; Compute region: Singapore"
     },
     {
@@ -20776,7 +20776,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045125/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base",
      "note": "Hardware type: H200"
     },
     {
@@ -20796,7 +20796,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045010/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
      "note": "Language(s): Burmese, English, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese"
     },
     {
@@ -20922,7 +20922,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "Ai2 model card in allenai org"
     },
     {
@@ -20932,7 +20932,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets"
     },
     {
@@ -20942,7 +20942,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "licensed under Apache 2.0 ... intended for research and educational use per Responsible Use Guidelines"
     },
     {
@@ -20952,7 +20952,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "releasing all code, checkpoints, logs and associated training details; Dolma 3 / Dolci on HF"
     },
     {
@@ -20992,7 +20992,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "Language(s) (NLP): English"
     },
     {
@@ -21002,7 +21002,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "code, data, intermediate checkpoints released (OLMo-core, Open Instruct)"
     },
     {
@@ -21363,7 +21363,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "Ai2 model card in allenai org"
     },
     {
@@ -21373,7 +21373,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "pre-trained on the Dolma 3 dataset and post-trained on the Dolci datasets"
     },
     {
@@ -21383,7 +21383,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "licensed under Apache 2.0 ... intended for research and educational use per Responsible Use Guidelines"
     },
     {
@@ -21393,7 +21393,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "releasing all code, checkpoints, logs and associated training details; Dolma 3 / Dolci on HF"
     },
     {
@@ -21433,7 +21433,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "Language(s) (NLP): English"
     },
     {
@@ -21443,7 +21443,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045310/https://huggingface.co/allenai/Olmo-3.1-32B-Instruct",
      "note": "code, data, intermediate checkpoints released (OLMo-core, Open Instruct)"
     },
     {
@@ -21804,7 +21804,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051321/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B",
      "note": "Microsoft model card; developer Microsoft"
     },
     {
@@ -21814,7 +21814,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051321/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B",
      "note": "built on the Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder"
     },
     {
@@ -21824,7 +21824,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051321/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B",
      "note": "License: MIT"
     },
     {
@@ -21834,7 +21834,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051430/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md",
      "note": "AI Act summary: public datasets, licensed data, no crawling, no user data, synthetic data"
     },
     {
@@ -21844,7 +21844,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051321/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B",
      "note": "Training GPUs: 240 B200s; location not stated"
     },
     {
@@ -21854,7 +21854,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051430/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md",
      "note": "Public summary in Commission template; Microsoft Ireland Operations Limited; v1.0, 31 Aug 2026"
     },
     {
@@ -21864,7 +21864,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051458/https://huggingface.co/microsoft/phi-4",
      "note": "Phi-4 base: GPUs 1920 H100-80G, 21 days, 9.8T tokens"
     },
     {
@@ -21874,7 +21874,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051321/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B",
      "note": "trained primarily on English text ... not intended to support multilingual use"
     },
     {
@@ -21894,7 +21894,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051430/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md",
      "note": "2.5.3 models used to generate synthetic data: Open AI GPT-4o and o4-mini"
     },
     {
@@ -21904,7 +21904,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011051430/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md",
      "note": "2.5.3 models used to generate synthetic data: Open AI GPT-4o and o4-mini"
     }
    ],
@@ -22104,7 +22104,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "developed by Preferred Networks, Inc. in collaboration with NICT"
     },
     {
@@ -22114,7 +22114,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "developed by Preferred Networks, Inc. in collaboration with NICT"
     },
     {
@@ -22124,7 +22124,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "a 31B model distilled from a 120B model; 120B trained on 2.625T + 0.375T tokens"
     },
     {
@@ -22134,7 +22134,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054440/https://plamo.preferredai.jp/info/plamo-community-license-en",
      "note": "commercial use only after registration and if annual revenue does not exceed 1 billion yen"
     },
     {
@@ -22144,7 +22144,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054440/https://plamo.preferredai.jp/info/plamo-community-license-en",
      "note": "Article 12: PFN may modify this AGREEMENT"
     },
     {
@@ -22154,7 +22154,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "phase 1: English 45%, Japanese 30%, Code 15%, Other 10%; FineWeb-2, SmolLM corpus, Stack v2, Nemotron named"
     },
     {
@@ -22164,7 +22164,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "not stated"
     },
     {
@@ -22174,7 +22174,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "not stated"
     },
     {
@@ -22184,7 +22184,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "weights only (gated)"
     },
     {
@@ -22194,7 +22194,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "language: en, ja; English 45% / Japanese 30% of phase-1 data"
     },
     {
@@ -22204,7 +22204,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011052602/https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base",
      "note": "distilled from a 120B model"
     }
    ],
@@ -22315,7 +22315,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045010/https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
      "note": "Developed by: AI Products Pillar, AI Singapore; Funded by: National Research Foundation Singapore"
     },
     {
@@ -22325,7 +22325,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "Developed by: AI Products Pillar, AI Singapore"
     },
     {
@@ -22335,7 +22335,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "Finetuned from model: Qwen/Qwen3.6-27B; Training Stage: Post-Training (Logit Distillation & Model Merging)"
     },
     {
@@ -22345,7 +22345,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "License: MIT"
     },
     {
@@ -22355,7 +22355,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "MIT"
     },
     {
@@ -22365,7 +22365,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "Training Data: aisingapore/SEA-Instruct-2602"
     },
     {
@@ -22375,7 +22375,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "not stated"
     },
     {
@@ -22385,7 +22385,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "not stated (only inference figures)"
     },
     {
@@ -22395,7 +22395,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "weights only"
     },
     {
@@ -22405,7 +22405,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "English and Burmese, Indonesian, Filipino, Malay, Tamil, Thai, and Vietnamese"
     },
     {
@@ -22415,7 +22415,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045155/https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT",
      "note": "underwent distillation from Qwen3.5-397B-A17B on an updated SEA-Instruct-2602"
     }
    ],
@@ -22531,7 +22531,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "Acknowledgements: NEDO JPNP25006, MEXT project, ABCI 3.0 (AIST), TSUBAME4.0 (Institute of Science Tokyo) [review: Acknowledgements list funding and compute only (NEDO, MEXT, ABCI 3.0, TSUBAME4.0). Nothing on ownership; fits notes.]"
     },
     {
@@ -22541,7 +22541,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "Authors: Swallow LLM; contact swallow[at]nlp.c.titech.ac.jp"
     },
     {
@@ -22551,7 +22551,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "developed through Continual Pre-Training (CPT), SFT and RLVR based on the Qwen3"
     },
     {
@@ -22561,7 +22561,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "License: Apache license 2.0"
     },
     {
@@ -22571,7 +22571,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "plain Apache-2.0"
     },
     {
@@ -22581,7 +22581,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "CPT datasets listed (Swallow Corpus v3.2, Wikipedia, Nemotron-CC, SwallowMath/Code v2 ...), 209.7B tokens"
     },
     {
@@ -22591,7 +22591,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "We used ABCI 3.0 provided by AIST ... carried out using the TSUBAME4.0 supercomputer at Institute of Science Tokyo"
     },
     {
@@ -22611,7 +22611,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "not stated (frameworks and datasets named; Swallow Corpus not public; tech paper announced)"
     },
     {
@@ -22621,7 +22621,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "Language(s): Japanese, English"
     },
     {
@@ -22631,7 +22631,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "Swallow Corpus v3.2 QA (synthetic QA-format text using gpt-oss-120b); SFT traces generated using gpt-oss-120b"
     },
     {
@@ -22641,7 +22641,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050132/https://huggingface.co/datasets/tokyotech-llm/swallow-code-v2",
      "note": "LLM Rewriting Phase - Use Qwen3-235B-A22B-Instruct to rewrite and enhance code"
     },
     {
@@ -22651,7 +22651,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050239/https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2",
      "note": "SwallowMath-v2 rewritten using Qwen3-235B-A22B-2507-Instruct"
     },
     {
@@ -22661,7 +22661,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011050239/https://huggingface.co/datasets/tokyotech-llm/swallow-math-v2",
      "note": "Stage 2 - Math Extraction ... using LLM (= Qwen3-32B)"
     },
     {
@@ -22671,7 +22671,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053333/https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2",
      "note": "Cosmopedia listed in the CPT English corpus"
     },
     {
@@ -22681,7 +22681,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011045731/https://huggingface.co/datasets/HuggingFaceTB/cosmopedia",
      "note": "synthetic textbooks generated by Mixtral-8x7B-Instruct-v0.1"
     }
    ],
@@ -22835,7 +22835,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044604/https://huggingface.co/Qwen/Qwen3.8-27B",
      "note": "official Qwen org; \"Qwen3.8, the most capable generation in the Qwen open-model family\""
     },
     {
@@ -22845,7 +22845,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260828182533/https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE",
      "note": "Apache License Version 2.0"
     },
     {
@@ -22855,7 +22855,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260828182533/https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE",
      "note": "plain Apache-2.0, no update clause"
     },
     {
@@ -22865,7 +22865,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044604/https://huggingface.co/Qwen/Qwen3.8-27B",
      "note": "\"Training Stage: Pre-training & Post-training\"; \"Built on the architectural foundation of Qwen3.5\" [review: card says \"Training Stage: Pre-training & Post-training\" and \"Built on the architectural foundation of Qwen3.5\"; does not say from scratch vs. initialised from ]"
     },
     {
@@ -22875,7 +22875,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044604/https://huggingface.co/Qwen/Qwen3.8-27B",
      "note": "not stated"
     },
     {
@@ -22885,7 +22885,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044604/https://huggingface.co/Qwen/Qwen3.8-27B",
      "note": "not stated"
     },
     {
@@ -22895,7 +22895,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044604/https://huggingface.co/Qwen/Qwen3.8-27B",
      "note": "not stated"
     },
     {
@@ -22905,7 +22905,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044604/https://huggingface.co/Qwen/Qwen3.8-27B",
      "note": "not stated"
     },
     {
@@ -22915,7 +22915,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044604/https://huggingface.co/Qwen/Qwen3.8-27B",
      "note": "\"model weights and configuration files for the post-trained model\"; no training code or data"
     },
     {
@@ -23120,7 +23120,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044804/https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
      "note": "official Qwen org"
     },
     {
@@ -23130,7 +23130,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044832/https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE",
      "note": "Qwen Community License 1.0: MaaS or AI Work Assistant business \"shall obtain a separate license from Qwen\""
     },
     {
@@ -23140,7 +23140,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044832/https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE",
      "note": "licence text has no clause allowing later changes"
     },
     {
@@ -23160,7 +23160,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044804/https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
      "note": "\"Training Stage: Pre-training & Post-training\""
     },
     {
@@ -23200,7 +23200,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011044804/https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
      "note": "weights and configuration of the post-trained model only"
     },
     {
@@ -23395,7 +23395,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "Training was conducted entirely in India on compute provided under the IndiaAI mission [review: Blog covers compute under the IndiaAI mission, not ownership. Fits notes, not control.]"
     },
     {
@@ -23405,7 +23405,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260924042533/https://huggingface.co/sarvamai/sarvam-105b",
      "note": "Sarvam-105B ... open-sourced under the Apache License; see our blog"
     },
     {
@@ -23415,7 +23415,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "trained from scratch on large-scale, high-quality datasets curated in-house"
     },
     {
@@ -23425,7 +23425,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260924042533/https://huggingface.co/sarvamai/sarvam-105b",
      "note": "license: apache-2.0"
     },
     {
@@ -23435,7 +23435,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260924042533/https://huggingface.co/sarvamai/sarvam-105b",
      "note": "plain Apache-2.0"
     },
     {
@@ -23445,7 +23445,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "categories only (code, web, knowledge, math, multilingual, synthetic); no mix published"
     },
     {
@@ -23455,7 +23455,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "Training was conducted entirely in India on compute provided under the IndiaAI mission"
     },
     {
@@ -23465,7 +23465,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "Nvidia contributed libraries used across pre-training, alignment, and serving; GPU type not stated"
     },
     {
@@ -23475,7 +23475,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "weights only; no data or training code released"
     },
     {
@@ -23485,7 +23485,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260924042533/https://huggingface.co/sarvamai/sarvam-105b",
      "note": "state-of-the-art performance across 22 Indian languages; Hub language list"
     },
     {
@@ -23495,7 +23495,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "synthetic data pipelines described, generator models not named (Gemini/Claude only for evaluation)"
     }
    ],
@@ -23591,7 +23591,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "Training was conducted entirely in India on compute provided under the IndiaAI mission [review: Blog covers compute under the IndiaAI mission, not ownership. Fits notes, not control.]"
     },
     {
@@ -23601,7 +23601,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260924042533/https://huggingface.co/sarvamai/sarvam-105b",
      "note": "Sarvam-105B ... open-sourced under the Apache License; see our blog"
     },
     {
@@ -23611,7 +23611,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "trained from scratch on large-scale, high-quality datasets curated in-house"
     },
     {
@@ -23621,7 +23621,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260924042533/https://huggingface.co/sarvamai/sarvam-105b",
      "note": "license: apache-2.0"
     },
     {
@@ -23631,7 +23631,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260924042533/https://huggingface.co/sarvamai/sarvam-105b",
      "note": "plain Apache-2.0"
     },
     {
@@ -23641,7 +23641,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "categories only (code, web, knowledge, math, multilingual, synthetic); no mix published"
     },
     {
@@ -23651,7 +23651,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "Training was conducted entirely in India on compute provided under the IndiaAI mission"
     },
     {
@@ -23661,7 +23661,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "Nvidia contributed libraries used across pre-training, alignment, and serving; GPU type not stated"
     },
     {
@@ -23671,7 +23671,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "weights only; no data or training code released"
     },
     {
@@ -23681,7 +23681,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20260924042533/https://huggingface.co/sarvamai/sarvam-105b",
      "note": "state-of-the-art performance across 22 Indian languages; Hub language list"
     },
     {
@@ -23691,7 +23691,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011055900/https://www.sarvam.ai/blogs/sarvam-30b-105b",
      "note": "synthetic data pipelines described, generator models not named (Gemini/Claude only for evaluation)"
     }
    ],
@@ -23875,7 +23875,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053443/https://huggingface.co/upstage/Solar-Open2-250B",
      "note": "Solar Open 2 is Upstage's 250B-A15B open-weight large language model"
     },
     {
@@ -23885,7 +23885,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053443/https://huggingface.co/upstage/Solar-Open2-250B",
      "note": "inherits the core of Solar Open 1's weights as its skeleton (selective weight transfer, 2.3% of weights)"
     },
     {
@@ -23895,7 +23895,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053515/https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE",
      "note": "adopts Apache 2.0 but derivative model name must begin with 'Solar' and display 'Built with Solar'"
     },
     {
@@ -23905,7 +23905,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053515/https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE",
      "note": "no amendment clause; Apache-2.0-style perpetual licence"
     },
     {
@@ -23935,7 +23935,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053443/https://huggingface.co/upstage/Solar-Open2-250B",
      "note": "Training Hardware: NVIDIA B200 GPUs; 2M GPU hours"
     },
     {
@@ -23945,7 +23945,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053443/https://huggingface.co/upstage/Solar-Open2-250B",
      "note": "weights only"
     },
     {
@@ -23955,7 +23955,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011053443/https://huggingface.co/upstage/Solar-Open2-250B",
      "note": "Supported Languages: English, Korean, Japanese"
     },
     {
@@ -24127,7 +24127,7 @@
      "issuer": "press",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261011054526/https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/",
      "note": "\"Canadian AI startup Cohere is taking over Germany-based Aleph Alpha\"; Schwarz Group EUR 500M, lead of Series E"
     },
     {
