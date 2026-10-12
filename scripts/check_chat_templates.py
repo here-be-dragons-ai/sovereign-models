@@ -108,7 +108,7 @@ def hf_templates(repo, files):
         if isinstance(value, str):
             return {"default": value}, name
         if isinstance(value, list):
-            return {t["name"]: t["template"] for t in value}, name
+            return {t["name"]: t["template"] for t in value if isinstance(t.get("template"), str)}, name
     return {}, None
 
 
@@ -168,9 +168,11 @@ def gguf_templates(url):
         klen = struct.unpack("<Q", r.read(8))[0]
         key = r.read(klen).decode("utf-8", "replace")
         vtype = struct.unpack("<I", r.read(4))[0]
-        keep = key.startswith("tokenizer.chat_template")
+        # tokenizer.chat_template and tokenizer.chat_template.<name>; not the
+        # tokenizer.chat_templates array, which only lists the names.
+        keep = key == "tokenizer.chat_template" or key.startswith("tokenizer.chat_template.")
         value = _value(r, vtype, keep)
-        if keep:
+        if keep and isinstance(value, str):
             name = key[len("tokenizer.chat_template"):].lstrip(".") or "default"
             out[name] = value
     return out
