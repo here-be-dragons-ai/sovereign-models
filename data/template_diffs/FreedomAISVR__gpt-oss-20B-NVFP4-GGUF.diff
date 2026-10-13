@@ -1,0 +1,15 @@
+--- original/default
++++ build/default
+@@ -200,10 +200,9 @@
+     {{- model_identity + "\n" }}
+     {{- "Knowledge cutoff: 2024-06\n" }}
+     {{- "Current date: " + strftime_now("%Y-%m-%d") + "\n\n" }}
+-    {%- if reasoning_effort is not defined %}
+-        {%- set reasoning_effort = "medium" %}
++    {%- if reasoning_effort is defined %}
++    {{- "Reasoning: " + reasoning_effort + "\n\n" }}
+     {%- endif %}
+-    {{- "Reasoning: " + reasoning_effort + "\n\n" }}
+     {%- if builtin_tools %}
+         {{- "# Tools\n\n" }}
+         {%- set available_builtin_tools = namespace(browser=false, python=false) %}

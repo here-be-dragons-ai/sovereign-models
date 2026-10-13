@@ -1,0 +1,149 @@
+--- original/default
++++ build/default
+@@ -255,77 +255,102 @@
+ {%- endif %}
+ 
+ {#- Render messages #}
+-{%- set last_tool_call = namespace(name=none) %}
++{#- SoAI fixes (soai_models/templates/gpt-oss/README.md): every parallel tool call is rendered as its own
++    Harmony message, tool results are matched to their call by tool_call_id, and string arguments and
++    tool results are written as-is instead of being JSON-encoded a second time. #}
++{%- set state = namespace(calls=[], last_name=none) %}
+ {%- for message in loop_messages -%}
+-    {#- At this point only assistant/user/tool messages should remain #}
+     {%- if message.role == 'assistant' -%}
+-        {#- Checks to ensure the messages are being passed in the format we expect #}
+-        {%- if "content" in message %}
+-            {%- if "<|channel|>analysis<|message|>" in message.content or "<|channel|>final<|message|>" in message.content %}
+-                {{- raise_exception("You have passed a message containing <|channel|> tags in the content field. Instead of doing this, you should pass analysis messages (the string between '<|message|>' and '<|end|>') in the 'thinking' field, and final messages (the string between '<|message|>' and '<|end|>') in the 'content' field.") }}
+-            {%- endif %}
+-        {%- endif %}
+-        {%- if "thinking" in message %}
+-            {%- if "<|channel|>analysis<|message|>" in message.thinking or "<|channel|>final<|message|>" in message.thinking %}
+-                {{- raise_exception("You have passed a message containing <|channel|> tags in the thinking field. Instead of doing this, you should pass analysis messages (the string between '<|message|>' and '<|end|>') in the 'thinking' field, and final messages (the string between '<|message|>' and '<|end|>') in the 'content' field.") }}
+-            {%- endif %}
+-        {%- endif %}
+-        {%- if "tool_calls" in message %}
+-            {#- We need very careful handling here - we want to drop the tool call analysis message if the model #}
+-            {#- has output a later <|final|> message, but otherwise we want to retain it. This is the only case #}
+-            {#- when we render CoT/analysis messages in inference. #}
++        {%- if message.content is string and ("<|channel|>analysis<|message|>" in message.content or "<|channel|>final<|message|>" in message.content) %}
++            {{- raise_exception("You have passed a message containing <|channel|> tags in the content field. Instead of doing this, you should pass analysis messages (the string between '<|message|>' and '<|end|>') in the 'thinking' field, and final messages (the string between '<|message|>' and '<|end|>') in the 'content' field.") }}
++        {%- endif %}
++        {%- if message.thinking is string and ("<|channel|>analysis<|message|>" in message.thinking or "<|channel|>final<|message|>" in message.thinking) %}
++            {{- raise_exception("You have passed a message containing <|channel|> tags in the thinking field. Instead of doing this, you should pass analysis messages (the string between '<|message|>' and '<|end|>') in the 'thinking' field, and final messages (the string between '<|message|>' and '<|end|>') in the 'content' field.") }}
++        {%- endif %}
++        {%- if message.tool_calls %}
++            {#- Analysis that led to a tool call is kept until the model writes a later final message. #}
+             {%- set future_final_message = namespace(found=false) %}
+             {%- for future_message in loop_messages[loop.index:] %}
+-                {%- if future_message.role == 'assistant' and "tool_calls" not in future_message %}
++                {%- if future_message.role == 'assistant' and not future_message.tool_calls %}
+                     {%- set future_final_message.found = true %}
+                 {%- endif %}
+             {%- endfor %}
+-            {#- We assume max 1 tool call per message, and so we infer the tool call name #}
+-            {#- in "tool" messages from the most recent assistant tool call name #}
+-            {%- set tool_call = message.tool_calls[0] %}
+-            {%- if tool_call.function %}
+-                {%- set tool_call = tool_call.function %}
++            {%- if not future_final_message.found %}
++                {%- if message.thinking %}
++                    {{- "<|start|>assistant<|channel|>analysis<|message|>" + message.thinking + "<|end|>" }}
++                    {%- if message.content %}
++                        {{- "<|start|>assistant<|channel|>commentary<|message|>" + message.content + "<|end|>" }}
++                    {%- endif %}
++                {%- elif message.content %}
++                    {{- "<|start|>assistant<|channel|>analysis<|message|>" + message.content + "<|end|>" }}
++                {%- endif %}
+             {%- endif %}
+-            {%- if message.content and message.thinking %}
+-                {{- raise_exception("Cannot pass both content and thinking in an assistant message with tool calls! Put the analysis message in one or the other, but not both.") }}
+-            {%- elif message.content and not future_final_message.found %}
+-                {{- "<|start|>assistant<|channel|>analysis<|message|>" + message.content + "<|end|>" }}
+-            {%- elif message.thinking and not future_final_message.found %}
+-                {{- "<|start|>assistant<|channel|>analysis<|message|>" + message.thinking + "<|end|>" }}
+-            {%- endif %}
+-            {{- "<|start|>assistant to=" }}
+-            {{- "functions." + tool_call.name + "<|channel|>commentary " }}
+-            {{- (tool_call.content_type if tool_call.content_type is defined else "json") + "<|message|>" }}
+-            {{- tool_call.arguments|tojson }}
+-            {{- "<|call|>" }}
+-            {%- set last_tool_call.name = tool_call.name %}
++            {%- set state.calls = [] %}
++            {%- for raw_call in message.tool_calls %}
++                {%- set tool_call = raw_call.function if raw_call.function else raw_call %}
++                {%- set state.calls = state.calls + [[raw_call.id if raw_call.id is defined else none, tool_call.name]] %}
++                {{- "<|start|>assistant to=functions." + tool_call.name + "<|channel|>commentary " }}
++                {{- (tool_call.content_type if tool_call.content_type is defined else "json") + "<|message|>" }}
++                {%- if tool_call.arguments is string %}
++                    {{- tool_call.arguments }}
++                {%- else %}
++                    {{- tool_call.arguments|tojson }}
++                {%- endif %}
++                {{- "<|call|>" }}
++            {%- endfor %}
++            {%- set state.last_name = none %}
+         {%- elif loop.last and not add_generation_prompt %}
+             {#- Only render the CoT if the final turn is an assistant turn and add_generation_prompt is false #}
+             {#- This is a situation that should only occur in training, never in inference. #}
+-            {%- if "thinking" in message %}
++            {%- if message.thinking %}
+                 {{- "<|start|>assistant<|channel|>analysis<|message|>" + message.thinking + "<|end|>" }}
+             {%- endif %}
+             {#- <|return|> indicates the end of generation, but <|end|> does not #}
+             {#- <|return|> should never be an input to the model, but we include it as the final token #}
+             {#- when training, so the model learns to emit it. #}
+-            {{- "<|start|>assistant<|channel|>final<|message|>" + message.content + "<|return|>" }}
++            {{- "<|start|>assistant<|channel|>final<|message|>" + (message.content or "") + "<|return|>" }}
+         {%- else %}
+             {#- CoT is dropped during all previous turns, so we never render it for inference #}
+-            {{- "<|start|>assistant<|channel|>final<|message|>" + message.content + "<|end|>" }}
+-            {%- set last_tool_call.name = none %}
++            {{- "<|start|>assistant<|channel|>final<|message|>" + (message.content or "") + "<|end|>" }}
++            {%- set state.calls = [] %}
+         {%- endif %}
+     {%- elif message.role == 'tool' -%}
+-        {%- if last_tool_call.name is none %}
++        {#- Match the result to its call by id, otherwise take the calls in order. #}
++        {%- set match = namespace(name=none, index=-1) %}
++        {%- for pair in state.calls %}
++            {%- if match.index < 0 and message.tool_call_id is defined and pair[0] == message.tool_call_id %}
++                {%- set match.name = pair[1] %}
++                {%- set match.index = loop.index0 %}
++            {%- endif %}
++        {%- endfor %}
++        {%- if match.index < 0 and state.calls %}
++            {%- set match.name = state.calls[0][1] %}
++            {%- set match.index = 0 %}
++        {%- endif %}
++        {%- if match.index >= 0 %}
++            {%- set state.calls = state.calls[:match.index] + state.calls[match.index + 1:] %}
++            {%- set state.last_name = match.name %}
++        {%- elif message.name is defined and message.name %}
++            {%- set state.last_name = message.name %}
++        {%- endif %}
++        {%- if state.last_name is none %}
+             {{- raise_exception("Message has tool role, but there was no previous assistant message with a tool call!") }}
+         {%- endif %}
+-        {{- "<|start|>functions." + last_tool_call.name }}
+-        {{- " to=assistant<|channel|>commentary<|message|>" + message.content|tojson + "<|end|>" }}
++        {{- "<|start|>functions." + state.last_name + " to=assistant<|channel|>commentary<|message|>" }}
++        {%- if message.content is string %}
++            {{- message.content }}
++        {%- else %}
++            {{- message.content|tojson }}
++        {%- endif %}
++        {{- "<|end|>" }}
+     {%- elif message.role == 'user' -%}
+         {{- "<|start|>user<|message|>" + message.content + "<|end|>" }}
+     {%- endif -%}
+ {%- endfor -%}
+ 
+ {#- Generation prompt #}
++{#- SoAI fix: the reply starts inside the analysis channel. gpt-oss always reasons first, and writing
++    this header for the model removes malformed first headers such as "<|channel|>comment...?". #}
+ {%- if add_generation_prompt -%}
+-<|start|>assistant
++<|start|>assistant<|channel|>analysis<|message|>
+ {%- endif -%}

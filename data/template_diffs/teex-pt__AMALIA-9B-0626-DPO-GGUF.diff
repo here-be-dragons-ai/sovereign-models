@@ -1,0 +1,8 @@
+--- original/default
++++ build/default
+@@ -1,4 +1 @@
+-{% if messages[0]['role'] != 'system' %}{% set messages = [{'role': 'system', 'content': 'O teu nome é Amália, e és um modelo avançado de linguagem útil. Responde sempre na língua do utilizador, a menos que sejas instruído em contrário, e lembra-te que a tua língua principal é o português europeu.'}] + messages %}{% endif %}{% if not add_generation_prompt is defined %}{% set add_generation_prompt = false %}{% endif %}{% for message in messages %}{{ '<|im_start|>' + message['role'] + '
+-' + message['content'] + '<|im_end|>
+-' }}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant
+-' }}{% endif %}
++{% if messages[0]['role'] != 'system' %}{% set messages = [{'role': 'system', 'content': 'O teu nome é Amália e és um modelo de linguagem aberto desenvolvido em Portugal, com 9 mil milhões de parâmetros, treinado especialmente para o português europeu. O teu nome homenageia a fadista Amália Rodrigues. Foste apresentado publicamente a 1 de julho de 2026 e estás disponível em código aberto sob a licença Apache 2.0. Responde sempre na língua do utilizador, a menos que sejas instruído em contrário, e lembra-te que a tua língua principal é o português europeu. Quando te apresentares, diz que te chamas Amália, baseia-te apenas nesta informação e não inventes detalhes adicionais sobre a tua origem ou os teus criadores.'}] + messages %}{% endif %}{% for message in messages %}{{ '<|im_start|>' + message['role'] + '\n' + message['content'] + '<|im_end|>\n' }}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant\n' }}{% endif %}

@@ -1,0 +1,298 @@
+--- original/default
++++ build/default
+@@ -33,13 +33,6 @@
+ false
+ {%- endif -%}
+ {%- endmacro -%}
+-
+-{#- $ref inlining state: defs = local $defs of the tool being rendered; seen = -#}
+-{#- pipe-delimited names already expanded for this tool (each def inlines at most -#}
+-{#- once; later references render by def name; cycles terminate immediately). -#}
+-{#- $ref-sibling annotations (description/default/...) merge OVER the def at -#}
+-{#- the inline site, so use-site annotations win and are never dropped. -#}
+-{%- set REFS = namespace(defs={}, seen='|') -%}
+ 
+ {%- macro render_compact_type_name(type_name, spec) -%}
+ {%- if type_name == "array" -%}
+@@ -86,9 +79,9 @@
+ {%- endmacro -%}
+ 
+ {%- macro render_markdown_type(spec) -%}
+-{%- if spec is sameas true -%}
++{%- if spec is true -%}
+ True
+-{%- elif spec is sameas false -%}
++{%- elif spec is false -%}
+ False
+ {%- elif spec is not mapping -%}
+ any
+@@ -124,9 +117,9 @@
+ {%- macro render_python_repr(value) -%}
+ {%- if value is string -%}
+ {{ render_python_string(value) }}
+-{%- elif value is sameas true -%}
++{%- elif value is true -%}
+ True
+-{%- elif value is sameas false -%}
++{%- elif value is false -%}
+ False
+ {%- elif value is none -%}
+ None
+@@ -192,8 +185,9 @@
+     {%- if classify -%}
+     {%- for key, value in spec | items -%}
+         {%- if key == '$ref' -%}
+-            {%- if value is not string -%}{%- set RB.ok = false -%}
+-            {%- elif not (value.startswith('#/$defs/') or value.startswith('#/definitions/')) -%}{%- set RB.ok = false -%}{%- endif -%}
++            {#- llama.cpp's Jinja has no dictionary constructor, so $ref inlining stays -#}
++            {#- template-local by falling back to the exact JSON presentation. -#}
++            {%- set RB.ok = false -%}
+         {%- elif key == '$defs' or key == 'definitions' -%}
+             {%- if value is mapping -%}
+                 {%- for dk, dv in value | items -%}
+@@ -320,22 +314,6 @@
+ {%- endmacro -%}
+ 
+ {%- macro render_xml_schema_node(tag, spec, include_properties) -%}
+-{%- if spec is mapping and spec['$ref'] is string -%}
+-    {%- set _r = spec['$ref'] -%}
+-    {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-    {%- if _k is not none and ('|' + _k + '|') not in REFS.seen and REFS.defs[_k] is mapping -%}
+-        {%- set spec = dict((REFS.defs[_k] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-        {%- set REFS.seen = REFS.seen + _k + '|' -%}
+-        {%- if spec['$ref'] is string -%}
+-            {%- set _r2 = spec['$ref'] -%}
+-            {%- set _k2 = _r2[8:] if _r2.startswith('#/$defs/') else (_r2[14:] if _r2.startswith('#/definitions/') else none) -%}
+-            {%- if _k2 is not none and REFS.defs[_k2] is mapping -%}
+-                {%- set spec = dict((REFS.defs[_k2] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-                {%- set REFS.seen = REFS.seen + _k2 + '|' -%}
+-            {%- endif -%}
+-        {%- endif -%}
+-    {%- endif -%}
+-{%- endif -%}
+ {%- if spec is mapping -%}
+ {{- "<" + tag + " type=" + render_compact_type(spec) }}{{ render_xml_schema_attrs(spec, true) }}
+ {%- if xml_schema_has_children(spec, include_properties, true) == 'true' -%}
+@@ -349,22 +327,6 @@
+ {%- endmacro -%}
+ 
+ {%- macro render_xml_pattern_property(pattern, spec) -%}
+-{%- if spec is mapping and spec['$ref'] is string -%}
+-    {%- set _r = spec['$ref'] -%}
+-    {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-    {%- if _k is not none and ('|' + _k + '|') not in REFS.seen and REFS.defs[_k] is mapping -%}
+-        {%- set spec = dict((REFS.defs[_k] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-        {%- set REFS.seen = REFS.seen + _k + '|' -%}
+-        {%- if spec['$ref'] is string -%}
+-            {%- set _r2 = spec['$ref'] -%}
+-            {%- set _k2 = _r2[8:] if _r2.startswith('#/$defs/') else (_r2[14:] if _r2.startswith('#/definitions/') else none) -%}
+-            {%- if _k2 is not none and REFS.defs[_k2] is mapping -%}
+-                {%- set spec = dict((REFS.defs[_k2] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-                {%- set REFS.seen = REFS.seen + _k2 + '|' -%}
+-            {%- endif -%}
+-        {%- endif -%}
+-    {%- endif -%}
+-{%- endif -%}
+ {%- if spec is mapping -%}
+ {{- "<patternProperty" }}{{ render_xml_attr("pattern", pattern) }}{{- " type=" + render_compact_type(spec) }}{{ render_xml_schema_attrs(spec, true) }}
+ {%- if xml_schema_has_children(spec, true, true) == 'true' -%}
+@@ -405,22 +367,6 @@
+ {%- endmacro -%}
+ 
+ {%- macro render_xml_param(name, spec, required_list) -%}
+-{%- if spec is mapping and spec['$ref'] is string -%}
+-    {%- set _r = spec['$ref'] -%}
+-    {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-    {%- if _k is not none and ('|' + _k + '|') not in REFS.seen and REFS.defs[_k] is mapping -%}
+-        {%- set spec = dict((REFS.defs[_k] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-        {%- set REFS.seen = REFS.seen + _k + '|' -%}
+-        {%- if spec['$ref'] is string -%}
+-            {%- set _r2 = spec['$ref'] -%}
+-            {%- set _k2 = _r2[8:] if _r2.startswith('#/$defs/') else (_r2[14:] if _r2.startswith('#/definitions/') else none) -%}
+-            {%- if _k2 is not none and REFS.defs[_k2] is mapping -%}
+-                {%- set spec = dict((REFS.defs[_k2] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-                {%- set REFS.seen = REFS.seen + _k2 + '|' -%}
+-            {%- endif -%}
+-        {%- endif -%}
+-    {%- endif -%}
+-{%- endif -%}
+ {{- "<param name=" + name + " type=" + render_compact_type(spec) }}
+ {%- if name in (required_list or []) -%}{{- " required=true" }}{%- endif -%}
+ {%- if spec.enum -%}{{- " enum=" }}{{ render_xml_enum(spec.enum) }}{%- endif -%}
+@@ -440,17 +386,7 @@
+ {{- "<ifm|tools>" }}
+ {%- for tool in tools_list -%}
+     {%- set fn = tool.function if tool.function is defined else tool -%}
+-    {%- set REFS.defs = fn.parameters['$defs'] if (fn.parameters is mapping and fn.parameters['$defs'] is mapping) else (fn.parameters['definitions'] if (fn.parameters is mapping and fn.parameters['definitions'] is mapping) else {}) -%}
+-    {%- set REFS.seen = '|' -%}
+     {%- set fnp = namespace(p=fn.parameters) -%}
+-    {%- if fnp.p is mapping and fnp.p['$ref'] is string -%}
+-        {%- set _r = fnp.p['$ref'] -%}
+-        {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-        {%- if _k is not none and REFS.defs[_k] is mapping -%}
+-            {%- set fnp.p = dict((REFS.defs[_k] | items | list) + (fnp.p | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-            {%- set REFS.seen = REFS.seen + _k + '|' -%}
+-        {%- endif -%}
+-    {%- endif -%}
+ {{- "\n<function name=" + fn.name + ">" }}
+ {%- if fn.description -%}
+ {{- "<description>" }}{{ fn.description }}{{- "</description>" }}
+@@ -605,48 +541,16 @@
+ {%- endmacro -%}
+ 
+ {%- macro render_markdown_schema_details(spec, indent, include_value_details) -%}
+-{%- if spec is mapping and spec['$ref'] is string -%}
+-    {%- set _r = spec['$ref'] -%}
+-    {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-    {%- if _k is not none and ('|' + _k + '|') not in REFS.seen and REFS.defs[_k] is mapping -%}
+-        {%- set spec = dict((REFS.defs[_k] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-        {%- set REFS.seen = REFS.seen + _k + '|' -%}
+-        {%- if spec['$ref'] is string -%}
+-            {%- set _r2 = spec['$ref'] -%}
+-            {%- set _k2 = _r2[8:] if _r2.startswith('#/$defs/') else (_r2[14:] if _r2.startswith('#/definitions/') else none) -%}
+-            {%- if _k2 is not none and REFS.defs[_k2] is mapping -%}
+-                {%- set spec = dict((REFS.defs[_k2] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-                {%- set REFS.seen = REFS.seen + _k2 + '|' -%}
+-            {%- endif -%}
+-        {%- endif -%}
+-    {%- endif -%}
+-{%- endif -%}
+ {%- if spec is mapping -%}
+ {{- render_markdown_schema_annotations(spec, indent, include_value_details) }}
+ {{- render_markdown_schema_structure(spec, indent, true) }}
+ {{- render_markdown_schema_extras(spec, indent) }}
+-{%- elif spec is not sameas true and spec is not sameas false -%}
++{%- elif spec is not boolean -%}
+ {{- "\n" + indent + "  - Value: " }}{{ render_markdown_literal(spec) }}
+ {%- endif -%}
+ {%- endmacro -%}
+ 
+ {%- macro render_markdown_parameter_schema(spec) -%}
+-{%- if spec is mapping and spec['$ref'] is string -%}
+-    {%- set _r = spec['$ref'] -%}
+-    {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-    {%- if _k is not none and ('|' + _k + '|') not in REFS.seen and REFS.defs[_k] is mapping -%}
+-        {%- set spec = dict((REFS.defs[_k] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-        {%- set REFS.seen = REFS.seen + _k + '|' -%}
+-        {%- if spec['$ref'] is string -%}
+-            {%- set _r2 = spec['$ref'] -%}
+-            {%- set _k2 = _r2[8:] if _r2.startswith('#/$defs/') else (_r2[14:] if _r2.startswith('#/definitions/') else none) -%}
+-            {%- if _k2 is not none and REFS.defs[_k2] is mapping -%}
+-                {%- set spec = dict((REFS.defs[_k2] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-                {%- set REFS.seen = REFS.seen + _k2 + '|' -%}
+-            {%- endif -%}
+-        {%- endif -%}
+-    {%- endif -%}
+-{%- endif -%}
+ {%- if spec is mapping -%}
+ {{- render_markdown_metadata_annotations(spec) }}
+ {%- if 'items' in spec and spec['items'] is mapping -%}
+@@ -693,22 +597,6 @@
+ {%- endmacro -%}
+ 
+ {%- macro render_markdown_param(name, spec, required_list, indent) -%}
+-{%- if spec is mapping and spec['$ref'] is string -%}
+-    {%- set _r = spec['$ref'] -%}
+-    {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-    {%- if _k is not none and ('|' + _k + '|') not in REFS.seen and REFS.defs[_k] is mapping -%}
+-        {%- set spec = dict((REFS.defs[_k] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-        {%- set REFS.seen = REFS.seen + _k + '|' -%}
+-        {%- if spec['$ref'] is string -%}
+-            {%- set _r2 = spec['$ref'] -%}
+-            {%- set _k2 = _r2[8:] if _r2.startswith('#/$defs/') else (_r2[14:] if _r2.startswith('#/definitions/') else none) -%}
+-            {%- if _k2 is not none and REFS.defs[_k2] is mapping -%}
+-                {%- set spec = dict((REFS.defs[_k2] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-                {%- set REFS.seen = REFS.seen + _k2 + '|' -%}
+-            {%- endif -%}
+-        {%- endif -%}
+-    {%- endif -%}
+-{%- endif -%}
+ {{- "\n" + indent + "- `" + name + "` *(" + render_markdown_type(spec) }}
+ {%- if name in (required_list or []) -%}{{- ", required" }}{%- endif -%}
+ {{- ")*" }}
+@@ -726,17 +614,7 @@
+ {{- "<ifm|tools>" }}
+ {%- for tool in tools_list -%}
+     {%- set fn = tool.function if tool.function is defined else tool -%}
+-    {%- set REFS.defs = fn.parameters['$defs'] if (fn.parameters is mapping and fn.parameters['$defs'] is mapping) else (fn.parameters['definitions'] if (fn.parameters is mapping and fn.parameters['definitions'] is mapping) else {}) -%}
+-    {%- set REFS.seen = '|' -%}
+     {%- set fnp = namespace(p=fn.parameters) -%}
+-    {%- if fnp.p is mapping and fnp.p['$ref'] is string -%}
+-        {%- set _r = fnp.p['$ref'] -%}
+-        {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-        {%- if _k is not none and REFS.defs[_k] is mapping -%}
+-            {%- set fnp.p = dict((REFS.defs[_k] | items | list) + (fnp.p | items | rejectattr('0', 'equalto', '$ref') | list)) -%}
+-            {%- set REFS.seen = REFS.seen + _k + '|' -%}
+-        {%- endif -%}
+-    {%- endif -%}
+ {{- "\n## " + fn.name }}
+ {%- if fn.description -%}
+ {{- "\n" + fn.description }}
+@@ -847,12 +725,8 @@
+     {%- if fn.name == tool_name and fn.parameters and fn.parameters.properties and arg_name in fn.parameters.properties -%}
+         {%- set spec = fn.parameters.properties[arg_name] -%}
+         {%- if spec is mapping and spec['$ref'] is string -%}
+-            {%- set _r = spec['$ref'] -%}
+-            {%- set _k = _r[8:] if _r.startswith('#/$defs/') else (_r[14:] if _r.startswith('#/definitions/') else none) -%}
+-            {%- set _d = fn.parameters['$defs'] if fn.parameters['$defs'] is mapping else fn.parameters['definitions'] -%}
+-            {%- set spec = dict((_d[_k] | items | list) + (spec | items | rejectattr('0', 'equalto', '$ref') | list)) if (_k is not none and _d is mapping and _d[_k] is mapping) else spec -%}
+-        {%- endif -%}
+-        {%- if schema_has_combinator(spec) == 'true' -%}
++            {%- set found.type = render_value_type(value) -%}
++        {%- elif schema_has_combinator(spec) == 'true' -%}
+             {%- set found.type = render_value_type(value) -%}
+         {%- else -%}
+             {%- set found.type = render_compact_type(spec) -%}
+@@ -955,23 +829,36 @@
+         {%- elif message.reasoning is defined and message.reasoning is string -%}
+             {%- set thinking_content = message.reasoning -%}
+             {%- set think_tag = 'ifm|think' -%}
+-        {%- elif message.think is not defined and message.reasoning is not defined and message.reasoning_content is not defined and message.think_fast is not defined and message.think_faster is not defined -%}
+-            {{- raise_exception("Assistant message is missing a thinking field. Provide one of: think, reasoning, reasoning_content, think_fast, think_faster.") -}}
+         {%- else -%}
+-            {{- raise_exception("Assistant thinking fields must be strings. Provide one of: think, reasoning, reasoning_content, think_fast, think_faster as a string.") -}}
++            {%- if '</ifm|think>' in content -%}
++                {%- set thinking_content = content.split('</ifm|think>')[0].rstrip('\n').split('<ifm|think>')[-1].lstrip('\n') -%}
++                {%- set content = content.split('</ifm|think>')[-1].lstrip('\n') -%}
++                {%- set think_tag = 'ifm|think' -%}
++            {%- elif '</ifm|think_fast>' in content -%}
++                {%- set thinking_content = content.split('</ifm|think_fast>')[0].rstrip('\n').split('<ifm|think_fast>')[-1].lstrip('\n') -%}
++                {%- set content = content.split('</ifm|think_fast>')[-1].lstrip('\n') -%}
++                {%- set think_tag = 'ifm|think_fast' -%}
++            {%- elif '</ifm|think_faster>' in content -%}
++                {%- set thinking_content = content.split('</ifm|think_faster>')[0].rstrip('\n').split('<ifm|think_faster>')[-1].lstrip('\n') -%}
++                {%- set content = content.split('</ifm|think_faster>')[-1].lstrip('\n') -%}
++                {%- set think_tag = 'ifm|think_faster' -%}
++            {%- endif -%}
+         {%- endif -%}
+         {{- '<|ifm|im_start|>' + message.role }}
+         {% generation %}
+         {%- if think_tag -%}
+             {%- if thinking_content -%}
+-                {{- '<' + think_tag + '>\n' + thinking_content + '</' + think_tag + '>' + content }}
++                {{- '<' + think_tag + '>\n' + thinking_content + '\n</' + think_tag + '>\n' + content.lstrip('\n') }}
+             {%- else -%}
+-                {{- '<' + think_tag + '>\n</' + think_tag + '>' + content }}
++                {{- '<' + think_tag + '>\n</' + think_tag + '>\n' + content.lstrip('\n') }}
+             {%- endif -%}
+         {%- else -%}
+             {{- content }}
+         {%- endif -%}
+         {%- if message.tool_calls -%}
++            {%- if content -%}
++                {{- '\n' }}
++            {%- endif -%}
+             {{- render_tool_calls_block(message.tool_calls, tool_call_fmt, available_tools) }}
+         {%- endif -%}
+         {{- '<|ifm|im_end|>' -}}
+@@ -982,7 +869,9 @@
+ {%- endfor -%}
+ {%- if add_generation_prompt -%}
+     {%- set effort = reasoning_effort | default('high') -%}
+-    {%- if effort == 'high' -%}
++    {%- if enable_thinking is defined and enable_thinking is false -%}
++        {{- '<|ifm|im_start|>assistant\n<ifm|think>\n</ifm|think>\n' }}
++    {%- elif effort == 'high' -%}
+         {{- '<|ifm|im_start|>assistant\n<ifm|think>\n' }}
+     {%- elif effort == 'medium' -%}
+         {{- '<|ifm|im_start|>assistant\n<ifm|think_fast>\n' }}

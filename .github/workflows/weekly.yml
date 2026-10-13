@@ -54,6 +54,20 @@ jobs:
             echo
             echo "Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > body.md
+          # GitHub rejects issue bodies over 65536 characters; the full lists stay in the artifact.
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          LIMIT = 60000
+          body = Path("body.md").read_text()
+          if len(body) > LIMIT:
+              run = "%s/%s/actions/runs/%s" % (os.environ["GITHUB_SERVER_URL"],
+                                                os.environ["GITHUB_REPOSITORY"], os.environ["GITHUB_RUN_ID"])
+              cut = body[:LIMIT].rsplit("\n", 1)[0]
+              Path("body.md").write_text(
+                  cut + "\n\n**Truncated** (%d of %d characters). The full lists are in the `weekly-data` "
+                  "artifact of the workflow run: %s\n" % (len(cut), len(body), run))
+          PY
           gh label create review --color FBCA04 --description "Needs a human look" --force
           gh issue create --title "Weekly check $(date +%F): review" --label review --body-file body.md
       - uses: actions/upload-artifact@v4
@@ -91,5 +105,19 @@ jobs:
             echo
             echo "Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           } > body.md
+          # GitHub rejects issue bodies over 65536 characters; the full lists stay in the artifact.
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          LIMIT = 60000
+          body = Path("body.md").read_text()
+          if len(body) > LIMIT:
+              run = "%s/%s/actions/runs/%s" % (os.environ["GITHUB_SERVER_URL"],
+                                                os.environ["GITHUB_REPOSITORY"], os.environ["GITHUB_RUN_ID"])
+              cut = body[:LIMIT].rsplit("\n", 1)[0]
+              Path("body.md").write_text(
+                  cut + "\n\n**Truncated** (%d of %d characters). The full lists are in the `weekly-data` "
+                  "artifact of the workflow run: %s\n" % (len(cut), len(body), run))
+          PY
           gh label create review --color FBCA04 --description "Needs a human look" --force
           gh issue create --title "Weekly mlx-vlm check $(date +%F): review" --label review --body-file body.md

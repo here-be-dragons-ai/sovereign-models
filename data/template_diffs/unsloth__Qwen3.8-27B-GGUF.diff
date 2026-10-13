@@ -1,0 +1,11 @@
+--- original/default
++++ build/default
+@@ -135,7 +135,7 @@
+                 {%- if tool_call.arguments is defined and tool_call.arguments != '' %}
+                     {%- for args_name, args_value in tool_call.arguments|items %}
+                         {{- '<parameter=' + args_name + '>\n' }}
+-                        {%- set args_value = args_value | string if args_value is string else args_value | tojson | safe %}
++                        {%- set args_value = args_value | string if args_value is string else args_value | tojson %}
+                         {{- args_value }}
+                         {{- '\n</parameter>\n' }}
+                     {%- endfor %}

@@ -1,0 +1,66 @@
+--- original/default
++++ build/default
+@@ -8,7 +8,7 @@
+ {%- set think_begin_token      = '<mm:think>'                     -%}
+ {%- set think_end_token        = '</mm:think>'                    -%}
+ {%- set image_token            = ']<]image[>['                    -%}
+-{%- set video_token            = ']<]video[>['                    -%}
++{%- set frame_token            = ']<]frame[>['                    -%}
+ {#- Thinking mode: "enabled" / "disabled" / "adaptive" / not defined -#}
+ {#- Recursive XML renderer for tool_call arguments ======================== -#}
+ {#- None values are intentionally skipped in mapping iteration so that
+@@ -23,7 +23,7 @@
+ {{ ns }}<{{ k }}>{{ to_xml(v, ns) }}{{ ns }}</{{ k }}>
+ {%- endfor -%}
+ {%- elif val is iterable and val is not string -%}
+-{%- for item in val -%}
++{%- for item in val if item is not none -%}
+ {{ ns }}<item>{{ to_xml(item, ns) }}{{ ns }}</item>
+ {%- endfor -%}
+ {%- elif val is none -%}
+@@ -36,7 +36,7 @@
+ {%- endmacro -%}
+ {#- Tool Rendering Functions ============================================== -#}
+ {%- macro render_tool_namespace(namespace_name, tool_list) -%}
+-{%- for tool in tool_list -%}
++{%- for tool in tool_list if tool is not none -%}
+ <tool>{{ tool.function | tojson(ensure_ascii=False) }}</tool>
+ {% endfor -%}
+ {%- endmacro -%}
+@@ -44,13 +44,13 @@
+     {%- if content is string -%}
+         {{ content }}
+     {%- elif content is iterable and content is not mapping -%}
+-        {%- for item in content -%}
++        {%- for item in content if item is not none -%}
+             {%- if item is mapping and item.type == 'text' -%}
+                 {{- item.text }}
+             {%- elif item is mapping and item.type == 'image' -%}
+                 {{- image_token }}
+-            {%- elif item is mapping and item.type == 'video' -%}
+-                {{- video_token}}
++            {%- elif item is mapping and item.type == 'frame' -%}
++                {{- frame_token}}
+             {%- elif item is string -%}
+                 {{- item }}
+             {%- endif -%}
+@@ -144,7 +144,7 @@
+ 
+ {#- Render messages -#}
+ {%- set last_tool_call = namespace(name=none) -%}
+-{%- for message in conversation_messages -%}
++{%- for message in conversation_messages if message is not none -%}
+     {%- if message.role == 'assistant' -%}
+         {{- bos_token ~ 'ai' ~ '\n' }}
+ 
+@@ -212,8 +212,8 @@
+             {%- for tr in message.content -%}
+                 {%- if tr is mapping and tr.type is defined and tr.type == 'image' -%}
+                     {{- image_token }}
+-                {%- elif tr is mapping and tr.type is defined and tr.type == 'video' -%}
+-                    {{- video_token }}
++                {%- elif tr is mapping and tr.type is defined and tr.type == 'frame' -%}
++                    {{- frame_token }}
+                 {%- else -%}
+                     {{- tr.output if tr.output is defined else (tr.text if tr.type == 'text' and tr.text is defined else tr) }}
+                 {%- endif -%}

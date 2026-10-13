@@ -1,0 +1,200 @@
+--- original/default
++++ build/default
+@@ -2,18 +2,8 @@
+ {%- set ns_vid = namespace(count=0) %}
+ {%- if tools %}
+     {{- '<|im_start|>system\n' }}
+-    {%- if messages[0].role == 'system' %}
+-        {%- if messages[0].content is string %}
+-            {%- if messages[0].content %}
+-                {{- messages[0].content + '\n\n' }}
+-            {%- endif %}
+-        {%- elif messages[0].content is sequence %}
+-            {%- for content_part in messages[0].content %}
+-                {%- if content_part.type == 'text' %}
+-                    {{- content_part.text + '\n\n' }}
+-                {%- endif %}
+-            {%- endfor %}
+-        {%- endif %}
++    {%- if messages[0].role == 'system' and messages[0].content is string %}
++        {{- messages[0].content + '\n\n' }}
+     {%- endif %}
+     {{- '# Tools\n\n' }}
+     {{- 'You may call one or more functions to assist with the user query.\n\n' }}
+@@ -33,20 +23,7 @@
+     {{- '</tool_call><|im_end|>\n' }}
+ {%- else %}
+     {%- if messages[0].role == 'system' %}
+-        {{- '<|im_start|>system\n' }}
+-        {%- if messages[0].content is string %}
+-            {{- messages[0].content }}
+-        {%- elif messages[0].content is sequence %}
+-            {%- for content_part in messages[0].content %}
+-                {%- if content_part.type == 'text' %}
+-                    {{- content_part.text }}
+-                {%- endif %}
+-            {%- endfor %}
+-        {%- endif %}
+-        {%- if messages[0].content %}
+-            {{- '\n' }}
+-        {%- endif %}
+-        {{- '<|im_end|>\n' }}
++        {{- '<|im_start|>system\n' + messages[0].content + '<|im_end|>\n' }}
+     {%- endif %}
+ {%- endif %}
+ {%- set ns = namespace(last_user_index=-1) %}
+@@ -56,19 +33,9 @@
+     {%- endif %}
+ {%- endfor %}
+ {%- for message in messages %}
+-    {%- set content = message.content %}
++    {%- set content = message.get('content', '') or '' %}
+     {%- if (message.role == 'system' and not loop.first) %}
+-        {{- '<|im_start|>' + message.role + '\n' }}
+-        {%- if content is string %}
+-            {{- content }}
+-        {%- elif content is sequence %}
+-            {%- for content_part in content %}
+-                {%- if content_part.type == 'text' %}
+-                    {{- content_part.text }}
+-                {%- endif %}
+-            {%- endfor %}
+-        {%- endif %}
+-        {{- '<|im_end|>' + '\n' }}
++        {{- '<|im_start|>' + message.role + '\n' + content + '<|im_end|>\n' }}
+     {%- elif message.role == 'user' %}
+         {{- '<|im_start|>user\n' }}
+         {%- if message['content'] is string %}
+@@ -78,19 +45,28 @@
+                 {%- if not loop.first %}
+                     {{- '\n' }}
+                 {%- endif %}
+-                {%- if content['type'] == 'image' or 'image' in content or 'image_url' in content %}
+-                    {%- set image_id = 'image_%02d' % ns_img.count %}
+-                    {%- set ns_img.count = ns_img.count + 1 %}
+-                    {%- set mime_type = content.get('mime_type', 'image/jpeg') %}
+-                    {{- '<|mime_start|>{"id": "' + image_id + '", "type": "' + mime_type + '", "filename": "' + content.get('filename', "a.jpg") + '"}<|mime_end|>\n' }}
+-                    {{- '<|image_start|><|IMAGE_PAD|><|image_end|>' }}
+-                {%- elif content['type'] == 'video' or 'video' in content or 'video_url' in content %}
+-                    {%- set video_id = 'video_%02d' % ns_vid.count %}
+-                    {%- set ns_vid.count = ns_vid.count + 1 %}
+-                    {%- set mime_type = content.get('mime_type', 'video/mp4') %}
+-                    {{- '<|mime_start|>{"id": "' + video_id + '", "type": "' + mime_type + '", "filename": "' + content.get('filename', "a.mp4") + '"}<|mime_end|>\n' }}
+-                    {{- '<|video_aux_start|>다음 중 video_duration은 비디오 길이 정보입니다. 참고하여 답변하세요. {"video_duration": ' + (content.get('video_duration') | tojson if content.get('video_duration') else '<|video_duration|>') + '}<|video_aux_end|>\n'}}
+-                    {{- '<|video_start|><|VIDEO_PAD|><|video_end|>'}}
++                {%- if content['type'] == 'image_url' %}
++                    {%- set media_url = content.get('image_url', {}).get('url', '') %}
++                    {%- set url_lower = media_url.lower() %}
++                    {%- set video_extensions = ['.mp4', '.avi', '.mov', '.mkv', '.webm', '.flv', '.wmv', '.m4v'] %}
++                    {%- set ns_check = namespace(is_video=False) %}
++                    {%- for ext in video_extensions %}
++                        {%- if url_lower.endswith(ext) %}
++                            {%- set ns_check.is_video = True %}
++                        {%- endif %}
++                    {%- endfor %}
++                    {%- if ns_check.is_video %}
++                        {%- set video_id = 'video_%02d' % ns_vid.count %}
++                        {%- set ns_vid.count = ns_vid.count + 1 %}
++                        {{- '<|mime_start|>{"id": "' + video_id + '", "type": "video/mp4", "filename": "video.mp4"}<|mime_end|>\n' }}
++                        {{- '<|video_aux_start|>다음 중 video_duration은 비디오 길이 정보입니다. 참고하여 답변하세요. {"video_duration": "<|video_meta_duration|>"}<|video_aux_end|>\n'}}
++                        {{- '<|video_start|><|VIDEO_PAD|><|video_end|>\n'}}
++                    {%- else %}
++                        {%- set image_id = 'image_%02d' % ns_img.count %}
++                        {%- set ns_img.count = ns_img.count + 1 %}
++                        {{- '<|mime_start|>{"id": "' + image_id + '", "type": "image/jpeg", "filename": "image.jpg"}<|mime_end|>\n' }}
++                        {{- '<|image_start|><|IMAGE_PAD|><|image_end|>' }}
++                    {%- endif %}
+                 {%- elif content['type'] == 'text' %}
+                     {{- content['text'] }}
+                 {%- endif %}
+@@ -98,48 +74,42 @@
+             {{- '<|im_end|>\n'}}
+         {%- endif %}
+     {%- elif message.role == 'assistant' %}
+-        {{- '<|im_start|>assistant\n' }}
+-        {%- if message.content is string %}
+-            {%- set reasoning_content = '' %}
+-            {%- if message.reasoning_content is string %}
+-                {%- set reasoning_content = message.reasoning_content %}
++        {%- set reasoning_content = '' %}
++        {%- if message.get('reasoning_content') is string %}
++            {%- set reasoning_content = message.get('reasoning_content') %}
++        {%- else %}
++            {%- if '</think>' in content %}
++                {%- set reasoning_content = content.split('</think>')[0].rstrip('\n').split('<think>')[-1].lstrip('\n') %}
++                {%- set content = content.split('</think>')[-1].lstrip('\n') %}
++            {%- endif %}
++        {%- endif %}
++        {%- if loop.index0 > ns.last_user_index %}
++            {%- if loop.last or reasoning_content %}
++                {{- '<|im_start|>' + message.role + '\n<think>\n' + reasoning_content.strip('\n') + '\n</think>\n\n' + content.lstrip('\n') }}
+             {%- else %}
+-                {%- if '</think>' in content %}
+-                    {%- set reasoning_content = content.split('</think>')[0].rstrip('\n').split('<think>')[-1].lstrip('\n') %}
+-                    {%- set content = content.split('</think>')[-1].lstrip('\n') %}
+-                {%- endif %}
++                {{- '<|im_start|>' + message.role + '\n' + content }}
+             {%- endif %}
+-            {%- if loop.index0 > ns.last_user_index %}
+-                {%- if (loop.index0 > 0 and messages[loop.index0 - 1].role == 'user') or reasoning_content %}
+-                    {{- '<think>\n' + reasoning_content.strip('\n') + '\n</think>\n\n' + content.lstrip('\n') }}
+-                {%- else %}
+-                    {{- content }}
+-                {%- endif %}
+-            {%- else %}
+-                {{- content }}
+-            {%- endif %}
+-        {%- elif message.content is sequence %}
+-            {%- for content_part in message.content %}
+-                {%- if content_part.type == 'text' %}
+-                    {{- content_part.text }}
+-                    {{- '\n' if not loop.last else '' -}}
+-                {%- endif %}
+-            {%- endfor %}
++        {%- else %}
++            {{- '<|im_start|>' + message.role + '\n' + content }}
+         {%- endif %}
+-        {%- if message.tool_calls %}
+-            {%- for tool_call in message.tool_calls %}
++        {%- if message.get('tool_calls') %}
++            {%- for tool_call in message.get('tool_calls', []) %}
+                 {%- if not loop.first or content %}
+                     {{- '\n' }}
+                 {%- endif %}
+-                {%- if tool_call.function %}
+-                    {%- set tool_call = tool_call.function %}
++                {%- if tool_call.get('function') %}
++                    {%- set tool_call = tool_call.get('function') %}
+                 {%- endif %}
+-                {{- '<tool_call>' + tool_call.name + '\n' }}
+-                {%- set _args = tool_call.arguments %}
+-                {%- for k, v in _args.items() %}
+-                    {{- '<arg_key>' + k + '</arg_key>\n' }}
+-                    {{- '<arg_value>' + (v | tojson(ensure_ascii=False) if v is not string else v) + '</arg_value>\n' }}
+-                {%- endfor %}
++                {{- '<tool_call>' + tool_call.get('name', '') + '\n' }}
++                {%- set _args = tool_call.get('arguments', {}) %}
++                {%- if _args is string %}
++                    {{- '<arguments>' + _args + '</arguments>\n' }}
++                {%- elif _args is mapping %}
++                    {%- for k, v in _args.items() %}
++                        {{- '<arg_key>' + k + '</arg_key>\n' }}
++                        {{- '<arg_value>' + (v | tojson(ensure_ascii=False) if v is not string else v) + '</arg_value>\n' }}
++                    {%- endfor %}
++                {%- endif %}
+                 {{- '</tool_call>' }}
+             {%- endfor %}
+         {%- endif %}
+@@ -157,8 +127,9 @@
+     {%- endif %}
+ {%- endfor %}
+ {%- if add_generation_prompt %}
+-    {{- '<|im_start|>assistant\n<think>\n' }}
+-    {%- if skip_reasoning is defined and skip_reasoning is true %}
+-        {{- '\n</think>\n\n' }}
++    {%- if thinking is defined and thinking is true %}
++        {{- '<|im_start|>assistant\n<think>\n' }}
++    {%- else %}
++        {{- '<|im_start|>assistant\n<think>\n\n</think>\n\n' }}
+     {%- endif %}
+ {%- endif %}

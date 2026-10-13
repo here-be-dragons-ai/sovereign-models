@@ -1,0 +1,29 @@
+--- original/default
++++ build/default
+@@ -2,7 +2,7 @@
+     {%- if json_dict is mapping %}
+         {%- for json_key in json_dict if json_key not in handled_keys %}
+             {%- if json_dict[json_key] is mapping or (json_dict[json_key] is sequence and json_dict[json_key] is not string) %}
+-                {{- '\n<' ~ json_key ~ '>' ~ (json_dict[json_key] | tojson | safe) ~ '</' ~ json_key ~ '>' }}
++                {{- '\n<' ~ json_key ~ '>' ~ (json_dict[json_key] | tojson ) ~ '</' ~ json_key ~ '>' }}
+             {%- else %}
+                 {{-'\n<' ~ json_key ~ '>' ~ (json_dict[json_key] | string) ~ '</' ~ json_key ~ '>' }}
+             {%- endif %}
+@@ -71,7 +71,7 @@
+                     {{- '\n<description>' ~ (param_fields.description | trim) ~ '</description>' }}
+                 {%- endif %}
+                 {%- if param_fields.enum is defined %}
+-                    {{- '\n<enum>' ~ (param_fields.enum | tojson | safe) ~ '</enum>' }}
++                    {{- '\n<enum>' ~ (param_fields.enum | tojson ) ~ '</enum>' }}
+                 {%- endif %}
+                 {%- set handled_keys = ['name', 'type', 'description', 'enum'] %}
+                 {{- render_extra_keys(param_fields, handled_keys) }}
+@@ -81,7 +81,7 @@
+         {% set handled_keys = ['type', 'properties', 'required'] %}
+         {{- render_extra_keys(tool.parameters, handled_keys) }}
+         {%- if tool.parameters is defined and tool.parameters.required is defined %}
+-            {{- '\n<required>' ~ (tool.parameters.required | tojson | safe) ~ '</required>' }}
++            {{- '\n<required>' ~ (tool.parameters.required | tojson ) ~ '</required>' }}
+         {%- endif %}
+         {{- '\n</parameters>' }}
+         {%- set handled_keys = ['type', 'name', 'description', 'parameters'] %}

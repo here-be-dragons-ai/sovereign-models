@@ -1,0 +1,8 @@
+--- original/default
++++ build/default
+@@ -1,4 +1,4 @@
+-{% if messages[0]['role'] != 'system' %}{% set messages = [{'role': 'system', 'content': 'O teu nome é Amália, e és um modelo avançado de linguagem útil. Responde sempre na língua do utilizador, a menos que sejas instruído em contrário, e lembra-te que a tua língua principal é o português europeu.'}] + messages %}{% endif %}{% if not add_generation_prompt is defined %}{% set add_generation_prompt = false %}{% endif %}{% for message in messages %}{{ '<|im_start|>' + message['role'] + '
++{% if messages[0]['role'] != 'system' %}{% set messages = [{'role': 'system', 'content': 'O teu nome é AMALIA, e és um modelo avançado de linguagem útil. Responde sempre na língua do utilizador, a menos que sejas instruído em contrário, e lembra-te que a tua língua principal é o português europeu.'}] + messages %}{% endif %}{% if not add_generation_prompt is defined %}{% set add_generation_prompt = false %}{% endif %}{% for message in messages %}{{ '<|im_start|>' + message['role'] + '
+ ' + message['content'] + '<|im_end|>
+ ' }}{% endfor %}{% if add_generation_prompt %}{{ '<|im_start|>assistant
+ ' }}{% endif %}

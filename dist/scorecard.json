@@ -1038,8 +1038,8 @@
    "gguf_build": "danish-foundation-models/DFM-Mimir-v1.5-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "96.0",
@@ -1225,7 +1225,7 @@
      "created": "2026-09-23",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -1245,7 +1245,7 @@
     }
    ],
    "max_context": 4096,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -3666,8 +3666,8 @@
    "gguf_build": "layerx-labs/AMALIA-9B-0626-DPO-GGUF",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 4,
-   "template_check": "not checked",
-   "template_check_detail": "4 not checked",
+   "template_check": "differs",
+   "template_check_detail": "4 differs",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "168.0",
@@ -3933,8 +3933,8 @@
      "created": "2026-07-02",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/layerx-labs__AMALIA-9B-0626-DPO-GGUF.diff"
     },
     {
      "id": "amalia-9b-0626",
@@ -3944,8 +3944,8 @@
      "created": "2026-07-01",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/duarteocarmo__AMALIA-9B-0626-DPO-GGUF.diff"
     },
     {
      "id": "amalia-9b-0626",
@@ -3955,8 +3955,8 @@
      "created": "2026-07-01",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/csoares31__AMALIA-9B-0626-DPO-GGUF.diff"
     },
     {
      "id": "amalia-9b-0626",
@@ -3966,8 +3966,8 @@
      "created": "2026-07-03",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/teex-pt__AMALIA-9B-0626-DPO-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -4035,7 +4035,7 @@
     }
    ],
    "max_context": 32768,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -7008,7 +7008,7 @@
    "gguf_build_publisher": "individual",
    "gguf_builds": 4,
    "template_check": "not checked",
-   "template_check_detail": "4 not checked",
+   "template_check_detail": "2 not checked, 2 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
@@ -7284,7 +7284,7 @@
      "created": "2026-06-02",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -7295,7 +7295,7 @@
      "created": "2026-06-01",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -7307,7 +7307,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "pllum-12b-chat-2512",
@@ -7318,7 +7318,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     }
    ],
    "cache_layout": {
@@ -7824,8 +7824,8 @@
    "gguf_build": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 3,
-   "template_check": "not checked",
-   "template_check_detail": "3 not checked",
+   "template_check": "identical",
+   "template_check_detail": "3 identical",
    "mlx_build_verified": "",
    "cache_kind": "10 full + 52 sliding-window (1024) layers",
    "cache_kib_per_token": "80.0",
@@ -8011,7 +8011,7 @@
      "created": "2026-03-25",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -8022,7 +8022,7 @@
      "created": "2026-03-29",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -8033,7 +8033,7 @@
      "created": "2026-03-28",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -8050,7 +8050,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -8304,7 +8304,7 @@
    "gguf_build_publisher": "individual",
    "gguf_builds": 5,
    "template_check": "not checked",
-   "template_check_detail": "5 not checked",
+   "template_check_detail": "3 not checked, 2 identical",
    "mlx_build_verified": "",
    "cache_kind": "8 full + 40 sliding-window (1024) layers",
    "cache_kib_per_token": "64.0",
@@ -8580,7 +8580,7 @@
      "created": "2025-12-11",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -8591,7 +8591,7 @@
      "created": "2025-12-11",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -8603,7 +8603,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "gams3-12b-instruct",
@@ -8614,7 +8614,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "gams3-12b-instruct",
@@ -8625,7 +8625,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     }
    ],
    "cache_layout": {
@@ -8737,8 +8737,8 @@
    "gguf_build": "PORTULAN/gervasio-70b-portuguese-ptpt-decoder-quantized-4bit",
    "gguf_build_publisher": "official",
    "gguf_builds": 4,
-   "template_check": "not checked",
-   "template_check_detail": "4 not checked",
+   "template_check": "identical",
+   "template_check_detail": "4 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "320.0",
@@ -8884,7 +8884,7 @@
      "created": "2025-09-03",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -8895,7 +8895,7 @@
      "created": "2025-11-02",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -8906,7 +8906,7 @@
      "created": "2025-11-02",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -8917,7 +8917,7 @@
      "created": "2026-08-23",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -8929,7 +8929,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -9161,8 +9161,8 @@
    "gguf_build": "mradermacher/Latxa-Llama-3.1-70B-Instruct-v2-i1-GGUF",
    "gguf_build_publisher": "individual",
    "gguf_builds": 3,
-   "template_check": "not checked",
-   "template_check_detail": "3 not checked",
+   "template_check": "identical",
+   "template_check_detail": "3 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "320.0",
@@ -9338,7 +9338,7 @@
      "created": "2026-06-16",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -9349,7 +9349,7 @@
      "created": "2026-06-15",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -9360,7 +9360,7 @@
      "created": "2026-06-23",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -9372,7 +9372,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -9411,8 +9411,8 @@
    "gguf_build": "Dr-sdr/Llama-3.1-EstLLM-70B-Instruct-0826-GGUF",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "320.0",
@@ -9618,7 +9618,7 @@
      "created": "2026-10-07",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -9630,7 +9630,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -9669,8 +9669,8 @@
    "gguf_build": "jgchaparro/Llama-Artemis-GGUF",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "128.0",
@@ -9896,7 +9896,7 @@
      "created": "2026-10-09",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -9923,7 +9923,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -11477,7 +11477,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "teuken-7b-instruct-0.6",
@@ -11488,7 +11488,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "teuken-7b-instruct-0.6",
@@ -11499,7 +11499,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     }
    ],
    "cache_layout": {
@@ -11564,8 +11564,8 @@
    "gguf_build": "DevQuasar/CohereLabs.command-a-plus-05-2026-bf16-GGUF-EXPERIMENTAL",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 5,
-   "template_check": "not checked",
-   "template_check_detail": "5 not checked",
+   "template_check": "differs",
+   "template_check_detail": "3 differs, 2 identical",
    "mlx_build_verified": "",
    "cache_kind": "8 full + 24 sliding-window (4096) layers",
    "cache_kib_per_token": "32.0",
@@ -11761,8 +11761,8 @@
      "created": "2026-05-21",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__CohereLabs.command-a-plus-05-2026-bf16-GGUF-EXPERIMENTAL.diff"
     },
     {
      "id": "command-a-plus",
@@ -11772,8 +11772,8 @@
      "created": "2026-06-14",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__CohereLabs.command-a-plus-05-2026-bf16-GGUF.diff"
     },
     {
      "id": "command-a-plus",
@@ -11783,7 +11783,7 @@
      "created": "2026-06-13",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -11794,7 +11794,7 @@
      "created": "2026-06-15",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -11805,8 +11805,8 @@
      "created": "2026-06-15",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/SixVolts__command-a-plus-05-2026-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -11837,7 +11837,7 @@
     }
    ],
    "max_context": 200000,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -12074,7 +12074,7 @@
      "publisher": "curated",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "deepseek-v4-pro-0813",
@@ -12085,7 +12085,7 @@
      "publisher": "organisation",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "deepseek-v4-pro-0813",
@@ -12096,7 +12096,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "deepseek-v4-pro-0813",
@@ -12107,7 +12107,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "deepseek-v4-pro-0813",
@@ -12118,7 +12118,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "deepseek-v4-pro-0813",
@@ -12129,7 +12129,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     }
    ],
    "cache_layout": {
@@ -12199,8 +12199,8 @@
    "gguf_build": "antirez/deepseek-v4.1-flash-gguf",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 14,
-   "template_check": "not checked",
-   "template_check_detail": "14 not checked",
+   "template_check": "suspicious",
+   "template_check_detail": "9 suspicious, 5 not checked",
    "mlx_build_verified": "",
    "cache_kind": "sliding window (128) in all layers",
    "cache_kib_per_token": "0.0",
@@ -12377,7 +12377,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -12387,8 +12387,8 @@
      "created": "2026-09-13",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "suspicious",
+     "template_reason": "new in the build: content condition; diff: data/template_diffs/pfeifferj__DeepSeek-V4.1-Flash-GSQ-RCO-GGUF.diff"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -12398,8 +12398,8 @@
      "created": "2026-09-10",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "suspicious",
+     "template_reason": "new in the build: content condition; diff: data/template_diffs/vcruz305__DeepSeek-V4.1-Flash-GGUF.diff"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -12410,7 +12410,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -12420,8 +12420,8 @@
      "created": "2026-09-12",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "suspicious",
+     "template_reason": "new in the build: content condition; diff: data/template_diffs/smalinin__DeepSeek-V4.1-Flash-GGUF.diff"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -12432,7 +12432,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -12442,8 +12442,8 @@
      "created": "2026-09-10",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "suspicious",
+     "template_reason": "new in the build: content condition; diff: data/template_diffs/AMAImedia__DeepSeek-V4.1-Flash-FP8-GGUF.diff"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -12453,8 +12453,8 @@
      "created": "2026-09-11",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "suspicious",
+     "template_reason": "new in the build: content condition; diff: data/template_diffs/mxxm-t__DeepSeek-V4.1-Flash-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -12478,7 +12478,7 @@
     }
    ],
    "max_context": 1048576,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -12517,8 +12517,8 @@
    "gguf_build": "LGAI-EXAONE/EXAONE-4.5-33B-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 5,
-   "template_check": "not checked",
-   "template_check_detail": "5 not checked",
+   "template_check": "identical",
+   "template_check_detail": "5 identical",
    "mlx_build_verified": "",
    "cache_kind": "16 full + 48 sliding-window (4096) layers",
    "cache_kib_per_token": "64.0",
@@ -12684,7 +12684,7 @@
      "created": "2026-04-08",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -12695,7 +12695,7 @@
      "created": "2026-10-02",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -12706,7 +12706,7 @@
      "created": "2026-06-03",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -12717,7 +12717,7 @@
      "created": "2026-06-03",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -12728,7 +12728,7 @@
      "created": "2026-04-21",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -12745,7 +12745,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -12784,8 +12784,8 @@
    "gguf_build": "tiiuae/Falcon-H1-34B-Instruct-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 6,
-   "template_check": "not checked",
-   "template_check_detail": "6 not checked",
+   "template_check": "differs",
+   "template_check_detail": "3 differs, 1 not checked, 2 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "144.0",
@@ -12941,7 +12941,7 @@
      "created": "2025-05-13",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -12952,7 +12952,7 @@
      "created": "2025-07-10",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -12964,7 +12964,7 @@
      "publisher": "organisation",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "falcon-h1-34b",
@@ -12974,8 +12974,8 @@
      "created": "2025-07-09",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/gabriellarson__Falcon-H1-34B-Instruct-GGUF.diff"
     },
     {
      "id": "falcon-h1-34b",
@@ -12985,8 +12985,8 @@
      "created": "2025-07-10",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mradermacher__Falcon-H1-34B-Instruct-i1-GGUF.diff"
     },
     {
      "id": "falcon-h1-34b",
@@ -12996,8 +12996,8 @@
      "created": "2025-07-10",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mradermacher__Falcon-H1-34B-Instruct-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -13008,7 +13008,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -13047,8 +13047,8 @@
    "gguf_build": "unsloth/Falcon-H1R-7B-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 6,
-   "template_check": "not checked",
-   "template_check_detail": "6 not checked",
+   "template_check": "equivalent",
+   "template_check_detail": "1 equivalent, 5 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "44.0",
@@ -13204,8 +13204,8 @@
      "created": "2026-01-06",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__Falcon-H1R-7B-GGUF.diff"
     },
     {
      "id": "falcon-h1r-7b",
@@ -13215,7 +13215,7 @@
      "created": "2026-01-05",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13226,7 +13226,7 @@
      "created": "2026-01-06",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13237,7 +13237,7 @@
      "created": "2026-01-06",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13248,7 +13248,7 @@
      "created": "2026-04-20",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13259,7 +13259,7 @@
      "created": "2026-01-05",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -13271,7 +13271,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -13310,8 +13310,8 @@
    "gguf_build": "unsloth/gemma-4-26B-A4B-it-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 68,
-   "template_check": "not checked",
-   "template_check_detail": "68 not checked",
+   "template_check": "differs",
+   "template_check_detail": "14 differs, 18 not checked, 25 equivalent, 11 identical",
    "mlx_build_verified": "",
    "cache_kind": "5 full + 25 sliding-window (1024) layers",
    "cache_kib_per_token": "20.0",
@@ -13478,7 +13478,7 @@
      "publisher": "curated",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "gemma-4-26b-a4b",
@@ -13488,7 +13488,7 @@
      "created": "2026-04-01",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13499,7 +13499,7 @@
      "created": "2026-04-02",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13510,8 +13510,8 @@
      "created": "2026-04-07",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/batiai__Gemma-4-26B-A4B-it-GGUF.diff"
     },
     {
      "id": "gemma-4-26b-a4b",
@@ -13521,8 +13521,8 @@
      "created": "2026-04-03",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__google.gemma-4-26B-A4B-it-GGUF.diff"
     },
     {
      "id": "gemma-4-26b-a4b",
@@ -13532,7 +13532,7 @@
      "created": "2026-04-02",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13543,8 +13543,8 @@
      "created": "2026-04-02",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/mudler__gemma-4-26B-A4B-it-APEX-GGUF.diff"
     },
     {
      "id": "gemma-4-26b-a4b",
@@ -13555,7 +13555,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     }
    ],
    "cache_layout": {
@@ -13571,7 +13571,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -13610,8 +13610,8 @@
    "gguf_build": "unsloth/gemma-4-31B-it-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 70,
-   "template_check": "not checked",
-   "template_check_detail": "70 not checked",
+   "template_check": "differs",
+   "template_check_detail": "12 differs, 22 not checked, 25 equivalent, 11 identical",
    "mlx_build_verified": "",
    "cache_kind": "10 full + 50 sliding-window (1024) layers",
    "cache_kib_per_token": "80.0",
@@ -13778,7 +13778,7 @@
      "publisher": "curated",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "gemma-4-31b",
@@ -13788,7 +13788,7 @@
      "created": "2026-04-01",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13799,7 +13799,7 @@
      "created": "2026-04-01",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13810,8 +13810,8 @@
      "created": "2026-04-11",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/batiai__gemma-4-31B-it-GGUF.diff"
     },
     {
      "id": "gemma-4-31b",
@@ -13821,8 +13821,8 @@
      "created": "2026-04-02",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__google.gemma-4-31B-it-GGUF.diff"
     },
     {
      "id": "gemma-4-31b",
@@ -13832,7 +13832,7 @@
      "created": "2026-04-02",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -13843,8 +13843,8 @@
      "created": "2026-04-17",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/mradermacher__gemma-4-31B-it-GGUF.diff"
     },
     {
      "id": "gemma-4-31b",
@@ -13854,8 +13854,8 @@
      "created": "2026-04-18",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/mradermacher__gemma-4-31B-it-i1-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -13871,7 +13871,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -13910,8 +13910,8 @@
    "gguf_build": "unsloth/GLM-5.3-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 7,
-   "template_check": "not checked",
-   "template_check_detail": "7 not checked",
+   "template_check": "equivalent",
+   "template_check_detail": "4 equivalent, 3 identical",
    "mlx_build_verified": "",
    "cache_kind": "MLA, cached decompressed in MLX",
    "cache_kib_per_token": "4992.0",
@@ -14107,8 +14107,8 @@
      "created": "2026-08-28",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__GLM-5.3-GGUF.diff"
     },
     {
      "id": "glm-5.3",
@@ -14118,8 +14118,8 @@
      "created": "2026-08-29",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/DevQuasar__zai-org.GLM-5.3-GGUF.diff"
     },
     {
      "id": "glm-5.3",
@@ -14129,7 +14129,7 @@
      "created": "2026-09-20",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -14140,8 +14140,8 @@
      "created": "2026-08-30",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/muzzy__GLM-5.3-GGUF.diff"
     },
     {
      "id": "glm-5.3",
@@ -14151,7 +14151,7 @@
      "created": "2026-10-01",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -14162,8 +14162,8 @@
      "created": "2026-09-08",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/Coder40-95__GLM-5.3-GGUF.diff"
     },
     {
      "id": "glm-5.3",
@@ -14173,7 +14173,7 @@
      "created": "2026-09-29",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -14185,7 +14185,7 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -14224,8 +14224,8 @@
    "gguf_build": "unsloth/GLM-5.3-Flash-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 32,
-   "template_check": "not checked",
-   "template_check_detail": "32 not checked",
+   "template_check": "equivalent",
+   "template_check_detail": "26 equivalent, 6 identical",
    "mlx_build_verified": "",
    "cache_kind": "MLA, cached decompressed in MLX",
    "cache_kib_per_token": "2880.0",
@@ -14391,8 +14391,8 @@
      "created": "2026-08-26",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__GLM-5.3-Flash-GGUF.diff"
     },
     {
      "id": "glm-5.3-flash",
@@ -14402,8 +14402,8 @@
      "created": "2026-08-26",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/DevQuasar__zai-org.GLM-5.3-Flash-GGUF.diff"
     },
     {
      "id": "glm-5.3-flash",
@@ -14413,8 +14413,8 @@
      "created": "2026-08-30",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/batiai__GLM-5.3-Flash-GGUF.diff"
     },
     {
      "id": "glm-5.3-flash",
@@ -14424,7 +14424,7 @@
      "created": "2026-09-06",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -14435,8 +14435,8 @@
      "created": "2026-09-20",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/autotrust__GLM-5.3-Flash-GGUF-DGX-Spark.diff"
     },
     {
      "id": "glm-5.3-flash",
@@ -14446,7 +14446,7 @@
      "created": "2026-09-13",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -14457,8 +14457,8 @@
      "created": "2026-10-07",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/peasantsmith__GLM-5.3-Flash-Maya-GGUF.diff"
     },
     {
      "id": "glm-5.3-flash",
@@ -14468,8 +14468,8 @@
      "created": "2026-08-26",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/aj9o9__GLM-5.3-Flash-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -14480,7 +14480,7 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -14519,8 +14519,8 @@
    "gguf_build": "ggml-org/gpt-oss-120b-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 36,
-   "template_check": "not checked",
-   "template_check_detail": "36 not checked",
+   "template_check": "differs",
+   "template_check_detail": "21 differs, 2 not checked, 13 identical",
    "mlx_build_verified": "",
    "cache_kind": "18 full + 18 sliding-window (128) layers",
    "cache_kib_per_token": "36.0",
@@ -14686,7 +14686,7 @@
      "created": "2025-08-02",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -14697,8 +14697,8 @@
      "created": "2025-08-05",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/unsloth__gpt-oss-120b-GGUF.diff"
     },
     {
      "id": "gpt-oss-120b",
@@ -14708,8 +14708,8 @@
      "created": "2025-08-05",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/lmstudio-community__gpt-oss-120b-GGUF.diff"
     },
     {
      "id": "gpt-oss-120b",
@@ -14719,8 +14719,8 @@
      "created": "2025-08-05",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__openai.gpt-oss-120b-GGUF.diff"
     },
     {
      "id": "gpt-oss-120b",
@@ -14730,8 +14730,8 @@
      "created": "2025-08-08",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/bartowski__openai_gpt-oss-120b-GGUF.diff"
     },
     {
      "id": "gpt-oss-120b",
@@ -14741,7 +14741,7 @@
      "created": "2026-08-03",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -14752,8 +14752,8 @@
      "created": "2025-08-05",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/gabriellarson__gpt-oss-120b-GGUF.diff"
     },
     {
      "id": "gpt-oss-120b",
@@ -14763,8 +14763,8 @@
      "created": "2025-08-05",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/bartowski__openai_gpt-oss-120b-GGUF-MXFP4-Experimental.diff"
     }
    ],
    "cache_layout": {
@@ -14780,7 +14780,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -14819,8 +14819,8 @@
    "gguf_build": "unsloth/gpt-oss-20b-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 83,
-   "template_check": "not checked",
-   "template_check_detail": "83 not checked",
+   "template_check": "differs",
+   "template_check_detail": "46 differs, 4 not checked, 33 identical",
    "mlx_build_verified": "",
    "cache_kind": "12 full + 12 sliding-window (128) layers",
    "cache_kib_per_token": "24.0",
@@ -14986,8 +14986,8 @@
      "created": "2025-08-05",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/unsloth__gpt-oss-20b-GGUF.diff"
     },
     {
      "id": "gpt-oss-20b",
@@ -14997,7 +14997,7 @@
      "created": "2025-08-02",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15008,8 +15008,8 @@
      "created": "2025-08-05",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/lmstudio-community__gpt-oss-20b-GGUF.diff"
     },
     {
      "id": "gpt-oss-20b",
@@ -15019,8 +15019,8 @@
      "created": "2025-08-05",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/DevQuasar__openai.gpt-oss-20b-GGUF.diff"
     },
     {
      "id": "gpt-oss-20b",
@@ -15030,7 +15030,7 @@
      "created": "2026-05-09",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15041,8 +15041,8 @@
      "created": "2026-01-25",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/Hob-forge__gpt-oss-20b-Q2_K-GGUF.diff"
     },
     {
      "id": "gpt-oss-20b",
@@ -15052,7 +15052,7 @@
      "created": "2026-07-15",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15063,8 +15063,8 @@
      "created": "2025-09-26",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/AmpereComputing__gpt-oss-20b-gguf.diff"
     }
    ],
    "cache_layout": {
@@ -15080,7 +15080,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -15119,8 +15119,8 @@
    "gguf_build": "mradermacher/GPT-OSS-Swallow-120B-RL-v0.1-i1-GGUF",
    "gguf_build_publisher": "individual",
    "gguf_builds": 5,
-   "template_check": "not checked",
-   "template_check_detail": "5 not checked",
+   "template_check": "identical",
+   "template_check_detail": "5 identical",
    "mlx_build_verified": "",
    "cache_kind": "18 full + 18 sliding-window (128) layers",
    "cache_kib_per_token": "36.0",
@@ -15326,7 +15326,7 @@
      "created": "2026-03-06",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15337,7 +15337,7 @@
      "created": "2026-02-25",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15348,7 +15348,7 @@
      "created": "2026-02-20",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15359,7 +15359,7 @@
      "created": "2026-02-24",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15370,7 +15370,7 @@
      "created": "2026-02-20",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -15423,7 +15423,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -15462,8 +15462,8 @@
    "gguf_build": "ibm-granite/granite-4.2-30b-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 12,
-   "template_check": "not checked",
-   "template_check_detail": "12 not checked",
+   "template_check": "identical",
+   "template_check_detail": "12 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "256.0",
@@ -15619,7 +15619,7 @@
      "created": "2026-08-12",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15630,7 +15630,7 @@
      "created": "2026-08-25",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15641,7 +15641,7 @@
      "created": "2026-09-02",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15652,7 +15652,7 @@
      "created": "2026-08-25",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15663,7 +15663,7 @@
      "created": "2026-08-26",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15674,7 +15674,7 @@
      "created": "2026-08-26",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15685,7 +15685,7 @@
      "created": "2026-08-26",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15696,7 +15696,7 @@
      "created": "2026-08-26",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -15708,7 +15708,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -15747,8 +15747,8 @@
    "gguf_build": "ibm-granite/granite-4.2-8b-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 16,
-   "template_check": "not checked",
-   "template_check_detail": "16 not checked",
+   "template_check": "identical",
+   "template_check_detail": "16 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
@@ -15904,7 +15904,7 @@
      "created": "2026-08-12",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15915,7 +15915,7 @@
      "created": "2026-08-25",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15926,7 +15926,7 @@
      "created": "2026-09-02",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15937,7 +15937,7 @@
      "created": "2026-08-25",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15948,7 +15948,7 @@
      "created": "2026-08-26",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15959,7 +15959,7 @@
      "created": "2026-10-04",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15970,7 +15970,7 @@
      "created": "2026-08-26",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -15981,7 +15981,7 @@
      "created": "2026-10-06",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -15993,7 +15993,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -16032,8 +16032,8 @@
    "gguf_build": "6block/Hy4-preview-GGUF",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 4,
-   "template_check": "not checked",
-   "template_check_detail": "4 not checked",
+   "template_check": "differs",
+   "template_check_detail": "1 differs, 3 identical",
    "mlx_build_verified": "",
    "cache_kind": "MLA, cached decompressed in MLX",
    "cache_kib_per_token": "4992.0",
@@ -16179,7 +16179,7 @@
      "created": "2026-09-08",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16190,7 +16190,7 @@
      "created": "2026-09-08",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16201,7 +16201,7 @@
      "created": "2026-09-06",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16212,8 +16212,8 @@
      "created": "2026-09-03",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/anemll__Hy4-preview-FlashMoE-STQ1_0.diff"
     }
    ],
    "cache_layout": {
@@ -16224,7 +16224,7 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -16263,8 +16263,8 @@
    "gguf_build": "naver-ellm/HyperCLOVAX-SEED-Think-32B-GGUF",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "differs",
+   "template_check_detail": "1 differs",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "288.0",
@@ -16460,8 +16460,8 @@
      "created": "2026-01-13",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/naver-ellm__HyperCLOVAX-SEED-Think-32B-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -16472,7 +16472,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -16511,8 +16511,8 @@
    "gguf_build": "bartowski/ai21labs_AI21-Jamba2-3B-GGUF",
    "gguf_build_publisher": "individual",
    "gguf_builds": 6,
-   "template_check": "not checked",
-   "template_check_detail": "6 not checked",
+   "template_check": "identical",
+   "template_check_detail": "6 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "14.0",
@@ -16688,7 +16688,7 @@
      "created": "2026-01-08",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16699,7 +16699,7 @@
      "created": "2026-01-08",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16710,7 +16710,7 @@
      "created": "2026-01-08",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16721,7 +16721,7 @@
      "created": "2026-04-10",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16732,7 +16732,7 @@
      "created": "2026-04-10",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16743,7 +16743,7 @@
      "created": "2026-09-13",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -16755,7 +16755,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -16794,8 +16794,8 @@
    "gguf_build": "DevQuasar/ai21labs.AI21-Jamba2-Mini-GGUF",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 5,
-   "template_check": "not checked",
-   "template_check_detail": "5 not checked",
+   "template_check": "identical",
+   "template_check_detail": "5 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "128.0",
@@ -16971,7 +16971,7 @@
      "created": "2026-01-14",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16982,7 +16982,7 @@
      "created": "2026-01-08",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -16993,7 +16993,7 @@
      "created": "2026-01-09",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -17004,7 +17004,7 @@
      "created": "2026-01-08",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -17015,7 +17015,7 @@
      "created": "2026-02-04",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -17027,7 +17027,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -17066,8 +17066,8 @@
    "gguf_build": "DevQuasar/NOT_WOKRKING-LGAI-EXAONE.K-EXAONE-2.0-750B-A37B-GGUF",
    "gguf_build_publisher": "organisation",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "312.0",
@@ -17243,7 +17243,7 @@
      "created": "2026-08-05",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -17255,7 +17255,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -17294,8 +17294,8 @@
    "gguf_build": "bartowski/K2-Horizon-32B-GGUF",
    "gguf_build_publisher": "individual",
    "gguf_builds": 2,
-   "template_check": "not checked",
-   "template_check_detail": "2 not checked",
+   "template_check": "equivalent",
+   "template_check_detail": "1 equivalent, 1 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "256.0",
@@ -17471,7 +17471,7 @@
      "created": "2026-10-07",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -17482,8 +17482,8 @@
      "created": "2026-09-04",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/kingjones777__K2-Horizon-32B-ROCmFP4-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -17494,7 +17494,7 @@
    },
    "teachers": [],
    "max_context": 524288,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -17533,8 +17533,8 @@
    "gguf_build": "bartowski/K2-Horizon-375B-A23B-GGUF",
    "gguf_build_publisher": "individual",
    "gguf_builds": 3,
-   "template_check": "not checked",
-   "template_check_detail": "3 not checked",
+   "template_check": "equivalent",
+   "template_check_detail": "2 equivalent, 1 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "244.0",
@@ -17710,7 +17710,7 @@
      "created": "2026-10-07",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -17721,8 +17721,8 @@
      "created": "2026-09-04",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-GGUF.diff"
     },
     {
      "id": "k2-horizon-375b",
@@ -17732,8 +17732,8 @@
      "created": "2026-09-04",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-Mixed-Quant-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -17744,7 +17744,7 @@
    },
    "teachers": [],
    "max_context": 524288,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -17971,7 +17971,7 @@
      "publisher": "curated",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "kimi-k3",
@@ -17982,7 +17982,7 @@
      "publisher": "organisation",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "kimi-k3",
@@ -17993,7 +17993,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "kimi-k3",
@@ -18004,7 +18004,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "kimi-k3",
@@ -18015,7 +18015,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "kimi-k3",
@@ -18026,7 +18026,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "kimi-k3",
@@ -18037,7 +18037,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "kimi-k3",
@@ -18048,7 +18048,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     }
    ],
    "cache_layout": {
@@ -18298,7 +18298,7 @@
      "publisher": "curated",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-maverick",
@@ -18309,7 +18309,7 @@
      "publisher": "curated",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-maverick",
@@ -18320,7 +18320,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "download failed: no .gguf file"
     },
     {
      "id": "llama-4-maverick",
@@ -18331,7 +18331,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-maverick",
@@ -18342,7 +18342,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-maverick",
@@ -18353,7 +18353,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-maverick",
@@ -18364,7 +18364,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-maverick",
@@ -18375,7 +18375,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     }
    ],
    "cache_layout": null,
@@ -18596,7 +18596,7 @@
      "publisher": "curated",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-scout",
@@ -18607,7 +18607,7 @@
      "publisher": "curated",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-scout",
@@ -18618,7 +18618,7 @@
      "publisher": "curated",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-scout",
@@ -18629,7 +18629,7 @@
      "publisher": "organisation",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-scout",
@@ -18640,7 +18640,7 @@
      "publisher": "organisation",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-scout",
@@ -18651,7 +18651,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-scout",
@@ -18662,7 +18662,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-scout",
@@ -18673,7 +18673,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     }
    ],
    "cache_layout": null,
@@ -18981,8 +18981,8 @@
    "gguf_build": "modulon-labs/llm-jp-4.1-33b-thinking-GGUF",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "256.0",
@@ -19168,7 +19168,7 @@
      "created": "2026-10-03",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -19209,7 +19209,7 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -19249,7 +19249,7 @@
    "gguf_build_publisher": "curated",
    "gguf_builds": 13,
    "template_check": "not checked",
-   "template_check_detail": "13 not checked",
+   "template_check_detail": "2 not checked, 5 equivalent, 6 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "120.0",
@@ -19445,8 +19445,8 @@
      "created": "2026-06-12",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__MiniMax-M3-GGUF.diff"
     },
     {
      "id": "minimax-m3",
@@ -19456,7 +19456,7 @@
      "created": "2026-06-13",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19467,7 +19467,7 @@
      "created": "2026-06-12",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19478,7 +19478,7 @@
      "created": "2026-07-26",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19489,8 +19489,8 @@
      "created": "2026-06-22",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/kaitchup__MiniMax-M3-GGUF-MoQ.diff"
     },
     {
      "id": "minimax-m3",
@@ -19500,8 +19500,8 @@
      "created": "2026-07-14",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/reduxv1__MiniMax-M3-GGUF.diff"
     },
     {
      "id": "minimax-m3",
@@ -19511,7 +19511,7 @@
      "created": "2026-07-27",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19522,7 +19522,7 @@
      "created": "2026-07-10",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -19582,7 +19582,7 @@
    "gguf_build_publisher": "curated",
    "gguf_builds": 11,
    "template_check": "not checked",
-   "template_check_detail": "11 not checked",
+   "template_check_detail": "1 not checked, 2 equivalent, 8 identical",
    "mlx_build_verified": "",
    "cache_kind": "hybrid: 8 attention + 40 Mamba layers",
    "cache_kib_per_token": "8.0",
@@ -19878,8 +19878,8 @@
      "created": "2026-03-06",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__NVIDIA-Nemotron-3-Super-120B-A12B-GGUF.diff"
     },
     {
      "id": "nemotron-3-super-120b",
@@ -19889,7 +19889,7 @@
      "created": "2026-03-10",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19900,7 +19900,7 @@
      "created": "2026-03-11",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19912,7 +19912,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "download failed: not a GGUF file"
     },
     {
      "id": "nemotron-3-super-120b",
@@ -19922,7 +19922,7 @@
      "created": "2026-03-11",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19933,7 +19933,7 @@
      "created": "2026-03-21",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19944,7 +19944,7 @@
      "created": "2026-03-20",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -19955,7 +19955,7 @@
      "created": "2026-03-12",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -20113,7 +20113,7 @@
    "gguf_build_publisher": "curated",
    "gguf_builds": 29,
    "template_check": "not checked",
-   "template_check_detail": "29 not checked",
+   "template_check_detail": "9 not checked, 4 equivalent, 16 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "52.0",
@@ -20419,7 +20419,7 @@
      "created": "2026-08-11",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -20430,8 +20430,8 @@
      "created": "2026-08-12",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF.diff"
     },
     {
      "id": "nemotron-3.5-lightning-30b",
@@ -20441,7 +20441,7 @@
      "created": "2026-08-11",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -20452,7 +20452,7 @@
      "created": "2026-08-11",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -20463,7 +20463,7 @@
      "created": "2026-08-13",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -20474,7 +20474,7 @@
      "created": "2026-08-11",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -20485,7 +20485,7 @@
      "created": "2026-08-12",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -20496,7 +20496,7 @@
      "created": "2026-08-11",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -20653,8 +20653,8 @@
    "gguf_build": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "mlx_build_verified": "",
    "cache_kind": "hybrid: 8 attention + 40 Mamba layers",
    "cache_kib_per_token": "8.0",
@@ -20820,7 +20820,7 @@
      "created": "2026-09-16",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -20840,7 +20840,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -20880,7 +20880,7 @@
    "gguf_build_publisher": "curated",
    "gguf_builds": 20,
    "template_check": "not checked",
-   "template_check_detail": "20 not checked",
+   "template_check_detail": "6 not checked, 4 equivalent, 10 identical",
    "mlx_build_verified": "",
    "cache_kind": "8 full + 24 sliding-window (4096) layers",
    "cache_kib_per_token": "128.0",
@@ -21116,8 +21116,8 @@
      "created": "2025-11-21",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__Olmo-3-7B-Instruct-GGUF.diff"
     },
     {
      "id": "olmo-3-7b-instruct",
@@ -21127,7 +21127,7 @@
      "created": "2025-11-20",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21138,7 +21138,7 @@
      "created": "2025-11-24",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21149,7 +21149,7 @@
      "created": "2025-11-21",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21160,7 +21160,7 @@
      "created": "2025-11-22",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21171,7 +21171,7 @@
      "created": "2025-11-21",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21182,7 +21182,7 @@
      "created": "2025-12-28",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21193,7 +21193,7 @@
      "created": "2025-11-20",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -21320,8 +21320,8 @@
    "gguf_build": "unsloth/Olmo-3.1-32B-Instruct-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 8,
-   "template_check": "not checked",
-   "template_check_detail": "8 not checked",
+   "template_check": "equivalent",
+   "template_check_detail": "1 equivalent, 7 identical",
    "mlx_build_verified": "",
    "cache_kind": "16 full + 48 sliding-window (4096) layers",
    "cache_kib_per_token": "64.0",
@@ -21557,8 +21557,8 @@
      "created": "2025-12-17",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__Olmo-3.1-32B-Instruct-GGUF.diff"
     },
     {
      "id": "olmo-3.1-32b-instruct",
@@ -21568,7 +21568,7 @@
      "created": "2025-12-12",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21579,7 +21579,7 @@
      "created": "2025-12-12",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21590,7 +21590,7 @@
      "created": "2025-12-13",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21601,7 +21601,7 @@
      "created": "2025-12-13",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21612,7 +21612,7 @@
      "created": "2026-10-08",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21623,7 +21623,7 @@
      "created": "2025-12-13",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21634,7 +21634,7 @@
      "created": "2025-12-12",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -21722,7 +21722,7 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -21762,7 +21762,7 @@
    "gguf_build_publisher": "organisation",
    "gguf_builds": 8,
    "template_check": "not checked",
-   "template_check_detail": "8 not checked",
+   "template_check_detail": "4 not checked, 4 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "200.0",
@@ -21918,7 +21918,7 @@
      "created": "2026-03-08",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21930,7 +21930,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "phi-4-reasoning-vision-15b",
@@ -21940,7 +21940,7 @@
      "created": "2026-08-16",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21951,7 +21951,7 @@
      "created": "2026-08-16",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21962,7 +21962,7 @@
      "created": "2026-03-06",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -21974,7 +21974,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "phi-4-reasoning-vision-15b",
@@ -21985,7 +21985,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "phi-4-reasoning-vision-15b",
@@ -21996,7 +21996,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     }
    ],
    "cache_layout": {
@@ -22219,7 +22219,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "download failed: HTTP Error 403: Forbidden"
     }
    ],
    "cache_layout": null,
@@ -22272,8 +22272,8 @@
    "gguf_build": "aisingapore/Qwen-SEA-LION-v4.5-27B-IT-GGUF",
    "gguf_build_publisher": "official",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "mlx_build_verified": "",
    "cache_kind": "hybrid: 16 full + 48 linear-attention layers",
    "cache_kib_per_token": "64.0",
@@ -22429,7 +22429,7 @@
      "created": "2026-06-17",
      "publisher": "official",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -22449,7 +22449,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -22488,8 +22488,8 @@
    "gguf_build": "ultimatechris/Qwen3-Swallow-32B-RL-v0.2-GGUF",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 1,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked",
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "256.0",
@@ -22695,7 +22695,7 @@
      "created": "2026-07-30",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -22743,7 +22743,7 @@
     }
    ],
    "max_context": 40960,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -22782,8 +22782,8 @@
    "gguf_build": "unsloth/Qwen3.8-27B-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 48,
-   "template_check": "not checked",
-   "template_check_detail": "48 not checked",
+   "template_check": "suspicious",
+   "template_check_detail": "2 suspicious, 2 differs, 3 not checked, 7 equivalent, 34 identical",
    "mlx_build_verified": "",
    "cache_kind": "hybrid: 16 full + 48 linear-attention layers",
    "cache_kib_per_token": "64.0",
@@ -22939,8 +22939,8 @@
      "created": "2026-08-13",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__Qwen3.8-27B-GGUF.diff"
     },
     {
      "id": "qwen3.8-27b",
@@ -22950,7 +22950,7 @@
      "created": "2026-08-14",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -22961,7 +22961,7 @@
      "created": "2026-08-14",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -22972,7 +22972,7 @@
      "created": "2026-08-18",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -22983,7 +22983,7 @@
      "created": "2026-08-15",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -22994,7 +22994,7 @@
      "created": "2026-08-14",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23005,7 +23005,7 @@
      "created": "2026-08-17",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23016,7 +23016,7 @@
      "created": "2026-08-14",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -23028,7 +23028,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-13",
    "first_listed": "2026-10-10"
   },
   {
@@ -23068,7 +23068,7 @@
    "gguf_build_publisher": "curated",
    "gguf_builds": 83,
    "template_check": "not checked",
-   "template_check_detail": "83 not checked",
+   "template_check_detail": "6 not checked, 23 equivalent, 54 identical",
    "mlx_build_verified": "",
    "cache_kind": "hybrid: 12 full + 36 linear-attention layers",
    "cache_kib_per_token": "24.0",
@@ -23224,8 +23224,8 @@
      "created": "2026-08-26",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "not checked",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/unsloth__Qwen3.8-Flash-Next-GGUF.diff"
     },
     {
      "id": "qwen3.8-flash-next",
@@ -23235,7 +23235,7 @@
      "created": "2026-08-27",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23246,7 +23246,7 @@
      "created": "2026-08-27",
      "publisher": "curated",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23257,7 +23257,7 @@
      "created": "2026-08-28",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23268,7 +23268,7 @@
      "created": "2026-08-26",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23279,7 +23279,7 @@
      "created": "2026-08-28",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23290,7 +23290,7 @@
      "created": "2026-08-28",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23301,7 +23301,7 @@
      "created": "2026-08-28",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -23549,7 +23549,7 @@
    "gguf_build_publisher": "organisation",
    "gguf_builds": 7,
    "template_check": "not checked",
-   "template_check_detail": "7 not checked",
+   "template_check_detail": "1 not checked, 6 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "19.0",
@@ -23705,7 +23705,7 @@
      "created": "2026-03-10",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23716,7 +23716,7 @@
      "created": "2026-09-01",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23727,7 +23727,7 @@
      "created": "2026-03-09",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23738,7 +23738,7 @@
      "created": "2026-03-17",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23749,7 +23749,7 @@
      "created": "2026-03-09",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -23761,7 +23761,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "no chat template in the build"
     },
     {
      "id": "sarvam-30b",
@@ -23771,7 +23771,7 @@
      "created": "2026-05-17",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -23823,7 +23823,7 @@
    "gguf_build_publisher": "unknown",
    "gguf_builds": 5,
    "template_check": "not checked",
-   "template_check_detail": "5 not checked",
+   "template_check_detail": "1 not checked, 4 identical",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "192.0",
@@ -23980,7 +23980,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "download failed: HTTP Error 403: Forbidden"
     },
     {
      "id": "solar-open2-250b",
@@ -23990,7 +23990,7 @@
      "created": "2026-07-23",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -24001,7 +24001,7 @@
      "created": "2026-07-24",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -24012,7 +24012,7 @@
      "created": "2026-07-23",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     },
     {
@@ -24023,7 +24023,7 @@
      "created": "2026-08-09",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "not checked",
+     "template_check": "identical",
      "template_reason": ""
     }
    ],
@@ -24282,7 +24282,7 @@
      "publisher": "official",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "tiny-aya-global",
@@ -24293,7 +24293,7 @@
      "publisher": "organisation",
      "verified_org": true,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "tiny-aya-global",
@@ -24304,7 +24304,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "tiny-aya-global",
@@ -24315,7 +24315,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     },
     {
      "id": "tiny-aya-global",
@@ -24326,7 +24326,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "not checked",
-     "template_reason": ""
+     "template_reason": "original has no template to compare"
     }
    ],
    "cache_layout": null,
@@ -24366,6 +24366,278 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-13",
+   "model": "qwen3.8-27b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "suspicious",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "qwen3-swallow-32b-rl",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "qwen-sea-lion-v4.5-27b-it",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "olmo-3.1-32b-instruct",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "equivalent",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "nemotron-sea-lion-v4.8-120b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "llm-jp-4.1-33b-thinking",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "llama-krikri-8b-instruct-v1.5",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "llama-3.1-estllm-70b-instruct-0826",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "latxa-3.1-70b-v2",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "k2-horizon-375b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "equivalent",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "k2-horizon-32b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "equivalent",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "k-exaone-2.0-750b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "jamba2-mini",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "jamba2-3b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "hyperclovax-seed-think-32b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "hy4-preview",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "granite-4.2-8b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "granite-4.2-30b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "gpt-oss-swallow-120b-rl",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "gpt-oss-20b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "gpt-oss-120b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "glm-5.3-flash",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "equivalent",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "glm-5.3",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "equivalent",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "gervasio-70b-ptpt",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "gemma-4-31b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "gemma-4-26b-a4b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "falcon-h1r-7b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "equivalent",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "falcon-h1-34b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "exaone-4.5-33b",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "dfm-mimir-1.5",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "deepseek-v4.1-flash",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "suspicious",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "command-a-plus",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "bggpt-gemma-3-27b-it",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "identical",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-13",
+   "model": "amalia-9b-0626",
+   "field": "template_check",
+   "old": "not checked",
+   "new": "differs",
+   "reason": ""
+  },
   {
    "date": "2026-10-11",
    "model": "norolmo-13b",
@@ -24893,278 +25165,6 @@
    "old": "",
    "new": "listed",
    "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "nemotron-sea-lion-v4.8-120b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "nemotron-3.5-lightning-30b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "nemotron-3-super-120b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "minimax-m3",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "llm-jp-4.1-33b-thinking",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "llm-jp-4.1-32b-a3b-thinking",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "llama-4-scout",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "llama-4-maverick",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "kimi-k3",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "k2-horizon-375b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "k2-horizon-32b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "k-exaone-2.0-750b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "jamba2-mini",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "jamba2-3b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "hyperclovax-seed-think-32b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "hy4-preview",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "granite-4.2-8b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "granite-4.2-30b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "gpt-oss-swallow-120b-rl",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "gpt-oss-20b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "gpt-oss-120b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "glm-5.3-flash",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "glm-5.3",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "gemma-4-31b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "gemma-4-26b-a4b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "falcon-h1r-7b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "falcon-h1-34b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "exaone-4.5-33b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "deepseek-v4.1-flash",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "deepseek-v4-pro-0813",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "command-a-plus",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "apertus-1.5-8b",
-   "field": "template_check",
-   "old": "",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-09",
-   "model": "kolibri-1",
-   "field": "mlx_vlm",
-   "old": "loads",
-   "new": "unsupported",
-   "reason": "mlx-vlm column now checks the latest release, 0.7.6 (#27); Bielik readable after accepting its gate"
-  },
-  {
-   "date": "2026-10-09",
-   "model": "bielik-11b-v3",
-   "field": "mlx_vlm",
-   "old": "not checked",
-   "new": "loads",
-   "reason": "mlx-vlm column now checks the latest release, 0.7.6 (#27); Bielik readable after accepting its gate"
   }
  ]
 }
