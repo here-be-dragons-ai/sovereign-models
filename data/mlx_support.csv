@@ -1,84 +1,85 @@
 id,mlx_vlm,model_type,detail,checked,mlx_vlm_rev
-alia-40b,loads,llama,,2026-10-09,0.7.6 (release)
-apertus-1.5-70b,unsupported,apertus1p5,not in the release; port open as Blaizzy/mlx-vlm#1847,2026-10-16,0.7.8 (release)
-apertus-1.5-8b,unsupported,apertus1p5,not in the release; port open as Blaizzy/mlx-vlm#1847,2026-10-16,0.7.8 (release)
-bielik-11b-v3,loads,llama,,2026-10-09,0.7.6 (release)
-borealis2-26b,loads,gemma4,,2026-10-09,0.7.6 (release)
-devstral-small-2,loads,mistral3,"FP8 release, scales not checked",2026-10-09,0.7.6 (release)
-domyn-small,loads,nemotron,,2026-10-09,0.7.6 (release)
-eurollm-22b,loads,llama,,2026-10-09,0.7.6 (release)
-eurollm-9b,loads,llama,,2026-10-09,0.7.6 (release)
-helium-1-2b,loads,llama,,2026-10-09,0.7.6 (release)
-holo4-35b-a3b,loads,qwen3_5_moe,,2026-10-09,0.7.6 (release)
-kolibri-1,loads,kolibri1,"FP8 release, scales not checked",2026-10-16,0.7.8 (release)
-lucie-7b,loads,llama,,2026-10-09,0.7.6 (release)
-luciole-23b,loads,nemotron,,2026-10-09,0.7.6 (release)
-luciole-8b,loads,nemotron_h,,2026-10-09,0.7.6 (release)
-magistral-small-2509,loads,mistral3,,2026-10-09,0.7.6 (release)
-minerva-7b,loads,mistral,,2026-10-09,0.7.6 (release)
-ministral-3-14b,loads,mistral3,"FP8 release, scales not checked",2026-10-09,0.7.6 (release)
-mistral-small-3.2,loads,mistral3,,2026-10-09,0.7.6 (release)
-mistral-small-4,loads,mistral3,"FP8 release, scales not checked",2026-10-09,0.7.6 (release)
-pleias-rag-1b,loads,llama,,2026-10-09,0.7.6 (release)
-poro-2-8b,loads,llama,,2026-10-09,0.7.6 (release)
-salamandra-7b,loads,llama,,2026-10-09,0.7.6 (release)
-sui-1-24b,loads,mistral3,,2026-10-09,0.7.6 (release)
-tildeopen-30b,loads,llama,,2026-10-09,0.7.6 (release)
-viking-33b,loads,llama,,2026-10-09,0.7.6 (release)
-xlstm-7b,unsupported,xlstm,model type not in mlx-vlm,2026-10-09,0.7.6 (release)
-command-a-plus,not checked,,check failed: URLError: <urlopen error [Errno 54] Connection reset by peer>,2026-10-10,0.7.4
-deepseek-v4-pro-0813,not checked,deepseek_v4,quantized tensors (scales) the check does not handle,2026-10-10,0.7.4
-deepseek-v4.1-flash,loads,deepseek_v41,"FP8 release, scales not checked",2026-10-10,0.7.4
-exaone-4.5-33b,unsupported,exaone4_5,model type not in mlx-vlm,2026-10-10,0.7.4
-falcon-h1-34b,loads,falcon_h1,,2026-10-10,0.7.4
-falcon-h1r-7b,loads,falcon_h1,,2026-10-10,0.7.4
-gemma-4-26b-a4b,loads,gemma4,,2026-10-10,0.7.4
-gemma-4-31b,loads,gemma4,,2026-10-10,0.7.4
-glm-5.3,loads,glm_moe_dsa,"FP8 release, scales not checked",2026-10-10,0.7.4
-glm-5.3-flash,loads,glm5_next,"FP8 release, scales not checked",2026-10-10,0.7.4
-gpt-oss-120b,not checked,gpt_oss,mxfp4 release: the load check covers bf16 and FP8 weights only,2026-10-10,0.7.4
-gpt-oss-20b,not checked,gpt_oss,mxfp4 release: the load check covers bf16 and FP8 weights only,2026-10-10,0.7.4
-gpt-oss-swallow-120b-rl,fails,gpt_oss,"108 missing, e.g. language_model.model.layers.0.mlp.experts.gate_proj.weight; 108 unexpected, e.g. language_model.model.layers.0.mlp.experts.gate_proj",2026-10-10,0.7.4
-granite-4.2-30b,loads,granite,,2026-10-10,0.7.4
-granite-4.2-8b,loads,granite,,2026-10-10,0.7.4
-hy4-preview,not checked,hy_v4,FP8 scale layout not handled by the check: KeyError: 'model.layers.0.self_attn.kv_b_proj.weight_scale',2026-10-10,0.7.4
-hyperclovax-seed-think-32b,unsupported,hyperclovax_vision_v2,model type not in mlx-vlm,2026-10-10,0.7.4
-jamba2-3b,loads,jamba,,2026-10-10,0.7.4
-jamba2-mini,loads,jamba,,2026-10-10,0.7.4
-k-exaone-2.0-750b,fails,exaone_moe,model init: TypeError: ModelConfig.__init__() missing 2 required positional arguments: 'sliding_window' and 'is_moe_layer',2026-10-10,0.7.4
-k2-horizon-32b,loads,k2_horizon,,2026-10-10,0.7.4
-k2-horizon-375b,fails,k2_horizon,"174 missing, e.g. language_model.model.layers.3.mlp.gate_proj.weight; 33698 unexpected, e.g. language_model.model.layers.3.mlp.experts.0.down_proj.weight",2026-10-10,0.7.4
-kimi-k3,not checked,,check failed: RuntimeError: [metal::malloc] Resource limit (499000) exceeded.,2026-10-10,0.7.4
-llama-4-maverick,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4
-llama-4-scout,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4
-llm-jp-4.1-32b-a3b-thinking,loads,qwen3_moe,,2026-10-10,0.7.4
-llm-jp-4.1-33b-thinking,loads,llama,,2026-10-10,0.7.4
-minimax-m3,loads,minimax_m3_vl,,2026-10-10,0.7.4
-nemotron-3-super-120b,loads,nemotron_h,,2026-10-10,0.7.4
-nemotron-3.5-lightning-30b,loads,nemotron_h,,2026-10-10,0.7.4
-nemotron-sea-lion-v4.8-120b,loads,nemotron_h,,2026-10-10,0.7.4
-olmo-3-7b-instruct,loads,olmo3,,2026-10-10,0.7.4
-olmo-3.1-32b-instruct,loads,olmo3,,2026-10-10,0.7.4
-phi-4-reasoning-vision-15b,loads,phi4-siglip,,2026-10-10,0.7.4
-plamo-3-nict-2604-31b-base,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4
-qwen-sea-lion-v4.5-27b-it,loads,qwen3_5,,2026-10-10,0.7.4
-qwen3-swallow-32b-rl,loads,qwen3,,2026-10-10,0.7.4
-qwen3.8-27b,loads,qwen3_5,,2026-10-10,0.7.4
-qwen3.8-flash-next,loads,qwen4_exp,,2026-10-10,0.7.4
-sarvam-105b,unsupported,sarvam_mla,model type not in mlx-vlm,2026-10-10,0.7.4
-sarvam-30b,unsupported,sarvam_moe,model type not in mlx-vlm,2026-10-10,0.7.4
-solar-open2-250b,unsupported,solar_open2,model type not in mlx-vlm,2026-10-10,0.7.4
-tiny-aya-global,not checked,,config.json: HTTP 403 (gated?),2026-10-10,0.7.4
-amalia-9b-0626,loads,llama,,2026-10-10,0.7.4
-bggpt-gemma-3-27b-it,loads,gemma3,,2026-10-10,0.7.4
-dfm-mimir-1.5,loads,hrm_text,,2026-10-10,0.7.4
-gams3-12b-instruct,loads,gemma3_text,,2026-10-10,0.7.4
-gervasio-70b-ptpt,loads,llama,,2026-10-10,0.7.4
-latxa-3.1-70b-v2,loads,llama,,2026-10-10,0.7.4
-llama-3.1-estllm-70b-instruct-0826,loads,llama,,2026-10-10,0.7.4
-llama-krikri-8b-instruct-v1.5,loads,llama,,2026-10-10,0.7.4
-llama-pllum-70b-chat-2512,loads,llama,,2026-10-10,0.7.4
-norolmo-13b,loads,olmo2,,2026-10-10,0.7.4
-oellm-9b-256k-sft,fails,qwen3,model init: TypeError: ModelConfig.__init__() missing 1 required positional argument: 'rope_theta',2026-10-10,0.7.4
-pllum-12b-chat-2512,loads,mistral,,2026-10-10,0.7.4
-teuken-7b-instruct-0.6,loads,llama,,2026-10-10,0.7.4
+alia-40b,loads,llama,,2026-10-16,0.7.8
+amalia-9b-0626,loads,llama,,2026-10-16,0.7.8
+apertus-1.5-70b,unsupported,apertus1p5,not in the release; port open as Blaizzy/mlx-vlm#1847,2026-10-16,0.7.8
+apertus-1.5-8b,unsupported,apertus1p5,not in the release; port open as Blaizzy/mlx-vlm#1847,2026-10-16,0.7.8
+bggpt-gemma-3-27b-it,loads,gemma3,,2026-10-16,0.7.8
+bielik-11b-v3,loads,llama,,2026-10-16,0.7.8
+borealis2-26b,loads,gemma4,,2026-10-16,0.7.8
+command-a-plus,fails,cohere2_vision,model init: ValueError: hidden_size must be divisible by num_heads (got `hidden_size`: 4096 and `num_heads`: 128).,2026-10-16,0.7.8
+deepseek-v4-pro-0813,not checked,deepseek_v4,quantized tensors (scales) the check does not handle,2026-10-16,0.7.8
+deepseek-v4.1-flash,loads,deepseek_v41,"FP8 release, scales not checked",2026-10-16,0.7.8
+devstral-small-2,loads,mistral3,"FP8 release, scales not checked",2026-10-16,0.7.8
+dfm-mimir-1.5,loads,hrm_text,,2026-10-16,0.7.8
+domyn-small,loads,nemotron,,2026-10-16,0.7.8
+eurollm-22b,loads,llama,,2026-10-16,0.7.8
+eurollm-9b,loads,llama,,2026-10-16,0.7.8
+exaone-4.5-33b,unsupported,exaone4_5,model type not in mlx-vlm,2026-10-16,0.7.8
+falcon-h1-34b,loads,falcon_h1,,2026-10-16,0.7.8
+falcon-h1r-7b,loads,falcon_h1,,2026-10-16,0.7.8
+gams3-12b-instruct,loads,gemma3_text,,2026-10-16,0.7.8
+gemma-4-26b-a4b,loads,gemma4,,2026-10-16,0.7.8
+gemma-4-31b,loads,gemma4,,2026-10-16,0.7.8
+gervasio-70b-ptpt,loads,llama,,2026-10-16,0.7.8
+glm-5.3,loads,glm_moe_dsa,"FP8 release, scales not checked",2026-10-16,0.7.8
+glm-5.3-flash,loads,glm5_next,"FP8 release, scales not checked",2026-10-16,0.7.8
+gpt-oss-120b,not checked,gpt_oss,mxfp4 release: the load check covers bf16 and FP8 weights only,2026-10-16,0.7.8
+gpt-oss-20b,not checked,gpt_oss,mxfp4 release: the load check covers bf16 and FP8 weights only,2026-10-16,0.7.8
+gpt-oss-swallow-120b-rl,fails,gpt_oss,"108 missing, e.g. language_model.model.layers.0.mlp.experts.gate_proj.weight; 108 unexpected, e.g. language_model.model.layers.0.mlp.experts.gate_proj",2026-10-16,0.7.8
+granite-4.2-30b,loads,granite,,2026-10-16,0.7.8
+granite-4.2-8b,loads,granite,,2026-10-16,0.7.8
+helium-1-2b,loads,llama,,2026-10-16,0.7.8
+holo4-35b-a3b,loads,qwen3_5_moe,,2026-10-16,0.7.8
+hy4-preview,not checked,hy_v4,FP8 scale layout not handled by the check: KeyError: 'model.layers.0.self_attn.kv_b_proj.weight_scale',2026-10-16,0.7.8
+hyperclovax-seed-think-32b,unsupported,hyperclovax_vision_v2,model type not in mlx-vlm,2026-10-16,0.7.8
+jamba2-3b,loads,jamba,,2026-10-16,0.7.8
+jamba2-mini,loads,jamba,,2026-10-16,0.7.8
+k-exaone-2.0-750b,fails,exaone_moe,model init: TypeError: ModelConfig.__init__() missing 2 required positional arguments: 'sliding_window' and 'is_moe_layer',2026-10-16,0.7.8
+k2-horizon-32b,loads,k2_horizon,,2026-10-16,0.7.8
+k2-horizon-375b,fails,k2_horizon,"174 missing, e.g. language_model.model.layers.3.mlp.gate_proj.weight; 33698 unexpected, e.g. language_model.model.layers.3.mlp.experts.0.down_proj.weight",2026-10-16,0.7.8
+kimi-k3,not checked,kimi_k3,quantized tensors (scales) the check does not handle,2026-10-16,0.7.8
+kolibri-1,loads,kolibri1,"FP8 release, scales not checked",2026-10-16,0.7.8
+latxa-3.1-70b-v2,loads,llama,,2026-10-16,0.7.8
+llama-3.1-estllm-70b-instruct-0826,loads,llama,,2026-10-16,0.7.8
+llama-4-maverick,not checked,,config.json: HTTP 403 (gated?),2026-10-16,0.7.8
+llama-4-scout,not checked,,config.json: HTTP 403 (gated?),2026-10-16,0.7.8
+llama-krikri-8b-instruct-v1.5,loads,llama,,2026-10-16,0.7.8
+llama-pllum-70b-chat-2512,loads,llama,,2026-10-16,0.7.8
+llm-jp-4.1-32b-a3b-thinking,loads,qwen3_moe,,2026-10-16,0.7.8
+llm-jp-4.1-33b-thinking,loads,llama,,2026-10-16,0.7.8
+lucie-7b,loads,llama,,2026-10-16,0.7.8
+luciole-23b,loads,nemotron,,2026-10-16,0.7.8
+luciole-23b-thinking,loads,nemotron,,2026-10-16,0.7.8
+luciole-8b,loads,nemotron_h,,2026-10-16,0.7.8
+magistral-small-2509,loads,mistral3,,2026-10-16,0.7.8
+minerva-7b,loads,mistral,,2026-10-16,0.7.8
+minimax-m3,loads,minimax_m3_vl,,2026-10-16,0.7.8
+ministral-3-14b,loads,mistral3,"FP8 release, scales not checked",2026-10-16,0.7.8
+mistral-small-3.2,loads,mistral3,,2026-10-16,0.7.8
+mistral-small-4,loads,mistral3,"FP8 release, scales not checked",2026-10-16,0.7.8
+nemotron-3-super-120b,loads,nemotron_h,,2026-10-16,0.7.8
+nemotron-3.5-lightning-30b,loads,nemotron_h,,2026-10-16,0.7.8
+nemotron-sea-lion-v4.8-120b,loads,nemotron_h,,2026-10-16,0.7.8
+norolmo-13b,loads,olmo2,,2026-10-16,0.7.8
+oellm-9b-256k-sft,fails,qwen3,model init: TypeError: ModelConfig.__init__() missing 1 required positional argument: 'rope_theta',2026-10-16,0.7.8
+olmo-3-7b-instruct,loads,olmo3,,2026-10-16,0.7.8
+olmo-3.1-32b-instruct,loads,olmo3,,2026-10-16,0.7.8
+phi-4-reasoning-vision-15b,loads,phi4-siglip,,2026-10-16,0.7.8
+plamo-3-nict-2604-31b-base,not checked,,config.json: HTTP 403 (gated?),2026-10-16,0.7.8
+pleias-rag-1b,loads,llama,,2026-10-16,0.7.8
+pllum-12b-chat-2512,loads,mistral,,2026-10-16,0.7.8
+poro-2-8b,loads,llama,,2026-10-16,0.7.8
+qwen-sea-lion-v4.5-27b-it,loads,qwen3_5,,2026-10-16,0.7.8
+qwen3-swallow-32b-rl,loads,qwen3,,2026-10-16,0.7.8
+qwen3.8-27b,loads,qwen3_5,,2026-10-16,0.7.8
+qwen3.8-flash-next,loads,qwen4_exp,,2026-10-16,0.7.8
+salamandra-7b,loads,llama,,2026-10-16,0.7.8
+sarvam-105b,unsupported,sarvam_mla,model type not in mlx-vlm,2026-10-16,0.7.8
+sarvam-30b,unsupported,sarvam_moe,model type not in mlx-vlm,2026-10-16,0.7.8
+solar-open2-250b,unsupported,solar_open2,model type not in mlx-vlm,2026-10-16,0.7.8
+sui-1-24b,loads,mistral3,,2026-10-16,0.7.8
+teuken-7b-instruct-0.6,loads,llama,,2026-10-16,0.7.8
+tildeopen-30b,loads,llama,,2026-10-16,0.7.8
+tiny-aya-global,not checked,,config.json: HTTP 403 (gated?),2026-10-16,0.7.8
+viking-33b,loads,llama,,2026-10-16,0.7.8
+xlstm-7b,unsupported,xlstm,model type not in mlx-vlm,2026-10-16,0.7.8

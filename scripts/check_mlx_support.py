@@ -70,7 +70,7 @@ def get(url, start=None, end=None, tries=3):
             with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=60) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
-            if e.code < 500 and e.code != 429 or attempt == tries - 1:
+            if e.code < 500 and e.code not in (408, 429) or attempt == tries - 1:
                 raise
         except (urllib.error.URLError, http.client.IncompleteRead, ConnectionError, TimeoutError):
             # Models with hundreds of shards make hundreds of requests; one dropped
@@ -202,7 +202,7 @@ def transient(detail):
     """A result that says something about the run, not about the model."""
     return detail == OOM_DETAIL or detail.startswith("check timed out") or (
         detail.startswith("check failed:")
-        and any(s in detail for s in ("URLError", "IncompleteRead", "timed out", "Connection reset", "HTTP Error 5") + OOM_MARKERS))
+        and any(s in detail for s in ("URLError", "IncompleteRead", "timed out", "Connection reset", "HTTP Error 408", "HTTP Error 5") + OOM_MARKERS))
 
 
 def check_one(repo):

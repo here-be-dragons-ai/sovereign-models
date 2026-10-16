@@ -159,3 +159,5 @@ date,model,field,old,new,reason
 2026-10-16,apertus-1.5-70b,recipe,code+data,full,
 2026-10-16,apertus-1.5-8b,recipe,code+data,full,
 2026-10-16,kolibri-1,mlx_vlm,unsupported,loads,
+2026-10-16,command-a-plus,mlx_vlm,not checked,fails,
+2026-10-16,luciole-23b-thinking,mlx_vlm,not checked,loads,
