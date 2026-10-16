@@ -6290,9 +6290,9 @@
    "model_type": "kolibri1",
    "size_4bit_gb": "43.9",
    "size_8bit_gb": "83.0",
-   "mlx_vlm": "unsupported",
-   "mlx_vlm_detail": "not in the 0.7.6 release; supported on mlx-vlm main since 2026-10-06 (Blaizzy/mlx-vlm#2423), and in the kolibri1 branch of here-be-dragons-ai/mlx-vlm",
-   "mlx_vlm_checked": "2026-10-09 0.7.6 (release)",
+   "mlx_vlm": "loads",
+   "mlx_vlm_detail": "FP8 release, scales not checked",
+   "mlx_vlm_checked": "2026-10-16 0.7.8 (release)",
    "mlx_build": "here-be-dragons-ai/Kolibri-1-MLX-3bit",
    "mlx_build_bits": "3.61",
    "mlx_build_publisher": "hbd",
@@ -6655,7 +6655,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-16",
    "first_listed": ""
   },
   {
@@ -25198,6 +25198,14 @@
  "changes": [
   {
    "date": "2026-10-16",
+   "model": "kolibri-1",
+   "field": "mlx_vlm",
+   "old": "unsupported",
+   "new": "loads",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-16",
    "model": "apertus-1.5-8b",
    "field": "recipe",
    "old": "code+data",
@@ -25983,14 +25991,6 @@
   {
    "date": "2026-10-10",
    "model": "sarvam-30b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "sarvam-105b",
    "field": "model",
    "old": "",
    "new": "listed",
