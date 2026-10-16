@@ -17,11 +17,13 @@ map onto the model; it does not test the output.
 
 import csv
 import datetime as dt
+import http.client
 import json
 import os
 import struct
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -59,12 +61,23 @@ def _token():
 TOKEN = _token()
 
 
-def get(url, start=None, end=None):
+def get(url, start=None, end=None, tries=3):
     headers = {"Authorization": f"Bearer {TOKEN}"} if TOKEN else {}
     if start is not None:
         headers["Range"] = f"bytes={start}-{end}"
-    with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=60) as r:
-        return r.read()
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=headers), timeout=60) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code < 500 and e.code != 429 or attempt == tries - 1:
+                raise
+        except (urllib.error.URLError, http.client.IncompleteRead, ConnectionError, TimeoutError):
+            # Models with hundreds of shards make hundreds of requests; one dropped
+            # connection should not decide the result.
+            if attempt == tries - 1:
+                raise
+        time.sleep(5 * (attempt + 1))
 
 
 def headers(repo):
@@ -83,6 +96,15 @@ def headers(repo):
         header.pop("__metadata__", None)
         shapes.update(header)
     return shapes
+
+
+OOM_DETAIL = "out of memory on the check machine; says nothing about the model"
+OOM_MARKERS = ("Unable to allocate", "Resource limit", "Insufficient Memory")
+
+
+def out_of_memory(e):
+    """Allocation failures of the machine running the check, not defects of the model."""
+    return isinstance(e, MemoryError) or any(s in str(e) for s in OOM_MARKERS)
 
 
 def check(repo):
@@ -106,6 +128,8 @@ def check(repo):
         )
         model = module.Model(model_config)
     except Exception as e:
+        if out_of_memory(e):
+            return "not checked", model_type, OOM_DETAIL
         return "fails", model_type, f"model init: {type(e).__name__}: {e}"[:200]
     quant = (config.get("quantization_config") or {}).get("quant_method", "")
     fp8 = quant == "fp8"
@@ -113,8 +137,12 @@ def check(repo):
         # The check compares bf16 parameter names and shapes; packed weights of
         # other formats (e.g. MXFP4) would show up as false mismatches.
         return "not checked", model_type, f"{quant} release: the load check covers bf16 and FP8 weights only"
+    # One zero per dtype, broadcast to each shape: a lazy view, not a buffer per
+    # tensor, so checkpoints with more tensors than Metal's buffer limit (499000)
+    # still fit. Only shapes are compared, so nothing is ever evaluated.
+    zero = {}
     weights = {
-        k: mx.zeros(v["shape"], DTYPES.get(v["dtype"], mx.float32))
+        k: mx.broadcast_to(zero.setdefault(v["dtype"], mx.zeros((), DTYPES.get(v["dtype"], mx.float32))), v["shape"])
         for k, v in headers(repo).items()
         if not (fp8 and k.endswith(FP8_SCALES))
     }
@@ -124,6 +152,8 @@ def check(repo):
             if hasattr(module, cls) and hasattr(model_config, attr):
                 weights = sanitize_weights(getattr(module, cls), weights, getattr(model_config, attr))
     except Exception as e:
+        if out_of_memory(e):
+            return "not checked", model_type, OOM_DETAIL
         if fp8 or "scale" in str(e):
             return "not checked", model_type, f"FP8 scale layout not handled by the check: {type(e).__name__}: {e}"[:200]
         return "fails", model_type, f"sanitize: {type(e).__name__}: {e}"[:200]
@@ -147,6 +177,44 @@ def check(repo):
     return "fails", model_type, "; ".join(parts)[:200]
 
 
+def check_isolated(repo, timeout=1800):
+    """check() in a fresh process: nothing one model allocates is left for the next.
+
+    In one long-running process the weekly runner (7 GB) ran out of memory partway
+    through and reported later models as failing at model init.
+    """
+    try:
+        r = subprocess.run([sys.executable, __file__, "--one", repo],
+                           capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return "not checked", "", f"check timed out after {timeout} s"
+    lines = r.stdout.strip().splitlines()
+    if r.returncode == 0 and lines:
+        return tuple(json.loads(lines[-1]))
+    if r.returncode < 0 or r.returncode == 137:  # killed, usually by the OOM killer
+        return "not checked", "", OOM_DETAIL
+    tail = (r.stderr.strip().splitlines() or ["no output"])[-1]
+    return "not checked", "", f"check failed: {tail}"[:200]
+
+
+def transient(detail):
+    """A result that says something about the run, not about the model."""
+    return detail == OOM_DETAIL or detail.startswith("check timed out") or (
+        detail.startswith("check failed:")
+        and any(s in detail for s in ("URLError", "IncompleteRead", "timed out", "Connection reset", "HTTP Error 5") + OOM_MARKERS))
+
+
+def check_one(repo):
+    try:
+        result = check(repo)
+    except Exception as e:  # noqa: BLE001 - reported, never raised
+        if out_of_memory(e):
+            result = ("not checked", "", OOM_DETAIL)
+        else:
+            result = ("not checked", "", f"check failed: {type(e).__name__}: {e}"[:200])
+    print(json.dumps(result))
+
+
 def revision():
     src = Path(mlx_vlm.__file__).resolve().parent.parent
     try:
@@ -167,10 +235,12 @@ def main():
     for m in models:
         if wanted and m["id"] not in wanted:
             continue
-        try:
-            status, model_type, detail = check(m["hf_repo"])
-        except Exception as e:  # one model must not stop the weekly run
-            status, model_type, detail = "not checked", "", f"check failed: {type(e).__name__}: {e}"[:200]
+        status, model_type, detail = check_isolated(m["hf_repo"])
+        old = rows.get(m["id"])
+        if status == "not checked" and transient(detail) and old and old["mlx_vlm"] != "not checked":
+            # Keep the last real result (with its date) rather than report a change.
+            print(f"{'kept':12s} {m['id']:22s} {old['mlx_vlm']} from {old['checked']}; this run: {detail}")
+            continue
         rows[m["id"]] = dict(id=m["id"], mlx_vlm=status, model_type=model_type, detail=detail, checked=today, mlx_vlm_rev=rev)
         print(f"{status:12s} {m['id']:22s} {model_type:14s} {detail}")
     with open(OUT, "w", newline="", encoding="utf-8") as f:
@@ -181,4 +251,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if sys.argv[1:2] == ["--one"]:
+        check_one(sys.argv[2])
+    else:
+        main()
