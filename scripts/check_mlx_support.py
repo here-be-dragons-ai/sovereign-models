@@ -99,6 +99,7 @@ def headers(repo):
 
 
 OOM_DETAIL = "out of memory on the check machine; says nothing about the model"
+UNSUPPORTED_DETAIL = "model type not in mlx-vlm"
 OOM_MARKERS = ("Unable to allocate", "Resource limit", "Insufficient Memory")
 
 
@@ -116,7 +117,7 @@ def check(repo):
     try:
         module, _ = get_model_and_args(dict(config))
     except Exception:
-        return "unsupported", model_type, "model type not in mlx-vlm"
+        return "unsupported", model_type, UNSUPPORTED_DETAIL
     cfg = dict(config)
     cfg.setdefault("text_config", cfg.pop("llm_config", {}))
     cfg.setdefault("vision_config", {})
@@ -241,6 +242,9 @@ def main():
             # Keep the last real result (with its date) rather than report a change.
             print(f"{'kept':12s} {m['id']:22s} {old['mlx_vlm']} from {old['checked']}; this run: {detail}")
             continue
+        if detail == UNSUPPORTED_DETAIL and old and (old["mlx_vlm"], old["model_type"]) == (status, model_type):
+            # A hand-written detail (e.g. where a port is under way) says more than the default.
+            detail = old["detail"] or detail
         rows[m["id"]] = dict(id=m["id"], mlx_vlm=status, model_type=model_type, detail=detail, checked=today, mlx_vlm_rev=rev)
         print(f"{status:12s} {m['id']:22s} {model_type:14s} {detail}")
     with open(OUT, "w", newline="", encoding="utf-8") as f:

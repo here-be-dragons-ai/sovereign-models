@@ -1,7 +1,7 @@
 id,mlx_vlm,model_type,detail,checked,mlx_vlm_rev
 alia-40b,loads,llama,,2026-10-09,0.7.6 (release)
-apertus-1.5-70b,unsupported,apertus1p5,model type not in mlx-vlm,2026-10-09,0.7.6 (release)
-apertus-1.5-8b,unsupported,apertus1p5,model type not in mlx-vlm,2026-10-09,0.7.6 (release)
+apertus-1.5-70b,unsupported,apertus1p5,not in the release; port open as Blaizzy/mlx-vlm#1847,2026-10-16,0.7.8 (release)
+apertus-1.5-8b,unsupported,apertus1p5,not in the release; port open as Blaizzy/mlx-vlm#1847,2026-10-16,0.7.8 (release)
 bielik-11b-v3,loads,llama,,2026-10-09,0.7.6 (release)
 borealis2-26b,loads,gemma4,,2026-10-09,0.7.6 (release)
 devstral-small-2,loads,mistral3,"FP8 release, scales not checked",2026-10-09,0.7.6 (release)
