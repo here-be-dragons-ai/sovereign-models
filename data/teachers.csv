@@ -30,6 +30,16 @@ apertus-1.5,pretraining,"Qwen3.5-9B, Qwen2.5-VL-72B, Gemma 4, MedGemma 1.5, Kimi
 apertus-1.5,pretraining,EuroLLM-22B-Instruct-2512,european,data enrichment (same list)
 apertus-1.5,posttraining,"Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, GPT-OSS-120B-Safeguard",foreign,synthetic post-training data
 apertus-1.5,judge,Qwen3-235B-A22B-Instruct-2507,foreign,scoring responses for the 70B DPO pairs
+apertus-1.5,posttraining,"Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, MiniMax-M2.7",foreign,verified reasoning traces for maths and instruction following (SFT)
+apertus-1.5,posttraining,Qwen3.6-27B,foreign,regenerated multimodal SFT samples with thinking disabled
+apertus-1.5,posttraining,"GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B",foreign,regenerated EuroBlocks-SFT-2512 responses that carried the EuroLLM identity
+apertus-1.5,posttraining,MiniMax-M2.5,foreign,generator for multi-turn instruction-following conversations
+apertus-1.5,posttraining,Qwen3-TTS,foreign,synthesized speech for the user turns of about 640k chat conversations in the speech SFT data
+apertus-1.5,posttraining,"Qwen2.5-0.5B/1.5B-Instruct, Qwen3-0.6B/1.7B/4B/8B/32B/30B-A3B/Next-80B/235B, Qwen3-Omni-30B, Qwen3.5-397B, SmolLM3-3B, Phi-4-mini, Trinity-Nano-Preview",foreign,DPO response pool (15 of 24 models); chosen and rejected responses
+apertus-1.5,posttraining,"EuroLLM-1.7B/9B/22B-Instruct-2512, Ministral-3-3B/8B/14B, Mistral-Small-24B-2501, Mixtral-8x22B, Mistral-Large-3-675B",european,DPO response pool (9 of 24 models); chosen and rejected responses
+apertus-1.5,judge,Kimi-K2.6,foreign,LLM judge filtering SFT prompts with verifiable answers
+apertus-1.5,judge,Qwen3-235B,foreign,verifying regenerated safety responses; judge for the multi-turn instruction-following data
+apertus-1.5,judge,Qwen3.6-27B,foreign,online DPO judge and charter-alignment (SDPO) judge
 helium-1,pretraining,Gemma 2 9B,foreign,distillation teacher for the whole pretraining
 pleias-rag,midtraining,Gemma 3 12B,foreign,synthetic queries and reasoning traces for 3M RAG examples
 pleias-rag,midtraining,Gemma 3 27B,foreign,"initial 4,000-example seed set"

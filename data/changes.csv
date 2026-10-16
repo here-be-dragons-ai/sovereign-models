@@ -156,3 +156,5 @@ date,model,field,old,new,reason
 2026-10-16,command-a-plus,llama_cpp,fork only,supported,
 2026-10-16,k2-horizon-32b,llama_cpp,fork only,supported,
 2026-10-16,k2-horizon-375b,llama_cpp,fork only,supported,
+2026-10-16,apertus-1.5-70b,recipe,code+data,full,
+2026-10-16,apertus-1.5-8b,recipe,code+data,full,

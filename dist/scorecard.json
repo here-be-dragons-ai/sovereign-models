@@ -343,8 +343,8 @@
    "cache_gib_32k": "10.0",
    "cache_gib_128k": "40.0",
    "teacher_origin": "foreign",
-   "teachers_list": "Qwen3.6-27B and Qwen3.5-397B-A17B (pretraining, foreign); Qwen vision-language model (pretraining, foreign); Qwen3.5-9B, Qwen2.5-VL-72B, Gemma 4, MedGemma 1.5, Kimi-VL (pretraining, foreign); EuroLLM-22B-Instruct-2512 (pretraining, european); Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, GPT-OSS-120B-Safeguard (posttraining, foreign); Qwen3-235B-A22B-Instruct-2507 (judge, foreign)",
-   "recipe": "code+data",
+   "teachers_list": "Qwen3.6-27B and Qwen3.5-397B-A17B (pretraining, foreign); Qwen vision-language model (pretraining, foreign); Qwen3.5-9B, Qwen2.5-VL-72B, Gemma 4, MedGemma 1.5, Kimi-VL (pretraining, foreign); EuroLLM-22B-Instruct-2512 (pretraining, european); Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, GPT-OSS-120B-Safeguard (posttraining, foreign); Qwen3-235B-A22B-Instruct-2507 (judge, foreign); Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, MiniMax-M2.7 (posttraining, foreign); Qwen3.6-27B (posttraining, foreign); GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B (posttraining, foreign); MiniMax-M2.5 (posttraining, foreign); Qwen3-TTS (posttraining, foreign); Qwen2.5-0.5B/1.5B-Instruct, Qwen3-0.6B/1.7B/4B/8B/32B/30B-A3B/Next-80B/235B, Qwen3-Omni-30B, Qwen3.5-397B, SmolLM3-3B, Phi-4-mini, Trinity-Nano-Preview (posttraining, foreign); EuroLLM-1.7B/9B/22B-Instruct-2512, Ministral-3-3B/8B/14B, Mistral-Small-24B-2501, Mixtral-8x22B, Mistral-Large-3-675B (posttraining, european); Kimi-K2.6 (judge, foreign); Qwen3-235B (judge, foreign); Qwen3.6-27B (judge, foreign)",
+   "recipe": "full",
    "terms_can_change": "yes",
    "languages": "en;de;es;fr;it;pt;pl;nl;cs;ro;hu;sv;el;da;fi;sk;bg;hr;lt;sl;et;lv",
    "eu_languages": 22,
@@ -355,7 +355,7 @@
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-70B",
    "hf_created": "2026-07-24",
-   "last_reviewed": "2026-10-09",
+   "last_reviewed": "2026-10-16",
    "provider_notes": "Switzerland is not in the EU.",
    "family_notes": "",
    "repo_verified_org": false,
@@ -579,6 +579,176 @@
      "retrieved": "2026-10-09",
      "archive_url": "https://web.archive.org/web/20261009152349/https://www.cscs.ch/science/computer-science-hpc/2026/apertus-15-building-the-next-generation-of-open-ai-infrastructure",
      "note": "CSCS on the 1.5 release (2026-07-24): 'Trained on the Alps supercomputer at CSCS in Lugano'; Alps is in Switzerland"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, MiniMax-M2.7",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'we generate verified reasoning traces with thinking enabled, using multiple models: Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, and MiniMax-M2.7'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3.6-27B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'we regenerate samples whose sources contain reasoning traces with Qwen3.6-27B and thinking disabled'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'a pool of several models (GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B) randomly sampled to regenerate responses'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:MiniMax-M2.5",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.4: 'MiniMax-M2.5 as a generator model (planning and responding), and Qwen3-235B as a judge'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-TTS",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§2.2.4: 'we synthesize user turns with Qwen3-TTS, while retaining assistant responses as text'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen2.5-0.5B/1.5B-Instruct, Qwen3-0.6B/1.7B/4B/8B/32B/30B-A3B/Next-80B/235B, Qwen3-Omni-30B, Qwen3.5-397B, SmolLM3-3B, Phi-4-mini, Trinity-Nano-Preview",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "Table I.2 and App. I.3: 'All 24 models of Table I.2 ... answer every prompt'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:EuroLLM-1.7B/9B/22B-Instruct-2512, Ministral-3-3B/8B/14B, Mistral-Small-24B-2501, Mixtral-8x22B, Mistral-Large-3-675B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "Table I.2 and App. I.3: 'All 24 models of Table I.2 ... answer every prompt'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Kimi-K2.6",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'we filter out prompts that could lead to verifiable answers ... using an LLM-as-a-judge (Kimi-K2.6)'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-235B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'verify their validity with a Qwen3-235B judge'; §4.4: 'Qwen3-235B as a judge (evaluator)'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3.6-27B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.6.1: 'we deploy Qwen3.6-27B as a judge'; §4.6.2: 'The judge is Qwen3.6-27B'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, GPT-OSS-120B-Safeguard",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.4: 'We sample the completions from different open-weight models, such as Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, and GPT-OSS-120B-Safeguard'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-235B-A22B-Instruct-2507",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "App. I.1: 'Qwen3-235B-A22B-Instruct-2507 rates each completion on the four aspects' (offline DPO)"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§1.1: models, code (Megatron-LM fork, posttraining, evals) and datasets released; stage checkpoints on the Hub: -base repos with 43 (8B) and 41 (70B) intermediate branches, -SFT, -RLVR, -DPO"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§6.1: 'Both models are trained on the Alps supercomputer at CSCS'"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§6.1: GH200 nodes; production runs on 256 (8B) and 512 (70B) nodes"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§3.1.1 and §7.1: only publicly available datasets, no paywalled or closed sources; robots.txt opt-outs honoured retroactively"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§7.1: Public Summary of Training Content following the Commission template, versioned in swiss-ai/apertus-legal"
     }
    ],
    "mlx_builds": [],
@@ -643,10 +813,80 @@
      "model": "Qwen3-235B-A22B-Instruct-2507",
      "model_origin": "foreign",
      "purpose": "scoring responses for the 70B DPO pairs"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, MiniMax-M2.7",
+     "model_origin": "foreign",
+     "purpose": "verified reasoning traces for maths and instruction following (SFT)"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "Qwen3.6-27B",
+     "model_origin": "foreign",
+     "purpose": "regenerated multimodal SFT samples with thinking disabled"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B",
+     "model_origin": "foreign",
+     "purpose": "regenerated EuroBlocks-SFT-2512 responses that carried the EuroLLM identity"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "MiniMax-M2.5",
+     "model_origin": "foreign",
+     "purpose": "generator for multi-turn instruction-following conversations"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "Qwen3-TTS",
+     "model_origin": "foreign",
+     "purpose": "synthesized speech for the user turns of about 640k chat conversations in the speech SFT data"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "Qwen2.5-0.5B/1.5B-Instruct, Qwen3-0.6B/1.7B/4B/8B/32B/30B-A3B/Next-80B/235B, Qwen3-Omni-30B, Qwen3.5-397B, SmolLM3-3B, Phi-4-mini, Trinity-Nano-Preview",
+     "model_origin": "foreign",
+     "purpose": "DPO response pool (15 of 24 models); chosen and rejected responses"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "EuroLLM-1.7B/9B/22B-Instruct-2512, Ministral-3-3B/8B/14B, Mistral-Small-24B-2501, Mixtral-8x22B, Mistral-Large-3-675B",
+     "model_origin": "european",
+     "purpose": "DPO response pool (9 of 24 models); chosen and rejected responses"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "judge",
+     "model": "Kimi-K2.6",
+     "model_origin": "foreign",
+     "purpose": "LLM judge filtering SFT prompts with verifiable answers"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "judge",
+     "model": "Qwen3-235B",
+     "model_origin": "foreign",
+     "purpose": "verifying regenerated safety responses; judge for the multi-turn instruction-following data"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "judge",
+     "model": "Qwen3.6-27B",
+     "model_origin": "foreign",
+     "purpose": "online DPO judge and charter-alignment (SDPO) judge"
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-09",
+   "last_changed": "2026-10-16",
    "first_listed": ""
   },
   {
@@ -694,8 +934,8 @@
    "cache_gib_32k": "4.0",
    "cache_gib_128k": "16.0",
    "teacher_origin": "foreign",
-   "teachers_list": "Qwen3.6-27B and Qwen3.5-397B-A17B (pretraining, foreign); Qwen vision-language model (pretraining, foreign); Qwen3.5-9B, Qwen2.5-VL-72B, Gemma 4, MedGemma 1.5, Kimi-VL (pretraining, foreign); EuroLLM-22B-Instruct-2512 (pretraining, european); Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, GPT-OSS-120B-Safeguard (posttraining, foreign); Qwen3-235B-A22B-Instruct-2507 (judge, foreign)",
-   "recipe": "code+data",
+   "teachers_list": "Qwen3.6-27B and Qwen3.5-397B-A17B (pretraining, foreign); Qwen vision-language model (pretraining, foreign); Qwen3.5-9B, Qwen2.5-VL-72B, Gemma 4, MedGemma 1.5, Kimi-VL (pretraining, foreign); EuroLLM-22B-Instruct-2512 (pretraining, european); Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, GPT-OSS-120B-Safeguard (posttraining, foreign); Qwen3-235B-A22B-Instruct-2507 (judge, foreign); Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, MiniMax-M2.7 (posttraining, foreign); Qwen3.6-27B (posttraining, foreign); GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B (posttraining, foreign); MiniMax-M2.5 (posttraining, foreign); Qwen3-TTS (posttraining, foreign); Qwen2.5-0.5B/1.5B-Instruct, Qwen3-0.6B/1.7B/4B/8B/32B/30B-A3B/Next-80B/235B, Qwen3-Omni-30B, Qwen3.5-397B, SmolLM3-3B, Phi-4-mini, Trinity-Nano-Preview (posttraining, foreign); EuroLLM-1.7B/9B/22B-Instruct-2512, Ministral-3-3B/8B/14B, Mistral-Small-24B-2501, Mixtral-8x22B, Mistral-Large-3-675B (posttraining, european); Kimi-K2.6 (judge, foreign); Qwen3-235B (judge, foreign); Qwen3.6-27B (judge, foreign)",
+   "recipe": "full",
    "terms_can_change": "yes",
    "languages": "en;de;es;fr;it;pt;pl;nl;cs;ro;hu;sv;el;da;fi;sk;bg;hr;lt;sl;et;lv",
    "eu_languages": 22,
@@ -706,7 +946,7 @@
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-8B",
    "hf_created": "2026-07-24",
-   "last_reviewed": "2026-10-09",
+   "last_reviewed": "2026-10-16",
    "provider_notes": "Switzerland is not in the EU.",
    "family_notes": "",
    "repo_verified_org": false,
@@ -930,6 +1170,176 @@
      "retrieved": "2026-10-09",
      "archive_url": "https://web.archive.org/web/20261009152349/https://www.cscs.ch/science/computer-science-hpc/2026/apertus-15-building-the-next-generation-of-open-ai-infrastructure",
      "note": "CSCS on the 1.5 release (2026-07-24): 'Trained on the Alps supercomputer at CSCS in Lugano'; Alps is in Switzerland"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, MiniMax-M2.7",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'we generate verified reasoning traces with thinking enabled, using multiple models: Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, and MiniMax-M2.7'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3.6-27B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'we regenerate samples whose sources contain reasoning traces with Qwen3.6-27B and thinking disabled'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'a pool of several models (GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B) randomly sampled to regenerate responses'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:MiniMax-M2.5",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.4: 'MiniMax-M2.5 as a generator model (planning and responding), and Qwen3-235B as a judge'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-TTS",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§2.2.4: 'we synthesize user turns with Qwen3-TTS, while retaining assistant responses as text'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen2.5-0.5B/1.5B-Instruct, Qwen3-0.6B/1.7B/4B/8B/32B/30B-A3B/Next-80B/235B, Qwen3-Omni-30B, Qwen3.5-397B, SmolLM3-3B, Phi-4-mini, Trinity-Nano-Preview",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "Table I.2 and App. I.3: 'All 24 models of Table I.2 ... answer every prompt'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:EuroLLM-1.7B/9B/22B-Instruct-2512, Ministral-3-3B/8B/14B, Mistral-Small-24B-2501, Mixtral-8x22B, Mistral-Large-3-675B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "Table I.2 and App. I.3: 'All 24 models of Table I.2 ... answer every prompt'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Kimi-K2.6",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'we filter out prompts that could lead to verifiable answers ... using an LLM-as-a-judge (Kimi-K2.6)'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-235B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.2: 'verify their validity with a Qwen3-235B judge'; §4.4: 'Qwen3-235B as a judge (evaluator)'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3.6-27B",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.6.1: 'we deploy Qwen3.6-27B as a judge'; §4.6.2: 'The judge is Qwen3.6-27B'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, GPT-OSS-120B-Safeguard",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§4.4: 'We sample the completions from different open-weight models, such as Qwen3-235B, Kimi-K2.5, MiniMax-M2.7, Qwen3.5-397B, and GPT-OSS-120B-Safeguard'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-235B-A22B-Instruct-2507",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "App. I.1: 'Qwen3-235B-A22B-Instruct-2507 rates each completion on the four aspects' (offline DPO)"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§1.1: models, code (Megatron-LM fork, posttraining, evals) and datasets released; stage checkpoints on the Hub: -base repos with 43 (8B) and 41 (70B) intermediate branches, -SFT, -RLVR, -DPO"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§6.1: 'Both models are trained on the Alps supercomputer at CSCS'"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§6.1: GH200 nodes; production runs on 256 (8B) and 512 (70B) nodes"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§3.1.1 and §7.1: only publicly available datasets, no paywalled or closed sources; robots.txt opt-outs honoured retroactively"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-16",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "§7.1: Public Summary of Training Content following the Commission template, versioned in swiss-ai/apertus-legal"
     }
    ],
    "mlx_builds": [
@@ -996,10 +1406,80 @@
      "model": "Qwen3-235B-A22B-Instruct-2507",
      "model_origin": "foreign",
      "purpose": "scoring responses for the 70B DPO pairs"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "Kimi-K2.6, Qwen3.6-27B, Gemma-4-31B, MiniMax-M2.7",
+     "model_origin": "foreign",
+     "purpose": "verified reasoning traces for maths and instruction following (SFT)"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "Qwen3.6-27B",
+     "model_origin": "foreign",
+     "purpose": "regenerated multimodal SFT samples with thinking disabled"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "GPT-OSS-120B, MiniMax-M2, Qwen3.5-397B",
+     "model_origin": "foreign",
+     "purpose": "regenerated EuroBlocks-SFT-2512 responses that carried the EuroLLM identity"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "MiniMax-M2.5",
+     "model_origin": "foreign",
+     "purpose": "generator for multi-turn instruction-following conversations"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "Qwen3-TTS",
+     "model_origin": "foreign",
+     "purpose": "synthesized speech for the user turns of about 640k chat conversations in the speech SFT data"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "Qwen2.5-0.5B/1.5B-Instruct, Qwen3-0.6B/1.7B/4B/8B/32B/30B-A3B/Next-80B/235B, Qwen3-Omni-30B, Qwen3.5-397B, SmolLM3-3B, Phi-4-mini, Trinity-Nano-Preview",
+     "model_origin": "foreign",
+     "purpose": "DPO response pool (15 of 24 models); chosen and rejected responses"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "posttraining",
+     "model": "EuroLLM-1.7B/9B/22B-Instruct-2512, Ministral-3-3B/8B/14B, Mistral-Small-24B-2501, Mixtral-8x22B, Mistral-Large-3-675B",
+     "model_origin": "european",
+     "purpose": "DPO response pool (9 of 24 models); chosen and rejected responses"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "judge",
+     "model": "Kimi-K2.6",
+     "model_origin": "foreign",
+     "purpose": "LLM judge filtering SFT prompts with verifiable answers"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "judge",
+     "model": "Qwen3-235B",
+     "model_origin": "foreign",
+     "purpose": "verifying regenerated safety responses; judge for the multi-turn instruction-following data"
+    },
+    {
+     "family_id": "apertus-1.5",
+     "stage": "judge",
+     "model": "Qwen3.6-27B",
+     "model_origin": "foreign",
+     "purpose": "online DPO judge and charter-alignment (SDPO) judge"
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-16",
    "first_listed": ""
   },
   {
@@ -24718,6 +25198,22 @@
  "changes": [
   {
    "date": "2026-10-16",
+   "model": "apertus-1.5-8b",
+   "field": "recipe",
+   "old": "code+data",
+   "new": "full",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-16",
+   "model": "apertus-1.5-70b",
+   "field": "recipe",
+   "old": "code+data",
+   "new": "full",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-16",
    "model": "k2-horizon-375b",
    "field": "llama_cpp",
    "old": "fork only",
@@ -25495,22 +25991,6 @@
   {
    "date": "2026-10-10",
    "model": "sarvam-105b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "qwen3.8-flash-next",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "qwen3.8-27b",
    "field": "model",
    "old": "",
    "new": "listed",
