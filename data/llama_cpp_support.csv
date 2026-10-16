@@ -1,5 +1,6 @@
 id,llama_cpp,architecture,detail,checked,llama_cpp_rev
 luciole-23b,supported,NemotronForCausalLM,,2026-10-08,v0.6.0
+luciole-23b-thinking,supported,NemotronForCausalLM,,2026-10-16,v0.7.0
 luciole-8b,supported,NemotronHForCausalLM,,2026-10-08,v0.6.0
 lucie-7b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0
 eurollm-22b,supported,LlamaForCausalLM,,2026-10-08,v0.6.0

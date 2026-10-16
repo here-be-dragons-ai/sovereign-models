@@ -150,3 +150,5 @@ date,model,field,old,new,reason
 2026-10-13,qwen-sea-lion-v4.5-27b-it,template_check,not checked,identical,
 2026-10-13,qwen3-swallow-32b-rl,template_check,not checked,identical,
 2026-10-13,qwen3.8-27b,template_check,not checked,suspicious,
+2026-10-16,luciole-23b-thinking,model,,listed,
+2026-10-16,luciole-23b-thinking,llama_cpp,not checked,supported,

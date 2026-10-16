@@ -1,5 +1,5 @@
 id,name,provider_id,origin,base_model,license_class,data,compute,ai_act_summary,notes,teacher_status,recipe,terms_can_change,languages,languages_basis,training_hardware
-luciole-1.1,Luciole 1.1 Instruct,openllm-france,scratch,,osi,open,eu,yes,,listed,full,no,en;fr;de;es;it;pt;nl;ar,trained,nvidia
+luciole-1.1,Luciole 1.1,openllm-france,scratch,,osi,open,eu,yes,,listed,full,no,en;fr;de;es;it;pt;nl;ar,trained,nvidia
 lucie-1.1,Lucie 1.1 Instruct,openllm-france,scratch,,osi,open,eu,unknown,,listed,full,no,en;fr;de;es;it,trained,nvidia
 eurollm-2512,EuroLLM Instruct 2512,eurollm,scratch,,osi,documented,unknown,yes,,listed,code+data,no,bg;hr;cs;da;nl;en;et;fi;fr;de;el;hu;ga;it;lv;lt;mt;pl;pt;ro;sk;sl;es;sv;ar;ca;zh;gl;hi;ja;ko;no;ru;tr;uk,supported,nvidia
 alia,ALIA,bsc,scratch,,osi,documented,eu,unknown,,listed,code,no,bg;ca;cs;cy;da;de;el;en;es;et;eu;fi;fr;ga;gl;hr;hu;it;lt;lv;mt;nl;nn;no;oc;pl;pt;ro;ru;sh;sk;sl;sr;sv;uk,trained,nvidia

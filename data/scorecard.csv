@@ -1,5 +1,6 @@
 id,name,hf_repo,family_id,modalities,origin,base_model,license_class,data,compute,ai_act_summary,hbd_involvement,notes
 luciole-23b,Luciole 23B Instruct 1.1,OpenLLM-France/Luciole-23B-Instruct-1.1,luciole-1.1,text,,,,,,,,Instruct post-training used 16k sequences; base 131k.
+luciole-23b-thinking,Luciole 23B Thinking 1.1,OpenLLM-France/Luciole-23B-Thinking-1.1,luciole-1.1,text,,,,,,unknown,,"Reasoning variant of Luciole 23B Instruct 1.1 (SFT and DPO with thinking traces), 16k training sequences. The AI Act summary is titled for the Instruct models; whether it covers this model could not be checked."
 luciole-8b,Luciole 8B Instruct 1.1,OpenLLM-France/Luciole-8B-Instruct-1.1,luciole-1.1,text,,,,,,,,Hybrid Mamba/attention (nemotron_h).
 lucie-7b,Lucie 7B Instruct 1.1,OpenLLM-France/Lucie-7B-Instruct-v1.1,lucie-1.1,text,,,,,,,,
 eurollm-22b,EuroLLM 22B Instruct 2512,utter-project/EuroLLM-22B-Instruct-2512,eurollm-2512,text,,,,,eu,,,

@@ -1933,7 +1933,7 @@
    "tier": "A",
    "id": "luciole-23b",
    "name": "Luciole 23B Instruct 1.1",
-   "family": "Luciole 1.1 Instruct",
+   "family": "Luciole 1.1",
    "provider": "OpenLLM-France / LINAGORA",
    "provider_country": "FR",
    "region": "eu",
@@ -2307,9 +2307,359 @@
   },
   {
    "tier": "A",
+   "id": "luciole-23b-thinking",
+   "name": "Luciole 23B Thinking 1.1",
+   "family": "Luciole 1.1",
+   "provider": "OpenLLM-France / LINAGORA",
+   "provider_country": "FR",
+   "region": "eu",
+   "control": "independent",
+   "majority_owner": "",
+   "origin": "scratch",
+   "base_model": "",
+   "license_class": "osi",
+   "license": "apache-2.0",
+   "data": "open",
+   "compute": "eu",
+   "ai_act_summary": "unknown",
+   "cop_signatory": "yes",
+   "modalities": "text",
+   "params_b": "23.2",
+   "context": "131072",
+   "model_type": "nemotron",
+   "size_4bit_gb": "13.0",
+   "size_8bit_gb": "24.6",
+   "mlx_vlm": "not checked",
+   "mlx_vlm_detail": "",
+   "mlx_vlm_checked": "",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-16 v0.7.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
+   "mlx_build_verified": "",
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "160.0",
+   "cache_gib_8k": "1.2",
+   "cache_gib_32k": "5.0",
+   "cache_gib_128k": "20.0",
+   "teacher_origin": "foreign",
+   "teachers_list": "Qwen3-8B (pretraining, foreign); Qwen3-32B (pretraining, foreign); QwQ-32B (via OpenThoughts3) (pretraining, foreign); Mixtral-8x7B (via OpenMathInstruct-1) (pretraining, european); Qwen3-32B and Qwen3-0.6B (posttraining, foreign); Qwen3-14B (posttraining, foreign); Ministral-3-14B-Instruct (posttraining, european); Luciole-8B-Instruct (interim checkpoint) (posttraining, own); Qwen and DeepSeek models (via third-party SFT sets) (posttraining, foreign)",
+   "recipe": "full",
+   "terms_can_change": "no",
+   "languages": "en;fr;de;es;it;pt;nl;ar",
+   "eu_languages": 7,
+   "languages_basis": "trained",
+   "training_hardware": "nvidia",
+   "flags": "",
+   "hbd_involvement": "",
+   "notes": "Reasoning variant of Luciole 23B Instruct 1.1 (SFT and DPO with thinking traces), 16k training sequences. The AI Act summary is titled for the Instruct models; whether it covers this model could not be checked.",
+   "hf_repo": "OpenLLM-France/Luciole-23B-Thinking-1.1",
+   "hf_created": "2026-09-09",
+   "last_reviewed": "2026-10-10",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
+   "sources": [
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": "model card: GENCI / IDRIS Jean Zay"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": "model card: GENCI / IDRIS Jean Zay"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125007/https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "note": "training data published"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008124637/https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1",
+     "note": ""
+    },
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "LINAGORA listed (2026-10-07)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-8B",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125007/https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "note": "Using Qwen 3 8B, we synthetically augmented documents from FineWeb 2"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-32B",
+     "url": "https://github.com/OpenLLM-France/Luciole-Training/blob/main/data/processing/pretraining/nemotron_posttraining_translation.py",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008161045/https://github.com/OpenLLM-France/Luciole-Training/blob/main/data/processing/pretraining/nemotron_posttraining_translation.py",
+     "note": "--model_name default Qwen/Qwen3-32B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:QwQ-32B (via OpenThoughts3)",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125007/https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "note": "with reasoning traces annotated from QwQ-32B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Mixtral-8x7B (via OpenMathInstruct-1)",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125007/https://huggingface.co/datasets/OpenLLM-France/Luciole-Training-Dataset",
+     "note": "generated using permissively licensed Mixtral-8x7B model"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-32B and Qwen3-0.6B",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008162311/https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "note": "all pairs were generated with Qwen3-32B and Qwen3-0.6B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-14B",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008162311/https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "note": "Safety data were generated with a mixture of Qwen3-14B, Ministral-3-14B-Instruct, and an interim checkpoint of Luciole-8B-Instruct"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Ministral-3-14B-Instruct",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008162311/https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "note": "Safety data were generated with a mixture of Qwen3-14B, Ministral-3-14B-Instruct, and an interim checkpoint"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Luciole-8B-Instruct (interim checkpoint)",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008162311/https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "note": "an interim checkpoint of Luciole-8B-Instruct"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen and DeepSeek models (via third-party SFT sets)",
+     "url": "https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008162311/https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1",
+     "note": "most of the data was generated with open source models from Qwen and DeepSeek"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Base",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008162010/https://huggingface.co/OpenLLM-France/Luciole-23B-Base",
+     "note": "code, data and intermediate checkpoints under revision tags"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Base",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008162010/https://huggingface.co/OpenLLM-France/Luciole-23B-Base",
+     "note": "training mix shares: en 41.9%, fr 30.4%, de 3.8%, es 3.5%, it 1.9%, pt 1.3%, nl 1.0%, ar 0.5%"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Base",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008162010/https://huggingface.co/OpenLLM-France/Luciole-23B-Base",
+     "note": "256-512 H100 on Jean Zay"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://dl.labs.linagora.com/files/models/OpenLLM-France/AI_Act_summaries/Luciole_Instruct_1.1_Training_Content_Summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261010185043/https://dl.labs.linagora.com/files/models/OpenLLM-France/AI_Act_summaries/Luciole_Instruct_1.1_Training_Content_Summary.pdf",
+     "note": "This Summary covers the following models, whose training content is identical, in accordance with point 30 of the Commission Explanatory Notice"
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 163840,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "teachers": [
+    {
+     "family_id": "luciole-1.1",
+     "stage": "pretraining",
+     "model": "Qwen3-8B",
+     "model_origin": "foreign",
+     "purpose": "rephrasing FineWeb 2 documents and Q/A pairs for Wikipedia"
+    },
+    {
+     "family_id": "luciole-1.1",
+     "stage": "pretraining",
+     "model": "Qwen3-32B",
+     "model_origin": "foreign",
+     "purpose": "translating Nemotron thinking traces into French (default model of the script)"
+    },
+    {
+     "family_id": "luciole-1.1",
+     "stage": "pretraining",
+     "model": "QwQ-32B (via OpenThoughts3)",
+     "model_origin": "foreign",
+     "purpose": "third-party reasoning traces"
+    },
+    {
+     "family_id": "luciole-1.1",
+     "stage": "pretraining",
+     "model": "Mixtral-8x7B (via OpenMathInstruct-1)",
+     "model_origin": "european",
+     "purpose": "third-party synthetic math solutions"
+    },
+    {
+     "family_id": "luciole-1.1",
+     "stage": "posttraining",
+     "model": "Qwen3-32B and Qwen3-0.6B",
+     "model_origin": "foreign",
+     "purpose": "DPO pairs (32B chosen, 0.6B rejected)"
+    },
+    {
+     "family_id": "luciole-1.1",
+     "stage": "posttraining",
+     "model": "Qwen3-14B",
+     "model_origin": "foreign",
+     "purpose": "safety alignment data"
+    },
+    {
+     "family_id": "luciole-1.1",
+     "stage": "posttraining",
+     "model": "Ministral-3-14B-Instruct",
+     "model_origin": "european",
+     "purpose": "safety alignment data"
+    },
+    {
+     "family_id": "luciole-1.1",
+     "stage": "posttraining",
+     "model": "Luciole-8B-Instruct (interim checkpoint)",
+     "model_origin": "own",
+     "purpose": "safety alignment data"
+    },
+    {
+     "family_id": "luciole-1.1",
+     "stage": "posttraining",
+     "model": "Qwen and DeepSeek models (via third-party SFT sets)",
+     "model_origin": "foreign",
+     "purpose": "generators of most third-party SFT data"
+    }
+   ],
+   "max_context": 131072,
+   "last_changed": "2026-10-16",
+   "first_listed": "2026-10-16"
+  },
+  {
+   "tier": "A",
    "id": "luciole-8b",
    "name": "Luciole 8B Instruct 1.1",
-   "family": "Luciole 1.1 Instruct",
+   "family": "Luciole 1.1",
    "provider": "OpenLLM-France / LINAGORA",
    "provider_country": "FR",
    "region": "eu",
@@ -24367,6 +24717,22 @@
  ],
  "changes": [
   {
+   "date": "2026-10-16",
+   "model": "luciole-23b-thinking",
+   "field": "llama_cpp",
+   "old": "not checked",
+   "new": "supported",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-16",
+   "model": "luciole-23b-thinking",
+   "field": "model",
+   "old": "",
+   "new": "listed",
+   "reason": ""
+  },
+  {
    "date": "2026-10-13",
    "model": "qwen3.8-27b",
    "field": "template_check",
@@ -25145,22 +25511,6 @@
   {
    "date": "2026-10-10",
    "model": "phi-4-reasoning-vision-15b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "olmo-3.1-32b-instruct",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-10",
-   "model": "olmo-3-7b-instruct",
    "field": "model",
    "old": "",
    "new": "listed",
