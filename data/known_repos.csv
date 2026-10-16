@@ -2259,3 +2259,11 @@ tartuNLP/synest-fully-modular,tartunlp,2024-06-05,2026-10-12
 tartuNLP/synest-models,tartunlp,2024-03-21,2026-10-12
 tartuNLP/whisper-large-v2-et-children,tartunlp,2023-01-24,2026-10-12
 tartuNLP/xls-r-300m-et-children,tartunlp,2023-01-30,2026-10-12
+OpenLLM-France/Luciole-23B-Thinking-1.1,openllm-france,2026-09-09,2026-10-15
+OpenLLM-France/Luciole-23B-Thinking-1.1-GGUF,openllm-france,2026-09-09,2026-10-15
+OpenLLM-France/Luciole-8B-KD-Math-Base,openllm-france,2026-10-13,2026-10-15
+OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1,openllm-france,2026-09-28,2026-10-15
+mistralai/Timestral-123M,mistral-ai,2026-10-14,2026-10-15
+mistralai/Timestral-209M,mistral-ai,2026-10-14,2026-10-15
+mistralai/Timestral-28M,mistral-ai,2026-10-14,2026-10-15
+mistralai/Timestral-5M,mistral-ai,2026-10-14,2026-10-15
