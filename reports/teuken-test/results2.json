@@ -1,0 +1,250 @@
+{
+ "chatml + GGUF tokenizer (MÖVE)": [
+  {
+   "gold": "Eine Ratifikation",
+   "ans": "Für das Inkrafttreten eines völkerrechltichen Vertrages ist es in der Regel notwendig, dass er ratifiziert wird. Eine Ratifikation ist die völkerrechltichen Verpflichtung des Abschlusses einer internationalen Übereinkunft durch die Vertragsparteien, die durch die völkerrechltichen zuständigen Organe, die den Staat nach außen vertreten (in der Regel die Staatsoberhäupter, Regierungschefs oder Außen",
+   "contains": true,
+   "f1": 0.05128205128205127
+  },
+  {
+   "gold": "Kate Brown",
+   "ans": "Der Gouverneur von Oregon, John Kitzhaber (Demokratische Partei), hatte im November 2011 aus \"moralischen Gründen\" alle Hinrichtungen ausgesetzt. Somit sind die Exekutionen formal nicht aufgehoben, sondern auf unbestimmte Zeit verschoben. Damit gibt er seiner bisherigen Begnadigungspolitik eine offizielle Note, da bereits vor diesem Schritt viele Jahre lang niemand mehr hingerichtet worden war.",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Eliza Marian Butler",
+   "ans": "Eliza Marian Butler veröffentlichte \"The Tyranny of Greece over Germany\".",
+   "contains": true,
+   "f1": 0.4615384615384615
+  },
+  {
+   "gold": "historisch bedeutende Stätten der schwarzen amerikanischen Geschichte",
+   "ans": "Der Black Heritage Trail verbindet auf einer Länge von über 2,5km historisch bedeutende Stätten der schwarzen amerikaanischen Geschich",
+   "contains": false,
+   "f1": 0.36363636363636365
+  },
+  {
+   "gold": "2012",
+   "ans": "2012.",
+   "contains": true,
+   "f1": 1.0
+  },
+  {
+   "gold": "als vergöttlichtes Gewitter ",
+   "ans": "Juppiter wurde den Römern als vergöttertes Gewitter gezeigt.",
+   "contains": false,
+   "f1": 0.4
+  },
+  {
+   "gold": "in Nordrhein-Westfalen und Niedersachsen",
+   "ans": "Niederlandesche Sprache wird in Deutschland fast ausschließlich an Schulen in Nordrhien-Westfalen und Nidersachsen unterrichtet. Wegen der räumlichen Distanz zum Sprachgebiet wird es im übrigen Bundesgebiet selten angeboten (einzelne Schulen in Bremen und Berlin). Als Lehrfach hat es sich an Schulen im Laufe der 1960er Jahre etabliert. In Nordrhien-Westfalen und Nidersachsen wird Niederländisch im Schuljahr 2018/20",
+   "contains": false,
+   "f1": 0.07017543859649122
+  },
+  {
+   "gold": "im Süden",
+   "ans": "Der dichte tropische Regenwald im Süden ist eine der letzzten Zufluchtsstätten für Flachlandgorillas und Walelefanen. Daher ist die Antwort im Süden.",
+   "contains": true,
+   "f1": 0.21052631578947367
+  },
+  {
+   "gold": "am Berliner Alexanderplatz",
+   "ans": "Das Haus des Lehrers befindet sich in Berlin.",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Syrien, Libanon, Palästina, Mesopotamien",
+   "ans": "Der fruchtbare Halbmond ist ein Begriff, der eine Region im Nahen Osten bezeichnet, die sich vom heutigen Syrien über Libanon, Palästina und Mesopotamien erstreckt. Diese Region war während der späten Eiszeit, zwischen 12000 und 9500 v. Chr., von einer offenen Waldlandschaft mit Eicheln, Pistazien und Mandelbäumen geprägt. Die Menschen, die in dieser Region lebten, sammelten",
+   "contains": false,
+   "f1": 0.1568627450980392
+  }
+ ],
+ "official + GGUF tokenizer": [
+  {
+   "gold": "Eine Ratifikation",
+   "ans": "Eine Zusage der innerstaatlich zuständigen Orkane ist nicht notwendig. Eine Zusage ist die völkerrechtlich verbindliche Erklärung des Abschlusses einer internaionalen Übereinkunft durch die Vertragsparteien, wobei dies durch die völkerrechtlich zuständigen Orkane, die den Staat nach außen vertreten (dies sind regelmäßig die Staatsoberhäupter, Regierungschefs",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Kate Brown",
+   "ans": "Keine Antwort.",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Eliza Marian Butler",
+   "ans": "Eliza Marian Butler veröffentlichte \"The Tyranny of Greece over Germany\" im Jahr 1934.",
+   "contains": true,
+   "f1": 0.375
+  },
+  {
+   "gold": "historisch bedeutende Stätten der schwarzen amerikanischen Geschichte",
+   "ans": "Der Black Heritage Trail verbindet auf einer Länge von über 2,5 km historisch bedeutende Stätten der schwarzen amerikaanischen Geschichte. Die Tour beginnt an der Faneuil Hall und führt an mehr als 15 Orten durch Beacon Hill.",
+   "contains": false,
+   "f1": 0.2631578947368421
+  },
+  {
+   "gold": "2012",
+   "ans": "2012.",
+   "contains": true,
+   "f1": 1.0
+  },
+  {
+   "gold": "als vergöttlichtes Gewitter ",
+   "ans": "Jupiter wurde den Römern als vergöttlichtes Gewitter gezeigt.",
+   "contains": true,
+   "f1": 0.6
+  },
+  {
+   "gold": "in Nordrhein-Westfalen und Niedersachsen",
+   "ans": "In Nordhrein-Westfalen und Nidersachsen.",
+   "contains": false,
+   "f1": 0.5
+  },
+  {
+   "gold": "im Süden",
+   "ans": "Der dichte tropische Regenwald im Süden ist eine der letz",
+   "contains": true,
+   "f1": 0.4444444444444445
+  },
+  {
+   "gold": "am Berliner Alexanderplatz",
+   "ans": "Das Haus des Lehrers ist in Frankfurt am Main.",
+   "contains": false,
+   "f1": 0.2
+  },
+  {
+   "gold": "Syrien, Libanon, Palästina, Mesopotamien",
+   "ans": "Der fruchtbare Halbmond ist ein Begriff, der eine Region im Nahen Osten bezeichnet, die sich auf dem Gebiet des heutigen Syrien, Libanon, Palästina und Mesopotamien befindet. Diese Region war bekannt für ihre fruchtbaren Böden und eine vielfältige Pflanzen- und Tierwelt, die es den Menschen ermöglichte, sich auf die Landwirtschaft und die Viehzucht zu konzentrieren. Die Menschen in dieser Region begannen, Getreide wie Weizen und Gerste an",
+   "contains": false,
+   "f1": 0.14035087719298245
+  }
+ ],
+ "chatml + original tokenizer": [
+  {
+   "gold": "Eine Ratifikation",
+   "ans": "Für das Inkrafttreten eines völkerrechtlichen Vertrages ist es erforderlich, dass er von allen Verhandlungsstaaten ratifiziert wurde.",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Kate Brown",
+   "ans": "Der Gouverneur von Oklahoma ist seit dem 11. Februar 2019 Kevin Stitt.",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Eliza Marian Butler",
+   "ans": "Eliza Marian Butler veröffentlichte \"The Tyranny of Greece over Germany\" im Jahr 1934.",
+   "contains": true,
+   "f1": 0.375
+  },
+  {
+   "gold": "historisch bedeutende Stätten der schwarzen amerikanischen Geschichte",
+   "ans": "Der Black Heritage Trail in Boston umfasst mehr als 15 historisch bedeutende Orte, die die schwarze amerikanische Geschichte dokumentieren. Die Tour beginnt am Faneuil Hall und führt durch Beacon Hill. Einige der bemerkenswerten Orte auf dem Trail sind das African American National Historic Site, das mehrere Gebäude umfasst, die die Beiträge der Afroamerikaner zur Geschichte von Boston zeigen. Andere Orte auf dem Trail sind das Museum of African American History, die Abiel Smith School und das Robert",
+   "contains": false,
+   "f1": 0.08823529411764706
+  },
+  {
+   "gold": "2012",
+   "ans": "2012",
+   "contains": true,
+   "f1": 1.0
+  },
+  {
+   "gold": "als vergöttlichtes Gewitter ",
+   "ans": "Jupiter zeigte sich den Römern als ein mächtiger Gott, der in Gewitter und als Beschützer des Volkes und des Reiches in Krieg und Frieden wirkte. Er war in der Umgebung real existent und konnte als \"vergöttlichtes Naturphänomen\" gedacht werden.",
+   "contains": false,
+   "f1": 0.16666666666666669
+  },
+  {
+   "gold": "in Nordrhein-Westfalen und Niedersachsen",
+   "ans": "Niederländische Sprache wird in Deutschland fast ausschließlich an Schulen in Nordrhein-Westfalen und Niedersachsen unterrichtet.",
+   "contains": true,
+   "f1": 0.4444444444444445
+  },
+  {
+   "gold": "im Süden",
+   "ans": "Der dichte tropische Regenwald im Süden der Zentralafrikanischen Republik ist eine der letzten Zufluchtsstätten für Flachlandgorillas und Waldelefanten.",
+   "contains": true,
+   "f1": 0.25
+  },
+  {
+   "gold": "am Berliner Alexanderplatz",
+   "ans": "Das Haus des Lehrers befindet sich in Berlin und ist mit 7 Metern Höhe und 125 Metern Länge das größte Mosaikbild Europas.",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Syrien, Libanon, Palästina, Mesopotamien",
+   "ans": "Der fruchtbare Halbmond ist ein Begriff, der eine Region im Nahen Osten bezeichnet, die die heutigen Länder Syrien, Libanon, Palästina und Mesopotamien umfasst. Diese Region war bekannt für ihre fruchtbaren Böden und eine vielfältige Pflanzen- und Tierwelt, die es den Menschen ermöglichte, sesshaft zu werden und Ackerbau und Viehzucht zu betreiben.",
+   "contains": false,
+   "f1": 0.17391304347826084
+  }
+ ],
+ "official + original tokenizer": [
+  {
+   "gold": "Eine Ratifikation",
+   "ans": "Für das Inkrafttreten eines völkerrechtlichen Vertrages ist es notwendig, dass er ratifiziert wird. Die Ratifikation ist die völkerrechtlich verbindliche Erklärung des Abschlusses einer internationalen Übereinkunft durch die Vertragsparteien, wobei dies durch die völkerrechtlich zuständigen Organe, die den Staat nach außen vertreten (dies sind regelmäßig die Staatsoberhäupter, Regierungschefs oder Außenminister), oder dazu völkerrechtlich bevollmächtigte Personen geschieht.",
+   "contains": true,
+   "f1": 0.042553191489361694
+  },
+  {
+   "gold": "Kate Brown",
+   "ans": "Gouverneur von Oklahoma ist seit dem 19. Februar 2015 Mary Fallin (Republikanische Partei).",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Eliza Marian Butler",
+   "ans": "Eliza Marian Butler veröffentlichte \"The Tyranny of Greece over Germany\" im Jahr 1934.",
+   "contains": true,
+   "f1": 0.375
+  },
+  {
+   "gold": "historisch bedeutende Stätten der schwarzen amerikanischen Geschichte",
+   "ans": "Der Black Heritage Trail in Boston umfasst über 15 historisch bedeutende Orte, die wichtige Stationen des Abolitionismus und der Underground Railroad dokumentieren. Die Tour beginnt an der Faneuil Hall und führt durch Beacon Hill.",
+   "contains": false,
+   "f1": 0.11764705882352941
+  },
+  {
+   "gold": "2012",
+   "ans": "2012.",
+   "contains": true,
+   "f1": 1.0
+  },
+  {
+   "gold": "als vergöttlichtes Gewitter ",
+   "ans": "Jupiter zeigte sich den Römern als vergöttlichtes Gewitter.",
+   "contains": true,
+   "f1": 0.6
+  },
+  {
+   "gold": "in Nordrhein-Westfalen und Niedersachsen",
+   "ans": "Niederländisch als Fremdsprache wird in Deutschland fast ausschließlich an Schulen in Nordrhein-Westfalen und Niedersachsen unterrichtet.",
+   "contains": true,
+   "f1": 0.4210526315789474
+  },
+  {
+   "gold": "im Süden",
+   "ans": "Dzanga-Sangha.",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "am Berliner Alexanderplatz",
+   "ans": "Das Haus des Lehrers befindet sich in Berlin.",
+   "contains": false,
+   "f1": 0.0
+  },
+  {
+   "gold": "Syrien, Libanon, Palästina, Mesopotamien",
+   "ans": "Der fruchtbare Halbmond ist ein Begriff, der eine Region im Nahen Osten bezeichnet, die aufgrund ihrer reichen natürlichen Ressourcen und günstigen klimatischen Bedingungen für frühe Menschen besonders attraktiv war. Der Begriff bezieht sich auf das Gebiet des so bezeichneten \"fruchtbaren Halbmonds\", der die heutigen Länder Syrien, Libanon, Palästina und Mesopotamien umfasst. In dieser Region fanden die umherstreifenden Menschengruppen am Ende der Eiszeit - in der Kultur des Natufi",
+   "contains": false,
+   "f1": 0.14035087719298245
+  }
+ ]
+}
