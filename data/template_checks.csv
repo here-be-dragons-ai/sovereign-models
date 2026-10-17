@@ -963,3 +963,5 @@ k2-horizon-375b,Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF,gguf,K2-Horizon-3
 k2-horizon-32b,IFM/K2-Horizon-32B,original,chat_template.jinja,reference,,long string literal,cebc8225c0c92a43,2026-10-17
 k2-horizon-32b,bartowski/K2-Horizon-32B-GGUF,gguf,K2-Horizon-32B-IQ2_XXS.gguf,equivalent,diff: data/template_diffs/bartowski__K2-Horizon-32B-GGUF.diff,long string literal,09c88618b9362d55,2026-10-17
 k2-horizon-32b,kingjones777/K2-Horizon-32B-ROCmFP4-GGUF,gguf,K2-Horizon-32B-Q4_0_ROCMFP4_FAST.gguf,equivalent,reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/kingjones777__K2-Horizon-32B-ROCmFP4-GGUF.diff,content condition;long string literal,75f2dce09789555d,2026-10-17
+velvet-14b,AlmawaveLabs/Velvet-14B,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-17
+fastwebmiia-7b,Fastweb/FastwebMIIA-7B,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-17

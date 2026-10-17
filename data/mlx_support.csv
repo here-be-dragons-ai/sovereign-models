@@ -17,6 +17,7 @@ eurollm-9b,loads,llama,,2026-10-16,0.7.8
 exaone-4.5-33b,unsupported,exaone4_5,model type not in mlx-vlm,2026-10-16,0.7.8
 falcon-h1-34b,loads,falcon_h1,,2026-10-16,0.7.8
 falcon-h1r-7b,loads,falcon_h1,,2026-10-16,0.7.8
+fastwebmiia-7b,not checked,,config.json: HTTP 403 (gated?),2026-10-17,0.7.8
 gams3-12b-instruct,loads,gemma3_text,,2026-10-16,0.7.8
 gemma-4-26b-a4b,loads,gemma4,,2026-10-16,0.7.8
 gemma-4-31b,loads,gemma4,,2026-10-16,0.7.8
@@ -81,5 +82,6 @@ sui-1-24b,loads,mistral3,,2026-10-16,0.7.8
 teuken-7b-instruct-0.6,loads,llama,,2026-10-16,0.7.8
 tildeopen-30b,loads,llama,,2026-10-16,0.7.8
 tiny-aya-global,not checked,,config.json: HTTP 403 (gated?),2026-10-16,0.7.8
+velvet-14b,not checked,,config.json: HTTP 403 (gated?),2026-10-17,0.7.8
 viking-33b,loads,llama,,2026-10-16,0.7.8
 xlstm-7b,unsupported,xlstm,model type not in mlx-vlm,2026-10-16,0.7.8

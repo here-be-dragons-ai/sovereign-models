@@ -184,3 +184,4 @@ amalia-0626,posttraining,Qwen3-0.6B,foreign,rejected responses for DPO pairs
 amalia-0626,judge,ArmoRM,foreign,reward scoring of 32 sampled SFT responses to pick DPO chosen/rejected
 amalia-0626,judge,Qwen3Guard,foreign,classifying EuroBlocks prompts to select safety samples
 amalia-0626,judge,Deita Quality Scorer,foreign,filtering synthetic SFT entries below score 5
+fastwebmiia,posttraining,Phi 3.5 (Microsoft),foreign,"synthetic examples for fine-tuning, under 1% of the training data"

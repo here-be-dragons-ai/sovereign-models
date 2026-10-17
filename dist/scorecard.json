@@ -355,8 +355,8 @@
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-70B",
    "hf_created": "2026-07-24",
-   "last_reviewed": "2026-10-16",
-   "provider_notes": "Switzerland is not in the EU.",
+   "last_reviewed": "2026-10-17",
+   "provider_notes": "Switzerland is not in the EU. Publishes a Code of Practice document (transparency and copyright) voluntarily; not a signatory of the GPAI Code of Practice.",
    "family_notes": "",
    "repo_verified_org": false,
    "sources": [
@@ -469,6 +469,16 @@
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "Apertus 1.5 report §7.1: 'We publish the Code of Practice voluntarily, and neither document asserts that any obligation is satisfied'"
     },
     {
      "scope": "family",
@@ -946,8 +956,8 @@
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-8B",
    "hf_created": "2026-07-24",
-   "last_reviewed": "2026-10-16",
-   "provider_notes": "Switzerland is not in the EU.",
+   "last_reviewed": "2026-10-17",
+   "provider_notes": "Switzerland is not in the EU. Publishes a Code of Practice document (transparency and copyright) voluntarily; not a signatory of the GPAI Code of Practice.",
    "family_notes": "",
    "repo_verified_org": false,
    "sources": [
@@ -1060,6 +1070,16 @@
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
      "note": "not listed (2026-10-07)"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "Apertus 1.5 report §7.1: 'We publish the Code of Practice voluntarily, and neither document asserts that any obligation is satisfied'"
     },
     {
      "scope": "family",
@@ -4461,6 +4481,217 @@
    "first_listed": ""
   },
   {
+   "tier": "A",
+   "id": "velvet-14b",
+   "name": "Velvet 14B",
+   "family": "Velvet",
+   "provider": "Almawave",
+   "provider_country": "IT",
+   "region": "eu",
+   "control": "independent",
+   "majority_owner": "",
+   "origin": "scratch",
+   "base_model": "",
+   "license_class": "osi",
+   "license": "apache-2.0",
+   "data": "undisclosed",
+   "compute": "eu",
+   "ai_act_summary": "no",
+   "cop_signatory": "yes",
+   "modalities": "text",
+   "params_b": "14.1",
+   "context": "",
+   "model_type": "mistral",
+   "size_4bit_gb": "7.9",
+   "size_8bit_gb": "15.0",
+   "mlx_vlm": "not checked",
+   "mlx_vlm_detail": "config.json: HTTP 403 (gated?)",
+   "mlx_vlm_checked": "2026-10-17 0.7.8",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-17 v0.7.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
+   "mlx_build_verified": "",
+   "cache_kind": "",
+   "cache_kib_per_token": "",
+   "cache_gib_8k": "",
+   "cache_gib_32k": "",
+   "cache_gib_128k": "",
+   "teacher_origin": "unknown",
+   "teachers_list": "",
+   "recipe": "weights",
+   "terms_can_change": "no",
+   "languages": "de;en;es;fr;it;pt",
+   "eu_languages": 6,
+   "languages_basis": "supported",
+   "training_hardware": "nvidia",
+   "flags": "",
+   "hbd_involvement": "",
+   "notes": "Dense 14B, 128K context (trained on 4-16k sequences). Gated with automatic approval (privacy notice only). The model card adds usage restrictions (sensitive healthcare, financial or government data only with safeguards); the licence itself is plain Apache-2.0.",
+   "hf_repo": "AlmawaveLabs/Velvet-14B",
+   "hf_created": "2025-01-31",
+   "last_reviewed": "2026-10-17",
+   "provider_notes": "Listed on Euronext Growth Milan (AIW); member of the Almaviva Group (Italy).",
+   "family_notes": "Trained from scratch on Leonardo (CINECA, Bologna): over 4T tokens in six languages, about 23% Italian, plus 400B code tokens; pretraining data described only as publicly available sources. The newer Velvet 25B (2025-10, all 24 EU languages) is not released as open weights.",
+   "repo_verified_org": true,
+   "sources": [
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "Almawave listed (list last updated 2026-10-07)"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20250812000955/https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "note": "'Almawave, an Italian enterprise listed on the Euronext Growth Milan (Ticker: AIW) and a member of the Almaviva Group'"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "'Velvet is an Italian family of large language models, developed from scratch'"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "license: apache-2.0; 'Velvet-14B and Velvet-2B are made available under the Apache 2.0 license'"
+    },
+    {
+     "scope": "family",
+     "field": "terms_can_change",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "plain Apache-2.0; the card's usage restrictions are not licence terms"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "'pretrained on over 4 trillion tokens of data from publicly available sources'; web text and code, no datasets named"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "'trained on the HPC Leonardo infrastructure hosted by CINECA'"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20250812000955/https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "note": "'trained on the Leonardo supercomputer managed by Cineca'"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://leonardo-supercomputer.cineca.eu/hpc-system/",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140530/https://leonardo-supercomputer.cineca.eu/hpc-system/",
+     "note": "Leonardo Booster: nodes with four NVIDIA A100 64GB GPUs; the card names Leonardo as the training system"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "'Velvet-14B has been trained on Italian, English, German, Spanish, French, Portuguese' (Supported Languages)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher_status",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "SFT on 'internally collected synthetic data' and over 2M human-annotated and synthetic examples; generating models not named"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "weights only; no training code, data or intermediate checkpoints"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "not stated (no AI Act training summary in the card, the repo or the release announcement)"
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": null,
+   "teachers": [],
+   "max_context": null,
+   "last_changed": "2026-10-17",
+   "first_listed": "2026-10-17"
+  },
+  {
    "tier": "B",
    "id": "amalia-9b-0626",
    "name": "AMALIA 9B 0626 DPO",
@@ -4494,7 +4725,7 @@
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "layerx-labs/AMALIA-9B-0626-DPO-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "organisation",
    "gguf_builds": 4,
    "template_check": "differs",
    "template_check_detail": "4 differs",
@@ -4761,10 +4992,21 @@
      "downloads": "5793",
      "likes": "1",
      "created": "2026-07-02",
-     "publisher": "unknown",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/layerx-labs__AMALIA-9B-0626-DPO-GGUF.diff"
+    },
+    {
+     "id": "amalia-9b-0626",
+     "repo": "teex-pt/AMALIA-9B-0626-DPO-GGUF",
+     "downloads": "49",
+     "likes": "0",
+     "created": "2026-07-03",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/teex-pt__AMALIA-9B-0626-DPO-GGUF.diff"
     },
     {
      "id": "amalia-9b-0626",
@@ -4772,7 +5014,7 @@
      "downloads": "417",
      "likes": "7",
      "created": "2026-07-01",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/duarteocarmo__AMALIA-9B-0626-DPO-GGUF.diff"
@@ -4783,21 +5025,10 @@
      "downloads": "116",
      "likes": "4",
      "created": "2026-07-01",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/csoares31__AMALIA-9B-0626-DPO-GGUF.diff"
-    },
-    {
-     "id": "amalia-9b-0626",
-     "repo": "teex-pt/AMALIA-9B-0626-DPO-GGUF",
-     "downloads": "49",
-     "likes": "0",
-     "created": "2026-07-03",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/teex-pt__AMALIA-9B-0626-DPO-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -8134,7 +8365,7 @@
      "downloads": "41",
      "likes": "0",
      "created": "2026-05-22",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
@@ -8145,7 +8376,7 @@
      "downloads": "24",
      "likes": "0",
      "created": "2026-05-21",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
@@ -8678,7 +8909,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Public research institute at Sofia University, founded in April 2022 in partnership with ETH Zurich and EPFL. BgGPT 3 thanks Google for GCP credits and donations. Also publishes MamayLM (Ukrainian, Gemma 3 based).",
    "family_notes": "Continued pre-training of Gemma 3 on curated Bulgarian CommonCrawl (cutoff May 2025, ~23M docs, <40B tokens, rehydrated), SFT, then SLERP merge with Gemma 3 base and IT models. Vision tower appended unchanged (no multimodal training). Trained with Google GCP credits; region and accelerators not stated. Gemma Terms of Use.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -8840,7 +9071,7 @@
      "likes": "7",
      "created": "2026-03-25",
      "publisher": "official",
-     "verified_org": false,
+     "verified_org": true,
      "template_check": "identical",
      "template_reason": ""
     },
@@ -8850,7 +9081,7 @@
      "downloads": "191",
      "likes": "2",
      "created": "2026-03-29",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -8861,7 +9092,7 @@
      "downloads": "186",
      "likes": "2",
      "created": "2026-03-28",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -9430,7 +9661,7 @@
      "downloads": "31",
      "likes": "0",
      "created": "2026-03-02",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
@@ -9441,7 +9672,7 @@
      "downloads": "28",
      "likes": "0",
      "created": "2026-03-02",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
@@ -9452,7 +9683,7 @@
      "downloads": "15",
      "likes": "0",
      "created": "2026-03-01",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
@@ -9730,10 +9961,10 @@
     },
     {
      "id": "gervasio-70b-ptpt",
-     "repo": "mradermacher/gervasio-70b-portuguese-ptpt-decoder-GGUF",
-     "downloads": "226",
+     "repo": "tjusto2409/gervasio-70b-portuguese-ptpt-decoder-i1-GGUF",
+     "downloads": "693",
      "likes": "0",
-     "created": "2025-11-02",
+     "created": "2026-08-23",
      "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
@@ -9741,11 +9972,11 @@
     },
     {
      "id": "gervasio-70b-ptpt",
-     "repo": "tjusto2409/gervasio-70b-portuguese-ptpt-decoder-i1-GGUF",
-     "downloads": "693",
+     "repo": "mradermacher/gervasio-70b-portuguese-ptpt-decoder-GGUF",
+     "downloads": "226",
      "likes": "0",
-     "created": "2026-08-23",
-     "publisher": "unknown",
+     "created": "2025-11-02",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -9988,8 +10219,8 @@
    "llama_cpp": "supported",
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
-   "gguf_build": "mradermacher/Latxa-Llama-3.1-70B-Instruct-v2-i1-GGUF",
-   "gguf_build_publisher": "individual",
+   "gguf_build": "itzune/Latxa-Llama-3.1-70B-Instruct-v2-GGUF",
+   "gguf_build_publisher": "organisation",
    "gguf_builds": 3,
    "template_check": "identical",
    "template_check_detail": "3 identical",
@@ -10162,6 +10393,17 @@
    "gguf_list": [
     {
      "id": "latxa-3.1-70b-v2",
+     "repo": "itzune/Latxa-Llama-3.1-70B-Instruct-v2-GGUF",
+     "downloads": "57",
+     "likes": "0",
+     "created": "2026-06-23",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "latxa-3.1-70b-v2",
      "repo": "mradermacher/Latxa-Llama-3.1-70B-Instruct-v2-i1-GGUF",
      "downloads": "1145",
      "likes": "0",
@@ -10178,17 +10420,6 @@
      "likes": "0",
      "created": "2026-06-15",
      "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "latxa-3.1-70b-v2",
-     "repo": "itzune/Latxa-Llama-3.1-70B-Instruct-v2-GGUF",
-     "downloads": "57",
-     "likes": "0",
-     "created": "2026-06-23",
-     "publisher": "unknown",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -10239,7 +10470,7 @@
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "Dr-sdr/Llama-3.1-EstLLM-70B-Instruct-0826-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "individual",
    "gguf_builds": 1,
    "template_check": "identical",
    "template_check_detail": "1 identical",
@@ -10446,7 +10677,7 @@
      "downloads": "193",
      "likes": "0",
      "created": "2026-10-07",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -10497,7 +10728,7 @@
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "jgchaparro/Llama-Artemis-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "individual",
    "gguf_builds": 1,
    "template_check": "identical",
    "template_check_detail": "1 identical",
@@ -10724,7 +10955,7 @@
      "downloads": "97",
      "likes": "0",
      "created": "2026-10-09",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -12075,6 +12306,255 @@
   },
   {
    "tier": "excluded",
+   "id": "fastwebmiia-7b",
+   "name": "FastwebMIIA 7B",
+   "family": "FastwebMIIA",
+   "provider": "Fastweb (Fastweb + Vodafone)",
+   "provider_country": "IT",
+   "region": "eu",
+   "control": "acquired-non-eu",
+   "majority_owner": "Swisscom (CH)",
+   "origin": "scratch",
+   "base_model": "",
+   "license_class": "nc",
+   "license": "fastweb",
+   "data": "documented",
+   "compute": "eu",
+   "ai_act_summary": "yes",
+   "cop_signatory": "yes",
+   "modalities": "text",
+   "params_b": "7.4",
+   "context": "",
+   "model_type": "mistral",
+   "size_4bit_gb": "4.2",
+   "size_8bit_gb": "7.9",
+   "mlx_vlm": "not checked",
+   "mlx_vlm_detail": "config.json: HTTP 403 (gated?)",
+   "mlx_vlm_checked": "2026-10-17 0.7.8",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-17 v0.7.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
+   "mlx_build_verified": "",
+   "cache_kind": "",
+   "cache_kib_per_token": "",
+   "cache_gib_8k": "",
+   "cache_gib_32k": "",
+   "cache_gib_128k": "",
+   "teacher_origin": "foreign",
+   "teachers_list": "Phi 3.5 (Microsoft) (posttraining, foreign)",
+   "recipe": "weights",
+   "terms_can_change": "yes",
+   "languages": "en;it",
+   "eu_languages": 2,
+   "languages_basis": "supported",
+   "training_hardware": "nvidia",
+   "flags": "acquired non-EU",
+   "hbd_involvement": "",
+   "notes": "Non-commercial licence; commercial use needs a separate paid licence. The licence also forbids using the model to develop or train other LLMs. Gated. 16K context. The AI Act summary lists FastwebMIIA-7B (2025-05-29) and FastwebMIIA-7B-2603 (2026-03-23, function calling and contextual QA).",
+   "hf_repo": "Fastweb/FastwebMIIA-7B",
+   "hf_created": "2025-05-30",
+   "last_reviewed": "2026-10-17",
+   "provider_notes": "Single-shareholder company under the direction and coordination of Swisscom AG (Switzerland).",
+   "family_notes": "Trained from scratch in Italy with an in-house tokenizer on about 3T tokens; the AI Act summary gives the mix (Common Crawl about 85%, RedPajama-v2, FineWeb-Edu, Wikipedia about 1%, licensed Italian editorial and statistical content).",
+   "repo_verified_org": false,
+   "sources": [
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "Fastweb listed (list last updated 2026-10-07)"
+    },
+    {
+     "scope": "provider",
+     "field": "control",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017141054/https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "note": "§1.1: 'Società a socio unico soggetta all'attività di direzione e coordinamento di Swisscom AG'"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140410/https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140410/https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "note": "custom tokenizer 'trained by Fastweb'; 'pretrained on approximately 1.5 * 2 * 10^12 textual tokens'"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017141054/https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "note": "§1.2: dense decoder-only Transformer with modules developed in-house such as the tokenizer"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140410/https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "note": "license: other (fastweb); Non-Commercial License, commercial use under a separate commercial licence"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/Non-Commercial-License.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140904/https://www.fastweb.it/grandi-aziende/artificial-intelligence/Non-Commercial-License.pdf",
+     "note": "Non-commercial licence; also prohibits using the model for the development or training of other LLMs"
+    },
+    {
+     "scope": "family",
+     "field": "terms_can_change",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/Non-Commercial-License.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140904/https://www.fastweb.it/grandi-aziende/artificial-intelligence/Non-Commercial-License.pdf",
+     "note": "§5.1 c): users must show the Acceptable Use Policy 'nella versione aggiornata disponibile al seguente link'"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017141054/https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "note": "§2.1: Common Crawl (about 85%), RedPajama-Data-v2, FineWeb Edu, Wikipedia (about 1%); §2.2: licensed Italian editorial, educational and statistical content; no own crawling"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017141014/https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/",
+     "note": "'addestrato in Italia con un corpus eterogeneo di fonti testuali di alta qualità'"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140410/https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "note": "'trained on a proprietary NVIDIA H100 GPU cluster'"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140410/https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "note": "'Languages Available: Trained in Italian and English'"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017141054/https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "note": "Sintesi dei contenuti usati per l'addestramento, art. 53 par. 1 lett. d) EU AI Act, v3 of 2026-07-30"
+    },
+    {
+     "scope": "family",
+     "field": "teacher_status",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017141054/https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "note": "§2.5: synthetic data generated with Phi 3.5 (Microsoft), under 1% of the training corpus"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Phi 3.5 (Microsoft)",
+     "url": "https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017141054/https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf",
+     "note": "§2.5: 'Phi 3.5 (Microsoft), rilasciato sotto licenza MIT'; under 1% of the training corpus"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Phi 3.5 (Microsoft)",
+     "url": "https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140410/https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "note": "'synthetic examples generated with models from the Phi family' (fine-tuning)"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140410/https://huggingface.co/Fastweb/FastwebMIIA-7B",
+     "note": "weights only; LLMFoundry named as tooling, no training code, data or checkpoints released"
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": null,
+   "teachers": [
+    {
+     "family_id": "fastwebmiia",
+     "stage": "posttraining",
+     "model": "Phi 3.5 (Microsoft)",
+     "model_origin": "foreign",
+     "purpose": "synthetic examples for fine-tuning, under 1% of the training data"
+    }
+   ],
+   "max_context": null,
+   "last_changed": "2026-10-17",
+   "first_listed": "2026-10-17"
+  },
+  {
+   "tier": "excluded",
    "id": "teuken-7b-instruct-0.6",
    "name": "Teuken 7B instruct v0.6",
    "family": "Teuken 7B v0.6",
@@ -12326,7 +12806,7 @@
      "downloads": "28",
      "likes": "0",
      "created": "2025-12-08",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -12418,7 +12898,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Privately held. Definitive business combination agreement with German Aleph Alpha signed 2026-09-16 (pending regulatory approval); Cohere is the acquiring party, combined company to operate as Cohere, dual HQ Toronto/Berlin. EU AI Act provider entity for Command A+ is Cohere Germany GmbH.",
    "family_notes": "Sparse MoE, 218B total / 25B active, text+image input. Cohere's first MoE model; the AI Act summary lists >10T text tokens and synthetic data from Command A and other internal models. Apache-2.0 on Hugging Face; Cohere's Usage Policy applies to Cohere-hosted deployments.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -12622,7 +13102,7 @@
      "downloads": "278",
      "likes": "6",
      "created": "2026-06-15",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -12633,7 +13113,7 @@
      "downloads": "103",
      "likes": "1",
      "created": "2026-06-15",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/SixVolts__command-a-plus-05-2026-GGUF.diff"
@@ -12730,7 +13210,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Founded 2023 by Liang Wenfeng out of his quant hedge fund High-Flyer; press reports Liang holds a large majority after a 2026 round in which Tencent was the largest outside investor. EU authorised representative: Prighter.",
    "family_notes": "Pre-trained on more than 32T tokens; AI Act public summary covers DeepSeek-V4 (Pro and Flash): Common Crawl, Stack Exchange, licensed data, own synthetic data, no user data. Tech report validates inference on NVIDIA GPUs and Huawei Ascend NPUs but does not name the pre-training hardware.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -12908,6 +13388,28 @@
     },
     {
      "id": "deepseek-v4-pro-0813",
+     "repo": "6block/DeepSeek-V4-Pro-0813-GGUF",
+     "downloads": "1136",
+     "likes": "2",
+     "created": "2026-08-16",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
+    },
+    {
+     "id": "deepseek-v4-pro-0813",
+     "repo": "qtum/DeepSeek-V4-Pro-0813-GGUF",
+     "downloads": "970",
+     "likes": "1",
+     "created": "2026-08-17",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
+    },
+    {
+     "id": "deepseek-v4-pro-0813",
      "repo": "DevQuasar/deepseek-ai.DeepSeek-V4-Pro-0813-GGUF",
      "downloads": "120",
      "likes": "2",
@@ -12919,33 +13421,11 @@
     },
     {
      "id": "deepseek-v4-pro-0813",
-     "repo": "6block/DeepSeek-V4-Pro-0813-GGUF",
-     "downloads": "1136",
-     "likes": "2",
-     "created": "2026-08-16",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "original has no template to compare"
-    },
-    {
-     "id": "deepseek-v4-pro-0813",
-     "repo": "qtum/DeepSeek-V4-Pro-0813-GGUF",
-     "downloads": "970",
-     "likes": "1",
-     "created": "2026-08-17",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "original has no template to compare"
-    },
-    {
-     "id": "deepseek-v4-pro-0813",
      "repo": "ryant0000/DeepSeek-V4-Pro-0813-gguf",
      "downloads": "266",
      "likes": "0",
      "created": "2026-08-14",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
@@ -12956,7 +13436,7 @@
      "downloads": "186",
      "likes": "0",
      "created": "2026-08-23",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -13026,8 +13506,8 @@
    "llama_cpp": "fork only",
    "llama_cpp_detail": "14 GGUF builds exist, but upstream llama.cpp does not support the architecture; they need a patched llama.cpp",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
-   "gguf_build": "antirez/deepseek-v4.1-flash-gguf",
-   "gguf_build_publisher": "unknown",
+   "gguf_build": "Lucebox/DeepSeek-V4.1-Flash-ROCMFP23-GGUF",
+   "gguf_build_publisher": "organisation",
    "gguf_builds": 14,
    "template_check": "differs",
    "template_check_detail": "9 differs, 5 not checked",
@@ -13053,7 +13533,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Founded 2023 by Liang Wenfeng out of his quant hedge fund High-Flyer; press reports Liang holds a large majority after a 2026 round in which Tencent was the largest outside investor. EU authorised representative: Prighter.",
    "family_notes": "Trained from scratch on a 45T-token multimodal corpus (7:1 text to multimodal; Common Crawl re-bootstrapped). Final on-policy distillation uses over 40 teacher models that are not named. The AI Act summary found covers V4 only.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -13200,11 +13680,44 @@
    "gguf_list": [
     {
      "id": "deepseek-v4.1-flash",
+     "repo": "Lucebox/DeepSeek-V4.1-Flash-ROCMFP23-GGUF",
+     "downloads": "37954",
+     "likes": "8",
+     "created": "2026-09-17",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
+    },
+    {
+     "id": "deepseek-v4.1-flash",
+     "repo": "Solstice-AI/DeepSeek-V4.1-Flash-GGUF",
+     "downloads": "2841",
+     "likes": "1",
+     "created": "2026-09-12",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/Solstice-AI__DeepSeek-V4.1-Flash-GGUF.diff"
+    },
+    {
+     "id": "deepseek-v4.1-flash",
+     "repo": "Lucebox/DeepSeek-V4.1-Flash-DSpark-GGUF",
+     "downloads": "701",
+     "likes": "1",
+     "created": "2026-09-30",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
+    },
+    {
+     "id": "deepseek-v4.1-flash",
      "repo": "antirez/deepseek-v4.1-flash-gguf",
      "downloads": "1732873",
      "likes": "57",
      "created": "2026-09-11",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
@@ -13215,7 +13728,7 @@
      "downloads": "65065",
      "likes": "18",
      "created": "2026-09-13",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/pfeifferj__DeepSeek-V4.1-Flash-GSQ-RCO-GGUF.diff"
@@ -13226,21 +13739,10 @@
      "downloads": "49515",
      "likes": "42",
      "created": "2026-09-10",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/vcruz305__DeepSeek-V4.1-Flash-GGUF.diff"
-    },
-    {
-     "id": "deepseek-v4.1-flash",
-     "repo": "Lucebox/DeepSeek-V4.1-Flash-ROCMFP23-GGUF",
-     "downloads": "37954",
-     "likes": "8",
-     "created": "2026-09-17",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "no chat template in the build"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -13248,7 +13750,7 @@
      "downloads": "22865",
      "likes": "3",
      "created": "2026-09-12",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/smalinin__DeepSeek-V4.1-Flash-GGUF.diff"
@@ -13259,32 +13761,10 @@
      "downloads": "21507",
      "likes": "5",
      "created": "2026-09-10",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
-    },
-    {
-     "id": "deepseek-v4.1-flash",
-     "repo": "AMAImedia/DeepSeek-V4.1-Flash-FP8-GGUF",
-     "downloads": "20945",
-     "likes": "1",
-     "created": "2026-09-10",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/AMAImedia__DeepSeek-V4.1-Flash-FP8-GGUF.diff"
-    },
-    {
-     "id": "deepseek-v4.1-flash",
-     "repo": "mxxm-t/DeepSeek-V4.1-Flash-GGUF",
-     "downloads": "6316",
-     "likes": "2",
-     "created": "2026-09-11",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/mxxm-t__DeepSeek-V4.1-Flash-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -13556,7 +14036,7 @@
      "downloads": "38",
      "likes": "1",
      "created": "2026-04-21",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -14164,7 +14644,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Subsidiary of Alphabet Inc. (US). Gemma is authored by Google DeepMind.",
    "family_notes": "First Gemma generation under plain Apache 2.0 (earlier Gemma used the Gemma Terms of Use + Prohibited Use Policy). Card names data categories only (web, code, math, images, audio; cutoff Jan 2025). Pre-trained on TPUv4/TPUv6e. 35+ languages supported, 140+ in pre-training, no list given. AI Act summary seen only via AIAL tracker; primary URL not located.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -14334,6 +14814,28 @@
     },
     {
      "id": "gemma-4-26b-a4b",
+     "repo": "AtomicChat/gemma-4-26B-A4B-it-GGUF",
+     "downloads": "7679",
+     "likes": "2",
+     "created": "2026-07-01",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "gemma-4-26b-a4b",
+     "repo": "CMSManhattan/JiRackTernaryGemma4_26b",
+     "downloads": "1086",
+     "likes": "0",
+     "created": "2026-09-26",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "gemma-4-26b-a4b",
      "repo": "batiai/Gemma-4-26B-A4B-it-GGUF",
      "downloads": "845",
      "likes": "3",
@@ -14345,47 +14847,25 @@
     },
     {
      "id": "gemma-4-26b-a4b",
-     "repo": "DevQuasar/google.gemma-4-26B-A4B-it-GGUF",
-     "downloads": "278",
+     "repo": "fraQtl/Gemma-4-26B-A4B-it-Nano-GGUF",
+     "downloads": "402",
      "likes": "1",
-     "created": "2026-04-03",
+     "created": "2026-09-29",
      "publisher": "organisation",
-     "verified_org": true,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/DevQuasar__google.gemma-4-26B-A4B-it-GGUF.diff"
-    },
-    {
-     "id": "gemma-4-26b-a4b",
-     "repo": "bartowski/google_gemma-4-26B-A4B-it-GGUF",
-     "downloads": "53014",
-     "likes": "164",
-     "created": "2026-04-02",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "gemma-4-26b-a4b",
-     "repo": "mudler/gemma-4-26B-A4B-it-APEX-GGUF",
-     "downloads": "28595",
-     "likes": "83",
-     "created": "2026-04-02",
-     "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/mudler__gemma-4-26B-A4B-it-APEX-GGUF.diff"
+     "template_reason": "diff: data/template_diffs/fraQtl__Gemma-4-26B-A4B-it-Nano-GGUF.diff"
     },
     {
      "id": "gemma-4-26b-a4b",
-     "repo": "kingjones777/Gemma-4-26B-A4B-it-ROCmFP4-GGUF",
-     "downloads": "3099",
-     "likes": "0",
-     "created": "2026-08-17",
-     "publisher": "individual",
+     "repo": "crucible-labs/Gemma4-26B-A4B-REAP-25-GGUF",
+     "downloads": "284",
+     "likes": "2",
+     "created": "2026-07-30",
+     "publisher": "organisation",
      "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "no chat template in the build"
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/crucible-labs__Gemma4-26B-A4B-REAP-25-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -14464,7 +14944,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Subsidiary of Alphabet Inc. (US). Gemma is authored by Google DeepMind.",
    "family_notes": "First Gemma generation under plain Apache 2.0 (earlier Gemma used the Gemma Terms of Use + Prohibited Use Policy). Card names data categories only (web, code, math, images, audio; cutoff Jan 2025). Pre-trained on TPUv4/TPUv6e. 35+ languages supported, 140+ in pre-training, no list given. AI Act summary seen only via AIAL tracker; primary URL not located.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -14634,6 +15114,39 @@
     },
     {
      "id": "gemma-4-31b",
+     "repo": "AtomicChat/gemma-4-31B-it-GGUF",
+     "downloads": "6495",
+     "likes": "1",
+     "created": "2026-06-17",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "gemma-4-31b",
+     "repo": "xCloudinfo/Gemma-4-31B-xVITA-zhTW-GGUF",
+     "downloads": "4230",
+     "likes": "0",
+     "created": "2026-09-23",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "gemma-4-31b",
+     "repo": "LibertAIDAI/Gemma-4-31B-IT-NVFP4-GGUF",
+     "downloads": "572",
+     "likes": "1",
+     "created": "2026-05-04",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/LibertAIDAI__Gemma-4-31B-IT-NVFP4-GGUF.diff"
+    },
+    {
+     "id": "gemma-4-31b",
      "repo": "batiai/gemma-4-31B-it-GGUF",
      "downloads": "429",
      "likes": "0",
@@ -14645,47 +15158,14 @@
     },
     {
      "id": "gemma-4-31b",
-     "repo": "DevQuasar/google.gemma-4-31B-it-GGUF",
-     "downloads": "233",
-     "likes": "0",
-     "created": "2026-04-02",
+     "repo": "Intel/gemma-4-31B-it-gguf-q4-k-m-AutoRound",
+     "downloads": "292",
+     "likes": "1",
+     "created": "2026-07-16",
      "publisher": "organisation",
      "verified_org": true,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/DevQuasar__google.gemma-4-31B-it-GGUF.diff"
-    },
-    {
-     "id": "gemma-4-31b",
-     "repo": "bartowski/google_gemma-4-31B-it-GGUF",
-     "downloads": "37155",
-     "likes": "94",
-     "created": "2026-04-02",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "gemma-4-31b",
-     "repo": "mradermacher/gemma-4-31B-it-GGUF",
-     "downloads": "2124",
-     "likes": "2",
-     "created": "2026-04-17",
-     "publisher": "individual",
-     "verified_org": false,
      "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/mradermacher__gemma-4-31B-it-GGUF.diff"
-    },
-    {
-     "id": "gemma-4-31b",
-     "repo": "mradermacher/gemma-4-31B-it-i1-GGUF",
-     "downloads": "1982",
-     "likes": "0",
-     "created": "2026-04-18",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/mradermacher__gemma-4-31B-it-i1-GGUF.diff"
+     "template_reason": "diff: data/template_diffs/Intel__gemma-4-31B-it-gguf-q4-k-m-AutoRound.diff"
     }
    ],
    "cache_layout": {
@@ -14942,6 +15422,17 @@
     },
     {
      "id": "glm-5.3",
+     "repo": "autotrust/GLM-5.3-GGUF-DGX-Spark",
+     "downloads": "7803",
+     "likes": "28",
+     "created": "2026-09-20",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/autotrust__GLM-5.3-GGUF-DGX-Spark.diff"
+    },
+    {
+     "id": "glm-5.3",
      "repo": "DevQuasar/zai-org.GLM-5.3-GGUF",
      "downloads": "563",
      "likes": "2",
@@ -14953,22 +15444,11 @@
     },
     {
      "id": "glm-5.3",
-     "repo": "autotrust/GLM-5.3-GGUF-DGX-Spark",
-     "downloads": "7803",
-     "likes": "28",
-     "created": "2026-09-20",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/autotrust__GLM-5.3-GGUF-DGX-Spark.diff"
-    },
-    {
-     "id": "glm-5.3",
      "repo": "muzzy/GLM-5.3-GGUF",
      "downloads": "412",
      "likes": "2",
      "created": "2026-08-30",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
      "template_reason": "diff: data/template_diffs/muzzy__GLM-5.3-GGUF.diff"
@@ -14979,7 +15459,7 @@
      "downloads": "366",
      "likes": "3",
      "created": "2026-10-01",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
      "template_reason": "diff: data/template_diffs/SixVolts__GLM-5.3-ewaste-edition-GGUF.diff"
@@ -14990,7 +15470,7 @@
      "downloads": "257",
      "likes": "0",
      "created": "2026-09-08",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
      "template_reason": "diff: data/template_diffs/Coder40-95__GLM-5.3-GGUF.diff"
@@ -15001,7 +15481,7 @@
      "downloads": "195",
      "likes": "0",
      "created": "2026-09-29",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
      "template_reason": "diff: data/template_diffs/taurusduan__GLM-5.3-GGUF-DGX-Spark.diff"
@@ -15226,6 +15706,17 @@
     },
     {
      "id": "glm-5.3-flash",
+     "repo": "autotrust/GLM-5.3-Flash-GGUF-DGX-Spark",
+     "downloads": "34578",
+     "likes": "54",
+     "created": "2026-09-20",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/autotrust__GLM-5.3-Flash-GGUF-DGX-Spark.diff"
+    },
+    {
+     "id": "glm-5.3-flash",
      "repo": "DevQuasar/zai-org.GLM-5.3-Flash-GGUF",
      "downloads": "5889",
      "likes": "10",
@@ -15248,6 +15739,17 @@
     },
     {
      "id": "glm-5.3-flash",
+     "repo": "6block/GLM-5.3-Flash-GGUF",
+     "downloads": "591",
+     "likes": "4",
+     "created": "2026-08-27",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/6block__GLM-5.3-Flash-GGUF.diff"
+    },
+    {
+     "id": "glm-5.3-flash",
      "repo": "backpack-run/GLM-5.3-Flash-GGUF",
      "downloads": "531",
      "likes": "4",
@@ -15259,47 +15761,25 @@
     },
     {
      "id": "glm-5.3-flash",
-     "repo": "autotrust/GLM-5.3-Flash-GGUF-DGX-Spark",
-     "downloads": "34578",
-     "likes": "54",
-     "created": "2026-09-20",
-     "publisher": "unknown",
+     "repo": "qtum/GLM-5.3-Flash-GGUF",
+     "downloads": "341",
+     "likes": "2",
+     "created": "2026-08-28",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/autotrust__GLM-5.3-Flash-GGUF-DGX-Spark.diff"
+     "template_reason": "diff: data/template_diffs/qtum__GLM-5.3-Flash-GGUF.diff"
     },
     {
      "id": "glm-5.3-flash",
-     "repo": "pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF",
-     "downloads": "30484",
-     "likes": "34",
-     "created": "2026-09-13",
-     "publisher": "unknown",
-     "verified_org": false,
+     "repo": "amd/GLM-5.3-Flash-EXTENSOR",
+     "downloads": "269",
+     "likes": "1",
+     "created": "2026-10-01",
+     "publisher": "organisation",
+     "verified_org": true,
      "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/pfeifferj__GLM-5.3-Flash-GSQ-RCO-GGUF.diff"
-    },
-    {
-     "id": "glm-5.3-flash",
-     "repo": "peasantsmith/GLM-5.3-Flash-Maya-GGUF",
-     "downloads": "23917",
-     "likes": "16",
-     "created": "2026-10-07",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/peasantsmith__GLM-5.3-Flash-Maya-GGUF.diff"
-    },
-    {
-     "id": "glm-5.3-flash",
-     "repo": "aj9o9/GLM-5.3-Flash-GGUF",
-     "downloads": "23054",
-     "likes": "14",
-     "created": "2026-08-26",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/aj9o9__GLM-5.3-Flash-GGUF.diff"
+     "template_reason": "diff: data/template_diffs/amd__GLM-5.3-Flash-EXTENSOR.diff"
     }
    ],
    "cache_layout": {
@@ -15373,7 +15853,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "",
    "family_notes": "Apache 2.0 plus a one-sentence USAGE_POLICY file (comply with applicable law). Text-only pre-training data \"with a focus on STEM, coding, and general knowledge\", cutoff June 2024. 2.1M H100-hours for 120b. AIAL lists gpt-oss among models whose mandatory AI Act summary could not be found.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -15554,47 +16034,47 @@
     },
     {
      "id": "gpt-oss-120b",
-     "repo": "bartowski/openai_gpt-oss-120b-GGUF",
-     "downloads": "7489",
-     "likes": "13",
-     "created": "2025-08-08",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/bartowski__openai_gpt-oss-120b-GGUF.diff"
+     "repo": "ZERO-POINT-AI/undermaintenance__118b-gpt-faulty",
+     "downloads": "514",
+     "likes": "6",
+     "created": "2026-03-21",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
     },
     {
      "id": "gpt-oss-120b",
-     "repo": "Myric/gpt-oss-78B-GGUF",
-     "downloads": "635",
-     "likes": "2",
-     "created": "2026-08-03",
-     "publisher": "individual",
+     "repo": "second-state/gpt-oss-120b-GGUF",
+     "downloads": "117",
+     "likes": "0",
+     "created": "2025-08-08",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/second-state__gpt-oss-120b-GGUF.diff"
+    },
+    {
+     "id": "gpt-oss-120b",
+     "repo": "xCloudinfo/gpt-oss-120b-TAIDE-zhTW-GGUF",
+     "downloads": "62",
+     "likes": "0",
+     "created": "2026-06-15",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
     },
     {
      "id": "gpt-oss-120b",
-     "repo": "gabriellarson/gpt-oss-120b-GGUF",
-     "downloads": "359",
-     "likes": "5",
-     "created": "2025-08-05",
-     "publisher": "individual",
+     "repo": "gaianet/gpt-oss-120b-GGUF",
+     "downloads": "61",
+     "likes": "0",
+     "created": "2025-08-08",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/gabriellarson__gpt-oss-120b-GGUF.diff"
-    },
-    {
-     "id": "gpt-oss-120b",
-     "repo": "bartowski/openai_gpt-oss-120b-GGUF-MXFP4-Experimental",
-     "downloads": "285",
-     "likes": "12",
-     "created": "2025-08-05",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/bartowski__openai_gpt-oss-120b-GGUF-MXFP4-Experimental.diff"
+     "template_reason": "diff: data/template_diffs/gaianet__gpt-oss-120b-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -15673,7 +16153,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "",
    "family_notes": "Apache 2.0 plus a one-sentence USAGE_POLICY file (comply with applicable law). Text-only pre-training data \"with a focus on STEM, coding, and general knowledge\", cutoff June 2024. 2.1M H100-hours for 120b. AIAL lists gpt-oss among models whose mandatory AI Act summary could not be found.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -15854,10 +16334,32 @@
     },
     {
      "id": "gpt-oss-20b",
-     "repo": "AbteeXAILab/lumynax-reasoning-gpt-oss-20b-gguf",
-     "downloads": "107",
+     "repo": "models-for-i/gpt-oss-20b-GGUF",
+     "downloads": "574",
      "likes": "0",
-     "created": "2026-05-09",
+     "created": "2025-12-04",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "download failed: GGUF header larger than the read limit"
+    },
+    {
+     "id": "gpt-oss-20b",
+     "repo": "gaianet/gpt-oss-20b-GGUF",
+     "downloads": "491",
+     "likes": "0",
+     "created": "2025-08-08",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/gaianet__gpt-oss-20b-GGUF.diff"
+    },
+    {
+     "id": "gpt-oss-20b",
+     "repo": "xCloudinfo/gpt-oss-20b-Code-xCloud-GGUF",
+     "downloads": "173",
+     "likes": "0",
+     "created": "2026-06-25",
      "publisher": "organisation",
      "verified_org": false,
      "template_check": "identical",
@@ -15865,36 +16367,14 @@
     },
     {
      "id": "gpt-oss-20b",
-     "repo": "Hob-forge/gpt-oss-20b-Q2_K-GGUF",
-     "downloads": "103",
-     "likes": "1",
-     "created": "2026-01-25",
-     "publisher": "organisation",
-     "verified_org": false,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/Hob-forge__gpt-oss-20b-Q2_K-GGUF.diff"
-    },
-    {
-     "id": "gpt-oss-20b",
-     "repo": "smarttasks/gpt-oss-20b-GGUF",
-     "downloads": "96",
+     "repo": "xCloudinfo/gpt-oss-20b-TAIDE-zhTW-GGUF",
+     "downloads": "143",
      "likes": "0",
-     "created": "2026-07-15",
+     "created": "2026-06-25",
      "publisher": "organisation",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
-    },
-    {
-     "id": "gpt-oss-20b",
-     "repo": "AmpereComputing/gpt-oss-20b-gguf",
-     "downloads": "35",
-     "likes": "0",
-     "created": "2025-09-26",
-     "publisher": "organisation",
-     "verified_org": true,
-     "template_check": "differs",
-     "template_reason": "diff: data/template_diffs/AmpereComputing__gpt-oss-20b-gguf.diff"
     }
    ],
    "cache_layout": {
@@ -15946,8 +16426,8 @@
    "llama_cpp": "supported",
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
-   "gguf_build": "mradermacher/GPT-OSS-Swallow-120B-RL-v0.1-i1-GGUF",
-   "gguf_build_publisher": "individual",
+   "gguf_build": "mmnga-o/GPT-OSS-Swallow-120B-RL-v0.1-gguf",
+   "gguf_build_publisher": "organisation",
    "gguf_builds": 5,
    "template_check": "identical",
    "template_check_detail": "5 identical",
@@ -16150,6 +16630,28 @@
    "gguf_list": [
     {
      "id": "gpt-oss-swallow-120b-rl",
+     "repo": "mmnga-o/GPT-OSS-Swallow-120B-RL-v0.1-gguf",
+     "downloads": "431",
+     "likes": "5",
+     "created": "2026-02-20",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "gpt-oss-swallow-120b-rl",
+     "repo": "elvezjp/GPT-OSS-Swallow-120B-RL-v0.1-gguf",
+     "downloads": "56",
+     "likes": "1",
+     "created": "2026-02-20",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "gpt-oss-swallow-120b-rl",
      "repo": "mradermacher/GPT-OSS-Swallow-120B-RL-v0.1-i1-GGUF",
      "downloads": "1965",
      "likes": "0",
@@ -16172,33 +16674,11 @@
     },
     {
      "id": "gpt-oss-swallow-120b-rl",
-     "repo": "mmnga-o/GPT-OSS-Swallow-120B-RL-v0.1-gguf",
-     "downloads": "431",
-     "likes": "5",
-     "created": "2026-02-20",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "gpt-oss-swallow-120b-rl",
      "repo": "nobikko/GPT-OSS-Swallow-120B-RL-v0.1-GGUF",
      "downloads": "115",
      "likes": "0",
      "created": "2026-02-24",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "gpt-oss-swallow-120b-rl",
-     "repo": "elvezjp/GPT-OSS-Swallow-120B-RL-v0.1-gguf",
-     "downloads": "56",
-     "likes": "1",
-     "created": "2026-02-20",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -16465,6 +16945,17 @@
     },
     {
      "id": "granite-4.2-30b",
+     "repo": "xCloudinfo/Granite-4.2-30B-xVITA-zhTW-GGUF",
+     "downloads": "273",
+     "likes": "0",
+     "created": "2026-10-04",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "granite-4.2-30b",
      "repo": "DevQuasar/ibm-granite.granite-4.2-30b-GGUF",
      "downloads": "137",
      "likes": "2",
@@ -16498,30 +16989,19 @@
     },
     {
      "id": "granite-4.2-30b",
+     "repo": "vcruz305/granite-4.2-30b-GGUF",
+     "downloads": "345",
+     "likes": "0",
+     "created": "2026-08-25",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "granite-4.2-30b",
      "repo": "mradermacher/granite-4.2-30b-GGUF",
      "downloads": "299",
-     "likes": "0",
-     "created": "2026-08-26",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "granite-4.2-30b",
-     "repo": "kingjones777/Granite-4.2-30B-ROCmFPX-Q8_0-GGUF",
-     "downloads": "82",
-     "likes": "0",
-     "created": "2026-08-26",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "granite-4.2-30b",
-     "repo": "kingjones777/Granite-4.2-30B-ROCmFPX-Q8_0-AGENT-GGUF",
-     "downloads": "66",
      "likes": "0",
      "created": "2026-08-26",
      "publisher": "individual",
@@ -16750,6 +17230,28 @@
     },
     {
      "id": "granite-4.2-8b",
+     "repo": "liodon-ai/granite-4.2-8b-imatrix-GGUF",
+     "downloads": "200",
+     "likes": "0",
+     "created": "2026-08-25",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "granite-4.2-8b",
+     "repo": "webAI-Official/granite-4.2-8B",
+     "downloads": "160",
+     "likes": "1",
+     "created": "2026-09-30",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "granite-4.2-8b",
      "repo": "DevQuasar/ibm-granite.granite-4.2-8b-GGUF",
      "downloads": "116",
      "likes": "0",
@@ -16783,32 +17285,10 @@
     },
     {
      "id": "granite-4.2-8b",
-     "repo": "webmp3/Sakura-granite-4.2-8b-GGUF",
-     "downloads": "979",
-     "likes": "0",
-     "created": "2026-10-04",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "granite-4.2-8b",
-     "repo": "mradermacher/granite-4.2-8b-GGUF",
-     "downloads": "303",
-     "likes": "0",
+     "repo": "NANI-Nithin/granite-4.2-8b-GGUF",
+     "downloads": "984",
+     "likes": "1",
      "created": "2026-08-26",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "granite-4.2-8b",
-     "repo": "Fr4nkSt3in/granite-4.2-8b-BF16-GGUF",
-     "downloads": "101",
-     "likes": "0",
-     "created": "2026-10-06",
      "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
@@ -16860,7 +17340,7 @@
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "6block/Hy4-preview-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "organisation",
    "gguf_builds": 4,
    "template_check": "differs",
    "template_check_detail": "1 differs, 3 identical",
@@ -16886,7 +17366,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Listed in Hong Kong (0700.HK). Largest shareholder is Prosus (Naspers group, NL/ZA) with about 22.7-22.8%.",
    "family_notes": "770B-A49B MoE (Gated DeepSeek Sparse Attention, IndexCache, iHC). Plain Apache-2.0, without the territory exclusions of earlier Hunyuan community licences. Post-training data built with Tencent in-house experts; pre-training data not described. Card ships fine-tuning scripts, not pre-training code. An AI Act summary exists for Hy3 only.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -17007,8 +17487,8 @@
      "downloads": "1409",
      "likes": "1",
      "created": "2026-09-08",
-     "publisher": "unknown",
-     "verified_org": false,
+     "publisher": "organisation",
+     "verified_org": true,
      "template_check": "identical",
      "template_reason": ""
     },
@@ -17018,7 +17498,7 @@
      "downloads": "434",
      "likes": "3",
      "created": "2026-09-08",
-     "publisher": "unknown",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -17029,7 +17509,7 @@
      "downloads": "187",
      "likes": "0",
      "created": "2026-09-06",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -17040,7 +17520,7 @@
      "downloads": "123",
      "likes": "1",
      "created": "2026-09-03",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/anemll__Hy4-preview-FlashMoE-STQ1_0.diff"
@@ -17091,7 +17571,7 @@
    "llama_cpp_detail": "1 GGUF builds exist, but upstream llama.cpp does not support the architecture; they need a patched llama.cpp",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "naver-ellm/HyperCLOVAX-SEED-Think-32B-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "organisation",
    "gguf_builds": 1,
    "template_check": "differs",
    "template_check_detail": "1 differs",
@@ -17288,7 +17768,7 @@
      "downloads": "510",
      "likes": "2",
      "created": "2026-01-13",
-     "publisher": "unknown",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "differs",
      "template_reason": "diff: data/template_diffs/naver-ellm__HyperCLOVAX-SEED-Think-32B-GGUF.diff"
@@ -17365,7 +17845,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Privately held. Acquisition talks with Nvidia (Jan 2026) and Nebius (Apr 2026) ended without a deal; in May 2026 AI21 cut ~61% of staff and said it would halt development of the Jamba model family.",
    "family_notes": "SSM-Transformer (Mamba) hybrid. Mid-training on 500B tokens, SFT, DPO, on-policy RL starting from Jamba 1.5 pre-training (also stated for the 3B dense model). AI21 announced in May 2026 it would halt Jamba development. Languages are the pretraining emphasis of the Jamba 1.5 base; Jamba2 itself names none.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -17545,6 +18025,17 @@
     },
     {
      "id": "jamba2-3b",
+     "repo": "marafx2007/AI21-Jamba2-3B-GGUF",
+     "downloads": "155",
+     "likes": "0",
+     "created": "2026-09-13",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "jamba2-3b",
      "repo": "keisuke-miyako/AI21-Jamba2-3B-gguf-q4_k_m",
      "downloads": "19",
      "likes": "0",
@@ -17561,17 +18052,6 @@
      "likes": "0",
      "created": "2026-04-10",
      "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "jamba2-3b",
-     "repo": "marafx2007/AI21-Jamba2-3B-GGUF",
-     "downloads": "155",
-     "likes": "0",
-     "created": "2026-09-13",
-     "publisher": "unknown",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -17648,7 +18128,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Privately held. Acquisition talks with Nvidia (Jan 2026) and Nebius (Apr 2026) ended without a deal; in May 2026 AI21 cut ~61% of staff and said it would halt development of the Jamba model family.",
    "family_notes": "SSM-Transformer (Mamba) hybrid. Mid-training on 500B tokens, SFT, DPO, on-policy RL starting from Jamba 1.5 pre-training (also stated for the 3B dense model). AI21 announced in May 2026 it would halt Jamba development. Languages are the pretraining emphasis of the Jamba 1.5 base; Jamba2 itself names none.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -18549,7 +19029,7 @@
      "downloads": "260",
      "likes": "1",
      "created": "2026-09-04",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
      "template_reason": "reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-GGUF.diff"
@@ -18560,7 +19040,7 @@
      "downloads": "227",
      "likes": "3",
      "created": "2026-09-04",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
      "template_reason": "reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-Mixed-Quant-GGUF.diff"
@@ -18805,6 +19285,17 @@
     },
     {
      "id": "kimi-k3",
+     "repo": "AtomicChat/Kimi-K3-GGUF",
+     "downloads": "874",
+     "likes": "16",
+     "created": "2026-07-27",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
+    },
+    {
+     "id": "kimi-k3",
      "repo": "DevQuasar/moonshotai.Kimi-K3-GGUF",
      "downloads": "262",
      "likes": "6",
@@ -18816,11 +19307,33 @@
     },
     {
      "id": "kimi-k3",
-     "repo": "AtomicChat/Kimi-K3-GGUF",
-     "downloads": "874",
-     "likes": "16",
-     "created": "2026-07-27",
-     "publisher": "unknown",
+     "repo": "6block/Kimi-K3-GGUF",
+     "downloads": "205",
+     "likes": "1",
+     "created": "2026-08-02",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
+    },
+    {
+     "id": "kimi-k3",
+     "repo": "mmnga-o/Kimi-K3-REAP50-Width50-UD-gguf",
+     "downloads": "146",
+     "likes": "2",
+     "created": "2026-08-10",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
+    },
+    {
+     "id": "kimi-k3",
+     "repo": "qtum/Kimi-K3-GGUF",
+     "downloads": "100",
+     "likes": "0",
+     "created": "2026-08-17",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -18831,7 +19344,7 @@
      "downloads": "740",
      "likes": "6",
      "created": "2026-08-05",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -18842,43 +19355,10 @@
      "downloads": "545",
      "likes": "14",
      "created": "2026-07-27",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
-    },
-    {
-     "id": "kimi-k3",
-     "repo": "6block/Kimi-K3-GGUF",
-     "downloads": "205",
-     "likes": "1",
-     "created": "2026-08-02",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "original has no template to compare"
-    },
-    {
-     "id": "kimi-k3",
-     "repo": "GrEarl/Kimi-K3-GGUF",
-     "downloads": "179",
-     "likes": "30",
-     "created": "2026-07-27",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "original has no template to compare"
-    },
-    {
-     "id": "kimi-k3",
-     "repo": "GrEarl/Kimi-K3-GGUF-IQ1_S",
-     "downloads": "174",
-     "likes": "22",
-     "created": "2026-07-27",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "original has no template to compare"
     }
    ],
    "cache_layout": {
@@ -18974,7 +19454,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "No open-weight Llama release since Llama 4 (April 2025); current Meta frontier line (Muse) is closed.",
    "family_notes": "Llama 4 Community License: 700M-MAU clause, \"Built with Llama\" naming duty, AUP incorporated by reference. AUP withholds the licence for the multimodal Llama 4 models from individuals/companies domiciled in the EU (end users of products exempt). Data described only by category (public, licensed, Meta products incl. Instagram/Facebook posts). Released April 2025, before AI Act GPAI obligations (summary due 2027).",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -19143,22 +19623,11 @@
     },
     {
      "id": "llama-4-maverick",
-     "repo": "mradermacher/Llama-4-Maverick-17B-128E-Instruct-GGUF",
-     "downloads": "17",
-     "likes": "0",
-     "created": "2025-06-08",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "download failed: no .gguf file"
-    },
-    {
-     "id": "llama-4-maverick",
      "repo": "DevQuasar-12/meta-llama.Llama-4-Maverick-17B-128E-Instruct-GGUF",
      "downloads": "354",
      "likes": "0",
      "created": "2025-04-08",
-     "publisher": "unknown",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -19169,7 +19638,7 @@
      "downloads": "147",
      "likes": "0",
      "created": "2025-04-20",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -19180,7 +19649,7 @@
      "downloads": "45",
      "likes": "1",
      "created": "2025-04-08",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -19191,7 +19660,7 @@
      "downloads": "34",
      "likes": "0",
      "created": "2025-04-16",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -19202,10 +19671,21 @@
      "downloads": "32",
      "likes": "0",
      "created": "2025-04-17",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
+    },
+    {
+     "id": "llama-4-maverick",
+     "repo": "mradermacher/Llama-4-Maverick-17B-128E-Instruct-GGUF",
+     "downloads": "17",
+     "likes": "0",
+     "created": "2025-06-08",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "download failed: no .gguf file"
     }
    ],
    "cache_layout": null,
@@ -19282,7 +19762,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "No open-weight Llama release since Llama 4 (April 2025); current Meta frontier line (Muse) is closed.",
    "family_notes": "Llama 4 Community License: 700M-MAU clause, \"Built with Llama\" naming duty, AUP incorporated by reference. AUP withholds the licence for the multimodal Llama 4 models from individuals/companies domiciled in the EU (end users of products exempt). Data described only by category (public, licensed, Meta products incl. Instagram/Facebook posts). Released April 2025, before AI Act GPAI obligations (summary due 2027).",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -19452,6 +19932,17 @@
     },
     {
      "id": "llama-4-scout",
+     "repo": "DevQuasar-12/meta-llama.Llama-4-Scout-17B-16E-Instruct-GGUF",
+     "downloads": "956",
+     "likes": "3",
+     "created": "2025-04-07",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
+    },
+    {
+     "id": "llama-4-scout",
      "repo": "batiai/Llama-4-Scout-17B-16E-Instruct-GGUF",
      "downloads": "586",
      "likes": "0",
@@ -19474,33 +19965,22 @@
     },
     {
      "id": "llama-4-scout",
-     "repo": "bartowski/meta-llama_Llama-4-Scout-17B-16E-Instruct-old-GGUF",
-     "downloads": "67649",
-     "likes": "32",
-     "created": "2025-04-07",
-     "publisher": "individual",
+     "repo": "baa-ai/Llama-4-Scout-17B-16E-Instruct-RAM-137GB-GGUF",
+     "downloads": "43",
+     "likes": "0",
+     "created": "2026-04-20",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
     },
     {
      "id": "llama-4-scout",
-     "repo": "mradermacher/Llama-4-Scout-17B-16E-Instruct-i1-GGUF",
-     "downloads": "1235",
-     "likes": "10",
-     "created": "2025-04-08",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "original has no template to compare"
-    },
-    {
-     "id": "llama-4-scout",
-     "repo": "Myric/Llama-4-Scout-17B-16E-Instruct-APEX-GGUF",
-     "downloads": "318",
-     "likes": "1",
-     "created": "2026-07-29",
-     "publisher": "individual",
+     "repo": "baa-ai/Llama-4-Scout-17B-16E-Instruct-RAM-105GB-GGUF",
+     "downloads": "33",
+     "likes": "0",
+     "created": "2026-04-20",
+     "publisher": "organisation",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -19809,7 +20289,7 @@
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "modulon-labs/llm-jp-4.1-33b-thinking-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "individual",
    "gguf_builds": 1,
    "template_check": "identical",
    "template_check_detail": "1 identical",
@@ -19996,7 +20476,7 @@
      "downloads": "688",
      "likes": "0",
      "created": "2026-10-03",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -20280,6 +20760,17 @@
     },
     {
      "id": "minimax-m3",
+     "repo": "kaitchup/MiniMax-M3-GGUF-MoQ",
+     "downloads": "779",
+     "likes": "18",
+     "created": "2026-06-22",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/kaitchup__MiniMax-M3-GGUF-MoQ.diff"
+    },
+    {
+     "id": "minimax-m3",
      "repo": "DevQuasar/MiniMaxAI.MiniMax-M3-GGUF",
      "downloads": "690",
      "likes": "1",
@@ -20288,6 +20779,28 @@
      "verified_org": true,
      "template_check": "identical",
      "template_reason": ""
+    },
+    {
+     "id": "minimax-m3",
+     "repo": "gghfexp/MiniMax-M3-IQ2_KT-experimental",
+     "downloads": "39",
+     "likes": "4",
+     "created": "2026-06-20",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/gghfexp__MiniMax-M3-IQ2_KT-experimental.diff"
+    },
+    {
+     "id": "minimax-m3",
+     "repo": "gghfexp/MiniMax-M3-IQ3_KT-experimental",
+     "downloads": "34",
+     "likes": "3",
+     "created": "2026-06-21",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/gghfexp__MiniMax-M3-IQ3_KT-experimental.diff"
     },
     {
      "id": "minimax-m3",
@@ -20313,47 +20826,14 @@
     },
     {
      "id": "minimax-m3",
-     "repo": "kaitchup/MiniMax-M3-GGUF-MoQ",
-     "downloads": "779",
-     "likes": "18",
-     "created": "2026-06-22",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/kaitchup__MiniMax-M3-GGUF-MoQ.diff"
-    },
-    {
-     "id": "minimax-m3",
      "repo": "reduxv1/MiniMax-M3-GGUF",
      "downloads": "344",
      "likes": "1",
      "created": "2026-07-14",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
      "template_reason": "diff: data/template_diffs/reduxv1__MiniMax-M3-GGUF.diff"
-    },
-    {
-     "id": "minimax-m3",
-     "repo": "prometheusAIR/MiniMax-M3-sm120-safe-GGUF",
-     "downloads": "214",
-     "likes": "1",
-     "created": "2026-07-27",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "minimax-m3",
-     "repo": "Sciguy429/MiniMax-M3-MSA-GGUF",
-     "downloads": "153",
-     "likes": "2",
-     "created": "2026-07-10",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -20435,7 +20915,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Not on the Code of Practice signatory list, but publishes an AI Act training-content summary for the Nemotron 3/3.5 family.",
    "family_notes": "NVIDIA Nemotron Open Model License (Dec 2025): Apache-like, perpetual/irrevocable, but adds licensee indemnity for outputs and US export-compliance clause. Pre-trained 25T tokens (NVFP4); most pre-/post-training datasets released on HF (code/math/multilingual gated); some third-party/vendor sets private. Long-context phase on GB200. Heavy use of Qwen/DeepSeek/gpt-oss synthetic data.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -20735,6 +21215,17 @@
     },
     {
      "id": "nemotron-3-super-120b",
+     "repo": "meshllm/NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-MTPv2-GGUF",
+     "downloads": "79",
+     "likes": "0",
+     "created": "2026-08-26",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/meshllm__NVIDIA-Nemotron-3-Super-120B-A12B-UD-Q4_K_XL-MTPv2-GGUF.diff"
+    },
+    {
+     "id": "nemotron-3-super-120b",
      "repo": "mudler/NVIDIA-Nemotron-3-Super-120B-A12B-APEX-GGUF",
      "downloads": "3657",
      "likes": "6",
@@ -20772,17 +21263,6 @@
      "downloads": "409",
      "likes": "0",
      "created": "2026-03-20",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "nemotron-3-super-120b",
-     "repo": "AesSedai/NVIDIA-Nemotron-3-Super-120B-A12B-GGUF",
-     "downloads": "351",
-     "likes": "14",
-     "created": "2026-03-12",
      "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
@@ -20966,7 +21446,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Not on the Code of Practice signatory list, but publishes an AI Act training-content summary for the Nemotron 3/3.5 family.",
    "family_notes": "Licence switched to OpenMDW-1.1 (Linux Foundation, MIT-style permissive model licence) for Nemotron 3.5 Lightning. Pre-trained >20T tokens with NVFP4 recipe. Datasets largely released; purchased vendor data (Mercor, Turing, TAUS, Patronus) private. Post-training also used closed models (GPT-5.5, Gemini 3/GPT-5 prompts, Claude 4 Sonnet filtering). Origin per NVIDIA AI Act summary (\"developed from NVIDIA-Nemotron-3-Nano-30B-A3B\"); the card only says pre-trained on >20T tokens. Source to add.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -21265,6 +21745,17 @@
     },
     {
      "id": "nemotron-3.5-lightning-30b",
+     "repo": "AtomicChat/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
+     "downloads": "7456",
+     "likes": "12",
+     "created": "2026-08-11",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "nemotron-3.5-lightning-30b",
      "repo": "DevQuasar/nvidia.NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-GGUF",
      "downloads": "274",
      "likes": "1",
@@ -21276,53 +21767,42 @@
     },
     {
      "id": "nemotron-3.5-lightning-30b",
+     "repo": "inference-snaps/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-5GB",
+     "downloads": "192",
+     "likes": "1",
+     "created": "2026-08-11",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/inference-snaps__NVIDIA-Nemotron-3.5-Lightning-30B-A3B-5GB.diff"
+    },
+    {
+     "id": "nemotron-3.5-lightning-30b",
+     "repo": "inferenceport-ai/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-Q4_K_M-GGUF",
+     "downloads": "59",
+     "likes": "0",
+     "created": "2026-08-31",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
+    },
+    {
+     "id": "nemotron-3.5-lightning-30b",
+     "repo": "impacte/NVIDIA-Nemotron-3.5-Lightning-GGUF",
+     "downloads": "29",
+     "likes": "2",
+     "created": "2026-08-24",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "nemotron-3.5-lightning-30b",
      "repo": "bartowski/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF",
      "downloads": "26347",
      "likes": "28",
-     "created": "2026-08-11",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "nemotron-3.5-lightning-30b",
-     "repo": "mradermacher/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-i1-GGUF",
-     "downloads": "1031",
-     "likes": "0",
-     "created": "2026-08-13",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "nemotron-3.5-lightning-30b",
-     "repo": "mradermacher/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-GGUF",
-     "downloads": "610",
-     "likes": "1",
-     "created": "2026-08-11",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "nemotron-3.5-lightning-30b",
-     "repo": "Myric/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-APEX-GGUF",
-     "downloads": "578",
-     "likes": "3",
-     "created": "2026-08-12",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "nemotron-3.5-lightning-30b",
-     "repo": "prithivMLmods/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16-GGUF",
-     "downloads": "276",
-     "likes": "3",
      "created": "2026-08-11",
      "publisher": "individual",
      "verified_org": false,
@@ -21507,7 +21987,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "National AI programme funded by the National Research Foundation Singapore (and IMDA under the National LLM Funding Initiative); SEA-LION models adapt foreign bases.",
    "family_notes": "CPT of 33.5B tokens (English + 10 SEA languages) on H200 in Singapore, then SFT and on-policy distillation from Nemotron-3-Ultra-550B. AISG releases it under MIT, but the upstream base is under the NVIDIA Nemotron Open Model License; how the two interact was not checked. Licence caveat: the base is under the NVIDIA Nemotron Open Model License; how it binds the MIT release is unchecked.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -21649,7 +22129,7 @@
      "likes": "0",
      "created": "2026-09-16",
      "publisher": "official",
-     "verified_org": false,
+     "verified_org": true,
      "template_check": "identical",
      "template_reason": ""
     }
@@ -21733,7 +22213,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Non-profit research institute.",
    "family_notes": "Apache 2.0; Responsible Use Guidelines referenced as intent, not licence condition. Dolma 3 (pre/mid/long-context) and Dolci (post-training) released with code (OLMo-core, Open Instruct) and intermediate checkpoints. 1024 H100 cluster. Synthetic data from GPT-4.1, o4-mini, QwQ-32B, DeepSeek R1, Qwen3.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -22174,7 +22654,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Non-profit research institute.",
    "family_notes": "Apache 2.0; Responsible Use Guidelines referenced as intent, not licence condition. Dolma 3 (pre/mid/long-context) and Dolci (post-training) released with code (OLMo-core, Open Instruct) and intermediate checkpoints. 1024 H100 cluster. Synthetic data from GPT-4.1, o4-mini, QwQ-32B, DeepSeek R1, Qwen3.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -22451,7 +22931,7 @@
      "downloads": "37",
      "likes": "0",
      "created": "2025-12-13",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -22462,7 +22942,7 @@
      "downloads": "25",
      "likes": "0",
      "created": "2025-12-12",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -22615,7 +23095,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "EU AI Act summaries for Phi are issued by Microsoft Ireland Operations Limited.",
    "family_notes": "MIT. SFT of Phi-4-Reasoning (itself from Phi-4) with Google SigLIP-2 vision encoder (mid-fusion). 240 B200 for 4 days; Phi-4 base pre-trained on 1920 H100. DATACARD.md is the EU AI Act public summary (Microsoft Ireland). Primarily English; not intended for multilingual use.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -22753,6 +23233,28 @@
     },
     {
      "id": "phi-4-reasoning-vision-15b",
+     "repo": "dranger003/Phi-4-reasoning-vision-15B-GGUF",
+     "downloads": "509",
+     "likes": "1",
+     "created": "2026-03-06",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "phi-4-reasoning-vision-15b",
+     "repo": "jamesburton/Phi-4-reasoning-vision-15B-GGUF",
+     "downloads": "284",
+     "likes": "6",
+     "created": "2026-03-06",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
+    },
+    {
+     "id": "phi-4-reasoning-vision-15b",
      "repo": "kingjones777/Phi-4-Reasoning-Vision-15B-ROCmFP4-GGUF",
      "downloads": "159",
      "likes": "0",
@@ -22775,6 +23277,17 @@
     },
     {
      "id": "phi-4-reasoning-vision-15b",
+     "repo": "gaoqianshen/Phi-4-reasoning-vision-15B-Q4_K_M-GGUF",
+     "downloads": "36",
+     "likes": "0",
+     "created": "2026-04-11",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
+    },
+    {
+     "id": "phi-4-reasoning-vision-15b",
      "repo": "kingjones777/Phi-4-Reasoning-Vision-15B-ROCmFPX-Q8_0-GGUF",
      "downloads": "36",
      "likes": "0",
@@ -22786,44 +23299,11 @@
     },
     {
      "id": "phi-4-reasoning-vision-15b",
-     "repo": "dranger003/Phi-4-reasoning-vision-15B-GGUF",
-     "downloads": "509",
-     "likes": "1",
-     "created": "2026-03-06",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "phi-4-reasoning-vision-15b",
-     "repo": "jamesburton/Phi-4-reasoning-vision-15B-GGUF",
-     "downloads": "284",
-     "likes": "6",
-     "created": "2026-03-06",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "no chat template in the build"
-    },
-    {
-     "id": "phi-4-reasoning-vision-15b",
-     "repo": "gaoqianshen/Phi-4-reasoning-vision-15B-Q4_K_M-GGUF",
-     "downloads": "36",
-     "likes": "0",
-     "created": "2026-04-11",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "no chat template in the build"
-    },
-    {
-     "id": "phi-4-reasoning-vision-15b",
      "repo": "gaoqianshen/Phi-4-reasoning-vision-15B-Q8_0-GGUF",
      "downloads": "29",
      "likes": "0",
      "created": "2026-04-11",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
@@ -22889,7 +23369,7 @@
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "nori-sdc/PLaMo-3-NICT-2604-31B-Base-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "individual",
    "gguf_builds": 1,
    "template_check": "not checked",
    "template_check_detail": "1 not checked",
@@ -22915,7 +23395,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Tokyo-based private company. PLaMo 3 NICT base models co-developed with NICT (national research institute); flagship PLaMo 3.0 Prime is closed-weight. Chosen over Sakana AI, which has no current open-weight LLM flagship (only research checkpoints).",
    "family_notes": "Base model only (not instruction-tuned); the instruct flagship PLaMo 3.0 Prime is closed-weight. The 31B was distilled from PFN/NICT's 120B (3T tokens), which is not released; the card does not say whether by pruning or logit distillation. Gated PLaMo Community License: commercial use only with registration and annual revenue <= JPY 1bn; PFN may amend.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -23046,7 +23526,7 @@
      "downloads": "0",
      "likes": "1",
      "created": "2026-10-03",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "download failed: HTTP Error 403: Forbidden"
@@ -23126,7 +23606,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "National AI programme funded by the National Research Foundation Singapore (and IMDA under the National LLM Funding Initiative); SEA-LION models adapt foreign bases.",
    "family_notes": "Post-training only (logit distillation from Qwen3.5-397B-A17B on SEA-Instruct-2602, plus model merging). Vision-language.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -23258,7 +23738,7 @@
      "likes": "2",
      "created": "2026-06-17",
      "publisher": "official",
-     "verified_org": false,
+     "verified_org": true,
      "template_check": "identical",
      "template_reason": ""
     }
@@ -23316,7 +23796,7 @@
    "llama_cpp_detail": "",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "ultimatechris/Qwen3-Swallow-32B-RL-v0.2-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "individual",
    "gguf_builds": 1,
    "template_check": "identical",
    "template_check_detail": "1 identical",
@@ -23523,7 +24003,7 @@
      "downloads": "330",
      "likes": "0",
      "created": "2026-07-30",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -23796,6 +24276,17 @@
     },
     {
      "id": "qwen3.8-27b",
+     "repo": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF",
+     "downloads": "1484655",
+     "likes": "2107",
+     "created": "2026-08-28",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "qwen3.8-27b",
      "repo": "byteshape/Qwen3.8-27B-GGUF",
      "downloads": "1223647",
      "likes": "160",
@@ -23807,10 +24298,21 @@
     },
     {
      "id": "qwen3.8-27b",
-     "repo": "DevQuasar/Qwen.Qwen3.8-27B-GGUF",
-     "downloads": "6644",
-     "likes": "4",
-     "created": "2026-08-15",
+     "repo": "OBLITERATUS/Qwen3.8-27B-OBLITERATED",
+     "downloads": "629820",
+     "likes": "1422",
+     "created": "2026-08-19",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/OBLITERATUS__Qwen3.8-27B-OBLITERATED.diff"
+    },
+    {
+     "id": "qwen3.8-27b",
+     "repo": "z-lab/Qwen3.8-27B-DFlash2-GGUF",
+     "downloads": "395725",
+     "likes": "152",
+     "created": "2026-08-18",
      "publisher": "organisation",
      "verified_org": true,
      "template_check": "identical",
@@ -23818,34 +24320,12 @@
     },
     {
      "id": "qwen3.8-27b",
-     "repo": "bartowski/Qwen3.8-27B-GGUF",
-     "downloads": "489418",
-     "likes": "204",
-     "created": "2026-08-14",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "qwen3.8-27b",
-     "repo": "mudler/Qwen3.8-27B-APEX-GGUF",
-     "downloads": "17198",
-     "likes": "79",
-     "created": "2026-08-17",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "qwen3.8-27b",
-     "repo": "kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF",
-     "downloads": "14202",
-     "likes": "38",
-     "created": "2026-08-14",
-     "publisher": "individual",
-     "verified_org": false,
+     "repo": "AtomicChat/Qwen3.8-27B-GGUF",
+     "downloads": "41042",
+     "likes": "176",
+     "created": "2026-08-12",
+     "publisher": "organisation",
+     "verified_org": true,
      "template_check": "identical",
      "template_reason": ""
     }
@@ -24081,6 +24561,39 @@
     },
     {
      "id": "qwen3.8-flash-next",
+     "repo": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+     "downloads": "3922328",
+     "likes": "764",
+     "created": "2026-09-07",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/ISTA-DASLab__Qwen3.8-Flash-Next-GSQ-RCO-GGUF.diff"
+    },
+    {
+     "id": "qwen3.8-flash-next",
+     "repo": "AtomicChat/Qwen3.8-Flash-Next-GGUF",
+     "downloads": "761465",
+     "likes": "177",
+     "created": "2026-08-26",
+     "publisher": "organisation",
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "qwen3.8-flash-next",
+     "repo": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+     "downloads": "650945",
+     "likes": "367",
+     "created": "2026-09-26",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/ISTA-DASLab__Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF.diff"
+    },
+    {
+     "id": "qwen3.8-flash-next",
      "repo": "batiai/Qwen3.8-Flash-Next-GGUF",
      "downloads": "3449",
      "likes": "0",
@@ -24092,44 +24605,11 @@
     },
     {
      "id": "qwen3.8-flash-next",
-     "repo": "DevQuasar/Qwen.Qwen3.8-Flash-Next-GGUF",
-     "downloads": "1280",
-     "likes": "6",
+     "repo": "vumpt/Qwen3.8-Flash-Next-GGUF",
+     "downloads": "2027",
+     "likes": "1",
      "created": "2026-08-26",
      "publisher": "organisation",
-     "verified_org": true,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "qwen3.8-flash-next",
-     "repo": "bartowski/Qwen3.8-Flash-Next-GGUF",
-     "downloads": "55545",
-     "likes": "41",
-     "created": "2026-08-28",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "qwen3.8-flash-next",
-     "repo": "AesSedai/Qwen3.8-Flash-Next-GGUF",
-     "downloads": "8373",
-     "likes": "19",
-     "created": "2026-08-28",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "qwen3.8-flash-next",
-     "repo": "mradermacher/Qwen3.8-Flash-Next-i1-GGUF",
-     "downloads": "6530",
-     "likes": "5",
-     "created": "2026-08-28",
-     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -24540,6 +25020,17 @@
     },
     {
      "id": "sarvam-30b",
+     "repo": "Reinforce-ai/sarvam-30b-Spiral",
+     "downloads": "33",
+     "likes": "0",
+     "created": "2026-05-17",
+     "publisher": "organisation",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "sarvam-30b",
      "repo": "kingjones777/Sarvam-30B-ROCmFP4-GGUF",
      "downloads": "362",
      "likes": "0",
@@ -24555,7 +25046,7 @@
      "downloads": "285",
      "likes": "8",
      "created": "2026-03-09",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -24566,7 +25057,7 @@
      "downloads": "66",
      "likes": "1",
      "created": "2026-03-17",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -24577,7 +25068,7 @@
      "downloads": "60",
      "likes": "3",
      "created": "2026-03-09",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -24588,21 +25079,10 @@
      "downloads": "34",
      "likes": "1",
      "created": "2026-06-23",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "no chat template in the build"
-    },
-    {
-     "id": "sarvam-30b",
-     "repo": "Reinforce-ai/sarvam-30b-Spiral",
-     "downloads": "33",
-     "likes": "0",
-     "created": "2026-05-17",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
     }
    ],
    "cache_layout": {
@@ -24650,7 +25130,7 @@
    "llama_cpp_detail": "5 GGUF builds exist, but upstream llama.cpp does not support the architecture; they need a patched llama.cpp",
    "llama_cpp_checked": "2026-10-16 v0.7.0",
    "gguf_build": "Baekpica/Solar-Open2-250B-Mixed-Quant-GGUF",
-   "gguf_build_publisher": "unknown",
+   "gguf_build_publisher": "individual",
    "gguf_builds": 5,
    "template_check": "not checked",
    "template_check_detail": "1 not checked, 4 identical",
@@ -24676,7 +25156,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Seoul-based AI company. Solar Open 2 built in the MSIT/NIPA Sovereign AI Foundation Model Project (GPU Track); clusters operated by Lablup.",
    "family_notes": "250B-A15B hybrid linear-attention MoE, ~12T tokens. Initialised by selective transfer of 2.3% of Solar Open 100B weights, rest random (own lineage). Upstage Solar License = Apache-2.0 plus mandatory 'Solar' name prefix and 'Built with Solar'. Korean MSIT/NIPA GPU track, clusters by Lablup; location not stated.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -24807,7 +25287,7 @@
      "downloads": "16043",
      "likes": "1",
      "created": "2026-08-09",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "download failed: HTTP Error 403: Forbidden"
@@ -24818,7 +25298,7 @@
      "downloads": "228",
      "likes": "7",
      "created": "2026-07-23",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -24829,7 +25309,7 @@
      "downloads": "175",
      "likes": "2",
      "created": "2026-07-24",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -24840,7 +25320,7 @@
      "downloads": "80",
      "likes": "1",
      "created": "2026-07-23",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -24851,7 +25331,7 @@
      "downloads": "79",
      "likes": "0",
      "created": "2026-08-09",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "identical",
      "template_reason": ""
@@ -24928,7 +25408,7 @@
    "last_reviewed": "2026-10-10",
    "provider_notes": "Privately held. Definitive business combination agreement with German Aleph Alpha signed 2026-09-16 (pending regulatory approval); Cohere is the acquiring party, combined company to operate as Cohere, dual HQ Toronto/Berlin. EU AI Act provider entity for Command A+ is Cohere Germany GmbH.",
    "family_notes": "3.35B, pretrained on 6T tokens (public and proprietary sources, 70 languages) on 256 H100s; region-specialised variants (global, earth, fire, water). CC-BY-NC plus Cohere Labs Acceptable Use Policy; gated on the Hub.",
-   "repo_verified_org": false,
+   "repo_verified_org": true,
    "sources": [
     {
      "scope": "provider",
@@ -25110,7 +25590,7 @@
      "likes": "32",
      "created": "2026-02-16",
      "publisher": "official",
-     "verified_org": false,
+     "verified_org": true,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
     },
@@ -25127,6 +25607,17 @@
     },
     {
      "id": "tiny-aya-global",
+     "repo": "EMD123/tiny-aya-kosher-3.3B-GGUF",
+     "downloads": "159",
+     "likes": "1",
+     "created": "2026-03-17",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "original has no template to compare"
+    },
+    {
+     "id": "tiny-aya-global",
      "repo": "keisuke-miyako/tiny-aya-global-gguf-q8_0",
      "downloads": "45",
      "likes": "0",
@@ -25138,22 +25629,11 @@
     },
     {
      "id": "tiny-aya-global",
-     "repo": "EMD123/tiny-aya-kosher-3.3B-GGUF",
-     "downloads": "159",
-     "likes": "1",
-     "created": "2026-03-17",
-     "publisher": "unknown",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "original has no template to compare"
-    },
-    {
-     "id": "tiny-aya-global",
      "repo": "mclpio/uta-sensei-tiny-aya-GGUF",
      "downloads": "33",
      "likes": "0",
      "created": "2026-06-14",
-     "publisher": "unknown",
+     "publisher": "individual",
      "verified_org": false,
      "template_check": "not checked",
      "template_reason": "original has no template to compare"
@@ -25196,6 +25676,22 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-17",
+   "model": "velvet-14b",
+   "field": "model",
+   "old": "",
+   "new": "listed",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-17",
+   "model": "fastwebmiia-7b",
+   "field": "model",
+   "old": "",
+   "new": "listed",
+   "reason": ""
+  },
   {
    "date": "2026-10-17",
    "model": "devstral-small-2",
@@ -25978,22 +26474,6 @@
    "field": "data",
    "old": "documented",
    "new": "undisclosed",
-   "reason": "rating rubric for training data (METHODOLOGY, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "command-a-plus",
-   "field": "data",
-   "old": "documented",
-   "new": "undisclosed",
-   "reason": "rating rubric for training data (METHODOLOGY, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "borealis2-26b",
-   "field": "data",
-   "old": "unknown",
-   "new": "documented",
    "reason": "rating rubric for training data (METHODOLOGY, 2026-10-10)"
   }
  ]

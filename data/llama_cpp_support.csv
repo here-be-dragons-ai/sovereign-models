@@ -83,3 +83,5 @@ amalia-9b-0626,supported,LlamaForCausalLM,,2026-10-16,v0.7.0
 gervasio-70b-ptpt,supported,LlamaForCausalLM,,2026-10-16,v0.7.0
 latxa-3.1-70b-v2,supported,LlamaForCausalLM,,2026-10-16,v0.7.0
 norolmo-13b,supported,Olmo2ForCausalLM,,2026-10-16,v0.7.0
+velvet-14b,supported,MistralForCausalLM,,2026-10-17,v0.7.0
+fastwebmiia-7b,supported,MistralForCausalLM,,2026-10-17,v0.7.0

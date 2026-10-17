@@ -3,7 +3,7 @@ openllm-france,OpenLLM-France / LINAGORA,FR,eu,independent,,yes,OpenLLM-France,O
 eurollm,"EuroLLM consortium (Unbabel, IST Lisbon, U. Edinburgh, ...)",PT,eu,independent,,no,utter-project,,,
 bsc,Barcelona Supercomputing Center (BSC),ES,eu,independent,,no,BSC-LT,langtech-bsc,bsc.es,
 tilde,Tilde,LV,eu,independent,,no,TildeAI,tilde-nlp,,
-swiss-ai,"Swiss AI Initiative (ETH Zurich, EPFL)",CH,europe,independent,,no,swiss-ai,swiss-ai,swiss-ai.org;apertus-ai.org;cscs.ch,Switzerland is not in the EU.
+swiss-ai,"Swiss AI Initiative (ETH Zurich, EPFL)",CH,europe,independent,,no,swiss-ai,swiss-ai,swiss-ai.org;apertus-ai.org;cscs.ch,Switzerland is not in the EU. Publishes a Code of Practice document (transparency and copyright) voluntarily; not a signatory of the GPAI Code of Practice.
 silo-ai,Silo AI (AMD),FI,eu,acquired-non-eu,AMD (US),no,LumiOpen,LumiOpen,,Acquired by AMD in August 2024.
 kyutai,Kyutai,FR,eu,independent,,no,kyutai,,kyutai.org,
 pleias,Pleias,FR,eu,independent,,yes,PleIAs,,,
@@ -53,3 +53,5 @@ amalia,"AMALIA consortium (NOVA University Lisbon, IST, U. Coimbra, U. Porto, U.
 portulan,"PORTULAN CLARIN / NLX group, University of Lisbon",PT,eu,independent,,no,PORTULAN,,portulan-clarin.ul.pt;nlx.di.fc.ul.pt,"NLX - Natural Language and Speech Group, Faculty of Sciences, University of Lisbon; PORTULAN CLARIN research infrastructure (FCT-funded)."
 hitz,"HiTZ Center, University of the Basque Country (UPV/EHU)",ES,eu,independent,,no,HiTZ,hitz-zentroa,hitz.eus;ehu.eus,Public university research centre (HiTZ and IXA group).
 hplt,"HPLT project (Language Technology Group, University of Oslo)",NO,eu,independent,,no,HPLT,hplt-project,hplt-project.org,EU Horizon Europe project (grant 101070350) consortium of universities; NorOLMo built by the University of Oslo LTG. Norway is in the EEA (region eu per the brief; note existing nb row uses europe for NO).
+almawave,Almawave,IT,eu,independent,,yes,AlmawaveLabs,,almawave.com;almaviva.it,Listed on Euronext Growth Milan (AIW); member of the Almaviva Group (Italy).
+fastweb,Fastweb (Fastweb + Vodafone),IT,eu,acquired-non-eu,Swisscom (CH),yes,Fastweb,,fastweb.it,Single-shareholder company under the direction and coordination of Swisscom AG (Switzerland).
