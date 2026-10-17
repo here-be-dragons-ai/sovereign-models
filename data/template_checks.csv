@@ -72,24 +72,6 @@ kolibri-1,webmp3/Sakura-MicroQuality-Kolibri-1-365E-GGUF,gguf,Sakura-Kolibri-1-3
 kolibri-1,Prompt48/Kolibri-1-GGUF,gguf,Q8_0/Kolibri-1-Q8_0-00001-of-00002.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-12
 kolibri-1,aparusel/ds4-kolibri-1-gguf,gguf,Kolibri-1-Q2.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-12
 kolibri-1,Myric/Kolibri-1-APEX-GGUF,gguf,Kolibri-1-APEX-2.4bpw.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-10-12
-devstral-small-2,mistralai/Devstral-Small-2-24B-Instruct-2512,original,chat_template.jinja,reference,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-12
-devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-8bit,mlx,chat_template.jinja,differs,diff: data/template_diffs/mlx-community__Devstral-Small-2-24B-Instruct-2512-8bit.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit,mlx,chat_template.jinja,differs,diff: data/template_diffs/mlx-community__Devstral-Small-2-24B-Instruct-2512-4bit.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-UD-IQ1_S.gguf,suspicious,new in the build: date or time; diff: data/template_diffs/unsloth__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition;date or time;long string literal,49327005df68627a,2026-10-12
-devstral-small-2,lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q3_K_L.gguf,differs,diff: data/template_diffs/lmstudio-community__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,bartowski/mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,mistralai_Devstral-Small-2-24B-Instruct-2512-IQ2_XXS.gguf,differs,diff: data/template_diffs/bartowski__mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,backpack-run/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q4_K_M.gguf,identical,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-12
-devstral-small-2,byteshape/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-IQ2_S-2.34bpw.gguf,differs,diff: data/template_diffs/byteshape__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,ggml-org/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q8_0.gguf,differs,diff: data/template_diffs/ggml-org__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,FreedomAISVR/Devstral-Small-2-MXFP4-GGUF,gguf,devstral-small-2-mxfp4.gguf,differs,diff: data/template_diffs/FreedomAISVR__Devstral-Small-2-MXFP4-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,jkim96/Devstral-Small-2-24B-Instruct-2512-DASHQ-Q2-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-DASHQ-IQ2_XXS.gguf,identical,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-12
-devstral-small-2,viniciusianni/Devstral-Small-2-24B-Instruct-2512-Q4_K_M-GGUF,gguf,devstral-small-2-24b-instruct-2512-q4_k_m.gguf,not checked,no chat template in the build,,,2026-10-12
-devstral-small-2,freddm/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,devstral-small-2-24b-instruct-2512-iq3_m.gguf,differs,diff: data/template_diffs/freddm__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,DevQuasar/mistralai.Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,mistralai.Devstral-Small-2-24B-Instruct-2512.Q2_K.gguf,differs,diff: data/template_diffs/DevQuasar__mistralai.Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,FreedomAISVR/Devstral-Small-2-NVFP4-GGUF,gguf,devstral-small-2-nvfp4.gguf,differs,diff: data/template_diffs/FreedomAISVR__Devstral-Small-2-NVFP4-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,ubergarm/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-IQ4_KSS.gguf,differs,diff: data/template_diffs/ubergarm__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,keypa/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512.gguf,differs,diff: data/template_diffs/keypa__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,content condition,3e5d35d182edd751,2026-10-12
-devstral-small-2,tiktemu/ByteShape___Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-12
 magistral-small-2509,mistralai/Magistral-Small-2509,original,,not checked,no chat template in the repo,,,2026-10-12
 magistral-small-2509,lmstudio-community/Magistral-Small-2509-MLX-8bit,mlx,chat_template.jinja,not checked,original has no template to compare,content condition,609288d59be4137d,2026-10-12
 magistral-small-2509,unsloth/Magistral-Small-2509-GGUF,gguf,Magistral-Small-2509-UD-IQ2_XXS.gguf,not checked,original has no template to compare,content condition;long string literal,c6b48db70447fd21,2026-10-12
@@ -601,55 +583,6 @@ olmo-3-7b-instruct,NikolayKozloff/Olmo-3-7B-Instruct-Q8_0-GGUF,gguf,olmo-3-7b-in
 olmo-3-7b-instruct,Edge-Quant/Olmo-3-7B-Instruct-Q4_K_M-GGUF,gguf,olmo-3-7b-instruct-q4_k_m.gguf,not checked,no chat template in the build,,,2026-10-12
 olmo-3-7b-instruct,mattritchey/Olmo-3-7B-Instruct-Q4_K_M-GGUF,gguf,olmo-3-7b-instruct-q4_k_m.gguf,not checked,no chat template in the build,,,2026-10-12
 olmo-3-7b-instruct,k0r1/Olmo-3-7B-Instruct-Q4_K_M-GGUF,gguf,olmo-3-7b-instruct-q4_k_m.gguf,not checked,no chat template in the build,,,2026-10-12
-qwen3.8-27b,Qwen/Qwen3.8-27B,original,chat_template.jinja,reference,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,unsloth/Qwen3.8-27B-GGUF,gguf,MTP/mtp-Qwen3.8-27B-Q4_0.gguf,equivalent,diff: data/template_diffs/unsloth__Qwen3.8-27B-GGUF.diff,content condition;long string literal,558938e99f21deab,2026-10-12
-qwen3.8-27b,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,gguf,,not checked,download failed: no .gguf file,,,2026-10-12
-qwen3.8-27b,ggml-org/Qwen3.8-27B-GGUF,gguf,dflash-Qwen3.8-27B-Q4_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF,gguf,Dirk-Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,suspicious,new in the build: randomness; diff: data/template_diffs/peculiar-ragdoll__Dirk-Qwen3.8-27B-GGUF.diff,content condition;long string literal;randomness,9740f0d1c9ed1e5d,2026-10-12
-qwen3.8-27b,ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF,gguf,Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,byteshape/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-IQ2_XXS-2.56bpw.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,lmstudio-community/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,OBLITERATUS/Qwen3.8-27B-OBLITERATED,gguf,Qwen3.8-27B-OBLITERATED-Q2_K.gguf,differs,diff: data/template_diffs/OBLITERATUS__Qwen3.8-27B-OBLITERATED.diff,content condition,998529483fe35506,2026-10-12
-qwen3.8-27b,bartowski/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-IQ2_XXS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,z-lab/Qwen3.8-27B-DFlash2-GGUF,gguf,Qwen3.8-27B-DFlash2-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,agentionai/Qwen3.8-27B-AP-GGUF,gguf,Qwen3.8-27B-AP-IQ2_S.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,empero-ai/Qwen3.8-27B-Ridge-GGUF,gguf,Qwen3.8-27B-Ridge-3.7bpw.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,AtomicChat/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-AD-IQ1_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,incoai/Qwen3.8-27B-DFlash2-GGUF,gguf,Qwen3.8-27B-DFlash2-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,QQZ2026/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF,gguf,Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-V3-Final-MTP.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,bytkim/Qwen3.8-27B-pi-GGUF,gguf,dflash2/Qwen3.8-27B-DFlash2-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,mudler/Qwen3.8-27B-APEX-GGUF,gguf,Qwen3.8-27B-APEX-I-Nano.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF,gguf,mtp-Qwen3.8-27B-Q4_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF,gguf,Qwen3.8-27B-ZB3.00bpw-IQ3_XXS.gguf,equivalent,diff: data/template_diffs/tooltd__Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-12
-qwen3.8-27b,Abiray/Qwen3.8-27B-Q4_K_M-GGUF,gguf,Qwen3.8-27B-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,KikoCis/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-IQ1_M-compact.gguf,equivalent,diff: data/template_diffs/KikoCis__Qwen3.8-27B-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-12
-qwen3.8-27b,mradermacher/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B.Q2_K.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,Bucoid/Qwen3.8-27B-IQ4-XS-MTP-16GB-VRAM-GGUF,gguf,Qwen3.8-27B-IQ4_XS_4BPW.gguf,equivalent,diff: data/template_diffs/Bucoid__Qwen3.8-27B-IQ4-XS-MTP-16GB-VRAM-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-12
-qwen3.8-27b,HermiHg/Qwen3.8-27B-mmproj-Q5_K-MIX-GGUF,gguf,,not checked,download failed: no .gguf file,,,2026-10-12
-qwen3.8-27b,jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF,gguf,Qwen3.8-27B-ATX-4-XS.gguf,equivalent,diff: data/template_diffs/jakeatx__Qwen3.8-27B-ATX-IQ4_XS-M-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-12
-qwen3.8-27b,Brian6145/Qwen3.8-27B-Imatrix-Mtp-1m,gguf,,not checked,download failed: no .gguf file,,,2026-10-12
-qwen3.8-27b,ArtomYuan/Qwen3.8-27B-ROCmFPX,gguf,Qwen3.8-27B_Q4_0_ROCMFP4_FAST.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,utautako/Qwen3.8-27B-NVFP4-MTP-Q8attn-GGUF,gguf,Qwen3.8-27B-NVFP4-MTP-Q6attn.gguf,equivalent,diff: data/template_diffs/utautako__Qwen3.8-27B-NVFP4-MTP-Q8attn-GGUF.diff,content condition;long string literal,09f0adf880ca89d6,2026-10-12
-qwen3.8-27b,prithivMLmods/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B.Q2_K.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,6block/Qwen3.8-27B-GGUF,gguf,mtp-Qwen3.8-27B-Q8_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,DevQuasar/Qwen.Qwen3.8-27B-GGUF,gguf,mtp-Qwen.Qwen3.8-27B.f16.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,Farggin/Lobo-Qwen3.8-27B-GSQ-RCO-IQ3_S-MTP-GGUF,gguf,Qwen3.8-27B-GSQ-RCO-IQ3_S-MTP-Q4XS-Q3S.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,qtum/Qwen3.8-27B-GGUF,gguf,mtp-Qwen3.8-27B-Q8_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,quimmedes/Qwen3.8-27B-XYZ,gguf,Qwen3.8-27B-Q1Q-XYZ-v2.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,drawthingsai/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-DT-IQ2_S.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,Arki05/Qwen3.8-27B-GGUF-shards,gguf,skeleton.gguf,equivalent,diff: data/template_diffs/Arki05__Qwen3.8-27B-GGUF-shards.diff,content condition;long string literal,349dd875ac1d804b,2026-10-12
-qwen3.8-27b,sweetand/qwen3.8-27b-1C,gguf,qwen3.8-27b-1c-Q2_K.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,Chungulus/Qwen3.8-27B-Q3_K_M-GGUF,gguf,Qwen3.8-27B-Q3_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,ubergarm/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-MTP-IQ4_KS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,ToBeStyled/Qwen3.8-27B-ColdFusion-GAIN-Blackwell-DFlash2-Ultra-V1.0,gguf,Qwen3.8-27B-ColdFusion-GAIN-Blackwell-DFlash2-Ultra-V1.0-draft-DFlash2-NVFP4.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,NikiKrutan/Qwen3.8-27B-MTP-GGUF,gguf,Qwen3.8-27B-8500-NIKI-IQ2_XXS.gguf,differs,diff: data/template_diffs/NikiKrutan__Qwen3.8-27B-MTP-GGUF.diff,content condition;long string literal,109bf9355242f4db,2026-10-12
-qwen3.8-27b,blackfan23/Dirk-Qwen3.8-27B-GGUF,gguf,Dirk-Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,suspicious,new in the build: randomness; diff: data/template_diffs/blackfan23__Dirk-Qwen3.8-27B-GGUF.diff,content condition;long string literal;randomness,9740f0d1c9ed1e5d,2026-10-12
-qwen3.8-27b,Chungulus/Qwen3.8-27B-Q5_K_M-GGUF,gguf,Qwen3.8-27B-Q5_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2,gguf,Qwen3.8-27B-DFlash2-Q2K_L.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,ilintar/qwen3.8-27b-gguf-strix-halo,gguf,Qwen3.8-27B-DFlash2-IQ4_XS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,williamliao/Qwen3.8-27B-NVFP4-GGUF,gguf,Qwen3.8-27B-NVFP4-Quality-v2.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,sdkyuan/qwen3.8-27B-qat-q2_0-gguf,gguf,qwen38-27b-qat-q2_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
-qwen3.8-27b,npario/Qwen3.8-27B-GSQ-RCO-GGUF,gguf,Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-12
 qwen3.8-flash-next,Qwen/Qwen3.8-Flash-Next,original,chat_template.jinja,reference,,content condition;long string literal,da00e52a9e791655,2026-10-12
 qwen3.8-flash-next,ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF,gguf,Q2_0/Qwen3.8-Flash-Next-GSQ-RCO-Q2_0-00001-of-00002.gguf,equivalent,diff: data/template_diffs/ISTA-DASLab__Qwen3.8-Flash-Next-GSQ-RCO-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-12
 qwen3.8-flash-next,unsloth/Qwen3.8-Flash-Next-GGUF,gguf,BF16/Qwen3.8-Flash-Next-BF16-00001-of-00008.gguf,equivalent,diff: data/template_diffs/unsloth__Qwen3.8-Flash-Next-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-12
@@ -741,21 +674,6 @@ deepseek-v4-pro-0813,qtum/DeepSeek-V4-Pro-0813-GGUF,gguf,DeepSeek-V4-Pro-0813-Q3
 deepseek-v4-pro-0813,ryant0000/DeepSeek-V4-Pro-0813-gguf,gguf,Q4_1/DeepSeek-V4-Pro-Q4_1-00001-of-00005.gguf,not checked,no chat template in the build,,,2026-10-12
 deepseek-v4-pro-0813,pokey2025/dspark-DeepSeek-V4-Pro-0813.gguf,gguf,dspark-DeepSeek-V4-Pro-0813-IQ3_XXS-imx.gguf,not checked,original has no template to compare,content condition;long string literal,bcc5c879c74574d6,2026-10-12
 deepseek-v4-pro-0813,DevQuasar/deepseek-ai.DeepSeek-V4-Pro-0813-GGUF,gguf,Q4_K_M/deepseek-ai.DeepSeek-V4-Pro-0813.Q4_K_M-00001-of-00076.gguf,not checked,original has no template to compare,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,deepseek-ai/DeepSeek-V4.1-Flash,original,chat_template.jinja,reference,,long string literal,954e483f0c7040fd,2026-10-12
-deepseek-v4.1-flash,antirez/deepseek-v4.1-flash-gguf,gguf,DeepSeek-V4.1-Flash-Vision.gguf,not checked,no chat template in the build,,,2026-10-12
-deepseek-v4.1-flash,pfeifferj/DeepSeek-V4.1-Flash-GSQ-RCO-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark-draft.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/pfeifferj__DeepSeek-V4.1-Flash-GSQ-RCO-GGUF.diff,content condition;long string literal,51ab129189fb64d4,2026-10-12
-deepseek-v4.1-flash,vcruz305/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-Q3_K_M-00001-of-00009.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/vcruz305__DeepSeek-V4.1-Flash-GGUF.diff,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,Lucebox/DeepSeek-V4.1-Flash-ROCMFP23-GGUF,gguf,ds41-lucebox-minus10gib.gguf,not checked,no chat template in the build,,,2026-10-12
-deepseek-v4.1-flash,smalinin/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark-AUTO.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/smalinin__DeepSeek-V4.1-Flash-GGUF.diff,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,apetersson/DeepSeek-V4.1-Flash-MixedQ2-GGUF,gguf,DSV41-mixedq2-00001-of-00005.gguf,not checked,no chat template in the build,,,2026-10-12
-deepseek-v4.1-flash,AMAImedia/DeepSeek-V4.1-Flash-FP8-GGUF,gguf,GGUF/DeepSeek-V4.1-Flash-Q4_K_M-00001-of-00011.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/AMAImedia__DeepSeek-V4.1-Flash-FP8-GGUF.diff,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,mxxm-t/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark-MXFP4.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/mxxm-t__DeepSeek-V4.1-Flash-GGUF.diff,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,JigSawPT/DeepSeek-V4.1-Flash-DSpark-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/JigSawPT__DeepSeek-V4.1-Flash-DSpark-GGUF.diff,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,Solstice-AI/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-Q3_K_M-00001-of-00009.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/Solstice-AI__DeepSeek-V4.1-Flash-GGUF.diff,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,JigSawPT/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-MXFP4-engram-00001-of-00011.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/JigSawPT__DeepSeek-V4.1-Flash-GGUF.diff,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,Lucebox/DeepSeek-V4.1-Flash-DSpark-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark-draft-Q2K-Q4K.gguf,not checked,no chat template in the build,,,2026-10-12
-deepseek-v4.1-flash,Zrald/zralddeepseekv4.1,gguf,zralddeepseek-v4.1-compressed-00001-of-00007.gguf,suspicious,new in the build: content condition; diff: data/template_diffs/Zrald__zralddeepseekv4.1.diff,content condition;long string literal,bcc5c879c74574d6,2026-10-12
-deepseek-v4.1-flash,pokey2025/DeepSeek-V4.1-Flash-ik-llama-GGUF,gguf,dspark-DeepSeek-V4.1-Flash-MXFP4.gguf,not checked,no chat template in the build,,,2026-10-12
 kimi-k3,moonshotai/Kimi-K3,original,,not checked,no chat template in the repo,,,2026-10-12
 kimi-k3,unsloth/Kimi-K3-GGUF,gguf,UD-IQ1_M/Kimi-K3-UD-IQ1_M-00001-of-00015.gguf,not checked,original has no template to compare,content condition;long string literal,b3a9010ed9054407,2026-10-12
 kimi-k3,AtomicChat/Kimi-K3-GGUF,gguf,Q3_K_S/Q3_K_S-00001-of-00028.gguf,not checked,original has no template to compare,content condition,7773b781d3365770,2026-10-12
@@ -773,47 +691,6 @@ kimi-k3,hudabey/Kimi-K3-GGUF,gguf,Kimi-K3-896x60B-MXFP4_MOE-00001-of-00034.gguf,
 kimi-k3,prometheusAIR/Kimi-K3-REAP55-GGUF,gguf,Kimi-K3-REAP55-IQ1_M-00001-of-00008.gguf,not checked,original has no template to compare,content condition,410ae3d5cb41c254,2026-10-12
 kimi-k3,Amynnnn/Kimi-K3-GGUF,gguf,UD-IQ1_M/Kimi-K3-UD-IQ1_M-00001-of-00015.gguf,not checked,original has no template to compare,content condition;long string literal,b3a9010ed9054407,2026-10-12
 kimi-k3,Riyan200324200324/Kimi-K3-GGUF,gguf,mxfp4/Kimi-K3-mxfp4-00001-of-00004.gguf,not checked,no chat template in the build,,,2026-10-12
-glm-5.3,zai-org/GLM-5.3,original,chat_template.jinja,reference,,content condition;long string literal,93421a9524f51694,2026-10-12
-glm-5.3,unsloth/GLM-5.3-GGUF,gguf,UD-IQ1_M/GLM-5.3-UD-IQ1_M-00001-of-00006.gguf,equivalent,diff: data/template_diffs/unsloth__GLM-5.3-GGUF.diff,content condition;long string literal,4805dfd8a01fb29a,2026-10-12
-glm-5.3,autotrust/GLM-5.3-GGUF-DGX-Spark,gguf,GLM-5.3-Q2-DGX-Spark-00001-of-00004.gguf,identical,,content condition;long string literal,93421a9524f51694,2026-10-12
-glm-5.3,DevQuasar/zai-org.GLM-5.3-GGUF,gguf,Q6_K/zai-org.GLM-5.3.Q6_K-00001-of-00046.gguf,equivalent,diff: data/template_diffs/DevQuasar__zai-org.GLM-5.3-GGUF.diff,content condition;long string literal,ccbe3e5bc0fecd1d,2026-10-12
-glm-5.3,muzzy/GLM-5.3-GGUF,gguf,IQ1_KT/GLM-5.3-IQ1_KT-00001-of-00015.gguf,equivalent,diff: data/template_diffs/muzzy__GLM-5.3-GGUF.diff,content condition;long string literal,ccbe3e5bc0fecd1d,2026-10-12
-glm-5.3,SixVolts/GLM-5.3-ewaste-edition-GGUF,gguf,GLM-5.3-MTP-Q3_K_M-sc.gguf,identical,,content condition;long string literal,93421a9524f51694,2026-10-12
-glm-5.3,Coder40-95/GLM-5.3-GGUF,gguf,UD-IQ1_M/GLM-5.3-UD-IQ1_M-00001-of-00006.gguf,equivalent,diff: data/template_diffs/Coder40-95__GLM-5.3-GGUF.diff,content condition;long string literal,4805dfd8a01fb29a,2026-10-12
-glm-5.3,taurusduan/GLM-5.3-GGUF-DGX-Spark,gguf,GLM-5.3-Q2-DGX-Spark-00001-of-00004.gguf,identical,,content condition;long string literal,93421a9524f51694,2026-10-12
-glm-5.3-flash,zai-org/GLM-5.3-Flash,original,chat_template.jinja,reference,,content condition;long string literal,915563ab628db85f,2026-10-12
-glm-5.3-flash,unsloth/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/unsloth__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,autotrust/GLM-5.3-Flash-GGUF-DGX-Spark,gguf,GLM-5.3-Flash-Q2-DGX-Spark-00001-of-00002.gguf,equivalent,diff: data/template_diffs/autotrust__GLM-5.3-Flash-GGUF-DGX-Spark.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF,gguf,GLM-5.3-Flash-GSQ-RCO-3.0bit.gguf,identical,,content condition;long string literal,915563ab628db85f,2026-10-12
-glm-5.3-flash,peasantsmith/GLM-5.3-Flash-Maya-GGUF,gguf,vision/GLM-5.3-Flash-vocab.gguf,equivalent,diff: data/template_diffs/peasantsmith__GLM-5.3-Flash-Maya-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,aj9o9/GLM-5.3-Flash-GGUF,gguf,AJ-IQ3_XXS/GLM-5.3-Flash-AJ-IQ3_XXS-00001-of-00003.gguf,equivalent,diff: data/template_diffs/aj9o9__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF,gguf,GLM-5.3-Flash-REAP50-IQ3_M.gguf,equivalent,diff: data/template_diffs/patrickbdevaney__GLM-5.3-Flash-REAP50-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,DevQuasar/zai-org.GLM-5.3-Flash-GGUF,gguf,Q5_K_M/zai-org.GLM-5.3-Flash.f16.gguf.Q5_K_M.gguf-00001-of-00017.gguf,equivalent,diff: data/template_diffs/DevQuasar__zai-org.GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,xautonomics/GLM-5.3-Flash-UD-IQ4_XS.LAYR.GGUF,gguf,blk-00000.gguf,equivalent,diff: data/template_diffs/xautonomics__GLM-5.3-Flash-UD-IQ4_XS.LAYR.GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,avar6/GLM-5.3-Flash-BF16-gguf,gguf,Q2_K-Q3_K-3.20bpw/GLM-5.3-Flash-Q2_K-Q3_K-3.20bpw-00001-of-00003.gguf,equivalent,diff: data/template_diffs/avar6__GLM-5.3-Flash-BF16-gguf.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF,gguf,GLM-5.3-Flash-GSQ-RCO-3.0bit.gguf,identical,,content condition;long string literal,915563ab628db85f,2026-10-12
-glm-5.3-flash,batiai/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-Q3_K_M-00001-of-00004.gguf,equivalent,diff: data/template_diffs/batiai__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,ddh0/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-3.49bpw.gguf,equivalent,diff: data/template_diffs/ddh0__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,6block/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-IQ1_M-00001-of-00015.gguf,equivalent,diff: data/template_diffs/6block__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,neuralll/GLM-5.3-Flash-MTP-GGUF,gguf,GLM-5.3-Flash-MTP-Q4_K.gguf,identical,,content condition;long string literal,915563ab628db85f,2026-10-12
-glm-5.3-flash,backpack-run/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-Q4_K_M.gguf,identical,,content condition;long string literal,915563ab628db85f,2026-10-12
-glm-5.3-flash,YTan2000/GLM-5.3-Flash-TQ3_4S,gguf,tq3_4s/GLM-5.3-Flash-TQ3_4S.gguf-00001-of-00004.gguf,equivalent,diff: data/template_diffs/YTan2000__GLM-5.3-Flash-TQ3_4S.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,SixVolts/GLM-5.3-Flash-ewaste-edition-GGUF,gguf,GLM-5.3-Flash-Q4_K_XL-00001-of-00005.gguf,identical,,content condition;long string literal,915563ab628db85f,2026-10-12
-glm-5.3-flash,qtum/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-IQ1_M-00001-of-00015.gguf,equivalent,diff: data/template_diffs/qtum__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,amd/GLM-5.3-Flash-EXTENSOR,gguf,GLM-5.3-Flash-ROCmFP4.extensor.gguf,identical,,content condition;long string literal,915563ab628db85f,2026-10-12
-glm-5.3-flash,zurichquants/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/zurichquants__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,elvezjp/GLM-5.3-Flash-ELVEZ-KDA-Q8_0-gguf,gguf,GLM-5.3-Flash-ELVEZ-KDA-Q8_0.gguf,equivalent,diff: data/template_diffs/elvezjp__GLM-5.3-Flash-ELVEZ-KDA-Q8_0-gguf.diff,content condition;long string literal,977ebe0a91383d5b,2026-10-12
-glm-5.3-flash,taurusduan/GLM-5.3-Flash-GGUF-DGX-Spark,gguf,GLM-5.3-Flash-Q2-DGX-Spark-00001-of-00002.gguf,equivalent,diff: data/template_diffs/taurusduan__GLM-5.3-Flash-GGUF-DGX-Spark.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,sayyidfareed/GLM-5.3-Flash-Spark-Q2XL-MTP,gguf,GLM-5.3-Flash-Spark-Q2XL-MTP-00001-of-00008.gguf,equivalent,diff: data/template_diffs/sayyidfareed__GLM-5.3-Flash-Spark-Q2XL-MTP.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,lausannequants/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/lausannequants__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,Hagwell/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/Hagwell__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,Nil626yhh/GLM-5.3-Flash-GGUF,gguf,UD-IQ1_M/GLM-5.3-Flash-UD-IQ1_M-00001-of-00003.gguf,equivalent,diff: data/template_diffs/Nil626yhh__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,CoboSan/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/CoboSan__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,lazywold/GLM-5.3-Flash-GGUF,gguf,UD-IQ1_M/GLM-5.3-Flash-UD-IQ1_M-00001-of-00003.gguf,equivalent,diff: data/template_diffs/lazywold__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,Sciguy429/GLM-5.3-Flash-BF16,gguf,UNCENSORED-BF16/GLM-5.3-Flash-UNCENSORED-BF16-00001-of-00007.gguf,equivalent,diff: data/template_diffs/Sciguy429__GLM-5.3-Flash-BF16.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,D9010/GLM-5.3-Flash-D9010-86GB,gguf,GLM-5.3-Flash-D9010-IQ2-84GB.gguf,equivalent,diff: data/template_diffs/D9010__GLM-5.3-Flash-D9010-86GB.diff,content condition;long string literal,3d63810c2d09889c,2026-10-12
-glm-5.3-flash,cafonez/GLM-5.3-Flash-Gorgon-GGUF,gguf,GLM-5.3-Flash-Q5K-IQ3S-00001-of-00004.gguf,equivalent,diff: data/template_diffs/cafonez__GLM-5.3-Flash-Gorgon-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
-glm-5.3-flash,mussonking/GLM-5.3-Flash-Phobos-GGUF,gguf,GLM-5.3-Flash-Phobos-IQ4.gguf,equivalent,diff: data/template_diffs/mussonking__GLM-5.3-Flash-Phobos-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-12
 minimax-m3,MiniMaxAI/MiniMax-M3,original,chat_template.jinja,reference,,content condition;long string literal,d92fc1a7e559aa7f,2026-10-12
 minimax-m3,unsloth/MiniMax-M3-GGUF,gguf,MXFP4_MOE/MiniMax-M3-MXFP4_MOE-00001-of-00007.gguf,equivalent,diff: data/template_diffs/unsloth__MiniMax-M3-GGUF.diff,content condition;long string literal,79d0f811610ed453,2026-10-12
 minimax-m3,bartowski/MiniMax-M3-GGUF,gguf,MiniMax-M3-Q8_0/MiniMax-M3-Q8_0-00001-of-00012.gguf,identical,,content condition;long string literal,d92fc1a7e559aa7f,2026-10-12
@@ -889,13 +766,6 @@ falcon-h1r-7b,prithivMLmods/tiiuae_Falcon-H1R-7B-GGUF,gguf,Falcon-H1R-7B.Q2_K.gg
 falcon-h1r-7b,s3dev-ai/Falcon-H1R-7B-gguf,gguf,Falcon-H1R-7B-Q2_K.gguf,identical,,content condition;long string literal,ec207ad4de4dd26e,2026-10-12
 falcon-h1r-7b,mradermacher/Falcon-H1R-7B-GGUF,gguf,Falcon-H1R-7B.Q2_K.gguf,identical,,content condition;long string literal,ec207ad4de4dd26e,2026-10-12
 falcon-h1r-7b,DevQuasar/tiiuae.Falcon-H1R-7B-GGUF,gguf,tiiuae.Falcon-H1R-7B.Q2_K.gguf,identical,,content condition;long string literal,ec207ad4de4dd26e,2026-10-12
-k2-horizon-375b,IFM/K2-Horizon-375B-A23B,original,chat_template.jinja,reference,,content condition;long string literal,09c88618b9362d55,2026-10-12
-k2-horizon-375b,bartowski/K2-Horizon-375B-A23B-GGUF,gguf,K2-Horizon-375B-A23B-IQ3_M/K2-Horizon-375B-A23B-IQ3_M-00001-of-00005.gguf,identical,,content condition;long string literal,09c88618b9362d55,2026-10-12
-k2-horizon-375b,Baekpica/K2-Horizon-375B-A23B-GGUF,gguf,K2-Horizon-375B-A23B-Q8_0-00001-of-00030.gguf,equivalent,diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-GGUF.diff,content condition;long string literal,75f2dce09789555d,2026-10-12
-k2-horizon-375b,Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF,gguf,K2-Horizon-375B-A23B-MQ87-00001-of-00004.gguf,equivalent,diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-Mixed-Quant-GGUF.diff,content condition;long string literal,75f2dce09789555d,2026-10-12
-k2-horizon-32b,IFM/K2-Horizon-32B,original,chat_template.jinja,reference,,content condition;long string literal,09c88618b9362d55,2026-10-12
-k2-horizon-32b,bartowski/K2-Horizon-32B-GGUF,gguf,K2-Horizon-32B-IQ2_XXS.gguf,identical,,content condition;long string literal,09c88618b9362d55,2026-10-12
-k2-horizon-32b,kingjones777/K2-Horizon-32B-ROCmFP4-GGUF,gguf,K2-Horizon-32B-Q4_0_ROCMFP4_FAST.gguf,equivalent,diff: data/template_diffs/kingjones777__K2-Horizon-32B-ROCmFP4-GGUF.diff,content condition;long string literal,75f2dce09789555d,2026-10-12
 jamba2-mini,ai21labs/AI21-Jamba2-Mini,original,chat_template.jinja,reference,,content condition,0cac9a559c15afe6,2026-10-12
 jamba2-mini,bartowski/ai21labs_AI21-Jamba2-Mini-GGUF,gguf,ai21labs_AI21-Jamba2-Mini-IQ1_M.gguf,identical,,content condition,0cac9a559c15afe6,2026-10-12
 jamba2-mini,mradermacher/AI21-Jamba2-Mini-i1-GGUF,gguf,AI21-Jamba2-Mini.i1-IQ1_S.gguf,identical,,content condition,0cac9a559c15afe6,2026-10-12
@@ -963,3 +833,133 @@ latxa-3.1-70b-v2,mradermacher/Latxa-Llama-3.1-70B-Instruct-v2-i1-GGUF,gguf,Latxa
 latxa-3.1-70b-v2,mradermacher/Latxa-Llama-3.1-70B-Instruct-v2-GGUF,gguf,Latxa-Llama-3.1-70B-Instruct-v2.Q2_K.gguf,identical,,content condition,eb49456377a46621,2026-10-12
 latxa-3.1-70b-v2,itzune/Latxa-Llama-3.1-70B-Instruct-v2-GGUF,gguf,Latxa-Llama-3.1-70B-Instruct-v2-Q4_K_M.gguf,identical,,content condition,eb49456377a46621,2026-10-12
 norolmo-13b,HPLT/NorOLMo-13B,original,,not checked,no chat template in the repo,,,2026-10-12
+qwen3.8-27b,Qwen/Qwen3.8-27B,original,chat_template.jinja,reference,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,unsloth/Qwen3.8-27B-GGUF,gguf,MTP/mtp-Qwen3.8-27B-Q4_0.gguf,equivalent,diff: data/template_diffs/unsloth__Qwen3.8-27B-GGUF.diff,content condition;long string literal,558938e99f21deab,2026-10-17
+qwen3.8-27b,cdiamond/Qwen3.8-27B-iMatrix-NVFP4-MTP-GGUF,gguf,,not checked,download failed: no .gguf file,,,2026-10-17
+qwen3.8-27b,ggml-org/Qwen3.8-27B-GGUF,gguf,dflash-Qwen3.8-27B-Q4_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF,gguf,Dirk-Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,differs,diff: data/template_diffs/peculiar-ragdoll__Dirk-Qwen3.8-27B-GGUF.diff,content condition;long string literal,9740f0d1c9ed1e5d,2026-10-17
+qwen3.8-27b,ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF,gguf,Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,byteshape/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-IQ2_XXS-2.56bpw.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,lmstudio-community/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,OBLITERATUS/Qwen3.8-27B-OBLITERATED,gguf,Qwen3.8-27B-OBLITERATED-Q2_K.gguf,differs,diff: data/template_diffs/OBLITERATUS__Qwen3.8-27B-OBLITERATED.diff,,998529483fe35506,2026-10-17
+qwen3.8-27b,bartowski/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-IQ2_XXS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,z-lab/Qwen3.8-27B-DFlash2-GGUF,gguf,Qwen3.8-27B-DFlash2-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,agentionai/Qwen3.8-27B-AP-GGUF,gguf,Qwen3.8-27B-AP-IQ2_S.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,empero-ai/Qwen3.8-27B-Ridge-GGUF,gguf,Qwen3.8-27B-Ridge-3.7bpw.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,AtomicChat/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-AD-IQ1_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,incoai/Qwen3.8-27B-DFlash2-GGUF,gguf,Qwen3.8-27B-DFlash2-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,QQZ2026/Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-MTP-GGUF,gguf,Qwen3.8-27B-ZeroRefusal-UD-IQ4_XS-V3-Final-MTP.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,bytkim/Qwen3.8-27B-pi-GGUF,gguf,dflash2/Qwen3.8-27B-DFlash2-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,mudler/Qwen3.8-27B-APEX-GGUF,gguf,Qwen3.8-27B-APEX-I-Nano.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,kingjones777/Qwen3.8-27B-ROCmFP4-STRIX-MTP-GGUF,gguf,mtp-Qwen3.8-27B-Q4_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,tooltd/Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF,gguf,Qwen3.8-27B-ZB3.00bpw-IQ3_XXS.gguf,equivalent,diff: data/template_diffs/tooltd__Qwen3.8-27B-IQ4-XS-16GB-VRAM-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-17
+qwen3.8-27b,Abiray/Qwen3.8-27B-Q4_K_M-GGUF,gguf,Qwen3.8-27B-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,KikoCis/Qwen3.8-27B-GGUF,gguf,heal/Qwen3.8-27B-heal-LoRA.gguf,not checked,no chat template in the build,,,2026-10-17
+qwen3.8-27b,mradermacher/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B.Q2_K.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,Bucoid/Qwen3.8-27B-IQ4-XS-MTP-16GB-VRAM-GGUF,gguf,Qwen3.8-27B-IQ4_XS_4BPW.gguf,equivalent,diff: data/template_diffs/Bucoid__Qwen3.8-27B-IQ4-XS-MTP-16GB-VRAM-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-17
+qwen3.8-27b,HermiHg/Qwen3.8-27B-mmproj-Q5_K-MIX-GGUF,gguf,,not checked,download failed: no .gguf file,,,2026-10-17
+qwen3.8-27b,jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF,gguf,Qwen3.8-27B-ATX-4-XS.gguf,equivalent,diff: data/template_diffs/jakeatx__Qwen3.8-27B-ATX-IQ4_XS-M-GGUF.diff,content condition;long string literal,349dd875ac1d804b,2026-10-17
+qwen3.8-27b,Brian6145/Qwen3.8-27B-Imatrix-Mtp-1m,gguf,,not checked,download failed: no .gguf file,,,2026-10-17
+qwen3.8-27b,ArtomYuan/Qwen3.8-27B-ROCmFPX,gguf,Qwen3.8-27B_Q4_0_ROCMFP4_FAST.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,utautako/Qwen3.8-27B-NVFP4-MTP-Q8attn-GGUF,gguf,Qwen3.8-27B-NVFP4-MTP-Q6attn.gguf,equivalent,diff: data/template_diffs/utautako__Qwen3.8-27B-NVFP4-MTP-Q8attn-GGUF.diff,content condition;long string literal,09f0adf880ca89d6,2026-10-17
+qwen3.8-27b,prithivMLmods/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B.Q2_K.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,6block/Qwen3.8-27B-GGUF,gguf,mtp-Qwen3.8-27B-Q8_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,DevQuasar/Qwen.Qwen3.8-27B-GGUF,gguf,mtp-Qwen.Qwen3.8-27B.f16.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,Farggin/Lobo-Qwen3.8-27B-GSQ-RCO-IQ3_S-MTP-GGUF,gguf,Qwen3.8-27B-GSQ-RCO-IQ3_S-MTP-Q4XS-Q3S.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,qtum/Qwen3.8-27B-GGUF,gguf,mtp-Qwen3.8-27B-Q8_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,quimmedes/Qwen3.8-27B-XYZ,gguf,Qwen3.8-27B-Q1Q-XYZ-v2.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,drawthingsai/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-DT-IQ2_S.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,Arki05/Qwen3.8-27B-GGUF-shards,gguf,skeleton.gguf,equivalent,diff: data/template_diffs/Arki05__Qwen3.8-27B-GGUF-shards.diff,content condition;long string literal,349dd875ac1d804b,2026-10-17
+qwen3.8-27b,sweetand/qwen3.8-27b-1C,gguf,qwen3.8-27b-1c-Q2_K.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,Chungulus/Qwen3.8-27B-Q3_K_M-GGUF,gguf,Qwen3.8-27B-Q3_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,ubergarm/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-MTP-IQ4_KS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,ToBeStyled/Qwen3.8-27B-ColdFusion-GAIN-Blackwell-DFlash2-Ultra-V1.0,gguf,Qwen3.8-27B-ColdFusion-GAIN-Blackwell-DFlash2-Ultra-V1.0-draft-DFlash2-NVFP4.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,NikiKrutan/Qwen3.8-27B-MTP-GGUF,gguf,Qwen3.8-27B-8500-NIKI-IQ2_XXS.gguf,differs,diff: data/template_diffs/NikiKrutan__Qwen3.8-27B-MTP-GGUF.diff,content condition;long string literal,109bf9355242f4db,2026-10-17
+qwen3.8-27b,blackfan23/Dirk-Qwen3.8-27B-GGUF,gguf,Dirk-Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,differs,diff: data/template_diffs/blackfan23__Dirk-Qwen3.8-27B-GGUF.diff,content condition;long string literal,9740f0d1c9ed1e5d,2026-10-17
+qwen3.8-27b,Chungulus/Qwen3.8-27B-Q5_K_M-GGUF,gguf,Qwen3.8-27B-Q5_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,vincespeed/Qwen3.8-27B-No-MTP-GGUF-Dflash2,gguf,Qwen3.8-27B-DFlash2-Q2K_L.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,ilintar/qwen3.8-27b-gguf-strix-halo,gguf,Qwen3.8-27B-DFlash2-IQ4_XS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,williamliao/Qwen3.8-27B-NVFP4-GGUF,gguf,Qwen3.8-27B-NVFP4-Quality-v2.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,sdkyuan/qwen3.8-27B-qat-q2_0-gguf,gguf,qwen38-27b-qat-q2_0.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+qwen3.8-27b,npario/Qwen3.8-27B-GSQ-RCO-GGUF,gguf,Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-17
+deepseek-v4.1-flash,deepseek-ai/DeepSeek-V4.1-Flash,original,chat_template.jinja,reference,,long string literal,954e483f0c7040fd,2026-10-17
+deepseek-v4.1-flash,antirez/deepseek-v4.1-flash-gguf,gguf,DeepSeek-V4.1-Flash-Vision.gguf,not checked,no chat template in the build,,,2026-10-17
+deepseek-v4.1-flash,pfeifferj/DeepSeek-V4.1-Flash-GSQ-RCO-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark-draft.gguf,differs,diff: data/template_diffs/pfeifferj__DeepSeek-V4.1-Flash-GSQ-RCO-GGUF.diff,long string literal,51ab129189fb64d4,2026-10-17
+deepseek-v4.1-flash,vcruz305/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-Q3_K_M-00001-of-00009.gguf,differs,diff: data/template_diffs/vcruz305__DeepSeek-V4.1-Flash-GGUF.diff,long string literal,bcc5c879c74574d6,2026-10-17
+deepseek-v4.1-flash,Lucebox/DeepSeek-V4.1-Flash-ROCMFP23-GGUF,gguf,ds41-lucebox-minus10gib.gguf,not checked,no chat template in the build,,,2026-10-17
+deepseek-v4.1-flash,smalinin/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark-AUTO.gguf,differs,diff: data/template_diffs/smalinin__DeepSeek-V4.1-Flash-GGUF.diff,long string literal,bcc5c879c74574d6,2026-10-17
+deepseek-v4.1-flash,apetersson/DeepSeek-V4.1-Flash-MixedQ2-GGUF,gguf,DSV41-mixedq2-00001-of-00005.gguf,not checked,no chat template in the build,,,2026-10-17
+deepseek-v4.1-flash,AMAImedia/DeepSeek-V4.1-Flash-FP8-GGUF,gguf,GGUF/DeepSeek-V4.1-Flash-Q4_K_M-00001-of-00011.gguf,differs,diff: data/template_diffs/AMAImedia__DeepSeek-V4.1-Flash-FP8-GGUF.diff,long string literal,bcc5c879c74574d6,2026-10-17
+deepseek-v4.1-flash,mxxm-t/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark-MXFP4.gguf,differs,diff: data/template_diffs/mxxm-t__DeepSeek-V4.1-Flash-GGUF.diff,long string literal,bcc5c879c74574d6,2026-10-17
+deepseek-v4.1-flash,JigSawPT/DeepSeek-V4.1-Flash-DSpark-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark.gguf,differs,diff: data/template_diffs/JigSawPT__DeepSeek-V4.1-Flash-DSpark-GGUF.diff,long string literal,bcc5c879c74574d6,2026-10-17
+deepseek-v4.1-flash,Solstice-AI/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-Q3_K_M-00001-of-00009.gguf,differs,diff: data/template_diffs/Solstice-AI__DeepSeek-V4.1-Flash-GGUF.diff,long string literal,bcc5c879c74574d6,2026-10-17
+deepseek-v4.1-flash,JigSawPT/DeepSeek-V4.1-Flash-GGUF,gguf,DeepSeek-V4.1-Flash-MXFP4-engram-00001-of-00011.gguf,differs,diff: data/template_diffs/JigSawPT__DeepSeek-V4.1-Flash-GGUF.diff,long string literal,bcc5c879c74574d6,2026-10-17
+deepseek-v4.1-flash,Lucebox/DeepSeek-V4.1-Flash-DSpark-GGUF,gguf,DeepSeek-V4.1-Flash-DSpark-draft-Q2K-Q4K.gguf,not checked,no chat template in the build,,,2026-10-17
+deepseek-v4.1-flash,Zrald/zralddeepseekv4.1,gguf,zralddeepseek-v4.1-compressed-00001-of-00007.gguf,differs,diff: data/template_diffs/Zrald__zralddeepseekv4.1.diff,long string literal,bcc5c879c74574d6,2026-10-17
+deepseek-v4.1-flash,pokey2025/DeepSeek-V4.1-Flash-ik-llama-GGUF,gguf,dspark-DeepSeek-V4.1-Flash-MXFP4.gguf,not checked,no chat template in the build,,,2026-10-17
+glm-5.3,zai-org/GLM-5.3,original,chat_template.jinja,reference,,content condition;long string literal,900953e56aee1dfe,2026-10-17
+glm-5.3,unsloth/GLM-5.3-GGUF,gguf,UD-IQ1_M/GLM-5.3-UD-IQ1_M-00001-of-00006.gguf,equivalent,diff: data/template_diffs/unsloth__GLM-5.3-GGUF.diff,content condition;long string literal,4805dfd8a01fb29a,2026-10-17
+glm-5.3,autotrust/GLM-5.3-GGUF-DGX-Spark,gguf,GLM-5.3-Q2-DGX-Spark-00001-of-00004.gguf,equivalent,diff: data/template_diffs/autotrust__GLM-5.3-GGUF-DGX-Spark.diff,content condition;long string literal,93421a9524f51694,2026-10-17
+glm-5.3,DevQuasar/zai-org.GLM-5.3-GGUF,gguf,Q6_K/zai-org.GLM-5.3.Q6_K-00001-of-00046.gguf,equivalent,diff: data/template_diffs/DevQuasar__zai-org.GLM-5.3-GGUF.diff,content condition;long string literal,ccbe3e5bc0fecd1d,2026-10-17
+glm-5.3,muzzy/GLM-5.3-GGUF,gguf,IQ1_KT/GLM-5.3-IQ1_KT-00001-of-00015.gguf,equivalent,diff: data/template_diffs/muzzy__GLM-5.3-GGUF.diff,content condition;long string literal,ccbe3e5bc0fecd1d,2026-10-17
+glm-5.3,SixVolts/GLM-5.3-ewaste-edition-GGUF,gguf,GLM-5.3-MTP-Q3_K_M-sc.gguf,equivalent,diff: data/template_diffs/SixVolts__GLM-5.3-ewaste-edition-GGUF.diff,content condition;long string literal,93421a9524f51694,2026-10-17
+glm-5.3,Coder40-95/GLM-5.3-GGUF,gguf,UD-IQ1_M/GLM-5.3-UD-IQ1_M-00001-of-00006.gguf,equivalent,diff: data/template_diffs/Coder40-95__GLM-5.3-GGUF.diff,content condition;long string literal,4805dfd8a01fb29a,2026-10-17
+glm-5.3,taurusduan/GLM-5.3-GGUF-DGX-Spark,gguf,GLM-5.3-Q2-DGX-Spark-00001-of-00004.gguf,equivalent,diff: data/template_diffs/taurusduan__GLM-5.3-GGUF-DGX-Spark.diff,content condition;long string literal,93421a9524f51694,2026-10-17
+glm-5.3-flash,zai-org/GLM-5.3-Flash,original,chat_template.jinja,reference,,content condition;long string literal,45568c4b7296cfc6,2026-10-17
+glm-5.3-flash,unsloth/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/unsloth__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,autotrust/GLM-5.3-Flash-GGUF-DGX-Spark,gguf,GLM-5.3-Flash-Q2-DGX-Spark-00001-of-00002.gguf,equivalent,diff: data/template_diffs/autotrust__GLM-5.3-Flash-GGUF-DGX-Spark.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,pfeifferj/GLM-5.3-Flash-GSQ-RCO-GGUF,gguf,GLM-5.3-Flash-GSQ-RCO-3.0bit.gguf,equivalent,diff: data/template_diffs/pfeifferj__GLM-5.3-Flash-GSQ-RCO-GGUF.diff,content condition;long string literal,915563ab628db85f,2026-10-17
+glm-5.3-flash,peasantsmith/GLM-5.3-Flash-Maya-GGUF,gguf,vision/GLM-5.3-Flash-vocab.gguf,equivalent,diff: data/template_diffs/peasantsmith__GLM-5.3-Flash-Maya-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,aj9o9/GLM-5.3-Flash-GGUF,gguf,AJ-IQ3_XXS/GLM-5.3-Flash-AJ-IQ3_XXS-00001-of-00003.gguf,equivalent,diff: data/template_diffs/aj9o9__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF,gguf,GLM-5.3-Flash-REAP50-IQ3_M.gguf,equivalent,diff: data/template_diffs/patrickbdevaney__GLM-5.3-Flash-REAP50-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,DevQuasar/zai-org.GLM-5.3-Flash-GGUF,gguf,Q5_K_M/zai-org.GLM-5.3-Flash.f16.gguf.Q5_K_M.gguf-00001-of-00017.gguf,equivalent,diff: data/template_diffs/DevQuasar__zai-org.GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,xautonomics/GLM-5.3-Flash-UD-IQ4_XS.LAYR.GGUF,gguf,blk-00000.gguf,equivalent,diff: data/template_diffs/xautonomics__GLM-5.3-Flash-UD-IQ4_XS.LAYR.GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,avar6/GLM-5.3-Flash-BF16-gguf,gguf,Q2_K-Q3_K-3.20bpw/GLM-5.3-Flash-Q2_K-Q3_K-3.20bpw-00001-of-00003.gguf,equivalent,diff: data/template_diffs/avar6__GLM-5.3-Flash-BF16-gguf.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF,gguf,GLM-5.3-Flash-GSQ-RCO-3.0bit.gguf,equivalent,diff: data/template_diffs/taurusduan__GLM-5.3-Flash-GSQ-RCO-GGUF.diff,content condition;long string literal,915563ab628db85f,2026-10-17
+glm-5.3-flash,batiai/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-Q3_K_M-00001-of-00004.gguf,equivalent,diff: data/template_diffs/batiai__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,ddh0/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-3.49bpw.gguf,equivalent,diff: data/template_diffs/ddh0__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,6block/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-IQ1_M-00001-of-00015.gguf,equivalent,diff: data/template_diffs/6block__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,neuralll/GLM-5.3-Flash-MTP-GGUF,gguf,GLM-5.3-Flash-MTP-Q4_K.gguf,equivalent,diff: data/template_diffs/neuralll__GLM-5.3-Flash-MTP-GGUF.diff,content condition;long string literal,915563ab628db85f,2026-10-17
+glm-5.3-flash,backpack-run/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-Q4_K_M.gguf,equivalent,diff: data/template_diffs/backpack-run__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,915563ab628db85f,2026-10-17
+glm-5.3-flash,YTan2000/GLM-5.3-Flash-TQ3_4S,gguf,tq3_4s/GLM-5.3-Flash-TQ3_4S.gguf-00001-of-00004.gguf,equivalent,diff: data/template_diffs/YTan2000__GLM-5.3-Flash-TQ3_4S.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,SixVolts/GLM-5.3-Flash-ewaste-edition-GGUF,gguf,GLM-5.3-Flash-Q4_K_XL-00001-of-00005.gguf,equivalent,diff: data/template_diffs/SixVolts__GLM-5.3-Flash-ewaste-edition-GGUF.diff,content condition;long string literal,915563ab628db85f,2026-10-17
+glm-5.3-flash,qtum/GLM-5.3-Flash-GGUF,gguf,GLM-5.3-Flash-IQ1_M-00001-of-00015.gguf,equivalent,diff: data/template_diffs/qtum__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,amd/GLM-5.3-Flash-EXTENSOR,gguf,GLM-5.3-Flash-ROCmFP4.extensor.gguf,equivalent,diff: data/template_diffs/amd__GLM-5.3-Flash-EXTENSOR.diff,content condition;long string literal,915563ab628db85f,2026-10-17
+glm-5.3-flash,zurichquants/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/zurichquants__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,elvezjp/GLM-5.3-Flash-ELVEZ-KDA-Q8_0-gguf,gguf,GLM-5.3-Flash-ELVEZ-KDA-Q8_0.gguf,equivalent,diff: data/template_diffs/elvezjp__GLM-5.3-Flash-ELVEZ-KDA-Q8_0-gguf.diff,content condition;long string literal,977ebe0a91383d5b,2026-10-17
+glm-5.3-flash,taurusduan/GLM-5.3-Flash-GGUF-DGX-Spark,gguf,GLM-5.3-Flash-Q2-DGX-Spark-00001-of-00002.gguf,equivalent,diff: data/template_diffs/taurusduan__GLM-5.3-Flash-GGUF-DGX-Spark.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,sayyidfareed/GLM-5.3-Flash-Spark-Q2XL-MTP,gguf,GLM-5.3-Flash-Spark-Q2XL-MTP-00001-of-00008.gguf,equivalent,diff: data/template_diffs/sayyidfareed__GLM-5.3-Flash-Spark-Q2XL-MTP.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,lausannequants/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/lausannequants__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,Hagwell/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/Hagwell__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,Nil626yhh/GLM-5.3-Flash-GGUF,gguf,UD-IQ1_M/GLM-5.3-Flash-UD-IQ1_M-00001-of-00003.gguf,equivalent,diff: data/template_diffs/Nil626yhh__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,CoboSan/GLM-5.3-Flash-GGUF,gguf,BF16/GLM-5.3-Flash-BF16-00001-of-00014.gguf,equivalent,diff: data/template_diffs/CoboSan__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,lazywold/GLM-5.3-Flash-GGUF,gguf,UD-IQ1_M/GLM-5.3-Flash-UD-IQ1_M-00001-of-00003.gguf,equivalent,diff: data/template_diffs/lazywold__GLM-5.3-Flash-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,Sciguy429/GLM-5.3-Flash-BF16,gguf,UNCENSORED-BF16/GLM-5.3-Flash-UNCENSORED-BF16-00001-of-00007.gguf,equivalent,diff: data/template_diffs/Sciguy429__GLM-5.3-Flash-BF16.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,D9010/GLM-5.3-Flash-D9010-86GB,gguf,GLM-5.3-Flash-D9010-IQ2-84GB.gguf,equivalent,diff: data/template_diffs/D9010__GLM-5.3-Flash-D9010-86GB.diff,content condition;long string literal,3d63810c2d09889c,2026-10-17
+glm-5.3-flash,cafonez/GLM-5.3-Flash-Gorgon-GGUF,gguf,GLM-5.3-Flash-Q5K-IQ3S-00001-of-00004.gguf,equivalent,diff: data/template_diffs/cafonez__GLM-5.3-Flash-Gorgon-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+glm-5.3-flash,mussonking/GLM-5.3-Flash-Phobos-GGUF,gguf,GLM-5.3-Flash-Phobos-IQ4.gguf,equivalent,diff: data/template_diffs/mussonking__GLM-5.3-Flash-Phobos-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-10-17
+devstral-small-2,mistralai/Devstral-Small-2-24B-Instruct-2512,original,chat_template.jinja,reference,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-17
+devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-8bit,mlx,chat_template.jinja,differs,diff: data/template_diffs/mlx-community__Devstral-Small-2-24B-Instruct-2512-8bit.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit,mlx,chat_template.jinja,differs,diff: data/template_diffs/mlx-community__Devstral-Small-2-24B-Instruct-2512-4bit.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-UD-IQ1_S.gguf,differs,reviewed 2026-10-17: Unsloth's template: inserts today's and yesterday's date into a Le Chat-style default system prompt that replaces Mistral Vibe's agent prompt; no other logic added; new in the build: date or time; diff: data/template_diffs/unsloth__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,date or time;long string literal,49327005df68627a,2026-10-17
+devstral-small-2,lmstudio-community/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q3_K_L.gguf,differs,diff: data/template_diffs/lmstudio-community__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,bartowski/mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,mistralai_Devstral-Small-2-24B-Instruct-2512-IQ2_XXS.gguf,differs,diff: data/template_diffs/bartowski__mistralai_Devstral-Small-2-24B-Instruct-2512-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,backpack-run/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q4_K_M.gguf,identical,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-17
+devstral-small-2,byteshape/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-IQ2_S-2.34bpw.gguf,differs,diff: data/template_diffs/byteshape__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,ggml-org/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-Q8_0.gguf,differs,diff: data/template_diffs/ggml-org__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,FreedomAISVR/Devstral-Small-2-MXFP4-GGUF,gguf,devstral-small-2-mxfp4.gguf,differs,diff: data/template_diffs/FreedomAISVR__Devstral-Small-2-MXFP4-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,jkim96/Devstral-Small-2-24B-Instruct-2512-DASHQ-Q2-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-DASHQ-IQ2_XXS.gguf,identical,,content condition;long string literal,0f06f2a5ac01ec06,2026-10-17
+devstral-small-2,viniciusianni/Devstral-Small-2-24B-Instruct-2512-Q4_K_M-GGUF,gguf,devstral-small-2-24b-instruct-2512-q4_k_m.gguf,not checked,no chat template in the build,,,2026-10-17
+devstral-small-2,freddm/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,devstral-small-2-24b-instruct-2512-iq3_m.gguf,differs,diff: data/template_diffs/freddm__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,DevQuasar/mistralai.Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,mistralai.Devstral-Small-2-24B-Instruct-2512.Q2_K.gguf,differs,diff: data/template_diffs/DevQuasar__mistralai.Devstral-Small-2-24B-Instruct-2512-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,FreedomAISVR/Devstral-Small-2-NVFP4-GGUF,gguf,devstral-small-2-nvfp4.gguf,differs,diff: data/template_diffs/FreedomAISVR__Devstral-Small-2-NVFP4-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,ubergarm/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512-IQ4_KSS.gguf,differs,diff: data/template_diffs/ubergarm__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,keypa/Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,Devstral-Small-2-24B-Instruct-2512.gguf,differs,diff: data/template_diffs/keypa__Devstral-Small-2-24B-Instruct-2512-GGUF.diff,,3e5d35d182edd751,2026-10-17
+devstral-small-2,tiktemu/ByteShape___Devstral-Small-2-24B-Instruct-2512-GGUF,gguf,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-17
+k2-horizon-375b,IFM/K2-Horizon-375B-A23B,original,chat_template.jinja,reference,,long string literal,cebc8225c0c92a43,2026-10-17
+k2-horizon-375b,bartowski/K2-Horizon-375B-A23B-GGUF,gguf,K2-Horizon-375B-A23B-IQ3_M/K2-Horizon-375B-A23B-IQ3_M-00001-of-00005.gguf,equivalent,diff: data/template_diffs/bartowski__K2-Horizon-375B-A23B-GGUF.diff,long string literal,09c88618b9362d55,2026-10-17
+k2-horizon-375b,Baekpica/K2-Horizon-375B-A23B-GGUF,gguf,K2-Horizon-375B-A23B-Q8_0-00001-of-00030.gguf,equivalent,reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-GGUF.diff,content condition;long string literal,75f2dce09789555d,2026-10-17
+k2-horizon-375b,Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF,gguf,K2-Horizon-375B-A23B-MQ87-00001-of-00004.gguf,equivalent,reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-Mixed-Quant-GGUF.diff,content condition;long string literal,75f2dce09789555d,2026-10-17
+k2-horizon-32b,IFM/K2-Horizon-32B,original,chat_template.jinja,reference,,long string literal,cebc8225c0c92a43,2026-10-17
+k2-horizon-32b,bartowski/K2-Horizon-32B-GGUF,gguf,K2-Horizon-32B-IQ2_XXS.gguf,equivalent,diff: data/template_diffs/bartowski__K2-Horizon-32B-GGUF.diff,long string literal,09c88618b9362d55,2026-10-17
+k2-horizon-32b,kingjones777/K2-Horizon-32B-ROCmFP4-GGUF,gguf,K2-Horizon-32B-Q4_0_ROCMFP4_FAST.gguf,equivalent,reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/kingjones777__K2-Horizon-32B-ROCmFP4-GGUF.diff,content condition;long string literal,75f2dce09789555d,2026-10-17

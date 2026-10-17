@@ -1601,7 +1601,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191446/https://arxiv.org/abs/2608.13517",
      "note": "Mimir v1 ... is trained from scratch using the Gemma-4 tokenizer [review: supports only that the v1 root is scratch (no Gemma weights); says nothing about v1.5 continuing it; row 60 carries continued-own]"
     },
     {
@@ -1611,7 +1611,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191446/https://arxiv.org/abs/2608.13517",
      "note": "mixture of 161 datasets, ~70.5B tokens per epoch, with per-dataset token counts"
     },
     {
@@ -1641,7 +1641,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191446/https://arxiv.org/abs/2608.13517",
      "note": "trained for 1.65M steps on 8 NVIDIA B200 GPUs (v1 run)"
     },
     {
@@ -1661,7 +1661,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130801/https://github.com/schneiderkamplab/HRM-Text",
      "note": "training uses the HRM-Text fork; sampling policy and data manifest published"
     },
     {
@@ -1681,7 +1681,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191446/https://arxiv.org/abs/2608.13517",
      "note": "Synthetic + audited data is LLM-generated using Gemma4 31B"
     },
     {
@@ -1691,7 +1691,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010191446/https://arxiv.org/abs/2608.13517",
      "note": "Synthetic + audited data is LLM-generated using Gemma4 31B and quality-audited before inclusion"
     }
    ],
@@ -1987,7 +1987,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131340/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf",
      "note": "Template for the Public Summary of Training Content for General-Purpose AI models Version of the Summary: v1.0 Last update: 31 July 2026"
     }
    ],
@@ -4629,7 +4629,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130116/https://github.com/AMALIA-LLM/AMALIA",
      "note": "lists Megatron-LM-pretrain, amalia-lm-post-train and arquivo_processing repos; processed Arquivo data not found released"
     },
     {
@@ -5188,8 +5188,8 @@
    "gguf_build": "unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 15,
-   "template_check": "suspicious",
-   "template_check_detail": "1 suspicious, 12 differs, 2 not checked, 2 identical",
+   "template_check": "differs",
+   "template_check_detail": "13 differs, 2 not checked, 2 identical",
    "mlx_build_verified": "not measured",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "160.0",
@@ -5281,7 +5281,7 @@
      "issuer": "academic",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261010190926/https://aial.ie/research/gpai-training-transparency/evals/mistral-devstral-small/",
      "note": "We could not find any public summary document for this model"
     }
    ],
@@ -5322,8 +5322,8 @@
      "created": "2025-12-10",
      "publisher": "curated",
      "verified_org": true,
-     "template_check": "suspicious",
-     "template_reason": "new in the build: date or time; diff: data/template_diffs/unsloth__Devstral-Small-2-24B-Instruct-2512-GGUF.diff"
+     "template_check": "differs",
+     "template_reason": "reviewed 2026-10-17: Unsloth's template: inserts today's and yesterday's date into a Le Chat-style default system prompt that replaces Mistral Vibe's agent prompt; no other logic added; new in the build: date or time; diff: data/template_diffs/unsloth__Devstral-Small-2-24B-Instruct-2512-GGUF.diff"
     },
     {
      "id": "devstral-small-2",
@@ -5411,7 +5411,7 @@
    },
    "teachers": [],
    "max_context": 393216,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-17",
    "first_listed": ""
   },
   {
@@ -5915,7 +5915,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131340/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf",
      "note": "Template for the Public Summary of Training Content for General-Purpose AI models Version of the Summary: v1.0 Last update: 31 July 2026"
     }
    ],
@@ -6817,7 +6817,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131407/https://legal.mistral.ai/ai-governance/models/magistral-small-1/",
      "note": "Includes Magistral Small 1.0, 1.1, 1.2 and subsequent versions."
     }
    ],
@@ -7880,7 +7880,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "summary sec. 3.1: signatory of the GPAI code? \"Nie\" (code was not signed)"
     },
     {
@@ -7890,7 +7890,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "provider identified as Ministerstwo Cyfryzacji, ul. Królewska 27, Warszawa"
     },
     {
@@ -7900,7 +7900,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131024/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512",
      "note": "developed by the PLLuM consortium, since 2025 under HIVE AI; financed by the Minister of Digital Affairs"
     },
     {
@@ -7910,7 +7910,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131024/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512",
      "note": "PLLuM-12B-chat-2512: apache-2.0"
     },
     {
@@ -7920,7 +7920,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131024/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512",
      "note": "Based On Mistral-Nemo-Base-2407; models were continued-pretrained on large-scale Polish corpora"
     },
     {
@@ -7930,7 +7930,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "PLLuM-12B-base-2512 is language adaptation (continued pre-training) of Mistral-Nemo-12B"
     },
     {
@@ -7940,7 +7940,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "names CC-MAIN-2025-38, plwiki/enwiki dumps, RedPajama arxiv/github/stackexchange, FineWeb(-Edu) 10BT, Słowosieć, gov.pl/BIP crawl"
     },
     {
@@ -7950,7 +7950,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131024/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512",
      "note": "Training using Bem2 (up to 300xH100 GPUs) and Helios HPCs (Polish HPC centres WCSS / Cyfronet) [review: card says only \"Bem2 (up to 300xH100 GPUs) and Helios HPCs\"; no site/country. WCSS/Cyfronet (PL) is external knowledge; value likely right, add a sour]"
     },
     {
@@ -7960,7 +7960,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131024/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512",
      "note": "Bem2 (up to 300xH100 GPUs) and Helios"
     },
     {
@@ -7970,7 +7970,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "AI Act Compliant Public Summary of Training Content (version 1.0, 11/05/2026)"
     },
     {
@@ -7980,7 +7980,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "mainly Polish data with English; English about 20% of the Polish data"
     },
     {
@@ -7990,7 +7990,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131024/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512",
      "note": "not stated: weights only; no training code or full data released"
     },
     {
@@ -8000,7 +8000,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 names the models used to generate synthetic data"
     },
     {
@@ -8010,7 +8010,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists DeepSeek-V3 among models used to generate synthetic data"
     },
     {
@@ -8020,7 +8020,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Mixtral-8x22B-Instruct-v0.1 among models used to generate synthetic data"
     },
     {
@@ -8030,7 +8030,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Qwen3-32B among models used to generate synthetic data"
     },
     {
@@ -8040,7 +8040,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists gpt-oss-20b among models used to generate synthetic data"
     },
     {
@@ -8050,7 +8050,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists gpt-oss-120b among models used to generate synthetic data"
     },
     {
@@ -8060,7 +8060,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists PLLuM-8x7B-chat among models used to generate synthetic data"
     },
     {
@@ -8070,7 +8070,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists PLLuM-12B-chat among models used to generate synthetic data"
     },
     {
@@ -8080,7 +8080,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Bielik-11B-v2.2-Instruct among models used to generate synthetic data"
     },
     {
@@ -8090,7 +8090,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists zephyr-orpo-141b-A35b-v0.1 among models used to generate synthetic data"
     },
     {
@@ -8100,7 +8100,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Mistral-7B-Instruct-v0.3 among models used to generate synthetic data"
     }
    ],
@@ -9690,7 +9690,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131308/https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder/blob/main/LICENSE",
      "note": "MIT License"
     },
     {
@@ -10034,7 +10034,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "Developed by: HiTZ Research Center & IXA Research group (University of the Basque Country UPV/EHU)"
     },
     {
@@ -10044,7 +10044,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "License: llama3.1; Latxa inherits the Llama-3.1 License"
     },
     {
@@ -10054,7 +10054,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131233/https://huggingface.co/HiTZ/Latxa-Llama-3.1-8B-Instruct/blob/main/LICENSE",
      "note": "license_link of the v2 card"
     },
     {
@@ -10064,7 +10064,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "based on Llama-3.1 (Instruct), which we trained on an extended Basque corpus; Parent model: meta-llama/Llama-3.1-70B-Instruct"
     },
     {
@@ -10074,7 +10074,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "further trained in Latxa Corpus v2 (HF dataset); training details to be released with a paper"
     },
     {
@@ -10094,7 +10094,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "trained on the Leonardo supercomputer at CINECA under the EuroHPC Joint Undertaking"
     },
     {
@@ -10104,7 +10104,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "HPC Cluster, 4 x A100 64Gb nodes x64; co2 hardware_used: 256xA100 GPUs"
     },
     {
@@ -10124,7 +10124,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "inherits the Llama-3.1 License (incorporates Meta AUP by reference)"
     },
     {
@@ -10134,7 +10134,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130630/https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/USE_POLICY.md",
      "note": "AUP refers to the most recent version on llama.com"
     },
     {
@@ -10144,7 +10144,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "Language(s) (NLP): eu"
     },
     {
@@ -10154,7 +10154,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "not stated for v2 (Further training details will be released); v1 paper used instructions sampled from the backbone"
     }
    ],
@@ -10404,7 +10404,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130630/https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/USE_POLICY.md",
      "note": "the AUP points to the most recent copy on llama.com"
     },
     {
@@ -10652,7 +10652,7 @@
      "issuer": "community",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130630/https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/USE_POLICY.md",
      "note": "the AUP points to the most recent copy on llama.com"
     },
     {
@@ -10835,7 +10835,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "summary sec. 3.1: signatory of the GPAI code? \"Nie\" (code was not signed)"
     },
     {
@@ -10845,7 +10845,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "provider identified as Ministerstwo Cyfryzacji, ul. Królewska 27, Warszawa"
     },
     {
@@ -10855,7 +10855,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130924/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
      "note": "developed by the PLLuM consortium, since 2025 under HIVE AI; financed by the Minister of Digital Affairs"
     },
     {
@@ -10865,7 +10865,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130924/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
      "note": "Llama-PLLuM-70B-chat-2512: llama3.1 licence"
     },
     {
@@ -10875,7 +10875,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130924/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
      "note": "Based On Llama-3.1-70B; continued-pretrained on Polish corpora"
     },
     {
@@ -10885,7 +10885,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "Llama-PLLuM-70B-base-2508 is continued pre-training of Llama3.1-70B"
     },
     {
@@ -10895,7 +10895,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "names CC-MAIN-2025-38, plwiki/enwiki dumps, RedPajama subsets, FineWeb(-Edu) 10BT, Słowosieć, gov.pl/BIP crawl"
     },
     {
@@ -10905,7 +10905,7 @@
      "issuer": "provider",
      "checked": "no",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130924/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
      "note": "Training using Bem2 (up to 300xH100 GPUs) and Helios HPCs [review: same as row 28: no site/country stated for Bem2/Helios]"
     },
     {
@@ -10915,7 +10915,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130924/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
      "note": "Bem2 (up to 300xH100 GPUs) and Helios"
     },
     {
@@ -10925,7 +10925,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "AI Act Compliant Public Summary of Training Content (version 1.0, 11/05/2026)"
     },
     {
@@ -10945,7 +10945,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "mainly Polish data with English; English about 20% of the Polish data"
     },
     {
@@ -10955,7 +10955,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130924/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
      "note": "not stated: weights only; no training code or full data released"
     },
     {
@@ -10965,7 +10965,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 names the models used to generate synthetic data"
     },
     {
@@ -10975,7 +10975,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists DeepSeek-V3 among models used to generate synthetic data"
     },
     {
@@ -10985,7 +10985,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Mixtral-8x22B-Instruct-v0.1 among models used to generate synthetic data"
     },
     {
@@ -10995,7 +10995,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Qwen3-32B among models used to generate synthetic data"
     },
     {
@@ -11005,7 +11005,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists gpt-oss-20b among models used to generate synthetic data"
     },
     {
@@ -11015,7 +11015,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists gpt-oss-120b among models used to generate synthetic data"
     },
     {
@@ -11025,7 +11025,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists PLLuM-8x7B-chat among models used to generate synthetic data"
     },
     {
@@ -11035,7 +11035,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists PLLuM-12B-chat among models used to generate synthetic data"
     },
     {
@@ -11045,7 +11045,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Bielik-11B-v2.2-Instruct among models used to generate synthetic data"
     },
     {
@@ -11055,7 +11055,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists zephyr-orpo-141b-A35b-v0.1 among models used to generate synthetic data"
     },
     {
@@ -11065,7 +11065,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Mistral-7B-Instruct-v0.3 among models used to generate synthetic data"
     }
    ],
@@ -11232,7 +11232,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "Training was conducted as a part of the HPLT project"
     },
     {
@@ -11242,7 +11242,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "license: apache-2.0"
     },
     {
@@ -11252,7 +11252,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "continually pre-trained on Norwegian and Scandinavian data starting from the English OLMo2-13B model"
     },
     {
@@ -11262,7 +11262,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "data splits with shares and token counts; all sources public (HPLT v3, FinePDFs, OLMo-Mix, Glot500, saami-web, SIKOR, Stack-Edu, FineMath)"
     },
     {
@@ -11272,7 +11272,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "not stated"
     },
     {
@@ -11282,7 +11282,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "not stated"
     },
     {
@@ -11292,7 +11292,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "hyperparameters per stage; intermediate checkpoints published as branches; training code not linked"
     },
     {
@@ -11302,7 +11302,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "license: apache-2.0"
     },
     {
@@ -11312,7 +11312,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "fully open large language model specifically adapted for Norwegian and Sami; metadata nb, nn, no, se"
     },
     {
@@ -11322,7 +11322,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "not stated"
     }
    ],
@@ -11478,7 +11478,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130245/https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md",
      "note": "source datasets with source/release token counts per part (DCLM, FinePDFs, HPLT 3.0, Nemotron-CC, StarCoder ...)"
     },
     {
@@ -13029,8 +13029,8 @@
    "gguf_build": "antirez/deepseek-v4.1-flash-gguf",
    "gguf_build_publisher": "unknown",
    "gguf_builds": 14,
-   "template_check": "suspicious",
-   "template_check_detail": "9 suspicious, 5 not checked",
+   "template_check": "differs",
+   "template_check_detail": "9 differs, 5 not checked",
    "mlx_build_verified": "",
    "cache_kind": "sliding window (128) in all layers",
    "cache_kib_per_token": "0.0",
@@ -13217,8 +13217,8 @@
      "created": "2026-09-13",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "suspicious",
-     "template_reason": "new in the build: content condition; diff: data/template_diffs/pfeifferj__DeepSeek-V4.1-Flash-GSQ-RCO-GGUF.diff"
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/pfeifferj__DeepSeek-V4.1-Flash-GSQ-RCO-GGUF.diff"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -13228,8 +13228,8 @@
      "created": "2026-09-10",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "suspicious",
-     "template_reason": "new in the build: content condition; diff: data/template_diffs/vcruz305__DeepSeek-V4.1-Flash-GGUF.diff"
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/vcruz305__DeepSeek-V4.1-Flash-GGUF.diff"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -13250,8 +13250,8 @@
      "created": "2026-09-12",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "suspicious",
-     "template_reason": "new in the build: content condition; diff: data/template_diffs/smalinin__DeepSeek-V4.1-Flash-GGUF.diff"
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/smalinin__DeepSeek-V4.1-Flash-GGUF.diff"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -13272,8 +13272,8 @@
      "created": "2026-09-10",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "suspicious",
-     "template_reason": "new in the build: content condition; diff: data/template_diffs/AMAImedia__DeepSeek-V4.1-Flash-FP8-GGUF.diff"
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/AMAImedia__DeepSeek-V4.1-Flash-FP8-GGUF.diff"
     },
     {
      "id": "deepseek-v4.1-flash",
@@ -13283,8 +13283,8 @@
      "created": "2026-09-11",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "suspicious",
-     "template_reason": "new in the build: content condition; diff: data/template_diffs/mxxm-t__DeepSeek-V4.1-Flash-GGUF.diff"
+     "template_check": "differs",
+     "template_reason": "diff: data/template_diffs/mxxm-t__DeepSeek-V4.1-Flash-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -13308,7 +13308,7 @@
     }
    ],
    "max_context": 1048576,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-17",
    "first_listed": "2026-10-10"
   },
   {
@@ -14741,7 +14741,7 @@
    "gguf_build_publisher": "curated",
    "gguf_builds": 7,
    "template_check": "equivalent",
-   "template_check_detail": "4 equivalent, 3 identical",
+   "template_check_detail": "7 equivalent",
    "mlx_build_verified": "",
    "cache_kind": "MLA, cached decompressed in MLX",
    "cache_kib_per_token": "4992.0",
@@ -14959,8 +14959,8 @@
      "created": "2026-09-20",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/autotrust__GLM-5.3-GGUF-DGX-Spark.diff"
     },
     {
      "id": "glm-5.3",
@@ -14981,8 +14981,8 @@
      "created": "2026-10-01",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/SixVolts__GLM-5.3-ewaste-edition-GGUF.diff"
     },
     {
      "id": "glm-5.3",
@@ -15003,8 +15003,8 @@
      "created": "2026-09-29",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/taurusduan__GLM-5.3-GGUF-DGX-Spark.diff"
     }
    ],
    "cache_layout": {
@@ -15055,7 +15055,7 @@
    "gguf_build_publisher": "curated",
    "gguf_builds": 32,
    "template_check": "equivalent",
-   "template_check_detail": "26 equivalent, 6 identical",
+   "template_check_detail": "32 equivalent",
    "mlx_build_verified": "",
    "cache_kind": "MLA, cached decompressed in MLX",
    "cache_kib_per_token": "2880.0",
@@ -15254,8 +15254,8 @@
      "created": "2026-09-06",
      "publisher": "organisation",
      "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/backpack-run__GLM-5.3-Flash-GGUF.diff"
     },
     {
      "id": "glm-5.3-flash",
@@ -15276,8 +15276,8 @@
      "created": "2026-09-13",
      "publisher": "unknown",
      "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/pfeifferj__GLM-5.3-Flash-GSQ-RCO-GGUF.diff"
     },
     {
      "id": "glm-5.3-flash",
@@ -16375,7 +16375,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130437/https://github.com/ibm-granite/granite-4.2-language-models/blob/main/disclosures/granite_4.2_30b_disclosure.json",
      "note": "machine-readable list of pre- and post-training datasets with sizes and provenance"
     },
     {
@@ -16660,7 +16660,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130437/https://github.com/ibm-granite/granite-4.2-language-models/blob/main/disclosures/granite_4.2_30b_disclosure.json",
      "note": "machine-readable list of pre- and post-training datasets with sizes and provenance"
     },
     {
@@ -18125,7 +18125,7 @@
    "gguf_build_publisher": "individual",
    "gguf_builds": 2,
    "template_check": "equivalent",
-   "template_check_detail": "1 equivalent, 1 identical",
+   "template_check_detail": "2 equivalent",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "256.0",
@@ -18301,8 +18301,8 @@
      "created": "2026-10-07",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/bartowski__K2-Horizon-32B-GGUF.diff"
     },
     {
      "id": "k2-horizon-32b",
@@ -18313,7 +18313,7 @@
      "publisher": "individual",
      "verified_org": false,
      "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/kingjones777__K2-Horizon-32B-ROCmFP4-GGUF.diff"
+     "template_reason": "reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/kingjones777__K2-Horizon-32B-ROCmFP4-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -18364,7 +18364,7 @@
    "gguf_build_publisher": "individual",
    "gguf_builds": 3,
    "template_check": "equivalent",
-   "template_check_detail": "2 equivalent, 1 identical",
+   "template_check_detail": "3 equivalent",
    "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "244.0",
@@ -18540,8 +18540,8 @@
      "created": "2026-10-07",
      "publisher": "individual",
      "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
+     "template_check": "equivalent",
+     "template_reason": "diff: data/template_diffs/bartowski__K2-Horizon-375B-A23B-GGUF.diff"
     },
     {
      "id": "k2-horizon-375b",
@@ -18552,7 +18552,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-GGUF.diff"
+     "template_reason": "reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-GGUF.diff"
     },
     {
      "id": "k2-horizon-375b",
@@ -18563,7 +18563,7 @@
      "publisher": "unknown",
      "verified_org": false,
      "template_check": "equivalent",
-     "template_reason": "diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-Mixed-Quant-GGUF.diff"
+     "template_reason": "reviewed 2026-10-17: carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block; new in the build: content condition; diff: data/template_diffs/Baekpica__K2-Horizon-375B-A23B-Mixed-Quant-GGUF.diff"
     }
    ],
    "cache_layout": {
@@ -19013,7 +19013,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130726/https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE",
      "note": "Llama 4 Community License; 700M MAU clause; AUP \"hereby incorporated by reference\""
     },
     {
@@ -19093,7 +19093,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130726/https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE",
      "note": "AUP incorporated by reference via URL; no explicit update clause found"
     },
     {
@@ -19321,7 +19321,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130726/https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE",
      "note": "Llama 4 Community License; 700M MAU clause; AUP \"hereby incorporated by reference\""
     },
     {
@@ -19401,7 +19401,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130726/https://github.com/meta-llama/llama-models/blob/main/models/llama4/LICENSE",
      "note": "AUP incorporated by reference via URL; no explicit update clause found"
     },
     {
@@ -19679,7 +19679,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130503/https://github.com/llm-jp/scripts/tree/main/pretrain/scripts",
      "note": "v4 pre-training and mid-training scripts published (v4-8b-phase1, v4-32b-phase1, v4-midtraining)"
     },
     {
@@ -19934,7 +19934,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130503/https://github.com/llm-jp/scripts/tree/main/pretrain/scripts",
      "note": "v4 pre-training and mid-training scripts published (v4-8b-phase1, v4-32b-phase1, v4-midtraining)"
     },
     {
@@ -23612,8 +23612,8 @@
    "gguf_build": "unsloth/Qwen3.8-27B-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 48,
-   "template_check": "suspicious",
-   "template_check_detail": "2 suspicious, 2 differs, 3 not checked, 7 equivalent, 34 identical",
+   "template_check": "differs",
+   "template_check_detail": "4 differs, 4 not checked, 6 equivalent, 34 identical",
    "mlx_build_verified": "",
    "cache_kind": "hybrid: 16 full + 48 linear-attention layers",
    "cache_kib_per_token": "64.0",
@@ -23858,7 +23858,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-17",
    "first_listed": "2026-10-10"
   },
   {
@@ -23980,7 +23980,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130416/https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf",
      "note": "new architecture; \"the full-scale training of Qwen3.8-Flash-Next proceeded smoothly without a single loss spike\""
     },
     {
@@ -24000,7 +24000,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130416/https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf",
      "note": "not stated (report covers architecture and ablations; \"roughly a third as many tokens\" as predecessor)"
     },
     {
@@ -24010,7 +24010,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130416/https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf",
      "note": "not stated"
     },
     {
@@ -24020,7 +24020,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130416/https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf",
      "note": "not stated (only kernel benchmarks \"on NVIDIA GPUs\")"
     },
     {
@@ -24987,7 +24987,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261017130007/https://docs.cohere.com/docs/cohere-labs-acceptable-use-policy",
      "note": "AUP is an unversioned web page; no explicit update clause found"
     },
     {
@@ -25196,6 +25196,30 @@
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-17",
+   "model": "devstral-small-2",
+   "field": "template_check",
+   "old": "suspicious",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-17",
+   "model": "qwen3.8-27b",
+   "field": "template_check",
+   "old": "suspicious",
+   "new": "differs",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-17",
+   "model": "deepseek-v4.1-flash",
+   "field": "template_check",
+   "old": "suspicious",
+   "new": "differs",
+   "reason": ""
+  },
   {
    "date": "2026-10-16",
    "model": "luciole-23b-thinking",
@@ -25971,30 +25995,6 @@
    "old": "unknown",
    "new": "documented",
    "reason": "rating rubric for training data (METHODOLOGY, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "bielik-11b-v3",
-   "field": "ai_act_summary",
-   "old": "unknown",
-   "new": "yes",
-   "reason": "AI Act training summary looked up (provider site, AIAL tracker)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "bielik-11b-v3",
-   "field": "compute",
-   "old": "unknown",
-   "new": "eu",
-   "reason": "pre-training location sourced"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "tiny-aya-global",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
   }
  ]
 }

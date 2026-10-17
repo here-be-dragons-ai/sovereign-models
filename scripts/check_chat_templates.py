@@ -28,7 +28,10 @@ STATUS.
                definitions and calls, tool results; date fixed)
   differs      a template renders differently, or one cannot be rendered; the
                diff is linked
-  suspicious   the build has a risky construct the original does not have
+  suspicious   the build has a risky construct the original does not have, and
+               no benign verdict for this exact template in
+               data/template_reviews.csv (with one, the status is what the
+               comparison gave and the reason starts with the verdict)
   not checked  no template found or the download failed (reason given)
 
 Risky constructs (date or time, randomness, conditions on message content
@@ -55,6 +58,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = Path(os.environ.get("SM_DATA", ROOT / "data"))  # SM_DATA: another data directory, e.g. a local overlay
 OUT = DATA / "template_checks.csv"
 DIFFS = DATA / "template_diffs"
+REVIEWS = DATA / "template_reviews.csv"  # by hand: builds looked at and found benign
 FIELDS = ["id", "repo", "kind", "file", "status", "reason", "findings", "sha256", "checked"]
 TEMPLATE_FILES = ("chat_template.jinja", "chat_template.json", "tokenizer_config.json",
                   "processor_config.json")
@@ -64,10 +68,13 @@ MAX_HEADER = 64 << 20
 RISKS = {
     "date or time": re.compile(r"strftime_now|\bnow\s*\(|datetime|localtime|current_date|today"),
     "randomness": re.compile(r"\brandom\b|\bshuffle\b|\buuid"),
+    # "message" alone is not content: message['role'] == 'user' is how every template
+    # tells turns apart, so role, type, task and name lookups do not count, and the
+    # comparison must belong to the message (no and/or in between).
     "content condition": re.compile(
-        r"\{%-?\s*(?:el)?if\b[^%]*(?:content|message)[^%]*"
-        r"(?:==|!=|\bin\b|startswith|endswith|search|match)\s*['\"][^'\"]+['\"][^%]*%\}"
-        r"|\{%-?\s*(?:el)?if\b[^%]*['\"][^'\"]+['\"]\s*(?:not\s+)?in\s+[^%]*content[^%]*%\}"),
+        r"\{%-?\s*(?:el)?if\b[^%]*(?:content|(?>\bmessages?\b(?:\s*\[\s*-?\d+\s*\])?)(?!\s*(?:\.\s*|\[\s*['\"])(?:role|type|task|name)\b))(?:(?!\b(?:and|or)\b)[^%])*"
+        r"(?:==|!=|\bin\b|startswith|endswith|search|match)\s*\(?\s*['\"][^'\"]+['\"][^%]*%\}"
+        r"|\{%-?\s*(?:el)?if\b[^%]*['\"][^'\"]+['\"]\s*(?:not\s+)?in\s+(?:(?!\b(?:and|or)\b)[^%])*content[^%]*%\}"),
     "URL": re.compile(r"https?://|www\.[a-z0-9-]+\.[a-z]"),
     "encoded blob": re.compile(r"[A-Za-z0-9+/]{100,}={0,2}|(?:\\x[0-9a-fA-F]{2}){16,}|\b[0-9a-fA-F]{64,}\b"),
     "long string literal": re.compile(r"'(?:[^'\\]|\\.){1500,}'|\"(?:[^\"\\]|\\.){1500,}\""),
@@ -191,10 +198,31 @@ def norm(t):
     return " ".join(t.replace("\\n", "\n").split())
 
 
+JINJA_COMMENT = re.compile(r"\{#.*?#\}", re.S)
+
+
+@functools.cache
+def _reviews():
+    if not REVIEWS.exists():
+        return {}
+    return {(r["repo"], r["sha256"]): r for r in csv.DictReader(open(REVIEWS, encoding="utf-8"))
+            if r["verdict"] == "benign"}
+
+
+def reviewed(repo, sha256):
+    """The benign verdict for exactly this template of this build, or None.
+
+    Keyed by the template hash: a build that changes its template loses the
+    verdict and is flagged again.
+    """
+    return _reviews().get((repo, sha256))
+
+
 def findings(templates):
     found = set()
     for t in templates.values():
-        t = t.replace("\\n", "\n")
+        # Comments render to nothing: "follows one at random" in a comment is not randomness.
+        t = JINJA_COMMENT.sub("", t.replace("\\n", "\n"))
         for name, rx in RISKS.items():
             if rx.search(t):
                 found.add(name)
@@ -332,9 +360,13 @@ def check_model(mid, original, builds, today):
             path.write_text(diff)
             row["reason"] = f"diff: {path.relative_to(DATA.parent)}"
         if new:
-            status = "suspicious"
-            row["reason"] = "; ".join(filter(None, [f"new in the build: {', '.join(sorted(new))}",
-                                                    row.get("reason")]))
+            review = reviewed(repo, row["sha256"])
+            if not review:
+                status = "suspicious"
+            row["reason"] = "; ".join(filter(None, [
+                review and f"reviewed {review['reviewed']}: {review['note']}",
+                f"new in the build: {', '.join(sorted(new))}",
+                row.get("reason")]))
         rows.append(row | dict(status=status))
     return rows
 

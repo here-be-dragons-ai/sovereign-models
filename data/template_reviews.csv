@@ -1,0 +1,5 @@
+repo,sha256,verdict,note,reviewed
+unsloth/Devstral-Small-2-24B-Instruct-2512-GGUF,49327005df68627a,benign,Unsloth's template: inserts today's and yesterday's date into a Le Chat-style default system prompt that replaces Mistral Vibe's agent prompt; no other logic added,2026-10-17
+Baekpica/K2-Horizon-375B-A23B-GGUF,75f2dce09789555d,benign,carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block,2026-10-17
+Baekpica/K2-Horizon-375B-A23B-Mixed-Quant-GGUF,75f2dce09789555d,benign,carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block,2026-10-17
+kingjones777/K2-Horizon-32B-ROCmFP4-GGUF,75f2dce09789555d,benign,carries IFM's previous official template (equivalent to it before the original changed on 2026-10-14); the content conditions split off the </ifm|think> reasoning block,2026-10-17

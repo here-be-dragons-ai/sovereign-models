@@ -161,3 +161,6 @@ date,model,field,old,new,reason
 2026-10-16,kolibri-1,mlx_vlm,unsupported,loads,
 2026-10-16,command-a-plus,mlx_vlm,not checked,fails,
 2026-10-16,luciole-23b-thinking,mlx_vlm,not checked,loads,
+2026-10-17,deepseek-v4.1-flash,template_check,suspicious,differs,
+2026-10-17,qwen3.8-27b,template_check,suspicious,differs,
+2026-10-17,devstral-small-2,template_check,suspicious,differs,

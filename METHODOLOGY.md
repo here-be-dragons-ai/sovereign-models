@@ -192,6 +192,9 @@ rather than separate it. Both stay visible so readers can weigh them.
   after the build was made. `suspicious` means the build adds a risky construct the original
   does not have (date or time, randomness, conditions comparing message content with a
   literal, URLs, encoded blobs, very long string literals); it calls for a look, not a verdict.
+  A build we have looked at and found benign is recorded in `data/template_reviews.csv` with
+  the template's hash and a note; it then shows the status of the comparison with the verdict
+  as reason, until its template changes.
   `not checked` gives the reason, often that the original publishes no chat template (Mistral
   uses mistral-common). The model column shows the worst status of its builds.
 

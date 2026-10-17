@@ -52,3 +52,42 @@ class TestGgufTemplates(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestRiskFindings(unittest.TestCase):
+    def found(self, template):
+        return c.findings({"default": template})
+
+    def test_comment_is_not_a_construct(self):
+        self.assertEqual(self.found("{#- the model follows one at random -#}{{ x }}"), set())
+        self.assertEqual(self.found("{{ random() }}"), {"randomness"})
+
+    def test_role_lookups_are_not_content_conditions(self):
+        for t in ("{%- if message['role'] == 'user' -%}", "{% if message.role == 'assistant' %}",
+                  "{%- if messages[0]['role'] != 'system' %}", "{%- if message['task'] == 'action' -%}",
+                  "{%- if messages and thinking and reasoning_effort == 'max' -%}"):
+            self.assertNotIn("content condition", self.found(t), t)
+
+    def test_content_conditions(self):
+        for t in ("{%- if '<|think_off|>' in msg.content %}", "{% if message['content'] == 'sudo' %}",
+                  "{% if message.content.startswith('/x') %}", "{% if 'trigger' in message['content'] %}",
+                  "{% if message['role'] == 'user' and message['content'].startswith('/') %}"):
+            self.assertIn("content condition", self.found(t), t)
+
+
+class TestReviews(unittest.TestCase):
+    def test_verdict_is_bound_to_the_template_hash(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "template_reviews.csv"
+            path.write_text("repo,sha256,verdict,note,reviewed\n"
+                            "a/b,0123456789abcdef,benign,looked at,2026-10-17\n"
+                            "a/c,fedcba9876543210,open,not yet,2026-10-17\n")
+            with mock.patch.object(c, "REVIEWS", path):
+                c._reviews.cache_clear()
+                try:
+                    self.assertEqual(c.reviewed("a/b", "0123456789abcdef")["note"], "looked at")
+                    self.assertIsNone(c.reviewed("a/b", "1111111111111111"))  # template changed
+                    self.assertIsNone(c.reviewed("a/c", "fedcba9876543210"))  # not benign
+                finally:
+                    c._reviews.cache_clear()
