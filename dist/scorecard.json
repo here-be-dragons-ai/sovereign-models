@@ -6514,7 +6514,7 @@
      "id": "kolibri-1",
      "repo": "here-be-dragons-ai/Kolibri-1-MLX-3bit",
      "bits": "3.61",
-     "note": "mixed 3/6 bit; our own build",
+     "note": "mixed 3/6 bit; our own build; runs on the mlx-vlm 0.7.8 release (logits bit-identical to the port it was built with, 2026-10-17)",
      "publisher": "hbd",
      "verified_org": false,
      "template_check": "identical",

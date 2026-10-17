@@ -7,7 +7,7 @@ devstral-small-2,mlx-community/Devstral-Small-2-24B-Instruct-2512-4bit,4,
 domyn-small,leonsarmiento/Domyn-Small-v1.0-8bit-mlx,8,
 eurollm-22b,mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit,8,
 eurollm-22b,mlx-community/EuroLLM-22B-Instruct-2512-mlx-4bit,4,
-kolibri-1,here-be-dragons-ai/Kolibri-1-MLX-3bit,3.61,mixed 3/6 bit; our own build
+kolibri-1,here-be-dragons-ai/Kolibri-1-MLX-3bit,3.61,"mixed 3/6 bit; our own build; runs on the mlx-vlm 0.7.8 release (logits bit-identical to the port it was built with, 2026-10-17)"
 lucie-7b,mlx-community/Lucie-7B-Instruct-4bit,4,earlier Lucie-7B-Instruct release
 luciole-23b,bumblebuttpow/Luciole-23B-Instruct-1.1-4bit-mlx,4,
 magistral-small-2509,lmstudio-community/Magistral-Small-2509-MLX-8bit,8,
