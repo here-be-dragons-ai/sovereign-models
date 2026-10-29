@@ -98,6 +98,7 @@
   .iss.curated, .iss.organisation { background:#f8f9fa; }
   .legend span { margin-right:10px; }
   #changes details { margin:2px 0 2px 18px; }
+  body:not(.expert) .expert { display:none; }
 </style>
 </head>
 <body>
@@ -115,12 +116,12 @@
     <div class="chips"><label style="color:var(--muted);display:block" data-t="tier"></label><span id="tierchips"></span></div>
     <div><label for="country" data-t="country"></label><select id="country"><option value="" data-t="all"></option></select></div>
     <div><label for="licence" data-t="licence"></label><select id="licence"><option value="" data-t="all"></option></select></div>
-    <div><label for="ctx" data-t="context"></label>
+    <div class="expert"><label for="ctx" data-t="context"></label>
       <select id="ctx"><option value="0" data-t="weightsOnly"></option><option value="8192">8k</option>
         <option value="32768" selected>32k</option><option value="131072">128k</option></select></div>
-    <div><label for="kvbits" data-t="cachePrec"></label>
+    <div class="expert"><label for="kvbits" data-t="cachePrec"></label>
       <select id="kvbits"><option value="16">16 bit</option><option value="8">8 bit</option></select></div>
-    <div><label for="ram" data-t="fits"></label>
+    <div class="expert"><label for="ram" data-t="fits"></label>
       <select id="ram"><option value="" data-t="anySize"></option><option>16</option><option>24</option><option>32</option>
         <option>48</option><option>64</option><option>96</option><option>128</option></select></div>
     <div><label for="teacher" data-t="teachers"></label>
@@ -130,7 +131,8 @@
       <select id="recipe"><option value="" data-t="any"></option><option value="code" data-t="codeMore"></option>
         <option value="full" data-t="fullRecipe"></option></select></div>
     <div class="chips" id="worldbox"><label data-t-title="worldTitle"><input type="checkbox" id="world"> <span data-t="world"></span></label></div>
-    <div class="chips"><label><input type="checkbox" id="mlx"> <span data-t="loadsMlx"></span></label>
+    <div class="chips"><label data-t-title="expertTitle"><input type="checkbox" id="expert"> <span data-t="expert"></span></label></div>
+    <div class="chips expert"><label><input type="checkbox" id="mlx"> <span data-t="loadsMlx"></span></label>
       <label><input type="checkbox" id="llama"> <span data-t="runsLlama"></span></label>
       <label><input type="checkbox" id="verified"> <span data-t="verifiedOnly"></span></label></div>
   </div>
@@ -173,6 +175,7 @@ const STR = {
     world: "compare with models from outside Europe",
     worldTitle: "Open-weight models of providers outside Europe, with the same facts and sources but without a tier",
     loadsMlx: "loads in mlx-vlm", runsLlama: "runs in llama.cpp", verifiedOnly: "verified MLX build",
+    expert: "Expert view", expertTitle: "Show running on a Mac: memory with context, mlx-vlm, llama.cpp and MLX builds",
     csv: "Download CSV", copyLink: "Copy link", copied: "Link copied", compareN: n => `Compare (${n})`,
     count: (n, total) => `${n} of ${total} models`,
     footerData: "Data: CC BY 4.0, here be dragons ·", dataset: "Dataset", methodology: "Methodology", corrections: "Corrections",
@@ -216,6 +219,7 @@ const STR = {
     world: "mit Modellen von außerhalb Europas vergleichen",
     worldTitle: "Open-Weight-Modelle von Anbietern außerhalb Europas, mit denselben Fakten und Quellen, aber ohne Tier",
     loadsMlx: "lädt in mlx-vlm", runsLlama: "läuft in llama.cpp", verifiedOnly: "verifizierter MLX-Build",
+    expert: "Experten-Ansicht", expertTitle: "Betrieb auf dem Mac einblenden: Speicher mit Kontext, mlx-vlm, llama.cpp und MLX-Builds",
     csv: "CSV herunterladen", copyLink: "Link kopieren", copied: "Link kopiert", compareN: n => `Vergleichen (${n})`,
     count: (n, total) => `${n} von ${total} Modellen`,
     footerData: "Daten: CC BY 4.0, here be dragons ·", dataset: "Datensatz", methodology: "Methodik", corrections: "Korrekturen",
@@ -288,6 +292,10 @@ const COLS = [
   ["pick",""],["tier"],["name"],["provider_country"],["provider"],["origin"],["license_class"],["data"],["compute"],
   ["params_b",1],["size_4bit_gb",1],["mem",1],["mlx_vlm"],["llama_cpp"],["mlxbuild"],["flags"],
 ];
+// Running on a Mac: shown only in the expert view.
+const EXPERT_COLS = ["size_4bit_gb", "mem", "mlx_vlm", "llama_cpp", "mlxbuild"];
+const expert = () => $("expert").checked;
+const cols = () => expert() ? COLS : COLS.filter(([k]) => !EXPERT_COLS.includes(k));
 const TIER_ORDER = ["A","B","C","pending","excluded","comparison"];
 const EUROPE_TIERS = ["A","B","C","pending","excluded"];
 let DATA, sortKey = "tier", sortDir = 1, selected = null, lang = "en", picked = [];
@@ -342,14 +350,14 @@ function searchOk(m) {
 
 function filtered() {
   const tiers = [...document.querySelectorAll("#tierchips input:checked")].map(i => i.value);
-  const country = $("country").value, licence = $("licence").value, ram = parseFloat($("ram").value);
+  const country = $("country").value, licence = $("licence").value, x = expert(), ram = x && parseFloat($("ram").value);
   return DATA.models.filter(m =>
     (m.tier === "comparison" ? $("world").checked : tiers.includes(m.tier)) &&
     (!country || m.provider_country === country) &&
     (!licence || m.license_class === licence) &&
-    (!$("mlx").checked || m.mlx_vlm === "loads") &&
-    (!$("llama").checked || m.llama_cpp === "supported") &&
-    (!$("verified").checked || isVerified(m)) &&
+    (!x || !$("mlx").checked || m.mlx_vlm === "loads") &&
+    (!x || !$("llama").checked || m.llama_cpp === "supported") &&
+    (!x || !$("verified").checked || isVerified(m)) &&
     teacherOk(m) && recipeOk(m) && searchOk(m) &&
     (!ram || (() => { const v = memory(m); return v !== null && !Number.isNaN(v) && v + 1 <= ram * 0.75; })()));
 }
@@ -365,7 +373,7 @@ function sortValue(m, k) {
 
 // ── Table ──────────────────────────────────────────────────────────────────
 function renderHead() {
-  $("head").innerHTML = COLS.map(([k]) => {
+  $("head").innerHTML = cols().map(([k]) => {
     if (k === "pick") return `<th scope="col" aria-label="${esc(t("pickTitle"))}"></th>`;
     const on = k === sortKey;
     const aria = on ? (sortDir > 0 ? "ascending" : "descending") : "none";
@@ -388,6 +396,8 @@ function cell(m, k, num) {
   return `<td class="${num ? "num" : ""}${k === "flags" ? " flags wrap" : ""}"${h ? ` title="${esc(h)}"` : ""}>${esc(m[k])}</td>`;
 }
 function render() {
+  document.body.classList.toggle("expert", expert());
+  if (!expert() && EXPERT_COLS.includes(sortKey)) { sortKey = "tier"; sortDir = 1; }
   const rows = filtered().sort((a, b) => {
     const x = sortValue(a, sortKey), y = sortValue(b, sortKey);
     return (x > y ? 1 : x < y ? -1 : a.name.localeCompare(b.name)) * sortDir;
@@ -397,7 +407,7 @@ function render() {
   $("count").textContent = t("count", rows.length, total);
   renderHead();
   $("rows").innerHTML = rows.map(m => `<tr data-id="${esc(m.id)}" tabindex="0" class="${m.id === selected ? "selected" : ""}">` +
-    COLS.map(([k, num]) => cell(m, k, num)).join("") + "</tr>").join("");
+    cols().map(([k, num]) => cell(m, k, num)).join("") + "</tr>").join("");
   $("cmpbtn").textContent = t("compareN", picked.length);
   $("cmpbtn").disabled = picked.length < 2;
   renderOverview();
@@ -429,7 +439,7 @@ function renderOverview() {
     ["recipe", m => ["code", "code+data", "full"].includes(m.recipe)],
     ["cop", m => m.cop_signatory === "yes"],
     ["aiact", m => m.ai_act_summary === "yes"],
-    ["mlx", m => m.mlx_vlm === "loads"],
+    ...(expert() ? [["mlx", m => m.mlx_vlm === "loads"]] : []),
   ];
   const bar = (v, color, label) => `<div class="row"><span class="track"><span class="b" style="display:block;width:${Math.max(0.5, v * 100).toFixed(1)}%;background:${color}" title="${esc(label)}"></span></span><span class="v">${Math.round(v * 100)} %</span></div>`;
   const rows = metrics.map(([k, pred]) => `<div class="metric"><span>${esc(t("shares")[k])}</span><span class="bars">
@@ -558,8 +568,9 @@ function renderCompare() {
     [R["AI Act training summary"], m => esc(m.ai_act_summary)], [R["GPAI Code of Practice"], m => esc(m.cop_signatory)],
     [R["Teacher models"], m => esc(m.teacher_origin)], [R.Reproducibility, m => esc(m.recipe)],
     [R["Terms can change later"], m => esc(m.terms_can_change)], [R.Languages, m => m.languages ? esc(t("ofEu", m.eu_languages)) : esc(t("unknownW"))],
-    [R.Parameters, m => esc(m.params_b)], [R.Context, m => esc(m.context)], [R["4-bit weights"], m => esc(m.size_4bit_gb)],
-    [R["mlx-vlm"], m => esc(m.mlx_vlm)], [R["llama.cpp"], m => esc(m.llama_cpp)], [R["Verified MLX build"], m => esc(mlxBuildText(m))],
+    [R.Parameters, m => esc(m.params_b)], [R.Context, m => esc(m.context)],
+    ...(expert() ? [[R["4-bit weights"], m => esc(m.size_4bit_gb)],
+      [R["mlx-vlm"], m => esc(m.mlx_vlm)], [R["llama.cpp"], m => esc(m.llama_cpp)], [R["Verified MLX build"], m => esc(mlxBuildText(m))]] : []),
   ];
   $("compare").innerHTML = `<h3>${esc(t("cmpTitle"))} <button id="cmpclear" class="src" style="border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer">${esc(t("cmpClear"))}</button></h3>
     <div class="tablewrap"><table><thead><tr><th></th>${ms.map(m => `<th><a href="#${esc(m.id)}">${esc(m.name)}</a></th>`).join("")}</tr></thead>
@@ -606,7 +617,7 @@ function downloadCsv() {
   URL.revokeObjectURL(a.href);
 }
 const SIMPLE = ["q", "country", "licence", "ctx", "kvbits", "ram", "teacher", "recipe"];
-const CHECKS = ["world", "mlx", "llama", "verified"];
+const CHECKS = ["world", "expert", "mlx", "llama", "verified"];
 function saveState() {
   const p = new URLSearchParams();
   for (const id of SIMPLE) { const el = $(id); if (el.value && el.value !== el.dataset.default) p.set(id, el.value); }
