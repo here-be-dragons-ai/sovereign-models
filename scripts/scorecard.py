@@ -39,7 +39,7 @@ PROVIDER_ALLOWED = {
 FAMILY_ALLOWED = {
     "origin": {
         "scratch", "continued-own", "continued-european",
-        "finetune-european", "continued-foreign", "finetune-foreign",
+        "finetune-european", "continued-foreign", "finetune-foreign", "unknown",
     },
     "license_class": {"osi", "osi-aup", "custom", "nc", "unclear"},
     "data": {"open", "documented", "undisclosed", "unknown"},
@@ -217,8 +217,21 @@ class Data:
         asked = {r["question"] for r in own}
         fam = [r for r in self.evidence if (r["scope"], r["subject"]) == ("family", model["family_id"])
                and r["question"] not in asked]
-        rows = rubric.usable(own + fam, self.quote_status)
+        provider_id = self.families.get(model["family_id"], {}).get("provider_id", "")
+        rows = [r for r in rubric.usable(own + fam, self.quote_status)
+                if not r["_quoted"] or self.answer_issuer(r["url"], provider_id) in COUNTING_ISSUERS]
         return {f: rubric.derive(f, rows) for f in rubric.FIELDS}
+
+    def answer_issuer(self, url, provider_id):
+        """Issuer of a document cited by an answer: from the URL where it decides, else as
+        sources.csv records it for the same URL, else the provider's own document."""
+        expected = self.expected_issuer(url, provider_id)
+        if expected:
+            return expected
+        known = {s["issuer"] for s in self.sources if s["url"] == url}
+        if known:
+            return "community" if "community" in known else sorted(known)[0]
+        return "provider"
 
     def current(self, model, field):
         """The value the rubric must reproduce: what the tier uses for sourced fields."""

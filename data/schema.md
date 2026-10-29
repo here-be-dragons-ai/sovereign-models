@@ -39,7 +39,7 @@ by the provider itself.
 | `id` | `a-z0-9.-` | Stable identifier |
 | `name` | text | Family name |
 | `provider_id` | id in `providers.csv` | |
-| `origin` | `scratch`, `continued-own`, `continued-european`, `finetune-european`, `continued-foreign`, `finetune-foreign` | `own` = the provider's earlier model; `foreign` = a non-European base |
+| `origin` | `scratch`, `continued-own`, `continued-european`, `finetune-european`, `continued-foreign`, `finetune-foreign`, `unknown` | `own` = the provider's earlier model; `foreign` = a non-European base |
 | `base_model` | text | Base model, if any |
 | `license_class` | `osi`, `osi-aup`, `custom`, `nc`, `unclear` | `osi` = Apache-2.0, MIT, CC-BY(-SA) and similar; `osi-aup` = plus a binding use policy |
 | `data` | `open`, `documented`, `undisclosed`, `unknown` | `open` = training data published; `documented` = mix described |

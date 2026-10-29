@@ -175,8 +175,8 @@ date,model,field,old,new,reason
 2026-10-29,kolibri-1,llama_cpp,fork only,supported,
 2026-10-29,kolibri-1,template_check,identical,equivalent,
 2026-10-29,luciole-23b-thinking,template_check,,equivalent,
-2026-10-29,ministral-3-14b,base_model,,Mistral Small 3.1 Base,
-2026-10-29,mistral-small-3.2,base_model,,Mistral Small 3.1 24B Instruct 2503,
+2026-10-29,ministral-3-14b,base_model,,Mistral Small 3.1 Base,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,mistral-small-3.2,base_model,,Mistral Small 3.1 24B Instruct 2503,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
 2026-10-29,pllum-12b-chat-2512,params_b,0.0,12.2,
 2026-10-29,qwen3.8-27b,template_check,differs,suspicious,
 2026-10-29,sarvam-105b,llama_cpp,unsupported,fork only,
@@ -192,3 +192,53 @@ date,model,field,old,new,reason
 2026-10-29,eurollm-9b,tier,B,A,EuroLLM-9B pre-training on MareNostrum 5 is stated in its technical report (arXiv 2506.04079); found by the rubric with a verified quote
 2026-10-29,eurollm-9b,origin,scratch,continued-own,"EuroLLM-9B-2512 continues EuroLLM-9B (base card), so continued-own"
 2026-10-29,eurollm-9b,compute,unknown,eu,"EuroLLM-9B technical report: pre-trained on MareNostrum 5 (rubric, verified quote)"
+2026-10-29,apertus-1.5-70b,data,open,documented,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,apertus-1.5-8b,data,open,documented,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,bggpt-gemma-3-27b-it,data,documented,undisclosed,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,borealis2-26b,origin,finetune-foreign,continued-foreign,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,borealis2-26b,base_model,"Gemma 4 26B-A4B (Google, US)",google/gemma-4-26B-A4B-it (Gemma 4 26B-A4B IT),Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,dfm-mimir-1.5,data,documented,open,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,eurollm-22b,data,open,documented,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,gams3-12b-instruct,compute,eu,unknown,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,gpt-oss-120b,license_class,osi,osi-aup,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,gpt-oss-120b,flags,,use policy on redistribution,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,gpt-oss-20b,license_class,osi,osi-aup,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,gpt-oss-20b,flags,,use policy on redistribution,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,hyperclovax-seed-think-32b,origin,scratch,continued-foreign,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,hyperclovax-seed-think-32b,base_model,Qwen2.5-VL vision encoder (weights reused),Qwen2.5-VL vision encoder (vision component only; language backbone pre-trained by NAVER),Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,hyperclovax-seed-think-32b,flags,custom licence,custom licence; non-European base model,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,latxa-3.1-70b-v2,data,documented,open,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,llm-jp-4.1-32b-a3b-thinking,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,llm-jp-4.1-32b-a3b-thinking,base_model,,llm-jp-4-33b (base),Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,llm-jp-4.1-33b-thinking,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,llm-jp-4.1-33b-thinking,base_model,,llm-jp-4-33b (base),Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,lucie-7b,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,lucie-7b,base_model,,Lucie-7B,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,lucie-7b,data,open,documented,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,luciole-23b,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,luciole-23b,base_model,,Luciole-23B-Base,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,luciole-23b-thinking,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,luciole-23b-thinking,base_model,,Luciole-23B-Base,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,luciole-8b,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,luciole-8b,base_model,,Luciole-23B-Base,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,magistral-small-2509,data,undisclosed,documented,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,nemotron-sea-lion-v4.8-120b,license_class,osi,custom,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,nemotron-sea-lion-v4.8-120b,flags,non-European base model,custom licence; non-European base model,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,norolmo-13b,data,open,documented,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,oellm-9b-256k-sft,tier,C,A,"Rubric with verified quotes: SFT of OpenEuroLLM's own Prelude base, whose pre-training (10T tokens, Leonardo) the provider documents; continued-own with EU compute (decision 2026-10-29: documented own pre-training suffices)"
+2026-10-29,oellm-9b-256k-sft,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,oellm-9b-256k-sft,base_model,,openeurollm/oellm-9b-256k-theta64m-prelude (OELLM 9B 256K prelude base),Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,olmo-3.1-32b-instruct,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,olmo-3.1-32b-instruct,base_model,,"Olmo 3 32B (Olmo-3-1125-32B base, via Olmo 3 32B Think SFT)",Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,plamo-3-nict-2604-31b-base,origin,scratch,unknown,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,pleias-rag-1b,data,open,documented,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,solar-open2-250b,data,undisclosed,documented,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,sui-1-24b,data,documented,open,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,tildeopen-30b,origin,scratch,continued-own,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,tildeopen-30b,base_model,,TildeOpen 30B (TildeAI/TildeOpen-30b),Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,tiny-aya-global,terms_can_change,unknown,no,Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29
+2026-10-29,llm-jp-4.1-32b-a3b-thinking,base_model,llm-jp-4-33b (base),"LLM-jp-4 base (33B, 32B-A3B)",
+2026-10-29,llm-jp-4.1-33b-thinking,base_model,llm-jp-4-33b (base),"LLM-jp-4 base (33B, 32B-A3B)",
+2026-10-29,luciole-23b,base_model,Luciole-23B-Base,"Luciole 1.1 Base (23B, 8B)",
+2026-10-29,luciole-23b-thinking,base_model,Luciole-23B-Base,"Luciole 1.1 Base (23B, 8B)",
+2026-10-29,luciole-8b,base_model,Luciole-23B-Base,"Luciole 1.1 Base (23B, 8B)",

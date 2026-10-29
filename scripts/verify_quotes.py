@@ -91,7 +91,10 @@ def to_text(data, ctype, url):
         return pdf_text(data)
     raw = data.decode("utf-8", errors="replace")
     if "html" in ctype or raw.lstrip().lower().startswith(("<!doctype", "<html")):
-        return html_text(raw)
+        # Visible text first, then the page's embedded data (scripts, attributes), where
+        # client-rendered sites keep their text (e.g. the FAQ on legal.mistral.ai).
+        data = html.unescape(re.sub(r"<[^>]+>", " ", raw)).replace('\\"', '"')
+        return html_text(raw) + "\n\n" + data
     return raw
 
 
@@ -163,8 +166,8 @@ def main():
     today = dt.date.today().isoformat()
     rows, seen = [], set()
     for e in evidence:
-        if not needs_quote(e["question"], e["answer"]):
-            continue
+        if not e["quote"].strip() and not needs_quote(e["question"], e["answer"]):
+            continue  # an absence: nothing to look up
         key = quote_key(e["url"], e["quote"])
         if key in seen:
             continue

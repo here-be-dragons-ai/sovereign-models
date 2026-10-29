@@ -1,69 +1,574 @@
 key,url,status,method,checked
 6784da90002abdc1,https://arxiv.org/abs/2610.15542,found,snapshot; live 2610.15542,2026-10-29
 c56ea8e8ab4efd6d,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,found,snapshot; live Apertus_1_5_EU_Public_Summary.pdf,2026-10-29
-6de1ef96d46d0677,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,found,snapshot; live README.md,2026-10-29
-c03eb37f20b18591,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,found,snapshot; live USAGE_POLICY.pdf,2026-10-29
+489fa46da30ee80f,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,found,snapshot; live README.md,2026-10-29
 68b9699ef04a263b,https://aleph-alpha.com/downloads/tech-report.pdf,found,snapshot,2026-10-29
 52d5abd6035dac5b,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
+89e9db19ef31f7e8,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
+1000eaf87afcfb8b,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
+26fa5e8f869fd0e3,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
 3e35cf275b83d7ea,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,found,snapshot; live README.md,2026-10-29
 bf5107bc920f0493,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+fcc5cb4a03ca1958,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,found,snapshot; live README.md,2026-10-29
+351ecefce0671d83,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,found,snapshot; live README.md,2026-10-29
 b832f2a1d4543aad,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
-592904b5e51d383f,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,found,snapshot; live failed (HTTPError),2026-10-29
+7d39f28238b4fb09,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
 00dfa18014db451e,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,found,snapshot; live failed (HTTPError),2026-10-29
-7675870d537d27b6,https://www.llama.com/llama3_3/use-policy,found,live,2026-10-29
 6cfa552dc53f5224,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,found,snapshot; live README.md,2026-10-29
-66b079d4f7419a23,https://arxiv.org/abs/2506.04079,found,live; live 2506.04079,2026-10-29
+66b079d4f7419a23,https://arxiv.org/abs/2506.04079,found,snapshot; live 2506.04079,2026-10-29
 9888a5137283a3a1,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+8857292cf6397061,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+4c0c593592aa2286,https://arxiv.org/abs/2602.05879,found,snapshot; live 2602.05879,2026-10-29
 a96dbef969dcab9a,https://arxiv.org/abs/2607.20448,found,snapshot; live 2607.20448,2026-10-29
 f8f1c7022b25b9aa,https://arxiv.org/abs/2607.20448,found,snapshot; live 2607.20448,2026-10-29
 bad70ee92e3cf481,https://arxiv.org/abs/2607.20448,found,snapshot; live 2607.20448,2026-10-29
 1e2dc161f1931d42,https://www.domyn.com/legal/software-licenses/domyn-small,found,snapshot,2026-10-29
+130dcc341cd996ab,https://huggingface.co/domyn/Domyn-Small-v1.0,found,snapshot failed (URLError); live; live README.md,2026-10-29
+2c00df0274dd01ea,https://huggingface.co/domyn/Domyn-Small-v1.0,found,snapshot failed (URLError); live; live README.md,2026-10-29
 3c24087dcf6dfddc,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
 6db8dfc90f23312e,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,found,snapshot; live Apertus_1_5_EU_Public_Summary.pdf,2026-10-29
 71ef692d69e9949e,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,found,snapshot; live Apertus_1_5_EU_Public_Summary.pdf,2026-10-29
 8b5212d4ad0f58cd,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,found,snapshot; live README.md,2026-10-29
-ed10184090208883,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
 4060247c91070751,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
 8fa451073b03d48f,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
 7f4acb37d4fe547f,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
+da2ac6112ccb02ac,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
+63d1aca56e465f3d,https://huggingface.co/swiss-ai/Apertus-v1.5-8B/resolve/main/LICENSE.txt,found,live,2026-10-29
 986b1eb470129323,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
-26fa5e8f869fd0e3,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
 e62b3c8a8ecfec49,https://aleph-alpha.com/downloads/tech-report.pdf,found,snapshot,2026-10-29
 e6e4a315ce364ff3,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,found,snapshot,2026-10-29
 f8e70b57227394d8,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,found,snapshot,2026-10-29
 1bdc6e7aa55993b5,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,found,snapshot,2026-10-29
 c433a704de367ea3,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
 4b4238256fd61357,https://aleph-alpha.com/downloads/tech-report.pdf,found,snapshot,2026-10-29
+2882a1a0c38b74f4,https://huggingface.co/Aleph-Alpha/Kolibri-1/resolve/main/LICENSE,found,live,2026-10-29
 6a67a63fa7cd9b77,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,found,snapshot; live README.md,2026-10-29
 868c2f7bd4ed5d36,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,found,snapshot,2026-10-29
 eb0dc2c3e028c5f4,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,found,snapshot,2026-10-29
+12b5afac99213abc,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,found,snapshot,2026-10-29
 eb145066eeac84e5,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
 82cc09209c4eedaa,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29
 965494f116d853c2,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29
 6ea7dcead0bae3c9,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29
 b3fc13b1b460e38b,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29
+b53235fa17675ed7,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
 38a6968927cb319b,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+a1758ec9fbaddcaa,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,found,snapshot failed (URLError); live; live EuroLLM_Public_Summary.pdf,2026-10-29
 22865f4baaebd7a0,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
 dfebb98d443f7c37,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,found,snapshot; live README.md,2026-10-29
 31aa6f043b96a494,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
-b0d924bb05f0655c,https://huggingface.co/utter-project/EuroLLM-9B-2512,found,live; live README.md,2026-10-29
+b0d924bb05f0655c,https://huggingface.co/utter-project/EuroLLM-9B-2512,found,snapshot failed (URLError); live; live README.md,2026-10-29
+d3e72b12951db7ee,https://huggingface.co/utter-project/EuroLLM-9B-2512,found,snapshot failed (URLError); live; live README.md,2026-10-29
 90249c47a6d9c01a,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,found,snapshot; live README.md,2026-10-29
-c504ad9b68cf7d83,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,found,snapshot; live EuroLLM_Public_Summary.pdf,2026-10-29
-fd53d2d182642332,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
 c81ae257c638211b,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
-612020d9ca020822,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,found,snapshot; live EuroLLM_Public_Summary.pdf,2026-10-29
+612020d9ca020822,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,found,snapshot failed (URLError); live; live EuroLLM_Public_Summary.pdf,2026-10-29
 368dcdf542f56ec1,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
 2422eec19e54c7a1,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
-740c6b8cce75e2ce,https://huggingface.co/domyn/Domyn-Small-v1.0,found,snapshot; live README.md,2026-10-29
+740c6b8cce75e2ce,https://huggingface.co/domyn/Domyn-Small-v1.0,found,snapshot failed (URLError); live; live README.md,2026-10-29
 9ceb36cbebde6aab,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
-013bf0130f8c54bf,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot failed (URLError); live,2026-10-29
+013bf0130f8c54bf,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot,2026-10-29
+50b9ecb21aacb4df,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
 d13843a633b0128c,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
-5ae7b42203ff09e3,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot failed (URLError); live,2026-10-29
+5ae7b42203ff09e3,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot,2026-10-29
 269787f60e677e8e,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
 bce7ab73665932df,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
-8aa688df8e96410f,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot failed (URLError); live,2026-10-29
+8aa688df8e96410f,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot,2026-10-29
 ec063017c9ba69bb,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
 628ebbe13b0f9f75,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
-0a2c21c55c8e0c9a,https://arxiv.org/abs/2506.04079,found,live; live 2506.04079,2026-10-29
-f0c11572f4408997,https://arxiv.org/abs/2506.04079,found,live; live 2506.04079,2026-10-29
-e63b1079b7859780,https://arxiv.org/abs/2506.04079,found,live; live 2506.04079,2026-10-29
+92cfb9607e1f3ec2,https://www.domyn.com/legal/software-licenses/domyn-small,found,snapshot,2026-10-29
+0a2c21c55c8e0c9a,https://arxiv.org/abs/2506.04079,found,snapshot; live 2506.04079,2026-10-29
+f0c11572f4408997,https://arxiv.org/abs/2506.04079,found,snapshot; live 2506.04079,2026-10-29
+e63b1079b7859780,https://arxiv.org/abs/2506.04079,found,snapshot; live 2506.04079,2026-10-29
+4ba4efddc23bd28c,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,found,snapshot; live README.md,2026-10-29
+246be6f223458b9c,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,found,snapshot; live README.md,2026-10-29
+88e422f55df3b8d3,https://huggingface.co/OpenLLM-France/Luciole-23B-Thinking-1.1,found,live; live README.md,2026-10-29
+c31d952ad5e54b13,https://huggingface.co/OpenLLM-France/Luciole-8B-Instruct-1.1,found,snapshot; live README.md,2026-10-29
+87ec68bcb919ae50,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,found,snapshot; live README.md,2026-10-29
+b4c57ff55a5a00cc,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,found,snapshot; live README.md,2026-10-29
+50f7421b213d8082,https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1,found,snapshot; live README.md,2026-10-29
+67b74e5603661f68,https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1,found,snapshot; live README.md,2026-10-29
+12807e5aded8da34,https://huggingface.co/OpenLLM-France/Luciole-23B-Base,found,snapshot; live README.md,2026-10-29
+12ac4875f3d1badd,https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1,found,snapshot; live README.md,2026-10-29
+28d849b0773f0376,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+e9b1566fb816d79d,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+35665969d2fe7e0d,https://mistral.ai/news/devstral-2-vibe-cli,found,live,2026-10-29
+6c87c0f437f1c5fd,https://huggingface.co/mistralai/Devstral-Small-2-24B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+f61028cac7ee2544,https://arxiv.org/abs/2503.13427,found,snapshot; live 2503.13427,2026-10-29
+41ec64432f84bec6,https://huggingface.co/NX-AI/xLSTM-7b,found,snapshot; live README.md,2026-10-29
+864f45597fdc52d7,https://arxiv.org/abs/2503.13427,found,snapshot; live 2503.13427,2026-10-29
+1ce797d550478f3a,https://arxiv.org/abs/2503.13427,found,snapshot; live 2503.13427,2026-10-29
+e62a1a177bad9e86,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+b3d18aadae51a3d1,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+1dcd92c8d9651443,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+a834598c346adfb5,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+e453a7a9cffb67ab,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,found,snapshot; live README.md,2026-10-29
+229bf5767a39a13c,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,found,snapshot; live README.md,2026-10-29
+5eb5b1c22768118c,https://arxiv.org/abs/2608.13517,found,snapshot; live 2608.13517,2026-10-29
+7ee1ecf911ee0369,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,found,snapshot; live README.md,2026-10-29
+b2adfc0e98e60e65,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,found,snapshot; live README.md,2026-10-29
+54924c3d96748fb6,https://arxiv.org/abs/2608.13517,found,snapshot; live 2608.13517,2026-10-29
+d82991dd23e8f9af,https://arxiv.org/abs/2608.13517,found,snapshot; live 2608.13517,2026-10-29
+cbaada3c28dc187b,https://arxiv.org/abs/2608.13517,found,snapshot; live 2608.13517,2026-10-29
+6992ea74dcb65031,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,found,snapshot; live README.md,2026-10-29
+988fb222afb63f85,https://huggingface.co/AlmawaveLabs/Velvet-14B,found,snapshot; live failed (HTTPError),2026-10-29
+0d18387bf32eaab1,https://huggingface.co/AlmawaveLabs/Velvet-14B,found,snapshot; live failed (HTTPError),2026-10-29
+5d0337a73275aab6,https://huggingface.co/AlmawaveLabs/Velvet-14B,found,snapshot; live failed (HTTPError),2026-10-29
+c9925e7b103b428e,https://developer.download.nvidia.com/assets/nemo/docs/public-summary-of-training-content-for-nvidia-nemotron.pdf,found,snapshot,2026-10-29
+704eda546f55e2d1,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,found,snapshot; live README.md,2026-10-29
+a17acdb79c13032e,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,found,snapshot; live README.md,2026-10-29
+cd4e1bbbb4537a78,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,found,snapshot; live README.md,2026-10-29
+ff949238032b6be4,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,found,snapshot; live README.md,2026-10-29
+9bf8317f5c1cd785,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,found,snapshot; live README.md,2026-10-29
+58a71abfef3538d2,https://openmdw.ai/license/1-1/,found,snapshot,2026-10-29
+0bb7e6ff088af82b,https://huggingface.co/zai-org/GLM-5.3,found,snapshot; live README.md,2026-10-29
+dc2ed9537e5205fc,https://cdn.bigmodel.cn/static/glm5.3/The%20Public%20Summary%20of%20Training%20Content%20for%20the%20GLM5%20Family.pdf,found,snapshot,2026-10-29
+8889b9ba0a0b78fb,https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+3143b9b4429f11e5,https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+ba8073e138219ae7,https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/,found,live,2026-10-29
+8e52eebd8550831d,https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking,found,snapshot; live README.md,2026-10-29
+13948d4bc4f0ae19,https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking,found,snapshot; live README.md,2026-10-29
+1723389fc6b632a3,https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data,found,snapshot; live README.md,2026-10-29
+cc4f0ca929d8ff71,https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data,found,snapshot; live README.md,2026-10-29
+4ab95bc8a38c69f0,https://www.nii.ac.jp/news/release/2026/0403.html,found,snapshot,2026-10-29
+ee87ca2668c46fc9,https://huggingface.co/llm-jp/llm-jp-4.1-33b-thinking,found,snapshot; live README.md,2026-10-29
+d90d4fd3f8c9417e,https://arxiv.org/abs/2601.02346,found,snapshot failed (URLError); live; live 2601.02346,2026-10-29
+609be056cbd92835,https://huggingface.co/tiiuae/Falcon-H1R-7B,found,snapshot failed (URLError); live; live README.md,2026-10-29
+9e5b3dfbb4bc4dac,https://huggingface.co/tiiuae/Falcon-H1R-7B,found,snapshot failed (URLError); live; live README.md,2026-10-29
+7eb89ac203ca8bee,https://arxiv.org/abs/2601.02346,found,snapshot failed (URLError); live; live 2601.02346,2026-10-29
+1b1a21eed15a614e,https://huggingface.co/tiiuae/Falcon-H1R-7B,found,snapshot failed (URLError); live; live README.md,2026-10-29
+5649a94f2d719edd,https://falconllm.tii.ae/falcon-terms-and-conditions.html,found,live,2026-10-29
+bf83ac1d3ff5e361,https://falconllm.tii.ae/falcon-terms-and-conditions.html,found,live,2026-10-29
+326ecbc6c77b3497,https://arxiv.org/abs/2503.12294,found,snapshot; live 2503.12294,2026-10-29
+f05e56f3f2840f1b,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,found,snapshot; live README.md,2026-10-29
+f7dd2a1b09332b89,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,found,snapshot; live README.md,2026-10-29
+2591e05cf5ffc019,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,found,snapshot; live README.md,2026-10-29
+d776f4eae263bd21,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,found,snapshot; live README.md,2026-10-29
+5ef8a893d4b91310,https://arxiv.org/abs/2503.12294,found,snapshot; live 2503.12294,2026-10-29
+5e47f5bccce47eec,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,found,snapshot; live README.md,2026-10-29
+96314ddf52692e16,https://arxiv.org/abs/2506.10910,found,snapshot; live 2506.10910,2026-10-29
+beae11c461cd2718,https://huggingface.co/mistralai/Magistral-Small-2509,found,snapshot; live README.md,2026-10-29
+0c3cd47d02cbc776,https://arxiv.org/abs/2506.10910,found,snapshot; live 2506.10910,2026-10-29
+4898198cf47d0819,https://huggingface.co/mistralai/Magistral-Small-2509,found,snapshot; live README.md,2026-10-29
+d915874c389cea45,https://arxiv.org/abs/2506.10910,found,snapshot; live 2506.10910,2026-10-29
+974c5b7384351c10,https://huggingface.co/mistralai/Magistral-Small-2509,found,snapshot; live README.md,2026-10-29
+93eb4b862b7d46e4,https://huggingface.co/Hcompany/Holo4-35B-A3B,found,snapshot; live README.md,2026-10-29
+fa9afdf2241a996f,https://huggingface.co/Hcompany/Holo4-35B-A3B,found,snapshot; live README.md,2026-10-29
+5740022fbe3f196c,https://hcompany.ai/newsroom/holo4,found,snapshot,2026-10-29
+3c4b81127795b915,https://hcompany.ai/newsroom/holo4,found,snapshot,2026-10-29
+8c2f1e67cf127e25,https://huggingface.co/Hcompany/Holo4-35B-A3B,found,snapshot; live README.md,2026-10-29
+a52e056f968bbb58,https://models.bggpt.ai/blog/bggpt-3-release-en,found,snapshot,2026-10-29
+105f1320c15f1f84,https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT,found,snapshot; live README.md,2026-10-29
+4385f7468b03d09e,https://models.bggpt.ai/blog/bggpt-3-release-en,found,snapshot,2026-10-29
+cbbdf29404e64d96,https://models.bggpt.ai/blog/bggpt-3-release-en,found,snapshot,2026-10-29
+ad24d9030cfc0eae,https://huggingface.co/INSAIT-Institute/BgGPT-Gemma-3-27B-IT,found,snapshot; live README.md,2026-10-29
+29c0ebef29c2bd2a,https://huggingface.co/Fastweb/FastwebMIIA-7B,found (loose),snapshot; live failed (HTTPError),2026-10-29
+0ef51a37438eeed5,https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf,found,snapshot,2026-10-29
+f91428801d0bcdef,https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf,found,snapshot,2026-10-29
+401d070d93ce450d,https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf,found,snapshot,2026-10-29
+e4569a7eb50a6787,https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/documentazione-trasparenza-ai/sintesi%20contenuti%20training.pdf,found,snapshot,2026-10-29
+f129d34a6ff45488,https://www.fastweb.it/grandi-aziende/artificial-intelligence/fastweb-miia/,found,snapshot,2026-10-29
+8d500ae8638f74bf,https://huggingface.co/Fastweb/FastwebMIIA-7B,found,snapshot; live failed (HTTPError),2026-10-29
+4e642ad724465592,https://huggingface.co/Fastweb/FastwebMIIA-7B,found,snapshot; live failed (HTTPError),2026-10-29
+fe5a62f16aace410,https://huggingface.co/ibm-granite/granite-4.2-30b,found,snapshot; live README.md,2026-10-29
+591b2c4247061c33,https://huggingface.co/ibm-granite/granite-4.2-8b,found,live; live README.md,2026-10-29
+47c4564855587939,https://huggingface.co/ibm-granite/granite-4.2-30b,found,snapshot; live README.md,2026-10-29
+3cd0e461c06ac2a3,https://huggingface.co/ibm-granite/granite-4.2-30b,found,snapshot; live README.md,2026-10-29
+d3b85500509f7b5f,https://huggingface.co/ibm-granite/granite-4.2-30b,found,snapshot; live README.md,2026-10-29
+a3f6d78296d5d494,https://github.com/ibm-granite/granite-4.2-language-models/blob/main/disclosures/granite_4.2_30b_disclosure.json,found,snapshot; live granite_4.2_30b_disclosure.json,2026-10-29
+1ee1fe522e691dd3,https://huggingface.co/ibm-granite/granite-4.1-30b-base,found,snapshot; live README.md,2026-10-29
+06522bd8c597509a,https://huggingface.co/ibm-granite/granite-4.2-30b,found,snapshot; live README.md,2026-10-29
+db205a2e7466180f,https://huggingface.co/zai-org/GLM-5.3-Flash,found,snapshot failed (URLError); live; live README.md,2026-10-29
+7f8b1f2000c0d54c,https://huggingface.co/zai-org/GLM-5.3-Flash/blob/main/LICENSE,found,snapshot failed (URLError); live; live LICENSE,2026-10-29
+205ddd82b2e86ff8,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,found,snapshot; live README.md,2026-10-29
+41d47c26b31ab3b3,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,found,snapshot; live README.md,2026-10-29
+97d7b2f1251b306d,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,found,snapshot; live README.md,2026-10-29
+a8d841eeda2ba0a1,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,found,snapshot; live README.md,2026-10-29
+ae813519e6f051cd,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,found,snapshot; live README.md,2026-10-29
+2e0f4fa697b5a92d,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,found,snapshot; live README.md,2026-10-29
+12720d15813f6b76,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2,found,snapshot; live README.md,2026-10-29
+90c73e020f5cd74c,https://huggingface.co/tokyotech-llm/Qwen3-Swallow-32B-RL-v0.2/blob/main/LICENSE,found,live; live LICENSE,2026-10-29
+60593bdf6a30723e,https://huggingface.co/IFM/K2-Horizon-375B-A23B,found,snapshot; live README.md,2026-10-29
+f67fa98905123eaa,https://huggingface.co/datasets/IFM/TxT360-v2,found,snapshot; live README.md,2026-10-29
+76e91d3df4e213f1,https://huggingface.co/IFM/K2-Horizon-375B-A23B,found,snapshot; live README.md,2026-10-29
+2d9d1f447b1cd5b0,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606/blob/main/README.md,found,live; live README.md,2026-10-29
+b89422dbe27ebd18,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606/blob/main/README.md,found,live; live README.md,2026-10-29
+30d2c2687ba79524,https://huggingface.co/BSC-LT/ALIA-40b/blob/main/README.md,found,live; live README.md,2026-10-29
+8d4f4b009a8e1dc3,https://huggingface.co/BSC-LT/ALIA-40b/blob/main/README.md,found,live; live README.md,2026-10-29
+b6a71d6373911e42,https://huggingface.co/BSC-LT/ALIA-40b/blob/main/README.md,found,live; live README.md,2026-10-29
+4224437642998fef,https://huggingface.co/BSC-LT/ALIA-40b/blob/main/README.md,found,live; live README.md,2026-10-29
+f2654292b55bf928,https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606/blob/main/README.md,found,live; live README.md,2026-10-29
+6cab8e0fdbe929c6,https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506/blob/main/README.md,found,live; live README.md,2026-10-29
+e4ecea778515e961,https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/blob/main/README.md,found,live; live README.md,2026-10-29
+956f495d9278e80a,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-base/blob/main/README.md,found,live; live README.md,2026-10-29
+0981c58161c4ab96,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-base/blob/main/README.md,found,live; live README.md,2026-10-29
+10783a2217c83db5,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+3874f2dffbdf1f3a,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-base/blob/main/README.md,found,live; live README.md,2026-10-29
+72d0660f99062d01,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-base/blob/main/README.md,found,live; live README.md,2026-10-29
+f2aa40187db1a19e,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-base/blob/main/README.md,found,live; live README.md,2026-10-29
+1b4d263104186f05,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+6cb39b56d2a3da49,https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE,found,live; live LICENSE,2026-10-29
+1c6a6ddaa2d8da96,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+0488dec5810c1fe9,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+949dde71ba074140,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+4b96cc57248b4f7d,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+bfe7d3d036ca5b50,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+0dc906e7f619076d,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+618ec25b91974e4e,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+9c1a64de633fac83,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+8006f818a3d5fe59,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+79a76bf61684d47b,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+5af50d1bff4219a2,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+6a462e2b8d7d5e34,https://ai.google.dev/gemma/terms,found,live,2026-10-29
+7ecd7aa01ca1b753,https://huggingface.co/domyn/Domyn-Edge-SFT/blob/main/README.md,found,live; live README.md,2026-10-29
+04877e6fed1f7dd6,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,found,live; live README.md,2026-10-29
+327d38088b280eeb,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,found,live; live README.md,2026-10-29
+57b63a78444361b5,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,found,live; live README.md,2026-10-29
+b7bdc197d931142d,https://huggingface.co/domyn/Domyn-Edge-SFT/blob/main/README.md,found,live; live README.md,2026-10-29
+991aea3a2c7dd210,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,found,live; live README.md,2026-10-29
+f5101d90090a5521,https://huggingface.co/domyn/Domyn-Edge-SFT/blob/main/README.md,found,live; live README.md,2026-10-29
+51c865536e535d2a,https://huggingface.co/allenai/Olmo-3-7B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+442a9a43df32ff05,https://arxiv.org/pdf/2512.13961,found (loose),live,2026-10-29
+e89a4fda4384fb7c,https://arxiv.org/pdf/2512.13961,found,live,2026-10-29
+d790f497e7e384f6,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+6fc6ca3bb8166919,https://arxiv.org/pdf/2512.13961,found,live,2026-10-29
+5c9fe8af9d3d78a5,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+9682765aec662879,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/blob/main/README.md,found,live; live README.md,2026-10-29
+8679d27aaa9359a2,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/README.md,found,live; live README.md,2026-10-29
+fd7191916dadc6a9,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,found,snapshot,2026-10-29
+362b0b1fdc8612bd,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,found,snapshot,2026-10-29
+e2e6d4161e99db3a,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+0b3d8865f05a0603,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+bb1b2f6687840da6,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+f53a99a499070e54,https://swallow-llm.github.io/gptoss-swallow.en.html,found,live,2026-10-29
+9327c520b5b158ac,https://swallow-llm.github.io/gptoss-swallow.en.html,found,live,2026-10-29
+68d49437582b4eb8,https://swallow-llm.github.io/gptoss-swallow.en.html,found,live,2026-10-29
+4c41bce68fd18d14,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1/blob/main/README.md,found,live; live README.md,2026-10-29
+86b9138114891546,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1/blob/main/README.md,found,live; live README.md,2026-10-29
+d8e151a8a87b0159,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1/blob/main/README.md,found,live; live README.md,2026-10-29
+4648111791b67ad8,https://swallow-llm.github.io/gptoss-swallow.en.html,found,live,2026-10-29
+2ef72c7b78811fe1,https://huggingface.co/tokyotech-llm/GPT-OSS-Swallow-120B-RL-v0.1/blob/main/README.md,found,live; live README.md,2026-10-29
+17bb1cd2904d0153,https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/main/README.md,found,live; live README.md,2026-10-29
+f0c22b8d9aad0a95,https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/main/README.md,found,live; live README.md,2026-10-29
+f8deffd0e328a85c,https://huggingface.co/ai21labs/AI21-Jamba2-Mini/blob/main/README.md,found,live; live README.md,2026-10-29
+ada16d2464b7b6d0,https://arxiv.org/pdf/2502.08489,found,live,2026-10-29
+a2ac131b07da2b53,https://huggingface.co/BSC-LT/salamandra-7b-instruct,found,snapshot; live README.md,2026-10-29
+9646ba627e538964,https://huggingface.co/BSC-LT/salamandra-7b-instruct,found,snapshot; live README.md,2026-10-29
+3427adae178bb241,https://huggingface.co/BSC-LT/salamandra-7b-instruct,found,snapshot; live README.md,2026-10-29
+c067849792bbca58,https://arxiv.org/pdf/2502.08489,found,live,2026-10-29
+91e7a24db7e6ad83,https://arxiv.org/pdf/2502.08489,found,live,2026-10-29
+9d207cc56a11bf14,https://huggingface.co/BSC-LT/salamandra-7b-instruct,found,snapshot; live README.md,2026-10-29
+b570337203b70613,https://arxiv.org/pdf/2601.08584,found,live,2026-10-29
+a932d545979b0d1c,https://arxiv.org/pdf/2601.08584,found,live,2026-10-29
+9e02c248c0322f5e,https://legal.mistral.ai/documents/Ministral%203%20-%2014B%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf,found,snapshot,2026-10-29
+249a07890208cf80,https://arxiv.org/pdf/2601.08584,found,live,2026-10-29
+53cd10371dc5c17f,https://legal.mistral.ai/documents/Ministral%203%20-%2014B%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf,found,snapshot,2026-10-29
+73bfbb13d93650d1,https://mistral.ai/news/mistral-3,found,snapshot,2026-10-29
+cf113b84bff396a7,https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+28d67140a2f61a7f,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,found,snapshot; live README.md,2026-10-29
+23e73e5477577a9f,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,found,snapshot; live README.md,2026-10-29
+6b6b026746ea9eed,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,found,snapshot; live README.md,2026-10-29
+28f05ce7464ba766,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,found,snapshot; live README.md,2026-10-29
+8d35aba8b57dccf9,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,found,snapshot; live README.md,2026-10-29
+aef88831d3820b12,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,found,snapshot; live README.md,2026-10-29
+b7165a22e1967c24,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview,found,snapshot; live README.md,2026-10-29
+6dd44ba8c46403a2,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+e2009641f81050f0,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+1dc3dfd0ef485ec9,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+635f81e4dd54bf9b,https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5,found,snapshot; live README.md,2026-10-29
+28d60fc995d36bc6,https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5,found,snapshot; live README.md,2026-10-29
+c774c9e1e004ed84,https://arxiv.org/pdf/2505.13772,found,live,2026-10-29
+ffe33b00984c6276,https://arxiv.org/pdf/2505.13772,found,live,2026-10-29
+616e7a6ee63473ed,https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5,found,snapshot; live README.md,2026-10-29
+927e757d481ba03c,https://arxiv.org/pdf/2505.13772,found,live,2026-10-29
+b400ee78721bfad6,https://arxiv.org/pdf/2505.13772,found,live,2026-10-29
+e7ff895d71b0f0e1,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,found,live; live LICENSE,2026-10-29
+576cbce112261ce5,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,found,live; live LICENSE,2026-10-29
+28c9fe0be0432766,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,found,live; live LICENSE,2026-10-29
+a0753d2f29b5494a,https://huggingface.co/AlmawaveLabs/Velvet2-3B,found,snapshot; live failed (HTTPError),2026-10-29
+09725a2f3829193d,https://huggingface.co/AlmawaveLabs/Velvet2-3B,found,snapshot; live failed (HTTPError),2026-10-29
+62ad1c1328e2e328,https://huggingface.co/AlmawaveLabs/Velvet2-3B,found,snapshot; live failed (HTTPError),2026-10-29
+dc2afa1f4a70694f,https://huggingface.co/Qwen/Qwen3.8-27B,found,snapshot failed (URLError); live; live README.md,2026-10-29
+5ea64f158fa82dda,https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE,found,snapshot failed (URLError); live; live LICENSE,2026-10-29
+5f55f816f021c575,https://huggingface.co/tencent/Hy4-preview,found,snapshot failed (URLError); live; live README.md,2026-10-29
+78d8bb8fa146306a,https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE,found,snapshot failed (URLError); live; live LICENSE,2026-10-29
+706e733a6bbb86b9,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,found,snapshot failed (URLError); live; live failed (HTTPError),2026-10-29
+82834c6e05ebbae3,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,found,snapshot failed (URLError); live; live failed (HTTPError),2026-10-29
+2f57c5e6cbfd6e36,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,found,snapshot failed (URLError); live; live failed (HTTPError),2026-10-29
+a02b7e3a0d012867,https://plamo.preferredai.jp/info/plamo-community-license-en,not found,snapshot failed (URLError); live,2026-10-29
+2f245bdd3cbf9fbd,https://plamo.preferredai.jp/info/plamo-community-license-en,not found,snapshot failed (URLError); live,2026-10-29
+e56405eb107be6a7,https://plamo.preferredai.jp/info/plamo-community-license-en,not found,snapshot failed (URLError); live,2026-10-29
+a510805e4806bbca,https://docs.cohere.com/docs/command-a-plus,found,snapshot failed (URLError); live,2026-10-29
+39f2d49a8a275e87,https://docs.cohere.com/_fern-files/cohere.docs.buildwithfern.com/465ad10da2a73b55ca4291e34e665bf843f8f918fd8a0c4e8f0092a8d60f93ef/assets/documents/eu-ai-public-summary_command-a-plus-family_20260910.pdf,found,snapshot failed (URLError); live,2026-10-29
+823a5489e314933d,https://cohere.com/blog/command-a-plus,found (loose),snapshot,2026-10-29
+253e08cc6c1a057c,https://huggingface.co/TildeAI/TildeOpen-30b-64k,found,snapshot; live README.md,2026-10-29
+a3747f18b3b279bb,https://huggingface.co/TildeAI/TildeOpen-30b-64k,found,snapshot; live README.md,2026-10-29
+92d3ca306c965dbb,https://huggingface.co/TildeAI/TildeOpen-30b-64k,found,snapshot; live README.md,2026-10-29
+f97a61d95e58444f,https://huggingface.co/TildeAI/TildeOpen-30b-64k,found,snapshot; live README.md,2026-10-29
+89ad33bb4f94fa26,https://huggingface.co/TildeAI/TildeOpen-30b,found,snapshot; live README.md,2026-10-29
+bf2994f8fac0ad73,https://huggingface.co/TildeAI/TildeOpen-30b-64k,found,snapshot; live README.md,2026-10-29
+799d891aa738cf6e,https://legal.mistral.ai/documents/Mistral%20Small%204%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf,found,snapshot,2026-10-29
+368a60b57305e4d3,https://legal.mistral.ai/documents/Mistral%20Small%204%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf,found,snapshot,2026-10-29
+d801a22cc18aa362,https://huggingface.co/mistralai/Mistral-Small-4-119B-2603,found,snapshot; live README.md,2026-10-29
+e7614ae14f9841e9,https://huggingface.co/openeurollm/oellm-9b-256k-sft,found,snapshot; live README.md,2026-10-29
+ccf9287da09eb55b,https://huggingface.co/openeurollm/oellm-9b-256k-sft,found,snapshot; live README.md,2026-10-29
+0e95d096a98d3d51,https://huggingface.co/openeurollm/oellm-9b-256k-sft,found,snapshot; live README.md,2026-10-29
+e5ea87e28964513f,https://huggingface.co/openeurollm/oellm-9b-256k-sft,found,snapshot; live README.md,2026-10-29
+8ac06ee01071468e,https://huggingface.co/openeurollm/oellm-9b-256k-sft,found,snapshot; live README.md,2026-10-29
+35bb8b823dad927d,https://huggingface.co/openeurollm/prelude,found,snapshot; live README.md,2026-10-29
+256bd62a3197bcc6,https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude,found,snapshot; live README.md,2026-10-29
+b3355c126f592dc2,https://huggingface.co/openeurollm/oellm-9b-256k-sft,found,snapshot; live README.md,2026-10-29
+57bfcd08c29010b1,https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826,found,snapshot failed (URLError); live; live README.md,2026-10-29
+91219b2c51ad32e5,https://huggingface.co/tartuNLP/Llama-3.1-EstLLM-70B-Instruct-0826,found,snapshot failed (URLError); live; live README.md,2026-10-29
+70be301821c7b329,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,found,live; live LICENSE,2026-10-29
+d728e1fb3c48ec2b,https://arxiv.org/abs/2603.02041,found,snapshot; live 2603.02041,2026-10-29
+ba3dd15e8c41dfb0,https://huggingface.co/google/gemma-4-31B-it,found,snapshot; live README.md,2026-10-29
+5210bacf15493c96,https://ai.google.dev/gemma/docs/gemma_4_license,found (loose),snapshot,2026-10-29
+e574ff54afd9fbc9,https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf,found,snapshot failed (URLError); live; live tech_report.pdf,2026-10-29
+e183feaed3a1426a,https://huggingface.co/Qwen/Qwen3.8-Flash-Next,found,snapshot; live README.md,2026-10-29
+96c1d45e06ecfe3b,https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE,found,snapshot failed (URLError); live; live LICENSE,2026-10-29
+79fa7a1aee2949cc,https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE,found,snapshot failed (URLError); live; live LICENSE,2026-10-29
+3e82cee1387fd19f,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,found,snapshot failed (URLError); live; live README.md,2026-10-29
+c906dc8c29d87ee5,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,found,snapshot failed (URLError); live; live README.md,2026-10-29
+3d104aaeaed31858,https://arxiv.org/abs/2608.04505,found,snapshot failed (URLError); live; live 2608.04505,2026-10-29
+adf92097318b7fc0,https://huggingface.co/LGAI-EXAONE/K-EXAONE-2.0-750B-A37B/blob/main/LICENSE,found,snapshot failed (URLError); live; live LICENSE,2026-10-29
+06f2826672a72c30,https://www.sarvam.ai/blogs/sarvam-30b-105b,found,snapshot failed (URLError); live,2026-10-29
+66e5fde369db27d6,https://www.sarvam.ai/blogs/sarvam-30b-105b,found,snapshot failed (URLError); live,2026-10-29
+f7a85c8f3474f9c2,https://www.sarvam.ai/blogs/sarvam-30b-105b,found,snapshot failed (URLError); live,2026-10-29
+024288d18f5ce32c,https://arxiv.org/abs/2603.11510,found,snapshot; live 2603.11510,2026-10-29
+c935bc1e64d2ea6a,https://arxiv.org/abs/2603.11510,found,snapshot; live 2603.11510,2026-10-29
+656a54d5523d9c6f,https://cohere.com/c4ai-cc-by-nc-license,found,live,2026-10-29
+7a8755b4143afa9a,https://cohere.com/c4ai-cc-by-nc-license,found,live,2026-10-29
+2b887427f9370737,https://huggingface.co/CohereLabs/tiny-aya-global,found,snapshot; live failed (HTTPError),2026-10-29
+fdd0ae2773c3e5cd,https://huggingface.co/LumiOpen/Viking-33B,found,snapshot; live README.md,2026-10-29
+78aaea6892a03ac3,https://huggingface.co/LumiOpen/Viking-33B,found,snapshot; live README.md,2026-10-29
+2fb251a736fddaca,https://huggingface.co/LumiOpen/Viking-33B,found,snapshot; live README.md,2026-10-29
+db09ceac798759de,https://huggingface.co/LumiOpen/Viking-33B,found,snapshot; live README.md,2026-10-29
+93d84cef0ff33e40,https://huggingface.co/LumiOpen/Viking-33B,found,snapshot; live README.md,2026-10-29
+bb63f7725f2ef9af,https://arxiv.org/abs/2601.11579,found,snapshot; live 2601.11579,2026-10-29
+a21aa836e3aa2f33,https://arxiv.org/abs/2601.11579,found,snapshot; live 2601.11579,2026-10-29
+fd5f5b4e298abb73,https://arxiv.org/abs/2601.11579,found,snapshot; live 2601.11579,2026-10-29
+a09e34740519ba8d,https://arxiv.org/abs/2601.11579,found,snapshot; live 2601.11579,2026-10-29
+edc059ea250a1ae2,https://arxiv.org/abs/2601.11579,found,snapshot; live 2601.11579,2026-10-29
+4181495d6882cfb8,https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct,found,snapshot; live README.md,2026-10-29
+92a5507b60ad881d,https://huggingface.co/speakleash/Bielik-11B-v3.0-Instruct,found,snapshot; live README.md,2026-10-29
+1586bab3b82f02aa,https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512,found,snapshot; live README.md,2026-10-29
+d5d1fc1228c255d2,https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,found,snapshot; live PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,2026-10-29
+56e834ebb2c266f1,https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,found,snapshot; live PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,2026-10-29
+2fbf3f314b13971e,https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,found,snapshot; live PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,2026-10-29
+f61ba3bf42191cfd,https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512,found,snapshot; live README.md,2026-10-29
+72fb4f5fc3f3957a,https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512,found,snapshot; live README.md,2026-10-29
+e9d1d0710cd993e0,https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO,found,snapshot; live README.md,2026-10-29
+ae13a59418f90bc6,https://arxiv.org/abs/2603.26511,found,snapshot; live 2603.26511,2026-10-29
+22746c2f7a03bede,https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO,found,snapshot; live README.md,2026-10-29
+96a1b4d89e022b04,https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO,found,snapshot; live README.md,2026-10-29
+afdf48713a4b1fae,https://arxiv.org/abs/2603.26511,found,snapshot; live 2603.26511,2026-10-29
+ff0012049af74642,https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO,found,snapshot; live README.md,2026-10-29
+a5c8a587fe21b5b2,https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO,found,snapshot; live README.md,2026-10-29
+051bf285f870bffc,https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO,found,snapshot; live README.md,2026-10-29
+ae09b23a092db8ff,https://arxiv.org/abs/2508.10925,found,snapshot; live 2508.10925,2026-10-29
+63a969599f38bc11,https://arxiv.org/abs/2508.10925,found,snapshot; live 2508.10925,2026-10-29
+c28c5d7881095278,https://arxiv.org/abs/2508.10925,found,snapshot; live 2508.10925,2026-10-29
+6b1807f6f9e42d34,https://arxiv.org/abs/2606.19348,found,snapshot; live 2606.19348,2026-10-29
+bc54cf1a3445c5d9,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,found,snapshot,2026-10-29
+891afee2c2718bcb,https://cdn.deepseek.com/policies/DeepSeek_Template_for_the_Public_Summary_of_Training_Content_for_GeneralPurpose_AI_model.pdf,found,snapshot,2026-10-29
+543cb0182203d711,https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813,found,snapshot; live README.md,2026-10-29
+e1588f43168274dc,https://arxiv.org/abs/2604.08644,found,snapshot; live 2604.08644,2026-10-29
+32cd2d30c2bc6105,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B,found,snapshot; live README.md,2026-10-29
+be916db038b1998c,https://arxiv.org/abs/2604.08644,found,snapshot; live 2604.08644,2026-10-29
+948cb57280988410,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+9a9bec74f8785d12,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+20a5a5ad9d89811a,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+00becafd58ad7df7,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+e5537b79d2f288f2,https://arxiv.org/abs/2609.18310,found,snapshot; live 2609.18310,2026-10-29
+43f875fd16810280,https://arxiv.org/abs/2609.18310,found,snapshot; live 2609.18310,2026-10-29
+6e194cff6a215e05,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,found,snapshot; live README.md,2026-10-29
+b1253e53e4547d05,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,found,snapshot; live README.md,2026-10-29
+c3f6336fc4b5e715,https://arxiv.org/abs/2609.18310,found,snapshot; live 2609.18310,2026-10-29
+d9c2fe3d8d3c226d,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,found,snapshot; live README.md,2026-10-29
+95d648911fdcd9eb,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,found,snapshot; live README.md,2026-10-29
+d60aa50992e187d4,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,found,snapshot,2026-10-29
+ceeafc81b109c976,https://pytorch.org/blog/muse-spark-open/,found,snapshot,2026-10-29
+539816afdaa0a46a,https://pytorch.org/blog/muse-spark-open/,found,snapshot,2026-10-29
+eed5ef7da0f51ec0,https://pytorch.org/blog/muse-spark-open/,found,snapshot,2026-10-29
+48fe7a7f7b55164f,https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/,found,snapshot,2026-10-29
+cccf14cc2e33069c,https://pytorch.org/blog/muse-spark-open/,found,snapshot,2026-10-29
+a56be60515b9a94f,https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B,found,snapshot; live failed (HTTPError),2026-10-29
+83c79fb01f19da38,https://huggingface.co/kyutai/helium-1-2b,found,snapshot failed (URLError); live; live README.md,2026-10-29
+9321e23ab9d8f21d,https://huggingface.co/kyutai/helium-1-2b,found,snapshot failed (URLError); live; live README.md,2026-10-29
+f99b2b1eacb6fc9f,https://kyutai.org/blog/2025-04-30-helium/,not found,snapshot,2026-10-29
+1875f234eb040812,https://huggingface.co/kyutai/helium-1-2b,found,snapshot failed (URLError); live; live README.md,2026-10-29
+2c09d8f7c22d05d0,https://huggingface.co/kyutai/helium-1-2b,found,snapshot failed (URLError); live; live README.md,2026-10-29
+cf534376c0ce5eb9,https://arxiv.org/abs/2601.08472,found,snapshot; live 2601.08472,2026-10-29
+34b79572710da710,https://huggingface.co/ellamind/sui-1-24b,found,snapshot; live README.md,2026-10-29
+a434f15778b2b1b1,https://arxiv.org/abs/2601.08472,found,snapshot; live 2601.08472,2026-10-29
+f9ddda613c4cca4f,https://arxiv.org/abs/2601.08472,found (loose),snapshot; live 2601.08472,2026-10-29
+e2895d63648baa9c,https://arxiv.org/abs/2601.08472,found,snapshot; live 2601.08472,2026-10-29
+c8da66d8f0d5b089,https://huggingface.co/ellamind/sui-1-24b,found,snapshot; live README.md,2026-10-29
+8045a19b839870ad,https://arxiv.org/abs/2601.08472,found,snapshot; live 2601.08472,2026-10-29
+b0a10e76d4878839,https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512,found,snapshot; live README.md,2026-10-29
+679f076f2e34336d,https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,found,snapshot; live PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,2026-10-29
+754c50c871fb8df5,https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512,found,snapshot; live README.md,2026-10-29
+d10cd83bbdb60439,https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,found,snapshot; live PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,2026-10-29
+1af51e585f86f083,https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,found,snapshot; live PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,2026-10-29
+572643189c36bf26,https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,found,snapshot; live PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf,2026-10-29
+072f77c4f76b6340,https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512,found,snapshot; live README.md,2026-10-29
+ef1943dd19eb0d18,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,found,live; live LICENSE,2026-10-29
+aab94103758c6c01,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,found,live; live LICENSE,2026-10-29
+1666d9a13892f179,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,found,live; live LICENSE,2026-10-29
+9a063e39452e8cc6,https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2,found,snapshot; live README.md,2026-10-29
+467ef09468e11ef5,https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2,found,snapshot; live README.md,2026-10-29
+0e43bd91708f6554,https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2,found,snapshot; live README.md,2026-10-29
+e50530cf0254c7de,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,found,snapshot; live README.md,2026-10-29
+11ec473d1a585a3a,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,found,snapshot; live README.md,2026-10-29
+300b9b68267b6439,https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2,found,snapshot; live README.md,2026-10-29
+a20f74abccf351c6,https://huggingface.co/HiTZ/Latxa-Llama-3.1-8B-Instruct/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+5578892200fb918d,https://huggingface.co/HiTZ/Latxa-Llama-3.1-8B-Instruct/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+144ea2974fd185ce,https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2,found,snapshot; live README.md,2026-10-29
+2e335bdecbcf6c0c,https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2,found,snapshot; live README.md,2026-10-29
+04f37211d16d3ce3,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,found,snapshot; live README.md,2026-10-29
+cdfaa83d327b9727,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,found,snapshot; live README.md,2026-10-29
+fc9d56f9a6b57a35,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md,found,snapshot failed (URLError); live; live DATACARD.md,2026-10-29
+65620f2e30dbe11f,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,found,snapshot; live README.md,2026-10-29
+e5b39330936498d1,https://arxiv.org/abs/2603.03975,found,live; live 2603.03975,2026-10-29
+1ae003ab2aee0ba3,https://arxiv.org/abs/2603.03975,found,live; live 2603.03975,2026-10-29
+4dd94d07750691f4,https://arxiv.org/abs/2603.03975,found,live; live 2603.03975,2026-10-29
+a8b8fd5f2abdf531,https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B,found,snapshot; live README.md,2026-10-29
+c7dddfac7c8ebf92,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,found,snapshot; live README.md,2026-10-29
+69bf6d5ac11281ab,https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash,found,snapshot; live README.md,2026-10-29
+82ee7a21ed687abd,https://arxiv.org/abs/2607.20062,found,snapshot; live 2607.20062,2026-10-29
+3662c2dd479c7e37,https://huggingface.co/upstage/Solar-Open2-250B,found,snapshot; live README.md,2026-10-29
+a9758b2fdaf8b3df,https://arxiv.org/abs/2607.20062,found,snapshot; live 2607.20062,2026-10-29
+527b9cd11c079832,https://arxiv.org/abs/2607.20062,found,snapshot; live 2607.20062,2026-10-29
+a58c6ed77ab010dd,https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+51fe55f130423d73,https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+18a968aabd39b3be,https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+58907137bc33ae1d,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,found,snapshot; live README.md,2026-10-29
+73e24f598082a233,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,found,snapshot; live README.md,2026-10-29
+dbc656d7f80dd3e4,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,found,snapshot; live README.md,2026-10-29
+dadaa216ae666883,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,found,snapshot; live README.md,2026-10-29
+54b962e16ec2a1de,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,found,snapshot; live README.md,2026-10-29
+30aa6dd13efdc742,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT/blob/main/LICENSE,found,live; live LICENSE,2026-10-29
+6b8e21334329fd70,https://aial.ie/research/gpai-training-transparency/evals/meta-muse-glimmer/,found,snapshot,2026-10-29
+061d4126e4c33fed,https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/,found,snapshot,2026-10-29
+4cd33f65cfcd127d,https://huggingface.co/meta-models/Muse-Glimmer-30B,found,snapshot; live README.md,2026-10-29
+42d21a0cd86f521d,https://huggingface.co/meta-models/Muse-Glimmer-30B,found,snapshot; live README.md,2026-10-29
+a875ec2dbafeb0cf,https://arxiv.org/abs/2504.18225,found,snapshot; live 2504.18225,2026-10-29
+7620454d1f0aab4a,https://huggingface.co/PleIAs/Pleias-RAG-1B,found,snapshot; live README.md,2026-10-29
+0575b62d6c10ac6b,https://arxiv.org/abs/2504.18225,found,snapshot; live 2504.18225,2026-10-29
+0e52348fa117aaff,https://arxiv.org/abs/2504.18225,found,snapshot; live 2504.18225,2026-10-29
+659e058231bf5251,https://arxiv.org/abs/2504.18225,found,snapshot; live 2504.18225,2026-10-29
+de323098e3b5b9ea,https://arxiv.org/abs/2504.18225,found,snapshot; live 2504.18225,2026-10-29
+2ed6fec049b824f2,https://huggingface.co/PleIAs/Pleias-RAG-1B,found,snapshot; live README.md,2026-10-29
+9369de5bd5cc1beb,https://aclanthology.org/2024.clicit-1.77.pdf,found,live,2026-10-29
+dec49fb2cf1072eb,https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0,found,snapshot; live README.md,2026-10-29
+6852248f183d6484,https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0,found,snapshot; live README.md,2026-10-29
+5917ad19aeb965a3,https://aclanthology.org/2024.clicit-1.77.pdf,found,live,2026-10-29
+3df33e9232e84ffe,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,found,snapshot; live README.md,2026-10-29
+4649f3b8111c2110,https://arxiv.org/abs/2410.03730,found,snapshot; live 2410.03730,2026-10-29
+43bd53848e11cc52,https://arxiv.org/abs/2410.03730,found,snapshot; live 2410.03730,2026-10-29
+28d0a8d9ad6c2481,https://arxiv.org/abs/2410.03730,found,snapshot; live 2410.03730,2026-10-29
+2e7f4a71b49ae5ab,https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6,found,snapshot; live README.md,2026-10-29
+163f7eedb894965e,https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6,found,snapshot; live README.md,2026-10-29
+ceeb6d5101a0df0a,https://huggingface.co/openGPT-X/Teuken-7B-instruct-v0.6,found,snapshot; live README.md,2026-10-29
+2f01337bb8b09e60,https://huggingface.co/HPLT/NorOLMo-13B,found,snapshot; live README.md,2026-10-29
+5deefcac70171fe2,https://huggingface.co/HPLT/NorOLMo-13B,found,snapshot; live README.md,2026-10-29
+eb51e033f2cc8e69,https://huggingface.co/HPLT/NorOLMo-13B,found,snapshot; live README.md,2026-10-29
+a09fb96ae48df6e5,https://huggingface.co/HPLT/NorOLMo-13B,found,snapshot; live README.md,2026-10-29
+76bacad1956f84ba,https://huggingface.co/HPLT/NorOLMo-13B,found,snapshot; live README.md,2026-10-29
+34c89130ad119d08,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf,found,snapshot,2026-10-29
+5ce0f61537fca4da,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,found,snapshot; live README.md,2026-10-29
+35d5301fff35337e,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,found,snapshot; live README.md,2026-10-29
+f4dee43e0397b777,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,found,snapshot; live README.md,2026-10-29
+5ab06125019dadd0,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,found,snapshot; live README.md,2026-10-29
+290493620d6620a3,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,found,snapshot,2026-10-29
+f9a13a4e9a1a22ea,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,found,snapshot,2026-10-29
+d4fc0de6f8833384,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,found,snapshot; live k3_tech_report.pdf,2026-10-29
+ae44f6e41a7800c5,https://huggingface.co/moonshotai/Kimi-K3,found,snapshot; live README.md,2026-10-29
+5e87293574521cf6,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+4bb2c8d7bec14096,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+38398550450f3870,https://en.sedaily.com/finance/2026/04/17/naver-replaces-chinese-component-with-in-house-vision,found,snapshot failed (URLError); live,2026-10-29
+fd70bf04d330cd32,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,found,snapshot; live HyperCLOVA_X_32B_Think.pdf,2026-10-29
+8b8137d81f846d9b,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,found,snapshot; live HyperCLOVA_X_32B_Think.pdf,2026-10-29
+03da97368cc2391e,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,found,snapshot; live HyperCLOVA_X_32B_Think.pdf,2026-10-29
+1f2f9b7fd39eccd1,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+86d3d71c5eac2aa7,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+331bedb477c589df,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+9b61060c1dd67839,https://arxiv.org/abs/2507.22448,found,snapshot; live 2507.22448,2026-10-29
+47d9c484debf75c0,https://arxiv.org/abs/2507.22448,found,snapshot; live 2507.22448,2026-10-29
+6ab7fd483179ef5a,https://arxiv.org/abs/2507.22448,found,snapshot; live 2507.22448,2026-10-29
+d821ac2e304a8075,https://arxiv.org/abs/2507.22448,found,snapshot; live 2507.22448,2026-10-29
+aa5cdc5c1176f290,https://falconllm.tii.ae/falcon-terms-and-conditions.html,found,live,2026-10-29
+87b78a8ae7d82e68,https://falconllm.tii.ae/falcon-terms-and-conditions.html,found,live,2026-10-29
+0a2fbb2d44c1c1f0,https://falconllm.tii.ae/falcon-terms-and-conditions.html,found,live,2026-10-29
+3eb6f7eded5f0202,https://arxiv.org/abs/2610.15542,found,snapshot; live 2610.15542,2026-10-29
+ca9b36b7660c6a5d,https://arxiv.org/abs/2610.15542,found,snapshot; live 2610.15542,2026-10-29
+c03eb37f20b18591,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,found,snapshot; live USAGE_POLICY.pdf,2026-10-29
+f2a58a6180a8393e,https://arxiv.org/abs/2610.15542,found,snapshot; live 2610.15542,2026-10-29
+143b5ee5386a063f,https://ai.google.dev/gemma/prohibited_use_policy,found,snapshot,2026-10-29
+3ed2a26444437241,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+771f6d23643449ff,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,found,snapshot; live README.md,2026-10-29
+0fa4ae429b2e1e22,https://arxiv.org/abs/2608.13517,found,snapshot; live 2608.13517,2026-10-29
+aa94929c0a265f0d,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/USE_POLICY.md,found,snapshot; live USE_POLICY.md,2026-10-29
+b3547d644105bfff,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,found,live; live LICENSE,2026-10-29
+e7f80d168bc7c4ea,https://falconllm.tii.ae/falcon-terms-and-conditions.html,found,live,2026-10-29
+b8003d38849a1fa6,https://falconllm.tii.ae/falcon-terms-and-conditions.html,found,live,2026-10-29
+f71727e30fd794e5,https://ai.google.dev/gemma/terms,found,live,2026-10-29
+9a61a623288a668b,https://huggingface.co/ibm-granite/granite-4.1-30b-base,found,snapshot; live README.md,2026-10-29
+72d373724790fbd1,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+2798a798d9bda31b,https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+92ac009b71f797e5,https://arxiv.org/abs/2503.12294,found,snapshot; live 2503.12294,2026-10-29
+8442cc4798e45335,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,found,snapshot; live README.md,2026-10-29
+89e36a82fab395a8,https://arxiv.org/abs/2506.10910,found,snapshot; live 2506.10910,2026-10-29
+1bc41918e1915217,https://arxiv.org/abs/2506.10910,found,snapshot; live 2506.10910,2026-10-29
+d196f1aede810a65,https://arxiv.org/abs/2506.10910,found,snapshot; live 2506.10910,2026-10-29
+263a6f2a7818bbb6,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+90916d72ddf887a5,https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B,found,snapshot; live failed (HTTPError),2026-10-29
+fef8a8496d9d741e,https://huggingface.co/HPLT/NorOLMo-13B,found,snapshot; live README.md,2026-10-29
+c51fb28a391ebf70,https://arxiv.org/pdf/2512.13961,found,live,2026-10-29
+6485254f861d5c11,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-base/blob/main/README.md,found,live; live README.md,2026-10-29
+9a1f90f4a1fd64cb,https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/USE_POLICY.md,found,snapshot; live USE_POLICY.md,2026-10-29
+0a203b137661b8e0,https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE,found,live; live LICENSE,2026-10-29
+b7fe19562c0871bb,https://arxiv.org/abs/2601.08472,found,snapshot; live 2601.08472,2026-10-29
+8b54782609824ef4,https://arxiv.org/abs/2603.08182,found,snapshot; live 2603.08182,2026-10-29
+634b0f5b2e1c11f9,https://arxiv.org/abs/2506.04079,found,snapshot; live 2506.04079,2026-10-29
+555ee774ee0b3642,https://models.bggpt.ai/blog/bggpt-3-release-en,found,snapshot,2026-10-29
+5871d09b19354667,https://ai.google.dev/gemma/terms,found,live,2026-10-29
+755148aa08b7917e,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
+4a2b870274090f6e,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+46c95230825b6379,https://huggingface.co/Fastweb/FastwebMIIA-7B,found,snapshot; live failed (HTTPError),2026-10-29
+68e2ee473518a616,https://www.fastweb.it/grandi-aziende/artificial-intelligence/Non-Commercial-License.pdf,found,snapshot,2026-10-29
+fdd244a1e785873e,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,found,snapshot; live failed (HTTPError),2026-10-29
+705787295c07ff4e,https://www.llama.com/llama3_3/use-policy,found,live,2026-10-29
+ac119d306e00eaac,https://huggingface.co/openai/gpt-oss-120b/blob/main/USAGE_POLICY,found,snapshot; live USAGE_POLICY,2026-10-29
+34d004b9e923ed02,https://huggingface.co/IFM/K2-Horizon-375B-A23B,found,snapshot; live README.md,2026-10-29
+07fb72e7278371e8,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,found,snapshot; live README.md,2026-10-29
+887265f21cfde686,https://huggingface.co/HiTZ/Latxa-Llama-3.1-8B-Instruct/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+799700688b6df70d,https://www.nii.ac.jp/news/release/2026/0403.html,found,snapshot,2026-10-29
+38547d47e521ead3,https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data,found,snapshot; live README.md,2026-10-29
+3bf85fd82926aa12,https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1,found,snapshot; live README.md,2026-10-29
+3e853a78630d6e35,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,found,snapshot; live README.md,2026-10-29
+ebfe676f9a8397fa,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16,found,live; live README.md,2026-10-29
+257316c4047f8ca1,https://huggingface.co/openeurollm/oellm-9b-256k-sft,found,snapshot; live README.md,2026-10-29
+01406bf526e8897f,https://huggingface.co/PleIAs/Pleias-1.2B-Preview,found,snapshot; live README.md,2026-10-29
+b47aef8703859e6c,https://arxiv.org/abs/2504.18225,found,snapshot; live 2504.18225,2026-10-29
+853a7209d7b44522,https://arxiv.org/abs/2504.18225,found,snapshot; live 2504.18225,2026-10-29
+2179db19ef7d4978,https://arxiv.org/abs/2504.18225,found,snapshot; live 2504.18225,2026-10-29
+5cbb38ea59245d2b,https://huggingface.co/BSC-LT/salamandra-7b-instruct,found,snapshot; live README.md,2026-10-29
+4241ac39c25efe00,https://arxiv.org/abs/2607.20062,found,snapshot; live 2607.20062,2026-10-29
+ae6e7f150df1f9bb,https://arxiv.org/abs/2607.20062,found,snapshot; live 2607.20062,2026-10-29
+a63a7183bd8747b4,https://arxiv.org/abs/2410.03730,found,snapshot; live 2410.03730,2026-10-29
+0c0906ecec4e2474,https://cohere.com/c4ai-cc-by-nc-license,found,live,2026-10-29
+dc8ef39f4371cbf9,https://arxiv.org/abs/2503.13427,found,snapshot; live 2503.13427,2026-10-29
+068e3975e27e9e09,https://arxiv.org/abs/2507.11407,found,live; live 2507.11407,2026-10-29
+6f878e6e51605c7e,https://arxiv.org/abs/2507.22448,found,snapshot; live 2507.22448,2026-10-29
+ca2595f5a74a7a3a,https://cdn.bigmodel.cn/static/glm5.3/The%20Public%20Summary%20of%20Training%20Content%20for%20the%20GLM5%20Family.pdf,found,snapshot,2026-10-29
+d6f8ac6ace5e37a2,https://arxiv.org/pdf/2408.12570,found,live,2026-10-29
+c0d59087a32a5fef,https://arxiv.org/abs/2601.01739,found,live; live 2601.01739,2026-10-29
+c4dd6fcba96899e5,https://huggingface.co/OpenLLM-France/Luciole-23B-Base,found,snapshot; live README.md,2026-10-29
+ef391b6ce5014bee,https://aial.ie/research/gpai-training-transparency/archive/Muse_Spark_2026_08_18.pdf,found,snapshot,2026-10-29
+5effef7484c58875,https://huggingface.co/openeurollm/prelude,found,snapshot; live README.md,2026-10-29
+06d1555efcf1652b,https://arxiv.org/pdf/2412.08905,found,live,2026-10-29
+97e182f9b3946be1,https://arxiv.org/pdf/2512.13961,found,live,2026-10-29
+57e1e45b0d6cc990,https://legal.mistral.ai/ai-governance/models/mistral-small-3,found,snapshot,2026-10-29
+2cf7fe114e2afad2,https://legal.mistral.ai/ai-governance/models/mistral-small-3,not found,snapshot,2026-10-29
+b30376fe01316601,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29

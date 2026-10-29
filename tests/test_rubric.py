@@ -29,9 +29,17 @@ class TestDerive(unittest.TestCase):
         # Whether a foreign or European base was only fine-tuned must be stated, not assumed.
         self.assertIsNone(self.derive("origin", ("base_model", "Mistral 7B"), ("base_publisher", "european"),
                                       ("post_training_only", "not stated")))
-        self.assertEqual(self.derive("origin", ("base_model", "Apertus 1"), ("base_publisher", "own")),
-                         "continued-own")
+        self.assertEqual(self.derive("origin", ("base_model", "Apertus 1"), ("base_publisher", "own"),
+                                     ("base_scratch", "yes")), "continued-own")
+        # An own base whose lineage is not documented does not count as own weights.
+        self.assertEqual(self.derive("origin", ("base_model", "Prelude"), ("base_publisher", "own"),
+                                     ("base_scratch", "not stated")), "unknown")
+        self.assertIsNone(self.derive("origin", ("base_model", "Apertus 1"), ("base_publisher", "own")))
         self.assertEqual(self.derive("origin", ("init_random", "not stated")), "unknown")
+        # A quoted "no base model" (e.g. "Model dependencies: NA") counts as from scratch.
+        none = ans("base_model", "none", quote="Model dependencies: NA")
+        self.assertEqual(rubric.derive("origin", [{**none, "_quoted": True}]), "scratch")
+        self.assertEqual(rubric.derive("origin", [{**none, "_quoted": False}]), "unknown")
         self.assertIsNone(self.derive("origin"))
 
     def test_data(self):
@@ -57,8 +65,11 @@ class TestDerive(unittest.TestCase):
                                      ("use_policy_binding", "yes")), "osi-aup")
         self.assertEqual(self.derive("license_class", ("licence_text", "mit"), ("licence_modified", "yes")),
                          "custom")
-        self.assertEqual(self.derive("license_class", ("licence_text", "mit"), ("inherited_terms", "yes")),
-                         "custom")
+        self.assertEqual(self.derive("license_class", ("licence_text", "mit"), ("inherited_terms", "yes"),
+                                     ("base_model", "Llama 3.3 70B")), "custom")
+        # Distilled, not built on the weights: the third party's terms count as a use policy (Helium).
+        self.assertEqual(self.derive("license_class", ("licence_text", "cc-by-sa-4.0"), *clean,
+                                     ("use_policy_binding", "yes"), ("base_model", "none")), "osi-aup")
         self.assertEqual(self.derive("license_class", ("noncommercial", "yes")), "nc")
         # An open licence text alone does not decide: the extra conditions must be answered.
         self.assertIsNone(self.derive("license_class", ("licence_text", "apache-2.0")))
@@ -86,7 +97,7 @@ class TestQuotes(unittest.TestCase):
         row = ans("init_random", "yes", quote="trained from scratch")
         self.assertEqual(rubric.usable([row], {}), [])
         key = rubric.quote_key(row["url"], row["quote"])
-        self.assertEqual(rubric.usable([row], {key: "found"}), [row])
+        self.assertEqual(rubric.usable([row], {key: "found"}), [{**row, "_quoted": True}])
         self.assertEqual(rubric.usable([row], {key: "not found"}), [])
 
 

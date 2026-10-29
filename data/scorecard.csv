@@ -4,7 +4,7 @@ luciole-23b-thinking,Luciole 23B Thinking 1.1,OpenLLM-France/Luciole-23B-Thinkin
 luciole-8b,Luciole 8B Instruct 1.1,OpenLLM-France/Luciole-8B-Instruct-1.1,luciole-1.1,text,,,,,,,,Hybrid Mamba/attention (nemotron_h).
 lucie-7b,Lucie 7B Instruct 1.1,OpenLLM-France/Lucie-7B-Instruct-v1.1,lucie-1.1,text,,,,,,,,
 eurollm-22b,EuroLLM 22B Instruct 2512,utter-project/EuroLLM-22B-Instruct-2512,eurollm-2512,text,,,,,eu,,,
-eurollm-9b,EuroLLM 9B Instruct 2512,utter-project/EuroLLM-9B-Instruct-2512,eurollm-2512,text,continued-own,,,documented,eu,,,"EuroLLM-9B-2512 is EuroLLM-9B (pre-trained on MareNostrum 5, technical report 2506.04079) with the long-context extension phase of EuroLLM-22B added; its pre-training data was not released (only the EuroFilter classifier and synthetic post-training data)."
+eurollm-9b,EuroLLM 9B Instruct 2512,utter-project/EuroLLM-9B-Instruct-2512,eurollm-2512,text,continued-own,,,,eu,,,"EuroLLM-9B-2512 is EuroLLM-9B (pre-trained on MareNostrum 5, technical report 2506.04079) with the long-context extension phase of EuroLLM-22B added; its pre-training data was not released (only the EuroFilter classifier and synthetic post-training data)."
 alia-40b,ALIA 40B Instruct 2606,BSC-LT/ALIA-40b-instruct-2606,alia,text,,,,,,,,160k context.
 salamandra-7b,Salamandra 7B Instruct,BSC-LT/salamandra-7b-instruct,salamandra,text,,,,,,,,
 tildeopen-30b,TildeOpen 30B 64k,TildeAI/TildeOpen-30b-64k,tildeopen,text,,,,,,,,Base model only (no official instruct version). Focus on Nordic and Eastern European languages.
@@ -36,7 +36,7 @@ nemotron-3-super-120b,NVIDIA Nemotron 3 Super 120B-A12B,nvidia/NVIDIA-Nemotron-3
 nemotron-3.5-lightning-30b,NVIDIA Nemotron 3.5 Lightning 30B-A3B,nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,nemotron-3.5,text,,,,,,,,"Released 2026-08; 3B active, 1M context; BF16 reference weights (NVFP4 variant for deployment)."
 granite-4.2-30b,Granite 4.2 30B,ibm-granite/granite-4.2-30b,granite-4.2,text,,,,,,,,"Released 2026-08-25; dense 30B reasoning/thinking model, 128K context. IBM also publishes its own MLX builds."
 granite-4.2-8b,Granite 4.2 8B,ibm-granite/granite-4.2-8b,granite-4.2,text,,,,,,,,
-olmo-3.1-32b-instruct,Olmo 3.1 32B Instruct,allenai/Olmo-3.1-32B-Instruct,olmo-3,text,,,,,,,,Released 2025-12; newest Olmo instruct LLM on the Hub (Olmo-Hybrid 7B is a research variant).
+olmo-3.1-32b-instruct,Olmo 3.1 32B Instruct,allenai/Olmo-3.1-32B-Instruct,olmo-3,text,continued-own,"Olmo 3 32B (Olmo-3-1125-32B base, via Olmo 3 32B Think SFT)",,,,,,Released 2025-12; newest Olmo instruct LLM on the Hub (Olmo-Hybrid 7B is a research variant).
 olmo-3-7b-instruct,Olmo 3 7B Instruct,allenai/Olmo-3-7B-Instruct,olmo-3,text,,,,,,,,
 qwen3.8-27b,Qwen3.8-27B,Qwen/Qwen3.8-27B,qwen3.8,"text,image",,,,,,,,"Dense 27.8B hybrid (Gated DeltaNet + gated attention), vision encoder, video input; 262k native context."
 qwen3.8-flash-next,Qwen3.8-Flash-Next,Qwen/Qwen3.8-Flash-Next,qwen3.8-flash-next,"text,image",,,,,,,,"125B-A6B MoE plus 51B n-gram embedding and 4B MTP (about 180B stored); Qwen Sparse Attention, gated residual; video input."

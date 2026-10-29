@@ -312,7 +312,7 @@
    "base_model": "Apertus 1",
    "license_class": "osi-aup",
    "license": "apache-2.0",
-   "data": "open",
+   "data": "documented",
    "compute": "europe",
    "ai_act_summary": "yes",
    "cop_signatory": "no",
@@ -355,7 +355,7 @@
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-70B",
    "hf_created": "2026-07-24",
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Switzerland is not in the EU. Publishes a Code of Practice document (transparency and copyright) voluntarily; not a signatory of the GPAI Code of Practice.",
    "family_notes": "",
    "repo_verified_org": false,
@@ -759,6 +759,16 @@
      "retrieved": "2026-10-16",
      "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
      "note": "§7.1: Public Summary of Training Content following the Commission template, versioned in swiss-ai/apertus-legal"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "rubric (data_downloadable=part): \"We also release the SFT mixture, the annotated completion pool, and the preference pairs built from it\""
     }
    ],
    "mlx_builds": [],
@@ -896,7 +906,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-16",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -913,7 +923,7 @@
    "base_model": "Apertus 1",
    "license_class": "osi-aup",
    "license": "apache-2.0",
-   "data": "open",
+   "data": "documented",
    "compute": "europe",
    "ai_act_summary": "yes",
    "cop_signatory": "no",
@@ -956,7 +966,7 @@
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-8B",
    "hf_created": "2026-07-24",
-   "last_reviewed": "2026-10-17",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Switzerland is not in the EU. Publishes a Code of Practice document (transparency and copyright) voluntarily; not a signatory of the GPAI Code of Practice.",
    "family_notes": "",
    "repo_verified_org": false,
@@ -1360,6 +1370,16 @@
      "retrieved": "2026-10-16",
      "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
      "note": "§7.1: Public Summary of Training Content following the Commission template, versioned in swiss-ai/apertus-legal"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2610.15542",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261016064228/https://arxiv.org/abs/2610.15542",
+     "note": "rubric (data_downloadable=part): \"We also release the SFT mixture, the annotated completion pool, and the preference pairs built from it\""
     }
    ],
    "mlx_builds": [
@@ -1499,7 +1519,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-16",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -1516,7 +1536,7 @@
    "base_model": "DFM Mimir v1",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "documented",
+   "data": "open",
    "compute": "eu",
    "ai_act_summary": "no",
    "cop_signatory": "no",
@@ -1559,7 +1579,7 @@
    "notes": "HRM-Text architecture (hrm_text) needs a Transformers/vLLM build with native support and PrefixLM attention; 4,096 context. Released weights are the epoch-10 EMA export.",
    "hf_repo": "danish-foundation-models/DFM-Mimir-v1.5",
    "hf_created": "2026-09-23",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Consortium of four Danish institutions; funded by the Danish Ministry of Higher Education and Science. Mimir is led by the SDU lab of Peter Schneider-Kamp (GitHub schneiderkamplab hosts the HRM-Text training fork).",
    "family_notes": "HRM-Text recurrent architecture (~1B non-embedding, 1.79B total params), PrefixLM, Gemma 4 tokenizer (tokenizer only, no Gemma weights). v1 was trained from scratch on post-training/instruction data only (161 datasets, permissible data); v1.5 continues the same lineage to step 2,877,261 on the DFM11 mix. Full corpus not reconstructible from public downloads (agreement-backed material).",
    "repo_verified_org": false,
@@ -1713,6 +1733,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261010191446/https://arxiv.org/abs/2608.13517",
      "note": "Synthetic + audited data is LLM-generated using Gemma4 31B and quality-audited before inclusion"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2608.13517",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261010191446/https://arxiv.org/abs/2608.13517",
+     "note": "rubric (data_downloadable=nearly all): \"repaired versions. All but the same two Danish datasets are available from the Hugging Face hub.\""
     }
    ],
    "mlx_builds": [],
@@ -1745,7 +1775,7 @@
     }
    ],
    "max_context": 4096,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -1988,7 +2018,7 @@
    "base_model": "",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "open",
+   "data": "documented",
    "compute": "eu",
    "ai_act_summary": "yes",
    "cop_signatory": "no",
@@ -2245,6 +2275,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
      "note": "\"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B\" released with the report"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/pdf/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029201512/https://arxiv.org/pdf/2602.05879",
+     "note": "rubric (data_downloadable=part): \"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B ... parallel data from various public sources, listed in Table 2.\""
     }
    ],
    "mlx_builds": [
@@ -2706,6 +2746,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
      "note": "\"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B\" released with the report"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/pdf/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029201512/https://arxiv.org/pdf/2602.05879",
+     "note": "rubric (data_downloadable=part): \"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B ... parallel data from various public sources, listed in Table 2.\""
     }
    ],
    "mlx_builds": [],
@@ -2826,11 +2876,11 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "Lucie-7B",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "open",
+   "data": "documented",
    "compute": "eu",
    "ai_act_summary": "unknown",
    "cop_signatory": "yes",
@@ -2873,7 +2923,7 @@
    "notes": "",
    "hf_repo": "OpenLLM-France/Lucie-7B-Instruct-v1.1",
    "hf_created": "2025-02-13",
-   "last_reviewed": "2026-10-08",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -2977,6 +3027,26 @@
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20261008160002/https://arxiv.org/abs/2503.12294",
      "note": "512 H100 on Jean Zay"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/abs/2503.12294",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008160002/https://arxiv.org/abs/2503.12294",
+     "note": "rubric (init_random=no): \"We also describe two instruction fine-tuned versions of Lucie-7B, Lucie-7B-Instruct-v1.1 and Lucie-7B-Instruct-human-data\""
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008124452/https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
+     "note": "rubric (data_downloadable=part): \"One epoch was passed on each dataset except for Croissant-Aligned-Instruct for which we randomly selected 20,000 translation pairs.\""
     }
    ],
    "mlx_builds": [
@@ -3074,7 +3144,7 @@
     }
    ],
    "max_context": 32000,
-   "last_changed": "",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -3087,8 +3157,8 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "Luciole 1.1 Base (23B, 8B)",
    "license_class": "osi",
    "license": "apache-2.0",
    "data": "open",
@@ -3134,7 +3204,7 @@
    "notes": "Instruct post-training used 16k sequences; base 131k.",
    "hf_repo": "OpenLLM-France/Luciole-23B-Instruct-1.1",
    "hf_created": "2026-07-07",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -3348,6 +3418,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261010185043/https://dl.labs.linagora.com/files/models/OpenLLM-France/AI_Act_summaries/Luciole_Instruct_1.1_Training_Content_Summary.pdf",
      "note": "This Summary covers the following models, whose training content is identical, in accordance with point 30 of the Commission Explanatory Notice"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
     }
    ],
    "mlx_builds": [
@@ -3450,7 +3530,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -3463,8 +3543,8 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "Luciole 1.1 Base (23B, 8B)",
    "license_class": "osi",
    "license": "apache-2.0",
    "data": "open",
@@ -3510,7 +3590,7 @@
    "notes": "Reasoning variant of Luciole 23B Instruct 1.1 (SFT and DPO with thinking traces), 16k training sequences. The AI Act summary is titled for the Instruct models; whether it covers this model could not be checked.",
    "hf_repo": "OpenLLM-France/Luciole-23B-Thinking-1.1",
    "hf_created": "2026-09-09",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -3724,6 +3804,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261010185043/https://dl.labs.linagora.com/files/models/OpenLLM-France/AI_Act_summaries/Luciole_Instruct_1.1_Training_Content_Summary.pdf",
      "note": "This Summary covers the following models, whose training content is identical, in accordance with point 30 of the Commission Explanatory Notice"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
     }
    ],
    "mlx_builds": [],
@@ -3825,8 +3915,8 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "Luciole 1.1 Base (23B, 8B)",
    "license_class": "osi",
    "license": "apache-2.0",
    "data": "open",
@@ -3872,7 +3962,7 @@
    "notes": "Hybrid Mamba/attention (nemotron_h).",
    "hf_repo": "OpenLLM-France/Luciole-8B-Instruct-1.1",
    "hf_created": "2026-07-07",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -4086,6 +4176,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261010185043/https://dl.labs.linagora.com/files/models/OpenLLM-France/AI_Act_summaries/Luciole_Instruct_1.1_Training_Content_Summary.pdf",
      "note": "This Summary covers the following models, whose training content is identical, in accordance with point 30 of the Commission Explanatory Notice"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
     }
    ],
    "mlx_builds": [],
@@ -4174,7 +4274,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -4465,6 +4565,252 @@
   },
   {
    "tier": "A",
+   "id": "oellm-9b-256k-sft",
+   "name": "OELLM 9B 256K SFT",
+   "family": "OpenEuroLLM 9B (Prelude)",
+   "provider": "OpenEuroLLM consortium (coordinated by Charles University; co-led by AMD Silo AI)",
+   "provider_country": "CZ",
+   "region": "eu",
+   "control": "independent",
+   "majority_owner": "",
+   "origin": "continued-own",
+   "base_model": "openeurollm/oellm-9b-256k-theta64m-prelude (OELLM 9B 256K prelude base)",
+   "license_class": "osi",
+   "license": "apache-2.0",
+   "data": "documented",
+   "compute": "eu",
+   "ai_act_summary": "no",
+   "cop_signatory": "no",
+   "modalities": "text",
+   "params_b": "9.1",
+   "context": "262144",
+   "model_type": "qwen3",
+   "size_4bit_gb": "5.1",
+   "size_8bit_gb": "9.7",
+   "mlx_vlm": "fails",
+   "mlx_vlm_detail": "model init: TypeError: ModelConfig.__init__() missing 1 required positional argument: 'rope_theta'",
+   "mlx_vlm_checked": "2026-10-16 0.7.8",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-29 v0.8.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
+   "mlx_build_verified": "",
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "144.0",
+   "cache_gib_8k": "1.1",
+   "cache_gib_32k": "4.5",
+   "cache_gib_128k": "18.0",
+   "teacher_origin": "unknown",
+   "teachers_list": "",
+   "recipe": "code",
+   "terms_can_change": "no",
+   "languages": "en;es;ka;fr;de;pt;it;pl;el;nl;tr;ro;hu;uk;cs;sv;bg;fi;ca;hr;sk;da;lt;bs;sl;nb;sr;sq;lv;mk;is;mt;gl;eu;et;ga;nn",
+   "eu_languages": 24,
+   "languages_basis": "trained",
+   "training_hardware": "nvidia",
+   "flags": "",
+   "hbd_involvement": "",
+   "notes": "Experimental SFT research checkpoint (not a final assistant, no safety evaluation); SimPO stage not included. 262,144-token context (RoPE theta 64M); base is an intermediate, not cooled-down 1T-token checkpoint of the 10T Prelude run. Published by an OpenEuroLLM member; training code lives in a personal GitHub repo (BirgerMoell). Tier C only because no checked source states that the Prelude base was trained from scratch (strongly implied by its 10T-token run); it moves up once the training report says so.",
+   "hf_repo": "openeurollm/oellm-9b-256k-sft",
+   "hf_created": "2026-08-12",
+   "last_reviewed": "2026-10-29",
+   "provider_notes": "EU Digital Europe Programme project (grant 101195233, STEP Seal), started 2025-02-01; 20 partners incl. universities, EuroHPC centres and companies. Coordinator Jan Hajič (Charles University, ÚFAL); co-lead Peter Sarlin (AMD Silo AI, owned by AMD, US).",
+   "family_notes": "Prelude: Qwen3-architecture dense 9B with the own 256k OpenEuroLLM tokenizer, pre-trained on Leonardo (CINECA) toward 10T tokens; the released SFT model builds on the iter_0124800 (~1T tokens, not cooled down) checkpoint, extended to 256K context on LUMI and SFT-tuned on LUMI (AMD MI250X). Pre-training data: public sets (DCLM, FinePDFs, HPLT 3.0, Nemotron-CC incl. translated variants, StarCoder, MegaMath...) with per-source token counts. SFT data: Tulu-3 commercial subset, EuroBlocks-SFT-Synthetic, Nemotron-Post-Training-v2 math (synthetic traces), generators not named by the provider.",
+   "repo_verified_org": false,
+   "sources": [
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "not listed (list last updated 2026-10-07)"
+    },
+    {
+     "scope": "provider",
+     "field": "control",
+     "url": "https://www.mff.cuni.cz/en/public/news/charles-university-as-the-main-coordinator-of-the-openeurollm-project",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011055532/https://www.mff.cuni.cz/en/public/news/charles-university-as-the-main-coordinator-of-the-openeurollm-project",
+     "note": "Charles University main coordinator of the EU-funded OpenEuroLLM consortium"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "note": "first SFT stage of an OpenEuroLLM post-training experiment on LUMI"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "note": "Apache 2.0, inherited from the base model"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/openeurollm/prelude",
+     "issuer": "provider",
+     "checked": "no",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
+     "note": "9B dense base currently training on Leonardo toward 10T tokens, WSD from warmup; from scratch implied, not stated verbatim [review: card describes a 10T-token WSD run with warmup and own 256k vocab but never says from scratch/random init; strongly implied only]"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
+     "issuer": "provider",
+     "checked": "no",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052504/https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
+     "note": "256K extension of the OpenEuroLLM prelude base (iter_0124800 ~1T tokens), vocab 262144 own tokenizer [review: card says 256K extension of the prelude base (own weights); says nothing about prelude being from scratch; \"own tokenizer\" not stated here (vocab 2621]"
+    },
+    {
+     "scope": "family",
+     "field": "base_model",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "note": "derived from openeurollm/oellm-9b-256k-theta64m-prelude; dense Qwen3 9B using the independent OpenEuroLLM 256K tokenizer"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261017130245/https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md",
+     "note": "source datasets with source/release token counts per part (DCLM, FinePDFs, HPLT 3.0, Nemotron-CC, StarCoder ...)"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "note": "SFT mix: 920,552 Tulu-3 + 161,644 EuroBlocks + 250,000 Nemotron-v2 math rows, with token shares"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/openeurollm/prelude",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
+     "note": "Hardware: 256 nodes / 1024 GPUs, Leonardo (CINECA)"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052504/https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
+     "note": "continued-pretraining in Megatron-LM on LUMI (16x MI250X) for the 256K stage"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://huggingface.co/openeurollm/prelude",
+     "issuer": "provider",
+     "checked": "no",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
+     "note": "1024 GPUs on Leonardo (CINECA) - vendor not named on card; Leonardo Booster is NVIDIA A100 [review: card names only \"1024 GPUs, Leonardo (CINECA)\"; NVIDIA not stated. Value is correct by external knowledge (Leonardo Booster = A100); add a CINECA spec]"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://huggingface.co/openeurollm/prelude",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
+     "note": "training repo oellm-autoexp config; per-iteration intermediate checkpoints as branches; data composition documented"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/openeurollm/prelude",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
+     "note": "36 initial OpenEuroLLM target languages (41 language/script codes in the data mix)"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "note": "not stated (no AI Act training summary in card or repo)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher_status",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "note": "EuroBlocks synthetic and Nemotron-v2 synthetic <think> traces used; generating models not named"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "note": "rubric (init_random=no): \"Experimental instruction-tuned checkpoint derived from\""
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 147456,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "teachers": [],
+   "max_context": 262144,
+   "last_changed": "2026-10-29",
+   "first_listed": "2026-10-10"
+  },
+  {
+   "tier": "A",
    "id": "pleias-rag-1b",
    "name": "Pleias RAG 1B",
    "family": "Pleias RAG",
@@ -4477,7 +4823,7 @@
    "base_model": "Pleias 1.0",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "open",
+   "data": "documented",
    "compute": "eu",
    "ai_act_summary": "unknown",
    "cop_signatory": "yes",
@@ -4520,7 +4866,7 @@
    "notes": "Specialised for retrieval-augmented generation with citations. 4k context.",
    "hf_repo": "PleIAs/Pleias-RAG-1B",
    "hf_created": "2025-04-07",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -4634,6 +4980,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261008123517/https://arxiv.org/abs/2504.18225",
      "note": "Both models have been trained on Jean Zay in the same environment as the base models."
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2504.18225",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008123517/https://arxiv.org/abs/2504.18225",
+     "note": "rubric (data_downloadable=part): \"We created a large new retrieval dataset based on the various collections of Common Corpus.\""
     }
    ],
    "mlx_builds": [
@@ -4687,7 +5043,7 @@
     }
    ],
    "max_context": 4096,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -4994,8 +5350,8 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "TildeOpen 30B (TildeAI/TildeOpen-30b)",
    "license_class": "osi",
    "license": "cc-by-4.0",
    "data": "documented",
@@ -5041,7 +5397,7 @@
    "notes": "Base model only (no official instruct version). Focus on Nordic and Eastern European languages.",
    "hf_repo": "TildeAI/TildeOpen-30b-64k",
    "hf_created": "2026-02-04",
-   "last_reviewed": "2026-10-08",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -5125,6 +5481,16 @@
      "retrieved": "2026-10-08",
      "archive_url": "https://web.archive.org/web/20261008162140/https://huggingface.co/TildeAI/TildeOpen-30b",
      "note": "768 AMD MI250X on LUMI"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/TildeAI/TildeOpen-30b-64k",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20260613220900/https://huggingface.co/TildeAI/TildeOpen-30b-64k",
+     "note": "rubric (init_random=no): \"foundational model, featuring context extension from 8k to 64k tokens using\""
     }
    ],
    "mlx_builds": [],
@@ -5137,7 +5503,7 @@
    },
    "teachers": [],
    "max_context": 65536,
-   "last_changed": "",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -7453,7 +7819,7 @@
    "base_model": "Mistral Small 3.2 24B Instruct",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "undisclosed",
+   "data": "documented",
    "compute": "unknown",
    "ai_act_summary": "no",
    "cop_signatory": "yes",
@@ -7496,7 +7862,7 @@
    "notes": "Reasoning model.",
    "hf_repo": "mistralai/Magistral-Small-2509",
    "hf_created": "2025-09-12",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": true,
@@ -7600,6 +7966,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261017131407/https://legal.mistral.ai/ai-governance/models/magistral-small-1/",
      "note": "Includes Magistral Small 1.0, 1.1, 1.2 and subsequent versions."
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2506.10910",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261006080957/https://arxiv.org/abs/2506.10910",
+     "note": "rubric (data_downloadable=part): \"large set of diverse prompts, sourced from OpenThoughts [Guha et al., 2025] and the code subset of OpenR1\""
     }
    ],
    "mlx_builds": [
@@ -7730,7 +8106,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -8659,7 +9035,7 @@
    "notes": "Polish-focused; RAG prompt format documented on the card.",
    "hf_repo": "CYFRAGOVPL/PLLuM-12B-chat-2512",
    "hf_created": "2026-02-02",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Developed by the PLLuM consortium (2024) and since 2025 under HIVE AI, an alliance of Polish research institutions and public digital-service bodies (contact hive@nask.pl); funded by the Minister of Digital Affairs (subsidy 1/WII/DBI/2025, ~18.5 M PLN). The AI Act summary names Ministerstwo Cyfryzacji as provider.",
    "family_notes": "Continued pre-training of Mistral-NeMo-Base-2407 on Polish (+ ~20% English) data, then SFT and preference alignment. Mistral NeMo was co-developed by Mistral AI and NVIDIA. Shared AI Act summary (in Polish) covers all 2512 chat models.",
    "repo_verified_org": false,
@@ -8903,6 +9279,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261017131057/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Mistral-7B-Instruct-v0.3 among models used to generate synthetic data"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261017131024/https://huggingface.co/CYFRAGOVPL/PLLuM-12B-chat-2512",
+     "note": "rubric (pretraining_site=Bem2): \"Training using Bem2 (up to 300xH100 GPUs) and Helios HPCs.\""
     }
    ],
    "mlx_builds": [],
@@ -9048,7 +9434,7 @@
    "base_model": "Mistral Small 3.2 24B",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "documented",
+   "data": "open",
    "compute": "unknown",
    "ai_act_summary": "unknown",
    "cop_signatory": "no",
@@ -9091,7 +9477,7 @@
    "notes": "Grounded summarisation.",
    "hf_repo": "ellamind/sui-1-24b",
    "hf_created": "2026-01-14",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -9185,6 +9571,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261008160329/https://arxiv.org/abs/2601.08472",
      "note": "The source corpus draws from three primary sources: the German Parliamentary Documentation System (DIP)"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2601.08472",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008160329/https://arxiv.org/abs/2601.08472",
+     "note": "rubric (data_downloadable=all): \"The training dataset is available at ellamind/summarizer_dataset_v1 on the HuggingFace Hub.\""
     }
    ],
    "mlx_builds": [],
@@ -9205,7 +9601,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -9433,7 +9829,7 @@
    "base_model": "Gemma 3 27B (Google, US)",
    "license_class": "custom",
    "license": "gemma",
-   "data": "documented",
+   "data": "undisclosed",
    "compute": "unknown",
    "ai_act_summary": "no",
    "cop_signatory": "no",
@@ -9476,7 +9872,7 @@
    "notes": "Also 4B and 12B. Effective context 131k. Hub base_model metadata: google/gemma-3-27B-it.",
    "hf_repo": "INSAIT-Institute/BgGPT-Gemma-3-27B-IT",
    "hf_created": "2026-03-25",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Public research institute at Sofia University, founded in April 2022 in partnership with ETH Zurich and EPFL. BgGPT 3 thanks Google for GCP credits and donations. Also publishes MamayLM (Ukrainian, Gemma 3 based).",
    "family_notes": "Continued pre-training of Gemma 3 on curated Bulgarian CommonCrawl (cutoff May 2025, ~23M docs, <40B tokens, rehydrated), SFT, then SLERP merge with Gemma 3 base and IT models. Vision tower appended unchanged (no multimodal training). Trained with Google GCP credits; region and accelerators not stated. Gemma Terms of Use.",
    "repo_verified_org": true,
@@ -9630,6 +10026,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20260923170646/https://aial.ie/research/gpai-training-transparency/",
      "note": "BgGPT / INSAIT not listed"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://models.bggpt.ai/blog/bggpt-3-release-en",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261011054131/https://models.bggpt.ai/blog/bggpt-3-release-en/",
+     "note": "rubric (data_downloadable=part): \"extracting the newest Bulgarian ones from CommonCrawl, with a cut-off date of May 2025.\""
     }
    ],
    "mlx_builds": [],
@@ -9692,7 +10098,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -9705,8 +10111,8 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "finetune-foreign",
-   "base_model": "Gemma 4 26B-A4B (Google, US)",
+   "origin": "continued-foreign",
+   "base_model": "google/gemma-4-26B-A4B-it (Gemma 4 26B-A4B IT)",
    "license_class": "custom",
    "license": "nb-license-1.0",
    "data": "documented",
@@ -9752,7 +10158,7 @@
    "notes": "Norway is not in the EU. nb-license-1.0.",
    "hf_repo": "NbAiLab/borealis2-26b-a4b-preview",
    "hf_created": "2026-08-21",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Norway is not in the EU but in the EEA, which the scorecard counts as eu.",
    "family_notes": "",
    "repo_verified_org": true,
@@ -9866,6 +10272,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
      "note": "Continuous pre-training uses `aurora`, a mix of sources both internal and external, including license materials under agreements."
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008124407/https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview",
+     "note": "rubric (init_random=no): \"The model starts from ... continued pre-trained on Aurora 2604 data\""
     }
    ],
    "mlx_builds": [],
@@ -9906,7 +10322,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-11",
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -9924,7 +10340,7 @@
    "license_class": "custom",
    "license": "gemma",
    "data": "documented",
-   "compute": "eu",
+   "compute": "unknown",
    "ai_act_summary": "no",
    "cop_signatory": "no",
    "modalities": "text",
@@ -9966,7 +10382,7 @@
    "notes": "Chosen over GaMS2-27B-Instruct (2026-06-28, Gemma 2 base, no model card). Base: cjvt/GaMS3-12B. Context 131k.",
    "hf_repo": "cjvt/GaMS3-12B-Instruct",
    "hf_created": "2025-12-04",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Public university. GaMS developed in the PoVeJMo programme (ARIS, NextGenerationEU); NVIDIA Sovereign AI initiative provided DGX Cloud Lepton access. GaMS-Beta Hub org (translator models) not verified as official, not listed.",
    "family_notes": "3 CPT stages (~13B parallel, ~101B base, ~20B long tokens) with per-corpus token tables, 2 SFT stages, hyperparameters published. ~150k GPU h on EuroHPC LEONARDO, ~40k GPU h on NVIDIA DGX Cloud Lepton (location not stated), ~1k GPU h on faculty B200. Some corpora (legal, medical, national library OCR) not public. Gemma Terms of Use.",
    "repo_verified_org": false,
@@ -10210,6 +10626,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011045539/https://huggingface.co/cjvt/GaMS2-27B-Instruct",
      "note": "GaMS2-27B-Instruct README contains only \"license: gemma\"; config gemma2"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029201709/https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md",
+     "note": "rubric (pretraining_site=Leonardo): \"We managed to scale the training across 128 nodes on LEONARDO's booster partition.\""
     }
    ],
    "mlx_builds": [],
@@ -10351,7 +10777,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -10792,7 +11218,7 @@
    "base_model": "Llama 3.1 70B Instruct (Meta, US)",
    "license_class": "custom",
    "license": "other",
-   "data": "documented",
+   "data": "open",
    "compute": "eu",
    "ai_act_summary": "unknown",
    "cop_signatory": "no",
@@ -10835,7 +11261,7 @@
    "notes": "Basque. Original BF16 repo; an FP8 variant exists (HiTZ/Latxa-Llama-3.1-70B-Instruct-v2-FP8). Released 2026-06-15.",
    "hf_repo": "HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
    "hf_created": "2026-06-15",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Public university research centre (HiTZ and IXA group).",
    "family_notes": "Further trained on Latxa Corpus v2 (public on HF) starting from Llama-3.1-70B-Instruct; trained on Leonardo (CINECA, EuroHPC), 256 A100. Card: further training details to follow in a paper. The EMNLP 2025 paper (v1) used synthetic instructions sampled from the Llama 3.1 Instruct backbone; not confirmed for v2. Llama 3.1 Community License inherited.",
    "repo_verified_org": false,
@@ -10979,6 +11405,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261017131158/https://huggingface.co/HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
      "note": "not stated for v2 (Further training details will be released); v1 paper used instructions sampled from the backbone"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/datasets/HiTZ/latxa-corpus-v2",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261011045703/https://huggingface.co/datasets/HiTZ/latxa-corpus-v2",
+     "note": "rubric (data_downloadable=nearly all): \"this repository reflects a curated version of the original dataset. ... Some data points have been removed to ensure permission compliance.\""
     }
    ],
    "mlx_builds": [],
@@ -11025,7 +11461,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -11647,7 +12083,7 @@
    "notes": "Llama 3.1 licence inherited. Base checkpoint is Llama-PLLuM-70B-base-2508.",
    "hf_repo": "CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
    "hf_created": "2025-12-29",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Developed by the PLLuM consortium (2024) and since 2025 under HIVE AI, an alliance of Polish research institutions and public digital-service bodies (contact hive@nask.pl); funded by the Minister of Digital Affairs (subsidy 1/WII/DBI/2025, ~18.5 M PLN). The AI Act summary names Ministerstwo Cyfryzacji as provider.",
    "family_notes": "Continued pre-training of Llama-3.1-70B (base Llama-PLLuM-70B-base-2508), then SFT and preference alignment. Llama 3.1 Community License with AUP. Shared AI Act summary with PLLuM 12B.",
    "repo_verified_org": false,
@@ -11901,6 +12337,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261017130959/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512/blob/main/PLLuM_2512_chat_Public_Summary_of_Training_Content.pdf",
      "note": "sec. 2.5 lists Mistral-7B-Instruct-v0.3 among models used to generate synthetic data"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261017130924/https://huggingface.co/CYFRAGOVPL/Llama-PLLuM-70B-chat-2512",
+     "note": "rubric (pretraining_site=Bem2): \"Training using Bem2 (up to 300xH100 GPUs) and Helios HPCs.\""
     }
    ],
    "mlx_builds": [],
@@ -12265,7 +12711,7 @@
    "base_model": "OLMo 2 13B (Ai2, US)",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "open",
+   "data": "documented",
    "compute": "unknown",
    "ai_act_summary": "unknown",
    "cop_signatory": "no",
@@ -12308,7 +12754,7 @@
    "notes": "Base model, not instruction-tuned. Norwegian (Bokmal, Nynorsk) and Northern Sami; context 16,384 after stage 3.",
    "hf_repo": "HPLT/NorOLMo-13B",
    "hf_created": "2026-01-21",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "EU Horizon Europe project (grant 101070350) consortium of universities; NorOLMo built by the University of Oslo LTG. Norway is in the EEA, which the scorecard counts as eu.",
    "family_notes": "Base model only (no instruct yet). Continued pre-training of OLMo-2-1124-13B on ~275B tokens (HPLT v3, FinePDFs, OLMo-Mix, Sami corpora, math/code), all public datasets; intermediate checkpoints published as branches. Compute site not stated on card (HPLT usually trains on LUMI, unconfirmed). Training code not found linked.",
    "repo_verified_org": false,
@@ -12422,6 +12868,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
      "note": "not stated"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/HPLT/NorOLMo-13B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261017131122/https://huggingface.co/HPLT/NorOLMo-13B",
+     "note": "rubric (data_downloadable=part): \"We only took a portion of OLMo-Mix as our unique data.\""
     }
    ],
    "mlx_builds": [],
@@ -12434,243 +12890,7 @@
    },
    "teachers": [],
    "max_context": 16384,
-   "last_changed": "2026-10-11",
-   "first_listed": "2026-10-10"
-  },
-  {
-   "tier": "C",
-   "id": "oellm-9b-256k-sft",
-   "name": "OELLM 9B 256K SFT",
-   "family": "OpenEuroLLM 9B (Prelude)",
-   "provider": "OpenEuroLLM consortium (coordinated by Charles University; co-led by AMD Silo AI)",
-   "provider_country": "CZ",
-   "region": "eu",
-   "control": "independent",
-   "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
-   "license_class": "osi",
-   "license": "apache-2.0",
-   "data": "documented",
-   "compute": "eu",
-   "ai_act_summary": "no",
-   "cop_signatory": "no",
-   "modalities": "text",
-   "params_b": "9.1",
-   "context": "262144",
-   "model_type": "qwen3",
-   "size_4bit_gb": "5.1",
-   "size_8bit_gb": "9.7",
-   "mlx_vlm": "fails",
-   "mlx_vlm_detail": "model init: TypeError: ModelConfig.__init__() missing 1 required positional argument: 'rope_theta'",
-   "mlx_vlm_checked": "2026-10-16 0.7.8",
-   "mlx_build": "",
-   "mlx_build_bits": "",
-   "mlx_build_publisher": "",
-   "llama_cpp": "supported",
-   "llama_cpp_detail": "",
-   "llama_cpp_checked": "2026-10-29 v0.8.0",
-   "gguf_build": "",
-   "gguf_build_publisher": "",
-   "gguf_builds": 0,
-   "template_check": "",
-   "template_check_detail": "",
-   "mlx_build_verified": "",
-   "cache_kind": "standard attention",
-   "cache_kib_per_token": "144.0",
-   "cache_gib_8k": "1.1",
-   "cache_gib_32k": "4.5",
-   "cache_gib_128k": "18.0",
-   "teacher_origin": "unknown",
-   "teachers_list": "",
-   "recipe": "code",
-   "terms_can_change": "no",
-   "languages": "en;es;ka;fr;de;pt;it;pl;el;nl;tr;ro;hu;uk;cs;sv;bg;fi;ca;hr;sk;da;lt;bs;sl;nb;sr;sq;lv;mk;is;mt;gl;eu;et;ga;nn",
-   "eu_languages": 24,
-   "languages_basis": "trained",
-   "training_hardware": "nvidia",
-   "flags": "",
-   "hbd_involvement": "",
-   "notes": "Experimental SFT research checkpoint (not a final assistant, no safety evaluation); SimPO stage not included. 262,144-token context (RoPE theta 64M); base is an intermediate, not cooled-down 1T-token checkpoint of the 10T Prelude run. Published by an OpenEuroLLM member; training code lives in a personal GitHub repo (BirgerMoell). Tier C only because no checked source states that the Prelude base was trained from scratch (strongly implied by its 10T-token run); it moves up once the training report says so.",
-   "hf_repo": "openeurollm/oellm-9b-256k-sft",
-   "hf_created": "2026-08-12",
-   "last_reviewed": "2026-10-10",
-   "provider_notes": "EU Digital Europe Programme project (grant 101195233, STEP Seal), started 2025-02-01; 20 partners incl. universities, EuroHPC centres and companies. Coordinator Jan Hajič (Charles University, ÚFAL); co-lead Peter Sarlin (AMD Silo AI, owned by AMD, US).",
-   "family_notes": "Prelude: Qwen3-architecture dense 9B with the own 256k OpenEuroLLM tokenizer, pre-trained on Leonardo (CINECA) toward 10T tokens; the released SFT model builds on the iter_0124800 (~1T tokens, not cooled down) checkpoint, extended to 256K context on LUMI and SFT-tuned on LUMI (AMD MI250X). Pre-training data: public sets (DCLM, FinePDFs, HPLT 3.0, Nemotron-CC incl. translated variants, StarCoder, MegaMath...) with per-source token counts. SFT data: Tulu-3 commercial subset, EuroBlocks-SFT-Synthetic, Nemotron-Post-Training-v2 math (synthetic traces), generators not named by the provider.",
-   "repo_verified_org": false,
-   "sources": [
-    {
-     "scope": "provider",
-     "field": "cop_signatory",
-     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "issuer": "official",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "note": "not listed (list last updated 2026-10-07)"
-    },
-    {
-     "scope": "provider",
-     "field": "control",
-     "url": "https://www.mff.cuni.cz/en/public/news/charles-university-as-the-main-coordinator-of-the-openeurollm-project",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011055532/https://www.mff.cuni.cz/en/public/news/charles-university-as-the-main-coordinator-of-the-openeurollm-project",
-     "note": "Charles University main coordinator of the EU-funded OpenEuroLLM consortium"
-    },
-    {
-     "scope": "family",
-     "field": "provider_id",
-     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "note": "first SFT stage of an OpenEuroLLM post-training experiment on LUMI"
-    },
-    {
-     "scope": "family",
-     "field": "license_class",
-     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "note": "Apache 2.0, inherited from the base model"
-    },
-    {
-     "scope": "family",
-     "field": "origin",
-     "url": "https://huggingface.co/openeurollm/prelude",
-     "issuer": "provider",
-     "checked": "no",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
-     "note": "9B dense base currently training on Leonardo toward 10T tokens, WSD from warmup; from scratch implied, not stated verbatim [review: card describes a 10T-token WSD run with warmup and own 256k vocab but never says from scratch/random init; strongly implied only]"
-    },
-    {
-     "scope": "family",
-     "field": "origin",
-     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
-     "issuer": "provider",
-     "checked": "no",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052504/https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
-     "note": "256K extension of the OpenEuroLLM prelude base (iter_0124800 ~1T tokens), vocab 262144 own tokenizer [review: card says 256K extension of the prelude base (own weights); says nothing about prelude being from scratch; \"own tokenizer\" not stated here (vocab 2621]"
-    },
-    {
-     "scope": "family",
-     "field": "base_model",
-     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "note": "derived from openeurollm/oellm-9b-256k-theta64m-prelude; dense Qwen3 9B using the independent OpenEuroLLM 256K tokenizer"
-    },
-    {
-     "scope": "family",
-     "field": "data",
-     "url": "https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261017130245/https://github.com/OpenEuroLLM/training-data-collection/blob/main/baby/README.md",
-     "note": "source datasets with source/release token counts per part (DCLM, FinePDFs, HPLT 3.0, Nemotron-CC, StarCoder ...)"
-    },
-    {
-     "scope": "family",
-     "field": "data",
-     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "note": "SFT mix: 920,552 Tulu-3 + 161,644 EuroBlocks + 250,000 Nemotron-v2 math rows, with token shares"
-    },
-    {
-     "scope": "family",
-     "field": "compute",
-     "url": "https://huggingface.co/openeurollm/prelude",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
-     "note": "Hardware: 256 nodes / 1024 GPUs, Leonardo (CINECA)"
-    },
-    {
-     "scope": "family",
-     "field": "compute",
-     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052504/https://huggingface.co/openeurollm/oellm-9b-256k-theta64m-prelude",
-     "note": "continued-pretraining in Megatron-LM on LUMI (16x MI250X) for the 256K stage"
-    },
-    {
-     "scope": "family",
-     "field": "training_hardware",
-     "url": "https://huggingface.co/openeurollm/prelude",
-     "issuer": "provider",
-     "checked": "no",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
-     "note": "1024 GPUs on Leonardo (CINECA) - vendor not named on card; Leonardo Booster is NVIDIA A100 [review: card names only \"1024 GPUs, Leonardo (CINECA)\"; NVIDIA not stated. Value is correct by external knowledge (Leonardo Booster = A100); add a CINECA spec]"
-    },
-    {
-     "scope": "family",
-     "field": "recipe",
-     "url": "https://huggingface.co/openeurollm/prelude",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
-     "note": "training repo oellm-autoexp config; per-iteration intermediate checkpoints as branches; data composition documented"
-    },
-    {
-     "scope": "family",
-     "field": "languages",
-     "url": "https://huggingface.co/openeurollm/prelude",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052534/https://huggingface.co/openeurollm/prelude",
-     "note": "36 initial OpenEuroLLM target languages (41 language/script codes in the data mix)"
-    },
-    {
-     "scope": "family",
-     "field": "ai_act_summary",
-     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "note": "not stated (no AI Act training summary in card or repo)"
-    },
-    {
-     "scope": "family",
-     "field": "teacher_status",
-     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
-     "note": "EuroBlocks synthetic and Nemotron-v2 synthetic <think> traces used; generating models not named"
-    }
-   ],
-   "mlx_builds": [],
-   "gguf_list": [],
-   "cache_layout": {
-    "growing": 147456,
-    "windowed": [],
-    "constant": 0,
-    "kind": "standard attention"
-   },
-   "teachers": [],
-   "max_context": 262144,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -16661,7 +16881,7 @@
    "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
-   "license_class": "osi",
+   "license_class": "osi-aup",
    "license": "apache-2.0",
    "data": "undisclosed",
    "compute": "unknown",
@@ -16701,7 +16921,7 @@
    "eu_languages": "",
    "languages_basis": "unknown",
    "training_hardware": "nvidia",
-   "flags": "",
+   "flags": "use policy on redistribution",
    "hbd_involvement": "",
    "notes": "MoE 117B / 5.1B active, MXFP4 MoE weights; harmony chat format required.",
    "hf_repo": "openai/gpt-oss-120b",
@@ -16946,7 +17166,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -16961,7 +17181,7 @@
    "majority_owner": "",
    "origin": "scratch",
    "base_model": "",
-   "license_class": "osi",
+   "license_class": "osi-aup",
    "license": "apache-2.0",
    "data": "undisclosed",
    "compute": "unknown",
@@ -17001,7 +17221,7 @@
    "eu_languages": "",
    "languages_basis": "unknown",
    "training_hardware": "nvidia",
-   "flags": "",
+   "flags": "use policy on redistribution",
    "hbd_involvement": "",
    "notes": "MoE 21B / 3.6B active, MXFP4 MoE weights.",
    "hf_repo": "openai/gpt-oss-20b",
@@ -17246,7 +17466,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -18403,8 +18623,8 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "Qwen2.5-VL vision encoder (weights reused)",
+   "origin": "continued-foreign",
+   "base_model": "Qwen2.5-VL vision encoder (vision component only; language backbone pre-trained by NAVER)",
    "license_class": "custom",
    "license": "hyperclovax",
    "data": "documented",
@@ -18445,12 +18665,12 @@
    "eu_languages": 1,
    "languages_basis": "trained",
    "training_hardware": "unknown",
-   "flags": "custom licence",
+   "flags": "custom licence; non-European base model",
    "hbd_involvement": "",
    "notes": "Image and video input; vision tower is Qwen2.5-VL (config vision_config qwen2_5_vl_vision). Newest open NAVER model (Dec 2025).",
    "hf_repo": "naver-hyperclovax/HyperCLOVAX-SEED-Think-32B",
    "hf_created": "2025-12-23",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "HyperCLOVA X SEED licensed jointly by NAVER Corp. (IP holder) and its affiliate NAVER Cloud Corp. (operator). Eliminated from Korea's sovereign AI project in Jan 2026 after reusing Qwen2.5 vision-encoder weights (press).",
    "family_notes": "Language backbone pre-trained by NAVER (6T tokens in stage 1); vision encoder taken from Qwen2.5-VL, which the press says included its trained weights. Custom licence: commercial use allowed, extra terms above 10M MAU, binding AUP, NAVER may amend at any time.",
    "repo_verified_org": false,
@@ -18614,6 +18834,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011051803/https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf",
      "note": "LLMs used to rewrite documents and PII spans, not named"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://en.sedaily.com/finance/2026/04/17/naver-replaces-chinese-component-with-in-house-vision",
+     "issuer": "press",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261010185344/https://en.sedaily.com/technology/2026/04/17/naver-replaces-chinese-component-with-in-house-vision",
+     "note": "rubric (init_random=no): \"partially borrowed the vision encoder and weights of Alibaba's Qwen 2.5 model\""
     }
    ],
    "mlx_builds": [],
@@ -18638,7 +18868,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -20282,8 +20512,8 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "LLM-jp-4 base (33B, 32B-A3B)",
    "license_class": "osi",
    "license": "apache-2.0",
    "data": "open",
@@ -20329,7 +20559,7 @@
    "notes": "MoE 32B total / 3.8B active.",
    "hf_repo": "llm-jp/llm-jp-4.1-32b-a3b-thinking",
    "hf_created": "2026-09-16",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Public research institute; models developed by NII's Research and Development Center for Large Language Models (LLMC). Trained on AIST's ABCI 3.0.",
    "family_notes": "Pre-training and mid-training 11.7T tokens; most of the corpus is published (some parts withheld for licensing reasons); SFT/DPO data published. SFT responses were regenerated with gpt-oss-120b. Trained on ABCI 3.0 (AIST, Japan).",
    "repo_verified_org": false,
@@ -20483,6 +20713,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011050001/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data",
      "note": "Nemotron-SFT-Agentic-v2: Qwen3-235B..., deepseek-r1-0528, DeepSeek-V3.2, gpt-oss-120b"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029201849/https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
+     "note": "rubric (init_random=no): \"今回，新たに「LLM-jp-4.1」シリーズを公開します．LLM-jp-4.1 では，LLM-jp-4 シリーズの事後学習を改善しており，STEM 分野を中心とした性能向上や Tool Calling 機能の追加などが主な変更点です．\""
     }
    ],
    "mlx_builds": [],
@@ -20524,7 +20764,7 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -20537,8 +20777,8 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "LLM-jp-4 base (33B, 32B-A3B)",
    "license_class": "osi",
    "license": "apache-2.0",
    "data": "open",
@@ -20584,7 +20824,7 @@
    "notes": "Dense 33B; Harmony-style chat template.",
    "hf_repo": "llm-jp/llm-jp-4.1-33b-thinking",
    "hf_created": "2026-09-16",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Public research institute; models developed by NII's Research and Development Center for Large Language Models (LLMC). Trained on AIST's ABCI 3.0.",
    "family_notes": "Pre-training and mid-training 11.7T tokens; most of the corpus is published (some parts withheld for licensing reasons); SFT/DPO data published. SFT responses were regenerated with gpt-oss-120b. Trained on ABCI 3.0 (AIST, Japan).",
    "repo_verified_org": false,
@@ -20738,6 +20978,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011050001/https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data",
      "note": "Nemotron-SFT-Agentic-v2: Qwen3-235B..., deepseek-r1-0528, DeepSeek-V3.2, gpt-oss-120b"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029201849/https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
+     "note": "rubric (init_random=no): \"今回，新たに「LLM-jp-4.1」シリーズを公開します．LLM-jp-4.1 では，LLM-jp-4 シリーズの事後学習を改善しており，STEM 分野を中心とした性能向上や Tool Calling 機能の追加などが主な変更点です．\""
     }
    ],
    "mlx_builds": [],
@@ -20791,7 +21041,7 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -22856,7 +23106,7 @@
    "majority_owner": "",
    "origin": "continued-foreign",
    "base_model": "NVIDIA Nemotron-3-Super-120B-A12B-Base",
-   "license_class": "osi",
+   "license_class": "custom",
    "license": "mit",
    "data": "documented",
    "compute": "non-europe",
@@ -22896,7 +23146,7 @@
    "eu_languages": 1,
    "languages_basis": "supported",
    "training_hardware": "nvidia",
-   "flags": "non-European base model",
+   "flags": "custom licence; non-European base model",
    "hbd_involvement": "",
    "notes": "Mamba2-Transformer hybrid MoE, 262K context.",
    "hf_repo": "aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B",
@@ -23067,7 +23317,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -23521,8 +23771,8 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
+   "origin": "continued-own",
+   "base_model": "Olmo 3 32B (Olmo-3-1125-32B base, via Olmo 3 32B Think SFT)",
    "license_class": "osi",
    "license": "apache-2.0",
    "data": "open",
@@ -23568,7 +23818,7 @@
    "notes": "Released 2025-12; newest Olmo instruct LLM on the Hub (Olmo-Hybrid 7B is a research variant).",
    "hf_repo": "allenai/Olmo-3.1-32B-Instruct",
    "hf_created": "2025-12-10",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Non-profit research institute.",
    "family_notes": "Apache 2.0; Responsible Use Guidelines referenced as intent, not licence condition. Dolma 3 (pre/mid/long-context) and Dolci (post-training) released with code (OLMo-core, Open Instruct) and intermediate checkpoints. 1024 H100 cluster. Synthetic data from GPT-4.1, o4-mini, QwQ-32B, DeepSeek R1, Qwen3.",
    "repo_verified_org": true,
@@ -23772,6 +24022,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20260930153141/https://arxiv.org/abs/2512.13961",
      "note": "Olmo 3 report: PII classification of olmOCR science PDFs"
+    },
+    {
+     "scope": "model",
+     "field": "origin",
+     "url": "https://arxiv.org/pdf/2512.13961",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029201344/https://arxiv.org/pdf/2512.13961",
+     "note": "rubric (init_random=no): \"We train the SFT stage of Olmo 3 Instruct starting from the Olmo 3 Think SFT model\""
     }
    ],
    "mlx_builds": [],
@@ -23949,7 +24209,7 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -24262,7 +24522,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "scratch",
+   "origin": "unknown",
    "base_model": "",
    "license_class": "custom",
    "license": "plamo-community-license",
@@ -24460,7 +24720,7 @@
     }
    ],
    "max_context": null,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -25030,7 +25290,7 @@
    "notes": "Dense 27.8B hybrid (Gated DeltaNet + gated attention), vision encoder, video input; 262k native context.",
    "hf_repo": "Qwen/Qwen3.8-27B",
    "hf_created": "2026-08-05",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Qwen is the model team of Alibaba Cloud, part of the listed Alibaba Group (NYSE/HKEX).",
    "family_notes": "Card states Pre-training & Post-training and \"built on the architectural foundation of Qwen3.5\"; whether initialised from a Qwen3.5 checkpoint is not stated. No technical report or data section for Qwen3.8; the 2.4T-A95B flagship sits under a separate Qwen3.8-Max License.",
    "repo_verified_org": false,
@@ -25154,6 +25414,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20260923170646/https://aial.ie/research/gpai-training-transparency/",
      "note": "no Alibaba/Qwen summary in AI Accountability Lab tracker (checked 2026-10-10)"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261011044604/https://huggingface.co/Qwen/Qwen3.8-27B",
+     "note": "rubric (base_model=none): \"Training Stage: Pre-training & Post-training\""
     }
    ],
    "mlx_builds": [],
@@ -26061,7 +26331,7 @@
    "base_model": "Solar Open 1 (selective weight transfer, 2.3% of weights)",
    "license_class": "custom",
    "license": "upstage-solar-license",
-   "data": "undisclosed",
+   "data": "documented",
    "compute": "unknown",
    "ai_act_summary": "unknown",
    "cop_signatory": "no",
@@ -26104,7 +26374,7 @@
    "notes": "Hybrid softmax/linear-attention MoE, 1M context. Needs Upstage's transformers branch.",
    "hf_repo": "upstage/Solar-Open2-250B",
    "hf_created": "2026-07-22",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "Seoul-based AI company. Solar Open 2 built in the MSIT/NIPA Sovereign AI Foundation Model Project (GPU Track); clusters operated by Lablup.",
    "family_notes": "250B-A15B hybrid linear-attention MoE, ~12T tokens. Initialised by selective transfer of 2.3% of Solar Open 100B weights, rest random (own lineage). Upstage Solar License = Apache-2.0 plus mandatory 'Solar' name prefix and 'Built with Solar'. Korean MSIT/NIPA GPU track, clusters by Lablup; location not stated.",
    "repo_verified_org": true,
@@ -26228,6 +26498,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20260926205734/https://arxiv.org/abs/2607.20062",
      "note": "synthetic data used, generator models not named"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2607.20062",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20260926205734/https://arxiv.org/abs/2607.20062",
+     "note": "rubric (data_shares=yes): \"a real-to-synthetic ratio of 4:6, (2) a domain mix in which math and code each occupy at least 15%\""
     }
    ],
    "mlx_builds": [],
@@ -26296,7 +26576,7 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   },
   {
@@ -26346,7 +26626,7 @@
    "teacher_origin": "foreign",
    "teachers_list": "command-a-translate (posttraining, own); DeepSeek-V3 (posttraining, foreign); Command A (posttraining, own); Gemma3-27B-It (posttraining, foreign)",
    "recipe": "weights",
-   "terms_can_change": "unknown",
+   "terms_can_change": "no",
    "languages": "en;nl;fr;it;pt;ro;es;cs;pl;uk;ru;el;de;da;sv;no;ca;gl;cy;ga;eu;hr;lv;lt;sk;sl;et;fi;hu;sr;bg;ar;fa;ur;tr;mt;he;hi;mr;bn;gu;pa;ta;te;ne;tl;ms;id;vi;jv;km;th;lo;zh;my;ja;ko;am;ha;ig;mg;sn;sw;wo;xh;yo;zu",
    "eu_languages": 24,
    "languages_basis": "supported",
@@ -26622,11 +26902,411 @@
     }
    ],
    "max_context": null,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
    "first_listed": "2026-10-10"
   }
  ],
  "changes": [
+  {
+   "date": "2026-10-29",
+   "model": "luciole-8b",
+   "field": "base_model",
+   "old": "Luciole-23B-Base",
+   "new": "Luciole 1.1 Base (23B, 8B)",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-29",
+   "model": "luciole-23b-thinking",
+   "field": "base_model",
+   "old": "Luciole-23B-Base",
+   "new": "Luciole 1.1 Base (23B, 8B)",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-29",
+   "model": "luciole-23b",
+   "field": "base_model",
+   "old": "Luciole-23B-Base",
+   "new": "Luciole 1.1 Base (23B, 8B)",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-29",
+   "model": "llm-jp-4.1-33b-thinking",
+   "field": "base_model",
+   "old": "llm-jp-4-33b (base)",
+   "new": "LLM-jp-4 base (33B, 32B-A3B)",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-29",
+   "model": "llm-jp-4.1-32b-a3b-thinking",
+   "field": "base_model",
+   "old": "llm-jp-4-33b (base)",
+   "new": "LLM-jp-4 base (33B, 32B-A3B)",
+   "reason": ""
+  },
+  {
+   "date": "2026-10-29",
+   "model": "tiny-aya-global",
+   "field": "terms_can_change",
+   "old": "unknown",
+   "new": "no",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "tildeopen-30b",
+   "field": "base_model",
+   "old": "",
+   "new": "TildeOpen 30B (TildeAI/TildeOpen-30b)",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "tildeopen-30b",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "sui-1-24b",
+   "field": "data",
+   "old": "documented",
+   "new": "open",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "solar-open2-250b",
+   "field": "data",
+   "old": "undisclosed",
+   "new": "documented",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "pleias-rag-1b",
+   "field": "data",
+   "old": "open",
+   "new": "documented",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "plamo-3-nict-2604-31b-base",
+   "field": "origin",
+   "old": "scratch",
+   "new": "unknown",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "olmo-3.1-32b-instruct",
+   "field": "base_model",
+   "old": "",
+   "new": "Olmo 3 32B (Olmo-3-1125-32B base, via Olmo 3 32B Think SFT)",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "olmo-3.1-32b-instruct",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "oellm-9b-256k-sft",
+   "field": "base_model",
+   "old": "",
+   "new": "openeurollm/oellm-9b-256k-theta64m-prelude (OELLM 9B 256K prelude base)",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "oellm-9b-256k-sft",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "oellm-9b-256k-sft",
+   "field": "tier",
+   "old": "C",
+   "new": "A",
+   "reason": "Rubric with verified quotes: SFT of OpenEuroLLM's own Prelude base, whose pre-training (10T tokens, Leonardo) the provider documents; continued-own with EU compute (decision 2026-10-29: documented own pre-training suffices)"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "norolmo-13b",
+   "field": "data",
+   "old": "open",
+   "new": "documented",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "nemotron-sea-lion-v4.8-120b",
+   "field": "flags",
+   "old": "non-European base model",
+   "new": "custom licence; non-European base model",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "nemotron-sea-lion-v4.8-120b",
+   "field": "license_class",
+   "old": "osi",
+   "new": "custom",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "magistral-small-2509",
+   "field": "data",
+   "old": "undisclosed",
+   "new": "documented",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "luciole-8b",
+   "field": "base_model",
+   "old": "",
+   "new": "Luciole-23B-Base",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "luciole-8b",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "luciole-23b-thinking",
+   "field": "base_model",
+   "old": "",
+   "new": "Luciole-23B-Base",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "luciole-23b-thinking",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "luciole-23b",
+   "field": "base_model",
+   "old": "",
+   "new": "Luciole-23B-Base",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "luciole-23b",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "lucie-7b",
+   "field": "data",
+   "old": "open",
+   "new": "documented",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "lucie-7b",
+   "field": "base_model",
+   "old": "",
+   "new": "Lucie-7B",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "lucie-7b",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "llm-jp-4.1-33b-thinking",
+   "field": "base_model",
+   "old": "",
+   "new": "llm-jp-4-33b (base)",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "llm-jp-4.1-33b-thinking",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "llm-jp-4.1-32b-a3b-thinking",
+   "field": "base_model",
+   "old": "",
+   "new": "llm-jp-4-33b (base)",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "llm-jp-4.1-32b-a3b-thinking",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "latxa-3.1-70b-v2",
+   "field": "data",
+   "old": "documented",
+   "new": "open",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "hyperclovax-seed-think-32b",
+   "field": "flags",
+   "old": "custom licence",
+   "new": "custom licence; non-European base model",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "hyperclovax-seed-think-32b",
+   "field": "base_model",
+   "old": "Qwen2.5-VL vision encoder (weights reused)",
+   "new": "Qwen2.5-VL vision encoder (vision component only; language backbone pre-trained by NAVER)",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "hyperclovax-seed-think-32b",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-foreign",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "gpt-oss-20b",
+   "field": "flags",
+   "old": "",
+   "new": "use policy on redistribution",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "gpt-oss-20b",
+   "field": "license_class",
+   "old": "osi",
+   "new": "osi-aup",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "gpt-oss-120b",
+   "field": "flags",
+   "old": "",
+   "new": "use policy on redistribution",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "gpt-oss-120b",
+   "field": "license_class",
+   "old": "osi",
+   "new": "osi-aup",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "gams3-12b-instruct",
+   "field": "compute",
+   "old": "eu",
+   "new": "unknown",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "eurollm-22b",
+   "field": "data",
+   "old": "open",
+   "new": "documented",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "dfm-mimir-1.5",
+   "field": "data",
+   "old": "documented",
+   "new": "open",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "borealis2-26b",
+   "field": "base_model",
+   "old": "Gemma 4 26B-A4B (Google, US)",
+   "new": "google/gemma-4-26B-A4B-it (Gemma 4 26B-A4B IT)",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "borealis2-26b",
+   "field": "origin",
+   "old": "finetune-foreign",
+   "new": "continued-foreign",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "bggpt-gemma-3-27b-it",
+   "field": "data",
+   "old": "documented",
+   "new": "undisclosed",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "apertus-1.5-8b",
+   "field": "data",
+   "old": "open",
+   "new": "documented",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "apertus-1.5-70b",
+   "field": "data",
+   "old": "open",
+   "new": "documented",
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
+  },
   {
    "date": "2026-10-29",
    "model": "eurollm-9b",
@@ -26753,7 +27433,7 @@
    "field": "base_model",
    "old": "",
    "new": "Mistral Small 3.1 24B Instruct 2503",
-   "reason": ""
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
   },
   {
    "date": "2026-10-29",
@@ -26761,7 +27441,7 @@
    "field": "base_model",
    "old": "",
    "new": "Mistral Small 3.1 Base",
-   "reason": ""
+   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
   },
   {
    "date": "2026-10-29",
@@ -27026,406 +27706,6 @@
    "old": "not checked",
    "new": "identical",
    "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "latxa-3.1-70b-v2",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "k2-horizon-375b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "equivalent",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "k2-horizon-32b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "equivalent",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "k-exaone-2.0-750b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "jamba2-mini",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "jamba2-3b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "hyperclovax-seed-think-32b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "hy4-preview",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "granite-4.2-8b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "granite-4.2-30b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "gpt-oss-swallow-120b-rl",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "gpt-oss-20b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "gpt-oss-120b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "glm-5.3-flash",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "equivalent",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "glm-5.3",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "equivalent",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "gervasio-70b-ptpt",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "gemma-4-31b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "gemma-4-26b-a4b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "falcon-h1r-7b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "equivalent",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "falcon-h1-34b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "exaone-4.5-33b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "dfm-mimir-1.5",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "deepseek-v4.1-flash",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "suspicious",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "command-a-plus",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "bggpt-gemma-3-27b-it",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "amalia-9b-0626",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-11",
-   "model": "norolmo-13b",
-   "field": "flags",
-   "old": "outside the EU; non-European base model",
-   "new": "non-European base model",
-   "reason": "Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
-  },
-  {
-   "date": "2026-10-11",
-   "model": "norolmo-13b",
-   "field": "region",
-   "old": "europe",
-   "new": "eu",
-   "reason": "Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
-  },
-  {
-   "date": "2026-10-11",
-   "model": "borealis2-26b",
-   "field": "flags",
-   "old": "outside the EU; custom licence; non-European base model",
-   "new": "custom licence; non-European base model",
-   "reason": "Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
-  },
-  {
-   "date": "2026-10-11",
-   "model": "borealis2-26b",
-   "field": "region",
-   "old": "europe",
-   "new": "eu",
-   "reason": "Norway is in the EEA, which the scorecard counts as eu (decision 2026-10-11)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "teuken-7b-instruct-0.6",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "pllum-12b-chat-2512",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "oellm-9b-256k-sft",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "norolmo-13b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "llama-pllum-70b-chat-2512",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "llama-krikri-8b-instruct-v1.5",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "llama-3.1-estllm-70b-instruct-0826",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "latxa-3.1-70b-v2",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "gervasio-70b-ptpt",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "gams3-12b-instruct",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "dfm-mimir-1.5",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "bggpt-gemma-3-27b-it",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "amalia-9b-0626",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": "European model added after a systematic search for providers (national and EU programmes, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "tiny-aya-global",
-   "field": "ai_act_summary",
-   "old": "unknown",
-   "new": "no",
-   "reason": "AI Act training summary looked up (provider site, AIAL tracker)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "tiny-aya-global",
-   "field": "data",
-   "old": "documented",
-   "new": "undisclosed",
-   "reason": "rating rubric for training data (METHODOLOGY, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "sui-1-24b",
-   "field": "data",
-   "old": "unknown",
-   "new": "documented",
-   "reason": "rating rubric for training data (METHODOLOGY, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "solar-open2-250b",
-   "field": "data",
-   "old": "documented",
-   "new": "undisclosed",
-   "reason": "rating rubric for training data (METHODOLOGY, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "poro-2-8b",
-   "field": "data",
-   "old": "unknown",
-   "new": "documented",
-   "reason": "rating rubric for training data (METHODOLOGY, 2026-10-10)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "pleias-rag-1b",
-   "field": "compute",
-   "old": "unknown",
-   "new": "eu",
-   "reason": "pre-training location sourced"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "mistral-small-4",
-   "field": "ai_act_summary",
-   "old": "unknown",
-   "new": "yes",
-   "reason": "AI Act training summary looked up (provider site, AIAL tracker)"
   }
  ]
 }

@@ -36,13 +36,21 @@ QUESTIONS = {
                        "Who published that base model: the same provider (own), another European provider, "
                        "or a provider outside Europe (foreign)?",
                        {"own", "european", "foreign"}, set()),
+    "base_scratch": ("origin",
+                     "For a base model of the same provider: does the provider document its own pre-training of "
+                     "that base (or of its lineage root), e.g. corpus, token count, own tokenizer, 'from scratch' or "
+                     "'no model dependencies', without naming another provider's weights it starts from? "
+                     "Answer 'no' if the lineage reaches another provider's weights.",
+                     {"yes", "no", "not stated"}, {"yes", "no"}),
     "post_training_only": ("origin",
                            "Was the base only post-trained (SFT, preference tuning, RL), without continued pre-training?",
                            {"yes", "no", "not stated"}, {"yes", "no"}),
     # training data
     "data_downloadable": ("data",
-                          "How much of the data the provider trained on can be downloaded? For a continued or "
-                          "fine-tuned model, the data of the provider's own training stage, not the base model's.",
+                          "How much of the training data has been published as it was used (the corpus itself, by "
+                          "the provider or others)? Public source datasets that were filtered, sampled or mixed "
+                          "without releasing the result count as 'part'. For a continued or fine-tuned model, the "
+                          "data of the provider's own training stage, not the base model's.",
                           {"all", "nearly all", "part", "none", "not stated"}, {"all", "nearly all", "part"}),
     "datasets_named": ("data",
                        "Are the main datasets or sources of the provider's own training named, so that the mix "
@@ -72,16 +80,17 @@ QUESTIONS = {
                       "Does the licence forbid commercial use?",
                       {"yes", "no"}, {"yes"}),
     "use_policy_binding": ("license_class",
-                           "Does the licence or the model card bind the model to a use policy, "
-                           "including a third party's?",
+                           "Is the model bound to a use policy, including a third party's: incorporated in the "
+                           "licence, or made a condition of access or use (e.g. accepted at a download gate)? "
+                           "A policy that is only linked or recommended on the card does not count.",
                            {"yes", "no"}, {"yes"}),
     "inherited_terms": ("license_class",
                         "Does a base model's licence impose its own terms on this model (e.g. Llama, Gemma)?",
                         {"yes", "no"}, {"yes"}),
     # terms that can change
     "policy_updatable": ("terms_can_change",
-                         "Do the licence or a binding use policy refer to a version 'as updated' or 'in force', "
-                         "so the terms can change after release?",
+                         "Do the licence or a use policy that is binding (see use_policy_binding) refer to a version "
+                         "'as updated', 'in force' or 'the most recent copy', so the terms can change after release?",
                          {"yes", "no"}, {"yes"}),
 }
 FIELDS = ["origin", "data", "compute", "license_class", "terms_can_change"]
@@ -98,17 +107,21 @@ EUROPE_OTHER = {"CH", "GB", "UA", "RS", "ME", "MK", "AL", "BA", "MD", "TR"}
 # Training clusters named in sources, and their country.
 CLUSTERS = {
     "leonardo": "IT", "cineca": "IT", "marenostrum": "ES", "marenostrum 5": "ES", "bsc": "ES",
-    "lumi": "FI", "jupiter": "DE", "juwels": "DE", "jureca": "DE", "hawk": "DE",
+    "lumi": "FI", "jupiter": "DE", "juwels": "DE", "juwels booster": "DE", "jureca": "DE", "hawk": "DE",
     "alps": "CH", "cscs": "CH", "helios": "PL", "athena": "PL", "deucalion": "PT",
     "karolina": "CZ", "vega": "SI", "meluxina": "LU", "discoverer": "BG", "jean zay": "FR",
     "adastra": "FR", "dawn": "GB", "isambard-ai": "GB", "mimer": "SE", "olivia": "NO",
+    "bem2": "PL", "ucloud": "DK", "abci": "JP", "abci 3.0": "JP", "tsubame": "JP", "tsubame 4.0": "JP",
+    "prometheus": "US",
 }
 # Compute named without a location: the region stays unknown.
-UNLOCATED = {"dgx cloud", "nvidia dgx cloud", "coreweave", "aws", "azure", "google cloud", "gcp", "oci"}
+UNLOCATED = {"dgx cloud", "nvidia dgx cloud", "dgx cloud lepton", "lepton", "coreweave", "aws", "azure",
+             "google cloud", "gcp", "oci"}
 
 
 def _site_key(site):
-    return re.sub(r"[\s_\-]+", " ", site.strip().lower()).replace("marenostrum5", "marenostrum 5")
+    s = re.sub(r"[\s_\-]+", " ", site.strip().lower())
+    return re.sub(r"(?<=[a-z])(?=\d)", " ", s)  # "MareNostrum5", "TSUBAME4.0" -> "marenostrum 5", "tsubame 4.0"
 
 
 def needs_quote(question, answer):
@@ -139,11 +152,12 @@ def check_answer(question, answer):
 def region_of(site):
     """eu, europe, non-europe or unknown for a site answer; None if not understood."""
     s = _site_key(site)
-    if s == "not stated" or s in UNLOCATED:
+    if s == "not stated" or s in {_site_key(u) for u in UNLOCATED}:
         return "unknown"
     if s == "europe":
         return "europe"
-    country = CLUSTERS.get(s) or (s.upper() if re.fullmatch(r"[a-z]{2}", s) else None)
+    country = {_site_key(k): v for k, v in CLUSTERS.items()}.get(s) \
+        or (s.upper() if re.fullmatch(r"[a-z]{2}", s) else None)
     if not country:
         return None
     if country in EU_EEA:
@@ -216,12 +230,20 @@ def derive(field, rows):
         # A quoted base model outweighs "from scratch": that usually describes the base's training.
         bases = [b for b in a("base_model") if b.lower() != "none"]
         publishers = a("base_publisher")
-        if not bases and "yes" in a("init_random"):
+        # "No base model" counts as from scratch only where a document says so (quote found),
+        # e.g. "Model dependencies: NA" in an AI Act training summary.
+        stated_none = any(r["answer"].lower() == "none" and r.get("_quoted") for r in rows
+                          if r["question"] == "base_model")
+        if not bases and ("yes" in a("init_random") or stated_none):
             return "scratch"
         if bases and publishers:
             pub = "foreign" if "foreign" in publishers else "european" if "european" in publishers else "own"
             if pub == "own":
-                return "continued-own"
+                # An own base counts only if its own lineage is documented (OELLM: base origin unreported).
+                lineage = a("base_scratch")
+                if "yes" in lineage:
+                    return "continued-own"
+                return "unknown" if lineage else None
             post = [v for v in a("post_training_only") if v != "not stated"]
             if not post:
                 return None  # continued or fine-tuned: the answers do not say
@@ -253,8 +275,11 @@ def derive(field, rows):
         texts = [t.lower() for t in a("licence_text")]
         if not texts:
             return None
+        # A base model's licence binds only a model built on its weights; a distilled model
+        # bound to a third party's terms by its card falls under use_policy_binding.
+        has_base = any(b.lower() != "none" for b in a("base_model"))
         if any(t not in OPEN_LICENCES for t in texts) or "yes" in a("licence_modified") \
-                or "yes" in a("inherited_terms"):
+                or ("yes" in a("inherited_terms") and has_base):
             return "custom"
         needed = ("licence_modified", "inherited_terms", "use_policy_binding", "noncommercial")
         if any(not a(q) for q in needed):
@@ -276,9 +301,9 @@ def usable(rows, quote_status):
     for r in rows:
         if check_answer(r["question"], r["answer"]):
             continue
-        if needs_quote(r["question"], r["answer"]):
-            status = quote_status.get(quote_key(r["url"], r["quote"]), "")
-            if not status.startswith("found"):
-                continue
-        out.append(r)
+        quoted = bool(r["quote"].strip()) and \
+            quote_status.get(quote_key(r["url"], r["quote"]), "").startswith("found")
+        if needs_quote(r["question"], r["answer"]) and not quoted:
+            continue
+        out.append({**r, "_quoted": quoted})
     return out

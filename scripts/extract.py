@@ -59,7 +59,7 @@ def cmd_sheet(args):
         urls = sorted({s["url"] for s in d.sources if (s["scope"], s["subject"]) == ("family", fid)
                        or (s["scope"] == "model" and s["subject"] in {m["id"] for m in models})})
         print(f"\n## family `{fid}`: {f['name']} ({d.providers[f['provider_id']]['name']})\n")
-        print("Models: " + ", ".join(f"{m['name']} (https://huggingface.co/{m['hf_repo']})" for m in models))
+        print("Models: " + ", ".join(f"`{m['id']}` {m['name']} (https://huggingface.co/{m['hf_repo']})" for m in models))
         print("\nDocuments already cited for this family (start here; others are welcome):\n")
         for u in urls:
             print(f"- {u}")

@@ -70,10 +70,10 @@ class TestData(unittest.TestCase):
         self.assertEqual(self.d.tier(m), "B")
 
     def test_family_values_are_inherited_and_overridable(self):
-        self.assertEqual(self.model("eurollm-22b")["data"], "open")
-        self.assertEqual(self.model("eurollm-22b")["data_scope"], "family")
-        self.assertEqual(self.model("eurollm-9b")["data"], "documented")
-        self.assertEqual(self.model("eurollm-9b")["data_scope"], "model")
+        self.assertEqual(self.model("olmo-3-7b-instruct")["origin"], "scratch")
+        self.assertEqual(self.model("olmo-3-7b-instruct")["origin_scope"], "family")
+        self.assertEqual(self.model("olmo-3.1-32b-instruct")["origin"], "continued-own")
+        self.assertEqual(self.model("olmo-3.1-32b-instruct")["origin_scope"], "model")
 
     def test_publishers(self):
         kinds = {b["repo"]: self.d.publisher(b) for b in self.d.builds}

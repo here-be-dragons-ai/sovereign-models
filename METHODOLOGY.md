@@ -43,8 +43,11 @@ So that equal evidence gets equal values, across European and comparison models 
 (`scripts/rubric_report.py` lists every model's value with its source notes, per field):
 
 - **Training data**
-  - `open`: the training data, or nearly all of it, can be downloaded; parts left out for
-    licensing reasons are named.
+  - `open`: the training data as it was used, or nearly all of it, is published (by the
+    provider or others); parts left out for licensing reasons are named. Public source
+    datasets that were filtered, sampled or mixed without releasing the result do not make
+    the data open; they make it `documented`. For a continued or fine-tuned model this is
+    the data of the provider's own training stage.
   - `documented`: the provider names the main datasets or sources, or gives the composition
     with shares or token counts per source or domain, so that the mix could roughly be
     rebuilt. An EU AI Act training summary in the Commission's template counts when it names
@@ -58,10 +61,23 @@ So that equal evidence gets equal values, across European and comparison models 
   - `continued-own`: starts from the provider's own earlier weights in any form: continued
     pre-training, post-training of an earlier base, upcycling, pruning, or partial weight
     transfer.
+    It counts as own weights only if the provider documents its own pre-training of that
+    earlier model or of its lineage root (corpus, token count, own tokenizer, "from scratch"
+    or "no model dependencies") and names no other provider's weights it starts from;
+    otherwise the origin stays unknown.
   - `continued-*` / `finetune-*` with another provider's weights in the same sense;
-    `finetune` when only post-training was done.
+    `finetune` when only post-training was done; whether only post-training was done must be
+    stated, it is not assumed.
+  - A statement that the model has no base model (e.g. "Model dependencies: NA" in an AI Act
+    training summary) counts as from scratch.
   - A source that only says "pre-training and post-training" does not settle the question;
     it stays unchecked and does not count.
+- **Licence**: a use policy makes a licence `osi-aup` only if it is binding: incorporated in
+  the licence, or made a condition of access or use (e.g. accepted at a download gate). A
+  policy that is only linked or recommended on the model card does not count, and only a
+  binding policy can make the terms changeable (`terms_can_change`). A base model's licence
+  makes a model `custom` only if the model is built on that base's weights; a model distilled
+  from another model and bound to its terms by the card has a use policy (Helium).
 - **Teacher models**: only models the provider names as producing training data or judging
   it; a model mentioned for comparison, as a borrowed chat template, or as the base being
   fine-tuned is not a teacher.
