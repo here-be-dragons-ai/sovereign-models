@@ -523,6 +523,7 @@ function detail(id) {
       <tr><td>${esc(R.Languages)}</td><td>${m.languages ? esc(t("ofEu", m.eu_languages)) + " (" + esc(m.languages_basis) + "): " + esc(m.languages.replaceAll(";", ", ")) : esc(t("unknownW"))}<div class="src">${sources(m, "languages")}</div></td></tr>
       <tr><td>${esc(R["Training hardware"])}</td><td>${esc(m.training_hardware)}<div class="src">${sources(m, "training_hardware")}</div></td></tr>
     </table>
+    <div class="expert">
     <h3>${esc(t("onMac"))}</h3>
     <ul>
       <li>mlx-vlm: <b>${esc(m.mlx_vlm)}</b>${m.mlx_vlm_detail ? " — " + esc(m.mlx_vlm_detail) : ""} <span class="src">${esc(t("checkedOn", m.mlx_vlm_checked || "—"))}</span></li>
@@ -535,6 +536,7 @@ function detail(id) {
       ${m.template_check ? `<li>${esc(t("tplLine"))}: <b>${esc(m.template_check)}</b> <span class="src">(${esc(m.template_check_detail)})</span></li>` : ""}
       ${builds ? `<li>${esc(t("mlxBuilds"))}:<br>${builds}</li>` : ""}
     </ul>
+    </div>
     ${m.flags ? `<p><b>${esc(t("flagsW"))}:</b> ${esc(m.flags)}</p>` : ""}
     ${m.hbd_involvement ? `<p><b>${esc(t("involvement"))}:</b> ${esc(m.hbd_involvement)}</p>` : ""}
     ${m.notes ? `<p><b>${esc(t("notesW"))}:</b> ${esc(m.notes)}</p>` : ""}
