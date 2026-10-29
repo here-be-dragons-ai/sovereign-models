@@ -176,7 +176,7 @@ const STR = {
     worldTitle: "Open-weight models of providers outside Europe, with the same facts and sources but without a tier",
     loadsMlx: "loads in mlx-vlm", runsLlama: "runs in llama.cpp", verifiedOnly: "verified MLX build",
     expert: "Expert view", expertTitle: "Show running on a Mac: memory with context, mlx-vlm, llama.cpp and MLX builds",
-    csv: "Download CSV", copyLink: "Copy link", copied: "Link copied", compareN: n => `Compare (${n})`,
+    csv: "Download CSV", copyLink: "Copy link", copyModelLink: "🔗 Link to this model", copied: "Link copied", compareN: n => `Compare (${n})`,
     count: (n, total) => `${n} of ${total} models`,
     footerData: "Data: CC BY 4.0, here be dragons ·", dataset: "Dataset", methodology: "Methodology", corrections: "Corrections",
     fitNote: "Fit check: 4-bit weights plus the cache at the chosen context (as MLX allocates it) plus 1 GB, against 75% of the RAM.",
@@ -220,7 +220,7 @@ const STR = {
     worldTitle: "Open-Weight-Modelle von Anbietern außerhalb Europas, mit denselben Fakten und Quellen, aber ohne Tier",
     loadsMlx: "lädt in mlx-vlm", runsLlama: "läuft in llama.cpp", verifiedOnly: "verifizierter MLX-Build",
     expert: "Experten-Ansicht", expertTitle: "Betrieb auf dem Mac einblenden: Speicher mit Kontext, mlx-vlm, llama.cpp und MLX-Builds",
-    csv: "CSV herunterladen", copyLink: "Link kopieren", copied: "Link kopiert", compareN: n => `Vergleichen (${n})`,
+    csv: "CSV herunterladen", copyLink: "Link kopieren", copyModelLink: "🔗 Link zu diesem Modell", copied: "Link kopiert", compareN: n => `Vergleichen (${n})`,
     count: (n, total) => `${n} von ${total} Modellen`,
     footerData: "Daten: CC BY 4.0, here be dragons ·", dataset: "Datensatz", methodology: "Methodik", corrections: "Korrekturen",
     fitNote: "Passt-Prüfung: 4-Bit-Gewichte plus Cache beim gewählten Kontext (wie MLX ihn anlegt) plus 1 GB, gegen 75 % des Arbeitsspeichers.",
@@ -507,7 +507,8 @@ function detail(id) {
   const builds = m.mlx_builds.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) +
     `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit)` + tpl(b) + verified(b)).join("<br>");
   $("pbody").innerHTML = `
-    <h2 id="ptitle">${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></h2>
+    <h2 id="ptitle">${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span>
+      <button id="plink" class="src" style="border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer;font-size:12px;vertical-align:middle">${esc(t("copyModelLink"))}</button></h2>
     <div class="src">${esc(tierText(m.tier))}</div>
     <p>${badge("provider", t("providerRepo") + (m.repo_verified_org ? " ✓ verified" : ""))}${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)} · ${esc(m.params_b)}B ${esc(t("params"))} ·
       ${esc(t("ctxWord"))} ${esc(m.context || "?")} · <code>${esc(m.model_type)}</code> · ${esc(m.modalities)}</p>
@@ -543,6 +544,7 @@ function detail(id) {
     ${DATA.changes.some(c => c.model === m.id) ? `<h3>${esc(t("changesW"))}</h3><ul>${DATA.changes.filter(c => c.model === m.id).map(changeLine).join("")}</ul>` : ""}`;
   document.body.classList.add("panel-open");
   $("pclose").setAttribute("aria-label", t("close"));
+  $("plink").onclick = () => copyText(shareUrl(), $("plink"), t("copyModelLink"));
   $("panel").scrollTop = 0;
   $("pclose").focus();
   render();
@@ -631,6 +633,29 @@ function saveState() {
   if (lang !== "en") p.set("lang", lang);
   const qs = p.toString();
   history.replaceState(null, "", (qs ? "?" + qs : location.pathname) + location.hash);
+  syncParent();
+}
+// On huggingface.co the app runs in an iframe: mirror query and hash into the Space page's URL,
+// so the address bar always holds a link to the current view (and the open model).
+const SPACE_URL = "https://huggingface.co/spaces/here-be-dragons-ai/sovereign-models";
+const embedded = window.parent !== window;
+function syncParent() {
+  if (embedded) window.parent.postMessage({ queryString: location.search, hash: location.hash }, "https://huggingface.co");
+}
+function shareUrl() {
+  return (embedded || location.hostname.endsWith(".hf.space") ? SPACE_URL : location.origin + location.pathname)
+    + location.search + location.hash;
+}
+async function copyText(text, button, label) {
+  try { await navigator.clipboard.writeText(text); }
+  catch {  // clipboard API blocked in the iframe: fall back to a selected textarea
+    const ta = Object.assign(document.createElement("textarea"), { value: text });
+    document.body.append(ta); ta.select();
+    const ok = document.execCommand("copy"); ta.remove();
+    if (!ok) { window.prompt(t("copyLink"), text); return; }
+  }
+  button.textContent = t("copied");
+  setTimeout(() => button.textContent = label, 1500);
 }
 function loadState() {
   const p = new URLSearchParams(location.search);
@@ -685,7 +710,7 @@ fetch("scorecard.json").then(r => r.json()).then(d => {
   document.addEventListener("keydown", e => { if (e.key === "Escape" && document.body.classList.contains("panel-open")) closePanel(); });
   $("cmpbtn").onclick = () => $("compare").scrollIntoView({ behavior: "smooth" });
   $("csv").onclick = downloadCsv;
-  $("copy").onclick = async () => { try { await navigator.clipboard.writeText(location.href); $("copy").textContent = t("copied"); setTimeout(() => $("copy").textContent = t("copyLink"), 1500); } catch {} };
+  $("copy").onclick = () => copyText(shareUrl(), $("copy"), t("copyLink"));
   document.querySelectorAll(".lang button").forEach(b => b.onclick = () => { lang = b.dataset.lang; applyLang(); });
   document.querySelectorAll(".filters input, .filters select").forEach(el => el.addEventListener(el.type === "search" ? "input" : "change", render));
   applyLang();
