@@ -27,8 +27,6 @@ xlstm-7b,unsupported,xLSTMForCausalLM,architecture not registered in the convert
 holo4-35b-a3b,supported,Qwen3_5MoeForConditionalGeneration,,2026-10-29,v0.8.0
 poro-2-8b,supported,LlamaForCausalLM,,2026-10-29,v0.8.0
 borealis2-26b,supported,Gemma4ForConditionalGeneration,,2026-10-29,v0.8.0
-llama-4-maverick,supported,Llama4ForConditionalGeneration,,2026-10-29,v0.8.0
-llama-4-scout,supported,Llama4ForConditionalGeneration,,2026-10-29,v0.8.0
 gemma-4-31b,supported,Gemma4ForConditionalGeneration,,2026-10-29,v0.8.0
 gemma-4-26b-a4b,supported,Gemma4ForConditionalGeneration,,2026-10-29,v0.8.0
 gpt-oss-120b,supported,GptOssForCausalLM,,2026-10-29,v0.8.0
@@ -85,3 +83,8 @@ latxa-3.1-70b-v2,supported,LlamaForCausalLM,,2026-10-29,v0.8.0
 norolmo-13b,supported,Olmo2ForCausalLM,,2026-10-29,v0.8.0
 velvet-14b,supported,MistralForCausalLM,,2026-10-29,v0.8.0
 fastwebmiia-7b,supported,MistralForCausalLM,,2026-10-29,v0.8.0
+domyn-edge-sft,unsupported,DomynEdgeForCausalLM,architecture not registered in the converter,2026-10-29,v0.8.0
+velvet2-3b,supported,MistralForCausalLM,,2026-10-29,v0.8.0
+muse-spark-open,supported,MuseSparkForConditionalGeneration,,2026-10-29,v0.8.0
+muse-glimmer-30b,supported,MuseGlimmerForConditionalGeneration,,2026-10-29,v0.8.0
+mistral-large-4,unsupported,MistralLarge4ForConditionalGeneration,architecture not registered in the converter,2026-10-29,v0.8.0

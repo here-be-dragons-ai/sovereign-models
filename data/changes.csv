@@ -181,3 +181,10 @@ date,model,field,old,new,reason
 2026-10-29,qwen3.8-27b,template_check,differs,suspicious,
 2026-10-29,sarvam-105b,llama_cpp,unsupported,fork only,
 2026-10-29,sarvam-105b,template_check,,identical,
+2026-10-29,domyn-edge-sft,model,,listed,"New Domyn model (2026-10-20), SFT stage of a phased release"
+2026-10-29,llama-4-maverick,model,listed,,Replaced by the Muse models as Meta comparison models (one or two current flagships per provider)
+2026-10-29,llama-4-scout,model,listed,,Replaced by the Muse models as Meta comparison models (one or two current flagships per provider)
+2026-10-29,mistral-large-4,model,,listed,Mistral Large 4 weights released (2026-10)
+2026-10-29,muse-glimmer-30b,model,,listed,"Meta open-weight release (Aug 2026), missed so far; replaces Llama 4"
+2026-10-29,muse-spark-open,model,,listed,Meta open-weight release 2026-10-15; replaces Llama 4
+2026-10-29,velvet2-3b,model,,listed,New Almawave Labs model (2026-10-15)

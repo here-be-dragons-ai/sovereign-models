@@ -70,7 +70,6 @@ poro-2,posttraining,Llama-3.3-70B-Instruct,foreign,SFT responses for English and
 poro-2,posttraining,Poro-34B,own,translating the Tulu 3 SFT prompts into Finnish
 poro-2,judge,Llama-3.3-70B-Instruct (judge),foreign,picking the best Finnish response
 poro-2,judge,ArmoRM-Llama3-8B-v0.1,foreign,reward model picking the best English response
-llama-4,pretraining,Llama 4 Behemoth,own,codistillation teacher for Llama 4 Maverick (soft/hard target distillation loss)
 phi-4-reasoning-vision,posttraining,GPT-4o,foreign,synthetic captions and descriptions of web images
 phi-4-reasoning-vision,posttraining,o4-mini,foreign,synthetic captions and descriptions of web images
 nemotron-3,pretraining,"Qwen models (Qwen3-235B-A22B incl. Thinking-2507, Qwen3-30B-A3B, Qwen2.5-72B/32B, QwQ-32B)",foreign,"synthetic pre-training data: formal logic, economics, MCQ, rephrased/translated Common Crawl and Wikipedia, textbook math"
@@ -185,3 +184,7 @@ amalia-0626,judge,ArmoRM,foreign,reward scoring of 32 sampled SFT responses to p
 amalia-0626,judge,Qwen3Guard,foreign,classifying EuroBlocks prompts to select safety samples
 amalia-0626,judge,Deita Quality Scorer,foreign,filtering synthetic SFT entries below score 5
 fastwebmiia,posttraining,Phi 3.5 (Microsoft),foreign,"synthetic examples for fine-tuning, under 1% of the training data"
+muse-spark,posttraining,Unnamed generative AI models,unknown,"synthetic ideal responses, golden training datasets and image captions (AI Act summary 2.5)"
+muse-glimmer,pretraining,Muse Spark,own,"distillation teacher (""distilled from Muse Spark""; stage not stated)"
+mistral-large-4,posttraining,Internal Mistral models,own,synthetic training data (AI Act summary 2.5; stage not stated)
+mistral-large-4,posttraining,Unnamed third-party models,unknown,synthetic datasets from third-party providers (AI Act summary 2.5)

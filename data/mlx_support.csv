@@ -11,6 +11,7 @@ deepseek-v4-pro-0813,not checked,deepseek_v4,quantized tensors (scales) the chec
 deepseek-v4.1-flash,loads,deepseek_v41,"FP8 release, scales not checked",2026-10-16,0.7.8
 devstral-small-2,loads,mistral3,"FP8 release, scales not checked",2026-10-16,0.7.8
 dfm-mimir-1.5,loads,hrm_text,,2026-10-16,0.7.8
+domyn-edge-sft,unsupported,domynedge,model type not in mlx-vlm,2026-10-29,0.7.11@fdd94f39
 domyn-small,loads,nemotron,,2026-10-16,0.7.8
 eurollm-22b,loads,llama,,2026-10-16,0.7.8
 eurollm-9b,loads,llama,,2026-10-16,0.7.8
@@ -42,8 +43,6 @@ kimi-k3,not checked,kimi_k3,quantized tensors (scales) the check does not handle
 kolibri-1,loads,kolibri1,"FP8 release, scales not checked",2026-10-16,0.7.8
 latxa-3.1-70b-v2,loads,llama,,2026-10-16,0.7.8
 llama-3.1-estllm-70b-instruct-0826,loads,llama,,2026-10-16,0.7.8
-llama-4-maverick,not checked,,config.json: HTTP 403 (gated?),2026-10-16,0.7.8
-llama-4-scout,not checked,,config.json: HTTP 403 (gated?),2026-10-16,0.7.8
 llama-krikri-8b-instruct-v1.5,loads,llama,,2026-10-16,0.7.8
 llama-pllum-70b-chat-2512,loads,llama,,2026-10-16,0.7.8
 llm-jp-4.1-32b-a3b-thinking,loads,qwen3_moe,,2026-10-16,0.7.8
@@ -56,8 +55,11 @@ magistral-small-2509,loads,mistral3,,2026-10-16,0.7.8
 minerva-7b,loads,mistral,,2026-10-16,0.7.8
 minimax-m3,loads,minimax_m3_vl,,2026-10-16,0.7.8
 ministral-3-14b,loads,mistral3,"FP8 release, scales not checked",2026-10-16,0.7.8
+mistral-large-4,unsupported,mistral_large4,model type not in mlx-vlm,2026-10-29,0.7.11@fdd94f39
 mistral-small-3.2,loads,mistral3,,2026-10-16,0.7.8
 mistral-small-4,loads,mistral3,"FP8 release, scales not checked",2026-10-16,0.7.8
+muse-glimmer-30b,loads,muse_glimmer,,2026-10-29,0.7.11@fdd94f39
+muse-spark-open,not checked,,config.json: HTTP 403 (gated?),2026-10-29,0.7.11@fdd94f39
 nemotron-3-super-120b,loads,nemotron_h,,2026-10-16,0.7.8
 nemotron-3.5-lightning-30b,loads,nemotron_h,,2026-10-16,0.7.8
 nemotron-sea-lion-v4.8-120b,loads,nemotron_h,,2026-10-16,0.7.8
@@ -83,5 +85,6 @@ teuken-7b-instruct-0.6,loads,llama,,2026-10-16,0.7.8
 tildeopen-30b,loads,llama,,2026-10-16,0.7.8
 tiny-aya-global,not checked,,config.json: HTTP 403 (gated?),2026-10-16,0.7.8
 velvet-14b,not checked,,config.json: HTTP 403 (gated?),2026-10-17,0.7.8
+velvet2-3b,not checked,,config.json: HTTP 403 (gated?),2026-10-29,0.7.11@fdd94f39
 viking-33b,loads,llama,,2026-10-16,0.7.8
 xlstm-7b,unsupported,xlstm,model type not in mlx-vlm,2026-10-16,0.7.8

@@ -1,0 +1,16 @@
+--- original/default
++++ build/default
+@@ -1,13 +1,3 @@
+-{#
+-  Template: Muse Glimmer ATEM Chat Template
+-  Renders the ATEM tool-calling protocol: reasoning channel (to=self), tool
+-  channels (to=<tool>), and the user channel, plus tool definitions and the
+-  valid-recipient list in the system block.
+-
+-  Whitespace note: every tag uses the {%- -%} / {{- -}} stripping markers, so
+-  the indentation below is purely for readability and contributes nothing to
+-  the rendered output.
+-#}
+ {%- macro render_content(content) -%}
+     {%- if content is string -%}
+         {{- content -}}

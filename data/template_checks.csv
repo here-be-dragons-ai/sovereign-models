@@ -201,38 +201,6 @@ poro-2-8b,wyrmiyu/Llama-Poro-2-8B-Instruct-Q8_0-GGUF,gguf,llama-poro-2-8b-instru
 borealis2-26b,NbAiLab/borealis2-26b-a4b-preview,original,chat_template.jinja,reference,,long string literal,d7d4d0047903c0c9,2026-10-29
 borealis2-26b,NbAiLab/borealis2-26b-a4b-preview-gguf,gguf,borealis2-26b-a4b-preview-Q3_K_M.gguf,equivalent,diff: data/template_diffs/NbAiLab__borealis2-26b-a4b-preview-gguf.diff,long string literal,ded195c682b884d1,2026-10-29
 borealis2-26b,BobTheShoplifter/borealis2-26b-a4b-preview-GGUF,gguf,borealis2-26b-a4b-preview-Q4_K_M.gguf,identical,,long string literal,d7d4d0047903c0c9,2026-10-29
-llama-4-maverick,meta-llama/Llama-4-Maverick-17B-128E-Instruct,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-29
-llama-4-maverick,unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF,gguf,UD-Q8_K_XL/Llama-4-Maverick-17B-128E-Instruct-UD-Q8_K_XL-00001-of-00010.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-maverick,unsloth/Llama-4-Maverick-17B-128E-Instruct-GGUF-UD,gguf,UD-IQ2_M/Llama-4-Maverick-17B-128E-Instruct-UD-IQ2_M-00001-of-00004.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-maverick,DevQuasar-12/meta-llama.Llama-4-Maverick-17B-128E-Instruct-GGUF,gguf,meta-llama.Llama-4-Maverick-17B-128E-Instruct.Q4_K_M-00001-of-00073.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-maverick,GeorgyGUF/Llama-4-Maverick-17B-128E-Instruct-bf16.gguf,gguf,llama4fullgguf-00001-of-00018.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-maverick,GeorgyGUF/Llama-4-Maverick-17B-128E-Instruct-q8-with-bf16-embedding-and-bf16-output.gguf,gguf,-00001-of-00010.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-maverick,AaronimusPrime/llama-4-maverick-17b-128e-instruct-f16-gguf,gguf,BF16/LLaMA-4-Maverick-17B-split-00001-of-00018.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-maverick,GeorgyGUF/Llama-4-Maverick-17B-128E-Instruct-tq1_0.gguf,gguf,Llama-4-Maverick-17B-128E-Instruct-tq1_0-00001-of-00002.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-maverick,mradermacher/Llama-4-Maverick-17B-128E-Instruct-GGUF,gguf,,not checked,download failed: no .gguf file,,,2026-10-29
-llama-4-scout,meta-llama/Llama-4-Scout-17B-16E-Instruct,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-29
-llama-4-scout,bartowski/meta-llama_Llama-4-Scout-17B-16E-Instruct-old-GGUF,gguf,meta-llama_Llama-4-Scout-17B-16E-Instruct-IQ1_M.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,unsloth/Llama-4-Scout-17B-16E-Instruct-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-UD-TQ1_0.gguf,not checked,original has no template to compare,content condition;long string literal,507944daf5285b6d,2026-10-29
-llama-4-scout,lmstudio-community/Llama-4-Scout-17B-16E-Instruct-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-Q8_0-00001-of-00003.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,chatpig/llama-4-scout-17b-16e-it-gguf,gguf,llama-4-scout-17b-16e-it-q2_k-00001-of-00004.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,mradermacher/Llama-4-Scout-17B-16E-Instruct-i1-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct.i1-IQ1_S.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,DevQuasar-12/meta-llama.Llama-4-Scout-17B-16E-Instruct-GGUF,gguf,meta-llama.Llama-4-Scout-17B-16E-Instruct.Q8_0-00001-of-00025.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,ggml-org/Llama-4-Scout-17B-16E-Instruct-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-UD-IQ1_S.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,steampunque/Llama-4-Scout-17B-16E-Instruct-MP-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct.Q4_K_H-00001-of-00002.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,Myric/Llama-4-Scout-17B-16E-Instruct-APEX-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-APEX-i-mini.gguf,not checked,original has no template to compare,content condition;long string literal,507944daf5285b6d,2026-10-29
-llama-4-scout,batiai/Llama-4-Scout-17B-16E-Instruct-GGUF,gguf,meta-llama-Llama-4-Scout-17B-16E-Instruct-IQ4_XS-00001-of-00002.gguf,not checked,original has no template to compare,content condition;long string literal,a69b4f2d81f4d5aa,2026-10-29
-llama-4-scout,Mogith/Llama-4-Scout-17B-16E-Instruct-Q8_0,gguf,Llama-4-Scout-17B-16E-Instruct-Q8_0-00001-of-00003.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,mradermacher/Llama-4-Scout-17B-16E-Instruct-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct.Q2_K.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,baa-ai/Llama-4-Scout-17B-16E-Instruct-RAM-137GB-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-RAM-137GB.gguf,not checked,original has no template to compare,content condition;long string literal,a69b4f2d81f4d5aa,2026-10-29
-llama-4-scout,mmnga/Llama-4-Scout-17B-16E-Instruct-gguf,gguf,Llama-4-Scout-17B-16E-Instruct-IQ1_S.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,jburmeister/Llama-4-Scout-17B-16E-Instruct-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-UD-TQ1_0.gguf,not checked,original has no template to compare,content condition;long string literal,507944daf5285b6d,2026-10-29
-llama-4-scout,baa-ai/Llama-4-Scout-17B-16E-Instruct-RAM-105GB-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-RAM-105GB.gguf,not checked,original has no template to compare,content condition;long string literal,a69b4f2d81f4d5aa,2026-10-29
-llama-4-scout,kingjones777/Llama-4-Scout-17B-16E-Instruct-ROCmFP4-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-Q4_0_ROCMFP4_COHERENT.gguf,not checked,original has no template to compare,content condition;long string literal,507944daf5285b6d,2026-10-29
-llama-4-scout,noctrex/Llama-4-Scout-17B-16E-Instruct-MXFP4_MOE-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-MXFP4_MOE-00001-of-00004.gguf,not checked,original has no template to compare,content condition;long string literal,507944daf5285b6d,2026-10-29
-llama-4-scout,azanip/matter-llama-gguf,gguf,matter-llama.gguf,not checked,original has no template to compare,content condition;long string literal,e6fd302952aaa799,2026-10-29
-llama-4-scout,AmpereComputing/llama-4-scout-16e-17b-instruct-gguf,gguf,llama-4-17b-16e-scout-instruct-Q8R16-00001-of-00005.gguf,not checked,original has no template to compare,content condition;long string literal,a69b4f2d81f4d5aa,2026-10-29
-llama-4-scout,yasu-oh/Llama-4-Scout-17B-16E-Instruct-GGUF,gguf,Llama-4-Scout-17B-16E-Instruct-IQ4_XS-00001-of-00002.gguf,not checked,original has no template to compare,content condition;date or time,0e8715e29120dff1,2026-10-29
-llama-4-scout,Giooh/Llama-4-Scout-17B-16E-Instruct-Q8_0,gguf,model_Q8_0.gguf,not checked,original has no template to compare,content condition;long string literal,a69b4f2d81f4d5aa,2026-10-29
 gemma-4-31b,google/gemma-4-31B-it,original,chat_template.jinja,reference,,long string literal,d7d4d0047903c0c9,2026-10-29
 gemma-4-31b,unsloth/gemma-4-31B-it-GGUF,gguf,MTP/mtp-gemma-4-31B-it-Q8_0.gguf,not checked,no chat template in the build,,,2026-10-29
 gemma-4-31b,lmstudio-community/gemma-4-31B-it-GGUF,gguf,gemma-4-31B-it-Q4_K_M.gguf,identical,,long string literal,dbf1a09c50561704,2026-10-29
@@ -1001,3 +969,75 @@ latxa-3.1-70b-v2,itzune/Latxa-Llama-3.1-70B-Instruct-v2-GGUF,gguf,Latxa-Llama-3.
 norolmo-13b,HPLT/NorOLMo-13B,original,,not checked,no chat template in the repo,,,2026-10-29
 velvet-14b,AlmawaveLabs/Velvet-14B,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-29
 fastwebmiia-7b,Fastweb/FastwebMIIA-7B,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-29
+domyn-edge-sft,domyn/Domyn-Edge-SFT,original,chat_template.jinja,reference,,content condition;long string literal,f6cc2154ecb24bd9,2026-10-29
+velvet2-3b,AlmawaveLabs/Velvet2-3B,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-29
+muse-spark-open,meta-models/Muse-Spark-Open-816B-A42B,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-10-29
+muse-spark-open,unsloth/Muse-Spark-Open-816B-A42B-GGUF,gguf,UD-IQ1_M/Muse-Spark-Open-816B-A42B-UD-IQ1_M-00001-of-00006.gguf,not checked,original has no template to compare,date or time;long string literal,bff95aa1a51966c6,2026-10-29
+muse-spark-open,ggml-org/Muse-Spark-Open-816B-A42B-GGUF,gguf,Muse-Spark-Open-816B-A42B-BF16-00001-of-00022.gguf,not checked,original has no template to compare,date or time;long string literal,e72d30a34097ac3d,2026-10-29
+muse-spark-open,Interchained/Muse-Spark-Open-816B-A42B-GGUF,gguf,Interchained-Muse-Spark-Open-816B-A42B-Q4_K_M-00001-of-00003.gguf,not checked,original has no template to compare,date or time;long string literal,bff95aa1a51966c6,2026-10-29
+muse-spark-open,Solstice-AI/Muse-Spark-Open-816B-A42B-GGUF-UltraOptimised-Curated-Protium,gguf,UD-IQ3_XXS/Muse-Spark-Open-816B-A42B-UD-IQ3_XXS-00001-of-00008.gguf,not checked,original has no template to compare,date or time;long string literal,bff95aa1a51966c6,2026-10-29
+muse-spark-open,AtomicChat/Muse-Spark-Open-816B-A42B-GGUF,gguf,Muse-Spark-Open-816B-A42B-AD-IQ1_S-00001-of-00004.gguf,not checked,original has no template to compare,date or time;long string literal,e72d30a34097ac3d,2026-10-29
+muse-spark-open,DevQuasar/meta-models.Muse-Spark-Open-816B-A42B-GGUF,gguf,Q4_K_M/meta-models.Muse-Spark-Open-816B-A42B.f16.gguf.Q4_K_M.gguf-00001-of-00039.gguf,not checked,original has no template to compare,date or time;long string literal,bff95aa1a51966c6,2026-10-29
+muse-spark-open,baa-ai/Muse-Spark-Open-816B-A42B-RAM-365GB-GGUF,gguf,Muse-Spark-Open-816B-A42B-RAM-local-knee-00001-of-00022.gguf,not checked,original has no template to compare,date or time;long string literal,bff95aa1a51966c6,2026-10-29
+muse-glimmer-30b,meta-models/Muse-Glimmer-30B,original,chat_template.jinja,reference,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,unsloth/Muse-Glimmer-30B-GGUF,gguf,dflash-kquant.gguf,equivalent,diff: data/template_diffs/unsloth__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,meta-models/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,bartowski/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-Q4_0.gguf,equivalent,diff: data/template_diffs/bartowski__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,AtomicChat/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-BF16.gguf,equivalent,diff: data/template_diffs/AtomicChat__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,NANI-Nithin/Muse-Glimmer-30B-GGUF,gguf,Muse-Glimmer-30B-Q1_0.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,ggml-org/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-Q4_0.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,bluevoid-pl/Muse-Glimmer-30B-pruned-V2.5-en-pl-GGUF,gguf,Muse-Glimmer-30B_pruned-pl-V2.5-IQ2_XXS.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,dealignai/Muse-Glimmer-30B-CRACK-GGUF,gguf,Muse-Glimmer-30B-CRACK-Q2_K.gguf,equivalent,diff: data/template_diffs/dealignai__Muse-Glimmer-30B-CRACK-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,kingjones777/Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF,gguf,dflash-ROCmFP4-STRIX.gguf,equivalent,diff: data/template_diffs/kingjones777__Muse-Glimmer-30B-ROCmFP4-Strix-Halo-DFlash-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,jkim96/Muse-Glimmer-30B-DASHQ-Q2-GGUF,gguf,Muse-Glimmer-30B-DASHQ-IQ2_XXS.gguf,equivalent,diff: data/template_diffs/jkim96__Muse-Glimmer-30B-DASHQ-Q2-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,incoai/Muse-Glimmer-30B-DFlash2-GGUF,gguf,Muse-Glimmer-30B-DFlash2-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,vmlinux/Muse-Glimmer-30B-ROCmFPX-GGUF,gguf,Muse-Glimmer-30B-DFlash-ROCmFP4.gguf,equivalent,diff: data/template_diffs/vmlinux__Muse-Glimmer-30B-ROCmFPX-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,AaryanK/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-assistant-Q8_0.gguf,not checked,no chat template in the build,,,2026-10-29
+muse-glimmer-30b,Interchained/Muse-Glimmer-30B-GGUF,gguf,Muse-Glimmer-30B-Q4_0.gguf,not checked,no chat template in the build,,,2026-10-29
+muse-glimmer-30b,z-lab/Muse-Glimmer-30B-DFlash2-GGUF,gguf,Muse-Glimmer-30B-DFlash2-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,vultr/Muse-Glimmer-30B-GGUF,gguf,Muse-Glimmer-30B-IQ3_S.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,mradermacher/Muse-Glimmer-30B-i1-GGUF,gguf,Muse-Glimmer-30B.i1-IQ1_S.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,Abiray/Muse-Glimmer-30B-GGUF,gguf,Muse-Glimmer-30B-IQ3_XXS.gguf,equivalent,diff: data/template_diffs/Abiray__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,QUASAR-QAT/Muse-Glimmer-30B-QUASAR-Q4_0-GGUF,gguf,Muse-Glimmer-30B-QUASAR-Q4_0.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,mradermacher/Muse-Glimmer-30B-GGUF,gguf,Muse-Glimmer-30B.Q2_K.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,cafepm/Muse-Glimmer-30B-Q3Q4-GGUF,gguf,dflash-kquant.gguf,equivalent,diff: data/template_diffs/cafepm__Muse-Glimmer-30B-Q3Q4-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,bluevoid-pl/Muse-Glimmer-30B-pruned-GGUF,gguf,Muse-Glimmer-30B-pruned-IQ2_XXS.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,DevQuasar/meta-models.Muse-Glimmer-30B-GGUF,gguf,dflash-meta-models.Muse-Glimmer-30B.Q4_K_M.gguf,equivalent,diff: data/template_diffs/DevQuasar__meta-models.Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,Distillio/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-Q4_0.gguf,equivalent,diff: data/template_diffs/Distillio__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,staccs/Muse-Glimmer-30B-lecore-GGUF,gguf,Muse-Glimmer-30B-lecore-mix.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q8_0-GGUF,gguf,Muse-Glimmer-30B-surgical-6p34-Q8_0.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,llmware/muse-glimmer-30b-gguf,gguf,Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,Joakimpalm-Zen/Muse-Glimmer-30B-Surgical-Q4_K-GGUF,gguf,Muse-Glimmer-30B-surgical-4p75-Q4_K.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,FreedomAISVR/Muse-Glimmer-30B-NVFP4-GGUF,gguf,muse-glimmer-30b-nvfp4.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,Krasnopjorovs/Muse-Glimmer-30B-Imatrix-GGUF,gguf,Muse-Glimmer-30B-IQ4_XS.gguf,equivalent,diff: data/template_diffs/Krasnopjorovs__Muse-Glimmer-30B-Imatrix-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,vs4vijay/Muse-Glimmer-30B-GGUF,gguf,dflash-kquant.gguf,equivalent,diff: data/template_diffs/vs4vijay__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,Omega-Factory/muse-glimmer-30b-GGUF,gguf,muse-glimmer-30b.q2_k.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,atrezonator/Muse-Glimmer-30B-GGUF,gguf,dflash-kquant.gguf,equivalent,diff: data/template_diffs/atrezonator__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,Openintelligent123/Muse-Glimmer-30B-CRACK-GGUF,gguf,Muse-Glimmer-30B-CRACK-Q2_K.gguf,equivalent,diff: data/template_diffs/Openintelligent123__Muse-Glimmer-30B-CRACK-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,lactroiii/Muse-Glimmer-30B-GGUF,gguf,dflash-kquant.gguf,equivalent,diff: data/template_diffs/lactroiii__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,ml-resources/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,gguf-org/muse-glimmer-30b-gguf,gguf,dflash-q4_0.gguf,equivalent,diff: data/template_diffs/gguf-org__muse-glimmer-30b-gguf.diff,date or time;long string literal,e7bcfebcf3eb889a,2026-10-29
+muse-glimmer-30b,Hagwell/Muse-Glimmer-30B-GGUF,gguf,dflash-kquant.gguf,equivalent,diff: data/template_diffs/Hagwell__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,kingjones777/Muse-Glimmer-30B-ROCmFPX-Q8_0-AGENT-GGUF,gguf,muse-glimmer-30B-Q8_0_ROCMFPX_AGENT.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,prithivMLmods/Muse-Glimmer-30B-GGUF,gguf,Muse-Glimmer-30B.Q4_K_M.gguf,equivalent,diff: data/template_diffs/prithivMLmods__Muse-Glimmer-30B-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,nwtgck/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,lmcoleman/Muse-Glimmer-30B-MagicQuant-GGUF,gguf,Muse-Glimmer-30B-Q4_K_M.gguf,equivalent,diff: data/template_diffs/lmcoleman__Muse-Glimmer-30B-MagicQuant-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,topabaem/Haverbex-Muse-Glimmer-30B,gguf,haverbex-muse-glimmer-30b-IQ2_XS-mixed.gguf,equivalent,diff: data/template_diffs/topabaem__Haverbex-Muse-Glimmer-30B.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,Uzbekswe/Muse-Glimmer-30B-Q4_K_M-GGUF,gguf,Muse-Glimmer-30B-custom-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,Dyluhn/Muse-Glimmer-30B-R9V-V1,gguf,draft/dflash-kquant.gguf,equivalent,diff: data/template_diffs/Dyluhn__Muse-Glimmer-30B-R9V-V1.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,popiAI/Muse-Glimmer-30B-GGUF,gguf,Muse-Glimmer-30B-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,kingjones777/Muse-Glimmer-30B-ROCmFPX-Q8_0-GGUF,gguf,muse-glimmer-30B-Q8_0_ROCMFPX.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,FreedomAISVR/Muse-Glimmer-30B-MXFP4-GGUF,gguf,muse-glimmer-30b-mxfp4.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,KookiesXy/Muse-Glimmer-30B-ternary-quants,gguf,gguf/Muse-Glimmer-30B-IQ1_S.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,Smnbrzq/Muse-Glimmer-30B-GGUF,gguf,dflash-Muse-Glimmer-30B-Q4_K_M.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,Geometric-AI/Muse-Glimmer-30B-geoquant-GGUF,gguf,muse-lowbpw-r1.gguf,equivalent,diff: data/template_diffs/Geometric-AI__Muse-Glimmer-30B-geoquant-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,bluevoid-pl/Muse-Glimmer-30B-GGUF,gguf,Muse-Glimmer-30B-IQ2_XXS.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,smarttasks/Muse-Glimmer-30B-GGUF,gguf,muse-glimmer-30b-Q5.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,yogeshjog/Muse-Glimmer-30B-Q2_K-GGUF,gguf,Muse-Glimmer-30B-Q2_K.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+muse-glimmer-30b,Ishowbackup/Muse-Glimmer-30B-CRACK-GGUF,gguf,Muse-Glimmer-30B-CRACK-Q2_K.gguf,equivalent,diff: data/template_diffs/Ishowbackup__Muse-Glimmer-30B-CRACK-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,Justbackup/Muse-Glimmer-30B-CRACK-GGUF,gguf,Muse-Glimmer-30B-CRACK-Q2_K.gguf,equivalent,diff: data/template_diffs/Justbackup__Muse-Glimmer-30B-CRACK-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,Frosty40/Muse-Glimmer-30B-ArcB70-GGUF,gguf,muse-glimmer-30B-kquant-17gb.gguf,equivalent,diff: data/template_diffs/Frosty40__Muse-Glimmer-30B-ArcB70-GGUF.diff,date or time;long string literal,c1409101a6e08034,2026-10-29
+muse-glimmer-30b,PocketWeights/Muse-Glimmer-30B-WebGGUF,gguf,Muse-Glimmer-30B-WebGGUF-Q4_0.gguf,identical,,date or time;long string literal,c1e5837ca89beef8,2026-10-29
+mistral-large-4,mistralai/Mistral-Large-4-1T-A52B,original,chat_template.jinja,reference,,content condition,4b492a0fcee02aa0,2026-10-29
+mistral-large-4,ggml-org/Mistral-Large-4-1T-A52B-GGUF,gguf,BF16/Mistral-Large-4-1T-A52B-BF16-00001-of-00043.gguf,identical,,content condition,4b492a0fcee02aa0,2026-10-29
+mistral-large-4,unsloth/Mistral-Large-4-1T-A52B-GGUF,gguf,Q8_0/Mistral-Large-4-1T-A52B-Q8_0-00001-of-00025.gguf,identical,,content condition,4b492a0fcee02aa0,2026-10-29
