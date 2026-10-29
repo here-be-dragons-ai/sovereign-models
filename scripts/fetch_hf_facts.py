@@ -106,7 +106,10 @@ def facts(repo):
         revision=(info.get("sha") or "")[:12],
         pipeline_tag=info.get("pipeline_tag") or "",
     )
-    total = (info.get("safetensors") or {}).get("total")
+    st = info.get("safetensors") or {}
+    # "total" is sometimes wrong on the Hub (PLLuM-12B-chat-2512: 414720 against
+    # 12.2B in "parameters"), so take the larger of the two.
+    total = max(st.get("total") or 0, sum((st.get("parameters") or {}).values()))
     row["params_b"] = f"{total / 1e9:.1f}" if total else ""
     try:
         cfg = json.loads(get(f"https://huggingface.co/{repo}/resolve/main/config.json"))

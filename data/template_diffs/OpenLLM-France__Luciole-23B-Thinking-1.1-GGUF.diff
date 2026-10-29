@@ -1,0 +1,35 @@
+--- original/default
++++ build/default
+@@ -1,9 +1,3 @@
+-{%- if preserve_thinking is not defined %}
+-    {%- set preserve_thinking = true %}
+-{%- endif %}
+-{%- if enable_thinking is defined and enable_thinking is false %}
+-    {{- raise_exception('Disabling thinking (enable_thinking=False) is not supported by this model. For a non-thinking model, use an OpenLLM-France Luciole Instruct model.') }}
+-{%- endif %}
+ {%- if messages[0].role == 'system' and messages[0].content.strip() != "" %}
+     {%- set system_message = messages[0].content %}
+ {%- else %}
+@@ -48,11 +42,7 @@
+                 {%- set content = content.split('</think>')[-1].lstrip('\n') %}
+             {%- endif %}
+         {%- endif %}
+-        {%- if preserve_thinking or (loop.index0 > ns.last_query_index and (loop.last or reasoning_content)) %}
+-            {{- '<|im_start|>' + message.role + '\n<think>\n' + reasoning_content.strip('\n') + '\n</think>\n\n' + content.lstrip('\n') }}
+-        {%- else %}
+-            {{- '<|im_start|>' + message.role + '\n' + content.lstrip('\n') }}
+-        {%- endif %}
++                {{- '<|im_start|>' + message.role + '\n<think>\n' + reasoning_content.strip('\n') + '\n</think>\n\n' + content.lstrip('\n') }}
+         {%- if message.tool_calls %}
+             {%- for tool_call in message.tool_calls %}
+                 {%- if (loop.first and content) or (not loop.first) %}
+@@ -87,5 +77,8 @@
+     {%- endif %}
+ {%- endfor %}
+ {%- if add_generation_prompt %}
+-    {{- '<|im_start|>assistant\n<think>\n' }}
++    {{- '<|im_start|>assistant\n' }}
++    {%- if enable_thinking is defined and enable_thinking is false %}
++        {{- '<think>\n\n</think>\n\n' }}
++    {%- endif %}
+ {%- endif %}

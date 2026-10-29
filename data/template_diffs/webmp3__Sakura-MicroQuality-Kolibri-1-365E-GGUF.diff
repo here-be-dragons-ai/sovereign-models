@@ -1,0 +1,11 @@
+--- original/default
++++ build/default
+@@ -59,8 +59,6 @@
+         {%- elif message.reasoning_content is defined and message.reasoning_content is not none %}
+             {#- Deprecated vLLM compatibility. Prefer the `reasoning` field. -#}
+             {%- set reasoning = message.reasoning_content %}
+-        {%- elif message.thinking is defined and message.thinking is not none %}
+-            {%- set reasoning = message.thinking %}
+         {%- elif content is string and '</think>' in content %}
+             {%- set reasoning = content.split('</think>')[0].rstrip('\n').split('<think>')[-1].lstrip('\n') %}
+             {%- set content = content.split('</think>')[-1].lstrip('\n') %}
