@@ -1,0 +1,112 @@
+scope,subject,question,answer,url,quote,retrieved,by
+family,apertus-1.5,pretraining_site,Alps,https://arxiv.org/abs/2610.15542,Both models are trained on the Alps supercomputer at CSCS,2026-10-29,claude-opus-5-5
+family,apertus-1.5,licence_text,apache-2.0,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,These are all decoder-only transformer text-generation models released under the Apache 2.0 license.,2026-10-29,claude-opus-5-5
+family,apertus-1.5,noncommercial,no,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,license: apache-2.0,2026-10-29,claude-opus-5-5
+family,apertus-1.5,use_policy_binding,yes,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,I confirm I have read and agree to the Apache 2․0 license and the Acceptable Use Policy (AUP),2026-10-29,claude-opus-5-5
+family,apertus-1.5,inherited_terms,no,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,These are all decoder-only transformer text-generation models released under the Apache 2.0 license.,2026-10-29,claude-opus-5-5
+family,apertus-1.5,policy_updatable,yes,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,make available to your recipient of Apertus the AUP in force at the time of the redistribution,2026-10-29,claude-opus-5-5
+family,kolibri-1,pretraining_site,DE,https://aleph-alpha.com/downloads/tech-report.pdf,train it on infrastructure in Germany and Finland,2026-10-29,claude-opus-5-5
+family,kolibri-1,pretraining_site,FI,https://aleph-alpha.com/downloads/tech-report.pdf,train it on infrastructure in Germany and Finland,2026-10-29,claude-opus-5-5
+family,kolibri-1,licence_text,apache-2.0,https://huggingface.co/Aleph-Alpha/Kolibri-1,The model weights are published by Aleph Alpha GmbH under Apache 2.0 license.,2026-10-29,claude-opus-5-5
+family,kolibri-1,noncommercial,no,https://huggingface.co/Aleph-Alpha/Kolibri-1,| License | Apache 2.0 |,2026-10-29,claude-opus-5-5
+family,kolibri-1,use_policy_binding,no,https://huggingface.co/Aleph-Alpha/Kolibri-1,we do not implement an acceptable use policy,2026-10-29,claude-opus-5-5
+family,kolibri-1,inherited_terms,no,https://huggingface.co/Aleph-Alpha/Kolibri-1,None. The model was trained from scratch.,2026-10-29,claude-opus-5-5
+family,kolibri-1,policy_updatable,no,https://huggingface.co/Aleph-Alpha/Kolibri-1,we do not implement an acceptable use policy,2026-10-29,claude-opus-5-5
+family,mistral-large-4,pretraining_site,europe,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,in Mistral's own datacenters in Europe,2026-10-29,claude-opus-5-5
+family,mistral-large-4,licence_text,custom,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,This license is a modified version of the MIT license.,2026-10-29,claude-opus-5-5
+family,mistral-large-4,noncommercial,no,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,for both commercial and non-commercial use,2026-10-29,claude-opus-5-5
+family,mistral-large-4,use_policy_binding,no,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
+family,mistral-large-4,inherited_terms,no,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,"trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs",2026-10-29,claude-opus-5-5
+family,mistral-large-4,policy_updatable,no,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
+family,gervasio-70b,pretraining_site,not stated,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,,2026-10-29,claude-opus-5-5
+family,gervasio-70b,licence_text,mit,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder/blob/main/LICENSE,MIT License,2026-10-29,claude-opus-5-5
+family,gervasio-70b,noncommercial,no,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder/blob/main/LICENSE,"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",2026-10-29,claude-opus-5-5
+family,gervasio-70b,use_policy_binding,yes,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,which is hereby incorporated by reference into this Agreement.,2026-10-29,claude-opus-5-5
+family,gervasio-70b,inherited_terms,yes,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,you shall also include “Llama” at the beginning of any such AI model name.,2026-10-29,claude-opus-5-5
+family,gervasio-70b,policy_updatable,yes,https://www.llama.com/llama3_3/use-policy,The most recent copy of this policy can be found at,2026-10-29,claude-opus-5-5
+family,eurollm-2512,pretraining_site,MareNostrum5,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,using 400 Nvidia H100 GPUs on the MareNostrum5 supercomputer,2026-10-29,claude-opus-5-5
+model,eurollm-9b,pretraining_site,MareNostrum5,https://arxiv.org/abs/2506.04079,on 400 Nvidia H100 GPUs from the MareNostrum 5 supercomputer,2026-10-29,claude-opus-5-5
+family,eurollm-2512,licence_text,apache-2.0,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,- **License:** Apache License 2.0.,2026-10-29,claude-opus-5-5
+family,eurollm-2512,noncommercial,no,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,license: apache-2.0,2026-10-29,claude-opus-5-5
+family,eurollm-2512,use_policy_binding,no,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,,2026-10-29,claude-opus-5-5
+family,eurollm-2512,inherited_terms,no,https://arxiv.org/abs/2602.05879,a large language model trained from scratch to,2026-10-29,claude-opus-5-5
+family,eurollm-2512,policy_updatable,no,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,,2026-10-29,claude-opus-5-5
+family,domyn-small,pretraining_site,Leonardo,https://arxiv.org/abs/2607.20448,The CPT phase ran on the CINECA Leonardo supercomputer,2026-10-29,claude-opus-5-5
+family,domyn-small,pretraining_site,Leonardo,https://arxiv.org/abs/2607.20448,The second phase processed the remaining approximately 3 trillion tokens on the CINECA,2026-10-29,claude-opus-5-5
+family,domyn-small,pretraining_site,NVIDIA DGX Cloud,https://arxiv.org/abs/2607.20448,The first phase processed approximately 6 trillion tokens on NVIDIA DGX Cloud,2026-10-29,claude-opus-5-5
+family,domyn-small,licence_text,mit,https://www.domyn.com/legal/software-licenses/domyn-small,"MIT License Permission is hereby granted, free of charge",2026-10-29,claude-opus-5-5
+family,domyn-small,noncommercial,no,https://huggingface.co/domyn/Domyn-Small-v1.0,Domyn Small is intended for commercial and research use in multiple languages,2026-10-29,claude-opus-5-5
+family,domyn-small,use_policy_binding,no,https://huggingface.co/domyn/Domyn-Small-v1.0,,2026-10-29,claude-opus-5-5
+family,domyn-small,inherited_terms,no,https://huggingface.co/domyn/Domyn-Small-v1.0,- **License**: MIT,2026-10-29,claude-opus-5-5
+family,domyn-small,policy_updatable,no,https://www.domyn.com/legal/software-licenses/domyn-small,,2026-10-29,claude-opus-5-5
+family,apertus-1.5,init_random,no,https://arxiv.org/pdf/2610.15542,We start from the Apertus 1.0 8B and 70B checkpoints and proceed through four stages of continued pretraining,2026-10-29,claude-opus-5-5
+family,apertus-1.5,init_random,no,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,Apertus 1.5 is a continued pre-training on top of the previous generation of the same model.,2026-10-29,claude-opus-5-5
+model,apertus-1.5-8b,base_model,Apertus-8B-2509 (Apertus 1.0 8B),https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,Model dependencies: Apertus-8B-2509 Apertus-70B-2509 https://huggingface.co/collections/swiss-ai/apertus-v1,2026-10-29,claude-opus-5-5
+model,apertus-1.5-70b,base_model,Apertus-70B-2509 (Apertus 1.0 70B),https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,Model dependencies: Apertus-8B-2509 Apertus-70B-2509 https://huggingface.co/collections/swiss-ai/apertus-v1,2026-10-29,claude-opus-5-5
+family,apertus-1.5,base_publisher,own,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,Apertus 1.5 is a continued pre-training on top of the previous generation of the same model.,2026-10-29,claude-opus-5-5
+family,apertus-1.5,post_training_only,no,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,"The released models are the result of continued pretraining of Apertus 1.0, adding a multimodal mix of 4T tokens",2026-10-29,claude-opus-5-5
+family,apertus-1.5,data_downloadable,all,https://arxiv.org/pdf/2610.15542,All training data is fully available: every dataset is public,2026-10-29,claude-opus-5-5
+family,apertus-1.5,datasets_named,yes,https://arxiv.org/pdf/2610.15542,"The respective sections detail the datasets used in each stage, including exact numbers",2026-10-29,claude-opus-5-5
+family,apertus-1.5,data_shares,yes,https://arxiv.org/pdf/2610.15542,"Text data mixture per training stage, as a percentage of each stage’s sampled",2026-10-29,claude-opus-5-5
+family,apertus-1.5,data_shares,yes,https://arxiv.org/pdf/2610.15542,Token budget per modality across the three curriculum stages of Apertus 1.5 8B,2026-10-29,claude-opus-5-5
+family,apertus-1.5,licence_modified,no,https://arxiv.org/pdf/2610.15542,We release model weights and training and evaluation code under the Apache 2.0 license.,2026-10-29,claude-opus-5-5
+family,apertus-1.5,licence_modified,no,https://huggingface.co/swiss-ai/Apertus-v1.5-8B/resolve/main/LICENSE.txt,"Apache License Version 2.0, January 2004",2026-10-29,claude-opus-5-5
+family,kolibri-1,init_random,yes,https://huggingface.co/Aleph-Alpha/Kolibri-1,We randomly initialized all model parameters and pretrained the model,2026-10-29,claude-opus-5-5
+family,kolibri-1,base_model,none,https://huggingface.co/Aleph-Alpha/Kolibri-1,None. The model was trained from scratch.,2026-10-29,claude-opus-5-5
+family,kolibri-1,post_training_only,no,https://huggingface.co/Aleph-Alpha/Kolibri-1,None. The model was trained from scratch.,2026-10-29,claude-opus-5-5
+family,kolibri-1,data_downloadable,part,https://aleph-alpha.com/downloads/tech-report.pdf,The materialised mix draws 35.7% of its training tokens (7.15T) from our own pipeline,2026-10-29,claude-opus-5-5
+family,kolibri-1,data_downloadable,part,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,only parts of the datasets or subsets (or parts of subsets) have been used after cleaning and filtering,2026-10-29,claude-opus-5-5
+family,kolibri-1,datasets_named,yes,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,List of large publicly available datasets: All of the listed datasets were not used as is.,2026-10-29,claude-opus-5-5
+family,kolibri-1,datasets_named,yes,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,HPLT 3.0 ( https://huggingface.co/datasets/HPLT/HPLT3.0 ): - FinePDFs,2026-10-29,claude-opus-5-5
+family,kolibri-1,data_shares,yes,https://huggingface.co/Aleph-Alpha/Kolibri-1,| English web and documents | 43.4% | 1.3% | 15.8% |,2026-10-29,claude-opus-5-5
+family,kolibri-1,data_shares,yes,https://aleph-alpha.com/downloads/tech-report.pdf,Small specialised datasets 0.045T 3 Our pipeline (total) 7.15T 22 External sources 12.85T 56,2026-10-29,claude-opus-5-5
+family,kolibri-1,licence_modified,no,https://huggingface.co/Aleph-Alpha/Kolibri-1,The model weights are published by Aleph Alpha GmbH under Apache 2.0 license.,2026-10-29,claude-opus-5-5
+family,kolibri-1,licence_modified,no,https://huggingface.co/Aleph-Alpha/Kolibri-1/resolve/main/LICENSE,"Apache License Version 2.0, January 2004",2026-10-29,claude-opus-5-5
+family,mistral-large-4,init_random,yes,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,"trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral's own datacenters in Europe",2026-10-29,claude-opus-5-5
+family,mistral-large-4,base_model,none,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,"trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral's own datacenters in Europe",2026-10-29,claude-opus-5-5
+family,mistral-large-4,post_training_only,no,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,"trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral's own datacenters in Europe",2026-10-29,claude-opus-5-5
+family,mistral-large-4,data_downloadable,part,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,comprising highly general content originating from publicly available text datasets and user data,2026-10-29,claude-opus-5-5
+family,mistral-large-4,data_downloadable,part,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,Mistral works with a variety of third-party providers for access to synthetically generated and human-curated datasets.,2026-10-29,claude-opus-5-5
+family,mistral-large-4,datasets_named,no,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,The datasets used to train the model include Common Crawl.,2026-10-29,claude-opus-5-5
+family,mistral-large-4,data_shares,no,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,,2026-10-29,claude-opus-5-5
+family,mistral-large-4,licence_modified,yes,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,This license is a modified version of the MIT license.,2026-10-29,claude-opus-5-5
+family,mistral-large-4,licence_modified,yes,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,If the Licensee or any of its affiliates operates a Model as a Service business,2026-10-29,claude-opus-5-5
+family,gervasio-70b,init_random,no,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,developed over the LLaMA-3.3 70B instruct model,2026-10-29,claude-opus-5-5
+family,gervasio-70b,base_model,Llama-3.3-70B-Instruct,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,developed over the LLaMA-3.3 70B instruct model,2026-10-29,claude-opus-5-5
+family,gervasio-70b,base_publisher,foreign,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,The Meta Llama 3.3 multilingual large language model (LLM) is an instruction tuned generative model in 70B,2026-10-29,claude-opus-5-5
+family,gervasio-70b,post_training_only,not stated,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,,2026-10-29,claude-opus-5-5
+family,gervasio-70b,data_downloadable,part,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,Its further improvement through additional training was done over language resources that include new instruction data sets of Portuguese,2026-10-29,claude-opus-5-5
+family,gervasio-70b,datasets_named,yes,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,"was trained on various datasets, either native to European Portuguese or translated into European Portuguese",2026-10-29,claude-opus-5-5
+family,gervasio-70b,datasets_named,yes,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,"And from SuperGLUE, we included these other four tasks",2026-10-29,claude-opus-5-5
+family,gervasio-70b,data_shares,no,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,,2026-10-29,claude-opus-5-5
+family,gervasio-70b,licence_modified,no,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder/blob/main/LICENSE,"Permission is hereby granted, free of charge, to any person obtaining a copy",2026-10-29,claude-opus-5-5
+family,eurollm-2512,init_random,yes,https://arxiv.org/pdf/2602.05879,a large language model trained from scratch to support the needs of European citizens,2026-10-29,claude-opus-5-5
+family,eurollm-2512,base_model,none,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,Model dependencies: N/A Date of placement of the model on the Union market,2026-10-29,claude-opus-5-5
+family,eurollm-2512,post_training_only,no,https://arxiv.org/pdf/2602.05879,"Similar to the 9B version, EuroLLM 22B was pretrained with approximately 4T tokens",2026-10-29,claude-opus-5-5
+model,eurollm-9b,init_random,no,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,an improved version of [utter-project/EuroLLM-9B-Instruct],2026-10-29,claude-opus-5-5
+model,eurollm-9b,init_random,no,https://arxiv.org/pdf/2602.05879,"Base models: the EuroLLM-22B-Base model, together with an improved EuroLLM-9B-Base",2026-10-29,claude-opus-5-5
+model,eurollm-9b,base_model,"EuroLLM-9B (base, 2024)",https://huggingface.co/utter-project/EuroLLM-9B-2512,"This is the model card for EuroLLM-9B-2512, an improved version of [utter-project/EuroLLM-9B]",2026-10-29,claude-opus-5-5
+model,eurollm-9b,base_publisher,own,https://huggingface.co/utter-project/EuroLLM-9B-2512,"In comparison with the previous version, this version includes the long-context extension phase",2026-10-29,claude-opus-5-5
+model,eurollm-9b,post_training_only,no,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,this version includes the long-context extension phase and the revamped post-training recipe,2026-10-29,claude-opus-5-5
+family,eurollm-2512,data_downloadable,all,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,The training data is fully transparent and reproducible (EuroLLM is a fully open model).,2026-10-29,claude-opus-5-5
+family,eurollm-2512,data_downloadable,all,https://arxiv.org/pdf/2602.05879,"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B",2026-10-29,claude-opus-5-5
+family,eurollm-2512,datasets_named,yes,https://arxiv.org/pdf/2602.05879,"For high-resource languages (German, Spanish, French, and Italian), we collect data from RedPajama-Data-v2",2026-10-29,claude-opus-5-5
+family,eurollm-2512,datasets_named,yes,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,List of large publicly available datasets: English datasets: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu,2026-10-29,claude-opus-5-5
+family,eurollm-2512,data_shares,yes,https://arxiv.org/pdf/2602.05879,"English comprises 60% of the total data, multilingual content 20%, and code/math/STEM data 20%.",2026-10-29,claude-opus-5-5
+family,eurollm-2512,data_shares,yes,https://arxiv.org/pdf/2602.05879,"we incorporated an additional 60B tokens in the final training phase, evenly divided between books and code",2026-10-29,claude-opus-5-5
+family,eurollm-2512,licence_modified,no,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,- **License:** Apache License 2.0.,2026-10-29,claude-opus-5-5
+family,domyn-small,init_random,no,https://huggingface.co/domyn/Domyn-Small-v1.0,Initialised from Italia 10B and continually pre-trained on 503B tokens,2026-10-29,claude-opus-5-5
+family,domyn-small,base_model,Italia 10B,https://arxiv.org/pdf/2607.20448,"The model descends from Italia 10B (Section 3.1), a 10-billion-parameter base trained from scratch",2026-10-29,claude-opus-5-5
+family,domyn-small,base_model,Italia-10B-instruct,https://www.domyn.com/summary-of-training-data/domyn-small,"The model is a modification of a general-purpose AI model already placed on the Union market, specifically Italia-10B-instruct",2026-10-29,claude-opus-5-5
+family,domyn-small,base_publisher,own,https://arxiv.org/pdf/2607.20448,where Italia 10B was developed alongside Domyn’s larger Colosseum 355B foundation model,2026-10-29,claude-opus-5-5
+family,domyn-small,post_training_only,no,https://arxiv.org/pdf/2607.20448,"During CPT the model is exposed to 503 billion additional tokens of higher-quality, more technical content",2026-10-29,claude-opus-5-5
+family,domyn-small,data_downloadable,part,https://www.domyn.com/summary-of-training-data/domyn-small,A portion of the training data consists of synthetic AI-generated data created by us or on our behalf.,2026-10-29,claude-opus-5-5
+family,domyn-small,data_downloadable,part,https://arxiv.org/pdf/2607.20448,Roughly 3 trillion tokens of source material were organized into the streams summarised in Figure 2a,2026-10-29,claude-opus-5-5
+family,domyn-small,datasets_named,yes,https://arxiv.org/pdf/2607.20448,"The streams comprise: web-crawl content from DCLM (Li et al., 2024a) and Dolma (Soldaini et al., 2024)",2026-10-29,claude-opus-5-5
+family,domyn-small,datasets_named,yes,https://www.domyn.com/summary-of-training-data/domyn-small,Main large publicly available datasets used for pretraining: DCML (September 2024) The Stack v2 (September 2024),2026-10-29,claude-opus-5-5
+family,domyn-small,data_shares,yes,https://arxiv.org/pdf/2607.20448,Data composition across the 503B-token CPT corpus.,2026-10-29,claude-opus-5-5
+family,domyn-small,data_shares,yes,https://arxiv.org/pdf/2607.20448,SFT mixture composition by task category.,2026-10-29,claude-opus-5-5
+family,domyn-small,licence_modified,no,https://www.domyn.com/legal/software-licenses/domyn-small,"MIT License Permission is hereby granted, free of charge, to any person obtaining a copy of Domyn Small",2026-10-29,claude-opus-5-5
+model,eurollm-9b,data_downloadable,part,https://arxiv.org/abs/2506.04079,"we release all major components of this work, including the base and instruction-tuned models, the EuroFilter classifier, and the synthetic post-training dataset",2026-10-29,claude-opus-5-5
+model,eurollm-9b,datasets_named,yes,https://arxiv.org/abs/2506.04079,"We collect code and mathematical data from The Stack (Kocetkov et al., 2022), the Algebraic-stack",2026-10-29,claude-opus-5-5
+model,eurollm-9b,data_shares,yes,https://arxiv.org/abs/2506.04079,Percentage attributed to each data category in the 3 pre-training phases,2026-10-29,claude-opus-5-5

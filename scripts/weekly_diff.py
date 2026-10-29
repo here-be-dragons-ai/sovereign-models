@@ -20,6 +20,7 @@ WATCHED = {  # file: (key, columns to ignore)
     "terms_hashes.csv": ("url", {"checked", "bytes"}),
     "mlx_support.csv": ("id", {"checked", "mlx_vlm_rev"}),
     "llama_cpp_support.csv": ("id", {"checked"}),
+    "quote_checks.csv": ("key", {"checked", "method"}),
 }
 
 

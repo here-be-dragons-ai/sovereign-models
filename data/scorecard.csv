@@ -4,7 +4,7 @@ luciole-23b-thinking,Luciole 23B Thinking 1.1,OpenLLM-France/Luciole-23B-Thinkin
 luciole-8b,Luciole 8B Instruct 1.1,OpenLLM-France/Luciole-8B-Instruct-1.1,luciole-1.1,text,,,,,,,,Hybrid Mamba/attention (nemotron_h).
 lucie-7b,Lucie 7B Instruct 1.1,OpenLLM-France/Lucie-7B-Instruct-v1.1,lucie-1.1,text,,,,,,,,
 eurollm-22b,EuroLLM 22B Instruct 2512,utter-project/EuroLLM-22B-Instruct-2512,eurollm-2512,text,,,,,eu,,,
-eurollm-9b,EuroLLM 9B Instruct 2512,utter-project/EuroLLM-9B-Instruct-2512,eurollm-2512,text,,,,,,,,Compute not stated on this card (the 22B card names MareNostrum 5).
+eurollm-9b,EuroLLM 9B Instruct 2512,utter-project/EuroLLM-9B-Instruct-2512,eurollm-2512,text,continued-own,,,documented,eu,,,"EuroLLM-9B-2512 is EuroLLM-9B (pre-trained on MareNostrum 5, technical report 2506.04079) with the long-context extension phase of EuroLLM-22B added; its pre-training data was not released (only the EuroFilter classifier and synthetic post-training data)."
 alia-40b,ALIA 40B Instruct 2606,BSC-LT/ALIA-40b-instruct-2606,alia,text,,,,,,,,160k context.
 salamandra-7b,Salamandra 7B Instruct,BSC-LT/salamandra-7b-instruct,salamandra,text,,,,,,,,
 tildeopen-30b,TildeOpen 30B 64k,TildeAI/TildeOpen-30b-64k,tildeopen,text,,,,,,,,Base model only (no official instruct version). Focus on Nordic and Eastern European languages.

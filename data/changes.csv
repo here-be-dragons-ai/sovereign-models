@@ -188,3 +188,7 @@ date,model,field,old,new,reason
 2026-10-29,muse-glimmer-30b,model,,listed,"Meta open-weight release (Aug 2026), missed so far; replaces Llama 4"
 2026-10-29,muse-spark-open,model,,listed,Meta open-weight release 2026-10-15; replaces Llama 4
 2026-10-29,velvet2-3b,model,,listed,New Almawave Labs model (2026-10-15)
+2026-10-29,eurollm-22b,data,documented,open,"EuroLLM 22B report releases EuroWeb, the pre-training web dataset (rubric, verified quote)"
+2026-10-29,eurollm-9b,tier,B,A,EuroLLM-9B pre-training on MareNostrum 5 is stated in its technical report (arXiv 2506.04079); found by the rubric with a verified quote
+2026-10-29,eurollm-9b,origin,scratch,continued-own,"EuroLLM-9B-2512 continues EuroLLM-9B (base card), so continued-own"
+2026-10-29,eurollm-9b,compute,unknown,eu,"EuroLLM-9B technical report: pre-trained on MareNostrum 5 (rubric, verified quote)"

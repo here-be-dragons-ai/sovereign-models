@@ -20,6 +20,7 @@ import random
 import re
 from collections import defaultdict
 
+from rubric import quote_key
 from scorecard import DATA, Data
 
 OUT = DATA / "review_sample.csv"
@@ -40,6 +41,20 @@ def values(d):
             out[("model", m["id"], k)] = v
     for t in d.teachers:
         out[("family", t["family_id"], "teacher:" + t["model"])] = f"{t['stage']}, {t['model_origin']}: {t['purpose']}"
+    for e in d.evidence:
+        out[(e["scope"], e["subject"], "q:" + e["question"])] = e["answer"]
+    return out
+
+
+def evidence_items(d):
+    """Rubric answers as sample items: the reviewer checks that the page holds the
+    quote (or, for "not stated", really says nothing) and that it supports the answer."""
+    out = []
+    for e in d.evidence:
+        status = d.quote_status.get(quote_key(e["url"], e["quote"]), "not checked") if e["quote"] else "no quote"
+        note = f'quote: "{e["quote"]}" [{status}]' if e["quote"] else "absence: the page should not state it"
+        out.append(dict(scope=e["scope"], subject=e["subject"], field="q:" + e["question"], url=e["url"],
+                        issuer="evidence", checked="yes", note=note))
     return out
 
 
@@ -47,7 +62,7 @@ def cmd_sheet(args):
     d = Data()
     val = values(d)
     strata = defaultdict(list)
-    for s in d.sources:
+    for s in d.sources + evidence_items(d):
         if s["checked"] == "yes":
             strata[(s["issuer"], s["scope"])].append(s)
     rnd = random.Random(args.seed)
@@ -59,11 +74,13 @@ def cmd_sheet(args):
     rnd.shuffle(sample)
     print(f"# Source spot check ({len(sample)} sources, seed {args.seed})\n")
     print("Tick a box if the linked page states the value. Otherwise leave it unticked and write "
-          "what the page says after `--`.\n")
+          "what the page says after `--`. For rubric answers (`q:...`, issuer evidence), tick if the "
+          "page holds the quote and the quote supports the answer; for an absence, if the page "
+          "indeed does not state it.\n")
     for i, s in enumerate(sample, 1):
         v = val.get((s["scope"], s["subject"], s["field"]), "")
         print(f"- [ ] {i}. `{s['scope']}/{s['subject']}/{s['field']}` = **{v}** — {s['url']} "
-              f"({s['issuer']}; note: {s['note'][:120]}) --")
+              f"({s['issuer']}; note: {s['note'][:300 if s['issuer'] == 'evidence' else 120]}) --")
 
 
 def cmd_apply(args):
@@ -71,7 +88,7 @@ def cmd_apply(args):
 
     d = Data()
     val = values(d)
-    by_key = {(s["scope"], s["subject"], s["field"], s["url"]): s for s in d.sources}
+    by_key = {(s["scope"], s["subject"], s["field"], s["url"]): s for s in d.sources + evidence_items(d)}
     line = re.compile(r"- \[( |x|X)\] \d+\. `([^/]+)/([^/]+)/([^`]+)` = \*\*(.*?)\*\* — (\S+) \(.*?\) --(.*)$")
     rows = []
     for raw in open(args.sheet, encoding="utf-8"):
@@ -100,8 +117,11 @@ def cmd_stats(args):
         print("no reviews yet")
         return
     rows = list(csv.DictReader(open(OUT, encoding="utf-8")))
-    ok = sum(r["agrees"] == "yes" for r in rows)
-    print(f"{ok} of {len(rows)} sampled sources confirmed by a second reviewer ({ok / len(rows):.0%})")
+    for label, part in (("sources", [r for r in rows if not r["field"].startswith("q:")]),
+                        ("rubric answers", [r for r in rows if r["field"].startswith("q:")])):
+        if part:
+            ok = sum(r["agrees"] == "yes" for r in part)
+            print(f"{ok} of {len(part)} sampled {label} confirmed by a second reviewer ({ok / len(part):.0%})")
     for r in rows:
         if r["agrees"] != "yes":
             print(f"  disagrees: {r['scope']}/{r['subject']}/{r['field']} = {r['value']} — {r['comment']}")

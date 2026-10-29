@@ -1,0 +1,69 @@
+key,url,status,method,checked
+6784da90002abdc1,https://arxiv.org/abs/2610.15542,found,snapshot; live 2610.15542,2026-10-29
+c56ea8e8ab4efd6d,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,found,snapshot; live Apertus_1_5_EU_Public_Summary.pdf,2026-10-29
+6de1ef96d46d0677,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,found,snapshot; live README.md,2026-10-29
+c03eb37f20b18591,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,found,snapshot; live USAGE_POLICY.pdf,2026-10-29
+68b9699ef04a263b,https://aleph-alpha.com/downloads/tech-report.pdf,found,snapshot,2026-10-29
+52d5abd6035dac5b,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
+3e35cf275b83d7ea,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,found,snapshot; live README.md,2026-10-29
+bf5107bc920f0493,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+b832f2a1d4543aad,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+592904b5e51d383f,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,found,snapshot; live failed (HTTPError),2026-10-29
+00dfa18014db451e,https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct,found,snapshot; live failed (HTTPError),2026-10-29
+7675870d537d27b6,https://www.llama.com/llama3_3/use-policy,found,live,2026-10-29
+6cfa552dc53f5224,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+66b079d4f7419a23,https://arxiv.org/abs/2506.04079,found,live; live 2506.04079,2026-10-29
+9888a5137283a3a1,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+a96dbef969dcab9a,https://arxiv.org/abs/2607.20448,found,snapshot; live 2607.20448,2026-10-29
+f8f1c7022b25b9aa,https://arxiv.org/abs/2607.20448,found,snapshot; live 2607.20448,2026-10-29
+bad70ee92e3cf481,https://arxiv.org/abs/2607.20448,found,snapshot; live 2607.20448,2026-10-29
+1e2dc161f1931d42,https://www.domyn.com/legal/software-licenses/domyn-small,found,snapshot,2026-10-29
+3c24087dcf6dfddc,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
+6db8dfc90f23312e,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,found,snapshot; live Apertus_1_5_EU_Public_Summary.pdf,2026-10-29
+71ef692d69e9949e,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/Apertus_1_5_EU_Public_Summary.pdf,found,snapshot; live Apertus_1_5_EU_Public_Summary.pdf,2026-10-29
+8b5212d4ad0f58cd,https://huggingface.co/swiss-ai/Apertus-v1.5-8B,found,snapshot; live README.md,2026-10-29
+ed10184090208883,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
+4060247c91070751,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
+8fa451073b03d48f,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
+7f4acb37d4fe547f,https://arxiv.org/pdf/2610.15542,found,live,2026-10-29
+986b1eb470129323,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
+26fa5e8f869fd0e3,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
+e62b3c8a8ecfec49,https://aleph-alpha.com/downloads/tech-report.pdf,found,snapshot,2026-10-29
+e6e4a315ce364ff3,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,found,snapshot,2026-10-29
+f8e70b57227394d8,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,found,snapshot,2026-10-29
+1bdc6e7aa55993b5,https://aleph-alpha.com/downloads/Kolibri_1_-_Sufficiently_Detailed_Summary.pdf,found,snapshot,2026-10-29
+c433a704de367ea3,https://huggingface.co/Aleph-Alpha/Kolibri-1,found,snapshot; live README.md,2026-10-29
+4b4238256fd61357,https://aleph-alpha.com/downloads/tech-report.pdf,found,snapshot,2026-10-29
+6a67a63fa7cd9b77,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B,found,snapshot; live README.md,2026-10-29
+868c2f7bd4ed5d36,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,found,snapshot,2026-10-29
+eb0dc2c3e028c5f4,https://legal.mistral.ai/documents/Mistral%20Large%204%20-%20Public%20Summary%20of%20Training%20Content.pdf,found,snapshot,2026-10-29
+eb145066eeac84e5,https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE,found,snapshot; live LICENSE,2026-10-29
+82cc09209c4eedaa,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29
+965494f116d853c2,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29
+6ea7dcead0bae3c9,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29
+b3fc13b1b460e38b,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,found,snapshot; live README.md,2026-10-29
+38a6968927cb319b,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+22865f4baaebd7a0,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+dfebb98d443f7c37,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+31aa6f043b96a494,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+b0d924bb05f0655c,https://huggingface.co/utter-project/EuroLLM-9B-2512,found,live; live README.md,2026-10-29
+90249c47a6d9c01a,https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512,found,snapshot; live README.md,2026-10-29
+c504ad9b68cf7d83,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,found,snapshot; live EuroLLM_Public_Summary.pdf,2026-10-29
+fd53d2d182642332,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+c81ae257c638211b,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+612020d9ca020822,https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf,found,snapshot; live EuroLLM_Public_Summary.pdf,2026-10-29
+368dcdf542f56ec1,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+2422eec19e54c7a1,https://arxiv.org/pdf/2602.05879,found,live,2026-10-29
+740c6b8cce75e2ce,https://huggingface.co/domyn/Domyn-Small-v1.0,found,snapshot; live README.md,2026-10-29
+9ceb36cbebde6aab,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
+013bf0130f8c54bf,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot failed (URLError); live,2026-10-29
+d13843a633b0128c,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
+5ae7b42203ff09e3,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot failed (URLError); live,2026-10-29
+269787f60e677e8e,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
+bce7ab73665932df,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
+8aa688df8e96410f,https://www.domyn.com/summary-of-training-data/domyn-small,found,snapshot failed (URLError); live,2026-10-29
+ec063017c9ba69bb,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
+628ebbe13b0f9f75,https://arxiv.org/pdf/2607.20448,found,live,2026-10-29
+0a2c21c55c8e0c9a,https://arxiv.org/abs/2506.04079,found,live; live 2506.04079,2026-10-29
+f0c11572f4408997,https://arxiv.org/abs/2506.04079,found,live; live 2506.04079,2026-10-29
+e63b1079b7859780,https://arxiv.org/abs/2506.04079,found,live; live 2506.04079,2026-10-29

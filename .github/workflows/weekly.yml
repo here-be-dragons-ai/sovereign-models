@@ -26,13 +26,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install jinja2
+      - run: pip install jinja2 pypdf
       - name: Hub facts
         run: python3 scripts/fetch_hf_facts.py
       - name: Chat templates
         run: python3 scripts/check_chat_templates.py
       - name: Licence and policy documents
         run: python3 scripts/check_terms.py
+      - name: Quotes of the rubric answers
+        run: python3 scripts/verify_quotes.py --refresh
       - name: New repos of tracked providers
         run: python3 scripts/find_new_repos.py > new_repos.md
       - name: Diff and issue

@@ -19,6 +19,8 @@ import re
 from pathlib import Path
 from urllib.parse import urlparse
 
+import rubric
+
 ROOT = Path(__file__).resolve().parent.parent
 # SM_DATA points every script at another data directory, e.g. a local overlay
 # of models that are not published (data-global/, gitignored): the fact
@@ -137,6 +139,8 @@ class Data:
         self.gguf_builds = read("gguf_builds.csv")
         self.teachers = read("teachers.csv")
         self.template_checks = read("template_checks.csv")
+        self.evidence = read("evidence.csv")
+        self.quote_status = {r["key"]: r["status"] for r in read("quote_checks.csv")}
 
     # -- resolution ------------------------------------------------------------
     def resolve(self, model):
@@ -203,6 +207,22 @@ class Data:
         ok = any(s["issuer"] in COUNTING_ISSUERS and s["checked"] == "yes"
                  for s in self.sources_for(model, field))
         return value if ok else "unknown"
+
+    # -- rubric ------------------------------------------------------------------
+    def rubric(self, model):
+        """Value per rubric field computed from the answers in evidence.csv (model-scope
+        answers replace the family's for the same question); None where the answers
+        do not decide it yet."""
+        own = [r for r in self.evidence if (r["scope"], r["subject"]) == ("model", model["id"])]
+        asked = {r["question"] for r in own}
+        fam = [r for r in self.evidence if (r["scope"], r["subject"]) == ("family", model["family_id"])
+               and r["question"] not in asked]
+        rows = rubric.usable(own + fam, self.quote_status)
+        return {f: rubric.derive(f, rows) for f in rubric.FIELDS}
+
+    def current(self, model, field):
+        """The value the rubric must reproduce: what the tier uses for sourced fields."""
+        return self.confirmed(model, field) if field in SOURCED["family"] else model[field]
 
     # -- tiers -----------------------------------------------------------------
     def tier(self, m):
@@ -391,6 +411,24 @@ class Data:
         for c in read("changes.csv"):
             if c["field"] == "tier" and not c["reason"].strip():
                 errors.append(f"changes.csv {c['date']} {c['model']}: tier change {c['old']} -> {c['new']} needs a reason")
+        subjects_ev = {"family": set(self.families), "model": set(ids)}
+        for r in self.evidence:
+            tag = f"evidence {r['scope']}/{r['subject']}/{r['question']}"
+            if r["subject"] not in subjects_ev.get(r["scope"], set()):
+                errors.append(f"{tag}: unknown subject")
+            err = rubric.check_answer(r["question"], r["answer"])
+            if err:
+                errors.append(f"{tag}: {err}")
+            if not r["url"].startswith("https://"):
+                errors.append(f"{tag}: url must be https")
+            if rubric.needs_quote(r["question"], r["answer"]) and not r["quote"].strip():
+                errors.append(f"{tag}: answer {r['answer']!r} needs a verbatim quote")
+        # Where the answers decide a field, the curated value must be the rubric's.
+        for m in self.resolved():
+            for field, value in self.rubric(m).items():
+                if value is not None and value != self.current(m, field):
+                    errors.append(f"model {m['id']}: {field}={self.current(m, field)!r}, "
+                                  f"but the rubric gives {value!r} (extract.py status {m['family_id']})")
         for t in self.template_checks:
             if t["status"] not in TEMPLATE_STATUS:
                 errors.append(f"template_checks.csv {t['repo']}: status={t['status']!r} not in {sorted(TEMPLATE_STATUS)}")

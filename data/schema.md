@@ -121,6 +121,25 @@ stages; judges are shown but do not count.
 disagrees. Only `provider`, `official`, `academic` and `press` sources with `checked = yes` count
 for the tier.
 
+## `evidence.csv` (rubric answers)
+
+Answers to the atomic questions of the rating rubric (`scripts/rubric.py`); the rubric computes
+`origin`, `data`, `compute`, `license_class` and `terms_can_change` from them. Written by
+`scripts/extract.py import`, one row per answer.
+
+| Column | Allowed values | Meaning |
+|---|---|---|
+| `scope` | `family`, `model` | A model-scope answer replaces the family's answer to the same question |
+| `subject` | id at that level | |
+| `question` | id in `rubric.QUESTIONS` | e.g. `init_random`, `datasets_named`, `pretraining_site` |
+| `answer` | per question | Allowed answers are listed in `rubric.QUESTIONS`; `pretraining_site` takes a cluster name from `rubric.CLUSTERS`, an ISO country code, `europe` or `not stated` |
+| `url` | `https://...` | Document the answer comes from |
+| `quote` | text | Verbatim text from that document; required for answers that can raise a value, empty for an absence ("not stated", "no") |
+| `retrieved` | `YYYY-MM-DD` | |
+| `by` | text | Who answered: a person's handle or a model id |
+
+An answer that needs a quote counts only if `quote_checks.csv` records the quote as found.
+
 ## `mlx_builds.csv`
 
 | Column | Meaning |
@@ -135,6 +154,10 @@ The publisher of a build is derived, not stored: `official` (the provider's own 
 organisation), `individual` (a personal account), in that order of trust.
 
 ## Generated files
+
+- `quote_checks.csv` (`scripts/verify_quotes.py`): per quote in `evidence.csv` (`key` = hash of URL and
+  quote) whether it was `found`, `found (loose)` (ignoring punctuation and markup), `not found`, or
+  could not be checked (`no text`), and how the document was read (`snapshot`, `live`).
 
 - `build_quality.csv` (from local-sovereign-mlx `quality-summary.py`): per measured MLX build the
   mean KL divergence and the noise floor per text set, multiple-choice sets with a significant loss,

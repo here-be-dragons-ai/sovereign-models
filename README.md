@@ -29,6 +29,8 @@ data/template_diffs/   one unified diff per build whose template differs
 data/schema.md         columns and allowed values of every file
 data/changes.csv       log of every published change, with reasons                 (scripts/build.py)
 data/terms_hashes.csv  hashes of licence and use-policy documents                  (scripts/check_terms.py)
+data/evidence.csv      rubric answers: question, answer, URL, verbatim quote       (scripts/extract.py)
+data/quote_checks.csv  was each quote found in its archived source?                (scripts/verify_quotes.py)
 data/known_repos.csv   repos of tracked providers seen so far                      (scripts/find_new_repos.py)
 data/build_recipes.csv, data/build_provenance.csv  provenance of our own builds    (scripts/build_provenance.py)
         │
@@ -56,6 +58,7 @@ PYTHONPATH=~/src/mlx-vlm-main \
 python3 scripts/check_llama_cpp_support.py           # latest llama.cpp release
 python3 scripts/find_gguf_builds.py                  # GGUF builds via the Hub base-model link
 python3 scripts/classify_namespaces.py               # again, for new GGUF publishers
+python3 scripts/verify_quotes.py                     # quotes of the rubric answers in their sources (pypdf for PDFs)
 python3 scripts/validate.py                          # checks and prints the tiers
 python3 scripts/build.py                             # writes dist/
 python3 scripts/publish_hf.py                        # needs huggingface_hub and a token
@@ -73,9 +76,12 @@ python3 scripts/publish_hf.py                        # needs huggingface_hub and
    `issuer` (`provider`, `official`, `academic`, `press`, `community`) and `checked`. Only
    checked provider, official, academic and press sources count for the tier; `validate.py`
    checks the issuer against the URL.
-4. Run `fetch_hf_facts.py <org/repo>`, `classify_namespaces.py`, `archive_sources.py` and
+4. Answer the rubric questions: `extract.py sheet <family>` gives the worksheet; `extract.py import
+   answers.json` checks the answers, `verify_quotes.py` looks up every quote, `extract.py status`
+   shows where the rubric and the stored values agree.
+5. Run `fetch_hf_facts.py <org/repo>`, `classify_namespaces.py`, `archive_sources.py` and
    `validate.py`.
-5. Open a pull request.
+6. Open a pull request.
 
 ## Licence
 

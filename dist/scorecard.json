@@ -1988,7 +1988,7 @@
    "base_model": "",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "documented",
+   "data": "open",
    "compute": "eu",
    "ai_act_summary": "yes",
    "cop_signatory": "no",
@@ -2031,7 +2031,7 @@
    "notes": "",
    "hf_repo": "utter-project/EuroLLM-22B-Instruct-2512",
    "hf_created": "2025-12-05",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-29",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -2235,6 +2235,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261017131340/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf",
      "note": "Template for the Public Summary of Training Content for General-Purpose AI models Version of the Summary: v1.0 Last update: 31 July 2026"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "\"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B\" released with the report"
     }
    ],
    "mlx_builds": [
@@ -2402,7 +2412,408 @@
     }
    ],
    "max_context": 32768,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-29",
+   "first_listed": ""
+  },
+  {
+   "tier": "A",
+   "id": "eurollm-9b",
+   "name": "EuroLLM 9B Instruct 2512",
+   "family": "EuroLLM Instruct 2512",
+   "provider": "EuroLLM consortium (Unbabel, IST Lisbon, U. Edinburgh, ...)",
+   "provider_country": "PT",
+   "region": "eu",
+   "control": "independent",
+   "majority_owner": "",
+   "origin": "continued-own",
+   "base_model": "",
+   "license_class": "osi",
+   "license": "apache-2.0",
+   "data": "documented",
+   "compute": "eu",
+   "ai_act_summary": "yes",
+   "cop_signatory": "no",
+   "modalities": "text",
+   "params_b": "9.2",
+   "context": "32768",
+   "model_type": "llama",
+   "size_4bit_gb": "5.2",
+   "size_8bit_gb": "9.8",
+   "mlx_vlm": "loads",
+   "mlx_vlm_detail": "",
+   "mlx_vlm_checked": "2026-10-16 0.7.8",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-29 v0.8.0",
+   "gguf_build": "mradermacher/EuroLLM-9B-Instruct-2512-GGUF",
+   "gguf_build_publisher": "individual",
+   "gguf_builds": 4,
+   "template_check": "not checked",
+   "template_check_detail": "1 not checked, 3 identical",
+   "mlx_build_verified": "",
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "168.0",
+   "cache_gib_8k": "1.3",
+   "cache_gib_32k": "5.2",
+   "cache_gib_128k": "n/a",
+   "teacher_origin": "foreign",
+   "teachers_list": "Qwen2.5-Math-7B (midtraining, foreign); Gemma2-9B (midtraining, foreign); Gemma2-27B, Llama3.1-70B, Qwen2.5-32B (midtraining, foreign); Tower (midtraining, own); DeepSeek-V3, Qwen, Tulu 3, Llama 3 (posttraining, foreign); Qwen2.5-32B (judge, foreign); Skywork-Gemma2-27B (judge, foreign)",
+   "recipe": "code+data",
+   "terms_can_change": "no",
+   "languages": "bg;hr;cs;da;nl;en;et;fi;fr;de;el;hu;ga;it;lv;lt;mt;pl;pt;ro;sk;sl;es;sv;ar;ca;zh;gl;hi;ja;ko;no;ru;tr;uk",
+   "eu_languages": 24,
+   "languages_basis": "supported",
+   "training_hardware": "nvidia",
+   "flags": "",
+   "hbd_involvement": "",
+   "notes": "EuroLLM-9B-2512 is EuroLLM-9B (pre-trained on MareNostrum 5, technical report 2506.04079) with the long-context extension phase of EuroLLM-22B added; its pre-training data was not released (only the EuroFilter classifier and synthetic post-training data).",
+   "hf_repo": "utter-project/EuroLLM-9B-Instruct-2512",
+   "hf_created": "2026-01-26",
+   "last_reviewed": "2026-10-29",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": false,
+   "sources": [
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "no",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": "not stated on this card"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": "data mix described, corpus not published as one dataset"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": "data mix described, corpus not published as one dataset"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "not listed (2026-10-07)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen2.5-Math-7B",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "we rewrite the questions and generate new answers using Qwen2.5-Math-7B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Gemma2-9B",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "generate multiple-choice questions ... using Gemma2-9B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Gemma2-27B, Llama3.1-70B, Qwen2.5-32B",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "generations from Gemma2-9B, Gemma2-27B, Llama3.1-70B, and Qwen2.5-32B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Tower",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "documents of Cosmopedia translated using Tower"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:DeepSeek-V3, Qwen, Tulu 3, Llama 3",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "regenerate answers using multiple open models (DeepSeek-AI 2025; Qwen-Team 2025; Lambert 2025; Llama Team 2024)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen2.5-32B",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "with Qwen2.5 32B acting as the judge"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Skywork-Gemma2-27B",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "select the best response using Skywork-Gemma2-27B as the reward model"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "releases models, web pretraining data, EuroBlocks SFT data and pre-training and evaluation code; no intermediate checkpoints"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "supports the 24 official EU languages plus 11 others"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
+     "note": "400 H100 on MareNostrum 5"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261017131340/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf",
+     "note": "Template for the Public Summary of Training Content for General-Purpose AI models Version of the Summary: v1.0 Last update: 31 July 2026"
+    },
+    {
+     "scope": "model",
+     "field": "compute",
+     "url": "https://arxiv.org/abs/2506.04079",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029183459/https://arxiv.org/abs/2506.04079",
+     "note": "\"on 400 Nvidia H100 GPUs from the MareNostrum 5 supercomputer\" (EuroLLM-9B pre-training)"
+    },
+    {
+     "scope": "model",
+     "field": "origin",
+     "url": "https://huggingface.co/utter-project/EuroLLM-9B-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029183638/https://huggingface.co/utter-project/EuroLLM-9B-2512",
+     "note": "\"an improved version of utter-project/EuroLLM-9B\" with the long-context extension phase of EuroLLM-22B"
+    },
+    {
+     "scope": "model",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2506.04079",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029183459/https://arxiv.org/abs/2506.04079",
+     "note": "datasets and shares per phase named; released: models, EuroFilter classifier and synthetic post-training data, not the pre-training data"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2602.05879",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
+     "note": "\"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B\" released with the report"
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "eurollm-9b",
+     "repo": "mradermacher/EuroLLM-9B-Instruct-2512-GGUF",
+     "downloads": "1755",
+     "likes": "3",
+     "created": "2026-02-06",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "eurollm-9b",
+     "repo": "mradermacher/EuroLLM-9B-Instruct-2512-i1-GGUF",
+     "downloads": "1116",
+     "likes": "2",
+     "created": "2026-02-06",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    },
+    {
+     "id": "eurollm-9b",
+     "repo": "stefancosma/EuroLLM-9B-Instruct-2512-Q4_K_M-GGUF",
+     "downloads": "83",
+     "likes": "0",
+     "created": "2026-10-06",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "not checked",
+     "template_reason": "no chat template in the build"
+    },
+    {
+     "id": "eurollm-9b",
+     "repo": "keisuke-miyako/EuroLLM-9B-Instruct-2512-gguf-q4_k_m",
+     "downloads": "33",
+     "likes": "0",
+     "created": "2026-04-08",
+     "publisher": "individual",
+     "verified_org": false,
+     "template_check": "identical",
+     "template_reason": ""
+    }
+   ],
+   "cache_layout": {
+    "growing": 172032,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "teachers": [
+    {
+     "family_id": "eurollm-2512",
+     "stage": "midtraining",
+     "model": "Qwen2.5-Math-7B",
+     "model_origin": "foreign",
+     "purpose": "rewriting math questions and answers (annealing phase)"
+    },
+    {
+     "family_id": "eurollm-2512",
+     "stage": "midtraining",
+     "model": "Gemma2-9B",
+     "model_origin": "foreign",
+     "purpose": "multiple-choice questions from math data; SlimOrca answers"
+    },
+    {
+     "family_id": "eurollm-2512",
+     "stage": "midtraining",
+     "model": "Gemma2-27B, Llama3.1-70B, Qwen2.5-32B",
+     "model_origin": "foreign",
+     "purpose": "candidate answers for SlimOrca augmentation"
+    },
+    {
+     "family_id": "eurollm-2512",
+     "stage": "midtraining",
+     "model": "Tower",
+     "model_origin": "own",
+     "purpose": "translating Cosmopedia into eight languages (Unbabel/IST, consortium members)"
+    },
+    {
+     "family_id": "eurollm-2512",
+     "stage": "posttraining",
+     "model": "DeepSeek-V3, Qwen, Tulu 3, Llama 3",
+     "model_origin": "foreign",
+     "purpose": "regenerated answers for public SFT prompts"
+    },
+    {
+     "family_id": "eurollm-2512",
+     "stage": "judge",
+     "model": "Qwen2.5-32B",
+     "model_origin": "foreign",
+     "purpose": "LLM-as-judge filter for synthetic math"
+    },
+    {
+     "family_id": "eurollm-2512",
+     "stage": "judge",
+     "model": "Skywork-Gemma2-27B",
+     "model_origin": "foreign",
+     "purpose": "reward model selecting the best SFT response"
+    }
+   ],
+   "max_context": 32768,
+   "last_changed": "2026-10-29",
    "first_listed": ""
   },
   {
@@ -6391,367 +6802,6 @@
      "model": "GPT-4.1 (via Dolci)",
      "model_origin": "foreign",
      "purpose": "selecting best and worst responses for DPO pairs"
-    }
-   ],
-   "max_context": 32768,
-   "last_changed": "2026-10-10",
-   "first_listed": ""
-  },
-  {
-   "tier": "B",
-   "id": "eurollm-9b",
-   "name": "EuroLLM 9B Instruct 2512",
-   "family": "EuroLLM Instruct 2512",
-   "provider": "EuroLLM consortium (Unbabel, IST Lisbon, U. Edinburgh, ...)",
-   "provider_country": "PT",
-   "region": "eu",
-   "control": "independent",
-   "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
-   "license_class": "osi",
-   "license": "apache-2.0",
-   "data": "documented",
-   "compute": "unknown",
-   "ai_act_summary": "yes",
-   "cop_signatory": "no",
-   "modalities": "text",
-   "params_b": "9.2",
-   "context": "32768",
-   "model_type": "llama",
-   "size_4bit_gb": "5.2",
-   "size_8bit_gb": "9.8",
-   "mlx_vlm": "loads",
-   "mlx_vlm_detail": "",
-   "mlx_vlm_checked": "2026-10-16 0.7.8",
-   "mlx_build": "",
-   "mlx_build_bits": "",
-   "mlx_build_publisher": "",
-   "llama_cpp": "supported",
-   "llama_cpp_detail": "",
-   "llama_cpp_checked": "2026-10-29 v0.8.0",
-   "gguf_build": "mradermacher/EuroLLM-9B-Instruct-2512-GGUF",
-   "gguf_build_publisher": "individual",
-   "gguf_builds": 4,
-   "template_check": "not checked",
-   "template_check_detail": "1 not checked, 3 identical",
-   "mlx_build_verified": "",
-   "cache_kind": "standard attention",
-   "cache_kib_per_token": "168.0",
-   "cache_gib_8k": "1.3",
-   "cache_gib_32k": "5.2",
-   "cache_gib_128k": "n/a",
-   "teacher_origin": "foreign",
-   "teachers_list": "Qwen2.5-Math-7B (midtraining, foreign); Gemma2-9B (midtraining, foreign); Gemma2-27B, Llama3.1-70B, Qwen2.5-32B (midtraining, foreign); Tower (midtraining, own); DeepSeek-V3, Qwen, Tulu 3, Llama 3 (posttraining, foreign); Qwen2.5-32B (judge, foreign); Skywork-Gemma2-27B (judge, foreign)",
-   "recipe": "code+data",
-   "terms_can_change": "no",
-   "languages": "bg;hr;cs;da;nl;en;et;fi;fr;de;el;hu;ga;it;lv;lt;mt;pl;pt;ro;sk;sl;es;sv;ar;ca;zh;gl;hi;ja;ko;no;ru;tr;uk",
-   "eu_languages": 24,
-   "languages_basis": "supported",
-   "training_hardware": "nvidia",
-   "flags": "",
-   "hbd_involvement": "",
-   "notes": "Compute not stated on this card (the 22B card names MareNostrum 5).",
-   "hf_repo": "utter-project/EuroLLM-9B-Instruct-2512",
-   "hf_created": "2026-01-26",
-   "last_reviewed": "2026-10-10",
-   "provider_notes": "",
-   "family_notes": "",
-   "repo_verified_org": false,
-   "sources": [
-    {
-     "scope": "family",
-     "field": "compute",
-     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "issuer": "provider",
-     "checked": "no",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "note": "not stated on this card"
-    },
-    {
-     "scope": "family",
-     "field": "data",
-     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "note": "data mix described, corpus not published as one dataset"
-    },
-    {
-     "scope": "family",
-     "field": "data",
-     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "note": "data mix described, corpus not published as one dataset"
-    },
-    {
-     "scope": "family",
-     "field": "origin",
-     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "note": ""
-    },
-    {
-     "scope": "family",
-     "field": "origin",
-     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "note": ""
-    },
-    {
-     "scope": "family",
-     "field": "provider_id",
-     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "note": ""
-    },
-    {
-     "scope": "family",
-     "field": "provider_id",
-     "url": "https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008131116/https://huggingface.co/utter-project/EuroLLM-9B-Instruct-2512",
-     "note": ""
-    },
-    {
-     "scope": "provider",
-     "field": "cop_signatory",
-     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "issuer": "official",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "note": "not listed (2026-10-07)"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:Qwen2.5-Math-7B",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "we rewrite the questions and generate new answers using Qwen2.5-Math-7B"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:Gemma2-9B",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "generate multiple-choice questions ... using Gemma2-9B"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:Gemma2-27B, Llama3.1-70B, Qwen2.5-32B",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "generations from Gemma2-9B, Gemma2-27B, Llama3.1-70B, and Qwen2.5-32B"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:Tower",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "documents of Cosmopedia translated using Tower"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:DeepSeek-V3, Qwen, Tulu 3, Llama 3",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "regenerate answers using multiple open models (DeepSeek-AI 2025; Qwen-Team 2025; Lambert 2025; Llama Team 2024)"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:Qwen2.5-32B",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "with Qwen2.5 32B acting as the judge"
-    },
-    {
-     "scope": "family",
-     "field": "teacher:Skywork-Gemma2-27B",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "select the best response using Skywork-Gemma2-27B as the reward model"
-    },
-    {
-     "scope": "family",
-     "field": "recipe",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "releases models, web pretraining data, EuroBlocks SFT data and pre-training and evaluation code; no intermediate checkpoints"
-    },
-    {
-     "scope": "family",
-     "field": "languages",
-     "url": "https://arxiv.org/abs/2602.05879",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20260908092918/https://arxiv.org/abs/2602.05879",
-     "note": "supports the 24 official EU languages plus 11 others"
-    },
-    {
-     "scope": "family",
-     "field": "training_hardware",
-     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-08",
-     "archive_url": "https://web.archive.org/web/20261008130943/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512",
-     "note": "400 H100 on MareNostrum 5"
-    },
-    {
-     "scope": "family",
-     "field": "ai_act_summary",
-     "url": "https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-10",
-     "archive_url": "https://web.archive.org/web/20261017131340/https://huggingface.co/utter-project/EuroLLM-22B-Instruct-2512/blob/main/EuroLLM_Public_Summary.pdf",
-     "note": "Template for the Public Summary of Training Content for General-Purpose AI models Version of the Summary: v1.0 Last update: 31 July 2026"
-    }
-   ],
-   "mlx_builds": [],
-   "gguf_list": [
-    {
-     "id": "eurollm-9b",
-     "repo": "mradermacher/EuroLLM-9B-Instruct-2512-GGUF",
-     "downloads": "1755",
-     "likes": "3",
-     "created": "2026-02-06",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "eurollm-9b",
-     "repo": "mradermacher/EuroLLM-9B-Instruct-2512-i1-GGUF",
-     "downloads": "1116",
-     "likes": "2",
-     "created": "2026-02-06",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    },
-    {
-     "id": "eurollm-9b",
-     "repo": "stefancosma/EuroLLM-9B-Instruct-2512-Q4_K_M-GGUF",
-     "downloads": "83",
-     "likes": "0",
-     "created": "2026-10-06",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "not checked",
-     "template_reason": "no chat template in the build"
-    },
-    {
-     "id": "eurollm-9b",
-     "repo": "keisuke-miyako/EuroLLM-9B-Instruct-2512-gguf-q4_k_m",
-     "downloads": "33",
-     "likes": "0",
-     "created": "2026-04-08",
-     "publisher": "individual",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": ""
-    }
-   ],
-   "cache_layout": {
-    "growing": 172032,
-    "windowed": [],
-    "constant": 0,
-    "kind": "standard attention"
-   },
-   "teachers": [
-    {
-     "family_id": "eurollm-2512",
-     "stage": "midtraining",
-     "model": "Qwen2.5-Math-7B",
-     "model_origin": "foreign",
-     "purpose": "rewriting math questions and answers (annealing phase)"
-    },
-    {
-     "family_id": "eurollm-2512",
-     "stage": "midtraining",
-     "model": "Gemma2-9B",
-     "model_origin": "foreign",
-     "purpose": "multiple-choice questions from math data; SlimOrca answers"
-    },
-    {
-     "family_id": "eurollm-2512",
-     "stage": "midtraining",
-     "model": "Gemma2-27B, Llama3.1-70B, Qwen2.5-32B",
-     "model_origin": "foreign",
-     "purpose": "candidate answers for SlimOrca augmentation"
-    },
-    {
-     "family_id": "eurollm-2512",
-     "stage": "midtraining",
-     "model": "Tower",
-     "model_origin": "own",
-     "purpose": "translating Cosmopedia into eight languages (Unbabel/IST, consortium members)"
-    },
-    {
-     "family_id": "eurollm-2512",
-     "stage": "posttraining",
-     "model": "DeepSeek-V3, Qwen, Tulu 3, Llama 3",
-     "model_origin": "foreign",
-     "purpose": "regenerated answers for public SFT prompts"
-    },
-    {
-     "family_id": "eurollm-2512",
-     "stage": "judge",
-     "model": "Qwen2.5-32B",
-     "model_origin": "foreign",
-     "purpose": "LLM-as-judge filter for synthetic math"
-    },
-    {
-     "family_id": "eurollm-2512",
-     "stage": "judge",
-     "model": "Skywork-Gemma2-27B",
-     "model_origin": "foreign",
-     "purpose": "reward model selecting the best SFT response"
     }
    ],
    "max_context": 32768,
@@ -26579,6 +26629,38 @@
  "changes": [
   {
    "date": "2026-10-29",
+   "model": "eurollm-9b",
+   "field": "compute",
+   "old": "unknown",
+   "new": "eu",
+   "reason": "EuroLLM-9B technical report: pre-trained on MareNostrum 5 (rubric, verified quote)"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "eurollm-9b",
+   "field": "origin",
+   "old": "scratch",
+   "new": "continued-own",
+   "reason": "EuroLLM-9B-2512 continues EuroLLM-9B (base card), so continued-own"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "eurollm-9b",
+   "field": "tier",
+   "old": "B",
+   "new": "A",
+   "reason": "EuroLLM-9B pre-training on MareNostrum 5 is stated in its technical report (arXiv 2506.04079); found by the rubric with a verified quote"
+  },
+  {
+   "date": "2026-10-29",
+   "model": "eurollm-22b",
+   "field": "data",
+   "old": "documented",
+   "new": "open",
+   "reason": "EuroLLM 22B report releases EuroWeb, the pre-training web dataset (rubric, verified quote)"
+  },
+  {
+   "date": "2026-10-29",
    "model": "velvet2-3b",
    "field": "model",
    "old": "",
@@ -27344,38 +27426,6 @@
    "old": "unknown",
    "new": "yes",
    "reason": "AI Act training summary looked up (provider site, AIAL tracker)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "mistral-small-3.2",
-   "field": "ai_act_summary",
-   "old": "unknown",
-   "new": "no",
-   "reason": "AI Act training summary looked up (provider site, AIAL tracker)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "mistral-small-3.2",
-   "field": "origin",
-   "old": "scratch",
-   "new": "continued-own",
-   "reason": "rating rubric for origin: weights from an own earlier model count as continued-own"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "ministral-3-14b",
-   "field": "ai_act_summary",
-   "old": "unknown",
-   "new": "yes",
-   "reason": "AI Act training summary looked up (provider site, AIAL tracker)"
-  },
-  {
-   "date": "2026-10-10",
-   "model": "ministral-3-14b",
-   "field": "origin",
-   "old": "scratch",
-   "new": "continued-own",
-   "reason": "rating rubric for origin: weights from an own earlier model count as continued-own"
   }
  ]
 }

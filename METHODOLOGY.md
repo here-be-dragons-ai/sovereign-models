@@ -66,6 +66,31 @@ So that equal evidence gets equal values, across European and comparison models 
   it; a model mentioned for comparison, as a borrowed chat template, or as the base being
   fine-tuned is not a teacher.
 
+### The rubric as code
+
+The rules above are also written as code (`scripts/rubric.py`). A value follows from answers to
+small factual questions, for example "Did pre-training start from randomly initialised weights?",
+"Are the main pre-training datasets named?", "Where did pre-training run?". Each answer cites a URL
+and a verbatim quote (`data/evidence.csv`). Whoever reads the source, a person or a language model,
+only answers the questions; the value is computed, and nobody sets it.
+
+- **Quotes are checked mechanically.** `scripts/verify_quotes.py` looks for every quote in the
+  archived version of the cited document (Wayback snapshot, else the live page; model cards add the
+  raw README, arXiv pages the PDF) after normalising Unicode, quotes, dashes, hyphenation, spaces
+  and case. An answer that can raise a value (a base model, "from scratch", named datasets, a site
+  in Europe, a standard open licence) counts only if its quote was found.
+- **Absences cannot be quoted.** "Not stated" and "no" record the document that was read. They can
+  only lower a value, except for the licence questions, where "no extra conditions" can make a
+  licence `osi`; those answers are covered by the human spot check.
+- **The rubric overrules nothing silently.** Where the answers decide a field, `validate.py` fails if
+  the stored value differs. Where they do not yet decide it, the value rests on `sources.csv` as
+  before; `validate.py` reports how many values the rubric decides.
+- **Language models only read.** They are one possible reader: they fill in answers with quotes
+  (`scripts/extract.py sheet` produces the worksheet, `import` checks the answers). They never
+  decide a value or a tier, and every answer they give is checked against its source by code.
+- **People check a sample.** `scripts/review_sample.py` draws a stratified random sample of sources
+  and rubric answers for a second, human reviewer; the share confirmed is the error rate we report.
+
 ## Sources
 
 Every criterion except `region` and `license_class` needs a source in `data/sources.csv`
