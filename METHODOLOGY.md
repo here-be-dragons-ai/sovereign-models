@@ -25,7 +25,7 @@ spirit, at a much coarser level.
 | Criterion | Column | Values |
 |---|---|---|
 | Provider seat | `region` | `eu` (EU/EEA), `europe` (European, outside the EU/EEA: CH, UK, UA, ...), `non-europe` |
-| Control | `control` | `independent`; `acquired-non-eu`; `merger-pending-non-eu` |
+| Control | `control` | `independent`; `acquired-europe` (owner in Europe outside the EU/EEA, e.g. CH, UK); `acquired-non-europe`; `merger-pending-non-europe` |
 | Origin of the weights | `origin` | `scratch`; `continued-own` (the provider's earlier model); `continued-european` / `finetune-european` (a European base); `continued-foreign` / `finetune-foreign` (a non-European base) |
 | Licence | `license_class` | `osi` (Apache-2.0, MIT, CC-BY, CC-BY-SA and similar); `osi-aup` (such a licence plus a binding use policy, including a third party's policy the card binds the model to, e.g. Helium and the Gemma Terms of Use); `custom`; `nc` (non-commercial); `unclear` |
 | Training data | `data` | `open` (published); `documented` (mix described); `undisclosed`; `unknown` |
@@ -43,11 +43,11 @@ So that equal evidence gets equal values, across European and comparison models 
 (`scripts/rubric_report.py` lists every model's value with its source notes, per field):
 
 - **Training data**
-  - `open`: the training data as it was used, or nearly all of it, is published (by the
-    provider or others); parts left out for licensing reasons are named. Public source
-    datasets that were filtered, sampled or mixed without releasing the result do not make
-    the data open; they make it `documented`. For a continued or fine-tuned model this is
-    the data of the provider's own training stage.
+  - `open`: across the whole lineage, the pre-training corpus is published as it was used (by
+    the provider or others), and the post-training data is public or reproducibly described
+    (subsampling with a released script or seed is fine); parts left out for licensing reasons
+    are named. Public source datasets that were filtered or mixed without releasing the result
+    make the data `documented`, not `open`.
   - `documented`: the provider names the main datasets or sources, or gives the composition
     with shares or token counts per source or domain, so that the mix could roughly be
     rebuilt. An EU AI Act training summary in the Commission's template counts when it names
@@ -58,9 +58,12 @@ So that equal evidence gets equal values, across European and comparison models 
 - **Origin**
   - `scratch`: pre-training starts from randomly initialised weights. Distillation from
     another model still counts as scratch; the teacher is listed under teacher models.
-  - `continued-own`: starts from the provider's own earlier weights in any form: continued
-    pre-training, post-training of an earlier base, upcycling, pruning, or partial weight
-    transfer.
+  - Post-training (SFT, preference tuning, RL) of the provider's own base keeps the base's
+    origin: an instruct model of a family trained from scratch is `scratch`, whether the base
+    was released with it or earlier.
+  - `continued-own`: continues the provider's own earlier weights in pre-training: further
+    pre-training, context extension, upcycling, pruning, or partial weight transfer, or reuse
+    of an earlier generation.
     It counts as own weights only if the provider documents its own pre-training of that
     earlier model or of its lineage root (corpus, token count, own tokenizer, "from scratch"
     or "no model dependencies") and names no other provider's weights it starts from;
@@ -119,8 +122,8 @@ Each source records **who published it** (`issuer`) and **whether we checked it*
 |---|---|
 | `provider`: the model maker itself (model card in its own Hub organisation, its website, report or licence) | yes |
 | `official`: public authority or official document (Commission lists, stock-exchange filings) | yes |
-| `academic`: scholarly publication by third parties | yes |
-| `press`: editorial media | yes |
+| `academic`: publications of research institutions by third parties: papers, studies and research trackers (e.g. AIAL, Trinity College Dublin) | yes |
+| `press`: editorial media; press releases and PR wires are not press but the issuer's own statement (`provider` or `official`) | yes |
 | `community`: individuals or third parties without editorial control | **no** |
 | `hbd`: our own measurement | for the Mac columns only |
 
@@ -149,13 +152,25 @@ Computed by `scripts/scorecard.py`, in this order:
 | comparison | provider outside Europe (see below) |
 | excluded | non-commercial licence |
 | pending | licence unclear |
-| **A** | open licence (`osi` or `osi-aup`), own weights (`scratch` or `continued-own`), `independent`, and either open training data or European compute |
+| **A** | open licence (`osi` or `osi-aup`), own weights (`scratch` or `continued-own`), control in Europe (`independent` or `acquired-europe`), training data at least `documented`, and either open training data or European compute; not if a third party's use policy can change the terms later (osi-aup with `terms_can_change = yes` where the policy is not the provider's own) |
 | **B** | open licence and European lineage (own weights or a European base model), but not A: data and compute undisclosed, or control outside Europe |
 | **C** | everything else from a European provider: a non-European base model or a custom licence |
 
-Flags are shown next to the tier and never change it: outside the EU, acquired / merger
-pending, use policy on redistribution, custom licence, non-European base model, our own work
-involved.
+Flags are shown next to the tier and never change it: outside the EU, owned outside the EU,
+acquired / merger pending outside Europe, binding use policy (and whether it can change, and
+whether a third party issues it), custom licence, non-European base model, our own work involved.
+The Space also shows the two sub-criteria of A next to every category: compute in Europe, and
+training data open or documented.
+
+Whose use policy it is follows from the cited document: a policy on the provider's own domain or
+Hub organisation is its own; any other (e.g. Google's Gemma terms that bind a model distilled
+from Gemma) is a third party's. A provider's own policy that it can update is shown as a flag but
+does not block A; a third party's does, because it ties the model to terms set outside Europe.
+
+Ownership is treated like the seat: an owner in Europe outside the EU/EEA (Switzerland, the UK)
+does not cap the tier and is only flagged, as a seat there is. Minority stakes (e.g. Microsoft,
+Nvidia or a16z in Mistral) are recorded in the provider notes; they are not yet a criterion and
+may become one when the Cloud and AI Development Act's notion of control is settled.
 
 ## Comparison models from outside Europe
 
@@ -219,9 +234,10 @@ rather than separate it. Both stay visible so readers can weigh them.
   The Space adds the cache at the chosen context and cache precision to the 4-bit weights, plus
   1 GB, and compares the total with 75 % of the RAM.
 - `mlx_build`, `gguf_build`: the most trusted existing build. The publisher is derived from the
-  Hub namespace: `official` (the provider's own organisation), `hbd` (ours), `curated`
-  (mlx-community, lmstudio-community, ggml-org, unsloth), `organisation` (any other
-  organisation), `individual` (a personal account), in that order; ties by downloads.
+  Hub namespace: `official` (the provider's own organisation), `curated` (mlx-community,
+  lmstudio-community, ggml-org, unsloth), `organisation` (any other organisation, ours included:
+  `hbd` ranks like any other organisation), `individual` (a personal account), in that order;
+  ties by downloads.
 - `template_check` (`scripts/check_chat_templates.py`): the chat template of every MLX and GGUF
   build against the original's. Poisoned chat templates are a documented attack class
   (arXiv 2602.04653): logic in the template that no weight scanner sees. GGUF templates are read
@@ -230,7 +246,7 @@ rather than separate it. Both stay visible so readers can weigh them.
   the same text for a fixed set of test conversations (system prompt, several turns, tool
   definitions, calls and results; date fixed); `differs` means the rendered text differs, with
   a diff in the dataset. Most differences are version drift: the provider changed its template
-  after the build was made. `suspicious` means the build adds a risky construct the original
+  after the build was made. `needs review` means the build adds a construct the original
   does not have (date or time, randomness, conditions comparing message content with a
   literal, URLs, encoded blobs, very long string literals); it calls for a look, not a verdict.
   A build we have looked at and found benign is recorded in `data/template_reviews.csv` with
@@ -277,7 +293,42 @@ ownership is in motion.
 ## Corrections
 
 Open an issue or a pull request against `data/scorecard.csv` and `data/sources.csv`, with a
-source. Providers are invited to correct their entries; we ask them before publication.
+source. We notify providers on publication and correct entries on request.
+
+## Use of AI
+
+The rubric answers in `data/evidence.csv` were read from the sources by a language model:
+Claude Opus 5.5 (Anthropic, United States; model id `claude-opus-5-5`, recorded in the `by`
+column), in October 2026. A model from outside Europe reading the evidence for a European
+sovereignty scorecard is a fair point of criticism; it is contained as follows:
+
+- The model only answers factual questions with a verbatim quote and a URL. It never sets a
+  value or a tier; values follow from the answers by code (`scripts/rubric.py`).
+- Every quote is checked mechanically against the archived document (`scripts/verify_quotes.py`);
+  an answer that can raise a value counts only if its quote is found, and only from a source whose
+  issuer counts.
+- The readers had no access to the stored values, and ambiguous questions found in pilot runs were
+  rewritten and asked again.
+- A person checks a stratified random sample of quoted answers and of answers that state an
+  absence (`scripts/review_sample.py`); the share confirmed is reported here.
+
+Human spot check: in progress (sheets in `reports/spot-check-rubric-2026-10-30.md` and
+`reports/spot-check-absences-2026-10-30.md`); the error rate will be stated here.
+
+## Privacy
+
+The dataset contains public information from the Hugging Face Hub about builds of the listed
+models: namespaces (organisations and personal accounts), download and like counts, and the chat
+templates in the published files, with the result of comparing them with the original. It is
+processed to show users which builds are faithful to the original (legitimate interest in the
+integrity of model distribution). No other personal data is collected. To have a namespace removed
+or a result reviewed, open an issue or write to the contact on https://here-be-dragons.ai/contact.
+A template result of `needs review` calls for a look, not a verdict.
+
+## Not legal advice
+
+Licence classes and tiers are a classification of published facts, not legal advice. Check the
+licence and any use policy yourself before you rely on them.
 
 ## Our own work
 

@@ -43,14 +43,16 @@ QUESTIONS = {
                      "Answer 'no' if the lineage reaches another provider's weights.",
                      {"yes", "no", "not stated"}, {"yes", "no"}),
     "post_training_only": ("origin",
-                           "Was the base only post-trained (SFT, preference tuning, RL), without continued pre-training?",
+                           "Was the base only post-trained (SFT, preference tuning, RL), without continued "
+                           "pre-training, context extension or upcycling?",
                            {"yes", "no", "not stated"}, {"yes", "no"}),
     # training data
     "data_downloadable": ("data",
-                          "How much of the training data has been published as it was used (the corpus itself, by "
-                          "the provider or others)? Public source datasets that were filtered, sampled or mixed "
-                          "without releasing the result count as 'part'. For a continued or fine-tuned model, the "
-                          "data of the provider's own training stage, not the base model's.",
+                          "Across the model's whole lineage, how much of the training data is published? 'all' or "
+                          "'nearly all' if the pre-training corpus is published as used (by the provider or others) "
+                          "and the post-training data is public or reproducibly described (e.g. subsampled with a "
+                          "released script or seed); 'part' if only some stages or only the public source datasets "
+                          "before filtering are available.",
                           {"all", "nearly all", "part", "none", "not stated"}, {"all", "nearly all", "part"}),
     "datasets_named": ("data",
                        "Are the main datasets or sources of the provider's own training named, so that the mix "
@@ -238,13 +240,16 @@ def derive(field, rows):
             return "scratch"
         if bases and publishers:
             pub = "foreign" if "foreign" in publishers else "european" if "european" in publishers else "own"
-            if pub == "own":
-                # An own base counts only if its own lineage is documented (OELLM: base origin unreported).
-                lineage = a("base_scratch")
-                if "yes" in lineage:
-                    return "continued-own"
-                return "unknown" if lineage else None
             post = [v for v in a("post_training_only") if v != "not stated"]
+            if pub == "own":
+                # An own base counts only if its own pre-training is documented. Post-training it
+                # keeps the family's origin (scratch); continuing pre-training makes it continued-own.
+                lineage = a("base_scratch")
+                if "yes" not in lineage:
+                    return "unknown" if lineage else None
+                if not post:
+                    return None
+                return "scratch" if "yes" in post else "continued-own"
             if not post:
                 return None  # continued or fine-tuned: the answers do not say
             return ("finetune-" if "yes" in post else "continued-") + pub

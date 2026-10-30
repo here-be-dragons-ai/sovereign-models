@@ -25,7 +25,7 @@ if "--overlay" in sys.argv:
     os.environ["SM_OVERLAY"] = sys.argv[sys.argv.index("--overlay") + 1]
 
 from memory import cache_bytes, cache_layout  # noqa: E402
-from scorecard import DATA, OVERLAY, PUBLISHER_ORDER, ROOT, TIERS, Data, read  # noqa: E402
+from scorecard import DATA, OVERLAY, PUBLISHER_RANK, ROOT, TIERS, Data, read  # noqa: E402
 
 DIST = ROOT / ("dist-global" if OVERLAY else "dist")
 
@@ -43,7 +43,7 @@ GIB = 2**30
 CONTEXTS = {"8k": 8192, "32k": 32768, "128k": 131072}
 GGUF_IN_JSON = 8  # builds per model kept for the detail view
 # Worst first: the model-level template_check is the worst status of its builds.
-TEMPLATE_ORDER = ["suspicious", "differs", "not checked", "equivalent", "identical"]
+TEMPLATE_ORDER = ["needs review", "differs", "not checked", "equivalent", "identical"]
 # Verified label (#23, decided 2026-10-09/10): template identical or equivalent;
 # on every text set mean KL < 0.05 and (<= 5x the noise floor or <= 0.005);
 # no multiple-choice set with a significant loss.
@@ -154,14 +154,14 @@ def main():
             q = qualities.get(b["repo"])
             b["verified"], b["verified_reason"] = verify(b, q)
             b["quality_report"] = q["report"] if q else ""
-        builds.sort(key=lambda b: (PUBLISHER_ORDER.index(b["publisher"]), -float(b["bits"])))
+        builds.sort(key=lambda b: (PUBLISHER_RANK[b["publisher"]], -float(b["bits"])))
         ggufs = []
         for b in d.gguf_builds:
             if b["id"] == m["id"]:
                 ns = b["repo"].split("/")[0]
                 ggufs.append(with_template({**b, "publisher": d.publisher(b),
                               "verified_org": d.namespaces.get(ns, {}).get("verified") == "true"}))
-        ggufs.sort(key=lambda b: (PUBLISHER_ORDER.index(b["publisher"]), -int(b["downloads"] or 0)))
+        ggufs.sort(key=lambda b: (PUBLISHER_RANK[b["publisher"]], -int(b["downloads"] or 0)))
         lc = llama.get(m["id"], {})
         lc_status, lc_detail = lc.get("llama_cpp", "not checked"), lc.get("detail", "")
         if lc_status == "unsupported" and ggufs:

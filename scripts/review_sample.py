@@ -62,7 +62,13 @@ def cmd_sheet(args):
     d = Data()
     val = values(d)
     strata = defaultdict(list)
-    for s in d.sources + evidence_items(d):
+    pool = {"all": d.sources + evidence_items(d), "sources": d.sources,
+            "evidence": evidence_items(d), "absences": evidence_items(d)}[args.only]
+    if args.only == "evidence":  # quoted rubric answers
+        pool = [s for s in pool if s["note"].startswith("quote:")]
+    if args.only == "absences":  # answers that state an absence and cannot be quoted
+        pool = [s for s in pool if s["note"].startswith("absence")]
+    for s in pool:
         if s["checked"] == "yes":
             strata[(s["issuer"], s["scope"])].append(s)
     rnd = random.Random(args.seed)
@@ -133,6 +139,8 @@ def main():
     p = sub.add_parser("sheet")
     p.add_argument("--n", type=int, default=40)
     p.add_argument("--seed", type=int, default=2026)
+    p.add_argument("--only", choices=["all", "sources", "evidence", "absences"], default="all",
+                   help="sample only sources, only quoted rubric answers, or only answers stating an absence")
     p = sub.add_parser("apply")
     p.add_argument("sheet")
     p.add_argument("--reviewer", required=True)

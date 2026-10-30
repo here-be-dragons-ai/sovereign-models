@@ -51,7 +51,6 @@ salamandra-7b,elsatch/salamandra-7b-instruct-Q8_0-GGUF,gguf,salamandra-7b-instru
 salamandra-7b,alamios/salamandra-7b-instruct-GGUF-f16,gguf,salamandra-7b-instruct.f16.gguf,identical,,URL,7910d86b18b98f94,2026-10-29
 tildeopen-30b,TildeAI/TildeOpen-30b-64k,original,,not checked,no chat template in the repo,,,2026-10-29
 apertus-1.5-8b,swiss-ai/Apertus-v1.5-8B,original,chat_template.jinja,reference,,content condition;long string literal,1b73046a029b3104,2026-10-29
-apertus-1.5-8b,here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit,mlx,chat_template.jinja,identical,,content condition;long string literal,1b73046a029b3104,2026-10-29
 apertus-1.5-70b,swiss-ai/Apertus-v1.5-70B,original,chat_template.jinja,reference,,content condition;long string literal,1b73046a029b3104,2026-10-29
 apertus-1.5-70b,katya228/Apertus-v1.5-70B-text-GGUF,gguf,apertus-70b-Q4_K_M.gguf,identical,,content condition;long string literal,1b73046a029b3104,2026-10-29
 viking-33b,LumiOpen/Viking-33B,original,,not checked,no chat template in the repo,,,2026-10-29
@@ -596,7 +595,7 @@ qwen3.8-27b,peculiar-ragdoll/Dirk-Qwen3.8-27B-GGUF,gguf,Dirk-Qwen3.8-27B-GSQ-RCO
 qwen3.8-27b,ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF,gguf,Qwen3.8-27B-GSQ-RCO-IQ2_XS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-29
 qwen3.8-27b,lmstudio-community/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-29
 qwen3.8-27b,agentionai/Qwen3.8-27B-AP-GGUF,gguf,Qwen3.8-27B-AP-IQ2_S.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-29
-qwen3.8-27b,DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF,gguf,Qwen3.8-27B-Turbo-Brilliance-50X-RI-GSQ-RCO-IQ2_XS.gguf,suspicious,"new in the build: URL, randomness; diff: data/template_diffs/DavidAU__Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF.diff",URL;content condition;long string literal;randomness,51cf3b6911166e9c,2026-10-29
+qwen3.8-27b,DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF,gguf,Qwen3.8-27B-Turbo-Brilliance-50X-RI-GSQ-RCO-IQ2_XS.gguf,needs review,"new in the build: URL, randomness; diff: data/template_diffs/DavidAU__Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF.diff",URL;content condition;long string literal;randomness,51cf3b6911166e9c,2026-10-29
 qwen3.8-27b,OBLITERATUS/Qwen3.8-27B-OBLITERATED,gguf,Qwen3.8-27B-OBLITERATED-Q2_K.gguf,differs,diff: data/template_diffs/OBLITERATUS__Qwen3.8-27B-OBLITERATED.diff,,998529483fe35506,2026-10-29
 qwen3.8-27b,z-lab/Qwen3.8-27B-DFlash2-GGUF,gguf,Qwen3.8-27B-DFlash2-Q4_K_M.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-29
 qwen3.8-27b,bartowski/Qwen3.8-27B-GGUF,gguf,Qwen3.8-27B-IQ2_XXS.gguf,identical,,content condition;long string literal,da00e52a9e791655,2026-10-29

@@ -1,6 +1,6 @@
 {
  "tiers": {
-  "A": "European provider, independent, own weights, open licence, open data or European compute",
+  "A": "European provider, independent, own weights, open licence, training data at least documented, and open data or European compute",
   "B": "European provider and open licence, but data or compute undisclosed, or control outside Europe",
   "C": "European provider, but a non-European base model or a custom licence",
   "pending": "Licence unclear; tier withheld until checked",
@@ -350,7 +350,7 @@
    "eu_languages": 22,
    "languages_basis": "trained",
    "training_hardware": "nvidia",
-   "flags": "outside the EU; use policy on redistribution",
+   "flags": "outside the EU; binding use policy; use policy can change",
    "hbd_involvement": "",
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-70B",
@@ -906,7 +906,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -936,18 +936,18 @@
    "mlx_vlm": "unsupported",
    "mlx_vlm_detail": "not in the release; port open as Blaizzy/mlx-vlm#1847",
    "mlx_vlm_checked": "2026-10-16 0.7.8",
-   "mlx_build": "here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit",
-   "mlx_build_bits": "8",
-   "mlx_build_publisher": "hbd",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
    "llama_cpp": "unsupported",
    "llama_cpp_detail": "architecture not registered in the converter",
    "llama_cpp_checked": "2026-10-29 v0.8.0",
    "gguf_build": "",
    "gguf_build_publisher": "",
    "gguf_builds": 0,
-   "template_check": "identical",
-   "template_check_detail": "1 identical",
-   "mlx_build_verified": "yes",
+   "template_check": "",
+   "template_check_detail": "",
+   "mlx_build_verified": "",
    "cache_kind": "standard attention",
    "cache_kib_per_token": "128.0",
    "cache_gib_8k": "1.0",
@@ -961,8 +961,8 @@
    "eu_languages": 22,
    "languages_basis": "trained",
    "training_hardware": "nvidia",
-   "flags": "outside the EU; use policy on redistribution; our own work involved",
-   "hbd_involvement": "HBD ported image and audio input to MLX and publishes the 8-bit MLX build (here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit)",
+   "flags": "outside the EU; binding use policy; use policy can change; our own work involved",
+   "hbd_involvement": "HBD ported image and audio input to MLX (Blaizzy/mlx-vlm#1847); no MLX build of ours is published.",
    "notes": "Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval).",
    "hf_repo": "swiss-ai/Apertus-v1.5-8B",
    "hf_created": "2026-07-24",
@@ -1382,21 +1382,7 @@
      "note": "rubric (data_downloadable=part): \"We also release the SFT mixture, the annotated completion pool, and the preference pairs built from it\""
     }
    ],
-   "mlx_builds": [
-    {
-     "id": "apertus-1.5-8b",
-     "repo": "here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit",
-     "bits": "8",
-     "note": "8 bit with float32 image and audio tokenizers (omni); our own build; ungated copy, the Apertus AUP still applies",
-     "publisher": "hbd",
-     "verified_org": false,
-     "template_check": "identical",
-     "template_reason": "",
-     "verified": "yes",
-     "verified_reason": "",
-     "quality_report": "https://github.com/here-be-dragons-ai/local-sovereign-mlx/tree/main/docs/apertus-quality"
-    }
-   ],
+   "mlx_builds": [],
    "gguf_list": [],
    "cache_layout": {
     "growing": 131072,
@@ -1519,7 +1505,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -2876,11 +2862,11 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Lucie-7B",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "documented",
+   "data": "open",
    "compute": "eu",
    "ai_act_summary": "unknown",
    "cop_signatory": "yes",
@@ -2923,7 +2909,7 @@
    "notes": "",
    "hf_repo": "OpenLLM-France/Lucie-7B-Instruct-v1.1",
    "hf_created": "2025-02-13",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -3047,6 +3033,26 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20261008124452/https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1",
      "note": "rubric (data_downloadable=part): \"One epoch was passed on each dataset except for Croissant-Aligned-Instruct for which we randomly selected 20,000 translation pairs.\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/abs/2503.12294",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261008160002/https://arxiv.org/abs/2503.12294",
+     "note": "rubric (init_random=no): \"We also describe two instruction fine-tuned versions of Lucie-7B, Lucie-7B-Instruct-v1.1 and Lucie-7B-Instruct-human-data\""
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/OpenLLM-France/Lucie-7B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20260313055139/https://huggingface.co/OpenLLM-France/Lucie-7B",
+     "note": "rubric (data_downloadable=nearly all): \"The training dataset used for the pretraining of Lucie-7B is available\""
     }
    ],
    "mlx_builds": [
@@ -3144,7 +3150,7 @@
     }
    ],
    "max_context": 32000,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -3157,7 +3163,7 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Luciole 1.1 Base (23B, 8B)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -3204,7 +3210,7 @@
    "notes": "Instruct post-training used 16k sequences; base 131k.",
    "hf_repo": "OpenLLM-France/Luciole-23B-Instruct-1.1",
    "hf_created": "2026-07-07",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -3426,6 +3432,16 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
      "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
      "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
     }
@@ -3530,7 +3546,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -3543,7 +3559,7 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Luciole 1.1 Base (23B, 8B)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -3590,7 +3606,7 @@
    "notes": "Reasoning variant of Luciole 23B Instruct 1.1 (SFT and DPO with thinking traces), 16k training sequences. The AI Act summary is titled for the Instruct models; whether it covers this model could not be checked.",
    "hf_repo": "OpenLLM-France/Luciole-23B-Thinking-1.1",
    "hf_created": "2026-09-09",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -3812,6 +3828,16 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
      "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
      "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
     }
@@ -3902,7 +3928,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-16"
   },
   {
@@ -3915,7 +3941,7 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Luciole 1.1 Base (23B, 8B)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -3962,7 +3988,7 @@
    "notes": "Hybrid Mamba/attention (nemotron_h).",
    "hf_repo": "OpenLLM-France/Luciole-8B-Instruct-1.1",
    "hf_created": "2026-07-07",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -4186,6 +4212,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
      "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261008124542/https://huggingface.co/OpenLLM-France/Luciole-23B-Instruct-1.1",
+     "note": "rubric (init_random=no): \"Luciole-23B-Instruct-1.1 is a fine-tuned and aligned version of\""
     }
    ],
    "mlx_builds": [],
@@ -4274,7 +4310,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -4573,7 +4609,7 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "openeurollm/oellm-9b-256k-theta64m-prelude (OELLM 9B 256K prelude base)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -4620,7 +4656,7 @@
    "notes": "Experimental SFT research checkpoint (not a final assistant, no safety evaluation); SimPO stage not included. 262,144-token context (RoPE theta 64M); base is an intermediate, not cooled-down 1T-token checkpoint of the 10T Prelude run. Published by an OpenEuroLLM member; training code lives in a personal GitHub repo (BirgerMoell). Tier C only because no checked source states that the Prelude base was trained from scratch (strongly implied by its 10T-token run); it moves up once the training report says so.",
    "hf_repo": "openeurollm/oellm-9b-256k-sft",
    "hf_created": "2026-08-12",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "EU Digital Europe Programme project (grant 101195233, STEP Seal), started 2025-02-01; 20 partners incl. universities, EuroHPC centres and companies. Coordinator Jan Hajič (Charles University, ÚFAL); co-lead Peter Sarlin (AMD Silo AI, owned by AMD, US).",
    "family_notes": "Prelude: Qwen3-architecture dense 9B with the own 256k OpenEuroLLM tokenizer, pre-trained on Leonardo (CINECA) toward 10T tokens; the released SFT model builds on the iter_0124800 (~1T tokens, not cooled down) checkpoint, extended to 256K context on LUMI and SFT-tuned on LUMI (AMD MI250X). Pre-training data: public sets (DCLM, FinePDFs, HPLT 3.0, Nemotron-CC incl. translated variants, StarCoder, MegaMath...) with per-source token counts. SFT data: Tulu-3 commercial subset, EuroBlocks-SFT-Synthetic, Nemotron-Post-Training-v2 math (synthetic traces), generators not named by the provider.",
    "repo_verified_org": false,
@@ -4794,6 +4830,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
      "note": "rubric (init_random=no): \"Experimental instruction-tuned checkpoint derived from\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261011052408/https://huggingface.co/openeurollm/oellm-9b-256k-sft",
+     "note": "rubric (init_random=no): \"Experimental instruction-tuned checkpoint derived from\""
     }
    ],
    "mlx_builds": [],
@@ -4806,7 +4852,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -5505,458 +5551,6 @@
    "max_context": 65536,
    "last_changed": "2026-10-29",
    "first_listed": ""
-  },
-  {
-   "tier": "A",
-   "id": "velvet-14b",
-   "name": "Velvet 14B",
-   "family": "Velvet",
-   "provider": "Almawave",
-   "provider_country": "IT",
-   "region": "eu",
-   "control": "independent",
-   "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
-   "license_class": "osi",
-   "license": "apache-2.0",
-   "data": "undisclosed",
-   "compute": "eu",
-   "ai_act_summary": "no",
-   "cop_signatory": "yes",
-   "modalities": "text",
-   "params_b": "14.1",
-   "context": "",
-   "model_type": "mistral",
-   "size_4bit_gb": "7.9",
-   "size_8bit_gb": "15.0",
-   "mlx_vlm": "not checked",
-   "mlx_vlm_detail": "config.json: HTTP 403 (gated?)",
-   "mlx_vlm_checked": "2026-10-17 0.7.8",
-   "mlx_build": "",
-   "mlx_build_bits": "",
-   "mlx_build_publisher": "",
-   "llama_cpp": "supported",
-   "llama_cpp_detail": "",
-   "llama_cpp_checked": "2026-10-29 v0.8.0",
-   "gguf_build": "",
-   "gguf_build_publisher": "",
-   "gguf_builds": 0,
-   "template_check": "",
-   "template_check_detail": "",
-   "mlx_build_verified": "",
-   "cache_kind": "",
-   "cache_kib_per_token": "",
-   "cache_gib_8k": "",
-   "cache_gib_32k": "",
-   "cache_gib_128k": "",
-   "teacher_origin": "unknown",
-   "teachers_list": "",
-   "recipe": "weights",
-   "terms_can_change": "no",
-   "languages": "de;en;es;fr;it;pt",
-   "eu_languages": 6,
-   "languages_basis": "supported",
-   "training_hardware": "nvidia",
-   "flags": "",
-   "hbd_involvement": "",
-   "notes": "Dense 14B, 128K context (trained on 4-16k sequences). Gated with automatic approval (privacy notice only). The model card adds usage restrictions (sensitive healthcare, financial or government data only with safeguards); the licence itself is plain Apache-2.0.",
-   "hf_repo": "AlmawaveLabs/Velvet-14B",
-   "hf_created": "2025-01-31",
-   "last_reviewed": "2026-10-29",
-   "provider_notes": "Member of the Almaviva Group (Italy). Since September 2026 the Velvet models sit in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent.",
-   "family_notes": "Trained from scratch on Leonardo (CINECA, Bologna): over 4T tokens in six languages, about 23% Italian, plus 400B code tokens; pretraining data described only as publicly available sources. The newer Velvet 25B (2025-10, all 24 EU languages) is not released as open weights.",
-   "repo_verified_org": true,
-   "sources": [
-    {
-     "scope": "provider",
-     "field": "cop_signatory",
-     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "issuer": "official",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "note": "Almawave listed (list last updated 2026-10-07)"
-    },
-    {
-     "scope": "provider",
-     "field": "notes",
-     "url": "https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20250812000955/https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
-     "note": "'Almawave, an Italian enterprise listed on the Euronext Growth Milan (Ticker: AIW) and a member of the Almaviva Group'"
-    },
-    {
-     "scope": "family",
-     "field": "provider_id",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": ""
-    },
-    {
-     "scope": "family",
-     "field": "origin",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "'Velvet is an Italian family of large language models, developed from scratch'"
-    },
-    {
-     "scope": "family",
-     "field": "license_class",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "license: apache-2.0; 'Velvet-14B and Velvet-2B are made available under the Apache 2.0 license'"
-    },
-    {
-     "scope": "family",
-     "field": "terms_can_change",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "plain Apache-2.0; the card's usage restrictions are not licence terms"
-    },
-    {
-     "scope": "family",
-     "field": "data",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "'pretrained on over 4 trillion tokens of data from publicly available sources'; web text and code, no datasets named"
-    },
-    {
-     "scope": "family",
-     "field": "compute",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "'trained on the HPC Leonardo infrastructure hosted by CINECA'"
-    },
-    {
-     "scope": "family",
-     "field": "compute",
-     "url": "https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20250812000955/https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
-     "note": "'trained on the Leonardo supercomputer managed by Cineca'"
-    },
-    {
-     "scope": "family",
-     "field": "training_hardware",
-     "url": "https://leonardo-supercomputer.cineca.eu/hpc-system/",
-     "issuer": "official",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140530/https://leonardo-supercomputer.cineca.eu/hpc-system/",
-     "note": "Leonardo Booster: nodes with four NVIDIA A100 64GB GPUs; the card names Leonardo as the training system"
-    },
-    {
-     "scope": "family",
-     "field": "languages",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "'Velvet-14B has been trained on Italian, English, German, Spanish, French, Portuguese' (Supported Languages)"
-    },
-    {
-     "scope": "family",
-     "field": "teacher_status",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "SFT on 'internally collected synthetic data' and over 2M human-annotated and synthetic examples; generating models not named"
-    },
-    {
-     "scope": "family",
-     "field": "recipe",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "weights only; no training code, data or intermediate checkpoints"
-    },
-    {
-     "scope": "family",
-     "field": "ai_act_summary",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
-     "note": "not stated (no AI Act training summary in the card, the repo or the release announcement)"
-    },
-    {
-     "scope": "provider",
-     "field": "notes",
-     "url": "https://www.almawavelabs.com/",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029171505/https://www.almawavelabs.com/",
-     "note": "'Almawave Labs S.r.l Single-shareholder company' ... 'Company subject to the Management and Coordination of Almaviva S.p.A.'"
-    },
-    {
-     "scope": "provider",
-     "field": "notes",
-     "url": "https://www.corrierecomunicazioni.it/digital-economy/intelligenza-artificiale-sovrana-almaviva-lancia-almawave-labs/",
-     "issuer": "press",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "",
-     "note": "2026-09-09: newco Almawave Labs with the Velvet models; 'La precedente società viene incorporata nella capogruppo'"
-    }
-   ],
-   "mlx_builds": [],
-   "gguf_list": [],
-   "cache_layout": null,
-   "teachers": [],
-   "max_context": null,
-   "last_changed": "2026-10-17",
-   "first_listed": "2026-10-17"
-  },
-  {
-   "tier": "A",
-   "id": "velvet2-3b",
-   "name": "Velvet2 3B",
-   "family": "Velvet2",
-   "provider": "Almawave",
-   "provider_country": "IT",
-   "region": "eu",
-   "control": "independent",
-   "majority_owner": "",
-   "origin": "scratch",
-   "base_model": "",
-   "license_class": "osi",
-   "license": "apache-2.0",
-   "data": "undisclosed",
-   "compute": "eu",
-   "ai_act_summary": "no",
-   "cop_signatory": "yes",
-   "modalities": "text",
-   "params_b": "3.9",
-   "context": "",
-   "model_type": "mistral",
-   "size_4bit_gb": "2.2",
-   "size_8bit_gb": "4.1",
-   "mlx_vlm": "not checked",
-   "mlx_vlm_detail": "config.json: HTTP 403 (gated?)",
-   "mlx_vlm_checked": "2026-10-29 0.7.11@fdd94f39",
-   "mlx_build": "",
-   "mlx_build_bits": "",
-   "mlx_build_publisher": "",
-   "llama_cpp": "supported",
-   "llama_cpp_detail": "",
-   "llama_cpp_checked": "2026-10-29 v0.8.0",
-   "gguf_build": "",
-   "gguf_build_publisher": "",
-   "gguf_builds": 0,
-   "template_check": "",
-   "template_check_detail": "",
-   "mlx_build_verified": "",
-   "cache_kind": "",
-   "cache_kib_per_token": "",
-   "cache_gib_8k": "",
-   "cache_gib_32k": "",
-   "cache_gib_128k": "",
-   "teacher_origin": "unknown",
-   "teachers_list": "",
-   "recipe": "weights",
-   "terms_can_change": "no",
-   "languages": "de;en;es;fr;it;pt",
-   "eu_languages": 6,
-   "languages_basis": "supported",
-   "training_hardware": "nvidia",
-   "flags": "",
-   "hbd_involvement": "",
-   "notes": "Dense 3B, 32K context, extendable to 128K with YaRN. Gated with automatic approval (privacy notice only). The card carries the same usage restrictions as Velvet 14B; the licence itself is plain Apache-2.0.",
-   "hf_repo": "AlmawaveLabs/Velvet2-3B",
-   "hf_created": "2026-10-15",
-   "last_reviewed": "2026-10-29",
-   "provider_notes": "Member of the Almaviva Group (Italy). Since September 2026 the Velvet models sit in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent.",
-   "family_notes": "Second Velvet generation, trained from scratch on Leonardo (CINECA, Bologna); the 3B text model on about 5T tokens 'collected from publicly available sources' (cutoff Dec 2025 to Jan 2026), no datasets named; reuses the Velvet-14B tokenizer, not its weights. Vision (SigLIP2 encoder) and Speech (Whisper Large v3 encoder) variants build on Velvet2-3B. No release announcement yet; quotes from the public model page (repo files gated).",
-   "repo_verified_org": true,
-   "sources": [
-    {
-     "scope": "provider",
-     "field": "cop_signatory",
-     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "issuer": "official",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
-     "note": "Almawave listed (list last updated 2026-10-07)"
-    },
-    {
-     "scope": "provider",
-     "field": "notes",
-     "url": "https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-17",
-     "archive_url": "https://web.archive.org/web/20250812000955/https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
-     "note": "'Almawave, an Italian enterprise listed on the Euronext Growth Milan (Ticker: AIW) and a member of the Almaviva Group'"
-    },
-    {
-     "scope": "family",
-     "field": "provider_id",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "'Developer: Almawave Labs'; published in the AlmawaveLabs organisation"
-    },
-    {
-     "scope": "family",
-     "field": "origin",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "'Trained from scratch on approximately 5 trillion tokens of carefully curated public data'"
-    },
-    {
-     "scope": "family",
-     "field": "license_class",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "license: apache-2.0; 'License: Apache License 2.0'"
-    },
-    {
-     "scope": "family",
-     "field": "terms_can_change",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "plain Apache-2.0; the card's usage restrictions are not licence terms"
-    },
-    {
-     "scope": "family",
-     "field": "data",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "'pretrained on approximately 5 trillion tokens collected from publicly available sources'; no datasets named"
-    },
-    {
-     "scope": "family",
-     "field": "compute",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "'trained on the Leonardo supercomputing infrastructure operated by CINECA'"
-    },
-    {
-     "scope": "family",
-     "field": "training_hardware",
-     "url": "https://leonardo-supercomputer.cineca.eu/hpc-system/",
-     "issuer": "official",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261017140530/https://leonardo-supercomputer.cineca.eu/hpc-system/",
-     "note": "Leonardo Booster: nodes with four NVIDIA A100 64GB GPUs; the card names Leonardo as the training system"
-    },
-    {
-     "scope": "family",
-     "field": "languages",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "'Languages: Italian, English, Spanish, Portuguese, French, German'"
-    },
-    {
-     "scope": "family",
-     "field": "teacher_status",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "'internally generated synthetic datasets'; generating models not named"
-    },
-    {
-     "scope": "family",
-     "field": "recipe",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "weights only; no training code, data or intermediate checkpoints"
-    },
-    {
-     "scope": "family",
-     "field": "ai_act_summary",
-     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
-     "note": "not stated (no AI Act training summary in the card)"
-    },
-    {
-     "scope": "provider",
-     "field": "notes",
-     "url": "https://www.almawavelabs.com/",
-     "issuer": "provider",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "https://web.archive.org/web/20261029171505/https://www.almawavelabs.com/",
-     "note": "'Almawave Labs S.r.l Single-shareholder company' ... 'Company subject to the Management and Coordination of Almaviva S.p.A.'"
-    },
-    {
-     "scope": "provider",
-     "field": "notes",
-     "url": "https://www.corrierecomunicazioni.it/digital-economy/intelligenza-artificiale-sovrana-almaviva-lancia-almawave-labs/",
-     "issuer": "press",
-     "checked": "yes",
-     "retrieved": "2026-10-29",
-     "archive_url": "",
-     "note": "2026-09-09: newco Almawave Labs with the Velvet models; 'La precedente società viene incorporata nella capogruppo'"
-    }
-   ],
-   "mlx_builds": [],
-   "gguf_list": [],
-   "cache_layout": null,
-   "teachers": [],
-   "max_context": null,
-   "last_changed": "2026-10-29",
-   "first_listed": "2026-10-29"
   },
   {
    "tier": "B",
@@ -7226,7 +6820,7 @@
    "eu_languages": 24,
    "languages_basis": "supported",
    "training_hardware": "nvidia",
-   "flags": "use policy on redistribution",
+   "flags": "binding use policy; use policy can change (third party)",
    "hbd_involvement": "",
    "notes": "CC-BY-SA-4.0. 4k context.",
    "hf_repo": "kyutai/helium-1-2b",
@@ -7410,7 +7004,7 @@
     }
    ],
    "max_context": 4096,
-   "last_changed": "2026-10-09",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -7421,7 +7015,7 @@
    "provider": "Aleph Alpha",
    "provider_country": "DE",
    "region": "eu",
-   "control": "merger-pending-non-eu",
+   "control": "merger-pending-non-europe",
    "majority_owner": "Cohere (CA), merger pending",
    "origin": "scratch",
    "base_model": "",
@@ -7465,7 +7059,7 @@
    "eu_languages": 2,
    "languages_basis": "supported",
    "training_hardware": "nvidia",
-   "flags": "merger pending non-EU; our own work involved",
+   "flags": "merger pending non-Europe; our own work involved",
    "hbd_involvement": "HBD publishes the MLX 3-bit build here-be-dragons-ai/Kolibri-1-MLX-3bit",
    "notes": "German/English MoE, 78B total, 3.5B active. Pretraining rephrasing with Gemma-4-26B-A4B and Mistral-NeMo-12B (card); post-training SFT data mainly from GLM-5.2, GLM-5.3 and Qwen3.8-27B (technical report). Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval.",
    "hf_repo": "Aleph-Alpha/Kolibri-1",
@@ -7802,7 +7396,7 @@
     }
    ],
    "max_context": 262144,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -7815,7 +7409,7 @@
    "region": "eu",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Mistral Small 3.2 24B Instruct",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -7862,7 +7456,7 @@
    "notes": "Reasoning model.",
    "hf_repo": "mistralai/Magistral-Small-2509",
    "hf_created": "2025-09-12",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": true,
@@ -7976,6 +7570,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20261006080957/https://arxiv.org/abs/2506.10910",
      "note": "rubric (data_downloadable=part): \"large set of diverse prompts, sourced from OpenThoughts [Guha et al., 2025] and the code subset of OpenR1\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/abs/2506.10910",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261006080957/https://arxiv.org/abs/2506.10910",
+     "note": "rubric (init_random=no): \"We use these generated traces to finetune Mistral Small 3 and then perform RL to get Magistral Small.\""
     }
    ],
    "mlx_builds": [
@@ -8106,7 +7710,7 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -9434,7 +9038,7 @@
    "base_model": "Mistral Small 3.2 24B",
    "license_class": "osi",
    "license": "apache-2.0",
-   "data": "open",
+   "data": "documented",
    "compute": "unknown",
    "ai_act_summary": "unknown",
    "cop_signatory": "no",
@@ -9477,7 +9081,7 @@
    "notes": "Grounded summarisation.",
    "hf_repo": "ellamind/sui-1-24b",
    "hf_created": "2026-01-14",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "",
    "family_notes": "",
    "repo_verified_org": false,
@@ -9581,6 +9185,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20261008160329/https://arxiv.org/abs/2601.08472",
      "note": "rubric (data_downloadable=all): \"The training dataset is available at ellamind/summarizer_dataset_v1 on the HuggingFace Hub.\""
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://arxiv.org/abs/2601.08472",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261008160329/https://arxiv.org/abs/2601.08472",
+     "note": "rubric (data_downloadable=part): \"The training dataset is available at ellamind/summarizer_dataset_v1 on the HuggingFace Hub.\""
     }
    ],
    "mlx_builds": [],
@@ -9601,8 +9215,460 @@
     }
    ],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": ""
+  },
+  {
+   "tier": "B",
+   "id": "velvet-14b",
+   "name": "Velvet 14B",
+   "family": "Velvet",
+   "provider": "Almawave",
+   "provider_country": "IT",
+   "region": "eu",
+   "control": "independent",
+   "majority_owner": "",
+   "origin": "scratch",
+   "base_model": "",
+   "license_class": "osi",
+   "license": "apache-2.0",
+   "data": "undisclosed",
+   "compute": "eu",
+   "ai_act_summary": "no",
+   "cop_signatory": "yes",
+   "modalities": "text",
+   "params_b": "14.1",
+   "context": "",
+   "model_type": "mistral",
+   "size_4bit_gb": "7.9",
+   "size_8bit_gb": "15.0",
+   "mlx_vlm": "not checked",
+   "mlx_vlm_detail": "config.json: HTTP 403 (gated?)",
+   "mlx_vlm_checked": "2026-10-17 0.7.8",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-29 v0.8.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
+   "mlx_build_verified": "",
+   "cache_kind": "",
+   "cache_kib_per_token": "",
+   "cache_gib_8k": "",
+   "cache_gib_32k": "",
+   "cache_gib_128k": "",
+   "teacher_origin": "unknown",
+   "teachers_list": "",
+   "recipe": "weights",
+   "terms_can_change": "no",
+   "languages": "de;en;es;fr;it;pt",
+   "eu_languages": 6,
+   "languages_basis": "supported",
+   "training_hardware": "nvidia",
+   "flags": "",
+   "hbd_involvement": "",
+   "notes": "Dense 14B, 128K context (trained on 4-16k sequences). Gated with automatic approval (privacy notice only). The model card adds usage restrictions (sensitive healthcare, financial or government data only with safeguards); the licence itself is plain Apache-2.0.",
+   "hf_repo": "AlmawaveLabs/Velvet-14B",
+   "hf_created": "2025-01-31",
+   "last_reviewed": "2026-10-29",
+   "provider_notes": "Member of the Almaviva Group (Italy). Since September 2026 the Velvet models sit in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent.",
+   "family_notes": "Trained from scratch on Leonardo (CINECA, Bologna): over 4T tokens in six languages, about 23% Italian, plus 400B code tokens; pretraining data described only as publicly available sources. The newer Velvet 25B (2025-10, all 24 EU languages) is not released as open weights.",
+   "repo_verified_org": true,
+   "sources": [
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "Almawave listed (list last updated 2026-10-07)"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20250812000955/https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "note": "'Almawave, an Italian enterprise listed on the Euronext Growth Milan (Ticker: AIW) and a member of the Almaviva Group'"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": ""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "'Velvet is an Italian family of large language models, developed from scratch'"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "license: apache-2.0; 'Velvet-14B and Velvet-2B are made available under the Apache 2.0 license'"
+    },
+    {
+     "scope": "family",
+     "field": "terms_can_change",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "plain Apache-2.0; the card's usage restrictions are not licence terms"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "'pretrained on over 4 trillion tokens of data from publicly available sources'; web text and code, no datasets named"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "'trained on the HPC Leonardo infrastructure hosted by CINECA'"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20250812000955/https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "note": "'trained on the Leonardo supercomputer managed by Cineca'"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://leonardo-supercomputer.cineca.eu/hpc-system/",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140530/https://leonardo-supercomputer.cineca.eu/hpc-system/",
+     "note": "Leonardo Booster: nodes with four NVIDIA A100 64GB GPUs; the card names Leonardo as the training system"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "'Velvet-14B has been trained on Italian, English, German, Spanish, French, Portuguese' (Supported Languages)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher_status",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "SFT on 'internally collected synthetic data' and over 2M human-annotated and synthetic examples; generating models not named"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "weights only; no training code, data or intermediate checkpoints"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261017140252/https://huggingface.co/AlmawaveLabs/Velvet-14B",
+     "note": "not stated (no AI Act training summary in the card, the repo or the release announcement)"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://www.almawavelabs.com/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029171505/https://www.almawavelabs.com/",
+     "note": "'Almawave Labs S.r.l Single-shareholder company' ... 'Company subject to the Management and Coordination of Almaviva S.p.A.'"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://www.corrierecomunicazioni.it/digital-economy/intelligenza-artificiale-sovrana-almaviva-lancia-almawave-labs/",
+     "issuer": "press",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261030190853/https://www.corrierecomunicazioni.it/digital-economy/intelligenza-artificiale-sovrana-almaviva-lancia-almawave-labs/",
+     "note": "2026-09-09: newco Almawave Labs with the Velvet models; 'La precedente società viene incorporata nella capogruppo'"
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": null,
+   "teachers": [],
+   "max_context": null,
+   "last_changed": "2026-10-30",
+   "first_listed": "2026-10-17"
+  },
+  {
+   "tier": "B",
+   "id": "velvet2-3b",
+   "name": "Velvet2 3B",
+   "family": "Velvet2",
+   "provider": "Almawave",
+   "provider_country": "IT",
+   "region": "eu",
+   "control": "independent",
+   "majority_owner": "",
+   "origin": "scratch",
+   "base_model": "",
+   "license_class": "osi",
+   "license": "apache-2.0",
+   "data": "undisclosed",
+   "compute": "eu",
+   "ai_act_summary": "no",
+   "cop_signatory": "yes",
+   "modalities": "text",
+   "params_b": "3.9",
+   "context": "",
+   "model_type": "mistral",
+   "size_4bit_gb": "2.2",
+   "size_8bit_gb": "4.1",
+   "mlx_vlm": "not checked",
+   "mlx_vlm_detail": "config.json: HTTP 403 (gated?)",
+   "mlx_vlm_checked": "2026-10-29 0.7.11@fdd94f39",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "supported",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "2026-10-29 v0.8.0",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
+   "mlx_build_verified": "",
+   "cache_kind": "",
+   "cache_kib_per_token": "",
+   "cache_gib_8k": "",
+   "cache_gib_32k": "",
+   "cache_gib_128k": "",
+   "teacher_origin": "unknown",
+   "teachers_list": "",
+   "recipe": "weights",
+   "terms_can_change": "no",
+   "languages": "de;en;es;fr;it;pt",
+   "eu_languages": 6,
+   "languages_basis": "supported",
+   "training_hardware": "nvidia",
+   "flags": "",
+   "hbd_involvement": "",
+   "notes": "Dense 3B, 32K context, extendable to 128K with YaRN. Gated with automatic approval (privacy notice only). The card carries the same usage restrictions as Velvet 14B; the licence itself is plain Apache-2.0.",
+   "hf_repo": "AlmawaveLabs/Velvet2-3B",
+   "hf_created": "2026-10-15",
+   "last_reviewed": "2026-10-29",
+   "provider_notes": "Member of the Almaviva Group (Italy). Since September 2026 the Velvet models sit in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent.",
+   "family_notes": "Second Velvet generation, trained from scratch on Leonardo (CINECA, Bologna); the 3B text model on about 5T tokens 'collected from publicly available sources' (cutoff Dec 2025 to Jan 2026), no datasets named; reuses the Velvet-14B tokenizer, not its weights. Vision (SigLIP2 encoder) and Speech (Whisper Large v3 encoder) variants build on Velvet2-3B. No release announcement yet; quotes from the public model page (repo files gated).",
+   "repo_verified_org": true,
+   "sources": [
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "Almawave listed (list last updated 2026-10-07)"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-17",
+     "archive_url": "https://web.archive.org/web/20250812000955/https://www.almaviva.it/dam/jcr:2b15d172-55d8-4beb-8e93-80c9e1555efa/PR_ENG_Almawave%20presents%20Velvet_25.1.29.pdf",
+     "note": "'Almawave, an Italian enterprise listed on the Euronext Growth Milan (Ticker: AIW) and a member of the Almaviva Group'"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "'Developer: Almawave Labs'; published in the AlmawaveLabs organisation"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "'Trained from scratch on approximately 5 trillion tokens of carefully curated public data'"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "license: apache-2.0; 'License: Apache License 2.0'"
+    },
+    {
+     "scope": "family",
+     "field": "terms_can_change",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "plain Apache-2.0; the card's usage restrictions are not licence terms"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "'pretrained on approximately 5 trillion tokens collected from publicly available sources'; no datasets named"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "'trained on the Leonardo supercomputing infrastructure operated by CINECA'"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://leonardo-supercomputer.cineca.eu/hpc-system/",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261017140530/https://leonardo-supercomputer.cineca.eu/hpc-system/",
+     "note": "Leonardo Booster: nodes with four NVIDIA A100 64GB GPUs; the card names Leonardo as the training system"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "'Languages: Italian, English, Spanish, Portuguese, French, German'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher_status",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "'internally generated synthetic datasets'; generating models not named"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "weights only; no training code, data or intermediate checkpoints"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029170220/https://huggingface.co/AlmawaveLabs/Velvet2-3B",
+     "note": "not stated (no AI Act training summary in the card)"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://www.almawavelabs.com/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029171505/https://www.almawavelabs.com/",
+     "note": "'Almawave Labs S.r.l Single-shareholder company' ... 'Company subject to the Management and Coordination of Almaviva S.p.A.'"
+    },
+    {
+     "scope": "provider",
+     "field": "notes",
+     "url": "https://www.corrierecomunicazioni.it/digital-economy/intelligenza-artificiale-sovrana-almaviva-lancia-almawave-labs/",
+     "issuer": "press",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261030190853/https://www.corrierecomunicazioni.it/digital-economy/intelligenza-artificiale-sovrana-almaviva-lancia-almawave-labs/",
+     "note": "2026-09-09: newco Almawave Labs with the Velvet models; 'La precedente società viene incorporata nella capogruppo'"
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": null,
+   "teachers": [],
+   "max_context": null,
+   "last_changed": "2026-10-30",
+   "first_listed": "2026-10-29"
   },
   {
    "tier": "B",
@@ -9612,7 +9678,7 @@
    "provider": "Silo AI (AMD)",
    "provider_country": "FI",
    "region": "eu",
-   "control": "acquired-non-eu",
+   "control": "acquired-non-europe",
    "majority_owner": "AMD (US)",
    "origin": "scratch",
    "base_model": "",
@@ -9656,7 +9722,7 @@
    "eu_languages": 4,
    "languages_basis": "supported",
    "training_hardware": "amd",
-   "flags": "acquired non-EU",
+   "flags": "acquired non-Europe",
    "hbd_involvement": "",
    "notes": "4k context. Released before Silo AI was acquired by AMD (US) in August 2024.",
    "hf_repo": "LumiOpen/Viking-33B",
@@ -9812,7 +9878,7 @@
    },
    "teachers": [],
    "max_context": 4096,
-   "last_changed": "2026-10-08",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -10155,7 +10221,7 @@
    "training_hardware": "unknown",
    "flags": "custom licence; non-European base model",
    "hbd_involvement": "",
-   "notes": "Norway is not in the EU. nb-license-1.0.",
+   "notes": "Norway is in the EEA, which the scorecard counts as EU. nb-license-1.0.",
    "hf_repo": "NbAiLab/borealis2-26b-a4b-preview",
    "hf_created": "2026-08-21",
    "last_reviewed": "2026-10-29",
@@ -11218,7 +11284,7 @@
    "base_model": "Llama 3.1 70B Instruct (Meta, US)",
    "license_class": "custom",
    "license": "other",
-   "data": "open",
+   "data": "documented",
    "compute": "eu",
    "ai_act_summary": "unknown",
    "cop_signatory": "no",
@@ -11261,7 +11327,7 @@
    "notes": "Basque. Original BF16 repo; an FP8 variant exists (HiTZ/Latxa-Llama-3.1-70B-Instruct-v2-FP8). Released 2026-06-15.",
    "hf_repo": "HiTZ/Latxa-Llama-3.1-70B-Instruct-v2",
    "hf_created": "2026-06-15",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "Public university research centre (HiTZ and IXA group).",
    "family_notes": "Further trained on Latxa Corpus v2 (public on HF) starting from Llama-3.1-70B-Instruct; trained on Leonardo (CINECA, EuroHPC), 256 A100. Card: further training details to follow in a paper. The EMNLP 2025 paper (v1) used synthetic instructions sampled from the Llama 3.1 Instruct backbone; not confirmed for v2. Llama 3.1 Community License inherited.",
    "repo_verified_org": false,
@@ -11415,6 +11481,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20261011045703/https://huggingface.co/datasets/HiTZ/latxa-corpus-v2",
      "note": "rubric (data_downloadable=nearly all): \"this repository reflects a curated version of the original dataset. ... Some data points have been removed to ensure permission compliance.\""
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/datasets/HiTZ/latxa-corpus-v2",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261011045703/https://huggingface.co/datasets/HiTZ/latxa-corpus-v2",
+     "note": "rubric (data_downloadable=part): \"this repository reflects a curated version of the original dataset. ... Some data points have been removed to ensure permission compliance.\""
     }
    ],
    "mlx_builds": [],
@@ -11461,7 +11537,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -12901,7 +12977,7 @@
    "provider": "Silo AI (AMD)",
    "provider_country": "FI",
    "region": "eu",
-   "control": "acquired-non-eu",
+   "control": "acquired-non-europe",
    "majority_owner": "AMD (US)",
    "origin": "continued-foreign",
    "base_model": "Llama 3.1 8B (Meta, US)",
@@ -12945,7 +13021,7 @@
    "eu_languages": 2,
    "languages_basis": "supported",
    "training_hardware": "amd",
-   "flags": "acquired non-EU; custom licence; non-European base model",
+   "flags": "acquired non-Europe; custom licence; non-European base model",
    "hbd_involvement": "",
    "notes": "Llama 3.3 licence inherited.",
    "hf_repo": "LumiOpen/Llama-Poro-2-8B-Instruct",
@@ -13222,7 +13298,7 @@
     }
    ],
    "max_context": 8192,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-30",
    "first_listed": ""
   },
   {
@@ -13399,7 +13475,7 @@
    "provider": "Fastweb (Fastweb + Vodafone)",
    "provider_country": "IT",
    "region": "eu",
-   "control": "acquired-non-eu",
+   "control": "acquired-europe",
    "majority_owner": "Swisscom (CH)",
    "origin": "scratch",
    "base_model": "",
@@ -13443,7 +13519,7 @@
    "eu_languages": 2,
    "languages_basis": "supported",
    "training_hardware": "nvidia",
-   "flags": "acquired non-EU",
+   "flags": "owned outside the EU",
    "hbd_involvement": "",
    "notes": "Non-commercial licence; commercial use needs a separate paid licence. The licence also forbids using the model to develop or train other LLMs. Gated. 16K context. The AI Act summary lists FastwebMIIA-7B (2025-05-29) and FastwebMIIA-7B-2603 (2026-03-23, function calling and contextual QA).",
    "hf_repo": "Fastweb/FastwebMIIA-7B",
@@ -13637,7 +13713,7 @@
     }
    ],
    "max_context": null,
-   "last_changed": "2026-10-17",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-17"
   },
   {
@@ -15224,7 +15300,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261013093213/https://www.tii.ae/about-us",
      "note": "We are part of Abu Dhabi Government's Advanced Technology Research Council"
     },
     {
@@ -15418,7 +15494,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Falcon-H1-7B-Base (TII)",
    "license_class": "custom",
    "license": "falcon-llm-license",
@@ -15465,7 +15541,7 @@
    "notes": "TII's newest general LLM release (Jan 2026); reasoning model, 256K context.",
    "hf_repo": "tiiuae/Falcon-H1R-7B",
    "hf_created": "2025-10-29",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "Government research institute: part of Abu Dhabi Government's Advanced Technology Research Council (ATRC).",
    "family_notes": "Reasoning model: cold-start SFT on long reasoning traces plus GRPO RL on Falcon-H1-7B-Base. Report discusses teacher models for traces but does not name them.",
    "repo_verified_org": false,
@@ -15487,7 +15563,7 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-10",
-     "archive_url": "",
+     "archive_url": "https://web.archive.org/web/20261013093213/https://www.tii.ae/about-us",
      "note": "We are part of Abu Dhabi Government's Advanced Technology Research Council"
     },
     {
@@ -15589,6 +15665,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261002134257/https://arxiv.org/abs/2601.02346",
      "note": "\"mixing reasoning traces generated from different teacher models\" - teachers not named"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/abs/2601.02346",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261002134257/https://arxiv.org/abs/2601.02346",
+     "note": "rubric (init_random=no): \"Base Model Falcon-H1-7B-Base Parallelism Strategy FSDP + Context Parallelism (CP=2)\""
     }
    ],
    "mlx_builds": [],
@@ -15668,7 +15754,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -16281,7 +16367,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "GLM-5.2 base model",
    "license_class": "custom",
    "license": "glm-5.3",
@@ -16328,7 +16414,7 @@
    "notes": "753B-A40B MoE; weights held back two weeks for safety evaluation (press). BF16 variant in zai-org/GLM-5.3-BF16.",
    "hf_repo": "zai-org/GLM-5.3",
    "hf_created": "2026-08-25",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "Tsinghua spin-off, listed in Hong Kong since 8 Jan 2026 (2513.HK); investors include Alibaba, Tencent, Ant Group and Saudi Aramco Prosperity7. On the US Entity List since Jan 2025 (press).",
    "family_notes": "Same base model as GLM-5.2; gains come from post-training only. GLM-5.3 License replaces the MIT licence of GLM-5.2: MaaS operators above USD 10B yearly revenue must pass a Z.ai security review whose scope Z.ai determines. Post-training data and teachers not documented.",
    "repo_verified_org": false,
@@ -16492,6 +16578,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261003161030/https://cdn.bigmodel.cn/static/glm5.3/The%20Public%20Summary%20of%20Training%20Content%20for%20the%20GLM5%20Family.pdf",
      "note": "Versioned model name(s): The GLM-5 family — GLM-5, GLM-5.1, GLM-5.2 and GLM-5.3"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/zai-org/GLM-5.3",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261011053604/https://huggingface.co/zai-org/GLM-5.3",
+     "note": "rubric (init_random=no): \"GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training.\""
     }
    ],
    "mlx_builds": [],
@@ -16571,7 +16667,7 @@
    },
    "teachers": [],
    "max_context": 1048576,
-   "last_changed": "2026-10-13",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -16921,7 +17017,7 @@
    "eu_languages": "",
    "languages_basis": "unknown",
    "training_hardware": "nvidia",
-   "flags": "use policy on redistribution",
+   "flags": "binding use policy",
    "hbd_involvement": "",
    "notes": "MoE 117B / 5.1B active, MXFP4 MoE weights; harmony chat format required.",
    "hf_repo": "openai/gpt-oss-120b",
@@ -17166,7 +17262,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -17221,7 +17317,7 @@
    "eu_languages": "",
    "languages_basis": "unknown",
    "training_hardware": "nvidia",
-   "flags": "use policy on redistribution",
+   "flags": "binding use policy",
    "hbd_involvement": "",
    "notes": "MoE 21B / 3.6B active, MXFP4 MoE weights.",
    "hf_repo": "openai/gpt-oss-20b",
@@ -17466,7 +17562,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -17822,7 +17918,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Granite-4.1-Base (3B/8B/30B)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -17869,7 +17965,7 @@
    "notes": "Released 2026-08-25; dense 30B reasoning/thinking model, 128K context. IBM also publishes its own MLX builds.",
    "hf_repo": "ibm-granite/granite-4.2-30b",
    "hf_created": "2026-08-07",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "",
    "family_notes": "Apache 2.0. Post-trained (SFT + GRPO RL with NeMo RL/Gym) from Granite 4.1 base (from scratch, ~15T tokens, CommonCrawl ~59%). Machine-readable dataset disclosures (AIBOM JSON) on GitHub; many post-training sets are NVIDIA Nemotron datasets. Trained on NVIDIA GB200 NVL72 at CoreWeave (location not stated). AIAL lists Granite 4.2 AI Act summary as missing.",
    "repo_verified_org": false,
@@ -17993,6 +18089,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "not stated (internal synthetic data, generative reward model unnamed)"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
+     "note": "rubric (init_random=no): \"Granite-4.2-30B is post-trained from [Granite-4.1-30B-Base]\""
     }
    ],
    "mlx_builds": [],
@@ -18094,7 +18200,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -18107,7 +18213,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Granite-4.1-Base (3B/8B/30B)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -18154,7 +18260,7 @@
    "notes": "",
    "hf_repo": "ibm-granite/granite-4.2-8b",
    "hf_created": "2026-08-07",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "",
    "family_notes": "Apache 2.0. Post-trained (SFT + GRPO RL with NeMo RL/Gym) from Granite 4.1 base (from scratch, ~15T tokens, CommonCrawl ~59%). Machine-readable dataset disclosures (AIBOM JSON) on GitHub; many post-training sets are NVIDIA Nemotron datasets. Trained on NVIDIA GB200 NVL72 at CoreWeave (location not stated). AIAL lists Granite 4.2 AI Act summary as missing.",
    "repo_verified_org": false,
@@ -18278,6 +18384,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
      "note": "not stated (internal synthetic data, generative reward model unnamed)"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/ibm-granite/granite-4.2-30b",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261011050739/https://huggingface.co/ibm-granite/granite-4.2-30b",
+     "note": "rubric (init_random=no): \"Granite-4.2-30B is post-trained from [Granite-4.1-30B-Base]\""
     }
    ],
    "mlx_builds": [],
@@ -18379,7 +18495,7 @@
    },
    "teachers": [],
    "max_context": 131072,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -19730,11 +19846,11 @@
      "scope": "provider",
      "field": "control",
      "url": "https://www.prnewswire.com/news-releases/abu-dhabi-announces-the-establishment-of-the-worlds-first-graduate-level-ai-university-300939660.html",
-     "issuer": "press",
+     "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011055712/https://www.prnewswire.com/news-releases/abu-dhabi-announces-the-establishment-of-the-worlds-first-graduate-level-ai-university-300939660.html",
-     "note": "Abu Dhabi announces establishment of graduate-level AI university (MBZUAI), Oct 2019"
+     "note": "Abu Dhabi announces establishment of graduate-level AI university (MBZUAI), Oct 2019 [press release of the Abu Dhabi Government Media Office]"
     },
     {
      "scope": "provider",
@@ -19991,11 +20107,11 @@
      "scope": "provider",
      "field": "control",
      "url": "https://www.prnewswire.com/news-releases/abu-dhabi-announces-the-establishment-of-the-worlds-first-graduate-level-ai-university-300939660.html",
-     "issuer": "press",
+     "issuer": "official",
      "checked": "yes",
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011055712/https://www.prnewswire.com/news-releases/abu-dhabi-announces-the-establishment-of-the-worlds-first-graduate-level-ai-university-300939660.html",
-     "note": "Abu Dhabi announces establishment of graduate-level AI university (MBZUAI), Oct 2019"
+     "note": "Abu Dhabi announces establishment of graduate-level AI university (MBZUAI), Oct 2019 [press release of the Abu Dhabi Government Media Office]"
     },
     {
      "scope": "provider",
@@ -20512,7 +20628,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "LLM-jp-4 base (33B, 32B-A3B)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -20559,7 +20675,7 @@
    "notes": "MoE 32B total / 3.8B active.",
    "hf_repo": "llm-jp/llm-jp-4.1-32b-a3b-thinking",
    "hf_created": "2026-09-16",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "Public research institute; models developed by NII's Research and Development Center for Large Language Models (LLMC). Trained on AIST's ABCI 3.0.",
    "family_notes": "Pre-training and mid-training 11.7T tokens; most of the corpus is published (some parts withheld for licensing reasons); SFT/DPO data published. SFT responses were regenerated with gpt-oss-120b. Trained on ABCI 3.0 (AIST, Japan).",
    "repo_verified_org": false,
@@ -20723,6 +20839,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20261029201849/https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
      "note": "rubric (init_random=no): \"今回，新たに「LLM-jp-4.1」シリーズを公開します．LLM-jp-4.1 では，LLM-jp-4 シリーズの事後学習を改善しており，STEM 分野を中心とした性能向上や Tool Calling 機能の追加などが主な変更点です．\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261029201849/https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
+     "note": "rubric (init_random=no): \"今回，新たに「LLM-jp-4.1」シリーズを公開します．LLM-jp-4.1 では，LLM-jp-4 シリーズの事後学習を改善しており，STEM 分野を中心とした性能向上や Tool Calling 機能の追加などが主な変更点です．\""
     }
    ],
    "mlx_builds": [],
@@ -20764,7 +20890,7 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -20777,7 +20903,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "LLM-jp-4 base (33B, 32B-A3B)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -20824,7 +20950,7 @@
    "notes": "Dense 33B; Harmony-style chat template.",
    "hf_repo": "llm-jp/llm-jp-4.1-33b-thinking",
    "hf_created": "2026-09-16",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "Public research institute; models developed by NII's Research and Development Center for Large Language Models (LLMC). Trained on AIST's ABCI 3.0.",
    "family_notes": "Pre-training and mid-training 11.7T tokens; most of the corpus is published (some parts withheld for licensing reasons); SFT/DPO data published. SFT responses were regenerated with gpt-oss-120b. Trained on ABCI 3.0 (AIST, Japan).",
    "repo_verified_org": false,
@@ -20986,6 +21112,16 @@
      "issuer": "provider",
      "checked": "yes",
      "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261029201849/https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
+     "note": "rubric (init_random=no): \"今回，新たに「LLM-jp-4.1」シリーズを公開します．LLM-jp-4.1 では，LLM-jp-4 シリーズの事後学習を改善しており，STEM 分野を中心とした性能向上や Tool Calling 機能の追加などが主な変更点です．\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
      "archive_url": "https://web.archive.org/web/20261029201849/https://llm-jp.nii.ac.jp/blog/llm-jp-4-1/",
      "note": "rubric (init_random=no): \"今回，新たに「LLM-jp-4.1」シリーズを公開します．LLM-jp-4.1 では，LLM-jp-4 シリーズの事後学習を改善しており，STEM 分野を中心とした性能向上や Tool Calling 機能の追加などが主な変更点です．\""
     }
@@ -21041,7 +21177,7 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -23377,7 +23513,7 @@
    "notes": "",
    "hf_repo": "allenai/Olmo-3-7B-Instruct",
    "hf_created": "2025-11-19",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "Non-profit research institute.",
    "family_notes": "Apache 2.0; Responsible Use Guidelines referenced as intent, not licence condition. Dolma 3 (pre/mid/long-context) and Dolci (post-training) released with code (OLMo-core, Open Instruct) and intermediate checkpoints. 1024 H100 cluster. Synthetic data from GPT-4.1, o4-mini, QwQ-32B, DeepSeek R1, Qwen3.",
    "repo_verified_org": true,
@@ -23581,6 +23717,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20260930153141/https://arxiv.org/abs/2512.13961",
      "note": "Olmo 3 report: PII classification of olmOCR science PDFs"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/pdf/2512.13961",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261029201344/https://arxiv.org/pdf/2512.13961",
+     "note": "rubric (init_random=no): \"We train the SFT stage of Olmo 3 Instruct starting from the Olmo 3 Think SFT model\""
     }
    ],
    "mlx_builds": [],
@@ -23771,7 +23917,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Olmo 3 32B (Olmo-3-1125-32B base, via Olmo 3 32B Think SFT)",
    "license_class": "osi",
    "license": "apache-2.0",
@@ -23818,7 +23964,7 @@
    "notes": "Released 2025-12; newest Olmo instruct LLM on the Hub (Olmo-Hybrid 7B is a research variant).",
    "hf_repo": "allenai/Olmo-3.1-32B-Instruct",
    "hf_created": "2025-12-10",
-   "last_reviewed": "2026-10-29",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "Non-profit research institute.",
    "family_notes": "Apache 2.0; Responsible Use Guidelines referenced as intent, not licence condition. Dolma 3 (pre/mid/long-context) and Dolci (post-training) released with code (OLMo-core, Open Instruct) and intermediate checkpoints. 1024 H100 cluster. Synthetic data from GPT-4.1, o4-mini, QwQ-32B, DeepSeek R1, Qwen3.",
    "repo_verified_org": true,
@@ -24032,6 +24178,16 @@
      "retrieved": "2026-10-29",
      "archive_url": "https://web.archive.org/web/20261029201344/https://arxiv.org/pdf/2512.13961",
      "note": "rubric (init_random=no): \"We train the SFT stage of Olmo 3 Instruct starting from the Olmo 3 Think SFT model\""
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/pdf/2512.13961",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261029201344/https://arxiv.org/pdf/2512.13961",
+     "note": "rubric (init_random=no): \"We train the SFT stage of Olmo 3 Instruct starting from the Olmo 3 Think SFT model\""
     }
    ],
    "mlx_builds": [],
@@ -24209,7 +24365,7 @@
     }
    ],
    "max_context": 65536,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -24222,7 +24378,7 @@
    "region": "non-europe",
    "control": "independent",
    "majority_owner": "",
-   "origin": "continued-own",
+   "origin": "scratch",
    "base_model": "Phi-4-Reasoning (+ SigLIP-2 vision encoder)",
    "license_class": "osi",
    "license": "mit",
@@ -24269,7 +24425,7 @@
    "notes": "Released 2026-03-04; 16K context. Newest Phi on the Hub as of 2026-10.",
    "hf_repo": "microsoft/Phi-4-reasoning-vision-15B",
    "hf_created": "2026-01-23",
-   "last_reviewed": "2026-10-10",
+   "last_reviewed": "2026-10-30",
    "provider_notes": "EU AI Act summaries for Phi are issued by Microsoft Ireland Operations Limited.",
    "family_notes": "MIT. SFT of Phi-4-Reasoning (itself from Phi-4) with Google SigLIP-2 vision encoder (mid-fusion). 240 B200 for 4 days; Phi-4 base pre-trained on 1920 H100. DATACARD.md is the EU AI Act public summary (Microsoft Ireland). Primarily English; not intended for multilingual use.",
    "repo_verified_org": true,
@@ -24393,6 +24549,16 @@
      "retrieved": "2026-10-10",
      "archive_url": "https://web.archive.org/web/20261011051430/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B/blob/main/DATACARD.md",
      "note": "2.5.3 models used to generate synthetic data: Open AI GPT-4o and o4-mini"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-30",
+     "archive_url": "https://web.archive.org/web/20261011051321/https://huggingface.co/microsoft/Phi-4-reasoning-vision-15B",
+     "note": "rubric (init_random=no): \"Phi-4-Reasoning-Vision-15B is a compact open-weight multimodal reasoning model built on the Phi-4-Reasoning language model backbone and the SigLIP-2 vision encoder\""
     }
    ],
    "mlx_builds": [],
@@ -24509,7 +24675,7 @@
     }
    ],
    "max_context": 32768,
-   "last_changed": "2026-10-10",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -25269,8 +25435,8 @@
    "gguf_build": "unsloth/Qwen3.8-27B-GGUF",
    "gguf_build_publisher": "curated",
    "gguf_builds": 43,
-   "template_check": "suspicious",
-   "template_check_detail": "1 suspicious, 2 differs, 3 not checked, 7 equivalent, 30 identical",
+   "template_check": "needs review",
+   "template_check_detail": "1 needs review, 2 differs, 3 not checked, 7 equivalent, 30 identical",
    "mlx_build_verified": "",
    "cache_kind": "hybrid: 16 full + 48 linear-attention layers",
    "cache_kib_per_token": "64.0",
@@ -25525,7 +25691,7 @@
    },
    "teachers": [],
    "max_context": 262144,
-   "last_changed": "2026-10-29",
+   "last_changed": "2026-10-30",
    "first_listed": "2026-10-10"
   },
   {
@@ -26908,6 +27074,286 @@
  ],
  "changes": [
   {
+   "date": "2026-10-30",
+   "model": "viking-33b",
+   "field": "flags",
+   "old": "acquired non-EU",
+   "new": "acquired non-Europe",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "viking-33b",
+   "field": "control",
+   "old": "acquired-non-eu",
+   "new": "acquired-non-europe",
+   "reason": "Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "velvet2-3b",
+   "field": "tier",
+   "old": "A",
+   "new": "B",
+   "reason": "Category A now requires training data at least documented (decided 2026-10-30, external review); Velvet discloses only \"publicly available sources\""
+  },
+  {
+   "date": "2026-10-30",
+   "model": "velvet-14b",
+   "field": "tier",
+   "old": "A",
+   "new": "B",
+   "reason": "Category A now requires training data at least documented (decided 2026-10-30, external review); Velvet discloses only \"publicly available sources\""
+  },
+  {
+   "date": "2026-10-30",
+   "model": "sui-1-24b",
+   "field": "data",
+   "old": "open",
+   "new": "documented",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "qwen3.8-27b",
+   "field": "template_check",
+   "old": "suspicious",
+   "new": "needs review",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "poro-2-8b",
+   "field": "flags",
+   "old": "acquired non-EU; custom licence; non-European base model",
+   "new": "acquired non-Europe; custom licence; non-European base model",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "poro-2-8b",
+   "field": "control",
+   "old": "acquired-non-eu",
+   "new": "acquired-non-europe",
+   "reason": "Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "phi-4-reasoning-vision-15b",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "olmo-3.1-32b-instruct",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "oellm-9b-256k-sft",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "magistral-small-2509",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "luciole-8b",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "luciole-23b-thinking",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "luciole-23b",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "lucie-7b",
+   "field": "data",
+   "old": "documented",
+   "new": "open",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "lucie-7b",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "llm-jp-4.1-33b-thinking",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "llm-jp-4.1-32b-a3b-thinking",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "latxa-3.1-70b-v2",
+   "field": "data",
+   "old": "open",
+   "new": "documented",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "kolibri-1",
+   "field": "flags",
+   "old": "merger pending non-EU; our own work involved",
+   "new": "merger pending non-Europe; our own work involved",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "kolibri-1",
+   "field": "control",
+   "old": "merger-pending-non-eu",
+   "new": "merger-pending-non-europe",
+   "reason": "Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "helium-1-2b",
+   "field": "flags",
+   "old": "use policy on redistribution",
+   "new": "binding use policy; use policy can change (third party)",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "granite-4.2-8b",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "granite-4.2-30b",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "gpt-oss-20b",
+   "field": "flags",
+   "old": "use policy on redistribution",
+   "new": "binding use policy",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "gpt-oss-120b",
+   "field": "flags",
+   "old": "use policy on redistribution",
+   "new": "binding use policy",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "glm-5.3",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "fastwebmiia-7b",
+   "field": "flags",
+   "old": "acquired non-EU",
+   "new": "owned outside the EU",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "fastwebmiia-7b",
+   "field": "control",
+   "old": "acquired-non-eu",
+   "new": "acquired-europe",
+   "reason": "Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "falcon-h1r-7b",
+   "field": "origin",
+   "old": "continued-own",
+   "new": "scratch",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "apertus-1.5-8b",
+   "field": "mlx_build_verified",
+   "old": "yes",
+   "new": "",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "apertus-1.5-8b",
+   "field": "template_check",
+   "old": "identical",
+   "new": "",
+   "reason": "Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "apertus-1.5-8b",
+   "field": "flags",
+   "old": "outside the EU; use policy on redistribution; our own work involved",
+   "new": "outside the EU; binding use policy; use policy can change; our own work involved",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
+   "date": "2026-10-30",
+   "model": "apertus-1.5-70b",
+   "field": "flags",
+   "old": "outside the EU; use policy on redistribution",
+   "new": "outside the EU; binding use policy; use policy can change",
+   "reason": "Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+  },
+  {
    "date": "2026-10-29",
    "model": "luciole-8b",
    "field": "base_model",
@@ -27425,286 +27871,6 @@
    "field": "params_b",
    "old": "0.0",
    "new": "12.2",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "mistral-small-3.2",
-   "field": "base_model",
-   "old": "",
-   "new": "Mistral Small 3.1 24B Instruct 2503",
-   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
-  },
-  {
-   "date": "2026-10-29",
-   "model": "ministral-3-14b",
-   "field": "base_model",
-   "old": "",
-   "new": "Mistral Small 3.1 Base",
-   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
-  },
-  {
-   "date": "2026-10-29",
-   "model": "luciole-23b-thinking",
-   "field": "template_check",
-   "old": "",
-   "new": "equivalent",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "kolibri-1",
-   "field": "template_check",
-   "old": "identical",
-   "new": "equivalent",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "kolibri-1",
-   "field": "llama_cpp",
-   "old": "fork only",
-   "new": "supported",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "granite-4.2-8b",
-   "field": "template_check",
-   "old": "identical",
-   "new": "not checked",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "granite-4.2-30b",
-   "field": "template_check",
-   "old": "identical",
-   "new": "not checked",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "gpt-oss-swallow-120b-rl",
-   "field": "template_check",
-   "old": "identical",
-   "new": "not checked",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "glm-5.3-flash",
-   "field": "template_check",
-   "old": "equivalent",
-   "new": "not checked",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "deepseek-v4.1-flash",
-   "field": "llama_cpp",
-   "old": "fork only",
-   "new": "supported",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "amalia-9b-0626",
-   "field": "ai_act_summary",
-   "old": "unknown",
-   "new": "no",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-17",
-   "model": "velvet-14b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-17",
-   "model": "fastwebmiia-7b",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-17",
-   "model": "devstral-small-2",
-   "field": "template_check",
-   "old": "suspicious",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-17",
-   "model": "qwen3.8-27b",
-   "field": "template_check",
-   "old": "suspicious",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-17",
-   "model": "deepseek-v4.1-flash",
-   "field": "template_check",
-   "old": "suspicious",
-   "new": "differs",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "luciole-23b-thinking",
-   "field": "mlx_vlm",
-   "old": "not checked",
-   "new": "loads",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "command-a-plus",
-   "field": "mlx_vlm",
-   "old": "not checked",
-   "new": "fails",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "kolibri-1",
-   "field": "mlx_vlm",
-   "old": "unsupported",
-   "new": "loads",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "apertus-1.5-8b",
-   "field": "recipe",
-   "old": "code+data",
-   "new": "full",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "apertus-1.5-70b",
-   "field": "recipe",
-   "old": "code+data",
-   "new": "full",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "k2-horizon-375b",
-   "field": "llama_cpp",
-   "old": "fork only",
-   "new": "supported",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "k2-horizon-32b",
-   "field": "llama_cpp",
-   "old": "fork only",
-   "new": "supported",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "command-a-plus",
-   "field": "llama_cpp",
-   "old": "fork only",
-   "new": "supported",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "bielik-11b-v3",
-   "field": "llama_cpp",
-   "old": "not checked",
-   "new": "supported",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "luciole-23b-thinking",
-   "field": "llama_cpp",
-   "old": "not checked",
-   "new": "supported",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-16",
-   "model": "luciole-23b-thinking",
-   "field": "model",
-   "old": "",
-   "new": "listed",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "qwen3.8-27b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "suspicious",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "qwen3-swallow-32b-rl",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "qwen-sea-lion-v4.5-27b-it",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "olmo-3.1-32b-instruct",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "equivalent",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "nemotron-sea-lion-v4.8-120b",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "llm-jp-4.1-33b-thinking",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "llama-krikri-8b-instruct-v1.5",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-13",
-   "model": "llama-3.1-estllm-70b-instruct-0826",
-   "field": "template_check",
-   "old": "not checked",
-   "new": "identical",
    "reason": ""
   }
  ]

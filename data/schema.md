@@ -21,7 +21,7 @@ Curated by hand and reviewed in pull requests: `providers.csv`, `families.csv`, 
 | `name` | text | Organisation name |
 | `country` | ISO 3166-1 alpha-2 | Seat |
 | `region` | `eu`, `europe`, `non-europe` | `europe` = European but outside the EU/EEA (CH, UK, UA, ...); EEA members such as Norway count as `eu` |
-| `control` | `independent`, `acquired-non-eu`, `merger-pending-non-eu` | Ownership |
+| `control` | `independent`, `acquired-europe`, `acquired-non-europe`, `merger-pending-non-europe` | Ownership; `acquired-europe` = owner in Europe outside the EU/EEA (CH, UK, ...), flagged but not capped |
 | `majority_owner` | text | Required unless `independent` |
 | `cop_signatory` | `yes`, `no`, `unknown` | Signed the EU GPAI Code of Practice |
 | `hf_orgs` | `;`-separated | The provider's official Hugging Face organisations |
@@ -111,8 +111,8 @@ stages; judges are shown but do not count.
 |---|---|---|
 | `provider` | The model maker itself | Model card in the provider's own Hub organisation, its website, its technical report, its licence file |
 | `official` | Public authority or official document | European Commission lists, stock-exchange filings, court rulings |
-| `academic` | Scholarly publication by third parties | Papers, benchmark studies |
-| `press` | Editorial media | heise, Reuters, SiliconANGLE |
+| `academic` | Publications of research institutions by third parties | Papers, benchmark studies, research trackers (AIAL) |
+| `press` | Editorial media | heise, Reuters, SiliconANGLE; not press releases or PR wires (filed under their issuer) |
 | `community` | Individuals or third parties without editorial control | Personal Hub accounts, blogs, forums, community conversions |
 | `hbd` | Our own measurement | Load check, KL divergence |
 
@@ -150,8 +150,9 @@ An answer that needs a quote counts only if `quote_checks.csv` records the quote
 | `note` | |
 
 The publisher of a build is derived, not stored: `official` (the provider's own organisation),
-`hbd` (here be dragons), `curated` (mlx-community, lmstudio-community, ggml-org, unsloth), `organisation` (any other
-organisation), `individual` (a personal account), in that order of trust.
+`curated` (mlx-community, lmstudio-community, ggml-org, unsloth), `organisation` (any other
+organisation) and `hbd` (here be dragons, ranked like any other organisation), `individual` (a
+personal account), in that order; ties by downloads or bits.
 
 ## Generated files
 
@@ -174,11 +175,11 @@ organisation), `individual` (a personal account), in that order of trust.
 
 - `template_checks.csv` (`scripts/check_chat_templates.py`): one row per template. `kind` is
   `original`, `mlx` or `gguf`; `file` the file it was read from; `status` is `reference` (the
-  original), `identical`, `equivalent`, `differs`, `suspicious` or `not checked`; `reason` the
+  original), `identical`, `equivalent`, `differs`, `needs review` or `not checked`; `reason` the
   diff path (`data/template_diffs/<repo>.diff`) or why it was not checked; `findings` the risky
   constructs found in this template; `sha256` a short hash of its templates.
 
-- `template_reviews.csv` (by hand): builds whose `suspicious` template was looked at: `repo`,
+- `template_reviews.csv` (by hand): builds whose `needs review` template was looked at: `repo`,
   `sha256` (the template hash from `template_checks.csv`), `verdict` (`benign`), `note` (what
   the risky construct does) and `reviewed` (date). With a benign verdict the check keeps the
   status the comparison gave and starts the reason with the verdict. The verdict holds for that

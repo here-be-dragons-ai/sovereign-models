@@ -242,3 +242,38 @@ date,model,field,old,new,reason
 2026-10-29,luciole-23b,base_model,Luciole-23B-Base,"Luciole 1.1 Base (23B, 8B)",
 2026-10-29,luciole-23b-thinking,base_model,Luciole-23B-Base,"Luciole 1.1 Base (23B, 8B)",
 2026-10-29,luciole-8b,base_model,Luciole-23B-Base,"Luciole 1.1 Base (23B, 8B)",
+2026-10-30,apertus-1.5-70b,flags,outside the EU; use policy on redistribution,outside the EU; binding use policy; use policy can change,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-10-30,apertus-1.5-8b,flags,outside the EU; use policy on redistribution; our own work involved,outside the EU; binding use policy; use policy can change; our own work involved,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-10-30,apertus-1.5-8b,template_check,identical,,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,apertus-1.5-8b,mlx_build_verified,yes,,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,falcon-h1r-7b,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,fastwebmiia-7b,control,acquired-non-eu,acquired-europe,Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe
+2026-10-30,fastwebmiia-7b,flags,acquired non-EU,owned outside the EU,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-10-30,glm-5.3,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,gpt-oss-120b,flags,use policy on redistribution,binding use policy,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-10-30,gpt-oss-20b,flags,use policy on redistribution,binding use policy,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-10-30,granite-4.2-30b,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,granite-4.2-8b,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,helium-1-2b,flags,use policy on redistribution,binding use policy; use policy can change (third party),"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-10-30,kolibri-1,control,merger-pending-non-eu,merger-pending-non-europe,Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe
+2026-10-30,kolibri-1,flags,merger pending non-EU; our own work involved,merger pending non-Europe; our own work involved,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-10-30,latxa-3.1-70b-v2,data,open,documented,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,llm-jp-4.1-32b-a3b-thinking,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,llm-jp-4.1-33b-thinking,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,lucie-7b,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,lucie-7b,data,documented,open,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,luciole-23b,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,luciole-23b-thinking,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,luciole-8b,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,magistral-small-2509,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,oellm-9b-256k-sft,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,olmo-3.1-32b-instruct,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,phi-4-reasoning-vision-15b,origin,continued-own,scratch,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,poro-2-8b,control,acquired-non-eu,acquired-non-europe,Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe
+2026-10-30,poro-2-8b,flags,acquired non-EU; custom licence; non-European base model,acquired non-Europe; custom licence; non-European base model,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-10-30,qwen3.8-27b,template_check,suspicious,needs review,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,sui-1-24b,data,open,documented,Rubric with verified quotes; rules decided 2026-10-30 (post-training keeps the origin; open data across the whole lineage)
+2026-10-30,velvet-14b,tier,A,B,"Category A now requires training data at least documented (decided 2026-10-30, external review); Velvet discloses only ""publicly available sources"""
+2026-10-30,velvet2-3b,tier,A,B,"Category A now requires training data at least documented (decided 2026-10-30, external review); Velvet discloses only ""publicly available sources"""
+2026-10-30,viking-33b,control,acquired-non-eu,acquired-non-europe,Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe
+2026-10-30,viking-33b,flags,acquired non-EU,acquired non-Europe,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"

@@ -4,10 +4,10 @@ eurollm,"EuroLLM consortium (Unbabel, IST Lisbon, U. Edinburgh, ...)",PT,eu,inde
 bsc,Barcelona Supercomputing Center (BSC),ES,eu,independent,,no,BSC-LT,langtech-bsc,bsc.es,
 tilde,Tilde,LV,eu,independent,,no,TildeAI,tilde-nlp,,
 swiss-ai,"Swiss AI Initiative (ETH Zurich, EPFL)",CH,europe,independent,,no,swiss-ai,swiss-ai,swiss-ai.org;apertus-ai.org;cscs.ch,Switzerland is not in the EU. Publishes a Code of Practice document (transparency and copyright) voluntarily; not a signatory of the GPAI Code of Practice.
-silo-ai,Silo AI (AMD),FI,eu,acquired-non-eu,AMD (US),no,LumiOpen,LumiOpen,rocm.blogs.amd.com,Acquired by AMD in August 2024.
+silo-ai,Silo AI (AMD),FI,eu,acquired-non-europe,AMD (US),no,LumiOpen,LumiOpen,rocm.blogs.amd.com,Acquired by AMD in August 2024.
 kyutai,Kyutai,FR,eu,independent,,no,kyutai,,kyutai.org,
 pleias,Pleias,FR,eu,independent,,yes,PleIAs,,,
-aleph-alpha,Aleph Alpha,DE,eu,merger-pending-non-eu,"Cohere (CA), merger pending",yes,Aleph-Alpha,,aleph-alpha.com,"Definitive merger agreement with Cohere signed 2026-09-16, pending approval."
+aleph-alpha,Aleph Alpha,DE,eu,merger-pending-non-europe,"Cohere (CA), merger pending",yes,Aleph-Alpha,,aleph-alpha.com,"Definitive merger agreement with Cohere signed 2026-09-16, pending approval."
 mistral-ai,Mistral AI,FR,eu,independent,,yes,mistralai,,mistral.ai,
 speakleash,"SpeakLeash, ACK Cyfronet AGH",PL,eu,independent,,no,speakleash,,bielik.ai,
 ellamind,ellamind,DE,eu,independent,,no,ellamind,,,
@@ -54,4 +54,4 @@ portulan,"PORTULAN CLARIN / NLX group, University of Lisbon",PT,eu,independent,,
 hitz,"HiTZ Center, University of the Basque Country (UPV/EHU)",ES,eu,independent,,no,HiTZ,hitz-zentroa,hitz.eus;ehu.eus,Public university research centre (HiTZ and IXA group).
 hplt,"HPLT project (Language Technology Group, University of Oslo)",NO,eu,independent,,no,HPLT,hplt-project,hplt-project.org,"EU Horizon Europe project (grant 101070350) consortium of universities; NorOLMo built by the University of Oslo LTG. Norway is in the EEA, which the scorecard counts as eu."
 almawave,Almawave,IT,eu,independent,,yes,AlmawaveLabs,,almawave.com;almaviva.it;almawavelabs.com,"Member of the Almaviva Group (Italy). Since September 2026 the Velvet models sit in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent."
-fastweb,Fastweb (Fastweb + Vodafone),IT,eu,acquired-non-eu,Swisscom (CH),yes,Fastweb,,fastweb.it,Single-shareholder company under the direction and coordination of Swisscom AG (Switzerland).
+fastweb,Fastweb (Fastweb + Vodafone),IT,eu,acquired-europe,Swisscom (CH),yes,Fastweb,,fastweb.it,Single-shareholder company under the direction and coordination of Swisscom AG (Switzerland).

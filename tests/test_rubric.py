@@ -30,11 +30,16 @@ class TestDerive(unittest.TestCase):
         self.assertIsNone(self.derive("origin", ("base_model", "Mistral 7B"), ("base_publisher", "european"),
                                       ("post_training_only", "not stated")))
         self.assertEqual(self.derive("origin", ("base_model", "Apertus 1"), ("base_publisher", "own"),
-                                     ("base_scratch", "yes")), "continued-own")
+                                     ("base_scratch", "yes"), ("post_training_only", "no")), "continued-own")
+        # Post-training the provider's own base keeps the family's origin.
+        self.assertEqual(self.derive("origin", ("base_model", "Luciole-23B-Base"), ("base_publisher", "own"),
+                                     ("base_scratch", "yes"), ("post_training_only", "yes")), "scratch")
         # An own base whose lineage is not documented does not count as own weights.
         self.assertEqual(self.derive("origin", ("base_model", "Prelude"), ("base_publisher", "own"),
                                      ("base_scratch", "not stated")), "unknown")
         self.assertIsNone(self.derive("origin", ("base_model", "Apertus 1"), ("base_publisher", "own")))
+        self.assertIsNone(self.derive("origin", ("base_model", "Apertus 1"), ("base_publisher", "own"),
+                                      ("base_scratch", "yes")))
         self.assertEqual(self.derive("origin", ("init_random", "not stated")), "unknown")
         # A quoted "no base model" (e.g. "Model dependencies: NA") counts as from scratch.
         none = ans("base_model", "none", quote="Model dependencies: NA")

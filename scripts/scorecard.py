@@ -33,7 +33,7 @@ KEYED = {"providers.csv": "id", "families.csv": "id", "scorecard.csv": "id"}
 
 PROVIDER_ALLOWED = {
     "region": {"eu", "europe", "non-europe"},
-    "control": {"independent", "acquired-non-eu", "merger-pending-non-eu"},
+    "control": {"independent", "acquired-europe", "acquired-non-europe", "merger-pending-non-europe"},
     "cop_signatory": {"yes", "no", "unknown"},
 }
 FAMILY_ALLOWED = {
@@ -55,7 +55,7 @@ INFO_ALLOWED = {
     "training_hardware": {"nvidia", "amd", "google-tpu", "other", "unknown"},
 }
 # Chat-template check per build (#7, 3a); "reference" is the original's row.
-TEMPLATE_STATUS = {"reference", "identical", "equivalent", "differs", "suspicious", "not checked"}
+TEMPLATE_STATUS = {"reference", "identical", "equivalent", "differs", "needs review", "not checked"}
 TEACHER_ALLOWED = {
     "stage": {"pretraining", "midtraining", "posttraining", "judge"},
     "model_origin": {"own", "european", "foreign", "unknown"},
@@ -74,19 +74,24 @@ SOURCED = {
 # Hosts whose issuer is fixed.
 OFFICIAL_HOSTS = {"digital-strategy.ec.europa.eu", "eur-lex.europa.eu", "www.sec.gov"}
 PRESS_HOSTS = {"siliconangle.com", "www.heise.de", "www.reuters.com", "techcrunch.com"}
+# Press-release wires carry the issuer's own statement, not editorial reporting: a source
+# there is filed under whoever issued the release (provider or official), never press.
+PR_WIRE_HOSTS = {"www.prnewswire.com", "prnewswire.com", "www.businesswire.com", "www.globenewswire.com"}
 # Organisations on the Hub that curate community conversions.
 CURATED_ORGS = {"mlx-community", "lmstudio-community", "ggml-org", "unsloth"}
 HBD_ORG = "here-be-dragons-ai"
 
 TIERS = {
-    "A": "European provider, independent, own weights, open licence, open data or European compute",
+    "A": "European provider, independent, own weights, open licence, training data at least documented, and open data or European compute",
     "B": "European provider and open licence, but data or compute undisclosed, or control outside Europe",
     "C": "European provider, but a non-European base model or a custom licence",
     "pending": "Licence unclear; tier withheld until checked",
     "excluded": "Non-commercial licence",
     "comparison": "Provider outside Europe: shown for comparison with the same facts, without a tier",
 }
-PUBLISHER_ORDER = ["official", "hbd", "curated", "organisation", "individual", "unknown"]
+PUBLISHER_ORDER = ["official", "curated", "organisation", "hbd", "individual", "unknown"]
+# Ranking of builds: our own (hbd) count like any other organisation (decided 2026-10-30).
+PUBLISHER_RANK = {"official": 0, "curated": 1, "organisation": 2, "hbd": 2, "individual": 3, "unknown": 4}
 
 
 def _read(path):
@@ -164,6 +169,7 @@ class Data:
         out["eu_languages"] = self.eu_languages(family)
         out["teachers"] = [t for t in self.teachers if t["family_id"] == model["family_id"]]
         out["teacher_origin"] = self.teacher_origin(family, out["teachers"])
+        out["terms_owner"] = self.terms_owner(out)
         return out
 
     @staticmethod
@@ -237,6 +243,29 @@ class Data:
         """The value the rubric must reproduce: what the tier uses for sourced fields."""
         return self.confirmed(model, field) if field in SOURCED["family"] else model[field]
 
+    def terms_owner(self, model):
+        """Who issues the model's binding use policy: 'third-party' if a binding-policy answer cites
+        a document hosted by another tracked provider (e.g. Google's Gemma terms on ai.google.dev for
+        a model distilled from Gemma), else 'own'; '' if no binding policy is on record."""
+        own = [r for r in self.evidence if (r["scope"], r["subject"]) == ("model", model["id"])]
+        asked = {r["question"] for r in own}
+        fam = [r for r in self.evidence if (r["scope"], r["subject"]) == ("family", model["family_id"])
+               and r["question"] not in asked]
+        rows = [r for r in rubric.usable(own + fam, self.quote_status)
+                if r["question"] == "use_policy_binding" and r["answer"] == "yes" and r["_quoted"]]
+        if not rows:
+            return ""
+        provider_id = self.families.get(model["family_id"], {}).get("provider_id", "")
+        owners = {self.url_owner(r["url"]) or provider_id for r in rows}
+        return "own" if owners == {provider_id} else "third-party"
+
+    def url_owner(self, url):
+        """The tracked provider whose domain, Hub or GitHub organisation hosts a URL, if any."""
+        for pid in self.providers:
+            if self.expected_issuer(url, pid) == "provider":
+                return pid
+        return None
+
     # -- tiers -----------------------------------------------------------------
     def tier(self, m):
         if m["region"] == "non-europe":
@@ -252,7 +281,13 @@ class Data:
         open_licence = m["license_class"] in {"osi", "osi-aup"}
         own = origin in {"scratch", "continued-own"}
         european = own or origin in {"continued-european", "finetune-european"}
-        if open_licence and own and control == "independent" and (data == "open" or compute in {"eu", "europe"}):
+        # A (decided 2026-10-30): training data at least documented, and either open data or
+        # European compute; no use policy of a third party that can change the terms later.
+        third_party_terms = (m["license_class"] == "osi-aup" and m["terms_can_change"] == "yes"
+                             and m.get("terms_owner") == "third-party")
+        if (open_licence and own and control in {"independent", "acquired-europe"}
+                and data in {"open", "documented"} and (data == "open" or compute in {"eu", "europe"})
+                and not third_party_terms):
             return "A"
         if open_licence and european:
             return "B"
@@ -263,10 +298,14 @@ class Data:
         out = []
         if m["region"] == "europe":
             out.append("outside the EU")
-        if m["control"] != "independent":
-            out.append(m["control"].replace("-", " ").replace("non eu", "non-EU"))
+        if m["control"] == "acquired-europe":
+            out.append("owned outside the EU")
+        elif m["control"] != "independent":
+            out.append(m["control"].replace("-", " ").replace("non europe", "non-Europe"))
         if m["license_class"] == "osi-aup":
-            out.append("use policy on redistribution")
+            out.append("binding use policy")
+            if m["terms_can_change"] == "yes":
+                out.append("use policy can change" + (" (third party)" if m.get("terms_owner") == "third-party" else ""))
         if m["license_class"] == "custom":
             out.append("custom licence")
         if m["origin"].endswith("foreign"):
@@ -406,6 +445,8 @@ class Data:
                 errors.append(f"{tag}: archive_url must be a web.archive.org snapshot")
             if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", s["retrieved"]):
                 errors.append(f"{tag}: retrieved must be YYYY-MM-DD")
+            if urlparse(s["url"]).netloc in PR_WIRE_HOSTS and s["issuer"] == "press":
+                errors.append(f"{tag}: a press-release wire is not press; file it under the release's issuer")
             expected = self.expected_issuer(s["url"], self.source_provider(s))
             if expected and s["issuer"] != expected:
                 errors.append(f"{tag}: issuer {s['issuer']!r}, but the URL says {expected!r}")

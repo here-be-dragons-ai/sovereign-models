@@ -70,10 +70,38 @@ class TestData(unittest.TestCase):
         self.assertEqual(self.d.tier(m), "B")
 
     def test_family_values_are_inherited_and_overridable(self):
-        self.assertEqual(self.model("olmo-3-7b-instruct")["origin"], "scratch")
-        self.assertEqual(self.model("olmo-3-7b-instruct")["origin_scope"], "family")
-        self.assertEqual(self.model("olmo-3.1-32b-instruct")["origin"], "continued-own")
-        self.assertEqual(self.model("olmo-3.1-32b-instruct")["origin_scope"], "model")
+        self.assertEqual(self.model("eurollm-22b")["origin"], "scratch")
+        self.assertEqual(self.model("eurollm-22b")["origin_scope"], "family")
+        self.assertEqual(self.model("eurollm-9b")["origin"], "continued-own")
+        self.assertEqual(self.model("eurollm-9b")["origin_scope"], "model")
+
+    def test_category_a_needs_documented_data(self):
+        # Velvet: trained on Leonardo, but training data undisclosed -> B (decided 2026-10-30).
+        self.assertEqual(self.d.tier(self.model("velvet-14b")), "B")
+        self.assertEqual(self.d.tier(self.model("alia-40b")), "A")
+
+    def test_own_changeable_policy_allows_a_third_party_one_does_not(self):
+        apertus = self.model("apertus-1.5-8b")
+        self.assertEqual(apertus["terms_owner"], "own")
+        self.assertEqual(self.d.tier(apertus), "A")
+        third = {**apertus, "terms_owner": "third-party"}
+        self.assertEqual(self.d.tier(third), "B")
+        self.assertEqual(self.model("helium-1-2b")["terms_owner"], "third-party")
+
+    def test_owner_in_europe_does_not_cap(self):
+        m = {**self.model("alia-40b"), "control": "acquired-europe"}
+        confirmed = self.d.confirmed  # as if a source backed the owner (e.g. Swisscom for Fastweb)
+        self.d.confirmed = lambda mm, f: "acquired-europe" if f == "control" else confirmed(mm, f)
+        self.assertEqual(self.d.tier(m), "A")
+        self.d.confirmed = lambda mm, f: "acquired-non-europe" if f == "control" else confirmed(mm, f)
+        self.assertEqual(self.d.tier(m), "B")
+        self.d.confirmed = confirmed
+        self.assertIn("owned outside the EU", Data.flags({**m, "control": "acquired-europe"}))
+
+    def test_press_release_wire_is_not_press(self):
+        self.d.sources.append(source(scope="provider", subject="mbzuai", field="control",
+                                     url="https://www.prnewswire.com/news-releases/x.html", issuer="press"))
+        self.assertTrue(any("press-release wire" in e for e in self.d.validate()))
 
     def test_publishers(self):
         kinds = {b["repo"]: self.d.publisher(b) for b in self.d.builds}

@@ -53,8 +53,8 @@ Tiers are computed, never set by hand. The rules and their limits are in
 python3 scripts/fetch_hf_facts.py                    # refresh Hub facts
 python3 scripts/classify_namespaces.py               # organisation or user, per Hub namespace
 python3 scripts/archive_sources.py                   # Wayback snapshots for new sources
-PYTHONPATH=~/src/mlx-vlm-main \
-  ~/src/mlx/.venv/bin/python scripts/check_mlx_support.py   # needs mlx and mlx-vlm
+PYTHONPATH=$MLX_VLM_SRC \
+  $MLX_PYTHON scripts/check_mlx_support.py              # needs mlx and mlx-vlm (see below)
 python3 scripts/check_llama_cpp_support.py           # latest llama.cpp release
 python3 scripts/find_gguf_builds.py                  # GGUF builds via the Hub base-model link
 python3 scripts/classify_namespaces.py               # again, for new GGUF publishers
@@ -65,6 +65,9 @@ python3 scripts/publish_hf.py                        # needs huggingface_hub and
 ```
 
 `validate.py` and `build.py` need only the Python standard library.
+`check_mlx_support.py` needs Apple Silicon with mlx installed: set `MLX_PYTHON` to a Python that has
+`mlx` and `mlx-vlm`, and optionally `MLX_VLM_SRC` to an mlx-vlm checkout to test unreleased support.
+`check_chat_templates.py` needs `jinja2`, `verify_quotes.py` needs `pypdf` for PDF sources.
 
 ## Adding or correcting a model
 

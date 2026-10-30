@@ -386,7 +386,6 @@ family,gams3,noncommercial,no,https://ai.google.dev/gemma/terms,,2026-10-29,clau
 family,gams3,inherited_terms,yes,https://huggingface.co/cjvt/GaMS3-12B-Instruct/blob/main/README.md,Base model: ... google/gemma-3-12b-pt ... License: ... Gemma,2026-10-29,claude-opus-5-5
 family,domyn-edge,init_random,yes,https://huggingface.co/domyn/Domyn-Edge-SFT/blob/main/README.md,a 4B-parameter dense transformer pre-trained from scratch on 13 trillion tokens,2026-10-29,claude-opus-5-5
 family,domyn-edge,base_model,none,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,Domyn Edge is a 4B-parameter dense transformer trained from scratch on 13 trillion tokens,2026-10-29,claude-opus-5-5
-family,domyn-edge,data_downloadable,part,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,"Coming in later bundles: the remaining per-stage pre-training datasets, the SFT post-training mix",2026-10-29,claude-opus-5-5
 family,domyn-edge,datasets_named,yes,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,The full per-source lineage ships with the ... dataset repository,2026-10-29,claude-opus-5-5
 family,domyn-edge,data_shares,yes,https://huggingface.co/domyn/Domyn-Edge-SFT/blob/main/README.md,"Nemotron-Finance-v1 (4.2%) and ARC-AGI-v1 (3.1%), followed by a long tail of math",2026-10-29,claude-opus-5-5
 family,domyn-edge,pretraining_site,Leonardo,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,custom NVIDIA A100 64GB GPUs (512 in total) on Leonardo at CINECA,2026-10-29,claude-opus-5-5
@@ -988,13 +987,11 @@ family,falcon-h1,licence_modified,yes,https://falconllm.tii.ae/falcon-terms-and-
 family,falcon-h1,noncommercial,no,https://falconllm.tii.ae/falcon-terms-and-conditions.html,"offer to sell, sell, import, and otherwise transfer the Work",2026-10-29,claude-opus-5-5
 family,falcon-h1,inherited_terms,no,https://falconllm.tii.ae/falcon-terms-and-conditions.html,,2026-10-29,claude-opus-5-5
 family,apertus-1.5,base_scratch,yes,https://arxiv.org/abs/2610.15542,"Apertus 1.0, with 8B and 70B parameters in September 2025, trained from scratch on 15T tokens",2026-10-29,claude-opus-5-5
-family,apertus-1.5,data_downloadable,part,https://arxiv.org/abs/2610.15542,"We also release the SFT mixture, the annotated completion pool, and the preference pairs built from it",2026-10-29,claude-opus-5-5
 family,apertus-1.5,policy_updatable,yes,https://github.com/swiss-ai/apertus-legal/blob/main/apertus_1.5/USAGE_POLICY.pdf,make available to your recipient of Apertus the AUP in force at the time of the redistribution,2026-10-29,claude-opus-5-5
 family,apertus-1.5,use_policy_binding,yes,https://arxiv.org/abs/2610.15542,distributed on Hugging Face behind a gated download that records assent to the acceptable-use policy,2026-10-29,claude-opus-5-5
 family,borealis2,policy_updatable,yes,https://ai.google.dev/gemma/prohibited_use_policy,Google reserves the right to update this Gemma Prohibited Use Policy from time to time.,2026-10-29,claude-opus-5-5
 family,borealis2,use_policy_binding,yes,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview/blob/main/LICENSE,You can only use the Model in compliance with the following conditions:,2026-10-29,claude-opus-5-5
 family,dfm-mimir-1.5,base_scratch,yes,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,Mimir began as a model trained from scratch on Danish and English post-training and instruction data.,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,data_downloadable,nearly all,https://arxiv.org/abs/2608.13517,repaired versions. All but the same two Danish datasets are available from the Hugging Face hub.,2026-10-29,claude-opus-5-5
 family,estllm-70b,policy_updatable,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/USE_POLICY.md,The most recent copy of this policy can be found at,2026-10-29,claude-opus-5-5
 family,estllm-70b,use_policy_binding,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,adhere to the Acceptable Use Policy for the Llama Materials,2026-10-29,claude-opus-5-5
 family,falcon-h1r,policy_updatable,yes,https://falconllm.tii.ae/falcon-terms-and-conditions.html,The Acceptable Use Policy may be updated from time to time.,2026-10-29,claude-opus-5-5
@@ -1011,7 +1008,6 @@ family,krikri,use_policy_binding,yes,https://github.com/meta-llama/llama-models/
 family,llama-pllum-2512,policy_updatable,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/USE_POLICY.md,The most recent copy of this policy can be found at,2026-10-29,claude-opus-5-5
 family,llama-pllum-2512,use_policy_binding,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,adhere to the Acceptable Use Policy for the Llama Materials,2026-10-29,claude-opus-5-5
 family,lucie-1.1,base_scratch,yes,https://arxiv.org/abs/2503.12294,US-centric biases when selecting data and training a new sovereign LLM from scratch.,2026-10-29,claude-opus-5-5
-family,lucie-1.1,data_downloadable,part,https://huggingface.co/OpenLLM-France/Lucie-7B-Instruct-v1.1,"One epoch was passed on each dataset except for Croissant-Aligned-Instruct for which we randomly selected 20,000 translation pairs.",2026-10-29,claude-opus-5-5
 family,magistral-small,data_downloadable,part,https://arxiv.org/abs/2506.10910,"large set of diverse prompts, sourced from OpenThoughts [Guha et al., 2025] and the code subset of OpenR1",2026-10-29,claude-opus-5-5
 family,magistral-small,data_shares,yes,https://arxiv.org/abs/2506.10910,We also include 10% of datapoints for general instruction tuning in order to preserve non-reasoning capabilities.,2026-10-29,claude-opus-5-5
 family,magistral-small,datasets_named,no,https://arxiv.org/abs/2506.10910,We gathered code contest data from various sources.,2026-10-29,claude-opus-5-5
@@ -1019,13 +1015,10 @@ family,minimax-m3,policy_updatable,no,https://huggingface.co/MiniMaxAI/MiniMax-M
 family,minimax-m3,use_policy_binding,yes,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,"You agree you will not use, or allow others to use, the Software or any derivatives of the Software to:",2026-10-29,claude-opus-5-5
 family,muse-spark,policy_updatable,no,https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B,,2026-10-29,claude-opus-5-5
 family,muse-spark,use_policy_binding,yes,https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B,"Licensee's use of the Software shall comply with the Usage Policy, which is hereby incorporated into this license",2026-10-29,claude-opus-5-5
-family,norolmo-1.0,data_downloadable,part,https://huggingface.co/HPLT/NorOLMo-13B,We only took a portion of OLMo-Mix as our unique data.,2026-10-29,claude-opus-5-5
-family,olmo-3,data_downloadable,all,https://arxiv.org/pdf/2512.13961,which are the actual tokens used for base model training,2026-10-29,claude-opus-5-5
 family,poro-2,data_downloadable,part,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-base/blob/main/README.md,"Poro 2 8B was trained on a balanced 165B token dataset designed to maintain English, code, and math capabilities",2026-10-29,claude-opus-5-5
 family,poro-2,policy_updatable,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/USE_POLICY.md,The most recent copy of this policy can be found at,2026-10-29,claude-opus-5-5
 family,poro-2,use_policy_binding,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE,adhere to the Acceptable Use Policy for the Llama Materials,2026-10-29,claude-opus-5-5
 family,sea-lion-v4.8,data_downloadable,part,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,"The continued pretraining dataset comprised 33.5B tokens on QA, CoT, Reasoning and parallel (translation) datasets adapted from",2026-10-29,claude-opus-5-5
-family,sui-1,data_downloadable,all,https://arxiv.org/abs/2601.08472,The training dataset is available at ellamind/summarizer_dataset_v1 on the HuggingFace Hub.,2026-10-29,claude-opus-5-5
 family,tildeopen,base_scratch,yes,https://arxiv.org/abs/2603.08182,We compare our model against these models because they are all trained from scratch instead of distilled from much larger models.,2026-10-29,claude-opus-5-5
 family,velvet,policy_updatable,no,https://huggingface.co/AlmawaveLabs/Velvet-14B,,2026-10-29,claude-opus-5-5
 family,velvet,use_policy_binding,no,https://huggingface.co/AlmawaveLabs/Velvet-14B,,2026-10-29,claude-opus-5-5
@@ -1036,7 +1029,6 @@ family,bggpt-3,datasets_named,no,https://models.bggpt.ai/blog/bggpt-3-release-en
 family,bggpt-3,use_policy_binding,yes,https://ai.google.dev/gemma/terms,for the restricted uses set forth in the Gemma Prohibited Use Policy at ... which is hereby incorporated by reference into this Agreement,2026-10-29,claude-opus-5-5
 family,bggpt-3,policy_updatable,yes,https://ai.google.dev/gemma/prohibited_use_policy,Google reserves the right to update this Gemma Prohibited Use Policy from time to time.,2026-10-29,claude-opus-5-5
 family,domyn-small,base_scratch,yes,https://arxiv.org/pdf/2607.20448,"The model descends from Italia 10B (Section 3.1), a 10-billion-parameter base trained from scratch on approximately 9 trillion tokens",2026-10-29,claude-opus-5-5
-family,eurollm-2512,data_downloadable,part,https://arxiv.org/pdf/2602.05879,"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B ... parallel data from various public sources, listed in Table 2.",2026-10-29,claude-opus-5-5
 family,falcon-h1,use_policy_binding,yes,https://falconllm.tii.ae/falcon-terms-and-conditions.html,your use of the Work or any Derivative Work must comply with the Acceptable Use Policy at all times.,2026-10-29,claude-opus-5-5
 family,falcon-h1,policy_updatable,yes,https://falconllm.tii.ae/falcon-terms-and-conditions.html,The Acceptable Use Policy may be updated from time to time.,2026-10-29,claude-opus-5-5
 family,fastwebmiia,use_policy_binding,yes,https://huggingface.co/Fastweb/FastwebMIIA-7B,"By downloading, accessing, and using the model as specified, you fully accept the ... Acceptable Use Policy",2026-10-29,claude-opus-5-5
@@ -1048,23 +1040,17 @@ family,gpt-oss,policy_updatable,no,https://huggingface.co/openai/gpt-oss-120b/bl
 family,helium-1,data_downloadable,part,https://huggingface.co/kyutai/helium-1-2b,"Helium-1 was trained on data from Common Crawl, which was preprocessed with the dactory library.",2026-10-29,claude-opus-5-5
 family,helium-1,use_policy_binding,yes,https://ai.google.dev/gemma/terms,for the restricted uses set forth in the Gemma Prohibited Use Policy at ... which is hereby incorporated by reference into this Agreement,2026-10-29,claude-opus-5-5
 family,helium-1,policy_updatable,yes,https://ai.google.dev/gemma/prohibited_use_policy,Google reserves the right to update this Gemma Prohibited Use Policy from time to time.,2026-10-29,claude-opus-5-5
-family,k2-horizon,data_downloadable,all,https://huggingface.co/IFM/K2-Horizon-375B-A23B,"We have released the checkpoints, along with the data and the training code.",2026-10-29,claude-opus-5-5
-family,latxa-3.1-v2,data_downloadable,nearly all,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,this repository reflects a curated version of the original dataset. ... Some data points have been removed to ensure permission compliance.,2026-10-29,claude-opus-5-5
 family,latxa-3.1-v2,use_policy_binding,yes,https://huggingface.co/HiTZ/Latxa-Llama-3.1-8B-Instruct/blob/main/LICENSE,"adhere to the Acceptable Use Policy for the Llama Materials (available at https://llama.meta.com/llama3_1/use-policy), which is hereby incorporated by reference into this Agreement.",2026-10-29,claude-opus-5-5
 family,latxa-3.1-v2,policy_updatable,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/USE_POLICY.md,The most recent copy of this policy can be found at,2026-10-29,claude-opus-5-5
 family,llm-jp-4.1,base_scratch,yes,https://www.nii.ac.jp/news/release/2026/0403.html,大規模言語モデル（LLM）のフルスクラッチ学習を実施し、約86億パラメータ (*1) の「LLM-jp-4 8Bモデル」と約320億パラメータのMoEモデル (*2) 「LLM-jp-4 32B-A3Bモデル」,2026-10-29,claude-opus-5-5
 family,llm-jp-4.1,data_downloadable,nearly all,https://huggingface.co/datasets/llm-jp/llm-jp-4.1-thinking-sft-data,Some subsets cannot be redistributed due to licensing restrictions and are therefore not included.,2026-10-29,claude-opus-5-5
-family,luciole-1.1,data_downloadable,nearly all,https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1,"for certain datasets we upload our preprocessed version here in its entirety, but only used a randomly selected subsample during training.",2026-10-29,claude-opus-5-5
-family,minerva,data_downloadable,part,https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0,"Babelscape/ALERT translated to Italian, with additional manually curated data for safety.",2026-10-29,claude-opus-5-5
 family,muse-glimmer,use_policy_binding,no,https://huggingface.co/meta-models/Muse-Glimmer-30B,,2026-10-29,claude-opus-5-5
 family,muse-glimmer,policy_updatable,no,https://huggingface.co/meta-models/Muse-Glimmer-30B/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
 family,nemotron-3.5,base_scratch,yes,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16,Nemotron-3-Nano-30B-A3B-BF16 is a large language model (LLM) trained from scratch by NVIDIA,2026-10-29,claude-opus-5-5
 family,oellm-9b,data_downloadable,part,https://huggingface.co/openeurollm/oellm-9b-256k-sft,The run did not load the current public Tulu-3 mixture wholesale. It used a locally staged file,2026-10-29,claude-opus-5-5
 family,pleias-rag,base_scratch,yes,https://huggingface.co/PleIAs/Pleias-1.2B-Preview,"is a transformer base model, entirely pretrained from scratch, using an architecture similar to Llama/GPT-Neox",2026-10-29,claude-opus-5-5
-family,pleias-rag,data_downloadable,part,https://arxiv.org/abs/2504.18225,We created a large new retrieval dataset based on the various collections of Common Corpus.,2026-10-29,claude-opus-5-5
 family,pleias-rag,data_shares,yes,https://arxiv.org/abs/2504.18225,"1,203,612 examples extracted from administrative documents coming mainly from US and French open data programs",2026-10-29,claude-opus-5-5
 family,pleias-rag,datasets_named,yes,https://arxiv.org/abs/2504.18225,"(SEC, USPTO, DILA, our internal French common crawl over public administrative documents)",2026-10-29,claude-opus-5-5
-family,salamandra,data_downloadable,part,https://huggingface.co/BSC-LT/salamandra-7b-instruct,The dataset will not be released or distributed to third parties.,2026-10-29,claude-opus-5-5
 family,solar-open-2,base_scratch,yes,https://arxiv.org/abs/2607.20062,Weight Init from-scratch Selective transfer from Solar Open 1 (2.27%),2026-10-29,claude-opus-5-5
 family,solar-open-2,data_downloadable,not stated,https://arxiv.org/abs/2607.20062,,2026-10-29,claude-opus-5-5
 family,solar-open-2,data_shares,yes,https://arxiv.org/abs/2607.20062,"a real-to-synthetic ratio of 4:6, (2) a domain mix in which math and code each occupy at least 15%",2026-10-29,claude-opus-5-5
@@ -1094,3 +1080,17 @@ family,ministral-3,base_scratch,yes,https://legal.mistral.ai/ai-governance/model
 family,gervasio-70b,base_model,Llama 3.3 70B Instruct,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,developed over the LLaMA-3.3 70B instruct model,2026-10-29,claude-opus-5-5
 family,gervasio-70b,base_publisher,foreign,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,,2026-10-29,claude-opus-5-5
 family,gervasio-70b,post_training_only,yes,https://huggingface.co/PORTULAN/gervasio-70b-portuguese-ptpt-decoder,Its further improvement through additional training was done over language resources that include new instruction data sets,2026-10-29,claude-opus-5-5
+family,lucie-1.1,data_downloadable,nearly all,https://huggingface.co/OpenLLM-France/Lucie-7B,The training dataset used for the pretraining of Lucie-7B is available,2026-10-30,claude-opus-5-5
+family,luciole-1.1,data_downloadable,nearly all,https://huggingface.co/OpenLLM-France/Luciole-23B-Base,The training dataset used for the pretraining of Luciole-23B-Base is available,2026-10-30,claude-opus-5-5
+family,apertus-1.5,data_downloadable,part,https://arxiv.org/pdf/2610.15542,We use only publicly available datasets and document their provenance and filtering.,2026-10-30,claude-opus-5-5
+family,eurollm-2512,data_downloadable,part,https://arxiv.org/pdf/2602.05879,"Data: the EuroWeb dataset, our multilingual web dataset used for pre-training EuroLLM 22B",2026-10-30,claude-opus-5-5
+family,pleias-rag,data_downloadable,part,https://huggingface.co/PleIAs/Pleias-1.2B-Preview,A lightly filtered version of Common Corpus (1.6 trillion tokens),2026-10-30,claude-opus-5-5
+family,olmo-3,data_downloadable,all,https://arxiv.org/pdf/2512.13961,which are the actual tokens used for base model training,2026-10-30,claude-opus-5-5
+family,norolmo-1.0,data_downloadable,part,https://huggingface.co/HPLT/NorOLMo-13B,We only took a portion of OLMo-Mix as our unique data.,2026-10-30,claude-opus-5-5
+family,dfm-mimir-1.5,data_downloadable,nearly all,https://arxiv.org/abs/2608.13517,All but the same two Danish datasets are available from the Hugging Face hub.,2026-10-30,claude-opus-5-5
+family,latxa-3.1-v2,data_downloadable,part,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,this repository reflects a curated version of the original dataset. ... Some data points have been removed to ensure permission compliance.,2026-10-30,claude-opus-5-5
+family,sui-1,data_downloadable,part,https://arxiv.org/abs/2601.08472,The training dataset is available at ellamind/summarizer_dataset_v1 on the HuggingFace Hub.,2026-10-30,claude-opus-5-5
+family,domyn-edge,data_downloadable,part,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,"the 8.44T mix above, with per-source provenance, filtering and token counts",2026-10-30,claude-opus-5-5
+family,salamandra,data_downloadable,part,https://arxiv.org/pdf/2502.08489,Our carefully curated corpus is made exclusively from open-access data compiled from a wide variety of sources.,2026-10-30,claude-opus-5-5
+family,minerva,data_downloadable,part,https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0,The training data is a mixture of the following datasets:,2026-10-30,claude-opus-5-5
+family,k2-horizon,data_downloadable,nearly all,https://huggingface.co/IFM/K2-Horizon-375B-A23B,"We have released the checkpoints, along with the data and the training code.",2026-10-30,claude-opus-5-5

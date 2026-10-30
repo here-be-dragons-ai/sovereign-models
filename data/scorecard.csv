@@ -8,7 +8,7 @@ eurollm-9b,EuroLLM 9B Instruct 2512,utter-project/EuroLLM-9B-Instruct-2512,eurol
 alia-40b,ALIA 40B Instruct 2606,BSC-LT/ALIA-40b-instruct-2606,alia,text,,,,,,,,160k context.
 salamandra-7b,Salamandra 7B Instruct,BSC-LT/salamandra-7b-instruct,salamandra,text,,,,,,,,
 tildeopen-30b,TildeOpen 30B 64k,TildeAI/TildeOpen-30b-64k,tildeopen,text,,,,,,,,Base model only (no official instruct version). Focus on Nordic and Eastern European languages.
-apertus-1.5-8b,Apertus 1.5 8B,swiss-ai/Apertus-v1.5-8B,apertus-1.5,"text, image, audio",,,,,,,HBD ported image and audio input to MLX and publishes the 8-bit MLX build (here-be-dragons-ai/Apertus-v1.5-8B-MLX-8bit),"Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval)."
+apertus-1.5-8b,Apertus 1.5 8B,swiss-ai/Apertus-v1.5-8B,apertus-1.5,"text, image, audio",,,,,,,HBD ported image and audio input to MLX (Blaizzy/mlx-vlm#1847); no MLX build of ours is published.,"Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval)."
 apertus-1.5-70b,Apertus 1.5 70B,swiss-ai/Apertus-v1.5-70B,apertus-1.5,"text, image, audio",,,,,,,,"Switzerland is not in the EU. Acceptable Use Policy requires express assent on every redistribution. The AUP also requires users to indemnify, defend and hold harmless ETH Zurich and EPFL against third-party claims. Repository is gated (automatic approval)."
 viking-33b,Viking 33B,LumiOpen/Viking-33B,viking,text,,,,,,,,4k context. Released before Silo AI was acquired by AMD (US) in August 2024.
 helium-1-2b,Helium 1 2B,kyutai/helium-1-2b,helium-1,text,,,,,,,,CC-BY-SA-4.0. 4k context.
@@ -26,7 +26,7 @@ minerva-7b,Minerva 7B Instruct,sapienzanlp/Minerva-7B-instruct-v1.0,minerva,text
 xlstm-7b,xLSTM 7B,NX-AI/xLSTM-7b,xlstm,text,,,,,,,,"Recurrent (mLSTM) architecture, no attention, constant-size state. Base model only, mostly English (DCLM). NXAI Community License (based on Llama 3): attribution and notice required, and under §2 a licensee with more than €100M consolidated annual revenue that builds it into a commercial product or service needs a separate commercial licence, which NXAI grants at its sole discretion."
 holo4-35b-a3b,Holo4 35B-A3B,Hcompany/Holo4-35B-A3B,holo4,"text, image",,,,,,,,Computer-use agent model.
 poro-2-8b,Poro 2 8B Instruct,LumiOpen/Llama-Poro-2-8B-Instruct,poro-2,text,,,,,,,,Llama 3.3 licence inherited.
-borealis2-26b,borealis2 26B-A4B (preview),NbAiLab/borealis2-26b-a4b-preview,borealis2,"text, image",,,,,,,,Norway is not in the EU. nb-license-1.0.
+borealis2-26b,borealis2 26B-A4B (preview),NbAiLab/borealis2-26b-a4b-preview,borealis2,"text, image",,,,,,,,"Norway is in the EEA, which the scorecard counts as EU. nb-license-1.0."
 gemma-4-31b,Gemma 4 31B IT,google/gemma-4-31B-it,gemma-4,"text,image",,,,,,,,"Dense 31B, 256K context. Audio only on E2B/E4B/12B."
 gemma-4-26b-a4b,Gemma 4 26B A4B IT,google/gemma-4-26B-A4B-it,gemma-4,"text,image",,,,,,,,"MoE 26B total / ~4B active, 256K context."
 gpt-oss-120b,gpt-oss-120b,openai/gpt-oss-120b,gpt-oss,text,,,,,,,,"MoE 117B / 5.1B active, MXFP4 MoE weights; harmony chat format required."
@@ -36,7 +36,7 @@ nemotron-3-super-120b,NVIDIA Nemotron 3 Super 120B-A12B,nvidia/NVIDIA-Nemotron-3
 nemotron-3.5-lightning-30b,NVIDIA Nemotron 3.5 Lightning 30B-A3B,nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16,nemotron-3.5,text,,,,,,,,"Released 2026-08; 3B active, 1M context; BF16 reference weights (NVFP4 variant for deployment)."
 granite-4.2-30b,Granite 4.2 30B,ibm-granite/granite-4.2-30b,granite-4.2,text,,,,,,,,"Released 2026-08-25; dense 30B reasoning/thinking model, 128K context. IBM also publishes its own MLX builds."
 granite-4.2-8b,Granite 4.2 8B,ibm-granite/granite-4.2-8b,granite-4.2,text,,,,,,,,
-olmo-3.1-32b-instruct,Olmo 3.1 32B Instruct,allenai/Olmo-3.1-32B-Instruct,olmo-3,text,continued-own,"Olmo 3 32B (Olmo-3-1125-32B base, via Olmo 3 32B Think SFT)",,,,,,Released 2025-12; newest Olmo instruct LLM on the Hub (Olmo-Hybrid 7B is a research variant).
+olmo-3.1-32b-instruct,Olmo 3.1 32B Instruct,allenai/Olmo-3.1-32B-Instruct,olmo-3,text,,"Olmo 3 32B (Olmo-3-1125-32B base, via Olmo 3 32B Think SFT)",,,,,,Released 2025-12; newest Olmo instruct LLM on the Hub (Olmo-Hybrid 7B is a research variant).
 olmo-3-7b-instruct,Olmo 3 7B Instruct,allenai/Olmo-3-7B-Instruct,olmo-3,text,,,,,,,,
 qwen3.8-27b,Qwen3.8-27B,Qwen/Qwen3.8-27B,qwen3.8,"text,image",,,,,,,,"Dense 27.8B hybrid (Gated DeltaNet + gated attention), vision encoder, video input; 262k native context."
 qwen3.8-flash-next,Qwen3.8-Flash-Next,Qwen/Qwen3.8-Flash-Next,qwen3.8-flash-next,"text,image",,,,,,,,"125B-A6B MoE plus 51B n-gram embedding and 4B MTP (about 180B stored); Qwen Sparse Attention, gated residual; video input."

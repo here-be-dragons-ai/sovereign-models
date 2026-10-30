@@ -28,7 +28,8 @@ STATUS.
                definitions and calls, tool results; date fixed)
   differs      a template renders differently, or one cannot be rendered; the
                diff is linked
-  suspicious   the build has a risky construct the original does not have, and
+  needs review the build has a construct the original does not have that calls for a look
+               (not a verdict), and
                no benign verdict for this exact template in
                data/template_reviews.csv (with one, the status is what the
                comparison gave and the reason starts with the verdict)
@@ -37,7 +38,7 @@ STATUS.
 Risky constructs (date or time, randomness, conditions on message content
 that compare it with a literal, URLs, base64 or hex blobs, very long string
 literals) found in an original are reported on its own row and do not make
-its builds suspicious; many official templates insert the current date.
+its builds `needs review`; many official templates insert the current date.
 """
 
 import csv
@@ -362,7 +363,7 @@ def check_model(mid, original, builds, today):
         if new:
             review = reviewed(repo, row["sha256"])
             if not review:
-                status = "suspicious"
+                status = "needs review"
             row["reason"] = "; ".join(filter(None, [
                 review and f"reviewed {review['reviewed']}: {review['note']}",
                 f"new in the build: {', '.join(sorted(new))}",
