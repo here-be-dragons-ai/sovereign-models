@@ -70,6 +70,7 @@
           border-radius:5px; padding:0 6px; background:var(--other); }
   .tier.A { background:var(--A); } .tier.B { background:var(--B); } .tier.C { background:var(--C); }
   .flags { color:var(--muted); font-size:13px; }
+  .mk { display:inline-block; font-size:10px; padding:0 4px; border-radius:6px; margin-left:3px; border:1px solid var(--line); color:var(--muted); white-space:nowrap; }
   .tag { font-size:11px; padding:0 5px; border-radius:8px; margin-left:4px; border:1px solid var(--line); color:var(--muted); }
   .tag.new { background:#ebfbee; border-color:#b2f2bb; color:#2b8a3e; }
   .ok { color:#2b8a3e; font-weight:600; }
@@ -134,7 +135,7 @@
     <div class="chips"><label data-t-title="expertTitle"><input type="checkbox" id="expert"> <span data-t="expert"></span></label></div>
     <div class="chips expert"><label><input type="checkbox" id="mlx"> <span data-t="loadsMlx"></span></label>
       <label><input type="checkbox" id="llama"> <span data-t="runsLlama"></span></label>
-      <label><input type="checkbox" id="verified"> <span data-t="verifiedOnly"></span></label></div>
+      <label data-t-title="verifiedNote"><input type="checkbox" id="verified"> <span data-t="verifiedOnly"></span></label></div>
   </div>
 
   <div class="toolbar">
@@ -157,6 +158,9 @@
     <a href="https://github.com/here-be-dragons-ai/sovereign-models/blob/main/METHODOLOGY.md" target="_blank" rel="noopener" data-t="methodology"></a> ·
     <a href="https://github.com/here-be-dragons-ai/sovereign-models/issues" target="_blank" rel="noopener" data-t="corrections"></a>
     <br><span data-t="fitNote"></span>
+    <br><span data-t="legalNote"></span>
+    <br><span data-t="operator"></span> <a href="https://here-be-dragons.ai/impressum" target="_blank" rel="noopener" data-t="imprint"></a> ·
+    <a href="https://here-be-dragons.ai/contact" target="_blank" rel="noopener" data-t="contact"></a>
   </footer>
 </main>
 <div id="backdrop"></div>
@@ -183,7 +187,11 @@ const STR = {
     cols: { tier: "Tier", name: "Model", provider_country: "Country", provider: "Provider", origin: "Origin", license_class: "Licence",
       data: "Data", compute: "Compute", params_b: "Params (B)", size_4bit_gb: "4-bit GB", mem: "Total GB",
       mlx_vlm: "mlx-vlm", llama_cpp: "llama.cpp", mlxbuild: "MLX build", flags: "Flags" },
-    isNew: "new", changed: "changed", verifiedTag: "✓ verified", beyond: "beyond max",
+    legalNote: "The categories are a classification of published facts, not legal advice; check the licence yourself before use.",
+    operator: "Operated by Here Be Dragons – Verein für verantwortungsvolle Mensch-Maschine-Zukünfte, Dornbirn (Austria).",
+    imprint: "Imprint", contact: "Contact", mkCompute: "compute: Europe", mkData: d => `data: ${d}`,
+    mkComputeTitle: "Pre-training ran in Europe (evidenced)", mkDataTitle: "Training data open or documented (evidenced)",
+    isNew: "new", changed: "changed", verifiedTag: "✓ verified", verifiedNote: "measured so far: our own builds only", beyond: "beyond max",
     overviewTiers: "European models by tier", overviewShares: "Share of models with …", europe: "Europe", outside: "outside Europe",
     shares: { open: "an open licence", dataOpen: "open training data", recipe: "training code or more published", cop: "a provider that signed the EU Code of Practice", aiact: "an AI Act training summary", mlx: "a load check passed in mlx-vlm" },
     recent: "Recent changes", fullLog: "The full log is data/changes.csv in the dataset.", added: n => `${n} models added`,
@@ -227,7 +235,11 @@ const STR = {
     cols: { tier: "Tier", name: "Modell", provider_country: "Land", provider: "Anbieter", origin: "Herkunft", license_class: "Lizenz",
       data: "Daten", compute: "Rechenzentrum", params_b: "Param. (Mrd.)", size_4bit_gb: "4-Bit GB", mem: "Gesamt GB",
       mlx_vlm: "mlx-vlm", llama_cpp: "llama.cpp", mlxbuild: "MLX-Build", flags: "Hinweise" },
-    isNew: "neu", changed: "geändert", verifiedTag: "✓ verifiziert", beyond: "über Maximum",
+    legalNote: "Die Kategorien ordnen veröffentlichte Fakten ein und sind keine Rechtsberatung; prüfen Sie die Lizenz vor der Nutzung selbst.",
+    operator: "Betrieben von Here Be Dragons – Verein für verantwortungsvolle Mensch-Maschine-Zukünfte, Dornbirn (Österreich).",
+    imprint: "Impressum", contact: "Kontakt", mkCompute: "Training: Europa", mkData: d => `Daten: ${({open: "offen", documented: "dokumentiert"})[d] || d}`,
+    mkComputeTitle: "Vortraining belegt in Europa", mkDataTitle: "Trainingsdaten offen oder dokumentiert (belegt)",
+    isNew: "neu", changed: "geändert", verifiedTag: "✓ verifiziert", verifiedNote: "bisher gemessen: nur unsere eigenen Builds", beyond: "über Maximum",
     overviewTiers: "Europäische Modelle nach Tier", overviewShares: "Anteil der Modelle mit …", europe: "Europa", outside: "außerhalb Europas",
     shares: { open: "offener Lizenz", dataOpen: "offenen Trainingsdaten", recipe: "veröffentlichtem Trainingscode oder mehr", cop: "einem Anbieter, der den EU-Verhaltenskodex unterzeichnet hat", aiact: "einer Zusammenfassung der Trainingsdaten nach AI Act", mlx: "bestandener Ladeprüfung in mlx-vlm" },
     recent: "Letzte Änderungen", fullLog: "Das vollständige Protokoll steht in data/changes.csv im Datensatz.", added: n => `${n} Modelle aufgenommen`,
@@ -254,7 +266,7 @@ const STR = {
   },
 };
 const TIER_DE = {
-  A: "Europäischer Anbieter, unabhängig, eigene Gewichte, offene Lizenz, offene Daten oder europäisches Rechenzentrum",
+  A: "Europäischer Anbieter, unabhängig, eigene Gewichte, offene Lizenz, Trainingsdaten mindestens dokumentiert, und offene Daten oder europäisches Rechenzentrum",
   B: "Europäischer Anbieter und offene Lizenz, aber Daten oder Rechenzentrum nicht offengelegt, oder Kontrolle außerhalb Europas",
   C: "Europäischer Anbieter, aber nicht-europäisches Basismodell oder eigene Lizenz",
   pending: "Lizenz unklar; Tier zurückgehalten, bis geprüft",
@@ -298,6 +310,8 @@ const expert = () => $("expert").checked;
 const cols = () => expert() ? COLS : COLS.filter(([k]) => !EXPERT_COLS.includes(k));
 const TIER_ORDER = ["A","B","C","pending","excluded","comparison"];
 const EUROPE_TIERS = ["A","B","C","pending","excluded"];
+// All European categories are shown by default (decided 2026-10-30), not only A and B.
+const DEFAULT_TIERS = EUROPE_TIERS;
 let DATA, sortKey = "tier", sortDir = 1, selected = null, lang = "en", picked = [];
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -306,6 +320,14 @@ const t = (k, ...a) => { const v = STR[lang][k] ?? STR.en[k]; return typeof v ==
 const help = (field, value) => (HELP[lang][field] || {})[value] || "";
 let regionNames = new Intl.DisplayNames(["en"], { type: "region" });
 const countryName = (c) => { try { return regionNames.of(c) || c; } catch { return c; } };
+// The two sub-criteria behind category A, shown next to the category.
+function subCriteria(m) {
+  if (m.tier === "comparison") return "";
+  const out = [];
+  if (["eu", "europe"].includes(m.compute)) out.push(`<span class="mk" title="${esc(t("mkComputeTitle"))}">${esc(t("mkCompute"))}</span>`);
+  if (["open", "documented"].includes(m.data)) out.push(`<span class="mk" title="${esc(t("mkDataTitle"))}">${esc(t("mkData", m.data))}</span>`);
+  return out.join("");
+}
 const tierText = (tier) => lang === "de" ? (TIER_DE[tier] || DATA.tiers[tier]) : DATA.tiers[tier];
 
 const KV_SCALE = {16: 1, 8: 8.5 / 16};
@@ -382,7 +404,7 @@ function renderHead() {
 }
 function cell(m, k, num) {
   if (k === "pick") return `<td class="pick"><input type="checkbox" data-pick="${esc(m.id)}" ${picked.includes(m.id) ? "checked" : ""} aria-label="${esc(t("pickTitle"))}: ${esc(m.name)}" ${!picked.includes(m.id) && picked.length >= 4 ? "disabled" : ""}></td>`;
-  if (k === "tier") return `<td title="${esc(tierText(m.tier))}"><span class="tier ${esc(m.tier)}">${esc(m.tier)}</span></td>`;
+  if (k === "tier") return `<td title="${esc(tierText(m.tier))}"><span class="tier ${esc(m.tier)}">${esc(m.tier)}</span>${subCriteria(m)}</td>`;
   if (k === "mem") return `<td class="num">${esc(memText(m))}</td>`;
   if (k === "provider_country") return `<td title="${esc(m.provider_country)}">${esc(countryName(m.provider_country))}</td>`;
   if (k === "mlxbuild") return `<td${isVerified(m) ? ' class="ok"' : ""}>${esc(mlxBuildText(m))}</td>`;
@@ -471,7 +493,9 @@ function tpl(b) {
   const diff = (b.template_reason.match(/data\/template_diffs\/\S+\.diff/) || [])[0];
   const ok = b.template_check === "identical" || b.template_check === "equivalent";
   const text = ok ? "template ✓ " + b.template_check : "template: " + b.template_check;
-  const why = ok ? "" : (diff ? " " + link(DIFF_BASE + diff, "diff") : (b.template_reason ? " — " + esc(b.template_reason) : ""));
+  // The reason is always shown, with the diff linked where there is one.
+  const reason = (b.template_reason || "").replace(/;?\s*diff: \S+/, "").trim();
+  const why = ok ? "" : (reason ? " — " + esc(reason) : "") + (diff ? " " + link(DIFF_BASE + diff, "diff") : "");
   return ` <span class="src">${esc(text)}</span>${why}`;
 }
 function sources(m, field) {
@@ -535,7 +559,7 @@ function detail(id) {
       <li>llama.cpp: <b>${esc(m.llama_cpp)}</b>${m.llama_cpp_detail ? " — " + esc(m.llama_cpp_detail) : ""} <span class="src">${esc(t("checkedOn", m.llama_cpp_checked || "—"))}</span></li>
       ${m.gguf_list.length ? `<li>${esc(t("ggufBuilds", m.gguf_builds, m.gguf_list.length))}:<br>${m.gguf_list.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) + link("https://huggingface.co/" + b.repo, b.repo) + ` <span class="src">${esc(b.downloads)} ${esc(t("downloads"))}</span>` + tpl(b)).join("<br>")}</li>` : ""}
       ${m.template_check ? `<li>${esc(t("tplLine"))}: <b>${esc(m.template_check)}</b> <span class="src">(${esc(m.template_check_detail)})</span></li>` : ""}
-      ${builds ? `<li>${esc(t("mlxBuilds"))}:<br>${builds}</li>` : ""}
+      ${builds ? `<li>${esc(t("mlxBuilds"))} <span class="src">(${esc(t("verifiedNote"))})</span>:<br>${builds}</li>` : ""}
     </ul>
     </div>
     ${m.flags ? `<p><b>${esc(t("flagsW"))}:</b> ${esc(m.flags)}</p>` : ""}
@@ -627,7 +651,8 @@ function saveState() {
   for (const id of SIMPLE) { const el = $(id); if (el.value && el.value !== el.dataset.default) p.set(id, el.value); }
   for (const id of CHECKS) if ($(id).checked) p.set(id, "1");
   const tiers = [...document.querySelectorAll("#tierchips input:checked")].map(i => i.value).join(",");
-  if (tiers !== "A,B") p.set("tiers", tiers);
+  const defaults = [...document.querySelectorAll("#tierchips input")].map(i => i.value).filter(v => DEFAULT_TIERS.includes(v)).join(",");
+  if (tiers !== defaults) p.set("tiers", tiers);
   if (sortKey !== "tier" || sortDir !== 1) p.set("sort", (sortDir < 0 ? "-" : "") + sortKey);
   if (picked.length) p.set("cmp", picked.join(","));
   if (lang !== "en") p.set("lang", lang);
@@ -689,7 +714,7 @@ function applyLang() {
 fetch("scorecard.json").then(r => r.json()).then(d => {
   DATA = d;
   $("tierchips").innerHTML = TIER_ORDER.filter(tr => tr !== "comparison" && d.models.some(m => m.tier === tr))
-    .map(tr => `<label><input type="checkbox" value="${esc(tr)}" ${["A","B"].includes(tr) ? "checked" : ""}> ${esc(tr)}</label>`).join("");
+    .map(tr => `<label><input type="checkbox" value="${esc(tr)}" ${DEFAULT_TIERS.includes(tr) ? "checked" : ""}> ${esc(tr)}</label>`).join("");
   [...new Set(d.models.map(m => m.license_class))].sort().forEach(v => $("licence").insertAdjacentHTML("beforeend", `<option>${esc(v)}</option>`));
   $("worldbox").hidden = !d.models.some(m => m.tier === "comparison");
   loadState();
