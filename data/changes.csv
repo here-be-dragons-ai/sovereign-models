@@ -277,3 +277,4 @@ date,model,field,old,new,reason
 2026-10-30,velvet2-3b,tier,A,B,"Category A now requires training data at least documented (decided 2026-10-30, external review); Velvet discloses only ""publicly available sources"""
 2026-10-30,viking-33b,control,acquired-non-eu,acquired-non-europe,Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe
 2026-10-30,viking-33b,flags,acquired non-EU,acquired non-Europe,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-11-08,ministral-3-3b,model,,listed,
