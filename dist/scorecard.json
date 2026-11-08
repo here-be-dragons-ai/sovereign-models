@@ -8056,6 +8056,264 @@
   },
   {
    "tier": "B",
+   "id": "ministral-3-3b",
+   "name": "Ministral 3 3B Instruct",
+   "family": "Ministral 3",
+   "provider": "Mistral AI",
+   "provider_country": "FR",
+   "region": "eu",
+   "control": "independent",
+   "majority_owner": "",
+   "origin": "continued-own",
+   "base_model": "Mistral Small 3.1 Base",
+   "license_class": "osi",
+   "license": "apache-2.0",
+   "data": "undisclosed",
+   "compute": "unknown",
+   "ai_act_summary": "yes",
+   "cop_signatory": "yes",
+   "modalities": "text, image",
+   "params_b": "3.8",
+   "context": "262144",
+   "model_type": "mistral3",
+   "size_4bit_gb": "2.1",
+   "size_8bit_gb": "4.0",
+   "mlx_vlm": "not checked",
+   "mlx_vlm_detail": "",
+   "mlx_vlm_checked": "",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "not checked",
+   "llama_cpp_detail": "",
+   "llama_cpp_checked": "",
+   "gguf_build": "",
+   "gguf_build_publisher": "",
+   "gguf_builds": 0,
+   "template_check": "",
+   "template_check_detail": "",
+   "mlx_build_verified": "",
+   "cache_kind": "standard attention",
+   "cache_kib_per_token": "104.0",
+   "cache_gib_8k": "0.8",
+   "cache_gib_32k": "3.2",
+   "cache_gib_128k": "13.0",
+   "teacher_origin": "own",
+   "teachers_list": "Mistral Small 3.1 (pretraining, own); Mistral Medium 3 (posttraining, own); Internal pairwise reward model (judge, own)",
+   "recipe": "weights",
+   "terms_can_change": "no",
+   "languages": "en;fr;es;de;it;pt;nl;zh;ja;ko;ar",
+   "eu_languages": 7,
+   "languages_basis": "supported",
+   "training_hardware": "nvidia",
+   "flags": "",
+   "hbd_involvement": "",
+   "notes": "3.4B language model plus 0.4B vision encoder. Card states a 256k context. Official FP8 release; the base and reasoning variants are not listed.",
+   "hf_repo": "mistralai/Ministral-3-3B-Instruct-2512",
+   "hf_created": "2025-10-31",
+   "last_reviewed": "2026-11-08",
+   "provider_notes": "",
+   "family_notes": "",
+   "repo_verified_org": true,
+   "sources": [
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "no",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "note": "not stated"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "note": "training data not described"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "note": "Mistral's own model line"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "note": ""
+    },
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "Mistral AI listed (2026-10-07)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Mistral Small 3.1",
+     "url": "https://arxiv.org/abs/2601.08584",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160414/https://arxiv.org/abs/2601.08584",
+     "note": "cascade distillation from Mistral Small 3.1"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Mistral Medium 3",
+     "url": "https://arxiv.org/abs/2601.08584",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160414/https://arxiv.org/abs/2601.08584",
+     "note": "SFT with logit distillation from Mistral Medium 3"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Internal pairwise reward model",
+     "url": "https://arxiv.org/abs/2601.08584",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160414/https://arxiv.org/abs/2601.08584",
+     "note": "pairwise reward model for online DPO"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://arxiv.org/abs/2601.08584",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008160414/https://arxiv.org/abs/2601.08584",
+     "note": "open weights under Apache 2.0; no training code or data"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008125818/https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+     "note": "supports dozens of languages, list in card"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://mistral.ai/news/mistral-3",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261005180933/https://mistral.ai/news/mistral-3/",
+     "note": "all Mistral 3 models trained on NVIDIA Hopper GPUs"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://arxiv.org/abs/2601.08584",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261008160414/https://arxiv.org/abs/2601.08584",
+     "note": "Pretraining of the Ministral 3 models starts from the Mistral Small 3.1 Base (MS3.1) model."
+    },
+    {
+     "scope": "family",
+     "field": "base_model",
+     "url": "https://arxiv.org/abs/2601.08584",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-29",
+     "archive_url": "https://web.archive.org/web/20261008160414/https://arxiv.org/abs/2601.08584",
+     "note": "Pretraining of the Ministral 3 models starts from the Mistral Small 3.1 Base (MS3.1) model."
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://legal.mistral.ai/documents/Ministral%203%20-%2014B%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-10-10",
+     "archive_url": "https://web.archive.org/web/20261011054018/https://legal.mistral.ai/documents/Ministral%203%20-%2014B%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf",
+     "note": "This Public Summary of Training Content applies to the following versions of Ministral 3 -14B: Base, Instruct and Reasoning."
+    },
+    {
+     "scope": "model",
+     "field": "ai_act_summary",
+     "url": "https://legal.mistral.ai/documents/Ministral%203%20-%203B%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-08",
+     "archive_url": "https://web.archive.org/web/20261108100118/https://legal.mistral.ai/documents/Ministral%203%20-%203B%20-%20Public%20Summary%20of%20Training%20Content.docx.pdf",
+     "note": "Summary for Ministral 3 - 3B (Base, Instruct, Reasoning); model dependency Mistral Small 3.1; same data description as the 14B"
+    },
+    {
+     "scope": "model",
+     "field": "base_model",
+     "url": "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-08",
+     "archive_url": "https://web.archive.org/web/20261108100047/https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
+     "note": "card lists base_model Ministral-3-3B-Base-2512; 3.4B language model plus 0.4B vision encoder"
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [],
+   "cache_layout": {
+    "growing": 106496,
+    "windowed": [],
+    "constant": 0,
+    "kind": "standard attention"
+   },
+   "teachers": [
+    {
+     "family_id": "ministral-3",
+     "stage": "pretraining",
+     "model": "Mistral Small 3.1",
+     "model_origin": "own",
+     "purpose": "logit distillation (cascade distillation)"
+    },
+    {
+     "family_id": "ministral-3",
+     "stage": "posttraining",
+     "model": "Mistral Medium 3",
+     "model_origin": "own",
+     "purpose": "SFT logit distillation"
+    },
+    {
+     "family_id": "ministral-3",
+     "stage": "judge",
+     "model": "Internal pairwise reward model",
+     "model_origin": "own",
+     "purpose": "ranking responses for online DPO"
+    }
+   ],
+   "max_context": 262144,
+   "last_changed": "2026-11-08",
+   "first_listed": "2026-11-08"
+  },
+  {
+   "tier": "B",
    "id": "mistral-small-3.2",
    "name": "Mistral Small 3.2 24B",
    "family": "Mistral Small 3",
@@ -27074,6 +27332,14 @@
  ],
  "changes": [
   {
+   "date": "2026-11-08",
+   "model": "ministral-3-3b",
+   "field": "model",
+   "old": "",
+   "new": "listed",
+   "reason": ""
+  },
+  {
    "date": "2026-10-30",
    "model": "viking-33b",
    "field": "flags",
@@ -27863,14 +28129,6 @@
    "field": "template_check",
    "old": "differs",
    "new": "suspicious",
-   "reason": ""
-  },
-  {
-   "date": "2026-10-29",
-   "model": "pllum-12b-chat-2512",
-   "field": "params_b",
-   "old": "0.0",
-   "new": "12.2",
    "reason": ""
   }
  ]
