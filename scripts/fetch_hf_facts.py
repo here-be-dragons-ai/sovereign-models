@@ -40,9 +40,14 @@ ARCH_KEYS = (
 )
 
 
+def text_config(cfg):
+    """The language model's part of config.json (multimodal models nest it)."""
+    return cfg.get("text_config") or cfg.get("llm_config") or cfg
+
+
 def arch_summary(cfg):
     """The architecture facts the memory estimate needs, as a compact dict."""
-    text = cfg.get("text_config") or cfg
+    text = text_config(cfg)
     out = {k: text[k] for k in ARCH_KEYS if text.get(k) is not None}
     if "model_type" in cfg:
         out["outer_model_type"] = cfg["model_type"]
@@ -52,6 +57,10 @@ def arch_summary(cfg):
     pattern = text.get("hybrid_override_pattern")
     if pattern:
         out["hybrid_pattern"] = {"attention": pattern.count("*"), "mamba": pattern.count("M"), "mlp": pattern.count("-")}
+    blocks = text.get("layers_block_type")  # Nemotron Omni: the same pattern as a list of names
+    if blocks:
+        out["hybrid_pattern"] = {"attention": blocks.count("attention"), "mamba": blocks.count("mamba"),
+                                 "mlp": blocks.count("moe") + blocks.count("mlp")}
     return out
 COMPUTE = re.compile(
     r"(EuroHPC|MareNostrum|LUMI|Leonardo|Jean Zay|GENCI|Alps|CSCS|JUWELS|JUPITER|"
@@ -113,7 +122,7 @@ def facts(repo):
     row["params_b"] = f"{total / 1e9:.1f}" if total else ""
     try:
         cfg = json.loads(get(f"https://huggingface.co/{repo}/resolve/main/config.json"))
-        text = cfg.get("text_config") or cfg
+        text = text_config(cfg)
         row["model_type"] = cfg.get("model_type", "")
         ctx = text.get("max_position_embeddings") or cfg.get("max_position_embeddings")
         row["context"] = str(ctx or "")

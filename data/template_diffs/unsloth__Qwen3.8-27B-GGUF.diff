@@ -1,6 +1,21 @@
 --- original/default
 +++ build/default
-@@ -135,7 +135,7 @@
+@@ -113,12 +113,10 @@
+             {%- set reasoning_content = message.reasoning_content %}
+         {%- endif %}
+         {%- set reasoning_content = reasoning_content|trim %}
+-        {{- '<|im_start|>' + message.role + '\n' }}
+-        {%- generation %}
+         {%- if preserve_thinking is undefined or preserve_thinking is true or loop.index0 > ns.last_query_index %}
+-            {{- '<think>\n' + reasoning_content + '\n</think>\n\n' + content }}
++            {{- '<|im_start|>' + message.role + '\n<think>\n' + reasoning_content + '\n</think>\n\n' + content }}
+         {%- else %}
+-            {{- content }}
++            {{- '<|im_start|>' + message.role + '\n' + content }}
+         {%- endif %}
+         {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}
+             {%- for tool_call in message.tool_calls %}
+@@ -137,7 +135,7 @@
                  {%- if tool_call.arguments is defined and tool_call.arguments != '' %}
                      {%- for args_name, args_value in tool_call.arguments|items %}
                          {{- '<parameter=' + args_name + '>\n' }}
@@ -9,3 +24,14 @@
                          {{- args_value }}
                          {{- '\n</parameter>\n' }}
                      {%- endfor %}
+@@ -145,9 +143,7 @@
+                 {{- '</function>\n</tool_call>' }}
+             {%- endfor %}
+         {%- endif %}
+-        {{- '<|im_end|>' }}
+-        {%- endgeneration %}
+-        {{- '\n' }}
++        {{- '<|im_end|>\n' }}
+     {%- elif message.role == "tool" %}
+         {%- if loop.previtem and loop.previtem.role != "tool" %}
+             {{- '<|im_start|>user' }}

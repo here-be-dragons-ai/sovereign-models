@@ -1,0 +1,10 @@
+--- original/default
++++ build/default
+@@ -27,6 +27,7 @@
+ 3. When the request involves actions that you cannot perform without tools.
+ 
+ Always prioritize using tools to provide the most accurate and helpful response. If tools are not available, inform the user that you cannot perform the requested action at the moment.' %}
++{%- set default_system_message = default_system_message.replace('{today}', strftime_now('%Y-%m-%d')) %}
+ 
+ {#- Begin of sequence token. #}
+ {{- bos_token }}

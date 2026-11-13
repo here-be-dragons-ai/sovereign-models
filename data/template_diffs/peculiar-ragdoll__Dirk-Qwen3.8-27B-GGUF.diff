@@ -1,7 +1,7 @@
 --- original/default
 +++ build/default
 @@ -1,36 +1,126 @@
-+{%- set template_version = "qwen3.8-froggeric-v22.4.1" %}
++{%- set template_version = "qwen3.8-froggeric-v22.5.0" %}
 +{%- set _tool_format = tool_call_format if tool_call_format is defined else 'xml' %}
  {%- set image_count = namespace(value=0) %}
  {%- set video_count = namespace(value=0) %}
@@ -130,7 +130,7 @@
 +                        {{- 'Picture ' ~ image_count.value ~ ': ' }}
 +                    {%- endif %}
 +                    {{- '<|vision_start|><|image_pad|><|vision_end|>' }}
-+                {%- elif item.type == 'video' or 'video' in item %}
++                {%- elif item.type == 'video' or 'video' in item or 'video_url' in item %}
 +                    {%- if is_system_content %}
 +                        {{- raise_exception('System message cannot contain videos.') }}
 +                    {%- endif %}
@@ -152,7 +152,7 @@
              {%- endif %}
          {%- endfor %}
      {%- elif content is none or content is undefined %}
-@@ -42,127 +132,326 @@
+@@ -42,131 +132,355 @@
  {%- if not messages %}
      {{- raise_exception('No messages provided.') }}
  {%- endif %}
@@ -250,9 +250,37 @@
 -        {%- endif %}
 +    {{- '\n</tools>' }}
 +    {%- if _tool_format == 'json' %}
-+        {{- '\n\nIf you choose to call a function ONLY reply in the following format with NO suffix:\n\n' }}{%- if ns_state.thinking %}{{- '<think>\nBrief explanation of tool call\n</think>\n' }}{%- endif %}{{- '<tool_call>\n{"name": "example_function_name", "arguments": {"example_parameter_1": "value_1", "example_parameter_2": "This is the value for the second parameter"}}\n</tool_call>\n\n<IMPORTANT>\nReminder:\n' }}{%- if ns_state.thinking %}{{- '- You can use the <think></think> block to plan your next tool call OR to synthesize data and formulate your final response to the user.\n- ALL explanation and reasoning MUST be placed strictly inside the <think></think> block.\n' }}{%- endif %}{{- '- Function calls MUST follow the specified format: a single JSON object with "name" and "arguments" keys inside <tool_call></tool_call> XML tags.\n- If you choose to call a tool, you MUST output the <tool_call> block IMMEDIATELY' }}{%- if ns_state.thinking %}{{- ' after thinking' }}{%- endif %}{{- ', with NO conversational text before it.\n- The <tool_call> tag MUST be at the very beginning of a new line, with NO spaces or indentation before it.\n- To call multiple functions, output a separate, completely closed <tool_call></tool_call> block for EACH function. Do NOT nest <tool_call> blocks.\n- If you have all necessary data, provide your final answer directly to the user without any tool call.\n</IMPORTANT>' }}
++        {{- '\n\nIf you choose to call a function ONLY reply in the following format with NO suffix:\n\n' }}
++        {%- if ns_state.thinking %}
++            {{- '<think>\nBrief explanation of tool call\n</think>\n' }}
++        {%- endif %}
++        {{- '<tool_call>\n{"name": "example_function_name", "arguments": {"example_parameter_1": "value_1", "example_parameter_2": "This is the value for the second parameter"}}\n</tool_call>\n\n<IMPORTANT>\nReminder:\n' }}
++        {%- if ns_state.thinking %}
++            {{- '- You can use the <think></think> block to plan your next tool call OR to synthesize data and formulate your final response to the user.\n- ALL explanation and reasoning MUST be placed strictly inside the <think></think> block.\n' }}
++        {%- endif %}
++        {{- '- Function calls MUST follow the specified format: a single JSON object with "name" and "arguments" keys inside <tool_call></tool_call> XML tags.\n' }}
++        {%- if ns_state.thinking %}
++            {{- '- If you choose to call a tool, you MUST output the <tool_call> block IMMEDIATELY after thinking, with NO conversational text before it.\n' }}
++        {%- else %}
++            {{- '- If you choose to call a tool, you MUST output the <tool_call> block IMMEDIATELY, with NO conversational text before it.\n' }}
++        {%- endif %}
++        {{- '- The <tool_call> tag MUST be at the very beginning of a new line, with NO spaces or indentation before it.\n- To call multiple functions, output a separate, completely closed <tool_call></tool_call> block for EACH function. Do NOT nest <tool_call> blocks.\n- If you have all necessary data, provide your final answer directly to the user without any tool call.\n</IMPORTANT>' }}
 +    {%- else %}
-+        {{- '\n\nIf you choose to call a function ONLY reply in the following format with NO suffix:\n\n' }}{%- if ns_state.thinking %}{{- '<think>\nBrief explanation of tool call\n</think>\n' }}{%- endif %}{{- '<tool_call>\n<function=example_function_name>\n<parameter=example_parameter_1>\nvalue_1\n</parameter>\n<parameter=example_parameter_2>\nThis is the value for the second parameter\nthat can span\nmultiple lines\n</parameter>\n</function>\n</tool_call>\n\n<IMPORTANT>\nReminder:\n' }}{%- if ns_state.thinking %}{{- '- You can use the <think></think> block to plan your next tool call OR to synthesize data and formulate your final response to the user.\n- ALL explanation and reasoning MUST be placed strictly inside the <think></think> block.\n' }}{%- endif %}{{- '- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags.\n- If you choose to call a tool, you MUST output the <tool_call> block IMMEDIATELY' }}{%- if ns_state.thinking %}{{- ' after thinking' }}{%- endif %}{{- ', with NO conversational text before it.\n- The <tool_call> and <function> tags MUST be at the very beginning of a new line, with NO spaces or indentation before them.\n- To call multiple functions, output a separate, completely closed <tool_call></tool_call> block for EACH function. Do NOT nest <tool_call> blocks.\n- If you have all necessary data, provide your final answer directly to the user without any tool call.\n</IMPORTANT>' }}
++        {{- '\n\nIf you choose to call a function ONLY reply in the following format with NO suffix:\n\n' }}
++        {%- if ns_state.thinking %}
++            {{- '<think>\nBrief explanation of tool call\n</think>\n' }}
++        {%- endif %}
++        {{- '<tool_call>\n<function=example_function_name>\n<parameter=example_parameter_1>\nvalue_1\n</parameter>\n<parameter=example_parameter_2>\nThis is the value for the second parameter\nthat can span\nmultiple lines\n</parameter>\n</function>\n</tool_call>\n\n<IMPORTANT>\nReminder:\n' }}
++        {%- if ns_state.thinking %}
++            {{- '- You can use the <think></think> block to plan your next tool call OR to synthesize data and formulate your final response to the user.\n- ALL explanation and reasoning MUST be placed strictly inside the <think></think> block.\n' }}
++        {%- endif %}
++        {{- '- Function calls MUST follow the specified format: an inner <function=...></function> block must be nested within <tool_call></tool_call> XML tags.\n' }}
++        {%- if ns_state.thinking %}
++            {{- '- If you choose to call a tool, you MUST output the <tool_call> block IMMEDIATELY after thinking, with NO conversational text before it.\n' }}
++        {%- else %}
++            {{- '- If you choose to call a tool, you MUST output the <tool_call> block IMMEDIATELY, with NO conversational text before it.\n' }}
++        {%- endif %}
++        {{- '- The <tool_call> and <function> tags MUST be at the very beginning of a new line, with NO spaces or indentation before them.\n- To call multiple functions, output a separate, completely closed <tool_call></tool_call> block for EACH function. Do NOT nest <tool_call> blocks.\n- If you have all necessary data, provide your final answer directly to the user without any tool call.\n</IMPORTANT>' }}
 +    {%- endif %}
 +    {%- if _sc %}
 +        {{- '\n\n' + _sc }}
@@ -335,8 +363,14 @@
 -            {%- set reasoning_content = message.reasoning_content %}
 -        {%- endif %}
 -        {%- set reasoning_content = reasoning_content|trim %}
+-        {{- '<|im_start|>' + message.role + '\n' }}
+-        {%- generation %}
 -        {%- if preserve_thinking is undefined or preserve_thinking is true or loop.index0 > ns.last_query_index %}
--            {{- '<|im_start|>' + message.role + '\n<think>\n' + reasoning_content + '\n</think>\n\n' + content }}
+-            {{- '<think>\n' + reasoning_content + '\n</think>\n\n' + content }}
+-        {%- else %}
+-            {{- content }}
+-        {%- endif %}
+-        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}
 +        {%- set _explicit_reasoning = '' %}
 +        {%- if message.reasoning_content is defined and message.reasoning_content is not none %}
 +            {%- if message.reasoning_content is string %}
@@ -372,10 +406,7 @@
 +                {%- set content = content.split(_lead_end)[-1].lstrip('\n') %}
 +            {%- endif %}
 +            {%- set reasoning_content = _explicit_reasoning %}
-         {%- else %}
--            {{- '<|im_start|>' + message.role + '\n' + content }}
--        {%- endif %}
--        {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}
++        {%- else %}
 +            {%- set _think_end = '' %}
 +            {%- if content.startswith('</think>') %}
 +                {%- set _think_end = '</think>' %}
@@ -506,9 +537,12 @@
 +                {%- endif %}
              {%- endfor %}
          {%- endif %}
-         {{- '<|im_end|>\n' }}
+-        {{- '<|im_end|>' }}
+-        {%- endgeneration %}
+-        {{- '\n' }}
 -    {%- elif message.role == "tool" %}
 -        {%- if loop.previtem and loop.previtem.role != "tool" %}
++        {{- '<|im_end|>\n' }}
 +    {%- elif message.role == 'tool' %}
 +        {%- set _content_lower = content | lower %}
 +        {%- set _content_head = _content_lower[:120] %}
@@ -528,7 +562,8 @@
          {%- endif %}
 -        {{- '\n<tool_response>\n' }}
 -        {{- content }}
-+        {%- if _tool_format != 'json' and max_tool_response_chars > 0 and content | length > max_tool_response_chars %}
++        {%- set _is_json_payload = (_tool_format == 'json' and content | trim | length > 0 and (content | trim)[:1] in ('{', '[')) %}
++        {%- if not _is_json_payload and max_tool_response_chars > 0 and content | length > max_tool_response_chars %}
 +            {%- set content = content[:max_tool_response_chars] + '\n[TRUNCATED - original length ' ~ (content | length | string) ~ ' chars]' %}
 +        {%- endif %}
 +        {{- '\n<tool_response>\n' + content }}

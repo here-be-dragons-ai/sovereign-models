@@ -72,21 +72,6 @@ poro-2,judge,Llama-3.3-70B-Instruct (judge),foreign,picking the best Finnish res
 poro-2,judge,ArmoRM-Llama3-8B-v0.1,foreign,reward model picking the best English response
 phi-4-reasoning-vision,posttraining,GPT-4o,foreign,synthetic captions and descriptions of web images
 phi-4-reasoning-vision,posttraining,o4-mini,foreign,synthetic captions and descriptions of web images
-nemotron-3,pretraining,"Qwen models (Qwen3-235B-A22B incl. Thinking-2507, Qwen3-30B-A3B, Qwen2.5-72B/32B, QwQ-32B)",foreign,"synthetic pre-training data: formal logic, economics, MCQ, rephrased/translated Common Crawl and Wikipedia, textbook math"
-nemotron-3,pretraining,DeepSeek-V3 and DeepSeek-R1,foreign,"synthetic tasks, STEM, AGIEval and AoPS data"
-nemotron-3,pretraining,gpt-oss-120b and gpt-oss-20b,foreign,Nemotron-Pretraining-Code-Concepts and algorithmic data
-nemotron-3,pretraining,phi-4,foreign,Nemotron-MIND / CC-Math rephrasing and synthetic Common Crawl code
-nemotron-3,pretraining,Mixtral-8x22B-v0.1,european,"synthetic moral stories, social and health sciences from OpenStax"
-nemotron-3,pretraining,Mistral-NeMo-12B-Instruct,european,synthetic Common Crawl (joint Mistral AI/NVIDIA model)
-nemotron-3,pretraining,Nemotron-4-340B-Instruct,own,synthetic math data from Wikimedia
-nemotron-3,posttraining,gpt-oss-120b,foreign,"reasoning traces, solutions, tool calling, chat, safety SFT data"
-nemotron-3,posttraining,"Qwen3 models (Qwen3-235B-A22B-Instruct/Thinking-2507, Qwen3-Coder-480B-A35B, Qwen3-32B, Qwen3-Next-80B)",foreign,"STEM, tool calling, structured outputs, SWE trajectories, long context"
-nemotron-3,posttraining,DeepSeek-R1-0528 and DeepSeek-V3.2,foreign,"code, math, safety, agentic and SWE data"
-nemotron-3,posttraining,"Kimi-K2-Thinking / Kimi-K2.5, MiniMax-M2, GLM-4.7-Flash",foreign,"SWE, search and terminal agent data"
-nemotron-3,posttraining,"Mixtral-8x22B-Instruct, Mixtral-8x7B, Mistral-Small-3.1/3.2, Mistral-7B-Instruct-v0.3",european,"chat, safety and preference data"
-nemotron-3,posttraining,"gemma-2-2b-it, gemma-3-27b-it, gemma-3-4b-it",foreign,preference responses and safety data
-nemotron-3,posttraining,NVIDIA-Nemotron-Nano-9B-v2,own,safety and instruction-following RL data
-nemotron-3,posttraining,Gemini 3 and GPT-5,foreign,prompt generation only for search RL data
 nemotron-3.5,pretraining,"Qwen models (Qwen3-235B-A22B incl. Thinking-2507, Qwen3-30B-A3B-Instruct-2507, Qwen2.5-72B)",foreign,"synthetic pre-training data: fact-seeking, legal, formal logic, economics, MCQ, translation"
 nemotron-3.5,pretraining,DeepSeek-V3 and DeepSeek-R1,foreign,"synthetic tasks, STEM and AoPS data"
 nemotron-3.5,pretraining,gpt-oss-120b and gpt-oss-20b,foreign,code concepts and algorithmic data
@@ -115,10 +100,6 @@ olmo-3,judge,Gemma 3 12B,foreign,PII classification of olmOCR science PDFs
 deepseek-v4,posttraining,DeepSeek-V4 domain expert models,own,more than ten domain experts (SFT + GRPO) consolidated via on-policy distillation
 deepseek-v4,posttraining,earlier and internal DeepSeek models,own,"synthetic data for instruction following, reasoning, coding, safety (AI Act summary; stage not specified)"
 deepseek-v4.1,judge,SmolVLM,foreign,quality scoring of interleaved image-text pre-training data (Hugging Face model)
-kimi-k3,posttraining,prior Kimi domain-specialized models,own,synthesising SFT agentic trajectories
-kimi-k3,posttraining,Kimi K3 domain and effort experts,own,multi-teacher on-policy distillation into the final model
-kimi-k3,judge,internal agentic generative reward model,own,reward for non-verifiable tasks and agentic RL judging
-minimax-m3,posttraining,MiniMax-M2.7,own,"synthetic data (instruction following, reasoning, code, multimodal, safety); stage not specified in AI Act summary"
 llm-jp-4.1,posttraining,gpt-oss-120b,foreign,generating reasoning traces and final responses for SFT; translating Nemotron agentic mix to Japanese
 llm-jp-4.1,judge,gpt-oss-120b (judge),foreign,choosing preferred/rejected responses for DPO
 llm-jp-4.1,posttraining,Qwen3-235B-A22B-Thinking-2507 (via Nemotron-Agentic),foreign,"third-party agentic/tool-calling conversations (with Qwen3-32B, Qwen3-235B-A22B-Instruct-2507)"
@@ -188,3 +169,31 @@ muse-spark,posttraining,Unnamed generative AI models,unknown,"synthetic ideal re
 muse-glimmer,pretraining,Muse Spark,own,"distillation teacher (""distilled from Muse Spark""; stage not stated)"
 mistral-large-4,posttraining,Internal Mistral models,own,synthetic training data (AI Act summary 2.5; stage not stated)
 mistral-large-4,posttraining,Unnamed third-party models,unknown,synthetic datasets from third-party providers (AI Act summary 2.5)
+comet,midtraining,NVIDIA-Nemotron-3.5-Super-VL-120B-A12B,foreign,"healing after compression: writes the training responses (text, agentic trajectories, images, video) for token-level distillation"
+nemotron-3.5,pretraining,Nemotron 3 Ultra Base,own,1T-token distillation teacher for Super 3.5 after initialisation from Nemotron 3 Super Base
+nemotron-3.5,pretraining,Nemotron 3 Super Base,own,1T-token logit distillation teacher for Lightning 3.5
+nemotron-3.5,pretraining,gemma-4-31B-it,foreign,Indic synthetic pre-training data (Indic SDG for Nemotron)
+nemotron-3.5,pretraining,Mistral-NeMo-12B-Instruct,european,synthetic Common Crawl (joint Mistral AI/NVIDIA model)
+nemotron-3.5,pretraining,"Further Qwen and DeepSeek models (QwQ-32B, Qwen3-32B, Qwen2.5-32B-Instruct, Qwen2.5-Math-72B/7B, DeepSeek-V3-0324, DeepSeek-R1-0528, DeepSeek-R1-Distill-Qwen-32B)",foreign,"synthetic pre-training data: Essential-Web rephrasing, code, AoPS, AGIEval, PrismMath, search MCQ"
+nemotron-3.5,posttraining,Kimi K3,foreign,mathematics and STEM reasoning trajectories (Math CoT and Python TIR SFT)
+nemotron-3.5,posttraining,"Qwen3.5 models (Qwen3.5-122B-A10B, Qwen3.5-397B-A17B)",foreign,"vision relabeling, OCR, receipt QA, tool calling and BabyVision SFT data"
+nemotron-3.5,posttraining,gemma-4-31B-it,foreign,general-purpose tool-calling SFT data
+nemotron-3.5,posttraining,GLM-5.2,foreign,competitive-programming trajectories; refinement of arXiv science RL data
+nemotron-3.5,posttraining,DeepSeek-V4-Flash,foreign,long-document translation; problem extraction for arXiv science RL data
+nemotron-3.5,posttraining,"Kimi-K2.5, Kimi-K2.6, Kimi-K2-Thinking",foreign,"ARC-AGI puzzle reasoning, BabyVision tool calling, DocFinQA/SWE-smith data"
+nemotron-3.5,posttraining,DeepSeek-V3.2-Speciale,foreign,math proofs and math SFT data
+nemotron-3.5,posttraining,"Qwen3-VL-30B-A3B-Thinking, DeepSeek-OCR, Goedel-Prover-V2-32B",foreign,"Chinese letter/text QA, Chinese OCR subset, Lean formal proofs"
+nemotron-3.5,posttraining,"Further Qwen and DeepSeek models (Qwen2.5-14B-Instruct, Qwen2.5-32B, Qwen3-4B-Thinking-2507, Qwen3-4B-Instruct, Qwen3-8B, Qwen3-30B-A3B-Thinking-2507, DeepSeek-R1-Distill-Qwen-7B)",foreign,"translation, science RL blend, finance search agent, personas and safety data"
+nemotron-3.5,posttraining,"gemma-2-2b-it, gemma-3-27b-it, gemma-3-4b-it",foreign,preference responses and safety data
+nemotron-3.5,posttraining,NVIDIA-Nemotron-Nano-9B-v2,own,safety data
+nemotron-3.5,posttraining,Mixtral-8x7B-v0.1,european,safety data
+nemotron-3.5,posttraining,Mistral-Large-3-675B,european,synthetic data (AI Act summary 2.5; stage not specified)
+nemotron-3.5,posttraining,Riva-Translate-4B-Instruct-v1.1 and Edify,own,multilingual safety translation; image generation for multimodal safety data
+nemotron-3.5,posttraining,Gemini 3 and GPT-5,foreign,prompt generation only for search RL data
+nemotron-3.5,judge,GPT-5.6 Sol,foreign,filtering and judging of long-PDF translation data
+nemotron-3.5,judge,Gemini 3 Flash Preview and GPT-4o mini,foreign,filtering and quality checks of vision QA data
+nemotron-3.5,judge,Kimi K3 and K3 V5,foreign,verification and filtering of arXiv science RL data
+nemotron-3.5,judge,Qwen3-235B-A22B-Instruct-2507-FP8,foreign,reward judging of arXiv science RL data
+nemotron-3.5,judge,Super 3.5 r14,own,difficulty profiling of arXiv science RL data
+longcat-2.5,posttraining,"LongCat-2.5 domain experts (agent, reasoning, interaction)",own,multi-teacher on-policy distillation (MOPD) into the final model
+ling-3.1-flash,posttraining,Ling-2.6 series models,own,"synthetic data (instruction following, reasoning, coding, writing, knowledge); stage not specified in AI Act summary"

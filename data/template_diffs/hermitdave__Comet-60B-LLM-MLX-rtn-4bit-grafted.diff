@@ -1,0 +1,37 @@
+--- original/default
++++ build/default
+@@ -33,30 +33,24 @@
+             {%- set counters.videos = 0 -%}
+         {%- endif -%}
+         {%- set content_ns = namespace(val='') -%}
+-        {%- set render_ns = namespace(image_index=0, after_text=false) -%}
++        {%- set render_ns = namespace(image_index=0) -%}
+         {%- for part in content -%}
+-            {%- set sep = '\n' if render_ns.after_text and not content_ns.val.endswith('\n') else '' -%}
+             {%- if part['type'] == 'image' or part['type'] == 'image_url' or part['type'] == 'input_image' -%}
+                 {%- set render_ns.image_index = render_ns.image_index + 1 -%}
+                 {%- if counters.images > 0 -%}
+                     {%- if counters.images > 1 -%}
+-                        {%- set content_ns.val = content_ns.val + sep
++                        {%- set content_ns.val = content_ns.val
+                             + '<image ' + render_ns.image_index|string + '><image>' -%}
+                     {%- else -%}
+-                        {%- set content_ns.val = content_ns.val + sep + '<image>' -%}
++                        {%- set content_ns.val = content_ns.val + '<image>' -%}
+                     {%- endif -%}
+-                    {%- set render_ns.after_text = false -%}
+                 {%- endif -%}
+             {%- elif part['type'] == 'video' or part['type'] == 'video_url' or part['type'] == 'input_video' -%}
+                 {%- if counters.videos > 0 -%}
+-                    {%- set content_ns.val = content_ns.val + sep + '<video>' -%}
+-                    {%- set render_ns.after_text = false -%}
++                    {%- set content_ns.val = content_ns.val + '<video>' -%}
+                 {%- endif -%}
+             {%- elif part['type'] == 'text' or part['type'] == 'input_text' -%}
+                 {%- set content_ns.val = content_ns.val + (part['text'] | default('', true)) -%}
+-                {%- if part['text'] | default('', true) -%}
+-                    {%- set render_ns.after_text = true -%}
+-                {%- endif -%}
+             {%- endif -%}
+         {%- endfor -%}
+         {{- content_ns.val -}}

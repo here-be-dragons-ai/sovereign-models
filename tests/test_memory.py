@@ -46,6 +46,18 @@ class TestMemory(unittest.TestCase):
         layout = cache_layout(a)
         self.assertAlmostEqual(cache_bytes(layout, 1000, kv_bits=8) / cache_bytes(layout, 1000), 8.5 / 16)
 
+    def test_nested_llm_config_with_block_list(self):
+        # Nemotron 3.5 Super VL: llm_config with layers_block_type; 8 attention layers x 2 KV heads
+        # x 128 x (K+V) x 2 bytes = 8 KiB/token
+        from fetch_hf_facts import arch_summary
+        cfg = {"model_type": "nemotron_h_omni", "llm_config": {
+            "model_type": "nemotron_h", "num_hidden_layers": 88, "num_attention_heads": 32,
+            "num_key_value_heads": 2, "head_dim": 128, "mamba_num_heads": 128, "mamba_head_dim": 64,
+            "ssm_state_size": 128, "layers_block_type": ["mamba"] * 40 + ["moe"] * 40 + ["attention"] * 8}}
+        a = arch_summary(cfg)
+        self.assertEqual(a["hybrid_pattern"], {"attention": 8, "mamba": 40, "mlp": 40})
+        self.assertEqual(cache_layout(a)["growing"], 8 * KIB)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -277,3 +277,27 @@ date,model,field,old,new,reason
 2026-10-30,velvet2-3b,tier,A,B,"Category A now requires training data at least documented (decided 2026-10-30, external review); Velvet discloses only ""publicly available sources"""
 2026-10-30,viking-33b,control,acquired-non-eu,acquired-non-europe,Control values renamed: owner in Europe outside the EU/EEA is acquired-europe and does not cap the category (decided 2026-10-30); -non-eu became -non-europe
 2026-10-30,viking-33b,flags,acquired non-EU,acquired non-Europe,"Flags reworded: binding use policy, whether it can change and whether a third party issues it; owned outside the EU (2026-10-30)"
+2026-11-12,apertus-1.5-70b,mlx_vlm,unsupported,loads,
+2026-11-12,apertus-1.5-8b,mlx_vlm,unsupported,loads,
+2026-11-12,apertus-1.5-8b,llama_cpp,unsupported,fork only,
+2026-11-12,apertus-1.5-8b,template_check,,identical,
+2026-11-12,bielik-11b-v3,model,listed,,Replaced by Bielik 11B v3.1 Instruct (current release of the family)
+2026-11-12,bielik-11b-v3.1,model,,listed,New release found in the review of 2026-11-12
+2026-11-12,comet-60b,model,,listed,New release found in the review of 2026-11-12
+2026-11-12,deepseek-v4.1-flash,name,DeepSeek-V4.1-Flash,DeepSeek-V4.1-Flash-1017,Point update DeepSeek-V4.1-Flash-1017 replaces the original release
+2026-11-12,deepseek-v4.1-flash,hf_repo,deepseek-ai/DeepSeek-V4.1-Flash,deepseek-ai/DeepSeek-V4.1-Flash-1017,Point update DeepSeek-V4.1-Flash-1017 replaces the original release
+2026-11-12,deepseek-v4.1-flash,template_check,differs,needs review,
+2026-11-12,ernie-5.5-flash-base,model,,listed,New release found in the review of 2026-11-12
+2026-11-12,glm-5.3,template_check,equivalent,not checked,
+2026-11-12,glm-5.3-flash,template_check,not checked,differs,
+2026-11-12,kimi-k3,model,listed,,Replaced by Kimi K3.1 Pro (one or two current flagships per provider)
+2026-11-12,kimi-k3.1-pro,model,,listed,New release found in the review of 2026-11-12
+2026-11-12,ling-3.1-flash-1019,model,,listed,New release found in the review of 2026-11-12
+2026-11-12,longcat-2.5,model,,listed,New release found in the review of 2026-11-12
+2026-11-12,minimax-m3,model,listed,,Replaced by MiniMax-M3.1-Flash (one or two current flagships per provider)
+2026-11-12,minimax-m3.1-flash,model,,listed,New release found in the review of 2026-11-12
+2026-11-12,mistral-large-4,mlx_vlm,unsupported,not checked,
+2026-11-12,mistral-large-4,llama_cpp,fork only,supported,
+2026-11-12,nemotron-3-super-120b,model,listed,,Replaced by NVIDIA Nemotron 3.5 Super VL 120B-A12B (one or two current flagships per provider)
+2026-11-12,nemotron-3.5-super-vl-120b,model,,listed,New release found in the review of 2026-11-12
+2026-11-12,qwen3.8-flash-next,template_check,not checked,differs,
