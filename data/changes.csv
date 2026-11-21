@@ -304,6 +304,8 @@ date,model,field,old,new,reason
 2026-11-21,aion-1.0-instruct-2.3b,model,,listed,New release found in the review of 2026-11-21
 2026-11-21,dfm-mimir-1.5,model,listed,,Replaced by DFM Mimir v1.8 (current release of the family)
 2026-11-21,dfm-mimir-1.8,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,domyn-edge-sft,llama_cpp,unsupported,fork only,
+2026-11-21,domyn-edge-sft,template_check,,identical,
 2026-11-21,embla-1,model,,listed,New release found in the review of 2026-11-21
 2026-11-21,ernie-5.5-flash-base,mlx_vlm,unsupported,not checked,
 2026-11-21,eurollm1.5-9b-base,model,,listed,New release found in the review of 2026-11-21
