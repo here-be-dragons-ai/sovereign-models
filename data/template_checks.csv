@@ -847,11 +847,6 @@ glm-5.3-flash,D9010/GLM-5.3-Flash-D9010-86GB,gguf,GLM-5.3-Flash-D9010-IQ2-84GB.g
 glm-5.3-flash,mradermacher/GLM-5.3-Flash-GGUF,gguf,,not checked,download failed: no .gguf file,,,2026-11-12
 glm-5.3-flash,tablinum/Lite-Beam-GLM-5.3-Flash-320B-A18B-GGUF,gguf,Lite-Beam-GLM-5.3-Flash-320B-A18B-IQ2_XXS-00001-of-00003.gguf,identical,,content condition;long string literal,45568c4b7296cfc6,2026-11-12
 glm-5.3-flash,AnubysIII/GLM-5.3-Flash-Q8attn-Q4Kexp-GGUF,gguf,GLM-5.3-Flash-Q8attn-Q4Kexp-00001-of-00004.gguf,equivalent,diff: data/template_diffs/AnubysIII__GLM-5.3-Flash-Q8attn-Q4Kexp-GGUF.diff,content condition;long string literal,b91a3cea0ca27224,2026-11-12
-hy4-preview,tencent/Hy4-preview,original,chat_template.jinja,reference,,content condition,6315b2be35806565,2026-11-12
-hy4-preview,6block/Hy4-preview-GGUF,gguf,Hy4-preview-IQ2_XS-00001-of-00039.gguf,identical,,content condition,6315b2be35806565,2026-11-12
-hy4-preview,qtum/Hy4-preview-GGUF,gguf,Hy4-preview-IQ2_XS-00001-of-00039.gguf,identical,,content condition,6315b2be35806565,2026-11-12
-hy4-preview,anemll/Hy4-preview-FlashMoE-STQ1_0,gguf,model-dense.gguf,differs,diff: data/template_diffs/anemll__Hy4-preview-FlashMoE-STQ1_0.diff,content condition,d82cf7443c13f066,2026-11-12
-hy4-preview,avar6/Hy4-Preview-gguf,gguf,IQ2_XS-2.73bpw/Hy4-Preview-IQ2_XS-2.73bpw-00001-of-00006.gguf,identical,,content condition,6315b2be35806565,2026-11-12
 k-exaone-2.0-750b,LGAI-EXAONE/K-EXAONE-2.0-750B-A37B,original,chat_template.jinja,reference,,content condition;long string literal,57716f0bbb5e31f1,2026-11-12
 k-exaone-2.0-750b,DevQuasar/NOT_WOKRKING-LGAI-EXAONE.K-EXAONE-2.0-750B-A37B-GGUF,gguf,Q2_K/LGAI-EXAONE.K-EXAONE-2.0-750B-A37B.Q2_K-00001-of-00018.gguf,identical,,content condition;long string literal,57716f0bbb5e31f1,2026-11-12
 exaone-4.5-33b,LGAI-EXAONE/EXAONE-4.5-33B,original,chat_template.jinja,reference,,content condition,e888cc198ecc7fe4,2026-11-12
@@ -881,9 +876,6 @@ gpt-oss-swallow-120b-rl,nobikko/GPT-OSS-Swallow-120B-RL-v0.1-GGUF,gguf,GPT-OSS-S
 gpt-oss-swallow-120b-rl,elvezjp/GPT-OSS-Swallow-120B-RL-v0.1-gguf,gguf,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-11-12
 plamo-3-nict-2604-31b-base,pfnet/plamo-3-nict-2604-31b-base,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-11-12
 plamo-3-nict-2604-31b-base,nori-sdc/PLaMo-3-NICT-2604-31B-Base-GGUF,gguf,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-11-12
-sarvam-105b,sarvamai/sarvam-105b,original,chat_template.jinja,reference,,content condition,763fbfde7f499eea,2026-11-12
-sarvam-105b,Aaravomega/sarvam-105b-GGUF-IQ2_M-IQ1_M,gguf,sarvam-105b-IQ1_M.gguf,identical,,content condition,763fbfde7f499eea,2026-11-12
-sarvam-105b,Aaravomega/sarvam-105b-GGUF-Q8_0,gguf,Q8_0/sarvam-105b-Q8_0-00001-of-00003.gguf,identical,,content condition,763fbfde7f499eea,2026-11-12
 sarvam-30b,sarvamai/sarvam-30b,original,chat_template.jinja,reference,,content condition,763fbfde7f499eea,2026-11-12
 sarvam-30b,Aaravomega/sarvam-30b-GGUF-IQ2_M-IQ1_M,gguf,sarvam-30b-IQ1_M-indic.gguf,identical,,content condition,763fbfde7f499eea,2026-11-12
 sarvam-30b,DevQuasar/sarvamai.sarvam-30b-GGUF,gguf,sarvamai.sarvam-30b.f16.gguf.Q2_K.gguf,identical,,content condition,763fbfde7f499eea,2026-11-12
@@ -896,10 +888,6 @@ sarvam-30b,Reinforce-ai/sarvam-30b-Spiral,gguf,sarvam-30b-Spiral_Q4.gguf,identic
 sarvam-30b,infergo/sarvam-30b-gguf,gguf,sarvam-30b-Q4_K_M.gguf,identical,,content condition,763fbfde7f499eea,2026-11-12
 sarvam-30b,ThatCultivator/sarvam-30b-gguf,gguf,sarvam-30b.Q4_K_M.gguf,identical,,content condition,763fbfde7f499eea,2026-11-12
 sarvam-30b,achu00/sarvam-30b-Q3_K_M-GGUF,gguf,sarvam-30b-q3_k_m.gguf,not checked,no chat template in the build,,,2026-11-12
-nemotron-sea-lion-v4.8-120b,aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,original,chat_template.jinja,reference,,content condition;long string literal,9ea8c2600507a009,2026-11-12
-nemotron-sea-lion-v4.8-120b,aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-GGUF,gguf,Nemotron-SEA-LION-v4.8-120B-A12B-Q4_K_M.gguf,identical,,content condition;long string literal,9ea8c2600507a009,2026-11-12
-qwen-sea-lion-v4.5-27b-it,aisingapore/Qwen-SEA-LION-v4.5-27B-IT,original,chat_template.jinja,reference,,content condition;long string literal,ebef8c626218ba8e,2026-11-12
-qwen-sea-lion-v4.5-27b-it,aisingapore/Qwen-SEA-LION-v4.5-27B-IT-GGUF,gguf,Qwen-SEA-LION-v4.5-27B-IT-Q4_K_M.gguf,identical,,content condition;long string literal,ebef8c626218ba8e,2026-11-12
 falcon-h1-34b,tiiuae/Falcon-H1-34B-Instruct,original,chat_template.jinja,reference,,,8b71ed175db31374,2026-11-12
 falcon-h1-34b,tiiuae/Falcon-H1-34B-Instruct-GGUF,gguf,Falcon-H1-34B-Instruct-IQ1_S.gguf,identical,,,8b71ed175db31374,2026-11-12
 falcon-h1-34b,unsloth/Falcon-H1-34B-Instruct-GGUF,gguf,Falcon-H1-34B-Instruct-UD-IQ1_S.gguf,identical,,,8b71ed175db31374,2026-11-12
@@ -969,8 +957,6 @@ teuken-7b-instruct-0.6,openGPT-X/Teuken-7B-instruct-v0.6,original,,not checked,n
 teuken-7b-instruct-0.6,mradermacher/Teuken-7B-instruct-v0.6-i1-GGUF,gguf,Teuken-7B-instruct-v0.6.i1-IQ1_S.gguf,not checked,no chat template in the build,,,2026-11-12
 teuken-7b-instruct-0.6,mradermacher/Teuken-7B-instruct-v0.6-GGUF,gguf,Teuken-7B-instruct-v0.6.Q2_K.gguf,not checked,no chat template in the build,,,2026-11-12
 teuken-7b-instruct-0.6,andy300/Teuken-7B-instruct-v0.6-SP-GGUF,gguf,Teuken-7.5B-Q4_K_M.gguf,not checked,original has no template to compare,,1fa156406ba5ff23,2026-11-12
-dfm-mimir-1.5,danish-foundation-models/DFM-Mimir-v1.5,original,chat_template.jinja,reference,,long string literal,8577546dd82c737f,2026-11-12
-dfm-mimir-1.5,danish-foundation-models/DFM-Mimir-v1.5-GGUF,gguf,dfm-mimir-v1.5-q4_k_m.gguf,identical,,long string literal,8577546dd82c737f,2026-11-12
 bggpt-gemma-3-27b-it,INSAIT-Institute/BgGPT-Gemma-3-27B-IT,original,chat_template.jinja,reference,,,5a5817f52f26e5b9,2026-11-12
 bggpt-gemma-3-27b-it,INSAIT-Institute/BgGPT-Gemma-3-27B-IT-GGUF,gguf,BgGPT-Gemma-3-27B-IT-Q4_K_M.gguf,identical,,,5a5817f52f26e5b9,2026-11-12
 bggpt-gemma-3-27b-it,beleata74/BgGPT-Gemma-3-27B-IT-GGUF-Q4_K_M-mmproj,gguf,BgGPT-Gemma-3-27B-IT-Q4_K_M.gguf,identical,,,5a5817f52f26e5b9,2026-11-12
@@ -1130,3 +1116,80 @@ ling-3.1-flash-1019,Baekpica/Ling-3.1-flash-1019-VQ-GGUF,gguf,mtp-native.gguf,no
 ling-3.1-flash-1019,AtomicChat/Ling-3.1-flash-1019-GGUF,gguf,Ling-3.1-flash-1019-AD-IQ2_M-00001-of-00006.gguf,identical,,content condition;long string literal,0af674af8aa5d72b,2026-11-12
 ling-3.1-flash-1019,vultr/Ling-3.1-flash-1019-GGUF,gguf,mtp-Ling-3.1-flash-1019-Q8_0.gguf,identical,,content condition;long string literal,0af674af8aa5d72b,2026-11-12
 ernie-5.5-flash-base,baidu/ERNIE-5.5-Flash-Base,original,,not checked,no chat template in the repo,,,2026-11-12
+olala-v1.0-mini,OVHaiLLM/Olala-v1.0-mini-7A1B,original,chat_template.jinja,reference,,long string literal,7eaaba07f682b684,2026-11-21
+olala-v1.0-mini,OVHaiLLM/Olala-v1.0-mini-7A1B-MLX,mlx,,not checked,no chat template in the build,,,2026-11-21
+olala-v1.0-mini,OVHaiLLM/Olala-v1.0-mini-7A1B-GGUF,gguf,Olala-v1.0-mini-7A1B-q5_k_m.gguf,identical,,long string literal,7eaaba07f682b684,2026-11-21
+olala-v1.0-mini,Myric/Olala-v1.0-mini-7A1B-APEX-GGUF,gguf,Olala-v1.0-mini-7A1B-APEX-6g.gguf,identical,,long string literal,7eaaba07f682b684,2026-11-21
+munin-2.0,danish-foundation-models/munin-2.0,original,chat_template.jinja,reference,,content condition;long string literal,08078ce2a4c7d2b4,2026-11-21
+munin-2.0,mradermacher/munin-2.0-i1-GGUF,gguf,munin-2.0.i1-Q2_K.gguf,identical,,content condition;long string literal,08078ce2a4c7d2b4,2026-11-21
+munin-2.0,mradermacher/munin-2.0-GGUF,gguf,munin-2.0.Q2_K.gguf,identical,,content condition;long string literal,08078ce2a4c7d2b4,2026-11-21
+dfm-mimir-1.8,danish-foundation-models/DFM-Mimir-v1.8,original,chat_template.jinja,reference,,long string literal,ef78cd83fc81a436,2026-11-21
+latxa-3-122b-a10b,HiTZ/Latxa-3-122B-A10B,original,chat_template.jinja,reference,,content condition;date or time;long string literal,1c045368fc826cf6,2026-11-21
+latxa-3-122b-a10b,mradermacher/Latxa-3-122B-A10B-i1-GGUF,gguf,Latxa-3-122B-A10B.i1-IQ1_S.gguf,identical,,content condition;date or time;long string literal,1c045368fc826cf6,2026-11-21
+latxa-3-122b-a10b,mradermacher/Latxa-3-122B-A10B-GGUF,gguf,Latxa-3-122B-A10B.Q2_K.gguf,identical,,content condition;date or time;long string literal,1c045368fc826cf6,2026-11-21
+latxa-3-122b-a10b,itzune/Latxa-3-122B-A10B-GGUF,gguf,HiTZ-Latxa-3-122B-A10B-Q4_K_M-00001-of-00002.gguf,identical,,content condition;date or time;long string literal,1c045368fc826cf6,2026-11-21
+eurollm1.5-9b-base,utter-project/EuroLLM1.5-9B-Base,original,,not checked,no chat template in the repo,,,2026-11-21
+eurollm1.5-9b-base,mradermacher/EuroLLM1.5-9B-Base-i1-GGUF,gguf,EuroLLM1.5-9B-Base.i1-IQ1_S.gguf,not checked,no chat template in the build,,,2026-11-21
+eurollm1.5-9b-base,mradermacher/EuroLLM1.5-9B-Base-GGUF,gguf,EuroLLM1.5-9B-Base.Q2_K.gguf,not checked,no chat template in the build,,,2026-11-21
+villanova2-15b-a3b,VillanovaAI/Villanova2-15B-A3B,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-11-21
+villanova2-15b-a3b,VillanovaAI/Villanova2-15B-A3B-GGUF,gguf,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-11-21
+embla-1,sevren-ai/Embla1-bf16,original,chat_template.jinja,reference,,content condition;long string literal,d54d462e9af27517,2026-11-21
+embla-1,sevren-ai/Embla1-4bit,mlx,chat_template.jinja,identical,,content condition;long string literal,d54d462e9af27517,2026-11-21
+lara-mini-base,translated/Lara-4-Mini-Base,original,,not checked,download failed: HTTP Error 403: Forbidden,,,2026-11-21
+hy4,tencent/Hy4,original,chat_template.jinja,reference,,,de97e380a3e15a47,2026-11-21
+hy4,AngelSlim/Hy4-GGUF,gguf,Hy4-STQ1_0.gguf,differs,diff: data/template_diffs/AngelSlim__Hy4-GGUF.diff,,6d9d847390975b66,2026-11-21
+hy4,Xylolabs/Hy4-GGUF,gguf,Hy4-IQ2_XXS-00001-of-00013.gguf,identical,,,de97e380a3e15a47,2026-11-21
+hy4-flash,tencent/Hy4-flash,original,chat_template.jinja,reference,,,de97e380a3e15a47,2026-11-21
+hy4-flash,peasantsmith/Hy4-Flash-Maya-GGUF,gguf,Maya-XS/Hy4-Flash-Maya-XS-IQ2_XXS-00001-of-00002.gguf,equivalent,diff: data/template_diffs/peasantsmith__Hy4-Flash-Maya-GGUF.diff,,462790b8b8452c2a,2026-11-21
+hy4-flash,AngelSlim/Hy4-flash-GGUF,gguf,Hy4-flash-IQ2_AH-00001-of-00002.gguf,differs,diff: data/template_diffs/AngelSlim__Hy4-flash-GGUF.diff,,6d9d847390975b66,2026-11-21
+hy4-flash,AtomicChat/Hy4-flash-GGUF,gguf,Hy4-flash-AD-IQ2_S-IQ2_XXS-00001-of-00002.gguf,equivalent,diff: data/template_diffs/AtomicChat__Hy4-flash-GGUF.diff,,462790b8b8452c2a,2026-11-21
+hy4-flash,Xylolabs/Hy4-flash-GGUF,gguf,Hy4-flash-IQ2_M-00001-of-00002.gguf,equivalent,diff: data/template_diffs/Xylolabs__Hy4-flash-GGUF.diff,,462790b8b8452c2a,2026-11-21
+hy4-flash,nace-ai/Hy4-flash-GGUF,gguf,IQ4_XS-4.48bpw/Hy4-flash-IQ4_XS-4.48bpw-00001-of-00003.gguf,equivalent,diff: data/template_diffs/nace-ai__Hy4-flash-GGUF.diff,,462790b8b8452c2a,2026-11-21
+hy4-flash,Baekpica/Hy4-flash-Mixed-Quant-GGUF,gguf,MQ-Q5-Q8-SSD-ENGRAM-FP8/embed-tokens-bf16.gguf,not checked,no chat template in the build,,,2026-11-21
+hy4-flash,nace-ai/Hy4-flash-MLX-4.6bit,gguf,engram-iq4nl.gguf,not checked,no chat template in the build,,,2026-11-21
+hy4-flash,nace-ai/Hy4-flash-MLX-3.1bit,gguf,engram-iq4nl.gguf,not checked,no chat template in the build,,,2026-11-21
+hy4-flash,Harsha001/Hy4-flash-ROCmFPX,gguf,Q4_0_STRIX/Hy4-flash-Q4_0_STRIX-00001-of-00003.gguf,equivalent,diff: data/template_diffs/Harsha001__Hy4-flash-ROCmFPX.diff,,462790b8b8452c2a,2026-11-21
+hy4-flash,kaitchup/Hy4-flash-dondon-GGUF,gguf,Hy4-flash-dondon-engram-IQ4_NL.gguf,not checked,no chat template in the build,,,2026-11-21
+hy4-flash,zephel01/Hy4-flash-32G96G-GGUF,gguf,Hy4-flash-32G96G-00001-of-00002.gguf,identical,,,de97e380a3e15a47,2026-11-21
+sarvam-105b-1711,sarvamai/sarvam-105b-1711-bf16,original,chat_template.jinja,reference,,content condition,7d548c26cfd99cf9,2026-11-21
+qwen-sea-lion-v5-397b-a17b-plus,aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus,original,chat_template.jinja,reference,,content condition;long string literal,a797c1624de7c819,2026-11-21
+qwen-sea-lion-v5-397b-a17b-plus,aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus-GGUF,gguf,Qwen-SEA-LION-v5-397B-A17B-Plus-Q4_K_M.gguf,identical,,content condition;long string literal,a797c1624de7c819,2026-11-21
+qwen-sea-lion-v5-27b,aisingapore/Qwen-SEA-LION-v5-27B,original,chat_template.jinja,reference,,content condition;long string literal,652243ff134c1e1c,2026-11-21
+qwen-sea-lion-v5-27b,mradermacher/Qwen-SEA-LION-v5-27B-i1-GGUF,gguf,Qwen-SEA-LION-v5-27B.i1-Q2_K.gguf,identical,,content condition;long string literal,652243ff134c1e1c,2026-11-21
+qwen-sea-lion-v5-27b,mradermacher/Qwen-SEA-LION-v5-27B-GGUF,gguf,Qwen-SEA-LION-v5-27B.Q2_K.gguf,identical,,content condition;long string literal,652243ff134c1e1c,2026-11-21
+inkling-2-small,thinkingmachines/Inkling-2-Small,original,chat_template.jinja,reference,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-small,unsloth/Inkling-2-Small-GGUF,gguf,UD-Q8_K_XL/Inkling-2-Small-UD-Q8_K_XL-00001-of-00011.gguf,needs review,"new in the build: content condition, long string literal; diff: data/template_diffs/unsloth__Inkling-2-Small-GGUF.diff",content condition;long string literal,b21d6e866a67dd9c,2026-11-21
+inkling-2-small,bartowski/Inkling-2-Small-GGUF,gguf,Inkling-2-Small-Q8_0/Inkling-2-Small-Q8_0-00001-of-00017.gguf,differs,diff: data/template_diffs/bartowski__Inkling-2-Small-GGUF.diff,,cf130018c5ac5784,2026-11-21
+inkling-2-small,Baekpica/Inkling-2-Small-VQ-GGUF,gguf,vision-bf16.gguf,not checked,no chat template in the build,,,2026-11-21
+inkling-2-small,peasantsmith/Inkling-2-Small-GGUF,gguf,Inkling-2-Small-MTP-BF16.gguf,not checked,no chat template in the build,,,2026-11-21
+inkling-2-small,DevQuasar/thinkingmachines.Inkling-2-Small-GGUF,gguf,Q8_0/thinkingmachines.Inkling-2-Small.f16.gguf.Q8_0.gguf-00001-of-00049.gguf,differs,diff: data/template_diffs/DevQuasar__thinkingmachines.Inkling-2-Small-GGUF.diff,,cf130018c5ac5784,2026-11-21
+inkling-2-small,Harsha001/Inkling-2-Small-StrixHalo-GGUF,gguf,IQ1_S-E307/Inkling-2-Small-StrixHalo-IQ1_S-E307-00001-of-00003.gguf,differs,diff: data/template_diffs/Harsha001__Inkling-2-Small-StrixHalo-GGUF.diff,,cf130018c5ac5784,2026-11-21
+inkling-2-small,mrsirg97-rgb/osmos-evo-inkling,gguf,mtp/ink2-mtp-q5k.gguf,not checked,no chat template in the build,,,2026-11-21
+inkling-2-mini,thinkingmachines/Inkling-2-Mini,original,chat_template.jinja,reference,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,unsloth/Inkling-2-Mini-GGUF,gguf,dspark-Inkling-2-Mini-Q8_0.gguf,differs,diff: data/template_diffs/unsloth__Inkling-2-Mini-GGUF.diff,,cf130018c5ac5784,2026-11-21
+inkling-2-mini,ggml-org/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini-IQ4_NL.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,AtomicChat/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini-AD-IQ1_S.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,lmstudio-community/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini-Q4_K_M.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,InterpreticAI/Inkling-2-Mini-IQ3_XXS-GGUF,gguf,Inkling-2-Mini-IQ3_XXS.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,InterpreticAI/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini-Q4_K_M.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,IsValorum/Inkling-2-Mini-APEX-I-MiniPlus-V2.1-GGUF,gguf,Inkling-2-Mini-APEX-I-MiniPlus-V2.1-Unsloth-Studio-Adapted.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,IsValorum/Inkling-2-Mini-APEX-I-NanoPlus-V2.1-GGUF,gguf,Inkling-2-Mini-APEX-I-NanoPlus-V2.1-Unsloth-Studio-Adapted.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,Xylolabs/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini-NVFP4-Q8_0.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,nace-ai/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini-NVFP4.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,mrsirg97-rgb/osmos-evo-inkling-mini,gguf,mtp/ink2-mini-mtp-q8.gguf,not checked,no chat template in the build,,,2026-11-21
+inkling-2-mini,Harsha001/Inkling-2-Mini-ROCmFPX,gguf,Inkling-2-Mini-Q4_0_ROCMFP4_STRIX_O8.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,bartowski/thinkingmachines_Inkling-2-Mini-GGUF,gguf,thinkingmachines_Inkling-2-Mini-IQ2_XXS.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,prithivMLmods/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini.Q2_K.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,webmp3/Sakura-Inkling-2-Mini-GGUF,gguf,Sakura-Inkling-2-Mini-Q4_K_M.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,jale/Inkling-2-Mini-GGUF,gguf,dspark-Inkling-2-Mini-Q8_0.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,mudler/Inkling-2-Mini-APEX-GGUF,gguf,Inkling-2-Mini-APEX-I-Nano.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,askthesultans/Inkling-2-Mini-GGUF,gguf,inkling-2-mini-q4_k_m.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,robcowart/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini-Q4_K_M.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,MirrorNeuronLab/Inkling-2-Mini-GGUF,gguf,Inkling-2-Mini-AD-IQ1_S.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,Makdok/Inkling-2-Mini-AMD-GGUF,gguf,Inkling-2-Mini-h6-lbf16-UD-Q4_K_M.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+inkling-2-mini,bouroo/Inkling-2-Mini-MXFP4,gguf,dspark/dspark-Inkling-2-Mini-MXFP4.gguf,differs,diff: data/template_diffs/bouroo__Inkling-2-Mini-MXFP4.diff,,cf130018c5ac5784,2026-11-21
+inkling-2-mini,austindixson/Inkling-2-Mini-IQ4_NL-GGUF,gguf,Inkling-2-Mini-IQ4_NL.gguf,identical,,,5655c8a5577f0dcb,2026-11-21
+aion-1.0-instruct-2.3b,microsoft/Aion-1.0-Instruct-2.3B,original,chat_template.jinja,reference,,content condition;date or time,2fe3a5e2b53b6e6d,2026-11-21
+aion-1.0-instruct-2.3b,AtomicChat/Aion-1.0-Instruct-2.3B-GGUF,gguf,Aion-1.0-Instruct-2.3B-AD-IQ3_S.gguf,identical,,content condition;date or time,2fe3a5e2b53b6e6d,2026-11-21
+aion-1.0-instruct-2.3b,Xylolabs/Aion-1.0-Instruct-2.3B-GGUF,gguf,Aion-1.0-Instruct-2.3B-Q2_K.gguf,identical,,content condition;date or time,2fe3a5e2b53b6e6d,2026-11-21
+aion-1.0-instruct-2.3b,oscarwest1/Aion-1.0-Instruct-2.3B-Q6_K-GGUF,gguf,Aion-1.0-Instruct-2.3B-Q6_K.gguf,identical,,content condition;date or time,2fe3a5e2b53b6e6d,2026-11-21

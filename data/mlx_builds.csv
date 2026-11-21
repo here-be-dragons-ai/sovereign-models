@@ -17,3 +17,5 @@ salamandra-7b,mlx-community/salamandra-7b-instruct-mlx-bf16,16,
 bielik-11b-v3.1,speakleash/Bielik-11B-v3.1-Instruct-MLX-8bit,8,
 bielik-11b-v3.1,speakleash/Bielik-11B-v3.1-Instruct-MLX-4bit,4,
 comet-60b,hermitdave/Comet-60B-LLM-MLX-rtn-4bit-grafted,4,RTN; LLM backbone with BF16 MTP and vision tower grafted; 37 GB; card names the NVIDIA Nemotron Open Model License
+olala-v1.0-mini,OVHaiLLM/Olala-v1.0-mini-7A1B-MLX,5.76,"official; one repo with four folders: bf16 (16), q8 (8.56), q5e6 (5.76, experts 5-bit, rest 6-bit; the card's default) and q4e8 (5.75); needs the provider's mlx-engine fork (olala is not in upstream mlx-lm or mlx-vlm); chat templates sit in the folders, none at the repo root"
+embla-1,sevren-ai/Embla1-4bit,4,"official; the format the model was trained for (QAT, affine, group size 64); mlx-lm does not load the embla architecture, Sevren's embla-metal runtime does"

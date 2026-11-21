@@ -301,3 +301,29 @@ date,model,field,old,new,reason
 2026-11-12,nemotron-3-super-120b,model,listed,,Replaced by NVIDIA Nemotron 3.5 Super VL 120B-A12B (one or two current flagships per provider)
 2026-11-12,nemotron-3.5-super-vl-120b,model,,listed,New release found in the review of 2026-11-12
 2026-11-12,qwen3.8-flash-next,template_check,not checked,differs,
+2026-11-21,aion-1.0-instruct-2.3b,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,dfm-mimir-1.5,model,listed,,Replaced by DFM Mimir v1.8 (current release of the family)
+2026-11-21,dfm-mimir-1.8,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,embla-1,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,ernie-5.5-flash-base,mlx_vlm,unsupported,not checked,
+2026-11-21,eurollm1.5-9b-base,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,hy4,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,hy4-flash,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,hy4-preview,model,listed,,Replaced by Tencent Hy4 (final release of the family)
+2026-11-21,inkling-2-mini,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,inkling-2-small,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,jamba2-3b,params_b,3.0,3.2,
+2026-11-21,kimi-k3.1-pro,llama_cpp,fork only,supported,
+2026-11-21,lara-mini-base,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,latxa-3-122b-a10b,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,ling-3.1-flash-1019,mlx_vlm,unsupported,loads,
+2026-11-21,munin-2.0,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,nemotron-3.5-lightning-30b,params_b,31.6,32.9,
+2026-11-21,nemotron-sea-lion-v4.8-120b,model,listed,,Replaced by Qwen-SEA-LION v5 397B-A17B Plus (one or two current flagships per provider)
+2026-11-21,olala-v1.0-mini,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,qwen-sea-lion-v4.5-27b-it,model,listed,,Replaced by Qwen-SEA-LION v5 27B (one or two current flagships per provider)
+2026-11-21,qwen-sea-lion-v5-27b,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,qwen-sea-lion-v5-397b-a17b-plus,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,sarvam-105b,model,listed,,Replaced by Sarvam-105B-1711 (current release of the family)
+2026-11-21,sarvam-105b-1711,model,,listed,New release found in the review of 2026-11-21
+2026-11-21,villanova2-15b-a3b,model,,listed,New release found in the review of 2026-11-21

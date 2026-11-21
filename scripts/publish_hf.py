@@ -68,7 +68,7 @@ facts and sources, in the tier `comparison` and without a sovereignty rating.
     `build_quality.csv`
   - `changes.csv`: every published change of a value, with date and reason
 
-The rubric answers were read from the sources by a language model (Claude Opus 5.5, Anthropic) and
+The rubric answers were read from the sources by language models (Claude Opus 5.5 and Claude Fable 5.2, Anthropic) and
 checked by code: values follow from the answers, and an answer that can raise a value counts only
 if its quote is found in the archived source. A human spot check of a random sample measures the
 error rate (see METHODOLOGY.md, "Use of AI").

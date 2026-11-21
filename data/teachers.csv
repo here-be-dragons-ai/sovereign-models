@@ -115,8 +115,6 @@ gpt-oss-swallow-0.1,pretraining,Qwen3-235B-A22B-Instruct-2507,foreign,rewriting 
 gpt-oss-swallow-0.1,pretraining,Qwen3-32B,foreign,extracting math text for SwallowMath v2
 gpt-oss-swallow-0.1,pretraining,Mixtral-8x7B-Instruct (via Cosmopedia),european,third-party synthetic textbooks in the CPT mix
 plamo-3-nict,pretraining,PLaMo 3 NICT 120B,own,distillation teacher for the 31B
-sea-lion-v4.8,posttraining,NVIDIA-Nemotron-3-Ultra-550B-A55B,foreign,teacher for online on-policy distillation
-sea-lion-v4.5,posttraining,Qwen3.5-397B-A17B,foreign,logit distillation teacher on SEA-Instruct-2602
 command-a-plus,posttraining,Command A,own,synthetic text/image data (stage not stated in the AI Act summary)
 command-a-plus,posttraining,other internal Cohere models,own,"synthetic data, augmentation, data evaluation (stage not stated)"
 tiny-aya,posttraining,command-a-translate,own,translating posttraining prompts/completions into target languages
@@ -145,7 +143,6 @@ llama-pllum-2512,posttraining,zephyr-orpo-141b-A35b-v0.1,foreign,"synthetic SFT/
 llama-pllum-2512,posttraining,Mistral-7B-Instruct-v0.3,european,synthetic SFT/preference data
 teuken-0.6,posttraining,Mixtral-8x22B-Instruct,european,"Evol-Instruct, everyday conversations and SFT translations into German, French, Italian"
 teuken-0.6,judge,Llama-3.1-70B-Instruct,foreign,automated judge of translation quality
-dfm-mimir-1.5,pretraining,Gemma4 31B,foreign,"synthetic + audited instruction data (span-filling/denoising transforms, dfm8-synthetic, Sapient-synth transplants) in the from-scratch run"
 gams3,pretraining,GaMS-9B-Translator,own,"translating English Wikipedia, Nemotron math and pretraining-SFT data into Slovene"
 gams3,pretraining,Gemma 3 27B,foreign,rewriting 1M classla web documents
 gams3,pretraining,Llama 4 Maverick,foreign,"OCR of national-library documents, theses and math journals"
@@ -197,3 +194,45 @@ nemotron-3.5,judge,Qwen3-235B-A22B-Instruct-2507-FP8,foreign,reward judging of a
 nemotron-3.5,judge,Super 3.5 r14,own,difficulty profiling of arXiv science RL data
 longcat-2.5,posttraining,"LongCat-2.5 domain experts (agent, reasoning, interaction)",own,multi-teacher on-policy distillation (MOPD) into the final model
 ling-3.1-flash,posttraining,Ling-2.6 series models,own,"synthetic data (instruction following, reasoning, coding, writing, knowledge); stage not specified in AI Act summary"
+olala-v1.0-mini,pretraining,Unnamed models (via Nemotron-CC v2 synthetic subsets),unknown,"1,388.1B tokens of synthetic English text (QA pairs, rewrites, knowledge extraction, distillation) in the pre-training mix"
+olala-v1.0-mini,midtraining,Gemma-4-26B-A4B,foreign,Active Reading study notes over Wikipedia in 29 languages; per the report also rewriting and judging the program-verified math problems (annealing)
+olala-v1.0-mini,midtraining,Gemma-4-31B,foreign,"rewriting and judging Math-Enrich-Multilingual and Active Reading over ProofWiki, per the dataset cards (the report names Gemma-4-26B-A4B for the math rewriting)"
+olala-v1.0-mini,midtraining,DeepSeek-V3 and DeepSeek-V3-0324 (via Nemotron-Pretraining-SFT-General),foreign,instruction data of the annealing mix
+olala-v1.0-mini,midtraining,Qwen3-235B-A22B-Thinking-2507 (via Nemotron-Specialized RQA),foreign,reasoning QA of the annealing mix
+olala-v1.0-mini,midtraining,gpt-oss-120b (via Nemotron-Math-v2),foreign,math reasoning data of the annealing mix
+olala-v1.0-mini,posttraining,Unnamed teacher models (via third-party SFT datasets),unknown,SFT data: largely model-generated (distilled) responses contained in third-party datasets
+olala-v1.0-mini,posttraining,Qwen3.8-27B,foreign,translating the in-house behaviour probes and preference sets used as RL prompts
+olala-v1.0-mini,posttraining,GPT-4 and Claude 3.5 Sonnet,foreign,user turns of the sycophancy preference set used in RL
+olala-v1.0-mini,judge,Gemma-3-4B,foreign,grading CCMatrix translation pairs for the pre-training quality filter
+olala-v1.0-mini,judge,Skywork-Reward-V2,foreign,reward-model scores for filtering the SFT data (top 50% per category kept)
+olala-v1.0-mini,judge,GLM-5.3-Flash,foreign,RL reward judge (rubric ratings feed the GRPO rewards)
+olala-v1.0-mini,judge,Qwen3.8-27B,foreign,RL reward judge
+olala-v1.0-mini,judge,Unnamed open-weight model,unknown,retrying unsolved code problems to drop too-hard or wrong ones (RL code stage)
+munin-2.0,posttraining,Unnamed teacher models,unknown,"about 6% of the trained SFT tokens are synthetic data DFM generated (chat, reasoning, code, function calling, agent trajectories); the release note mentions teacher models and synthetic DFM datasets without naming a generator"
+dfm-mimir-1.8,pretraining,Gemma4 31B,foreign,"synthetic + audited instruction data (span-filling/denoising transforms, dfm8-synthetic, Sapient-synth transplants) in the from-scratch run; inherited through v1 and v1.5"
+dfm-mimir-1.8,pretraining,Gemma-4-26B-A4B,foreign,teacher and auditor for the synthetic identity and European-language data added with DFM12
+villanova2,posttraining,DeepSeek-R1-0528 (via Nemotron-Post-Training-v1),foreign,mathematics reasoning traces in the SFT mix
+villanova2,posttraining,Qwen3-32B (via SmolTalk2),foreign,reasoning traces in multilingual SFT conversations
+villanova2,posttraining,Qwen3-235B (via Nemotron-Post-Training-v1),foreign,tool-calling answers in the SFT mix
+villanova2,posttraining,Mistral-Small-3.1-24B-Instruct-2503,european,"regenerating entries of Multi-SFT, the 'Villanova-AI multilingual' rows of the SFT and DPO data"
+villanova2,posttraining,Qwen3-VL-235B-A22B-Instruct and Qwen3.5-122B-A10B,foreign,"regenerating entries of Multi-SFT, e.g. safe responses for the AdvBench prompts"
+villanova2,posttraining,Unnamed open-weight instruction-tuned models,unknown,"completions for the 275,516 DPO preference pairs"
+embla-1,pretraining,Qwen3.5-35B-A3B-Base,foreign,logit distillation from the first step (0.9 KL on its top-256 logits); embeddings and output head start from its top principal components
+embla-1,midtraining,Qwen3.5-35B-A3B,foreign,teacher for the 20B-token extension to 256K context
+embla-1,posttraining,Qwen3.5-35B-A3B,foreign,teacher on assistant tokens in SFT (123B tokens); token-level scoring in on-policy distillation
+embla-1,posttraining,Qwen3.8-27B,foreign,token-level scoring of answers in on-policy distillation (100 steps)
+embla-1,posttraining,GRPO-trained Embla domain specialists,own,"teachers in multi-teacher on-policy distillation (tool use, instruction following, math, abstention)"
+embla-1,judge,gpt-oss-120b,foreign,"judging knowledge questions in GRPO (+1 correct, 0 abstain, -1 wrong)"
+lara-mini,pretraining,Qwen2.5 and Qwen3 models (via Nemotron-CC v2 and Nemotron-Pretraining-SFT v1),foreign,synthetic pre-training text generated by NVIDIA
+lara-mini,pretraining,DeepSeek models (via Nemotron-CC v2 and Nemotron-Pretraining collections),foreign,synthetic pre-training text generated by NVIDIA
+lara-mini,pretraining,Phi-4 (via Nemotron-CC-Math v1),foreign,synthetic math text generated by NVIDIA
+hy4-flash,posttraining,Hy4,own,self-distillation in post-training
+sea-lion-v5,posttraining,Qwen3.8-2.4T-A95B,foreign,"teacher for on-policy distillation (next-token distributions along the student's own responses), in the same update as RL"
+sea-lion-v5,judge,DeepSeek-V4.1-Flash-1017,foreign,LLM judge grading answers against per-prompt rubrics (RL reward)
+sea-lion-v5,judge,Qwen3-235B-A22B,foreign,"tagging the prompts of SEA-Instruct-2602 (quality, coherence, naturalness); the published dataset is filtered on these tags"
+inkling-2,midtraining,Kimi K3,foreign,"trajectories sampled for the third and fourth training phases of Inkling 2 Small (about 320B and 34B tokens of reasoning and agent trajectories), filtered for correctness and alignment"
+inkling-2,midtraining,Earlier Inkling models,own,"trajectories sampled for the same two phases (""our own models"")"
+inkling-2,midtraining,Larger internal Inkling model,own,Inkling 2 Mini: 1T tokens distilled after two thirds of the experts were pruned
+inkling-2,posttraining,Inkling 2 (on-policy self-distillation),own,"alignment: teacher model prompted with a conduct spec (Small; Mini ""same as Inkling 2 Small"")"
+inkling-2,posttraining,Unnamed third-party models,unknown,"synthetic data pipeline: augmentation, evaluation and example generation (AI Act summary 2.5; stage not stated)"
+inkling-2,judge,Unnamed LLM judges and reward models,unknown,"RL graders: rubric-based LLM judges for documents and tool use, pairwise reward models for rendered web apps"

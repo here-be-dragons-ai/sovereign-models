@@ -297,9 +297,10 @@ source. We notify providers on publication and correct entries on request.
 
 ## Use of AI
 
-The rubric answers in `data/evidence.csv` were read from the sources by a language model:
-Claude Opus 5.5 (Anthropic, United States; model id `claude-opus-5-5`, recorded in the `by`
-column), in October 2026. A model from outside Europe reading the evidence for a European
+The rubric answers in `data/evidence.csv` were read from the sources by language models from
+Anthropic (United States): Claude Opus 5.5 (model id `claude-opus-5-5`) from October 2026, and
+Claude Fable 5.2 (`claude-fable-5-2`) for the releases added on 2026-11-21. The `by` column
+records the model for every answer. A model from outside Europe reading the evidence for a European
 sovereignty scorecard is a fair point of criticism; it is contained as follows:
 
 - The model only answers factual questions with a verbatim quote and a URL. It never sets a

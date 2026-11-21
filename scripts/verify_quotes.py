@@ -3,7 +3,8 @@
 For each URL the text is taken from the Wayback snapshot that sources.csv records
 for it (the version that was read), else from the live page. Hugging Face model
 pages add the raw README, arXiv abstract pages the PDF. HTML is reduced to its
-visible text, PDFs need pypdf (run with a Python that has it). Quotes are
+visible text, Word files (.docx) to their paragraphs, PDFs need pypdf (run with
+a Python that has it). Quotes are
 compared after normalisation (scripts/rubric.py): Unicode forms, quotes and
 dashes, hyphenation and whitespace, case; "found (loose)" ignores punctuation
 and markup. A quote may skip text with "...".
@@ -24,6 +25,7 @@ import io
 import re
 import sys
 import urllib.request
+import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -76,6 +78,19 @@ def pdf_text(data):
         return None
 
 
+def docx_text(data):
+    """Paragraph text of a Word file: a zip whose word/document.xml holds the body.
+    Some providers publish their AI Act training summary only in this format."""
+    try:
+        with zipfile.ZipFile(io.BytesIO(data)) as z:
+            xml = z.read("word/document.xml").decode("utf-8", errors="replace")
+    except (zipfile.BadZipFile, KeyError):
+        return None
+    xml = re.sub(r"</w:p>|<w:br\b[^>]*>", "\n", xml)
+    xml = re.sub(r"<w:tab\b[^>]*>", " ", xml)
+    return html.unescape(re.sub(r"<[^>]+>", "", xml))
+
+
 def fetch(url):
     headers = {"User-Agent": UA}
     if url.startswith("https://huggingface.co/") and TOKEN.exists():
@@ -89,6 +104,8 @@ def fetch(url):
 def to_text(data, ctype, url):
     if data[:5] == b"%PDF-" or "pdf" in ctype:
         return pdf_text(data)
+    if data[:4] == b"PK\x03\x04":
+        return docx_text(data)
     raw = data.decode("utf-8", errors="replace")
     if "html" in ctype or raw.lstrip().lower().startswith(("<!doctype", "<html")):
         # Visible text first, then the page's embedded data (scripts, attributes), where
@@ -142,7 +159,7 @@ def document(url, archive, refresh):
             continue
         text = to_text(data, ctype, u)
         if text is None:
-            methods.append(f"{kind}: pdf without pypdf")
+            methods.append(f"{kind}: no readable text (a PDF needs pypdf)")
             continue
         texts.append(text)
         methods.append(kind if u in (url, raw_snapshot(archive or "")) else f"{kind} {u.split('/')[-1] or u}")

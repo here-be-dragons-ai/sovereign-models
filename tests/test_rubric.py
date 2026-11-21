@@ -3,12 +3,15 @@
     python3 -m unittest discover tests
 """
 
+import io
 import sys
 import unittest
+import zipfile
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 import rubric  # noqa: E402
+import verify_quotes  # noqa: E402
 from scorecard import Data  # noqa: E402
 
 
@@ -126,6 +129,32 @@ class TestEvidenceValidation(unittest.TestCase):
         for r in rows:
             self.d.quote_status[rubric.quote_key(r["url"], r["quote"])] = "found"
         self.assertTrue(any("rubric gives 'continued-foreign'" in e for e in self.d.validate()))
+
+
+class TestDocuments(unittest.TestCase):
+    """How verify_quotes.py turns a downloaded document into text."""
+
+    def docx(self, body):
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w") as z:
+            z.writestr("word/document.xml",
+                       f'<?xml version="1.0"?><w:document><w:body>{body}</w:body></w:document>')
+        return buf.getvalue()
+
+    def test_word_file_is_read_by_paragraph(self):
+        # Word splits a sentence into runs; a quote must still be found across them.
+        data = self.docx('<w:p><w:r><w:t>Model dependencies:</w:t></w:r></w:p>'
+                         '<w:p><w:r><w:t>This model was trained </w:t></w:r><w:r><w:rPr><w:b/></w:rPr>'
+                         '<w:t xml:space="preserve">from scratch.</w:t></w:r><w:r><w:t> R&amp;D</w:t></w:r></w:p>')
+        text = verify_quotes.to_text(data, "application/octet-stream", "https://example.org/summary.docx")
+        self.assertEqual(text, "Model dependencies:\nThis model was trained from scratch. R&D\n")
+        self.assertEqual(rubric.find_quote("This model was trained from scratch.", text), "found")
+
+    def test_other_zip_has_no_text(self):
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w") as z:
+            z.writestr("weights.bin", "x")
+        self.assertIsNone(verify_quotes.to_text(buf.getvalue(), "application/zip", "https://example.org/a.zip"))
 
 
 if __name__ == "__main__":
