@@ -286,8 +286,12 @@ Every Monday a GitHub Action re-reads the Hub facts (licence, gating, size, cont
 repo's current commit, which moves with any change to card, config or weights), the chat
 templates of all builds, the hashes of all licence and use-policy documents, and the repos of
 every tracked provider, and checks the latest mlx-vlm release on Apple Silicon. It never changes
-the data: any difference becomes an issue labelled `review`, together with the providers whose
-ownership is in motion.
+the data: the differences against the published state go into one issue labelled `review`, which
+every run rewrites and closes when nothing differs any more. What needs a decision comes first
+(licence documents, quotes, chat templates, changed facts, new repos, providers whose ownership
+is in motion); repos that only moved to a new commit are listed below. A document that cannot be
+fetched in a run keeps its last result, with the date of that check, and is listed as not
+re-checked; a failed download is not reported as a changed licence or a missing quote.
 
 ## Limits
 

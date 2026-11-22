@@ -159,7 +159,8 @@ personal account), in that order; ties by downloads or bits.
 
 - `quote_checks.csv` (`scripts/verify_quotes.py`): per quote in `evidence.csv` (`key` = hash of URL and
   quote) whether it was `found`, `found (loose)` (ignoring punctuation and markup), `not found`, or
-  could not be checked (`no text`), and how the document was read (`snapshot`, `live`).
+  could not be checked (`no text`), and how the document was read (`snapshot`, `live`). A quote
+  found before keeps that result, with its `checked` day, when a document cannot be fetched.
 
 - `build_quality.csv` (from local-sovereign-mlx `quality-summary.py`): per measured MLX build the
   mean KL divergence and the noise floor per text set, multiple-choice sets with a significant loss,
@@ -168,7 +169,8 @@ personal account), in that order; ties by downloads or bits.
   published value between two builds: `date`, `model`, `field` (`model` for added or removed
   models), `old`, `new`, `reason`. A tier change without a reason fails validation.
 - `terms_hashes.csv` (`scripts/check_terms.py`): SHA-256 of every licence and use-policy document
-  the scorecard relies on (files as published, HTML pages by their visible text).
+  the scorecard relies on (files as published, HTML pages by their visible text). `checked` is the
+  day the document was last read: if it cannot be fetched, the row keeps its hash and that day.
 - `known_repos.csv` (`scripts/find_new_repos.py`): every Hub repo of a tracked provider seen so far,
   with the date it was first seen.
 - `build_recipes.csv` (by hand) and `build_provenance.csv` (`scripts/build_provenance.py`): command,

@@ -7,7 +7,8 @@ visible text, Word files (.docx) to their paragraphs, PDFs need pypdf (run with
 a Python that has it). Quotes are
 compared after normalisation (scripts/rubric.py): Unicode forms, quotes and
 dashes, hyphenation and whitespace, case; "found (loose)" ignores punctuation
-and markup. A quote may skip text with "...".
+and markup. A quote may skip text with "...". If a document cannot be fetched and
+the quote was found before, the last result stands, with the date of that check.
 
     python scripts/verify_quotes.py            # writes data/quote_checks.csv
     python scripts/verify_quotes.py --refresh  # re-download cached documents
@@ -171,6 +172,14 @@ def document(url, archive, refresh):
     return text, method
 
 
+def keep_previous(old, status, method):
+    """A worse result after a failed fetch says nothing about the document: keep the last one.
+    (A fetch that fails for the raw model card leaves only the rendered page or the snapshot,
+    where a quote from the card's metadata is not found.)"""
+    return (bool(old) and old["status"].startswith("found") and status in ("not found", "no text")
+            and "failed" in method)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--refresh", action="store_true")
@@ -181,6 +190,7 @@ def main():
         if s["archive_url"]:
             archives.setdefault(s["url"], s["archive_url"])
     today = dt.date.today().isoformat()
+    previous = {r["key"]: r for r in read(OUT.name)}
     rows, seen = [], set()
     for e in evidence:
         if not e["quote"].strip() and not needs_quote(e["question"], e["answer"]):
@@ -194,6 +204,12 @@ def main():
         else:
             text, method = document(e["url"], e.get("archive_url") or archives.get(e["url"]), args.refresh)
             status = find_quote(e["quote"], text) if text else "no text"
+        if keep_previous(previous.get(key), status, method):
+            old = previous[key]
+            rows.append({f: old.get(f, "") for f in FIELDS})
+            print(f"{'kept':14s} {e['subject']}/{e['question']}: {old['status']} on {old['checked']}; "
+                  f"this run: {method}", flush=True)
+            continue
         rows.append(dict(key=key, url=e["url"], status=status, method=method, checked=today))
         print(f"{status:14s} {e['subject']}/{e['question']}: {e['quote'][:70]}", flush=True)
     with open(OUT, "w", newline="", encoding="utf-8") as fh:

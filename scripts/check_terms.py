@@ -4,7 +4,9 @@ Two kinds of documents: those cited as sources for license_class or
 terms_can_change (licence files, use policies, legal pages), and the licence
 files in every model's own repo (LICENSE*, USE_POLICY*, NOTICE*). Files are
 hashed as published; HTML pages by their visible text, so layout changes do
-not count. A changed hash means the terms need a review.
+not count. A changed hash means the terms need a review. If a document cannot
+be fetched (anything but "not found"), its last hash stands, with the date of
+that check.
 
     python scripts/check_terms.py      # writes data/terms_hashes.csv
 """
@@ -25,6 +27,7 @@ DATA = Path(os.environ.get("SM_DATA", ROOT / "data"))  # SM_DATA: another data d
 OUT = DATA / "terms_hashes.csv"
 FIELDS = ["url", "kind", "sha256", "bytes", "checked", "error"]
 TERMS_FILE = re.compile(r"^(LICEN[CS]E|USE_POLICY|USAGE_POLICY|NOTICE|ACCEPTABLE_USE)", re.I)
+GONE = (404, 410)  # the document is no longer there: that is a result, not a failed fetch
 
 
 def _token():
@@ -76,8 +79,15 @@ def documents():
     return sorted(urls)
 
 
+def keep_previous(old, error):
+    """A fetch that fails (blocked, rate limit, timeout) says nothing about the document:
+    keep the hash of the last check. A document that is gone is reported."""
+    return bool(old) and bool(old.get("sha256")) and getattr(error, "code", None) not in GONE
+
+
 def main():
     today = dt.date.today().isoformat()
+    previous = {r["url"]: r for r in csv.DictReader(open(OUT))} if OUT.exists() else {}
     rows = []
     for url in documents():
         row = dict(url=url, checked=today)
@@ -89,6 +99,10 @@ def main():
                 row["kind"] = "file"
             row.update(sha256=hashlib.sha256(body).hexdigest(), bytes=len(body))
         except (urllib.error.URLError, TimeoutError) as e:
+            if keep_previous(previous.get(url), e):
+                rows.append(previous[url])
+                print(f"{'kept':12s} {url} (last checked {previous[url]['checked']}; this run: {e})", flush=True)
+                continue
             row["error"] = str(e)
         rows.append(row)
         print(f"{row.get('sha256', 'ERROR')[:12]:12s} {url}", flush=True)
