@@ -88,8 +88,10 @@ source are welcome there.
 
 
 def note(m):
+    # The rating refers to the commit that was read, not to whatever the repo holds later.
+    commit = m.get("hf_revision", "")[:12]
     parts = [
-        f"Tier {m['tier']}",
+        f"Tier {m['tier']}" + (f" at commit {commit}" if commit else ""),
         m["provider_country"],
         m["provider"],
         m["origin"] + (f" from {m['base_model']}" if m["base_model"] else ""),
