@@ -17,6 +17,8 @@ kolibri-1,supported,Kolibri1ForCausalLM,,2026-11-21,v1.0.0
 devstral-small-2,supported,Mistral3ForConditionalGeneration,,2026-11-21,v1.0.0
 magistral-small-2509,supported,Mistral3ForConditionalGeneration,,2026-11-21,v1.0.0
 mistral-small-3.2,supported,Mistral3ForConditionalGeneration,,2026-11-21,v1.0.0
+ministral-3-3b,supported,Mistral3ForConditionalGeneration,,2026-11-22,v1.0.0
+ministral-3-8b,supported,Mistral3ForConditionalGeneration,,2026-11-22,v1.0.0
 ministral-3-14b,supported,Mistral3ForConditionalGeneration,,2026-11-21,v1.0.0
 mistral-small-4,supported,Mistral3ForConditionalGeneration,,2026-11-21,v1.0.0
 sui-1-24b,supported,Mistral3ForConditionalGeneration,,2026-11-21,v1.0.0

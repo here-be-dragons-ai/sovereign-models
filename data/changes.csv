@@ -329,3 +329,5 @@ date,model,field,old,new,reason
 2026-11-21,sarvam-105b,model,listed,,Replaced by Sarvam-105B-1711 (current release of the family)
 2026-11-21,sarvam-105b-1711,model,,listed,New release found in the review of 2026-11-21
 2026-11-21,villanova2-15b-a3b,model,,listed,New release found in the review of 2026-11-21
+2026-11-22,ministral-3-3b,model,,listed,Contributed in pull request #47
+2026-11-22,ministral-3-8b,model,,listed,"Added with the 3B of pull request #47: same family, same release"

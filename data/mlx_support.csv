@@ -67,6 +67,8 @@ magistral-small-2509,loads,mistral3,,2026-11-21,0.8.0
 minerva-7b,loads,mistral,,2026-11-21,0.8.0
 minimax-m3.1-flash,not checked,minimax_m3_vl,mxfp8 release: the load check covers bf16 and FP8 weights only,2026-11-21,0.8.0
 ministral-3-14b,loads,mistral3,"FP8 release, scales not checked",2026-11-21,0.8.0
+ministral-3-3b,loads,mistral3,"FP8 release, scales not checked",2026-11-22,0.8.0
+ministral-3-8b,loads,mistral3,"FP8 release, scales not checked",2026-11-22,0.8.0
 mistral-large-4,not checked,,check failed: HTTPError: HTTP Error 404: Not Found,2026-11-21,0.8.0
 mistral-small-3.2,loads,mistral3,,2026-11-21,0.8.0
 mistral-small-4,loads,mistral3,"FP8 release, scales not checked",2026-11-21,0.8.0
