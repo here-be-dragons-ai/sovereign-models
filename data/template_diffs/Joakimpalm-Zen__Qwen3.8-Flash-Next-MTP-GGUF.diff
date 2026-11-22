@@ -70,17 +70,30 @@
      {%- elif message.role == "user" %}
          {{- '<|im_start|>' + message.role + '\n' + content + '<|im_end|>' + '\n' }}
      {%- elif message.role == "assistant" %}
-@@ -123,6 +126,9 @@
+@@ -113,17 +116,18 @@
+             {%- set reasoning_content = message.reasoning_content %}
+         {%- endif %}
+         {%- set reasoning_content = reasoning_content|trim %}
+-        {{- '<|im_start|>' + message.role + '\n' }}
+-        {%- generation %}
+         {%- if preserve_thinking is undefined or preserve_thinking is true or loop.index0 > ns.last_query_index %}
+-            {{- '<think>\n' + reasoning_content + '\n</think>\n\n' + content }}
++            {{- '<|im_start|>' + message.role + '\n<think>\n' + reasoning_content + '\n</think>\n\n' + content }}
+         {%- else %}
+-            {{- content }}
++            {{- '<|im_start|>' + message.role + '\n' + content }}
+         {%- endif %}
+         {%- if message.tool_calls and message.tool_calls is iterable and message.tool_calls is not mapping %}
+             {%- for tool_call in message.tool_calls %}
                  {%- if tool_call.function is defined %}
                      {%- set tool_call = tool_call.function %}
-                 {%- endif %}
++                {%- endif %}
 +                {%- if tool_call.name is not defined or tool_call.name is none %}
 +                    {{- raise_exception('Tool call is missing a function name.') }}
-+                {%- endif %}
+                 {%- endif %}
                  {%- if loop.first %}
                      {%- if content|trim %}
-                         {{- '\n\n<tool_call>\n<function=' + tool_call.name + '>\n' }}
-@@ -132,13 +138,19 @@
+@@ -134,20 +138,24 @@
                  {%- else %}
                      {{- '\n<tool_call>\n<function=' + tool_call.name + '>\n' }}
                  {%- endif %}
@@ -101,7 +114,15 @@
                  {%- endif %}
                  {{- '</function>\n</tool_call>' }}
              {%- endfor %}
-@@ -159,6 +171,7 @@
+         {%- endif %}
+-        {{- '<|im_end|>' }}
+-        {%- endgeneration %}
+-        {{- '\n' }}
++        {{- '<|im_end|>\n' }}
+     {%- elif message.role == "tool" %}
+         {%- if loop.previtem and loop.previtem.role != "tool" %}
+             {{- '<|im_start|>user' }}
+@@ -163,6 +171,7 @@
      {%- else %}
          {{- raise_exception('Unexpected message role.') }}
      {%- endif %}
@@ -109,7 +130,7 @@
  {%- endfor %}
  {%- if add_generation_prompt %}
      {{- '<|im_start|>assistant\n' }}
-@@ -168,3 +181,4 @@
+@@ -172,3 +181,4 @@
          {{- '<think>\n' }}
      {%- endif %}
  {%- endif %}

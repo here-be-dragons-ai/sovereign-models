@@ -1,0 +1,24 @@
+--- original/default
++++ build/default
+@@ -1,5 +1,5 @@
+ {#- ----------‑‑‑ special token variables ‑‑‑---------- -#}
+-{%- set HYTK = ':opensource' %}
++{%- set HYTK = ':6124c78e' %}
+ {%- set hy_start_token = '<｜hy_start{}｜>'.format(HYTK) %}
+ {%- set hy_middle_token = '<｜hy_middle{}｜>'.format(HYTK) %}
+ {%- set hy_end_token = '<｜hy_end{}｜>'.format(HYTK) %}
+@@ -37,11 +37,11 @@
+ 
+ {%- if not reasoning_effort is defined %}
+     {%- set reasoning_effort = 'high' %}
+-{%- elif reasoning_effort not in ['no_think', 'high'] %}
++{%- elif reasoning_effort not in ['max', 'high', 'low', 'no_think'] %}
+     {%- if reasoning_effort is none %}
+-        {{- raise_exception('reasoning_effort error : None, should be no_think/high') }}
++        {{- raise_exception('reasoning_effort error : None, should be no_think/low/high/max') }}
+     {%- else %}
+-        {{- raise_exception('reasoning_effort error : ' + reasoning_effort + ', should be no_think/high') }}
++        {{- raise_exception('reasoning_effort error : ' + reasoning_effort + ', should be no_think/low/high/max') }}
+     {%- endif %}
+ {%- endif %}
+ 

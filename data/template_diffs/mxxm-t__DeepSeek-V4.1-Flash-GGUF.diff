@@ -1,52 +1,33 @@
 --- original/default
 +++ build/default
-@@ -1,252 +1,137 @@
+@@ -1,275 +1,137 @@
 -{#- DeepSeek-V4.1 chat template, ported from encoding/encoding.py in the model repo.
--    Extra kwargs: thinking_mode ("thinking" | "chat", default "thinking"; enable_thinking=true/false is accepted
--    as an alias), drop_thinking (default true), reasoning_effort (int in [1, 100] or "low"/"medium"/"high"/"max",
--    default "high"). Assistant reasoning is read from reasoning_content, or from thinking as an alias. -#}
+-    Extra kwargs: thinking_mode ("thinking" | "chat", default "thinking"; thinking=true/false and enable_thinking=true/false
+-    are accepted as aliases), drop_thinking (default true), reasoning_effort (int in [1, 100] or "low"/"high"/"max",
+-    default "high"; the OpenAI values "none"/"minimal"/"medium"/"xhigh" map like DeepSeek's Chat Completions adapter, and
+-    "none" turns thinking off unless it is set explicitly). Assistant reasoning is read from reasoning_content, or from
+-    thinking as an alias. Tool call arguments must be dicts. -#}
 -{%- set IMG = "<｜deepseek_image｜>" -%}
 -{%- set DSML = "｜DSML｜" -%}
 -
 -{%- if thinking_mode is not defined -%}
--    {%- set thinking_mode = "chat" if (enable_thinking is defined and enable_thinking is not none and not enable_thinking) else "thinking" -%}
+-    {%- if thinking is defined and thinking is not none -%}
+-        {%- set thinking_mode = "thinking" if thinking else "chat" -%}
+-    {%- elif enable_thinking is defined and enable_thinking is not none -%}
+-        {%- set thinking_mode = "thinking" if enable_thinking else "chat" -%}
 +{%- if not add_generation_prompt is defined -%}
 +  {%- set add_generation_prompt = false -%}
- {%- endif -%}
--{%- if thinking_mode not in ["chat", "thinking"] -%}
--    {{- raise_exception("Invalid thinking_mode `" ~ thinking_mode ~ "`, should be \"chat\" or \"thinking\"") -}}
++{%- endif -%}
 +{%- if not thinking is defined -%}
 +  {%- if enable_thinking is defined -%}
 +    {%- set thinking = enable_thinking -%}
 +  {%- else -%}
 +    {%- set thinking = false -%}
 +  {%- endif -%}
- {%- endif -%}
--{%- if drop_thinking is not defined -%}{%- set drop_thinking = true -%}{%- endif -%}
--{%- if add_generation_prompt is not defined -%}{%- set add_generation_prompt = false -%}{%- endif -%}
--{%- if tools is not defined -%}{%- set tools = none -%}{%- endif -%}
--
--{%- if reasoning_effort is not defined or reasoning_effort is none -%}{%- set reasoning_effort = "high" -%}{%- endif -%}
--{%- set effort_map = {"low": 50, "medium": 62, "high": 75, "max": 100} -%}
--{%- if reasoning_effort is string and reasoning_effort in effort_map -%}
--    {%- set budget = effort_map[reasoning_effort] -%}
--{%- elif reasoning_effort is integer and 1 <= reasoning_effort <= 100 -%}
--    {%- set budget = reasoning_effort -%}
--{%- else -%}
--    {{- raise_exception("Invalid reasoning effort: " ~ reasoning_effort ~ ", should be int within [1,100] or one of \"low\", \"medium\", \"high\", \"max\"") -}}
++{%- endif -%}
 +{%- if not drop_thinking is defined -%}
 +  {%- set drop_thinking = true -%}
- {%- endif -%}
--
--{#- Text of text/image blocks joined by blank lines; other block types are dropped. -#}
--{%- macro joined_text(blocks) -%}
--    {%- set jt = namespace(parts=[]) -%}
--    {%- for b in blocks -%}
--        {%- if b.type == "text" -%}
--            {%- if IMG in (b.text or "") -%}{{- raise_exception("Text block contains image placeholder " ~ IMG ~ ". Images should be separate content blocks.") -}}{%- endif -%}
--            {%- set jt.parts = jt.parts + [b.text or ""] -%}
--        {%- elif b.type in ["image", "image_url"] -%}
--            {%- set jt.parts = jt.parts + [IMG] -%}
++{%- endif -%}
 +{%- set dsml_token = '｜DSML｜' -%}
 +{%- set thinking_start_token = '<think>' -%}
 +{%- set thinking_end_token = '</think>' -%}
@@ -61,9 +42,10 @@
 +    {%- if ns.is_first_sp -%}
 +      {%- set ns.system_prompt = ns.system_prompt + (message['content'] or '') -%}
 +      {%- set ns.is_first_sp = false -%}
-+    {%- else -%}
+     {%- else -%}
+-        {%- set thinking_mode = "chat" if (reasoning_effort is defined and reasoning_effort == "none") else "thinking" -%}
 +      {%- set ns.system_prompt = ns.system_prompt + '\n\n' + (message['content'] or '') -%}
-+    {%- endif -%}
+     {%- endif -%}
 +  {%- endif -%}
 +{%- endfor -%}
 +{%- if tools is defined and tools -%}
@@ -79,17 +61,41 @@
 +  {%- else -%}
 +    {%- set ns.system_prompt = tools_header + ts.schemas + tools_footer -%}
 +  {%- endif -%}
-+{%- endif -%}
+ {%- endif -%}
+-{%- if thinking_mode not in ["chat", "thinking"] -%}
+-    {{- raise_exception("Invalid thinking_mode `" ~ thinking_mode ~ "`, should be \"chat\" or \"thinking\"") -}}
 +{%- if response_format is defined -%}
 +  {%- if ns.system_prompt -%}
 +    {%- set ns.system_prompt = ns.system_prompt + '\n\n' -%}
 +  {%- endif -%}
 +  {%- set ns.system_prompt = ns.system_prompt + response_format_template + (response_format | tojson) -%}
-+{%- endif -%}
+ {%- endif -%}
+-{%- if drop_thinking is not defined -%}{%- set drop_thinking = true -%}{%- endif -%}
+-{%- if add_generation_prompt is not defined -%}{%- set add_generation_prompt = false -%}{%- endif -%}
+-{%- if tools is not defined -%}{%- set tools = none -%}{%- endif -%}
+-
+-{%- if reasoning_effort is not defined or reasoning_effort is none -%}{%- set reasoning_effort = "high" -%}{%- endif -%}
+-{%- set effort_map = {"none": 75, "minimal": 50, "low": 50, "medium": 75, "high": 75, "xhigh": 75, "max": 100} -%}
+-{%- if reasoning_effort is string and reasoning_effort in effort_map -%}
+-    {%- set budget = effort_map[reasoning_effort] -%}
+-{%- elif reasoning_effort is integer and 1 <= reasoning_effort <= 100 -%}
+-    {%- set budget = reasoning_effort -%}
+-{%- else -%}
+-    {{- raise_exception("Invalid reasoning effort: " ~ reasoning_effort ~ ", should be int within [1,100] or one of \"low\", \"high\", \"max\"") -}}
 +{{- bos_token -}}
 +{%- if messages and thinking and reasoning_effort is defined and reasoning_effort == 'max' -%}
 +  {{- reasoning_effort_max -}}
-+{%- endif -%}
+ {%- endif -%}
+-
+-{#- Text of text/image blocks joined by blank lines; other block types are dropped. -#}
+-{%- macro joined_text(blocks) -%}
+-    {%- set jt = namespace(parts=[]) -%}
+-    {%- for b in blocks -%}
+-        {%- if b.type == "text" -%}
+-            {%- if IMG in (b.text or "") -%}{{- raise_exception("Text block contains image placeholder " ~ IMG ~ ". Images should be separate content blocks.") -}}{%- endif -%}
+-            {%- set jt.parts = jt.parts + [b.text or ""] -%}
+-        {%- elif b.type in ["image", "image_url"] -%}
+-            {%- set jt.parts = jt.parts + [IMG] -%}
 +{{- ns.system_prompt -}}
 +{%- set last_user_idx = namespace(value=-1) -%}
 +{%- for message in messages -%}
@@ -199,6 +205,11 @@
 -{%- set mns = namespace(list=[]) -%}
 -{%- for msg in messages -%}
 -    {%- set content = msg.get("content") -%}
+-    {%- if msg.role == "user" and msg.get("content_blocks") is not none -%}
+-        {%- set content = msg.content_blocks -%}
+-    {%- elif msg.role == "tool" and msg.get("content_blocks") and content is not string -%}
+-        {%- set content = msg.content_blocks -%}
+-    {%- endif -%}
 -    {%- set is_blocks = content is iterable and content is not string and content is not mapping -%}
 -    {%- if content is string and IMG in content -%}
 -        {{- raise_exception("Message content contains image special token " ~ IMG ~ ". Images should be provided as image content blocks.") -}}
@@ -209,7 +220,7 @@
 -    {%- endif -%}
 -    {%- set prev = mns.list[-1] if mns.list else none -%}
 -    {%- if msg.role == "tool" -%}
--        {%- set tblock = {"type": "tool_result", "tool_use_id": msg.get("tool_call_id", ""), "content": joined_text(content) if is_blocks else msg.get("content", "")} -%}
+-        {%- set tblock = {"type": "tool_result", "tool_use_id": msg.get("tool_call_id", ""), "content": joined_text(content) if is_blocks else (content or "")} -%}
 -        {%- if prev is not none and prev.role == "user" -%}
 -            {%- set mns.list = mns.list[:-1] + [dict(prev, content_blocks=prev.content_blocks + [tblock])] -%}
 -        {%- else -%}
@@ -284,10 +295,19 @@
 -{%- endfor -%}
 -{%- set msgs = sns.list -%}
 -
--{#- Mid-conversation system messages count as user turns. Tools anywhere disable drop_thinking. -#}
+-{#- Mid-conversation system messages count as user turns; user messages holding only tool results do not.
+-    Tools anywhere disable drop_thinking. -#}
 -{%- set state = namespace(last_user=-1, has_tools=false) -%}
 -{%- for m in msgs -%}
--    {%- if m.role == "user" or (m.role == "system" and loop.index0 > 0) -%}{%- set state.last_user = loop.index0 -%}{%- endif -%}
+-    {%- set starts_turn = (m.role == "system" and loop.index0 > 0) -%}
+-    {%- if m.role == "user" -%}
+-        {%- set turn = namespace(found=not m.content_blocks) -%}
+-        {%- for b in m.content_blocks or [] -%}
+-            {%- if b.type in ["text", "image", "image_url"] -%}{%- set turn.found = true -%}{%- endif -%}
+-        {%- endfor -%}
+-        {%- set starts_turn = turn.found -%}
+-    {%- endif -%}
+-    {%- if starts_turn -%}{%- set state.last_user = loop.index0 -%}{%- endif -%}
 -    {%- if m.get("tools") -%}{%- set state.has_tools = true -%}{%- endif -%}
 -{%- endfor -%}
 -{%- set effective_drop = drop_thinking and not state.has_tools -%}
@@ -355,6 +375,7 @@
 -            {%- for tc in m.tool_calls -%}
 -                {%- set fn = tc.function -%}
 -                {%- set params = namespace(lines=[]) -%}
+-                {%- if fn.arguments is string -%}{{- raise_exception("Tool call arguments must be a dict, not a JSON string") -}}{%- endif -%}
 -                {%- set args = fn.arguments if fn.arguments is mapping else {"arguments": fn.arguments} -%}
 -                {%- for k, v in args.items() -%}
 -                    {%- set params.lines = params.lines + ["<" ~ DSML ~ " parameter name=\"" ~ k ~ "\" string=\"" ~ ("true" if v is string else "false") ~ "\">" ~ (v if v is string else v | tojson) ~ "</" ~ DSML ~ " parameter>"] -%}

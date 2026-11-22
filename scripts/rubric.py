@@ -113,8 +113,8 @@ CLUSTERS = {
     "alps": "CH", "cscs": "CH", "helios": "PL", "athena": "PL", "deucalion": "PT",
     "karolina": "CZ", "vega": "SI", "meluxina": "LU", "discoverer": "BG", "jean zay": "FR",
     "adastra": "FR", "dawn": "GB", "isambard-ai": "GB", "mimer": "SE", "olivia": "NO",
-    "bem2": "PL", "ucloud": "DK", "abci": "JP", "abci 3.0": "JP", "tsubame": "JP", "tsubame 4.0": "JP",
-    "prometheus": "US",
+    "bem2": "PL", "ucloud": "DK", "gefion": "DK", "abci": "JP", "abci 3.0": "JP", "tsubame": "JP",
+    "tsubame 4.0": "JP", "prometheus": "US",
 }
 # Compute named without a location: the region stays unknown.
 UNLOCATED = {"dgx cloud", "nvidia dgx cloud", "dgx cloud lepton", "lepton", "coreweave", "aws", "azure",

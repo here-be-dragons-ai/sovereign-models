@@ -105,7 +105,7 @@ class TestData(unittest.TestCase):
 
     def test_publishers(self):
         kinds = {b["repo"]: self.d.publisher(b) for b in self.d.builds}
-        self.assertEqual(kinds["speakleash/Bielik-11B-v3.0-Instruct-MLX-8bit"], "official")
+        self.assertEqual(kinds["speakleash/Bielik-11B-v3.1-Instruct-MLX-8bit"], "official")
         self.assertEqual(kinds["here-be-dragons-ai/Kolibri-1-MLX-3bit"], "hbd")
         self.assertEqual(kinds["mlx-community/EuroLLM-22B-Instruct-2512-mlx-8bit"], "curated")
         self.assertEqual(kinds["tonidurans/ALIA-40b-instruct-2605-mlx-q4"], "individual")

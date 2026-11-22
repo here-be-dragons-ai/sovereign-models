@@ -273,12 +273,25 @@ Every build compares its result with the previous one and appends each changed v
 Space marks models changed in the last 30 days and lists the recent changes. Releases of the
 dataset carry a date tag (e.g. `2026-10`).
 
+Every model row is pinned to the commit of the original repo that it describes (`hf_revision`,
+read on the day in `hf_fetched`): licence tag, gating, parameter count, architecture and context
+come from exactly that commit. The rubric answers are pinned differently, through the archive
+snapshot of the document each one quotes. A later commit is not covered by the row; to get the
+weights a row describes, download the repo at that revision. The same pin is the version of the
+model in the CycloneDX export (`scorecard.cdx.json`, mapping in `data/schema.md`), which carries
+the scorecard into supply-chain tools: a model listed there under its `pkg:huggingface` purl
+brings its tier, control, base model, teachers and sources with it.
+
 Every Monday a GitHub Action re-reads the Hub facts (licence, gating, size, context, and the
 repo's current commit, which moves with any change to card, config or weights), the chat
 templates of all builds, the hashes of all licence and use-policy documents, and the repos of
 every tracked provider, and checks the latest mlx-vlm release on Apple Silicon. It never changes
-the data: any difference becomes an issue labelled `review`, together with the providers whose
-ownership is in motion.
+the data: the differences against the published state go into one issue labelled `review`, which
+every run rewrites and closes when nothing differs any more. What needs a decision comes first
+(licence documents, quotes, chat templates, changed facts, new repos, providers whose ownership
+is in motion); repos that only moved to a new commit are listed below. A document that cannot be
+fetched in a run keeps its last result, with the date of that check, and is listed as not
+re-checked; a failed download is not reported as a changed licence or a missing quote.
 
 ## Limits
 
@@ -297,9 +310,10 @@ source. We notify providers on publication and correct entries on request.
 
 ## Use of AI
 
-The rubric answers in `data/evidence.csv` were read from the sources by a language model:
-Claude Opus 5.5 (Anthropic, United States; model id `claude-opus-5-5`, recorded in the `by`
-column), in October 2026. A model from outside Europe reading the evidence for a European
+The rubric answers in `data/evidence.csv` were read from the sources by language models from
+Anthropic (United States): Claude Opus 5.5 (model id `claude-opus-5-5`) from October 2026, and
+Claude Fable 5.2 (`claude-fable-5-2`) for the releases added on 2026-11-21. The `by` column
+records the model for every answer. A model from outside Europe reading the evidence for a European
 sovereignty scorecard is a fair point of criticism; it is contained as follows:
 
 - The model only answers factual questions with a verbatim quote and a URL. It never sets a

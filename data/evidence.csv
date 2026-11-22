@@ -141,21 +141,6 @@ family,xlstm,noncommercial,no,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LI
 family,xlstm,use_policy_binding,no,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
 family,xlstm,inherited_terms,no,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
 family,xlstm,policy_updatable,no,https://huggingface.co/NX-AI/xLSTM-7b/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,init_random,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,"It is a continuation checkpoint, not a new model trained from scratch for ten identical epochs.",2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,base_model,"DFM Mimir v1 (XL HRM-Text lineage, resumed from the DFM10 epoch-9 checkpoint)",https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,"The final epoch resumes the completed DFM10 epoch-9 checkpoint at step **2,482,084**, preserves optimizer and EMA state",2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,base_model,"DFM Mimir v1 (XL HRM-Text lineage, resumed from the DFM10 epoch-9 checkpoint)",https://arxiv.org/abs/2608.13517,Continued Training: Mimir v1.5.We continually trained Mimir for1.2Msteps on the Mimir Training Corpus v1.5.,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,base_publisher,own,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,"It continues the Danish and English Mimir model family on subsequent dataset mixtures, ending with DFM11.",2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,post_training_only,no,https://arxiv.org/abs/2608.13517,Continued Training: Mimir v1.5.We continually trained Mimir for1.2Msteps on the Mimir Training Corpus v1.5.,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,datasets_named,yes,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,Public DFM11 additions are listed with their exact revisions in,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,datasets_named,yes,https://arxiv.org/abs/2608.13517,draws on 161 datasets with all but 2 Danish ones being freely available on the Hugging Face Hub.,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,data_shares,yes,https://arxiv.org/abs/2608.13517,Table 1: Token share and dataset count by functional category.,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,pretraining_site,DK,https://arxiv.org/abs/2608.13517,The computation for this project was performed on the UCloud interactive HPC system managed by the eScience Center at the University of Southern Denmark.,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,licence_text,apache-2.0,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,This model is released under the **Apache License 2.0**. See [LICENSE](LICENSE).,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,licence_modified,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,noncommercial,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,use_policy_binding,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,inherited_terms,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,policy_updatable,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,,2026-10-29,claude-opus-5-5
 family,velvet,init_random,yes,https://huggingface.co/AlmawaveLabs/Velvet-14B,"Velvet is an Italian family of large language models, developed from scratch, featuring a dense architecture.",2026-10-29,claude-opus-5-5
 family,velvet,base_model,none,https://huggingface.co/AlmawaveLabs/Velvet-14B,"Velvet is an Italian family of large language models, developed from scratch, featuring a dense architecture.",2026-10-29,claude-opus-5-5
 family,velvet,data_downloadable,not stated,https://huggingface.co/AlmawaveLabs/Velvet-14B,,2026-10-29,claude-opus-5-5
@@ -410,16 +395,6 @@ family,olmo-3,noncommercial,no,https://huggingface.co/allenai/Olmo-3.1-32B-Instr
 family,olmo-3,use_policy_binding,no,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/blob/main/README.md,It is intended for research and educational use in accordance with Ai2's,2026-10-29,claude-opus-5-5
 family,olmo-3,inherited_terms,no,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/blob/main/README.md,,2026-10-29,claude-opus-5-5
 family,olmo-3,policy_updatable,no,https://huggingface.co/allenai/Olmo-3.1-32B-Instruct/blob/main/README.md,,2026-10-29,claude-opus-5-5
-family,minimax-m3,init_random,yes,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/README.md,M3 undergoes mixed-modality training from the very first step,2026-10-29,claude-opus-5-5
-family,minimax-m3,base_model,none,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,Versioned model name(s): MiniMax-M3 Model dependencies: None.,2026-10-29,claude-opus-5-5
-family,minimax-m3,data_downloadable,none,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,,2026-10-29,claude-opus-5-5
-family,minimax-m3,datasets_named,no,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,The training data for MiniMax-M3 includes text from Common Crawl.,2026-10-29,claude-opus-5-5
-family,minimax-m3,data_shares,no,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,,2026-10-29,claude-opus-5-5
-family,minimax-m3,pretraining_site,not stated,https://file.cdn.minimax.io/public/0674772e-317a-4928-8af9-2489903d1c09.pdf,,2026-10-29,claude-opus-5-5
-family,minimax-m3,licence_text,custom,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,"to deal in the Software for non-commercial purposes, including without limitation the rights to use",2026-10-29,claude-opus-5-5
-family,minimax-m3,licence_modified,yes,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,if such products and services generate more than 20 million US dollars (or equivalent in other currencies) in yearly revenue,2026-10-29,claude-opus-5-5
-family,minimax-m3,noncommercial,no,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,If the Software (or any derivative works thereof) is used for any Commercial Use for your products or services,2026-10-29,claude-opus-5-5
-family,minimax-m3,inherited_terms,no,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
 family,gpt-oss-swallow-0.1,init_random,no,https://swallow-llm.github.io/gptoss-swallow.en.html,GPT-OSS Swallow is built in three stages starting from OpenAI GPT-OSS 20B and 120B,2026-10-29,claude-opus-5-5
 family,gpt-oss-swallow-0.1,base_model,gpt-oss-120b,https://swallow-llm.github.io/gptoss-swallow.en.html,GPT-OSS Swallow is built in three stages starting from OpenAI GPT-OSS 20B and 120B,2026-10-29,claude-opus-5-5
 family,gpt-oss-swallow-0.1,base_publisher,foreign,https://swallow-llm.github.io/gptoss-swallow.en.html,GPT-OSS Swallow is built in three stages starting from OpenAI GPT-OSS 20B and 120B,2026-10-29,claude-opus-5-5
@@ -522,18 +497,6 @@ family,qwen3.8,noncommercial,no,https://huggingface.co/Qwen/Qwen3.8-27B/blob/mai
 family,qwen3.8,use_policy_binding,no,https://huggingface.co/Qwen/Qwen3.8-27B,,2026-10-29,claude-opus-5-5
 family,qwen3.8,inherited_terms,no,https://huggingface.co/Qwen/Qwen3.8-27B,,2026-10-29,claude-opus-5-5
 family,qwen3.8,policy_updatable,no,https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,hy4,init_random,not stated,https://huggingface.co/tencent/Hy4-preview,,2026-10-29,claude-opus-5-5
-family,hy4,base_model,none,https://huggingface.co/tencent/Hy4-preview,Stronger pre-training and a substantially larger post-training run compound into another step change in capability,2026-10-29,claude-opus-5-5
-family,hy4,data_downloadable,not stated,https://huggingface.co/tencent/Hy4-preview,,2026-10-29,claude-opus-5-5
-family,hy4,datasets_named,no,https://huggingface.co/tencent/Hy4-preview,,2026-10-29,claude-opus-5-5
-family,hy4,data_shares,no,https://huggingface.co/tencent/Hy4-preview,,2026-10-29,claude-opus-5-5
-family,hy4,pretraining_site,not stated,https://huggingface.co/tencent/Hy4-preview,,2026-10-29,claude-opus-5-5
-family,hy4,licence_text,apache-2.0,https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE,Tencent Hy4 preview is licensed under the Apache-2.0.,2026-10-29,claude-opus-5-5
-family,hy4,licence_modified,no,https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,hy4,noncommercial,no,https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,hy4,use_policy_binding,no,https://huggingface.co/tencent/Hy4-preview,,2026-10-29,claude-opus-5-5
-family,hy4,inherited_terms,no,https://huggingface.co/tencent/Hy4-preview,,2026-10-29,claude-opus-5-5
-family,hy4,policy_updatable,no,https://huggingface.co/tencent/Hy4-preview/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
 family,plamo-3-nict,init_random,not stated,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,,2026-10-29,claude-opus-5-5
 family,plamo-3-nict,data_downloadable,part,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,The training dataset also includes the following publicly available community resources:,2026-10-29,claude-opus-5-5
 family,plamo-3-nict,datasets_named,no,https://huggingface.co/pfnet/plamo-3-nict-2604-31b-base,,2026-10-29,claude-opus-5-5
@@ -760,19 +723,6 @@ family,exaone-4.5,noncommercial,yes,https://huggingface.co/LGAI-EXAONE/EXAONE-4.
 family,exaone-4.5,use_policy_binding,no,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
 family,exaone-4.5,inherited_terms,no,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
 family,exaone-4.5,policy_updatable,yes,https://huggingface.co/LGAI-EXAONE/EXAONE-4.5-33B/blob/main/LICENSE,"The Licensor reserves the right to modify or amend this Agreement at any time, in its sole discretion.",2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,init_random,no,https://arxiv.org/abs/2609.18310,Our larger base model is initialized from nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16.,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,base_model,NVIDIA-Nemotron-3-Super-120B-A12B-Base,https://arxiv.org/abs/2609.18310,Initialization Nemotron 3 Nano 30B-A3B Base Nemotron 3 Super 120B-A12B Base,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,base_publisher,foreign,https://arxiv.org/abs/2609.18310,Our larger base model is initialized from nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16.,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,post_training_only,no,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,"This model underwent continued pre-training on high-quality tokens across QA, reasoning, code, and translation data",2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,datasets_named,yes,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,"The continued pretraining dataset comprised 33.5B tokens on QA, CoT, Reasoning and parallel (translation) datasets adapted from",2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,data_shares,yes,https://arxiv.org/abs/2609.18310,Sampling weights determine the relative contribution of each component to the 150B-token CPT corpus.,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,pretraining_site,SG,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,Cloud provider:** SMC H200 - **Compute region:** Singapore,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,licence_text,mit,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,library_name: transformers license: mit language: - en,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,licence_modified,no,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,noncommercial,no,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,use_policy_binding,no,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,inherited_terms,yes,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,any Derivative Works that You distribute must include a readable copy of the following attribution notice,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,policy_updatable,no,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B,,2026-10-29,claude-opus-5-5
 family,muse-spark,init_random,no,https://pytorch.org/blog/muse-spark-open/,"Building on our August release of Muse Spark, this open weights version has additional safety post-training",2026-10-29,claude-opus-5-5
 family,muse-spark,base_model,Muse Spark (August 2026 release; same base model as Muse Spark 1.3),https://pytorch.org/blog/muse-spark-open/,natively multimodal and shares the same base model as Muse Spark 1.3,2026-10-29,claude-opus-5-5
 family,muse-spark,base_publisher,own,https://pytorch.org/blog/muse-spark-open/,"Building on our August release of Muse Spark, this open weights version has additional safety post-training",2026-10-29,claude-opus-5-5
@@ -868,20 +818,6 @@ family,solar-open-2,noncommercial,no,https://huggingface.co/upstage/Solar-Open2-
 family,solar-open-2,use_policy_binding,no,https://huggingface.co/upstage/Solar-Open2-250B,,2026-10-29,claude-opus-5-5
 family,solar-open-2,inherited_terms,no,https://huggingface.co/upstage/Solar-Open2-250B,,2026-10-29,claude-opus-5-5
 family,solar-open-2,policy_updatable,no,https://huggingface.co/upstage/Solar-Open2-250B/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,init_random,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,We performed post-training in English and SEA languages on Qwen3.6-27B,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,base_model,Qwen3.6-27B,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,**License:** [MIT](https://mit-license.org/) - **Finetuned from model:** <https://huggingface.co/Qwen/Qwen3.6-27B>,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,base_publisher,foreign,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,We performed post-training in English and SEA languages on Qwen3.6-27B,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,post_training_only,yes,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,Our post-training workflow consists solely of distillation and model merging.,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,data_downloadable,part,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,"Figures may differ slightly from public dataset releases, which represent downloadable open-source subsets of the broader corpus.",2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,datasets_named,yes,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,the model underwent distillation from Qwen3.5-397B-A17B on an updated aisingapore/SEA-Instruct-2602,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,data_shares,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,pretraining_site,not stated,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,licence_text,mit,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT/blob/main/LICENSE,"Permission is hereby granted, free of charge, to any person obtaining a copy",2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,licence_modified,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,noncommercial,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,use_policy_binding,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,inherited_terms,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.5,policy_updatable,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v4.5-27B-IT,,2026-10-29,claude-opus-5-5
 family,muse-glimmer,init_random,not stated,https://arxiv.org/abs/2610.24628,,2026-10-29,claude-opus-5-5
 family,muse-glimmer,base_model,none,https://aial.ie/research/gpai-training-transparency/evals/meta-muse-glimmer/,Is this a new or a fine-tuned model? New,2026-10-29,claude-opus-5-5
 family,muse-glimmer,data_downloadable,not stated,https://arxiv.org/abs/2610.24628,,2026-10-29,claude-opus-5-5
@@ -939,30 +875,6 @@ family,norolmo-1.0,noncommercial,no,https://huggingface.co/HPLT/NorOLMo-13B,,202
 family,norolmo-1.0,use_policy_binding,no,https://huggingface.co/HPLT/NorOLMo-13B,,2026-10-29,claude-opus-5-5
 family,norolmo-1.0,inherited_terms,no,https://huggingface.co/HPLT/NorOLMo-13B,,2026-10-29,claude-opus-5-5
 family,norolmo-1.0,policy_updatable,no,https://huggingface.co/HPLT/NorOLMo-13B,,2026-10-29,claude-opus-5-5
-family,nemotron-3,init_random,yes,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf,We pre-trained Nemotron 3 Super on 25 trillion tokens followed by post-training using supervised,2026-10-29,claude-opus-5-5
-family,nemotron-3,base_model,none,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf,We pre-trained Nemotron 3 Super on 25 trillion tokens followed by post-training using supervised,2026-10-29,claude-opus-5-5
-family,nemotron-3,data_downloadable,part,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,Major portions of the pre-training corpus are released in the,2026-10-29,claude-opus-5-5
-family,nemotron-3,datasets_named,yes,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,"These datasets, such as FinePDFs, EssentialWeb, HotpotQA, SQuAD, and HelpSteer3, do not collectively",2026-10-29,claude-opus-5-5
-family,nemotron-3,data_shares,yes,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,"including 2.5T+ tokens of new organic, translated, and synthetically rephrased content",2026-10-29,claude-opus-5-5
-family,nemotron-3,pretraining_site,not stated,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Super-Technical-Report.pdf,,2026-10-29,claude-opus-5-5
-family,nemotron-3,licence_text,custom,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16,Use of this model is governed by the,2026-10-29,claude-opus-5-5
-family,nemotron-3,licence_modified,yes,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,must include a readable copy of the following attribution notice within a “Notice” text file,2026-10-29,claude-opus-5-5
-family,nemotron-3,noncommercial,no,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,"Subject to the terms of this License, NVIDIA confirms that: Works are commercially usable.",2026-10-29,claude-opus-5-5
-family,nemotron-3,use_policy_binding,no,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,,2026-10-29,claude-opus-5-5
-family,nemotron-3,inherited_terms,no,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,,2026-10-29,claude-opus-5-5
-family,nemotron-3,policy_updatable,no,https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/,,2026-10-29,claude-opus-5-5
-family,kimi-k3,init_random,yes,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,language and vision are jointly optimized from the start of training,2026-10-29,claude-opus-5-5
-family,kimi-k3,base_model,none,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,language and vision are jointly optimized from the start of training,2026-10-29,claude-opus-5-5
-family,kimi-k3,data_downloadable,not stated,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,,2026-10-29,claude-opus-5-5
-family,kimi-k3,datasets_named,no,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,,2026-10-29,claude-opus-5-5
-family,kimi-k3,data_shares,no,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,,2026-10-29,claude-opus-5-5
-family,kimi-k3,pretraining_site,not stated,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,,2026-10-29,claude-opus-5-5
-family,kimi-k3,licence_text,custom,https://huggingface.co/moonshotai/Kimi-K3,Both the code repository and the model weights are released under the,2026-10-29,claude-opus-5-5
-family,kimi-k3,licence_modified,yes,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,"""Kimi K3"" must be prominently displayed on the user interface of such product or service.",2026-10-29,claude-opus-5-5
-family,kimi-k3,noncommercial,no,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,"publish, distribute, sublicense, and/or sell copies of the Software",2026-10-29,claude-opus-5-5
-family,kimi-k3,use_policy_binding,no,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,kimi-k3,inherited_terms,no,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,kimi-k3,policy_updatable,no,https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
 family,hyperclova-x-seed-think,init_random,no,https://en.sedaily.com/finance/2026/04/17/naver-replaces-chinese-component-with-in-house-vision,partially borrowed the vision encoder and weights of Alibaba's Qwen 2.5 model,2026-10-29,claude-opus-5-5
 family,hyperclova-x-seed-think,base_model,Qwen2.5-VL vision encoder (vision component only; language backbone pre-trained by NAVER),https://en.sedaily.com/finance/2026/04/17/naver-replaces-chinese-component-with-in-house-vision,partially borrowed the vision encoder and weights of Alibaba's Qwen 2.5 model,2026-10-29,claude-opus-5-5
 family,hyperclova-x-seed-think,base_model,Qwen2.5-VL vision encoder (vision component only; language backbone pre-trained by NAVER),https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-32B/blob/main/HyperCLOVA_X_32B_Think.pdf,THINK adopts the Vision Transformer (ViT) architecture from Qwen2.5-VL,2026-10-29,claude-opus-5-5
@@ -991,7 +903,6 @@ family,apertus-1.5,policy_updatable,yes,https://github.com/swiss-ai/apertus-lega
 family,apertus-1.5,use_policy_binding,yes,https://arxiv.org/abs/2610.15542,distributed on Hugging Face behind a gated download that records assent to the acceptable-use policy,2026-10-29,claude-opus-5-5
 family,borealis2,policy_updatable,yes,https://ai.google.dev/gemma/prohibited_use_policy,Google reserves the right to update this Gemma Prohibited Use Policy from time to time.,2026-10-29,claude-opus-5-5
 family,borealis2,use_policy_binding,yes,https://huggingface.co/NbAiLab/borealis2-26b-a4b-preview/blob/main/LICENSE,You can only use the Model in compliance with the following conditions:,2026-10-29,claude-opus-5-5
-family,dfm-mimir-1.5,base_scratch,yes,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,Mimir began as a model trained from scratch on Danish and English post-training and instruction data.,2026-10-29,claude-opus-5-5
 family,estllm-70b,policy_updatable,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/USE_POLICY.md,The most recent copy of this policy can be found at,2026-10-29,claude-opus-5-5
 family,estllm-70b,use_policy_binding,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,adhere to the Acceptable Use Policy for the Llama Materials,2026-10-29,claude-opus-5-5
 family,falcon-h1r,policy_updatable,yes,https://falconllm.tii.ae/falcon-terms-and-conditions.html,The Acceptable Use Policy may be updated from time to time.,2026-10-29,claude-opus-5-5
@@ -1011,14 +922,11 @@ family,lucie-1.1,base_scratch,yes,https://arxiv.org/abs/2503.12294,US-centric bi
 family,magistral-small,data_downloadable,part,https://arxiv.org/abs/2506.10910,"large set of diverse prompts, sourced from OpenThoughts [Guha et al., 2025] and the code subset of OpenR1",2026-10-29,claude-opus-5-5
 family,magistral-small,data_shares,yes,https://arxiv.org/abs/2506.10910,We also include 10% of datapoints for general instruction tuning in order to preserve non-reasoning capabilities.,2026-10-29,claude-opus-5-5
 family,magistral-small,datasets_named,no,https://arxiv.org/abs/2506.10910,We gathered code contest data from various sources.,2026-10-29,claude-opus-5-5
-family,minimax-m3,policy_updatable,no,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,,2026-10-29,claude-opus-5-5
-family,minimax-m3,use_policy_binding,yes,https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/LICENSE,"You agree you will not use, or allow others to use, the Software or any derivatives of the Software to:",2026-10-29,claude-opus-5-5
 family,muse-spark,policy_updatable,no,https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B,,2026-10-29,claude-opus-5-5
 family,muse-spark,use_policy_binding,yes,https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B,"Licensee's use of the Software shall comply with the Usage Policy, which is hereby incorporated into this license",2026-10-29,claude-opus-5-5
 family,poro-2,data_downloadable,part,https://huggingface.co/LumiOpen/Llama-Poro-2-8B-base/blob/main/README.md,"Poro 2 8B was trained on a balanced 165B token dataset designed to maintain English, code, and math capabilities",2026-10-29,claude-opus-5-5
 family,poro-2,policy_updatable,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/USE_POLICY.md,The most recent copy of this policy can be found at,2026-10-29,claude-opus-5-5
 family,poro-2,use_policy_binding,yes,https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE,adhere to the Acceptable Use Policy for the Llama Materials,2026-10-29,claude-opus-5-5
-family,sea-lion-v4.8,data_downloadable,part,https://huggingface.co/aisingapore/Nemotron-SEA-LION-v4.8-120B-A12B-Base,"The continued pretraining dataset comprised 33.5B tokens on QA, CoT, Reasoning and parallel (translation) datasets adapted from",2026-10-29,claude-opus-5-5
 family,tildeopen,base_scratch,yes,https://arxiv.org/abs/2603.08182,We compare our model against these models because they are all trained from scratch instead of distilled from much larger models.,2026-10-29,claude-opus-5-5
 family,velvet,policy_updatable,no,https://huggingface.co/AlmawaveLabs/Velvet-14B,,2026-10-29,claude-opus-5-5
 family,velvet,use_policy_binding,no,https://huggingface.co/AlmawaveLabs/Velvet-14B,,2026-10-29,claude-opus-5-5
@@ -1087,10 +995,320 @@ family,eurollm-2512,data_downloadable,part,https://arxiv.org/pdf/2602.05879,"Dat
 family,pleias-rag,data_downloadable,part,https://huggingface.co/PleIAs/Pleias-1.2B-Preview,A lightly filtered version of Common Corpus (1.6 trillion tokens),2026-10-30,claude-opus-5-5
 family,olmo-3,data_downloadable,all,https://arxiv.org/pdf/2512.13961,which are the actual tokens used for base model training,2026-10-30,claude-opus-5-5
 family,norolmo-1.0,data_downloadable,part,https://huggingface.co/HPLT/NorOLMo-13B,We only took a portion of OLMo-Mix as our unique data.,2026-10-30,claude-opus-5-5
-family,dfm-mimir-1.5,data_downloadable,nearly all,https://arxiv.org/abs/2608.13517,All but the same two Danish datasets are available from the Hugging Face hub.,2026-10-30,claude-opus-5-5
 family,latxa-3.1-v2,data_downloadable,part,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,this repository reflects a curated version of the original dataset. ... Some data points have been removed to ensure permission compliance.,2026-10-30,claude-opus-5-5
 family,sui-1,data_downloadable,part,https://arxiv.org/abs/2601.08472,The training dataset is available at ellamind/summarizer_dataset_v1 on the HuggingFace Hub.,2026-10-30,claude-opus-5-5
 family,domyn-edge,data_downloadable,part,https://huggingface.co/domyn/Domyn-Edge-Base/blob/main/README.md,"the 8.44T mix above, with per-source provenance, filtering and token counts",2026-10-30,claude-opus-5-5
 family,salamandra,data_downloadable,part,https://arxiv.org/pdf/2502.08489,Our carefully curated corpus is made exclusively from open-access data compiled from a wide variety of sources.,2026-10-30,claude-opus-5-5
 family,minerva,data_downloadable,part,https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0,The training data is a mixture of the following datasets:,2026-10-30,claude-opus-5-5
 family,k2-horizon,data_downloadable,nearly all,https://huggingface.co/IFM/K2-Horizon-375B-A23B,"We have released the checkpoints, along with the data and the training code.",2026-10-30,claude-opus-5-5
+family,comet,init_random,no,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,Comet 60B is a derivative of NVIDIA Nemotron 3.5 Super and is governed by the,2026-11-12,claude-opus-5-5
+family,comet,base_model,NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,base_model: NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,2026-11-12,claude-opus-5-5
+family,comet,base_publisher,foreign,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,hybrid Mamba2-Transformer Mixture-of-Experts model from NVIDIA,2026-11-12,claude-opus-5-5
+family,comet,post_training_only,no,https://multiversecomputing.com/papers/comet-60b-the-new-open-source-model-from-multiverse-computing,"Expert pruning. Each of the 40 MoE layers, and the MTP layer, goes from 512 to 256 routed experts.",2026-11-12,claude-opus-5-5
+family,comet,data_downloadable,not stated,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,,2026-11-12,claude-opus-5-5
+family,comet,datasets_named,no,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,,2026-11-12,claude-opus-5-5
+family,comet,data_shares,no,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,,2026-11-12,claude-opus-5-5
+family,comet,pretraining_site,not stated,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,,2026-11-12,claude-opus-5-5
+family,comet,licence_text,openmdw-1.1,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,license: openmdw-1.1,2026-11-12,claude-opus-5-5
+family,comet,licence_modified,no,https://openmdw.ai/license/1-1/,,2026-11-12,claude-opus-5-5
+family,comet,noncommercial,no,https://openmdw.ai/license/1-1/,"permission is hereby granted, free of charge, to deal in the Model Materials without restriction",2026-11-12,claude-opus-5-5
+family,comet,use_policy_binding,no,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,,2026-11-12,claude-opus-5-5
+family,comet,inherited_terms,no,https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16,,2026-11-12,claude-opus-5-5
+family,comet,policy_updatable,no,https://openmdw.ai/license/1-1/,,2026-11-12,claude-opus-5-5
+model,bielik-11b-v3.1,post_training_only,no,https://bielik.ai/en/blog/launching-bielik-11b-v31-dflash-and-the-bielik-one-family,We trained Bielik 11B v3.1 on an additional 500 billion tokens.,2026-11-12,claude-opus-5-5
+model,bielik-11b-v3.1,data_downloadable,not stated,https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct,,2026-11-12,claude-opus-5-5
+model,bielik-11b-v3.1,datasets_named,no,https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct,,2026-11-12,claude-opus-5-5
+model,bielik-11b-v3.1,data_shares,no,https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct,,2026-11-12,claude-opus-5-5
+model,bielik-11b-v3.1,pretraining_site,Helios,https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct,"conducted on the Athena and Helios supercomputers, and within the Gaia AI Factory",2026-11-12,claude-opus-5-5
+model,bielik-11b-v3.1,pretraining_site,Athena,https://huggingface.co/speakleash/Bielik-11B-v3.1-Instruct,"conducted on the Athena and Helios supercomputers, and within the Gaia AI Factory",2026-11-12,claude-opus-5-5
+family,kimi-k3.1,init_random,no,https://huggingface.co/moonshotai/Kimi-K3.1-Pro,Post-trained from Kimi K3 with large-scale joint reinforcement learning across hundreds of downstream domains,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,base_model,Kimi K3,https://www.kimi.ai/blog/kimi-k3-1-pro,"Kimi K3.1 Pro is a post-trained version of Kimi K3, with substantially larger post-training compute.",2026-11-12,claude-opus-5-5
+family,kimi-k3.1,base_publisher,own,https://huggingface.co/moonshotai/Kimi-K3.1-Pro,Post-trained from Kimi K3 with large-scale joint reinforcement learning across hundreds of downstream domains,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,base_scratch,yes,https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf,Kimi K3 is pre-trained on a curated corpus spanning four primary text domains,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,post_training_only,no,https://huggingface.co/moonshotai/Kimi-K3.1-Pro,"Compared with Kimi K3, we replace the full-attention Gated MLA layers with Gated DeepSeek Sparse Attention (Gated DSA) layers",2026-11-12,claude-opus-5-5
+family,kimi-k3.1,post_training_only,no,https://www.kimi.ai/blog/kimi-k3-1-pro,no cyber-related data removal at mid-training and no cyber-related RL environment filtering,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,data_downloadable,not stated,https://www.kimi.ai/blog/kimi-k3-1-pro,,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,datasets_named,no,https://www.kimi.ai/blog/kimi-k3-1-pro,,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,data_shares,no,https://www.kimi.ai/blog/kimi-k3-1-pro,,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,pretraining_site,not stated,https://www.kimi.ai/blog/kimi-k3-1-pro,,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,licence_text,custom,https://huggingface.co/moonshotai/Kimi-K3.1-Pro,Kimi K3.1 Pro is released under the,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,licence_modified,yes,https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE,"""Kimi K3.1-Pro"" must be prominently displayed on the",2026-11-12,claude-opus-5-5
+family,kimi-k3.1,licence_modified,yes,https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE,the Licensee must enter into a separate agreement with Moonshot AI,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,noncommercial,no,https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE,"publish, distribute, sublicense, and/or sell copies of the Software",2026-11-12,claude-opus-5-5
+family,kimi-k3.1,use_policy_binding,no,https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE,,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,inherited_terms,no,https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE,,2026-11-12,claude-opus-5-5
+family,kimi-k3.1,policy_updatable,no,https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/LICENSE,,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,init_random,not stated,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash,,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,data_downloadable,not stated,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash,,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,datasets_named,no,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash,,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,data_shares,no,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash,,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,pretraining_site,not stated,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash,,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,licence_text,custom,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE,"to deal in the Software for non-commercial purposes, including without limitation the rights to use",2026-11-12,claude-opus-5-5
+family,minimax-m3.1,licence_modified,yes,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE,if such products and services generate more than 20 million US dollars (or equivalent in other currencies) in yearly revenue,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,noncommercial,no,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE,If the Software (or any derivative works thereof) is used for any Commercial Use for your products or services,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,use_policy_binding,yes,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE,"You agree you will not use, or allow others to use, the Software or any derivatives of the Software to:",2026-11-12,claude-opus-5-5
+family,minimax-m3.1,inherited_terms,no,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE,,2026-11-12,claude-opus-5-5
+family,minimax-m3.1,policy_updatable,no,https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/LICENSE,,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,init_random,no,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,The language backbone is initialized from Nemotron 3 Super Base.,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,base_model,NVIDIA-Nemotron-3-Super-120B-A12B-Base,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,The language backbone is initialized from Nemotron 3 Super Base.,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,base_model,NVIDIA-Nemotron-3-Super-120B-A12B-Base,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf,Nemotron 3.5 Super is a 120 billion total and 12 billion active parameter model initialized from Nemotron 3 Super,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,base_publisher,own,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,The language backbone is initialized from Nemotron 3 Super Base.,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,base_scratch,yes,https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16,is a base large language model (LLM) trained from scratch by NVIDIA,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,post_training_only,no,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,"The model undergoes 100B tokens of Indic continued pre-training, a 35B-token extension to 1M context",2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,data_downloadable,part,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf,"We release base, BF16 post-trained, and NVFP4-quantized model checkpoints",2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,datasets_named,yes,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,"The foundation of the model is trained on the Nemotron 3 corpus, comprising the following datasets from the",2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,data_shares,yes,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,| Dataset Collection | Token Counts | Description |,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,pretraining_site,not stated,https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Super-and-Lightning-Technical-Report.pdf,,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,licence_text,openmdw-1.1,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,"**Governing Download Terms:** Use of this model is governed by the [OpenMDW License Agreement, version 1.1](https://openmdw.ai/license/1-1/).",2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,use_policy_binding,no,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,,2026-11-12,claude-opus-5-5
+model,nemotron-3.5-super-vl-120b,inherited_terms,no,https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16,,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,init_random,yes,https://huggingface.co/baidu/ERNIE-5.5-Flash-Base,pre-trained from scratch on 33.5T tokens with the Muon optimizer and a training context of up to 128K,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,base_model,none,https://ernie.baidu.com/release/ernie-5-5-flash-base/,ERNIE-5.5-Flash-Base was pre-trained from scratch on 33.5T tokens with the Muon optimizer and FP8 mixed precision.,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,data_downloadable,not stated,https://huggingface.co/baidu/ERNIE-5.5-Flash-Base,,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,datasets_named,no,https://ernie.baidu.com/release/ernie-5-5-flash-base/,,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,data_shares,no,https://ernie.baidu.com/release/ernie-5-5-flash-base/,,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,pretraining_site,not stated,https://ernie.baidu.com/release/ernie-5-5-flash-base/,,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,licence_text,custom,https://huggingface.co/baidu/ERNIE-5.5-Flash-Base,ERNIE-5.5-Flash-Base is provided under the ERNIE 5.5 Flash Base Model License Agreement v1.0.,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,licence_modified,yes,https://huggingface.co/baidu/ERNIE-5.5-Flash-Base/blob/main/LICENSE,Commercial Use with Annual Revenue of Related Products or Services above US$50 million.,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,noncommercial,no,https://huggingface.co/baidu/ERNIE-5.5-Flash-Base/blob/main/LICENSE,you may use the Licensed Materials and Derivative Models commercially without a model license charge,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,use_policy_binding,yes,https://huggingface.co/baidu/ERNIE-5.5-Flash-Base/blob/main/LICENSE,"""Acceptable Use Policy"" means the policy in Exhibit A, which forms part of this Agreement.",2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,inherited_terms,no,https://huggingface.co/baidu/ERNIE-5.5-Flash-Base,,2026-11-12,claude-opus-5-5
+family,ernie-5.5-flash,policy_updatable,yes,https://huggingface.co/baidu/ERNIE-5.5-Flash-Base/blob/main/LICENSE,Licensor may revise this policy periodically.,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,init_random,not stated,https://huggingface.co/inclusionAI/Ling-3.1-flash,,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,base_model,none,https://huggingface.co/inclusionAI/AI-Transparency/resolve/main/Ling-3.1_TDS-Summary.pdf,Model dependencies: NA,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,data_downloadable,part,https://huggingface.co/inclusionAI/AI-Transparency/resolve/main/Ling-3.1_TDS-Summary.pdf,The training data includes text from Common Crawl,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,datasets_named,no,https://huggingface.co/inclusionAI/AI-Transparency/resolve/main/Ling-3.1_TDS-Summary.pdf,,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,data_shares,no,https://huggingface.co/inclusionAI/AI-Transparency/resolve/main/Ling-3.1_TDS-Summary.pdf,,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,pretraining_site,not stated,https://huggingface.co/inclusionAI/AI-Transparency/resolve/main/Ling-3.1_TDS-Summary.pdf,,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,licence_text,mit,https://huggingface.co/inclusionAI/Ling-3.1-flash-1019,license: mit pipeline_tag: text-generation,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,licence_modified,no,https://huggingface.co/inclusionAI/Ling-3.1-flash-1019,,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,noncommercial,no,https://huggingface.co/inclusionAI/Ling-3.1-flash-1019,,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,use_policy_binding,no,https://huggingface.co/inclusionAI/Ling-3.1-flash-1019,,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,inherited_terms,no,https://huggingface.co/inclusionAI/Ling-3.1-flash-1019,,2026-11-12,claude-opus-5-5
+family,ling-3.1-flash,policy_updatable,no,https://huggingface.co/inclusionAI/Ling-3.1-flash-1019,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,init_random,not stated,https://huggingface.co/meituan-longcat/LongCat-2.5,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,data_downloadable,not stated,https://longcat.ai/blog/longcat-2.5/,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,datasets_named,no,https://longcat.ai/blog/longcat-2.5/,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,data_shares,no,https://longcat.ai/blog/longcat-2.5/,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,pretraining_site,not stated,https://longcat.ai/blog/longcat-2.5/,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,licence_text,mit,https://huggingface.co/meituan-longcat/LongCat-2.5/blob/main/LICENSE,MIT License Copyright (c) 2026 Meituan,2026-11-12,claude-opus-5-5
+family,longcat-2.5,licence_modified,no,https://huggingface.co/meituan-longcat/LongCat-2.5/blob/main/LICENSE,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,noncommercial,no,https://huggingface.co/meituan-longcat/LongCat-2.5/blob/main/LICENSE,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,policy_updatable,no,https://huggingface.co/meituan-longcat/LongCat-2.5/blob/main/LICENSE,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,use_policy_binding,no,https://huggingface.co/meituan-longcat/LongCat-2.5,,2026-11-12,claude-opus-5-5
+family,longcat-2.5,inherited_terms,no,https://huggingface.co/meituan-longcat/LongCat-2.5,,2026-11-12,claude-opus-5-5
+family,olala-v1.0-mini,init_random,no,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Public-Summary-of-Training-Content.pdf,"This model is a modification (fine-tune) of Olala-v1.0-mini-7A1B-SFT, a general-purpose AI model of the same provider",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,base_model,OVHaiLLM/Olala-v1.0-mini-7A1B-base (via OVHaiLLM/Olala-v1.0-mini-7A1B-SFT),https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,Post-training turns the base model into the released assistant in two phases.,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,base_publisher,own,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-SFT/blob/main/Public-Summary-of-Training-Content.pdf,"This model is a modification (fine-tune) of Olala-v1.0-mini-7A1B-base, a general-purpose AI model of the same provider",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,base_scratch,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-base/blob/main/Public-Summary-of-Training-Content.pdf,Model dependencies: None — trained from scratch; not a modification of a model already on the Union market.,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,base_scratch,yes,https://corporate.ovhcloud.com/en/newsroom/news/ovh-olala-mini/,It demonstrates that European companies can innovate and train agentic LLMs from scratch.,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,base_scratch,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,trained on 12.8T tokens of exclusively public data on 1024 GH200 GPUs of the JUPITER EuroHPC supercomputer,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,post_training_only,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B,"Post-trained (SFT + reinforcement learning), text-only language model",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,post_training_only,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,"On top of this base model, we build a reasoning assistant through supervised fine-tuning and a four-stage reinforcement-learning cascade",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,post_training_only,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,The context-extended checkpoint is not part of the current release.,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,data_downloadable,part,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-base/blob/main/Public-Summary-of-Training-Content.pdf,"Only parts of the above datasets were used. General selection approach: quality filtering, deduplication, URL-blacklist filtering",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,data_downloadable,part,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,The three resulting datasets are publicly released,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,datasets_named,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,"English is served entirely by Nemotron-CC v2 (2,911.5B natural web across nine quality and length buckets, 1,388.1B synthetic).",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,datasets_named,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B-base/blob/main/Public-Summary-of-Training-Content.pdf,FineWeb-2 — huggingface.co/datasets/HuggingFaceFW/fineweb-2,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,data_shares,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,"Multilingual web (FineWeb-2, 36 languages) 4,331.6 41.1%",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,data_shares,yes,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,Nemotron-CC-Math-v1 211.1 37.9%,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,pretraining_site,JUPITER,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/Olala-v1.0-mini.pdf,Olala-v1.0-mini-7A1B was trained on 1024 GH200 GPUs on the JUPITER EuroHPC supercomputer,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,pretraining_site,JUPITER,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B,"The base model was pre-trained on 1,024 GH200 GPUs of JUPITER.",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,licence_text,apache-2.0,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B,license: apache-2.0,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,licence_text,apache-2.0,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/LICENSE,"Apache License Version 2.0, January 2004",2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,licence_modified,no,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,noncommercial,no,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B,,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,use_policy_binding,no,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B,,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,inherited_terms,no,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B,,2026-11-21,claude-fable-5-2
+family,olala-v1.0-mini,policy_updatable,no,https://huggingface.co/OVHaiLLM/Olala-v1.0-mini-7A1B,,2026-11-21,claude-fable-5-2
+family,munin-2.0,init_random,no,https://huggingface.co/danish-foundation-models/munin-2.0,We post-trained it from NVIDIA's pretrained,2026-11-21,claude-fable-5-2
+family,munin-2.0,base_model,NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16,https://huggingface.co/danish-foundation-models/munin-2.0-sft,"**Starting point:** `nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16`, revision `b4cc2020`.",2026-11-21,claude-fable-5-2
+family,munin-2.0,base_model,NVIDIA-Nemotron-3-Super-120B-A12B-Base-BF16,https://foundationmodels.dk/news/2026/11/18/munin-20-release-note.html,"Munin 2.0 was trained in two stages from Nemotron 3 Super Base, with the architecture and tokenizer unchanged.",2026-11-21,claude-fable-5-2
+family,munin-2.0,base_publisher,foreign,https://huggingface.co/danish-foundation-models/munin-2.0,We post-trained it from NVIDIA's pretrained,2026-11-21,claude-fable-5-2
+family,munin-2.0,post_training_only,yes,https://huggingface.co/danish-foundation-models/munin-2.0,"We post-trained it from NVIDIA's pretrained ... supervised fine-tuning first, then reinforcement learning on software-engineering and terminal tasks.",2026-11-21,claude-fable-5-2
+family,munin-2.0,post_training_only,yes,https://foundationmodels.dk/news/2026/11/18/munin-20-release-note.html,"Munin 2.0 was trained in two stages from Nemotron 3 Super Base, with the architecture and tokenizer unchanged.",2026-11-21,claude-fable-5-2
+family,munin-2.0,data_downloadable,part,https://huggingface.co/danish-foundation-models/munin-2.0,About 94% of the trained tokens come from public datasets and 6% from synthetic data we generated.,2026-11-21,claude-fable-5-2
+family,munin-2.0,datasets_named,no,https://huggingface.co/danish-foundation-models/munin-2.0,,2026-11-21,claude-fable-5-2
+family,munin-2.0,data_shares,yes,https://huggingface.co/danish-foundation-models/munin-2.0,"About 119,000 episodes from 22 task sources: software engineering (47%), terminal tasks (25%),",2026-11-21,claude-fable-5-2
+family,munin-2.0,data_shares,yes,https://huggingface.co/danish-foundation-models/munin-2.0-sft,"trained tokens are roughly 71% English and code, 8% Danish, 9% mixed Danish/English, 12% other languages;",2026-11-21,claude-fable-5-2
+family,munin-2.0,pretraining_site,LUMI,https://huggingface.co/danish-foundation-models/munin-2.0,The supervised fine-tuning ran on LUMI under DeiC grant DeiC-SDU-N5-2026185.,2026-11-21,claude-fable-5-2
+family,munin-2.0,pretraining_site,Gefion,https://huggingface.co/danish-foundation-models/munin-2.0,The reinforcement learning ran on Gefion.,2026-11-21,claude-fable-5-2
+family,munin-2.0,licence_text,custom,https://huggingface.co/danish-foundation-models/munin-2.0,license_name: nvidia-nemotron-open-model-license,2026-11-21,claude-fable-5-2
+family,munin-2.0,licence_modified,yes,https://huggingface.co/danish-foundation-models/munin-2.0/blob/main/LICENSE,any Derivative Works that You distribute must include a readable copy of the following attribution notice,2026-11-21,claude-fable-5-2
+family,munin-2.0,noncommercial,no,https://huggingface.co/danish-foundation-models/munin-2.0/blob/main/LICENSE,Works are commercially usable.,2026-11-21,claude-fable-5-2
+family,munin-2.0,use_policy_binding,no,https://huggingface.co/danish-foundation-models/munin-2.0/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,munin-2.0,inherited_terms,yes,https://huggingface.co/danish-foundation-models/munin-2.0,Licensed by NVIDIA Corporation under the NVIDIA Nemotron Model License.,2026-11-21,claude-fable-5-2
+family,munin-2.0,policy_updatable,no,https://huggingface.co/danish-foundation-models/munin-2.0/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,init_random,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.8,"This is the XL continuation checkpoint, not the smaller B architecture.",2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,base_model,"DFM Mimir v1.5 (XL HRM-Text lineage, continued from step 2,877,261 to 3,800,000)",https://github.com/schneiderkamplab/HRM-Text/blob/main/wiki/pages/dfm15-plan.md,"Continue the existing XL run after DFM14 epoch completion at 3,768,319 through step 3,800,000 (31,681 steps). Preserve optimizer and EMA",2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,base_model,"DFM Mimir v1.5 (XL HRM-Text lineage, continued from step 2,877,261 to 3,800,000)",https://github.com/schneiderkamplab/HRM-Text/blob/main/wiki/pages/dfm12-xl-epoch11-noidentity.md,"Continue the original XL, not an identity-adapted checkpoint: ... Its checkpoint sidecar verifies step **2877261**, completed epoch 10",2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,base_publisher,own,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.8,"This is the XL continuation checkpoint, not the smaller B architecture.",2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,base_scratch,yes,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.5,Mimir began as a model trained from scratch on Danish and English post-training and instruction data.,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,post_training_only,no,https://github.com/schneiderkamplab/HRM-Text/blob/main/wiki/pages/dfm15-plan.md,"Continue the existing XL run after DFM14 epoch completion at 3,768,319 through step 3,800,000 (31,681 steps). Preserve optimizer and EMA",2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,data_downloadable,nearly all,https://github.com/schneiderkamplab/HRM-Text/blob/main/wiki/pages/dfm13-15-hf-rebuild-recipes.md,passed all 13 final arrays plus metadata. `dfm15/verified.json` records matched HF-only plus lexdk/DBC status,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,data_downloadable,nearly all,https://arxiv.org/abs/2608.13517,All but the same two Danish datasets are available from the Hugging Face hub.,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,datasets_named,yes,https://github.com/schneiderkamplab/HRM-Text/blob/main/wiki/pages/dfm15-plan.md,"`config/dfm15_sources.json` registers these tokenized additions on top of the native-reasoning staged base, with per-part selection indices:",2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,datasets_named,yes,https://github.com/schneiderkamplab/HRM-Text/blob/main/wiki/pages/dfm13-15-hf-rebuild-recipes.md,"DFM13 has 603 components, 7,692 reference shards and 565 HF packages.",2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,datasets_named,yes,https://arxiv.org/abs/2608.13517,draws on 161 datasets with all but 2 Danish ones being freely available on the Hugging Face Hub.,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,data_shares,yes,https://github.com/schneiderkamplab/HRM-Text/blob/main/wiki/pages/dfm15-plan.md,Per epoch additions at repeat 1 after whole-row length admission:,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,data_shares,yes,https://arxiv.org/abs/2608.13517,Table 1: Token share and dataset count by functional category.,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,pretraining_site,UCloud,https://arxiv.org/abs/2608.13517,The computation for this project was performed on the UCloud interactive HPC system managed by the eScience Center at the University of Southern Denmark.,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,licence_text,apache-2.0,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.8,The weight license is Apache-2.0,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,licence_modified,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.8/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,noncommercial,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.8/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,use_policy_binding,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.8,,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,inherited_terms,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.8,,2026-11-21,claude-fable-5-2
+family,dfm-mimir-1.8,policy_updatable,no,https://huggingface.co/danish-foundation-models/DFM-Mimir-v1.8/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,latxa-3,init_random,no,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,built on top of [Qwen3.5-122B-A10B](https://huggingface.co/Qwen/Qwen3.5-122B-A10B),2026-11-21,claude-fable-5-2
+family,latxa-3,base_model,Qwen3.5-122B-A10B,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,**Finetuned from model:** [Qwen/Qwen3.5-122B-A10B](https://huggingface.co/Qwen/Qwen3.5-122B-A10B),2026-11-21,claude-fable-5-2
+family,latxa-3,base_publisher,foreign,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,"Still, the model is based on Qwen3.5 and may carry the same biases, risks and limitations.",2026-11-21,claude-fable-5-2
+family,latxa-3,post_training_only,no,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,"Latxa 3 was trained on [Latxa Corpus v2](https://huggingface.co/datasets/HiTZ/latxa-corpus-v2), following the adaptation recipe of",2026-11-21,claude-fable-5-2
+family,latxa-3,post_training_only,no,https://aclanthology.org/2025.emnlp-main.1484.pdf,"whether instruction-tuned models could be adapted through continued pretraining, similar to base models",2026-11-21,claude-fable-5-2
+family,latxa-3,data_downloadable,part,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,this repository reflects a curated version of the original dataset. ... Some data points have been removed to ensure permission compliance.,2026-11-21,claude-fable-5-2
+family,latxa-3,datasets_named,yes,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,Latxa 3 was trained on [Latxa Corpus v2](https://huggingface.co/datasets/HiTZ/latxa-corpus-v2),2026-11-21,claude-fable-5-2
+family,latxa-3,datasets_named,yes,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,"Latxa Corpus v2 is a large-scale monolingual Basque corpus, created by combining curated crawls, public datasets, institutional data",2026-11-21,claude-fable-5-2
+family,latxa-3,data_shares,yes,https://huggingface.co/datasets/HiTZ/latxa-corpus-v2,The size of each dataset in terms of number of documents can be found below:,2026-11-21,claude-fable-5-2
+family,latxa-3,pretraining_site,MareNostrum 5,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,The model was trained with Swift/Megatron on the MareNostrum 5 Accelerated Partition (BSC).,2026-11-21,claude-fable-5-2
+family,latxa-3,licence_text,apache-2.0,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,- **License:** Apache 2.0,2026-11-21,claude-fable-5-2
+family,latxa-3,licence_modified,no,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,,2026-11-21,claude-fable-5-2
+family,latxa-3,noncommercial,no,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,,2026-11-21,claude-fable-5-2
+family,latxa-3,use_policy_binding,no,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,,2026-11-21,claude-fable-5-2
+family,latxa-3,inherited_terms,no,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,,2026-11-21,claude-fable-5-2
+family,latxa-3,policy_updatable,no,https://huggingface.co/HiTZ/Latxa-3-122B-A10B,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,init_random,not stated,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,data_downloadable,not stated,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,datasets_named,no,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,data_shares,no,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,pretraining_site,not stated,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,licence_text,apache-2.0,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,license: apache-2.0,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,licence_modified,no,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,noncommercial,no,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,use_policy_binding,no,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,inherited_terms,no,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,eurollm-1.5,policy_updatable,no,https://huggingface.co/utter-project/EuroLLM1.5-9B-Base,,2026-11-21,claude-fable-5-2
+family,villanova2,init_random,yes,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B-Base,"A sparse mixture-of-experts foundation model, trained from scratch on English, Italian, German, Spanish and French.",2026-11-21,claude-fable-5-2
+family,villanova2,base_model,Villanova2-15B-A3B-Base,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,"Three stages on top of Villanova2-15B-A3B-Base ... supervised fine-tuning, then DPO, then GRPO.",2026-11-21,claude-fable-5-2
+family,villanova2,base_publisher,own,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,The instruction-tuned mixture-of-experts model of the Villanova2 family,2026-11-21,claude-fable-5-2
+family,villanova2,base_scratch,yes,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,pre-trained from scratch on 4.7T tokens,2026-11-21,claude-fable-5-2
+family,villanova2,post_training_only,yes,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,"Three stages on top of Villanova2-15B-A3B-Base ... supervised fine-tuning, then DPO, then GRPO.",2026-11-21,claude-fable-5-2
+family,villanova2,data_downloadable,part,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B-Base,"training data documented source by source, each dataset under its own terms",2026-11-21,claude-fable-5-2
+family,villanova2,datasets_named,yes,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B-Base,"FineWeb-Edu, DCLM-Edu ... Backbone of the mixture",2026-11-21,claude-fable-5-2
+family,villanova2,datasets_named,yes,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,Names starting with Nemotron are NVIDIA datasets on Hugging Face,2026-11-21,claude-fable-5-2
+family,villanova2,data_shares,no,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B-Base,,2026-11-21,claude-fable-5-2
+family,villanova2,pretraining_site,not stated,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B-Base,,2026-11-21,claude-fable-5-2
+family,villanova2,licence_text,apache-2.0,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,model weights under Apache 2.0,2026-11-21,claude-fable-5-2
+family,villanova2,licence_modified,no,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,,2026-11-21,claude-fable-5-2
+family,villanova2,noncommercial,no,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,,2026-11-21,claude-fable-5-2
+family,villanova2,use_policy_binding,no,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,,2026-11-21,claude-fable-5-2
+family,villanova2,inherited_terms,no,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,,2026-11-21,claude-fable-5-2
+family,villanova2,policy_updatable,no,https://huggingface.co/VillanovaAI/Villanova2-15B-A3B,,2026-11-21,claude-fable-5-2
+family,embla-1,init_random,no,https://sevren.ai/blog/embla-1,Its embeddings and output head start from the teacher's top principal components,2026-11-21,claude-fable-5-2
+family,embla-1,base_model,Qwen3.5-35B-A3B-Base (embeddings and output head start from its top principal components),https://sevren.ai/blog/embla-1,From the first step the model distils from Qwen3.5-35B-A3B-Base ... Its embeddings and output head start from the teacher's top principal components,2026-11-21,claude-fable-5-2
+family,embla-1,base_publisher,foreign,https://sevren.ai/blog/embla-1,From the first step the model distils from Qwen3.5-35B-A3B-Base,2026-11-21,claude-fable-5-2
+family,embla-1,post_training_only,no,https://sevren.ai/blog/embla-1,The model is pretrained on 1.4T tokens followed by a 20B-token extension to 256K context.,2026-11-21,claude-fable-5-2
+family,embla-1,data_downloadable,not stated,https://sevren.ai/blog/embla-1,,2026-11-21,claude-fable-5-2
+family,embla-1,datasets_named,no,https://sevren.ai/blog/embla-1,,2026-11-21,claude-fable-5-2
+family,embla-1,data_shares,yes,https://sevren.ai/blog/embla-1,"Web text, filtered and synthetic ... 50% ... 43%",2026-11-21,claude-fable-5-2
+family,embla-1,pretraining_site,DK,https://oresundstartups.com/sevren-releases-embla-its-most-efficient-ai-model-that-runs-on-a-phone/,"It was trained on 1.5 trillion tokens using the Gefion supercomputer, in Denmark's largest AI training project to date.",2026-11-21,claude-fable-5-2
+family,embla-1,licence_text,mit,https://huggingface.co/sevren-ai/Embla1-bf16,license: mit,2026-11-21,claude-fable-5-2
+family,embla-1,licence_modified,no,https://huggingface.co/sevren-ai/Embla1-bf16/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,embla-1,noncommercial,no,https://huggingface.co/sevren-ai/Embla1-bf16/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,embla-1,use_policy_binding,no,https://huggingface.co/sevren-ai/Embla1-bf16,,2026-11-21,claude-fable-5-2
+family,embla-1,inherited_terms,no,https://huggingface.co/sevren-ai/Embla1-bf16,,2026-11-21,claude-fable-5-2
+family,embla-1,policy_updatable,no,https://huggingface.co/sevren-ai/Embla1-bf16/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,lara-mini,init_random,yes,https://huggingface.co/translated/Lara-4-Mini-Base,pretrained from scratch on 6T tokens,2026-11-21,claude-fable-5-2
+family,lara-mini,base_model,none,https://huggingface.co/translated/Lara-4-Mini-Base,pretrained from scratch on 6T tokens,2026-11-21,claude-fable-5-2
+family,lara-mini,post_training_only,no,https://huggingface.co/translated/Lara-4-Mini-Base,"Pretraining has three stages (main, transition and anneal) over 6T tokens",2026-11-21,claude-fable-5-2
+family,lara-mini,data_downloadable,part,https://huggingface.co/translated/Lara-4-Mini-Base,All training data come from publicly available datasets (some of them released under access agreements),2026-11-21,claude-fable-5-2
+family,lara-mini,datasets_named,yes,https://huggingface.co/translated/Lara-4-Mini-Base,"Nemotron-CC and its synthetic data, FineWeb-Edu, FinePDFs, FineWiki",2026-11-21,claude-fable-5-2
+family,lara-mini,data_shares,yes,https://huggingface.co/translated/Lara-4-Mini-Base,"Nemotron-CC and its synthetic data, FineWeb-Edu, FinePDFs, FineWiki ... 2.49T ... 41.4%",2026-11-21,claude-fable-5-2
+family,lara-mini,pretraining_site,not stated,https://huggingface.co/translated/Lara-4-Mini-Base,,2026-11-21,claude-fable-5-2
+family,lara-mini,licence_text,cc-by-nc-sa-4.0,https://huggingface.co/translated/Lara-4-Mini-Base,Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International,2026-11-21,claude-fable-5-2
+family,lara-mini,licence_modified,no,https://huggingface.co/translated/Lara-4-Mini-Base,,2026-11-21,claude-fable-5-2
+family,lara-mini,noncommercial,yes,https://huggingface.co/translated/Lara-4-Mini-Base,"Lara Mini base is released under the CC BY-NC-SA 4.0 license, for non-commercial use only.",2026-11-21,claude-fable-5-2
+family,lara-mini,use_policy_binding,yes,https://huggingface.co/translated/Lara-4-Mini-Base,"Do not use Lara Mini base, or models derived from it, for the uses",2026-11-21,claude-fable-5-2
+family,lara-mini,inherited_terms,no,https://huggingface.co/translated/Lara-4-Mini-Base,,2026-11-21,claude-fable-5-2
+family,lara-mini,policy_updatable,no,https://huggingface.co/translated/Lara-4-Mini-Base,,2026-11-21,claude-fable-5-2
+family,hy4,init_random,not stated,https://huggingface.co/tencent/Hy4,,2026-11-21,claude-fable-5-2
+family,hy4,base_model,none,https://huggingface.co/tencent/Hy4,,2026-11-21,claude-fable-5-2
+family,hy4,data_downloadable,not stated,https://huggingface.co/tencent/Hy4,,2026-11-21,claude-fable-5-2
+family,hy4,datasets_named,no,https://huggingface.co/tencent/Hy4,,2026-11-21,claude-fable-5-2
+family,hy4,data_shares,no,https://huggingface.co/tencent/Hy4,,2026-11-21,claude-fable-5-2
+family,hy4,pretraining_site,not stated,https://huggingface.co/tencent/Hy4,,2026-11-21,claude-fable-5-2
+family,hy4,licence_text,custom,https://huggingface.co/tencent/Hy4/blob/main/LICENSE,"This License is not the Apache License, Version 2.0",2026-11-21,claude-fable-5-2
+family,hy4,licence_modified,yes,https://huggingface.co/tencent/Hy4/blob/main/LICENSE,You must obtain a separate written license to use the Work or any Derivative Works from Licensor,2026-11-21,claude-fable-5-2
+family,hy4,noncommercial,no,https://huggingface.co/tencent/Hy4/blob/main/LICENSE,"no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of",2026-11-21,claude-fable-5-2
+family,hy4,use_policy_binding,no,https://huggingface.co/tencent/Hy4/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,hy4,inherited_terms,no,https://huggingface.co/tencent/Hy4,,2026-11-21,claude-fable-5-2
+family,hy4,policy_updatable,no,https://huggingface.co/tencent/Hy4/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,hy4-flash,init_random,not stated,https://huggingface.co/tencent/Hy4-flash,,2026-11-21,claude-fable-5-2
+family,hy4-flash,base_model,SigLIP2-So400m-Patch16-Res512 vision encoder (vision component only; language backbone pre-trained by Tencent),https://huggingface.co/tencent/Hy4-flash,A vision encoder (adapted from SigLIP2-So400m-Patch16-Res512) is connected to the backbone through an MLP projector.,2026-11-21,claude-fable-5-2
+family,hy4-flash,base_publisher,foreign,https://huggingface.co/tencent/Hy4-flash,A vision encoder (adapted from SigLIP2-So400m-Patch16-Res512) is connected to the backbone through an MLP projector.,2026-11-21,claude-fable-5-2
+family,hy4-flash,post_training_only,no,https://huggingface.co/tencent/Hy4-flash,"Hy4 flash-base is a pre-trained base model, not an instruction-tuned chat model.",2026-11-21,claude-fable-5-2
+family,hy4-flash,post_training_only,no,https://huggingface.co/tencent/Hy4-flash,"Hy4 flash integrates hybrid attention, LatentMoE, and Engram into its architecture",2026-11-21,claude-fable-5-2
+family,hy4-flash,data_downloadable,not stated,https://huggingface.co/tencent/Hy4-flash,,2026-11-21,claude-fable-5-2
+family,hy4-flash,datasets_named,no,https://huggingface.co/tencent/Hy4-flash,,2026-11-21,claude-fable-5-2
+family,hy4-flash,data_shares,no,https://huggingface.co/tencent/Hy4-flash,,2026-11-21,claude-fable-5-2
+family,hy4-flash,pretraining_site,not stated,https://huggingface.co/tencent/Hy4-flash,,2026-11-21,claude-fable-5-2
+family,hy4-flash,licence_text,custom,https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE,"This License is not the Apache License, Version 2.0",2026-11-21,claude-fable-5-2
+family,hy4-flash,licence_modified,yes,https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE,You must obtain a separate written license to use the Work or any Derivative Works from Licensor,2026-11-21,claude-fable-5-2
+family,hy4-flash,noncommercial,no,https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE,"no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of",2026-11-21,claude-fable-5-2
+family,hy4-flash,use_policy_binding,no,https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,hy4-flash,inherited_terms,no,https://huggingface.co/tencent/Hy4-flash,,2026-11-21,claude-fable-5-2
+family,hy4-flash,policy_updatable,no,https://huggingface.co/tencent/Hy4-flash/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,init_random,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,We post-trained ... Qwen/Qwen3.8-27B ... in English and SEA languages to create Qwen-SEA-LION-v5-27B.,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,base_model,Qwen3.8-27B,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,Finetuned from model: ... Qwen/Qwen3.8-27B,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,base_publisher,foreign,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,the Qwen team's post-trained 27B model in the Qwen3.8 family,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,post_training_only,yes,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,"The architecture, tokenizer, vision encoder, sampling defaults and chat template are inherited from Qwen unchanged",2026-11-21,claude-fable-5-2
+family,sea-lion-v5,post_training_only,yes,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,We trained with Reinforcement Learning and On-Policy Distillation simultaneously,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,data_downloadable,part,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,"Training was text-only, using prompts from ... aisingapore/SEA-Instruct-2602",2026-11-21,claude-fable-5-2
+family,sea-lion-v5,datasets_named,yes,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,"Training was text-only, using prompts from ... aisingapore/SEA-Instruct-2602 ... an instruction dataset in English and Southeast Asian languages.",2026-11-21,claude-fable-5-2
+family,sea-lion-v5,data_shares,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,pretraining_site,not stated,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,licence_text,mit,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,library_name: transformers license: mit language: - en,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,licence_text,apache-2.0,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B/blob/main/LICENSE,"Apache License Version 2.0, January 2004",2026-11-21,claude-fable-5-2
+family,sea-lion-v5,licence_modified,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,noncommercial,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,use_policy_binding,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,inherited_terms,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,,2026-11-21,claude-fable-5-2
+family,sea-lion-v5,policy_updatable,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-27B,,2026-11-21,claude-fable-5-2
+model,qwen-sea-lion-v5-397b-a17b-plus,base_model,Qwen3.5-397B-A17B,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus,Finetuned from model: ... Qwen/Qwen3.5-397B-A17B,2026-11-21,claude-fable-5-2
+model,qwen-sea-lion-v5-397b-a17b-plus,base_model,"Qwen3.8-Flash-Next (n-gram embedding tables only, as seed)",https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus,We seeded our tables from Qwen3.8-Flash-Next's trained ones,2026-11-21,claude-fable-5-2
+model,qwen-sea-lion-v5-397b-a17b-plus,post_training_only,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus,We kept Qwen3.5-397B's 45 Gated DeltaNet layers and converted its 15 full-attention layers to QSA with Qwen4Exp's indexer settings.,2026-11-21,claude-fable-5-2
+model,qwen-sea-lion-v5-397b-a17b-plus,post_training_only,no,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus,"widened each head from 160 to 256 channels for our 4,096-wide backbone, and doubled the buckets to about 40M per head",2026-11-21,claude-fable-5-2
+model,qwen-sea-lion-v5-397b-a17b-plus,post_training_only,no,https://sea-lion.ai/blog/announcing-sea-lion-v5-our-largest-model-frontier-level-performance-and-open/,we use the model’s own dense attention scores to train its Qwen Sparse Attention indexers,2026-11-21,claude-fable-5-2
+model,qwen-sea-lion-v5-397b-a17b-plus,inherited_terms,yes,https://huggingface.co/aisingapore/Qwen-SEA-LION-v5-397B-A17B-Plus,We seeded our tables from Qwen3.8-Flash-Next's trained ones,2026-11-21,claude-fable-5-2
+model,qwen-sea-lion-v5-397b-a17b-plus,inherited_terms,yes,https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE,the licensee shall obtain a separate license from Qwen before Using the Software or its derivative works for any commercial purpose,2026-11-21,claude-fable-5-2
+model,sarvam-105b-1711,init_random,no,https://huggingface.co/sarvamai/sarvam-105b-1711-bf16,Sarvam-105B-1711 uses the same base model as ... Sarvam-105B ... and is further post-trained to improve,2026-11-21,claude-fable-5-2
+model,sarvam-105b-1711,base_model,Sarvam-105B base model,https://huggingface.co/sarvamai/sarvam-105b-1711-bf16,Sarvam-105B-1711 uses the same base model as ... Sarvam-105B ... and is further post-trained to improve,2026-11-21,claude-fable-5-2
+model,sarvam-105b-1711,base_publisher,own,https://huggingface.co/sarvamai/sarvam-105b-1711-bf16,Sarvam-105B-1711 uses the same base model as ... Sarvam-105B ... and is further post-trained to improve,2026-11-21,claude-fable-5-2
+model,sarvam-105b-1711,base_scratch,yes,https://www.sarvam.ai/blogs/sarvam-30b-105b,"Both are reasoning models trained from scratch on large-scale, high-quality datasets curated in-house",2026-11-21,claude-fable-5-2
+model,sarvam-105b-1711,post_training_only,yes,https://huggingface.co/sarvamai/sarvam-105b-1711-bf16,and is further post-trained to improve,2026-11-21,claude-fable-5-2
+family,inkling-2,init_random,yes,https://thinkingmachines.ai/documents/inkling-2-small-public-summary-training-content.docx,This model was trained from scratch. It shares architectural approaches with Inkling and Inkling-Small.,2026-11-21,claude-fable-5-2
+family,inkling-2,base_model,none,https://thinkingmachines.ai/documents/inkling-2-small-public-summary-training-content.docx,This model was trained from scratch. It shares architectural approaches with Inkling and Inkling-Small.,2026-11-21,claude-fable-5-2
+family,inkling-2,data_downloadable,not stated,https://huggingface.co/thinkingmachines/Inkling-2-Small,,2026-11-21,claude-fable-5-2
+family,inkling-2,datasets_named,no,https://huggingface.co/thinkingmachines/Inkling-2-Small,"Training data for the model was drawn from publicly available sources, acquired from third-parties, generated internally, or synthetically generated or augmented.",2026-11-21,claude-fable-5-2
+family,inkling-2,datasets_named,no,https://thinkingmachines.ai/documents/inkling-2-small-public-summary-training-content.docx,,2026-11-21,claude-fable-5-2
+family,inkling-2,data_shares,no,https://thinkingmachines.ai/news/inkling-2-small/,,2026-11-21,claude-fable-5-2
+family,inkling-2,pretraining_site,not stated,https://thinkingmachines.ai/news/inkling-2-small/,,2026-11-21,claude-fable-5-2
+family,inkling-2,licence_text,apache-2.0,https://huggingface.co/thinkingmachines/Inkling-2-Small,license: apache-2.0,2026-11-21,claude-fable-5-2
+family,inkling-2,licence_modified,no,https://huggingface.co/thinkingmachines/Inkling-2-Small,,2026-11-21,claude-fable-5-2
+family,inkling-2,noncommercial,no,https://huggingface.co/thinkingmachines/Inkling-2-Small,"It is released with open weights to support research, fine-tuning and integration into third-party products by downstream developers.",2026-11-21,claude-fable-5-2
+family,inkling-2,use_policy_binding,yes,https://thinkingmachines.ai/model-acceptable-use-policy/,"By accessing, downloading, or using any Model Materials, you agree to be bound by this Model AUP",2026-11-21,claude-fable-5-2
+family,inkling-2,inherited_terms,no,https://huggingface.co/thinkingmachines/Inkling-2-Small,,2026-11-21,claude-fable-5-2
+family,inkling-2,policy_updatable,yes,https://thinkingmachines.ai/model-acceptable-use-policy/,We may update this Model AUP at any time,2026-11-21,claude-fable-5-2
+model,inkling-2-mini,init_random,not stated,https://thinkingmachines.ai/news/inkling-2-mini/,,2026-11-21,claude-fable-5-2
+model,inkling-2-mini,base_model,none,https://thinkingmachines.ai/news/inkling-2-mini/,"Inkling 2 Mini started training with a sparsity of 48, with 8 experts being chosen out of 384.",2026-11-21,claude-fable-5-2
+model,inkling-2-mini,base_model,none,https://huggingface.co/thinkingmachines/TML-d24-varloop-research,TML-d24-varloop-research shares its pretraining and first stage of midtraining with Inkling 2 Mini.,2026-11-21,claude-fable-5-2
+family,aion-1.0,init_random,not stated,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,,2026-11-21,claude-fable-5-2
+family,aion-1.0,base_model,none,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,,2026-11-21,claude-fable-5-2
+family,aion-1.0,data_downloadable,not stated,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,,2026-11-21,claude-fable-5-2
+family,aion-1.0,datasets_named,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,Our training data is an extension of the data used for training Phi Silica (the previous generation Windows OS SLM) and includes a wide variety of sources from:,2026-11-21,claude-fable-5-2
+family,aion-1.0,data_shares,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,Multilingual data constitutes about 6% of our overall data.,2026-11-21,claude-fable-5-2
+family,aion-1.0,pretraining_site,not stated,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,,2026-11-21,claude-fable-5-2
+family,aion-1.0,licence_text,mit,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B/blob/main/LICENSE,"MIT License ... Permission is hereby granted, free of charge, to any person obtaining a copy",2026-11-21,claude-fable-5-2
+family,aion-1.0,licence_modified,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,aion-1.0,noncommercial,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B/blob/main/LICENSE,"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",2026-11-21,claude-fable-5-2
+family,aion-1.0,use_policy_binding,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,Nothing contained in this Model Card should be interpreted as or deemed a restriction or modification to the license the model is released under.,2026-11-21,claude-fable-5-2
+family,aion-1.0,inherited_terms,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,,2026-11-21,claude-fable-5-2
+family,aion-1.0,policy_updatable,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B/blob/main/LICENSE,,2026-11-21,claude-fable-5-2

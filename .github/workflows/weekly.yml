@@ -2,8 +2,9 @@ name: weekly check
 
 # Re-checks the Hub facts, chat templates, licence documents, new provider
 # repos (Ubuntu) and mlx-vlm support (macOS, needs Apple Silicon) every Monday.
-# Data is never changed automatically: any difference becomes an issue labelled
-# "review" with the diff (#6).
+# Data is never changed automatically: the differences against main go into an
+# issue labelled "review" (#6). There is one such issue per job: every run
+# rewrites the open one, and closes it when nothing differs any more.
 
 on:
   schedule:
@@ -38,14 +39,28 @@ jobs:
       - name: New repos of tracked providers
         run: python3 scripts/find_new_repos.py > new_repos.md
       - name: Diff and issue
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           set +e
           python3 scripts/weekly_diff.py > changes.md
           changed=$?
+          python3 scripts/weekly_diff.py --record > record.md
           new=$(grep -c '^- \[' new_repos.md)
-          if [ "$changed" = 0 ] && [ "$new" = 0 ]; then echo "nothing changed"; exit 0; fi
+          today=$(date +%F)
+          open=$(gh issue list --label review --state open --limit 100 --json number,title \
+            --jq '[.[] | select(.title | startswith("Weekly check "))] | sort_by(.number) | last | .number // empty')
+          if [ "$changed" = 0 ] && [ "$new" = 0 ]; then
+            echo "nothing changed"
+            if [ -n "$open" ]; then
+              gh issue close "$open" --comment "Weekly check of $today: no differences against \`main\` any more. Run: $RUN_URL"
+            fi
+            exit 0
+          fi
           {
-            echo "Weekly check of $(date +%F) found differences against \`main\`. Nothing was changed in the data; review and update by hand."
+            echo "Weekly check of $today: differences against \`main\`. Nothing was changed in the data; review and update by hand. Every weekly run rewrites this issue, and closes it when nothing differs any more."
+            echo
+            echo "## Needs a look"
             echo
             cat changes.md
             if [ "$new" != 0 ]; then echo; echo "### New repos of tracked providers"; echo; grep '^- \[' new_repos.md; fi
@@ -53,8 +68,9 @@ jobs:
             echo "### Ownership to watch"
             echo
             python3 -c "import csv; [print(f\"- {p['name']}: {p['control']}{' (' + p['majority_owner'] + ')' if p['majority_owner'] else ''}\") for p in csv.DictReader(open('data/providers.csv')) if p['control'] != 'independent']"
+            if grep -q . record.md; then echo; echo "## For the record"; echo; cat record.md; fi
             echo
-            echo "Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo "Workflow run: $RUN_URL"
           } > body.md
           # GitHub rejects issue bodies over 65536 characters; the full lists stay in the artifact.
           python3 - <<'PY'
@@ -63,15 +79,19 @@ jobs:
           LIMIT = 60000
           body = Path("body.md").read_text()
           if len(body) > LIMIT:
-              run = "%s/%s/actions/runs/%s" % (os.environ["GITHUB_SERVER_URL"],
-                                                os.environ["GITHUB_REPOSITORY"], os.environ["GITHUB_RUN_ID"])
               cut = body[:LIMIT].rsplit("\n", 1)[0]
               Path("body.md").write_text(
                   cut + "\n\n**Truncated** (%d of %d characters). The full lists are in the `weekly-data` "
-                  "artifact of the workflow run: %s\n" % (len(cut), len(body), run))
+                  "artifact of the workflow run: %s\n" % (len(cut), len(body), os.environ["RUN_URL"]))
           PY
           gh label create review --color FBCA04 --description "Needs a human look" --force
-          gh issue create --title "Weekly check $(date +%F): review" --label review --body-file body.md
+          title="Weekly check $today: review"
+          if [ -n "$open" ]; then
+            gh issue edit "$open" --title "$title" --body-file body.md
+            gh issue comment "$open" --body "Rewritten by the weekly check of $today. Run: $RUN_URL"
+          else
+            gh issue create --title "$title" --label review --body-file body.md
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -82,11 +102,15 @@ jobs:
             data/template_diffs/
             data/terms_hashes.csv
             data/known_repos.csv
+            data/quote_checks.csv
             changes.md
+            record.md
             new_repos.md
 
   mlx:
-    runs-on: macos-14
+    # macos-latest: always an Apple Silicon image that is still offered. The pinned macos-14
+    # was withdrawn in November 2026 and the job was cancelled without a trace for two weeks.
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -96,30 +120,46 @@ jobs:
       - name: mlx-vlm support (latest release)
         run: python3 scripts/check_mlx_support.py
       - name: Diff and issue
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: |
           set +e
-          python3 scripts/weekly_diff.py > changes.md
-          if [ $? = 0 ]; then echo "nothing changed"; exit 0; fi
+          python3 scripts/weekly_diff.py mlx_support.csv > changes.md
+          changed=$?
+          today=$(date +%F)
+          open=$(gh issue list --label review --state open --limit 100 --json number,title \
+            --jq '[.[] | select(.title | startswith("Weekly mlx-vlm check "))] | sort_by(.number) | last | .number // empty')
+          if [ "$changed" = 0 ]; then
+            echo "nothing changed"
+            if [ -n "$open" ]; then
+              gh issue close "$open" --comment "Weekly mlx-vlm check of $today: no differences against \`main\` any more. Run: $RUN_URL"
+            fi
+            exit 0
+          fi
           {
-            echo "The latest mlx-vlm release ($(python3 -c 'import importlib.metadata as m; print(m.version("mlx-vlm"))')) loads models differently than recorded on \`main\`. Review and update \`data/mlx_support.csv\` by hand."
+            echo "The latest mlx-vlm release ($(python3 -c 'import importlib.metadata as m; print(m.version("mlx-vlm"))')) loads models differently than recorded on \`main\` (check of $today). Review and update \`data/mlx_support.csv\` by hand. Every weekly run rewrites this issue, and closes it when nothing differs any more."
             echo
             cat changes.md
             echo
-            echo "Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo "Workflow run: $RUN_URL"
           } > body.md
-          # GitHub rejects issue bodies over 65536 characters; the full lists stay in the artifact.
+          # GitHub rejects issue bodies over 65536 characters.
           python3 - <<'PY'
           import os
           from pathlib import Path
           LIMIT = 60000
           body = Path("body.md").read_text()
           if len(body) > LIMIT:
-              run = "%s/%s/actions/runs/%s" % (os.environ["GITHUB_SERVER_URL"],
-                                                os.environ["GITHUB_REPOSITORY"], os.environ["GITHUB_RUN_ID"])
               cut = body[:LIMIT].rsplit("\n", 1)[0]
               Path("body.md").write_text(
-                  cut + "\n\n**Truncated** (%d of %d characters). The full lists are in the `weekly-data` "
-                  "artifact of the workflow run: %s\n" % (len(cut), len(body), run))
+                  cut + "\n\n**Truncated** (%d of %d characters). Workflow run: %s\n"
+                  % (len(cut), len(body), os.environ["RUN_URL"]))
           PY
           gh label create review --color FBCA04 --description "Needs a human look" --force
-          gh issue create --title "Weekly mlx-vlm check $(date +%F): review" --label review --body-file body.md
+          title="Weekly mlx-vlm check $today: review"
+          if [ -n "$open" ]; then
+            gh issue edit "$open" --title "$title" --body-file body.md
+            gh issue comment "$open" --body "Rewritten by the weekly mlx-vlm check of $today. Run: $RUN_URL"
+          else
+            gh issue create --title "$title" --label review --body-file body.md
+          fi

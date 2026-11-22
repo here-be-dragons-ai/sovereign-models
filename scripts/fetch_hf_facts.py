@@ -5,6 +5,9 @@ context length and creation date from the Hub API and config.json, plus
 model-card lines that mention training compute or training data. These
 facts carry the Hub URL as their source, so they count as confirmed.
 
+Every row is pinned: `revision` is the full commit id the repo had when it was
+read, and config.json and the model card are fetched at exactly that commit.
+
 Usage:
     python scripts/fetch_hf_facts.py              # all repos in data/scorecard.csv
     python scripts/fetch_hf_facts.py org/repo ... # only these
@@ -40,9 +43,14 @@ ARCH_KEYS = (
 )
 
 
+def text_config(cfg):
+    """The language model's part of config.json (multimodal models nest it)."""
+    return cfg.get("text_config") or cfg.get("llm_config") or cfg
+
+
 def arch_summary(cfg):
     """The architecture facts the memory estimate needs, as a compact dict."""
-    text = cfg.get("text_config") or cfg
+    text = text_config(cfg)
     out = {k: text[k] for k in ARCH_KEYS if text.get(k) is not None}
     if "model_type" in cfg:
         out["outer_model_type"] = cfg["model_type"]
@@ -52,6 +60,10 @@ def arch_summary(cfg):
     pattern = text.get("hybrid_override_pattern")
     if pattern:
         out["hybrid_pattern"] = {"attention": pattern.count("*"), "mamba": pattern.count("M"), "mlp": pattern.count("-")}
+    blocks = text.get("layers_block_type")  # Nemotron Omni: the same pattern as a list of names
+    if blocks:
+        out["hybrid_pattern"] = {"attention": blocks.count("attention"), "mamba": blocks.count("mamba"),
+                                 "mlp": blocks.count("moe") + blocks.count("mlp")}
     return out
 COMPUTE = re.compile(
     r"(EuroHPC|MareNostrum|LUMI|Leonardo|Jean Zay|GENCI|Alps|CSCS|JUWELS|JUPITER|"
@@ -97,13 +109,16 @@ def facts(repo):
     row = {"hf_repo": repo, "fetched": dt.date.today().isoformat()}
     info = json.loads(get(f"https://huggingface.co/api/models/{repo}"))
     card = info.get("cardData") or {}
+    # The commit this row describes: any change to card, config or weights moves it.
+    # The files below are read at this commit, not at whatever main is a moment later.
+    sha = info.get("sha") or ""
+    ref = sha or "main"
     row.update(
         license=card.get("license", ""),
         license_name=card.get("license_name", ""),
         gated=str(info.get("gated", False)).lower(),
         created=(info.get("createdAt") or "")[:10],
-        # The repo's current commit: any change to card, config or weights moves it.
-        revision=(info.get("sha") or "")[:12],
+        revision=sha,
         pipeline_tag=info.get("pipeline_tag") or "",
     )
     st = info.get("safetensors") or {}
@@ -112,8 +127,8 @@ def facts(repo):
     total = max(st.get("total") or 0, sum((st.get("parameters") or {}).values()))
     row["params_b"] = f"{total / 1e9:.1f}" if total else ""
     try:
-        cfg = json.loads(get(f"https://huggingface.co/{repo}/resolve/main/config.json"))
-        text = cfg.get("text_config") or cfg
+        cfg = json.loads(get(f"https://huggingface.co/{repo}/resolve/{ref}/config.json"))
+        text = text_config(cfg)
         row["model_type"] = cfg.get("model_type", "")
         ctx = text.get("max_position_embeddings") or cfg.get("max_position_embeddings")
         row["context"] = str(ctx or "")
@@ -126,7 +141,7 @@ def facts(repo):
         row["model_type"] = api_cfg.get("model_type") or f"(config: HTTP {e.code})"
         row["architecture"] = (api_cfg.get("architectures") or [""])[0]
     try:
-        readme = get(f"https://huggingface.co/{repo}/raw/main/README.md")
+        readme = get(f"https://huggingface.co/{repo}/raw/{ref}/README.md")
         row["compute_evidence"] = evidence(readme, COMPUTE)
         row["data_evidence"] = evidence(readme, DATA)
     except urllib.error.HTTPError:
