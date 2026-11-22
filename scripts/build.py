@@ -1,11 +1,12 @@
-"""Merge the data files into dist/scorecard.csv and dist/scorecard.json.
+"""Merge the data files into dist/scorecard.csv, dist/scorecard.json and dist/scorecard.cdx.json.
 
 Resolves every model through its family and provider and adds the computed
 columns: tier, flags, sizes at 4 and 8 bit, cache sizes at 8k/32k/128k context,
 mlx-vlm and llama.cpp support, and the most trusted MLX and GGUF builds. The
 JSON also carries the sources of every model (from all three scopes), its builds
 with their publisher and the cache layout, so the Space can compute memory for
-any context length.
+any context length. The third file is the same scorecard as a CycloneDX bill of
+materials for supply-chain tools (scripts/cyclonedx_bom.py).
 
     python3 scripts/build.py                       # data/ -> dist/
     python3 scripts/build.py --overlay data-global # data/ + a local overlay -> dist-global/
@@ -24,6 +25,7 @@ import sys
 if "--overlay" in sys.argv:
     os.environ["SM_OVERLAY"] = sys.argv[sys.argv.index("--overlay") + 1]
 
+from cyclonedx_bom import bom  # noqa: E402
 from memory import cache_bytes, cache_layout  # noqa: E402
 from scorecard import DATA, OVERLAY, PUBLISHER_RANK, ROOT, TIERS, Data, read  # noqa: E402
 
@@ -77,7 +79,7 @@ COLUMNS = [
     "cache_gib_32k", "cache_gib_128k", "teacher_origin", "teachers_list",
     "recipe", "terms_can_change", "languages", "eu_languages", "languages_basis",
     "training_hardware", "flags",
-    "hbd_involvement", "notes", "hf_repo", "hf_created", "last_reviewed",
+    "hbd_involvement", "notes", "hf_repo", "hf_revision", "hf_fetched", "hf_created", "last_reviewed",
 ]
 # Fields whose changes are logged in data/changes.csv (#6).
 TRACKED = [
@@ -187,6 +189,9 @@ def main():
             context=f.get("context", ""),
             model_type=f.get("model_type", ""),
             hf_created=f.get("created", ""),
+            # The commit of the original repo that the Hub facts were read from, and when.
+            hf_revision=f.get("revision", ""),
+            hf_fetched=f.get("fetched", ""),
             size_4bit_gb=f"{params * BPW[4] / 8:.1f}" if params else "",
             size_8bit_gb=f"{params * BPW[8] / 8:.1f}" if params else "",
             mlx_vlm=s.get("mlx_vlm", "not checked"),
@@ -257,6 +262,11 @@ def main():
     with open(DIST / "scorecard.json", "w", encoding="utf-8") as fh:
         json.dump({"tiers": TIERS, "models": details, "changes": logged[-100:][::-1]}, fh,
                   indent=1, ensure_ascii=False)
+    # Dated by the newest fact, not by the clock: the same data gives the same file.
+    as_of = max([r[k] for r in rows for k in ("hf_fetched", "last_reviewed")] + [c["date"] for c in logged],
+                default="") or dt.date.today().isoformat()
+    with open(DIST / "scorecard.cdx.json", "w", encoding="utf-8") as fh:
+        json.dump(bom(details, as_of, facts), fh, indent=1, ensure_ascii=False)
     counts = {t: sum(r["tier"] == t for r in rows) for t in order}
     print(f"{DIST.name}/: {len(rows)} models " + ", ".join(f"{t}={n}" for t, n in counts.items() if n))
 

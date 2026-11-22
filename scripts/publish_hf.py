@@ -52,8 +52,13 @@ For comparison it also lists current open-weight models from providers outside E
 States, China, Korea, Japan, India, Singapore, United Arab Emirates, Israel, Canada) with the same
 facts and sources, in the tier `comparison` and without a sovereignty rating.
 
-- `scorecard.csv`: one row per model, including the computed tier and flags
+- `scorecard.csv`: one row per model, including the computed tier and flags; `hf_revision` is the
+  commit of the model's Hub repo that the row describes
 - `scorecard.json`: the same plus all sources, teacher models, builds and chat-template results
+- `scorecard.cdx.json`: the scorecard as a CycloneDX 1.6 bill of materials for supply-chain tools
+  such as Dependency-Track: each model a component with a `pkg:huggingface` purl at the pinned
+  commit, base model as pedigree, teacher models as components, sources as external references,
+  tier and control as properties (mapping in `data/schema.md`)
 - `METHODOLOGY.md`: criteria, tier rules, rubric, use of AI, privacy and limits
 - `data/` (column definitions in `data/schema.md`):
   - curated by hand: `providers.csv`, `families.csv`, `scorecard.csv`, `sources.csv`,
@@ -136,6 +141,11 @@ def main():
     data = json.loads((ROOT / "dist" / "scorecard.json").read_text(encoding="utf-8"))
     publishable(data, ROOT / "data" / "scorecard.csv")
     models = data["models"]
+    # The CycloneDX file comes from the same build: it must list exactly these models.
+    cdx = json.loads((ROOT / "dist" / "scorecard.cdx.json").read_text(encoding="utf-8"))
+    in_bom = {c["bom-ref"].removeprefix("model:") for c in cdx["components"] if c["bom-ref"].startswith("model:")}
+    if in_bom != {m["id"] for m in models}:
+        raise SystemExit("dist/scorecard.cdx.json does not match dist/scorecard.json; run build.py again")
 
     dataset_id = f"{args.org}/{DATASET}"
     api.create_repo(dataset_id, repo_type="dataset", private=False, exist_ok=True)
@@ -143,7 +153,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         (tmp / "README.md").write_text(DATASET_CARD, encoding="utf-8")
-        for name in ("scorecard.csv", "scorecard.json"):
+        for name in ("scorecard.csv", "scorecard.json", "scorecard.cdx.json"):
             shutil.copy(ROOT / "dist" / name, tmp / name)
         shutil.copy(ROOT / "METHODOLOGY.md", tmp / "METHODOLOGY.md")
         shutil.copytree(ROOT / "data", tmp / "data")

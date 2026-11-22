@@ -5,6 +5,9 @@ context length and creation date from the Hub API and config.json, plus
 model-card lines that mention training compute or training data. These
 facts carry the Hub URL as their source, so they count as confirmed.
 
+Every row is pinned: `revision` is the full commit id the repo had when it was
+read, and config.json and the model card are fetched at exactly that commit.
+
 Usage:
     python scripts/fetch_hf_facts.py              # all repos in data/scorecard.csv
     python scripts/fetch_hf_facts.py org/repo ... # only these
@@ -106,13 +109,16 @@ def facts(repo):
     row = {"hf_repo": repo, "fetched": dt.date.today().isoformat()}
     info = json.loads(get(f"https://huggingface.co/api/models/{repo}"))
     card = info.get("cardData") or {}
+    # The commit this row describes: any change to card, config or weights moves it.
+    # The files below are read at this commit, not at whatever main is a moment later.
+    sha = info.get("sha") or ""
+    ref = sha or "main"
     row.update(
         license=card.get("license", ""),
         license_name=card.get("license_name", ""),
         gated=str(info.get("gated", False)).lower(),
         created=(info.get("createdAt") or "")[:10],
-        # The repo's current commit: any change to card, config or weights moves it.
-        revision=(info.get("sha") or "")[:12],
+        revision=sha,
         pipeline_tag=info.get("pipeline_tag") or "",
     )
     st = info.get("safetensors") or {}
@@ -121,7 +127,7 @@ def facts(repo):
     total = max(st.get("total") or 0, sum((st.get("parameters") or {}).values()))
     row["params_b"] = f"{total / 1e9:.1f}" if total else ""
     try:
-        cfg = json.loads(get(f"https://huggingface.co/{repo}/resolve/main/config.json"))
+        cfg = json.loads(get(f"https://huggingface.co/{repo}/resolve/{ref}/config.json"))
         text = text_config(cfg)
         row["model_type"] = cfg.get("model_type", "")
         ctx = text.get("max_position_embeddings") or cfg.get("max_position_embeddings")
@@ -135,7 +141,7 @@ def facts(repo):
         row["model_type"] = api_cfg.get("model_type") or f"(config: HTTP {e.code})"
         row["architecture"] = (api_cfg.get("architectures") or [""])[0]
     try:
-        readme = get(f"https://huggingface.co/{repo}/raw/main/README.md")
+        readme = get(f"https://huggingface.co/{repo}/raw/{ref}/README.md")
         row["compute_evidence"] = evidence(readme, COMPUTE)
         row["data_evidence"] = evidence(readme, DATA)
     except urllib.error.HTTPError:

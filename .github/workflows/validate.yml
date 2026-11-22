@@ -15,6 +15,8 @@ jobs:
           python-version: "3.12"
       - name: Check data and compute tiers
         run: python3 scripts/validate.py
+      # Optional for the tests; with it they check the CycloneDX export against the official schema.
+      - run: pip install 'cyclonedx-python-lib[json-validation]'
       - name: Tests
         run: python3 -m unittest discover tests
       - name: Build

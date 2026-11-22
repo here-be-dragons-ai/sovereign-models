@@ -273,6 +273,15 @@ Every build compares its result with the previous one and appends each changed v
 Space marks models changed in the last 30 days and lists the recent changes. Releases of the
 dataset carry a date tag (e.g. `2026-10`).
 
+Every model row is pinned to the commit of the original repo that it describes (`hf_revision`,
+read on the day in `hf_fetched`): licence tag, gating, parameter count, architecture and context
+come from exactly that commit. The rubric answers are pinned differently, through the archive
+snapshot of the document each one quotes. A later commit is not covered by the row; to get the
+weights a row describes, download the repo at that revision. The same pin is the version of the
+model in the CycloneDX export (`scorecard.cdx.json`, mapping in `data/schema.md`), which carries
+the scorecard into supply-chain tools: a model listed there under its `pkg:huggingface` purl
+brings its tier, control, base model, teachers and sources with it.
+
 Every Monday a GitHub Action re-reads the Hub facts (licence, gating, size, context, and the
 repo's current commit, which moves with any change to card, config or weights), the chat
 templates of all builds, the hashes of all licence and use-policy documents, and the repos of

@@ -154,6 +154,7 @@
   <footer>
     <span data-t="footerData"></span>
     <a href="https://huggingface.co/datasets/here-be-dragons-ai/sovereign-models-scorecard" target="_blank" rel="noopener" data-t="dataset"></a> ·
+    <a href="https://huggingface.co/datasets/here-be-dragons-ai/sovereign-models-scorecard/blob/main/scorecard.cdx.json" target="_blank" rel="noopener">CycloneDX</a> ·
     <a href="https://github.com/here-be-dragons-ai/sovereign-models" target="_blank" rel="noopener">GitHub</a> ·
     <a href="https://github.com/here-be-dragons-ai/sovereign-models/blob/main/METHODOLOGY.md" target="_blank" rel="noopener" data-t="methodology"></a> ·
     <a href="https://github.com/here-be-dragons-ai/sovereign-models/issues" target="_blank" rel="noopener" data-t="corrections"></a>
@@ -199,7 +200,7 @@ const STR = {
     cmpTitle: "Comparison", cmpClear: "clear", cmpHint: "Tick up to four models in the first column to compare them side by side.",
     pickTitle: "Select for comparison",
     issuersLegend: "Source issuers:", countRule: "only provider, official, academic and press sources that we checked count for the tier.",
-    lastReviewed: "Last reviewed", providerRepo: "provider repo", params: "parameters", ctxWord: "context",
+    lastReviewed: "Last reviewed", providerRepo: "provider repo", pinned: "commit read on", params: "parameters", ctxWord: "context",
     lineage: "Lineage and openness", informative: "(informative, not part of the tier)", onMac: "On a Mac",
     notChecked: "not checked, does not count", archived: "archived", modelSource: "model source", sourceOf: s => `${s} source`,
     hubMeta: "Hub metadata",
@@ -247,7 +248,7 @@ const STR = {
     cmpTitle: "Vergleich", cmpClear: "leeren", cmpHint: "Bis zu vier Modelle in der ersten Spalte ankreuzen, um sie nebeneinander zu vergleichen.",
     pickTitle: "Zum Vergleich auswählen",
     issuersLegend: "Herausgeber der Quellen:", countRule: "nur geprüfte Quellen von Anbietern, Behörden, Wissenschaft und Presse zählen für das Tier.",
-    lastReviewed: "Zuletzt geprüft", providerRepo: "Repo des Anbieters", params: "Parameter", ctxWord: "Kontext",
+    lastReviewed: "Zuletzt geprüft", providerRepo: "Repo des Anbieters", pinned: "Commit gelesen am", params: "Parameter", ctxWord: "Kontext",
     lineage: "Herkunft und Offenheit", informative: "(informativ, nicht Teil des Tiers)", onMac: "Auf dem Mac",
     notChecked: "nicht geprüft, zählt nicht", archived: "archiviert", modelSource: "Quelle (Modell)", sourceOf: s => `Quelle (${({provider:"Anbieter",family:"Familie"})[s] || s})`,
     hubMeta: "Hub-Metadaten",
@@ -534,7 +535,7 @@ function detail(id) {
     <h2 id="ptitle">${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span>
       <button id="plink" class="src" style="border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer;font-size:12px;vertical-align:middle">${esc(t("copyModelLink"))}</button></h2>
     <div class="src">${esc(tierText(m.tier))}</div>
-    <p>${badge("provider", t("providerRepo") + (m.repo_verified_org ? " ✓ verified" : ""))}${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)} · ${esc(m.params_b)}B ${esc(t("params"))} ·
+    <p>${badge("provider", t("providerRepo") + (m.repo_verified_org ? " ✓ verified" : ""))}${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)}${m.hf_revision ? ` @ ${link(`https://huggingface.co/${m.hf_repo}/tree/${m.hf_revision}`, m.hf_revision.slice(0, 12))} <span class="src">(${esc(t("pinned"))} ${esc(m.hf_fetched)})</span>` : ""} · ${esc(m.params_b)}B ${esc(t("params"))} ·
       ${esc(t("ctxWord"))} ${esc(m.context || "?")} · <code>${esc(m.model_type)}</code> · ${esc(m.modalities)}</p>
     <div class="src legend">${esc(t("issuersLegend"))} ${Object.keys(ISSUER).map(k => badge(k, issuerLabel(k))).join("")}
       — ${esc(t("countRule"))} ${esc(t("lastReviewed"))} ${esc(m.last_reviewed)}.</div>
@@ -635,7 +636,7 @@ function renderChanges() {
 // ── CSV, links, state ──────────────────────────────────────────────────────
 function downloadCsv() {
   const keys = ["id","name","tier","provider","provider_country","origin","license_class","data","compute","control",
-    "cop_signatory","ai_act_summary","recipe","params_b","size_4bit_gb","mlx_vlm","llama_cpp","mlx_build_verified","hf_repo"];
+    "cop_signatory","ai_act_summary","recipe","params_b","size_4bit_gb","mlx_vlm","llama_cpp","mlx_build_verified","hf_repo","hf_revision"];
   const q = v => /[",\n]/.test(String(v ?? "")) ? `"${String(v).replaceAll('"', '""')}"` : String(v ?? "");
   const csv = [keys.join(","), ...CURRENT.map(m => keys.map(k => q(m[k])).join(","))].join("\n") + "\n";
   const a = document.createElement("a");

@@ -36,6 +36,7 @@ data/build_recipes.csv, data/build_provenance.csv  provenance of our own builds 
         │
         ▼  scripts/build.py   (validates, computes tiers and sizes)
 dist/scorecard.csv, dist/scorecard.json
+dist/scorecard.cdx.json   the same as a CycloneDX 1.6 bill of materials            (scripts/cyclonedx_bom.py)
         │
         ▼  scripts/publish_hf.py
 HF dataset here-be-dragons-ai/sovereign-models-scorecard   (public)
@@ -46,6 +47,12 @@ HF collections "Sovereign models · Tier A / B / C"          (public, in that or
 Tiers are computed, never set by hand. The rules and their limits are in
 [METHODOLOGY.md](METHODOLOGY.md); the columns and allowed values in
 [data/schema.md](data/schema.md).
+
+Every model is pinned to the commit of its Hub repo that was read (`hf_revision`).
+`dist/scorecard.cdx.json` carries the scorecard into supply-chain tools such as Dependency-Track:
+each model is a component with a `pkg:huggingface` purl at the pinned commit, the base model its
+pedigree, teacher models components of their own, sources external references, tier and control
+properties. The mapping is in [data/schema.md](data/schema.md#scorecardcdxjson-cyclonedx).
 
 ## Updating
 
@@ -68,6 +75,8 @@ python3 scripts/publish_hf.py                        # needs huggingface_hub and
 `check_mlx_support.py` needs Apple Silicon with mlx installed: set `MLX_PYTHON` to a Python that has
 `mlx` and `mlx-vlm`, and optionally `MLX_VLM_SRC` to an mlx-vlm checkout to test unreleased support.
 `check_chat_templates.py` needs `jinja2`, `verify_quotes.py` needs `pypdf` for PDF sources.
+With `cyclonedx-python-lib[json-validation]` installed, the tests also check
+`dist/scorecard.cdx.json` against the official CycloneDX schema.
 
 ## Adding or correcting a model
 
