@@ -236,3 +236,10 @@ inkling-2,midtraining,Larger internal Inkling model,own,Inkling 2 Mini: 1T token
 inkling-2,posttraining,Inkling 2 (on-policy self-distillation),own,"alignment: teacher model prompted with a conduct spec (Small; Mini ""same as Inkling 2 Small"")"
 inkling-2,posttraining,Unnamed third-party models,unknown,"synthetic data pipeline: augmentation, evaluation and example generation (AI Act summary 2.5; stage not stated)"
 inkling-2,judge,Unnamed LLM judges and reward models,unknown,"RL graders: rubric-based LLM judges for documents and tool use, pairwise reward models for rendered web apps"
+kolibri-1.1,pretraining,Gemma-4-26B-A4B,foreign,"rephrasing English Common Crawl in the Kolibri 1 pre-training data, which Kolibri 1.1 continues from"
+kolibri-1.1,pretraining,Mistral-NeMo-12B,european,"rephrasing German web data in the Kolibri 1 pre-training data, which Kolibri 1.1 continues from"
+kolibri-1.1,posttraining,"GLM-5.2, GLM-5.3, Qwen3.8-27B",foreign,synthetic training data (AI Act summary 2.5; stage not stated). For Kolibri 1 the technical report names them as the main generators of SFT data
+kolibri-1.1,posttraining,"Kimi-K2.6, DeepSeek-V4.1-Flash",foreign,synthetic training data (AI Act summary 2.5; stage and purpose not stated)
+kolibri-1.1,posttraining,"DeepSeek-V4.1-Flash-Abliterated, Qwen3.8-27B-Uncensored-Heretic",foreign,abliterated community variants of DeepSeek-V4.1-Flash and Qwen3.8-27B: examples of harmful requests that the model is trained to recognise and refuse (AI Act summary 2.5)
+kolibri-1.1,judge,Qwen3-32B,foreign,"annotations for the pre-training quality classifiers of Kolibri 1, whose data pipeline Kolibri 1.1 uses; also listed in the AI Act summary (2.5)"
+kolibri-1.1,judge,Unnamed LLM judge,unknown,"scoring a few open-ended RL environments (card: LLM-as-a-Judge, not named)"

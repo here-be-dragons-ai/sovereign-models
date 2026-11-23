@@ -57,6 +57,10 @@ def arch_summary(cfg):
     layer_types = text.get("layer_types")
     if layer_types:
         out["layer_types"] = {t: layer_types.count(t) for t in sorted(set(layer_types))}
+    sources = text.get("kv_source_layers")  # Kolibri 1.1: the layer whose keys and values a layer attends to
+    if layer_types and isinstance(sources, list) and len(sources) == len(layer_types):
+        out["kv_stores"] = {t: len({s for s, lt in zip(sources, layer_types) if lt == t})
+                            for t in sorted(set(layer_types))}
     pattern = text.get("hybrid_override_pattern")
     if pattern:
         out["hybrid_pattern"] = {"attention": pattern.count("*"), "mamba": pattern.count("M"), "mlp": pattern.count("-")}

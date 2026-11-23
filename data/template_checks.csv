@@ -1259,3 +1259,5 @@ ministral-3-3b,SpermAI/SpermLLM-S1-Ministral3-4B,gguf,ministral3-3b-bf16.gguf,di
 ministral-3-3b,anthgaston/Ministral-3-3B-Instruct-2512-GGUF,gguf,Ministral-3-3B-Instruct-2512-Q4_K_M.gguf,differs,diff: data/template_diffs/anthgaston__Ministral-3-3B-Instruct-2512-GGUF.diff,date or time;long string literal,fb3c3712840f7a95,2026-11-22
 ministral-3-3b,viniciusianni/Ministral-3-3B-Instruct-2512-Q8_0-GGUF,gguf,ministral-3-3b-instruct-2512-q8_0.gguf,not checked,no chat template in the build,,,2026-11-22
 ministral-3-3b,anir-1995/ministral-safety-gguf,gguf,ministral-safety-v1-F16.gguf,differs,diff: data/template_diffs/anir-1995__ministral-safety-gguf.diff,date or time;long string literal,fb3c3712840f7a95,2026-11-22
+kolibri-1.1,Aleph-Alpha/Kolibri-1.1,original,tokenizer_config.json,reference,,content condition;long string literal,d068b053361e2a8c,2026-11-23
+kolibri-1.1,Aleph-Alpha/Kolibri-1.1-GGUF,gguf,Kolibri-1.1-IQ1_M-GSQ-RCO-1.75bpw.gguf,identical,,content condition;long string literal,d068b053361e2a8c,2026-11-23

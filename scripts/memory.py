@@ -4,6 +4,10 @@ The cache layout follows what mlx-lm / mlx-vlm actually allocate, which can diff
 from other runtimes:
 - standard attention: keys and values per layer and token, KV heads x head dim;
 - sliding-window layers: at most `window` tokens;
+- sparse-attention layers next to sliding-window layers (Kolibri 1.1): they pick
+  their keys from the whole context, so keys and values are kept for every token,
+  once per KV cache: layers that reuse the keys and values of an earlier layer
+  have none of their own. The index used to select the keys is not counted;
 - MLA (kv_lora_rank): MLX caches the decompressed keys and values per head,
   not the compressed latent, so MLA saves no memory in MLX (llama.cpp does);
 - Gemma 4: global layers use their own KV heads and head dim;
@@ -82,6 +86,13 @@ def cache_layout(arch):
         out["growing"] = full * 2 * g_heads * g_dim * BYTES_F16
         out["windowed"] = [(sliding * 2 * heads * head_dim * BYTES_F16, window)]
         out["kind"] = f"{full} full + {sliding} sliding-window ({window}) layers"
+        sparse = types.get("indexed_attention", 0)
+        if sparse:
+            caches = (arch.get("kv_stores") or {}).get("indexed_attention", sparse)
+            out["growing"] += caches * 2 * heads * head_dim * BYTES_F16
+            shared = f" sharing {caches} KV caches" if caches != sparse else ""
+            out["kind"] = (f"{full} full + " if full else "") + \
+                f"{sparse} sparse-attention layers{shared} + {sliding} sliding-window ({window}) layers"
         return out
 
     if window and window < (arch.get("max_position_embeddings") or 0):

@@ -8556,6 +8556,461 @@
   },
   {
    "tier": "B",
+   "id": "kolibri-1.1",
+   "name": "Kolibri 1.1",
+   "family": "Kolibri 1.1",
+   "provider": "Aleph Alpha",
+   "provider_country": "DE",
+   "region": "eu",
+   "control": "merger-pending-non-europe",
+   "majority_owner": "Cohere (CA), merger pending",
+   "origin": "continued-own",
+   "base_model": "Kolibri 1 (mid-training checkpoint)",
+   "license_class": "osi",
+   "license": "apache-2.0",
+   "data": "documented",
+   "compute": "eu",
+   "ai_act_summary": "yes",
+   "cop_signatory": "yes",
+   "modalities": "text",
+   "params_b": "75.1",
+   "context": "262144",
+   "model_type": "kolibri1_1",
+   "size_4bit_gb": "42.2",
+   "size_8bit_gb": "79.8",
+   "mlx_vlm": "unsupported",
+   "mlx_vlm_detail": "model type not in mlx-vlm",
+   "mlx_vlm_checked": "2026-11-23 0.8.0",
+   "mlx_build": "",
+   "mlx_build_bits": "",
+   "mlx_build_publisher": "",
+   "llama_cpp": "fork only",
+   "llama_cpp_detail": "1 GGUF builds exist, but upstream llama.cpp does not support the architecture; they need a patched llama.cpp",
+   "llama_cpp_checked": "2026-11-23 v1.0.0",
+   "gguf_build": "Aleph-Alpha/Kolibri-1.1-GGUF",
+   "gguf_build_publisher": "official",
+   "gguf_builds": 1,
+   "template_check": "identical",
+   "template_check_detail": "1 identical",
+   "mlx_build_verified": "",
+   "cache_kind": "10 sparse-attention layers sharing 4 KV caches + 40 sliding-window (513) layers",
+   "cache_kib_per_token": "8.0",
+   "cache_gib_8k": "0.1",
+   "cache_gib_32k": "0.3",
+   "cache_gib_128k": "1.0",
+   "teacher_origin": "foreign",
+   "teachers_list": "Gemma-4-26B-A4B (pretraining, foreign); Mistral-NeMo-12B (pretraining, european); GLM-5.2, GLM-5.3, Qwen3.8-27B (posttraining, foreign); Kimi-K2.6, DeepSeek-V4.1-Flash (posttraining, foreign); DeepSeek-V4.1-Flash-Abliterated, Qwen3.8-27B-Uncensored-Heretic (posttraining, foreign); Qwen3-32B (judge, foreign); Unnamed LLM judge (judge, unknown)",
+   "recipe": "weights",
+   "terms_can_change": "no",
+   "languages": "de;en",
+   "eu_languages": 2,
+   "languages_basis": "supported",
+   "training_hardware": "nvidia",
+   "flags": "merger pending non-Europe",
+   "hbd_involvement": "",
+   "notes": "German/English MoE, 75B total, 3.4B active; sparse attention in every fifth layer, sliding window in the others. 262,144 tokens native context; the card allows up to 1,048,576 with an override and recommends at most 262,144 for complex tasks. Successor of Kolibri 1, released 2026-11-23: continues a Kolibri 1 mid-training checkpoint, then its own SFT and RL. FP8 release, served with vLLM through the aleph-alpha-inference plugin; official GGUF quantizations in Aleph-Alpha/Kolibri-1.1-GGUF, which llama.cpp cannot load until pull request ggml-org/llama.cpp#32891 is merged (GGUF card, 2026-11-23). Synthetic data: the AI Act summary lists Gemma-4-26B-A4B, Qwen3-32B, Qwen3.8-27B, Mistral-Nemo-12B, GLM-5.2, GLM-5.3, Kimi-K2.6, DeepSeek-V4.1-Flash and two abliterated community variants. RESPONSIBLE_USE.md is guidance, not a condition of the licence. Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval.",
+   "hf_repo": "Aleph-Alpha/Kolibri-1.1",
+   "hf_revision": "e9515166e22131ef3f3f486127fe89b96c2a0e2c",
+   "hf_fetched": "2026-11-23",
+   "hf_created": "2026-11-20",
+   "last_reviewed": "2026-11-23",
+   "provider_notes": "Definitive merger agreement with Cohere signed 2026-09-16, pending approval.",
+   "family_notes": "Branches from the Kolibri 1 mid-training checkpoint at step 34,000 (20T pre-training and 3.42T mid-training tokens, trained from scratch), converts its attention to shared-KV sparse attention, then adds a second mid-training phase (805B tokens) and a long-context phase (201B tokens); SFT and RL are its own. The base is an intermediate checkpoint that was not released, and the AI Act summary states 'Model dependencies: None'. Training data, synthetic data and curation pipeline are those of Kolibri 1; the only new pre-training data is the reweighted mix of the second mid-training phase. The card gives GPU counts for the new phases (512 and 384) without site or accelerator type: the sites come from the Kolibri 1.1 blog post (Germany and Finland), the hardware from the Kolibri 1 card (768 NVIDIA B200 for the pre-training it continues).",
+   "repo_verified_org": true,
+   "sources": [
+    {
+     "scope": "provider",
+     "field": "control",
+     "url": "https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/",
+     "issuer": "press",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008131234/https://siliconangle.com/2026/09/16/cohere-and-aleph-alpha-agree-to-merge-in-reported-20b-deal/",
+     "note": "definitive merger agreement 2026-09-16"
+    },
+    {
+     "scope": "provider",
+     "field": "cop_signatory",
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "issuer": "official",
+     "checked": "yes",
+     "retrieved": "2026-10-08",
+     "archive_url": "https://web.archive.org/web/20261008123607/https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "note": "Aleph Alpha listed (2026-10-07)"
+    },
+    {
+     "scope": "family",
+     "field": "provider_id",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "Model developer: Aleph Alpha Research GmbH; model provider: Aleph Alpha GmbH"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "We continued training from a Kolibri 1 checkpoint that was trained on 20T pre-training and 3.42T mid-training tokens; branched at mid-training step 34,000, attention converted to sparse attention, then a second mid-training phase and a long-context phase"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://aleph-alpha.com/en/blog/kolibri-1-1/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123150929/https://aleph-alpha.com/en/blog/kolibri-1-1/",
+     "note": "built on the same pre-trained model as Kolibri 1.0, with improved mid- and post-training"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "note": "lineage root: Kolibri 1 has no model dependencies and was trained from scratch, all parameters randomly initialised"
+    },
+    {
+     "scope": "family",
+     "field": "origin",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "Model dependencies: None (the base is Aleph Alpha's own unreleased Kolibri 1 checkpoint, see the card)"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "Licence: Apache 2.0; 'we do not impose conditions in addition to the license by e.g. implementing an acceptable use policy'. The licence covers the weights and configuration files in the repository"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1/blob/main/LICENSE",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192907/https://huggingface.co/Aleph-Alpha/Kolibri-1.1/blob/main/LICENSE",
+     "note": "Apache License 2.0, unmodified text (the same file as in Aleph-Alpha/Kolibri-1)"
+    },
+    {
+     "scope": "family",
+     "field": "license_class",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1/blob/main/RESPONSIBLE_USE.md",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192939/https://huggingface.co/Aleph-Alpha/Kolibri-1.1/blob/main/RESPONSIBLE_USE.md",
+     "note": "Responsible Use, also part of the card: guidance ('we raise awareness and encourage users to refrain'), stated not to add conditions to the licence"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "uses the training data, synthetic data and data curation pipeline of Kolibri 1; the only new data is the mix of the second mid-training phase; shares per domain for both mid-training stages and the long-context extension"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "large public datasets named: Common Crawl, Nemotron-CC v2 and v2.1, Nemotron Pretraining SFT v1 and Specialized v1, HPLT 3.0, FinePDFs, The Stack v3; none used as is; about 62.5% English, 23.9% German, 13.6% source code"
+    },
+    {
+     "scope": "family",
+     "field": "data",
+     "url": "https://aleph-alpha.com/downloads/tech-report.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261004085624/https://aleph-alpha.com/downloads/tech-report.pdf",
+     "note": "Kolibri 1 technical report, to which the Kolibri 1.1 card refers for the data: token counts per source (own pipeline 7.15T, external sources 12.85T)"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://aleph-alpha.com/en/blog/kolibri-1-1/",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123150929/https://aleph-alpha.com/en/blog/kolibri-1-1/",
+     "note": "Built in Germany, trained in Germany and Finland under European law"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://aleph-alpha.com/downloads/tech-report.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261004085624/https://aleph-alpha.com/downloads/tech-report.pdf",
+     "note": "the Kolibri 1 pre-training it continues: 'train it on infrastructure in Germany and Finland'"
+    },
+    {
+     "scope": "family",
+     "field": "compute",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "no",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "Mid-training ran on 512 GPUs and long-context training on 384 GPUs; site and accelerator type not stated in the card"
+    },
+    {
+     "scope": "family",
+     "field": "ai_act_summary",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "Public Summary of Training Content for General-Purpose AI models, version 1.1, last update 2026-11-23, versioned model name Kolibri-1.1; linked from the card"
+    },
+    {
+     "scope": "family",
+     "field": "recipe",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "the licence covers only the weights and configuration files and does not extend to code, architecture, parameter settings or training methods; no training code or data released"
+    },
+    {
+     "scope": "family",
+     "field": "languages",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "Languages: German, English"
+    },
+    {
+     "scope": "family",
+     "field": "training_hardware",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "note": "pre-training of the Kolibri 1 checkpoint it continues: 768 NVIDIA B200 (96 HGX 8xB200 nodes); the Kolibri 1.1 card gives 512 and 384 GPUs for its own phases without naming the type"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Gemma-4-26B-A4B",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "note": "Deduplicated English Common Crawl was rephrased with Gemma-4-26B-A4B (Kolibri 1 pre-training data, used by Kolibri 1.1)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Gemma-4-26B-A4B",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "listed among the models used to generate synthetic data (AI Act summary for Kolibri-1.1, section 2.5)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Mistral-NeMo-12B",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "note": "German synthetic rephrasings of web data were produced with Mistral-NeMo-12B (Kolibri 1 pre-training data, used by Kolibri 1.1)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Mistral-NeMo-12B",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "listed among the models used to generate synthetic data (AI Act summary for Kolibri-1.1, section 2.5), as Mistral-Nemo-12B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:GLM-5.2, GLM-5.3, Qwen3.8-27B",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "listed among the models used to generate synthetic data (AI Act summary for Kolibri-1.1, section 2.5): GLM-5.2-fp8, GLM-5.3, Qwen3.8-27B"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:GLM-5.2, GLM-5.3, Qwen3.8-27B",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "Our model's training data also contains material generated with Chinese language models (no model named in the card)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Kimi-K2.6, DeepSeek-V4.1-Flash",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "listed among the models used to generate synthetic data (AI Act summary for Kolibri-1.1, section 2.5); Kimi-K2.6 was already listed for Kolibri 1, DeepSeek-V4.1-Flash is new"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:DeepSeek-V4.1-Flash-Abliterated, Qwen3.8-27B-Uncensored-Heretic",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "listed in section 2.5: 'The abliterated models were used to generate examples of harmful requests that our model is then trained to recognise and refuse'"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-32B",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261008123651/https://huggingface.co/Aleph-Alpha/Kolibri-1",
+     "note": "LLM-as-a-judge annotations using Qwen3-32B (Kolibri 1 data pipeline, used by Kolibri 1.1)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Qwen3-32B",
+     "url": "https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123192704/https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf",
+     "note": "listed among the models used to generate synthetic data (AI Act summary for Kolibri-1.1, section 2.5)"
+    },
+    {
+     "scope": "family",
+     "field": "teacher:Unnamed LLM judge",
+     "url": "https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "issuer": "provider",
+     "checked": "yes",
+     "retrieved": "2026-11-23",
+     "archive_url": "https://web.archive.org/web/20261123193348/https://huggingface.co/Aleph-Alpha/Kolibri-1.1",
+     "note": "Most environments use verifiable rewards, while a few open-ended ones are scored by an LLM-as-a-Judge"
+    }
+   ],
+   "mlx_builds": [],
+   "gguf_list": [
+    {
+     "id": "kolibri-1.1",
+     "repo": "Aleph-Alpha/Kolibri-1.1-GGUF",
+     "downloads": "7",
+     "likes": "6",
+     "created": "2026-11-20",
+     "publisher": "official",
+     "verified_org": true,
+     "template_check": "identical",
+     "template_reason": ""
+    }
+   ],
+   "cache_layout": {
+    "growing": 8192,
+    "windowed": [
+     [
+      81920,
+      513
+     ]
+    ],
+    "constant": 0,
+    "kind": "10 sparse-attention layers sharing 4 KV caches + 40 sliding-window (513) layers"
+   },
+   "teachers": [
+    {
+     "family_id": "kolibri-1.1",
+     "stage": "pretraining",
+     "model": "Gemma-4-26B-A4B",
+     "model_origin": "foreign",
+     "purpose": "rephrasing English Common Crawl in the Kolibri 1 pre-training data, which Kolibri 1.1 continues from"
+    },
+    {
+     "family_id": "kolibri-1.1",
+     "stage": "pretraining",
+     "model": "Mistral-NeMo-12B",
+     "model_origin": "european",
+     "purpose": "rephrasing German web data in the Kolibri 1 pre-training data, which Kolibri 1.1 continues from"
+    },
+    {
+     "family_id": "kolibri-1.1",
+     "stage": "posttraining",
+     "model": "GLM-5.2, GLM-5.3, Qwen3.8-27B",
+     "model_origin": "foreign",
+     "purpose": "synthetic training data (AI Act summary 2.5; stage not stated). For Kolibri 1 the technical report names them as the main generators of SFT data"
+    },
+    {
+     "family_id": "kolibri-1.1",
+     "stage": "posttraining",
+     "model": "Kimi-K2.6, DeepSeek-V4.1-Flash",
+     "model_origin": "foreign",
+     "purpose": "synthetic training data (AI Act summary 2.5; stage and purpose not stated)"
+    },
+    {
+     "family_id": "kolibri-1.1",
+     "stage": "posttraining",
+     "model": "DeepSeek-V4.1-Flash-Abliterated, Qwen3.8-27B-Uncensored-Heretic",
+     "model_origin": "foreign",
+     "purpose": "abliterated community variants of DeepSeek-V4.1-Flash and Qwen3.8-27B: examples of harmful requests that the model is trained to recognise and refuse (AI Act summary 2.5)"
+    },
+    {
+     "family_id": "kolibri-1.1",
+     "stage": "judge",
+     "model": "Qwen3-32B",
+     "model_origin": "foreign",
+     "purpose": "annotations for the pre-training quality classifiers of Kolibri 1, whose data pipeline Kolibri 1.1 uses; also listed in the AI Act summary (2.5)"
+    },
+    {
+     "family_id": "kolibri-1.1",
+     "stage": "judge",
+     "model": "Unnamed LLM judge",
+     "model_origin": "unknown",
+     "purpose": "scoring a few open-ended RL environments (card: LLM-as-a-Judge, not named)"
+    }
+   ],
+   "max_context": 262144,
+   "last_changed": "2026-11-23",
+   "first_listed": "2026-11-23"
+  },
+  {
+   "tier": "B",
    "id": "magistral-small-2509",
    "name": "Magistral Small 2509",
    "family": "Magistral Small",
@@ -35444,6 +35899,14 @@
  ],
  "changes": [
   {
+   "date": "2026-11-23",
+   "model": "kolibri-1.1",
+   "field": "model",
+   "old": "",
+   "new": "listed",
+   "reason": "New release of 2026-11-23, successor of Kolibri 1 (listed next to it)"
+  },
+  {
    "date": "2026-11-22",
    "model": "ministral-3-8b",
    "field": "model",
@@ -36232,14 +36695,6 @@
    "model": "solar-open2-250b",
    "field": "data",
    "old": "undisclosed",
-   "new": "documented",
-   "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
-  },
-  {
-   "date": "2026-10-29",
-   "model": "pleias-rag-1b",
-   "field": "data",
-   "old": "open",
    "new": "documented",
    "reason": "Rubric backfill: value computed from answers with verified quotes (evidence.csv); rules decided 2026-10-29"
   }

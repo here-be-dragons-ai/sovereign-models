@@ -227,8 +227,10 @@ rather than separate it. Both stay visible so readers can weigh them.
   quantization, group size 64).
 - **Cache** (`scripts/memory.py`): bytes per token and totals at 8k, 32k and 128k, as MLX
   allocates them. The layout depends on the architecture: standard attention grows in every
-  layer; sliding-window layers stop at their window; hybrid models (linear attention, Mamba)
-  grow only in their attention layers; recurrent models (xLSTM) keep a constant state. MLA
+  layer; sliding-window layers stop at their window; sparse-attention layers next to them
+  (Kolibri 1.1) keep keys and values for the whole context, once per cache that several layers
+  share, and the index that selects the keys is not counted; hybrid models (linear attention,
+  Mamba) grow only in their attention layers; recurrent models (xLSTM) keep a constant state. MLA
   models are cached **decompressed** in MLX, so MLA saves no memory there (llama.cpp caches the
   compressed latent; its numbers would be lower). "n/a" marks contexts beyond the model's maximum.
   The Space adds the cache at the chosen context and cache precision to the 4-bit weights, plus
@@ -312,7 +314,7 @@ source. We notify providers on publication and correct entries on request.
 
 The rubric answers in `data/evidence.csv` were read from the sources by language models from
 Anthropic (United States): Claude Opus 5.5 (model id `claude-opus-5-5`) from October 2026, and
-Claude Fable 5.2 (`claude-fable-5-2`) for the releases added on 2026-11-21. The `by` column
+Claude Fable 5.2 (`claude-fable-5-2`) for the releases added since 2026-11-21. The `by` column
 records the model for every answer. A model from outside Europe reading the evidence for a European
 sovereignty scorecard is a fair point of criticism; it is contained as follows:
 
