@@ -58,6 +58,30 @@ class TestMemory(unittest.TestCase):
         self.assertEqual(a["hybrid_pattern"], {"attention": 8, "mamba": 40, "mlp": 40})
         self.assertEqual(cache_layout(a)["growing"], 8 * KIB)
 
+    def test_sparse_attention_layers_share_kv_caches(self):
+        # Kolibri 1.1: every fifth layer is sparse attention over the whole context; six of the
+        # ten reuse the keys and values of layer 4 or 29, so four caches grow: 4 x 4 KV heads
+        # x 128 x (K+V) x 2 bytes = 8 KiB/token. The 40 sliding-window layers stop at 513 tokens.
+        from fetch_hf_facts import arch_summary
+        types = ["indexed_attention" if i % 5 == 4 else "sliding_attention" for i in range(50)]
+        sources = list(range(50))
+        for layer, source in {9: 4, 14: 4, 34: 29, 39: 29, 44: 29, 49: 4}.items():
+            sources[layer] = source
+        cfg = {"model_type": "kolibri1_1", "num_hidden_layers": 50, "num_attention_heads": 48,
+               "num_key_value_heads": 4, "head_dim": 128, "sliding_window": 513,
+               "max_position_embeddings": 262144, "layer_types": types, "kv_source_layers": sources}
+        a = arch_summary(cfg)
+        self.assertEqual(a["layer_types"], {"indexed_attention": 10, "sliding_attention": 40})
+        self.assertEqual(a["kv_stores"], {"indexed_attention": 4, "sliding_attention": 40})
+        layout = cache_layout(a)
+        self.assertEqual(layout["growing"], 8 * KIB)
+        self.assertEqual(layout["windowed"], [(40 * 2 * 4 * 128 * 2, 513)])
+        self.assertEqual(layout["kind"],
+                         "10 sparse-attention layers sharing 4 KV caches + 40 sliding-window (513) layers")
+        # Without the sharing information every sparse layer counts with its own cache.
+        del a["kv_stores"]
+        self.assertEqual(cache_layout(a)["growing"], 20 * KIB)
+
 
 if __name__ == "__main__":
     unittest.main()

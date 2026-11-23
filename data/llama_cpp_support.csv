@@ -105,3 +105,4 @@ qwen-sea-lion-v5-27b,supported,Qwen3_5ForConditionalGeneration,,2026-11-21,v1.0.
 inkling-2-small,unsupported,Inkling2ForConditionalGeneration,architecture not registered in the converter,2026-11-21,v1.0.0
 inkling-2-mini,unsupported,Inkling2LoopForConditionalGeneration,architecture not registered in the converter,2026-11-21,v1.0.0
 aion-1.0-instruct-2.3b,unsupported,AionInstructForCausalLM,architecture not registered in the converter,2026-11-21,v1.0.0
+kolibri-1.1,unsupported,Kolibri1_1ForCausalLM,architecture not registered in the converter,2026-11-23,v1.0.0

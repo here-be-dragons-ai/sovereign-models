@@ -1312,3 +1312,31 @@ family,aion-1.0,noncommercial,no,https://huggingface.co/microsoft/Aion-1.0-Instr
 family,aion-1.0,use_policy_binding,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,Nothing contained in this Model Card should be interpreted as or deemed a restriction or modification to the license the model is released under.,2026-11-21,claude-fable-5-2
 family,aion-1.0,inherited_terms,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B,,2026-11-21,claude-fable-5-2
 family,aion-1.0,policy_updatable,no,https://huggingface.co/microsoft/Aion-1.0-Instruct-2.3B/blob/main/LICENSE,,2026-11-21,claude-fable-5-2
+family,kolibri-1.1,init_random,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,We continued training from a Kolibri 1 checkpoint that was trained on 20T pre-training and 3.42T mid-training tokens.,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,base_model,"Kolibri 1 (mid-training checkpoint at step 34,000)",https://huggingface.co/Aleph-Alpha/Kolibri-1.1,"We branched from the Kolibri 1 mid-training checkpoint at step 34,000, after 3.42T of the original 3.44T mid-training token horizon.",2026-11-23,claude-fable-5-2
+family,kolibri-1.1,base_model,"Kolibri 1 (mid-training checkpoint at step 34,000)",https://aleph-alpha.com/en/blog/kolibri-1-1/,Kolibri 1.1 on the same pre-trained model as Kolibri 1.0 and improved mid- and post-training.,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,base_model,none,https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf,Model dependencies: None,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,base_publisher,own,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,"Kolibri 1.1 is the successor to Kolibri 1, Aleph Alpha's mixture-of-experts (MoE) reasoning model",2026-11-23,claude-fable-5-2
+family,kolibri-1.1,base_scratch,yes,https://huggingface.co/Aleph-Alpha/Kolibri-1,None. The model was trained from scratch.,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,base_scratch,yes,https://huggingface.co/Aleph-Alpha/Kolibri-1,We randomly initialized all model parameters and pretrained the model,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,post_training_only,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,We then continued with a second mid-training phase and a long-context phase.,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,data_downloadable,part,https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf,only parts of the datasets or subsets (or parts of subsets) have been used after cleaning and filtering,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,data_downloadable,part,https://aleph-alpha.com/downloads/tech-report.pdf,The materialised mix draws 35.7% of its training tokens (7.15T) from our own pipeline,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,datasets_named,yes,https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf,List of large publicly available datasets: All of the listed datasets were not used as is.,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,datasets_named,yes,https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf,Nemotron-CC-v2 ... HPLT 3.0 ... FinePDFs ... The Stack v3,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,data_shares,yes,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,| German web and documents | 2.1% | 14.5% | 4.5% | 2.6% |,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,data_shares,yes,https://aleph-alpha.com/downloads/kolibri-1.1-data-summary.pdf,"The pre-training corpus consists of approximately 62.5% English, 23.9% German and 13.6% source code.",2026-11-23,claude-fable-5-2
+family,kolibri-1.1,data_shares,yes,https://aleph-alpha.com/downloads/tech-report.pdf,Small specialised datasets 0.045T 3 Our pipeline (total) 7.15T 22 External sources 12.85T 56,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,pretraining_site,DE,https://aleph-alpha.com/en/blog/kolibri-1-1/,"Built in Germany, trained in Germany and Finland under European law",2026-11-23,claude-fable-5-2
+family,kolibri-1.1,pretraining_site,FI,https://aleph-alpha.com/en/blog/kolibri-1-1/,"Built in Germany, trained in Germany and Finland under European law",2026-11-23,claude-fable-5-2
+family,kolibri-1.1,pretraining_site,DE,https://aleph-alpha.com/downloads/tech-report.pdf,train it on infrastructure in Germany and Finland,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,pretraining_site,FI,https://aleph-alpha.com/downloads/tech-report.pdf,train it on infrastructure in Germany and Finland,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,licence_text,apache-2.0,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,| Licence | Apache 2.0 |,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,licence_text,apache-2.0,https://huggingface.co/Aleph-Alpha/Kolibri-1.1/blob/main/LICENSE,"Apache License Version 2.0, January 2004",2026-11-23,claude-fable-5-2
+family,kolibri-1.1,licence_modified,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1/blob/main/LICENSE,"Apache License Version 2.0, January 2004",2026-11-23,claude-fable-5-2
+family,kolibri-1.1,licence_modified,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,we do not impose conditions in addition to the license by e.g. implementing an acceptable use policy,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,noncommercial,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,| Licence | Apache 2.0 |,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,use_policy_binding,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,we do not impose conditions in addition to the license by e.g. implementing an acceptable use policy,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,use_policy_binding,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1/blob/main/RESPONSIBLE_USE.md,"Nevertheless, we raise awareness and encourage users to refrain from engaging in unlawful activity.",2026-11-23,claude-fable-5-2
+family,kolibri-1.1,inherited_terms,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,,2026-11-23,claude-fable-5-2
+family,kolibri-1.1,policy_updatable,no,https://huggingface.co/Aleph-Alpha/Kolibri-1.1,we do not impose conditions in addition to the license by e.g. implementing an acceptable use policy,2026-11-23,claude-fable-5-2

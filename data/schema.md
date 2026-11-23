@@ -190,8 +190,9 @@ personal account), in that order; ties by downloads or bits.
 
 - `hf_facts.csv` (`scripts/fetch_hf_facts.py`): licence, gating, parameters, architecture, context,
   creation date, model-card lines about compute and data, and `arch_json` (the `config.json`
-  fields the memory estimate needs: layers, KV heads, head dims, layer types, sliding window,
-  MLA, Mamba and xLSTM dimensions). `revision` is the full commit id the repo had on the day in
+  fields the memory estimate needs: layers, KV heads, head dims, layer types, the number of KV
+  caches per layer type where layers share them (`kv_stores`), sliding window, MLA, Mamba and
+  xLSTM dimensions). `revision` is the full commit id the repo had on the day in
   `fetched`; `config.json` and the model card are read at exactly that commit.
 - `hf_namespaces.csv` (`scripts/classify_namespaces.py`): whether each cited Hub namespace is an
   organisation or a user, and whether the Hub has verified it.
