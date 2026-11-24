@@ -1580,7 +1580,7 @@
    "training_hardware": "nvidia",
    "flags": "",
    "hbd_involvement": "",
-   "notes": "HRM-Text architecture (hrm_text) needs a Transformers/vLLM build with HRM and PrefixLM support; 4,096 context (evaluated at 8,192 with an override). Released weights are the XL EMA export at step 3,800,000. Replaces DFM Mimir v1.5. A smaller model from a separate run, DFM-Mimir-v1.8-Mini (B size, 0.70B, step 1,538,766), is published next to it.",
+   "notes": "HRM-Text architecture (hrm_text) needs a Transformers/vLLM build with HRM and PrefixLM support; 4,096 context (evaluated at 8,192 with an override). Released weights are the XL EMA export at step 3,800,000. Replaces DFM Mimir v1.5. A smaller model from a separate run, DFM-Mimir-v1.8-Mini (B size, 0.70B, step 1,538,766), is published alongside it.",
    "hf_repo": "danish-foundation-models/DFM-Mimir-v1.8",
    "hf_revision": "30485dbad6f3ce50d09eaa963b8a8fce53a4290c",
    "hf_fetched": "2026-11-22",
@@ -4818,7 +4818,7 @@
    "hf_created": "2026-08-12",
    "last_reviewed": "2026-10-30",
    "provider_notes": "EU Digital Europe Programme project (grant 101195233, STEP Seal), started 2025-02-01; 20 partners incl. universities, EuroHPC centres and companies. Coordinator Jan Hajič (Charles University, ÚFAL); co-lead Peter Sarlin (AMD Silo AI, owned by AMD, US).",
-   "family_notes": "Prelude: Qwen3-architecture dense 9B with the own 256k OpenEuroLLM tokenizer, pre-trained on Leonardo (CINECA) toward 10T tokens; the released SFT model builds on the iter_0124800 (~1T tokens, not cooled down) checkpoint, extended to 256K context on LUMI and SFT-tuned on LUMI (AMD MI250X). Pre-training data: public sets (DCLM, FinePDFs, HPLT 3.0, Nemotron-CC incl. translated variants, StarCoder, MegaMath...) with per-source token counts. SFT data: Tulu-3 commercial subset, EuroBlocks-SFT-Synthetic, Nemotron-Post-Training-v2 math (synthetic traces), generators not named by the provider.",
+   "family_notes": "Prelude: Qwen3-architecture dense 9B with OpenEuroLLM's own 256k tokenizer, pre-trained on Leonardo (CINECA) toward 10T tokens; the released SFT model builds on the iter_0124800 (~1T tokens, not cooled down) checkpoint, extended to 256K context on LUMI and SFT-tuned on LUMI (AMD MI250X). Pre-training data: public sets (DCLM, FinePDFs, HPLT 3.0, Nemotron-CC incl. translated variants, StarCoder, MegaMath...) with per-source token counts. SFT data: Tulu-3 commercial subset, EuroBlocks-SFT-Synthetic, Nemotron-Post-Training-v2 math (synthetic traces), generators not named by the provider.",
    "repo_verified_org": false,
    "sources": [
     {
@@ -8608,7 +8608,7 @@
    "training_hardware": "nvidia",
    "flags": "merger pending non-Europe",
    "hbd_involvement": "",
-   "notes": "German/English MoE, 75B total, 3.4B active; sparse attention in every fifth layer, sliding window in the others. 262,144 tokens native context; the card allows up to 1,048,576 with an override and recommends at most 262,144 for complex tasks. Successor of Kolibri 1, released 2026-11-23: continues a Kolibri 1 mid-training checkpoint, then its own SFT and RL. FP8 release, served with vLLM through the aleph-alpha-inference plugin; official GGUF quantizations in Aleph-Alpha/Kolibri-1.1-GGUF, which llama.cpp cannot load until pull request ggml-org/llama.cpp#32891 is merged (GGUF card, 2026-11-23). Synthetic data: the AI Act summary lists Gemma-4-26B-A4B, Qwen3-32B, Qwen3.8-27B, Mistral-Nemo-12B, GLM-5.2, GLM-5.3, Kimi-K2.6, DeepSeek-V4.1-Flash and two abliterated community variants. RESPONSIBLE_USE.md is guidance, not a condition of the licence. Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval.",
+   "notes": "German/English MoE, 75B total, 3.4B active; sparse attention in every fifth layer, sliding window in the others. 262,144 tokens native context; the card allows up to 1,048,576 with an override and recommends at most 262,144 for complex tasks. Successor to Kolibri 1, released 2026-11-23: continues a Kolibri 1 mid-training checkpoint, then its own SFT and RL. FP8 release, served with vLLM through the aleph-alpha-inference plugin; official GGUF quantizations in Aleph-Alpha/Kolibri-1.1-GGUF, which llama.cpp cannot load until pull request ggml-org/llama.cpp#32891 is merged (GGUF card, 2026-11-23). Synthetic data: the AI Act summary lists Gemma-4-26B-A4B, Qwen3-32B, Qwen3.8-27B, Mistral-Nemo-12B, GLM-5.2, GLM-5.3, Kimi-K2.6, DeepSeek-V4.1-Flash and two abliterated community variants. RESPONSIBLE_USE.md is guidance, not a condition of the licence. Definitive merger agreement with Cohere (Canada) signed 2026-09-16, pending approval.",
    "hf_repo": "Aleph-Alpha/Kolibri-1.1",
    "hf_revision": "e9515166e22131ef3f3f486127fe89b96c2a0e2c",
    "hf_fetched": "2026-11-23",
@@ -11652,7 +11652,7 @@
    "hf_fetched": "2026-11-22",
    "hf_created": "2025-01-31",
    "last_reviewed": "2026-10-29",
-   "provider_notes": "Member of the Almaviva Group (Italy). Since September 2026 the Velvet models sit in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent.",
+   "provider_notes": "Member of the Almaviva Group (Italy). Since September 2026 the Velvet models have sat in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent.",
    "family_notes": "Trained from scratch on Leonardo (CINECA, Bologna): over 4T tokens in six languages, about 23% Italian, plus 400B code tokens; pretraining data described only as publicly available sources. The newer Velvet 25B (2025-10, all 24 EU languages) is not released as open weights.",
    "repo_verified_org": true,
    "sources": [
@@ -11885,7 +11885,7 @@
    "hf_fetched": "2026-11-22",
    "hf_created": "2026-10-15",
    "last_reviewed": "2026-10-29",
-   "provider_notes": "Member of the Almaviva Group (Italy). Since September 2026 the Velvet models sit in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent.",
+   "provider_notes": "Member of the Almaviva Group (Italy). Since September 2026 the Velvet models have sat in Almawave Labs S.r.l., a single-shareholder company under the management and coordination of Almaviva S.p.A.; the former Almawave S.p.A. (Euronext Growth Milan) is merged into the parent.",
    "family_notes": "Second Velvet generation, trained from scratch on Leonardo (CINECA, Bologna); the 3B text model on about 5T tokens 'collected from publicly available sources' (cutoff Dec 2025 to Jan 2026), no datasets named; reuses the Velvet-14B tokenizer, not its weights. Vision (SigLIP2 encoder) and Speech (Whisper Large v3 encoder) variants build on Velvet2-3B. No release announcement yet; quotes from the public model page (repo files gated).",
    "repo_verified_org": true,
    "sources": [
@@ -12321,8 +12321,8 @@
    "hf_fetched": "2026-11-22",
    "hf_created": "2026-11-05",
    "last_reviewed": "2026-11-21",
-   "provider_notes": "Villanova.ai S.p.A., registered office at Sa Illetta, Cagliari, operational office in Modena. Incorporated 2025-05-21 by Tiscali Italia and Expert.ai; leads the Villanova project (IPCEI-CIS, selected by the Italian ministry MIMIT). Share capital since 2025-10-01: Tiscali Italia 60%, Expert.ai S.p.A. (Modena, Euronext Growth Milan) 40%; Tiscali designates 3 of 5 directors. With golden-power clearance the voting rights were to become 50/50, Expert.ai naming the CEO and holding wide vetoes (clearance not confirmed by a primary source; Expert.ai reports its 40% stake in May 2026). Tiscali Italia is wholly owned by Tessellis S.p.A. (Euronext Milan), in which Shellnet (formerly OpNet) held 53.28% at 2026-08-31; Jefferies Financial Group (US) reports Tessellis as a subsidiary held for sale, after accepting a binding offer from an unnamed third party, closing expected in the first quarter of 2027. Tiscali has a put option on its stake towards Expert.ai (October 2027 to October 2029), Expert.ai a call option after that. Control is coded by the capital majority and its ultimate parent; re-check when the Tessellis sale closes.",
-   "family_notes": "Second Villanova generation (IPCEI-CIS Villanova project): sparse MoE on a Qwen3-Next hybrid architecture (Gated DeltaNet plus attention) with an own 131k BPE tokenizer, pre-trained from scratch on 4.7T tokens in one run (4.0T stable, 600B annealing, 100B long context) on 64 NVIDIA B200 GPUs; where the cluster stands is not stated ('Built in EU, for EU'). Pre-training sources named per stage (FineWeb-Edu, DCLM-Edu, FinePDFs, FineWeb-2, FineWeb2-HQ, FineWiki, FineMath, Nemotron-CC, Stack-Edu, Common Pile, Dolma 3 and others), without shares. Post-training: SFT on 3.68M conversations (10.87B tokens), DPO on 275,516 pairs, GRPO; sources listed per domain, synthetic data only from permissively licensed models, DPO completions from unnamed open-weight models. Technical report announced ('Coming soon'). The vision-language variants use Qwen3.5-122B-A10B for generated text.",
+   "provider_notes": "Villanova.ai S.p.A., registered office at Sa Illetta, Cagliari, operational office in Modena. Incorporated 2025-05-21 by Tiscali Italia and Expert.ai; leads the Villanova project (IPCEI-CIS, selected by the Italian ministry MIMIT). Share capital since 2025-10-01: Tiscali Italia 60%, Expert.ai S.p.A. (Modena, Euronext Growth Milan) 40%; Tiscali designates 3 of 5 directors. With golden-power clearance the voting rights were to become 50/50, Expert.ai naming the CEO and holding wide vetoes (clearance not confirmed by a primary source; Expert.ai reports its 40% stake in May 2026). Tiscali Italia is wholly owned by Tessellis S.p.A. (Euronext Milan), in which Shellnet (formerly OpNet) held 53.28% at 2026-08-31; Jefferies Financial Group (US) reports Tessellis as a subsidiary held for sale, after accepting a binding offer from an unnamed third party, closing expected in the first quarter of 2027. Tiscali has a put option to sell its stake to Expert.ai (October 2027 to October 2029), Expert.ai a call option after that. Control is coded by the capital majority and its ultimate parent; re-check when the Tessellis sale closes.",
+   "family_notes": "Second Villanova generation (IPCEI-CIS Villanova project): sparse MoE on a Qwen3-Next hybrid architecture (Gated DeltaNet plus attention) with its own 131k BPE tokenizer, pre-trained from scratch on 4.7T tokens in one run (4.0T stable, 600B annealing, 100B long context) on 64 NVIDIA B200 GPUs; where the cluster is located is not stated ('Built in EU, for EU'). Pre-training sources named per stage (FineWeb-Edu, DCLM-Edu, FinePDFs, FineWeb-2, FineWeb2-HQ, FineWiki, FineMath, Nemotron-CC, Stack-Edu, Common Pile, Dolma 3 and others), without shares. Post-training: SFT on 3.68M conversations (10.87B tokens), DPO on 275,516 pairs, GRPO; sources listed per domain, synthetic data only from permissively licensed models, DPO completions from unnamed open-weight models. Technical report announced ('Coming soon'). The vision-language variants use Qwen3.5-122B-A10B for generated text.",
    "repo_verified_org": false,
    "sources": [
     {
@@ -15059,7 +15059,7 @@
    "training_hardware": "nvidia",
    "flags": "non-European base model",
    "hbd_involvement": "",
-   "notes": "Basque. MoE (qwen3_5_moe), 122B total, about 10B active; 262,144 context; thinking mode only. Original BF16 repo; an FP8 variant exists (HiTZ/Latxa-3-122B-A10B-FP8). Released 2026-11-18. Successor of Latxa Llama 3.1 70B Instruct v2 ('Latxa 2' on the card), which stays listed.",
+   "notes": "Basque. MoE (qwen3_5_moe), 122B total, about 10B active; 262,144 context; thinking mode only. Original BF16 repo; an FP8 variant exists (HiTZ/Latxa-3-122B-A10B-FP8). Released 2026-11-18. Successor to Latxa Llama 3.1 70B Instruct v2 ('Latxa 2' on the card), which stays listed.",
    "hf_repo": "HiTZ/Latxa-3-122B-A10B",
    "hf_revision": "6bb7d60539bcb11b7daee36fade1ed68eb4735b8",
    "hf_fetched": "2026-11-22",
@@ -18790,7 +18790,7 @@
    "training_hardware": "unknown",
    "flags": "",
    "hbd_involvement": "",
-   "notes": "On the Hub since 2026-11-18, announced 2026-11-19; not gated. Dense 2.29B, 28 layers (21 sliding-window, 7 full-attention), 32K context; needs trust_remote_code (custom model code). Unquantized weights; Microsoft also publishes an INT4 ONNX WebGPU build (Aion-1.0-Instruct-2.3B-ONNX-WebGPU). Second Microsoft comparison model next to Phi-4-Reasoning-Vision.",
+   "notes": "On the Hub since 2026-11-18, announced 2026-11-19; not gated. Dense 2.29B, 28 layers (21 sliding-window, 7 full-attention), 32K context; needs trust_remote_code (custom model code). Unquantized weights; Microsoft also publishes an INT4 ONNX WebGPU build (Aion-1.0-Instruct-2.3B-ONNX-WebGPU). Second Microsoft comparison model, alongside Phi-4-Reasoning-Vision.",
    "hf_repo": "microsoft/Aion-1.0-Instruct-2.3B",
    "hf_revision": "28902cbfd9f4e0347d6c853aa1301f5d559b2fc0",
    "hf_fetched": "2026-11-22",
@@ -19103,7 +19103,7 @@
    "hf_fetched": "2026-11-22",
    "hf_created": "2026-05-11",
    "last_reviewed": "2026-10-10",
-   "provider_notes": "Privately held. Definitive business combination agreement with German Aleph Alpha signed 2026-09-16 (pending regulatory approval); Cohere is the acquiring party, combined company to operate as Cohere, dual HQ Toronto/Berlin. EU AI Act provider entity for Command A+ is Cohere Germany GmbH.",
+   "provider_notes": "Privately held. Definitive business combination agreement with Germany's Aleph Alpha signed 2026-09-16 (pending regulatory approval); Cohere is the acquiring party, combined company to operate as Cohere, dual HQ Toronto/Berlin. EU AI Act provider entity for Command A+ is Cohere Germany GmbH.",
    "family_notes": "Sparse MoE, 218B total / 25B active, text+image input. Cohere's first MoE model; the AI Act summary lists >10T text tokens and synthetic data from Command A and other internal models. Apache-2.0 on Hugging Face; Cohere's Usage Policy applies to Cohere-hosted deployments.",
    "repo_verified_org": true,
    "sources": [
@@ -27658,7 +27658,7 @@
    "hf_fetched": "2026-11-22",
    "hf_created": "2026-10-27",
    "last_reviewed": "2026-11-12",
-   "provider_notes": "Unlisted. Alibaba holds 33%, the employee partnerships Junhan 32% and Junao 22%; since Dec 2023 neither Alibaba nor any other shareholder controls Ant (Alibaba 20-F, March 2026). Restructured into a financial holding company supervised by the People's Bank of China and fined CNY 7.12B in July 2023 after its 2020 IPO was cancelled (press). Its EU AI Act summary names Ant Intelligence (Hang Zhou) Technology Co., Ltd. as provider, no authorised representative.",
+   "provider_notes": "Unlisted. Alibaba holds 33%, the employee partnerships Junhan 32% and Junao 22%; since Dec 2023 neither Alibaba nor any other shareholder has controlled Ant (Alibaba 20-F, March 2026). Restructured into a financial holding company supervised by the People's Bank of China and fined CNY 7.12B in July 2023 after its 2020 IPO was cancelled (press). Its EU AI Act summary names Ant Intelligence (Hang Zhou) Technology Co., Ltd. as provider, no authorised representative.",
    "family_notes": "560B-A25B hybrid-linear MoE (KDA + Gated MLA), hybrid reasoning. AI Act public summary: more than 10T text tokens; Common Crawl, other public datasets by category, licensed data, own crawler (Ant Spider), synthetic data from Ling-2.6 models, no user data; model dependencies NA. Card says it builds upon the smaller Ling-3.0-flash (124B-A5.1B). MIT in card metadata; no LICENSE file in the repo.",
    "repo_verified_org": false,
    "sources": [
@@ -35595,7 +35595,7 @@
    "hf_fetched": "2026-11-22",
    "hf_created": "2026-02-13",
    "last_reviewed": "2026-10-10",
-   "provider_notes": "Privately held. Definitive business combination agreement with German Aleph Alpha signed 2026-09-16 (pending regulatory approval); Cohere is the acquiring party, combined company to operate as Cohere, dual HQ Toronto/Berlin. EU AI Act provider entity for Command A+ is Cohere Germany GmbH.",
+   "provider_notes": "Privately held. Definitive business combination agreement with Germany's Aleph Alpha signed 2026-09-16 (pending regulatory approval); Cohere is the acquiring party, combined company to operate as Cohere, dual HQ Toronto/Berlin. EU AI Act provider entity for Command A+ is Cohere Germany GmbH.",
    "family_notes": "3.35B, pretrained on 6T tokens (public and proprietary sources, 70 languages) on 256 H100s; region-specialised variants (global, earth, fire, water). CC-BY-NC plus Cohere Labs Acceptable Use Policy; gated on the Hub.",
    "repo_verified_org": true,
    "sources": [
@@ -35904,7 +35904,7 @@
    "field": "model",
    "old": "",
    "new": "listed",
-   "reason": "New release of 2026-11-23, successor of Kolibri 1 (listed next to it)"
+   "reason": "New release of 2026-11-23, successor to Kolibri 1 (listed alongside it)"
   },
   {
    "date": "2026-11-22",

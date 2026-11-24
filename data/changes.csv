@@ -88,9 +88,9 @@ date,model,field,old,new,reason
 2026-10-10,minerva-7b,data,unknown,documented,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
 2026-10-10,minerva-7b,compute,unknown,eu,pre-training location sourced
 2026-10-10,minimax-m3,data,documented,undisclosed,"rating rubric for training data (METHODOLOGY, 2026-10-10)"
-2026-10-10,ministral-3-14b,origin,scratch,continued-own,rating rubric for origin: weights from an own earlier model count as continued-own
+2026-10-10,ministral-3-14b,origin,scratch,continued-own,rating rubric for origin: weights from the provider's own earlier model count as continued-own
 2026-10-10,ministral-3-14b,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
-2026-10-10,mistral-small-3.2,origin,scratch,continued-own,rating rubric for origin: weights from an own earlier model count as continued-own
+2026-10-10,mistral-small-3.2,origin,scratch,continued-own,rating rubric for origin: weights from the provider's own earlier model count as continued-own
 2026-10-10,mistral-small-3.2,ai_act_summary,unknown,no,"AI Act training summary looked up (provider site, AIAL tracker)"
 2026-10-10,mistral-small-4,ai_act_summary,unknown,yes,"AI Act training summary looked up (provider site, AIAL tracker)"
 2026-10-10,pleias-rag-1b,compute,unknown,eu,pre-training location sourced
@@ -331,4 +331,4 @@ date,model,field,old,new,reason
 2026-11-21,villanova2-15b-a3b,model,,listed,New release found in the review of 2026-11-21
 2026-11-22,ministral-3-3b,model,,listed,Contributed in pull request #47
 2026-11-22,ministral-3-8b,model,,listed,"Added with the 3B of pull request #47: same family, same release"
-2026-11-23,kolibri-1.1,model,,listed,"New release of 2026-11-23, successor of Kolibri 1 (listed next to it)"
+2026-11-23,kolibri-1.1,model,,listed,"New release of 2026-11-23, successor to Kolibri 1 (listed alongside it)"
