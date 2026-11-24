@@ -274,6 +274,8 @@ const TIER_DE = {
   excluded: "Nichtkommerzielle Lizenz",
   comparison: "Anbieter außerhalb Europas: zum Vergleich mit denselben Fakten gezeigt, ohne Stufe",
 };
+// German labels of the tier codes that are words; the codes themselves stay in data, filters and links.
+const TIER_LABEL_DE = { pending: "ausstehend", excluded: "ausgeschlossen", comparison: "Vergleich" };
 // Explanations of coded values, shown as tooltips.
 const HELP = {
   en: {
@@ -330,6 +332,7 @@ function subCriteria(m) {
   return out.join("");
 }
 const tierText = (tier) => lang === "de" ? (TIER_DE[tier] || DATA.tiers[tier]) : DATA.tiers[tier];
+const tierLabel = (tier) => lang === "de" ? (TIER_LABEL_DE[tier] || tier) : tier;
 
 const KV_SCALE = {16: 1, 8: 8.5 / 16};
 // Weights at 4 bit plus the cache at the chosen context, as MLX allocates it.
@@ -405,7 +408,7 @@ function renderHead() {
 }
 function cell(m, k, num) {
   if (k === "pick") return `<td class="pick"><input type="checkbox" data-pick="${esc(m.id)}" ${picked.includes(m.id) ? "checked" : ""} aria-label="${esc(t("pickTitle"))}: ${esc(m.name)}" ${!picked.includes(m.id) && picked.length >= 4 ? "disabled" : ""}></td>`;
-  if (k === "tier") return `<td title="${esc(tierText(m.tier))}"><span class="tier ${esc(m.tier)}">${esc(m.tier)}</span>${subCriteria(m)}</td>`;
+  if (k === "tier") return `<td title="${esc(tierText(m.tier))}"><span class="tier ${esc(m.tier)}">${esc(tierLabel(m.tier))}</span>${subCriteria(m)}</td>`;
   if (k === "mem") return `<td class="num">${esc(memText(m))}</td>`;
   if (k === "provider_country") return `<td title="${esc(m.provider_country)}">${esc(countryName(m.provider_country))}</td>`;
   if (k === "mlxbuild") return `<td${isVerified(m) ? ' class="ok"' : ""}>${esc(mlxBuildText(m))}</td>`;
@@ -453,7 +456,7 @@ function renderOverview() {
   const max = Math.max(...EUROPE_TIERS.map(tr => eu.filter(m => m.tier === tr).length), 1);
   const tiers = EUROPE_TIERS.filter(tr => eu.some(m => m.tier === tr)).map(tr => {
     const n = eu.filter(m => m.tier === tr).length;
-    return `<div class="tiercount" title="${esc(tierText(tr))}"><span class="tier ${esc(tr)}">${esc(tr)}</span>
+    return `<div class="tiercount" title="${esc(tierText(tr))}"><span class="tier ${esc(tr)}">${esc(tierLabel(tr))}</span>
       <span class="bar" style="width:${Math.round(110 * n / max)}px;background:var(--${["A","B","C"].includes(tr) ? tr : "other"})"></span><span>${n}</span></div>`;
   }).join("");
   const metrics = [
@@ -532,7 +535,7 @@ function detail(id) {
   const builds = m.mlx_builds.map(b => badge(b.publisher, PUBLISHER[b.publisher] + (b.verified_org ? " ✓ verified" : "")) +
     `${link("https://huggingface.co/" + b.repo, b.repo)} (${esc(b.bits)} bit)` + tpl(b) + verified(b)).join("<br>");
   $("pbody").innerHTML = `
-    <h2 id="ptitle">${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(m.tier)}</span>
+    <h2 id="ptitle">${esc(m.name)} <span class="tier ${esc(m.tier)}">${esc(tierLabel(m.tier))}</span>
       <button id="plink" class="src" style="border:1px solid var(--line);background:#fff;border-radius:6px;cursor:pointer;font-size:12px;vertical-align:middle">${esc(t("copyModelLink"))}</button></h2>
     <div class="src">${esc(tierText(m.tier))}</div>
     <p>${badge("provider", t("providerRepo") + (m.repo_verified_org ? " ✓ verified" : ""))}${link("https://huggingface.co/" + m.hf_repo, m.hf_repo)}${m.hf_revision ? ` @ ${link(`https://huggingface.co/${m.hf_repo}/tree/${m.hf_revision}`, m.hf_revision.slice(0, 12))} <span class="src">(${esc(t("pinned"))} ${esc(m.hf_fetched)})</span>` : ""} · ${esc(m.params_b)}B ${esc(t("params"))} ·
@@ -589,7 +592,7 @@ function renderCompare() {
   if (ms.length < 2) { $("compare").innerHTML = picked.length ? `<p class="src">${esc(t("cmpHint"))}</p>` : ""; return; }
   const R = t("rows");
   const fields = [
-    [R.Tier, m => `<span class="tier ${esc(m.tier)}">${esc(m.tier)}</span>`],
+    [R.Tier, m => `<span class="tier ${esc(m.tier)}">${esc(tierLabel(m.tier))}</span>`],
     [R.Provider, m => esc(m.provider)], [R["Country / region"], m => esc(countryName(m.provider_country))],
     [R.Control, m => esc(m.control) + (m.majority_owner ? ` (${esc(m.majority_owner)})` : "")],
     [R.Origin, m => valueWithHelp("origin", m.origin)], [R.Licence, m => valueWithHelp("license_class", m.license_class) + `<div class="src">${esc(m.license)}</div>`],
@@ -701,7 +704,8 @@ function applyLang() {
   document.querySelectorAll("[data-t-title]").forEach(el => el.title = t(el.dataset.tTitle));
   $("q").placeholder = t("searchPh");
   document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
-  $("tierlist").innerHTML = Object.keys(DATA.tiers).map(tr => `<li><b>${esc(tr)}</b>: ${esc(tierText(tr))}</li>`).join("");
+  $("tierlist").innerHTML = Object.keys(DATA.tiers).map(tr => `<li><b>${esc(tierLabel(tr))}</b>: ${esc(tierText(tr))}</li>`).join("");
+  document.querySelectorAll("#tierchips [data-tier]").forEach(el => el.textContent = tierLabel(el.dataset.tier));
   const keep = $("country").value;
   $("country").innerHTML = `<option value="">${esc(t("all"))}</option>` + [...new Set(DATA.models.map(m => m.provider_country))]
     .sort((a, b) => countryName(a).localeCompare(countryName(b), lang)).map(c => `<option value="${esc(c)}">${esc(countryName(c))}</option>`).join("");
@@ -715,7 +719,7 @@ function applyLang() {
 fetch("scorecard.json").then(r => r.json()).then(d => {
   DATA = d;
   $("tierchips").innerHTML = TIER_ORDER.filter(tr => tr !== "comparison" && d.models.some(m => m.tier === tr))
-    .map(tr => `<label><input type="checkbox" value="${esc(tr)}" ${DEFAULT_TIERS.includes(tr) ? "checked" : ""}> ${esc(tr)}</label>`).join("");
+    .map(tr => `<label><input type="checkbox" value="${esc(tr)}" ${DEFAULT_TIERS.includes(tr) ? "checked" : ""}> <span data-tier="${esc(tr)}">${esc(tierLabel(tr))}</span></label>`).join("");
   [...new Set(d.models.map(m => m.license_class))].sort().forEach(v => $("licence").insertAdjacentHTML("beforeend", `<option>${esc(v)}</option>`));
   $("worldbox").hidden = !d.models.some(m => m.tier === "comparison");
   loadState();
